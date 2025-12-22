@@ -1,0 +1,34 @@
+# config.yaml
+query: "What is the reason for The chain of transmission to break:1-the decline in infectives, or2- a complete lack of susceptibles?  Address this question in both scenarios in analytcal and simulation approaches. User is not available to provide more information."
+name: "quesiton2"
+workflow:
+  copilot: False # whether to use copilot mode or not
+  scientist_modules: # which modules to use in the scientist workflow, for reasoning models like openai's o3, planing might not be necessary
+    plan: True
+    reflect: True 
+  reflection_max_iters: 1 # how many times the scientist can reflect (the higher is not necessarily better, start from lower values and increase if needed)
+  no_retries: 20 # no  of scientist retries till generate the structured output
+  no_paper_revise: 0 # no of times the scientist can revise the paper, best to test it with 0, if needed increase it to higher values
+  time_out_tools: 360  # default timeout for tool execution in seconds
+
+llm:
+  scientists:
+    provider: openai          # one of: openai, grok
+    model: gpt-4.1   # model name
+
+  experts:
+    provider: openai
+    model: gpt-4.1-mini
+
+  mathematician_expert:
+    provider: openai
+    model: o3-mini
+
+  vision_expert:            # make sure the model supports vision inputs!!!
+    provider: openai
+    model: gpt-4.1-mini
+
+paths:
+  output_dir: user-files
+  contact_network_path: "none"
+  data_path: "none"

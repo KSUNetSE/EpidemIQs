@@ -1,0 +1,33 @@
+# config.yaml
+query: Investigate the temporal dynamics of a pathogen with $R_0=2$ spreading through a population characterized by 'small-world' properties (high local clustering with sparse long-range shortcuts). Compare the speed of the infection wavefront and the peak prevalence against a random network with the exact same average number of contacts. Does the redundancy of connections in the clustered network accelerate or decelerate the transition of individuals from 'Susceptible' to 'Infectious' compared to the random baseline? Address this question in both scenarios in analytcal and simulation approaches. User is not available to provide more information.
+name: "quesiton10"
+workflow:
+  copilot: False # whether to use copilot mode or not
+  scientist_modules: # which modules to use in the scientist workflow, for reasoning models like openai's o3, planing might not be necessary
+    plan: True
+    reflect: True 
+  reflection_max_iters: 1 # how many times the scientist can reflect (the higher is slower, start from lower values and increase if needed)
+  no_retries: 50 # no  of scientist retries till generate the structured output
+  no_paper_revise: 0 # no of times the scientist can revise the paper, best to test it with 0, if needed increase it to higher values
+
+llm:
+  scientists:
+    provider: openai          # one of: openai, grok
+    model: gpt-4.1   # model name
+
+  experts:
+    provider: openai
+    model: gpt-4.1-mini
+
+  mathematician_expert:
+    provider: openai
+    model: o3-mini
+
+  vision_expert:            # make sure the model supports vision inputs!!!
+    provider: openai
+    model: gpt-4.1-mini
+
+paths:
+  output_dir: user-files
+  contact_network_path: "none"
+  data_path: "none"

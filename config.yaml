@@ -1,0 +1,33 @@
+# config.yaml
+query: "I am providing time-series data from the famous 1978 English Boarding School Influenza A/H1N1 outbreak. This dataset is known as an \"epidemic enigma\" because standard SEIR models often fail to fit the data while correctly predicting the final Attack Rate (AR).Parameters & Constraints:Total Population ($N$): 763 students\n.Observed Attack Rate: 512 students (67%) were eventually infected.\nData Interpretation: The data columns in the Excel file  represent time,  \"Confined to Bed\" ($B$) and \"Convalescent\" ($C$) numbers.Crucial Note: Do not treat \"Confined to Bed\" ($B$) as the primary \"Infectious\" ($I$) stage. It is suggested that an unobserved highly infectious stage ($I$) precedes the \"Confined to Bed\" stage ($B$). $B$ acts effectively as a quarantine state where infectivity drops or stops.Virus Characteristics: Influenza A/H1N1. The generation time is likely short (approx. 1.9 days), and the Basic Reproduction Number s($R_0$) over this population is estimated to be high (possibly >8) due to the closed environment\n.Housing/Group Structure:Group A (Junior House): Consists of 113 boys aged 10–13.Group B (Senior Houses): Consists of the remaining boys, divided into 10 distinct houses. Senior House Size: Approximately 60–65 boys per house.Your Task:Analyze the observed data provided at:  outout/cases_data.xlsx to extract the daily prevalence of students confined to bed and convalescing and use this data to fit a compartmental model (or agent-based equivalent) to it. You must prioritize matching two objectives simultaneously:The shape of the \"Confined to Bed\" curve to observed data.The total Attack Rate of ~512 students \nOutput: Report the $R_0$ your model estimated, the calculated Attack Rate, and a comparison of your predicted Confined to Bed  times series vs. the data's Confined to Bed times series, and calculate the  MSE\n"
+name: "flue-1978"
+workflow:
+  copilot: False # whether to use copilot mode or not
+  scientist_modules: # which modules to use in the scientist workflow, for reasoning models like openai's o3, planing might not be necessary
+    plan: True  
+    reflect: True 
+  reflection_max_iters: 1 # how many times the scientist can reflect (the higher is not necessarily better, start from lower values and increase if needed)
+  no_retries: 5 # no  of scientist retries till generate the structured output
+  no_paper_revise: 0 # no of times the scientist can revise the paper, best to test it with 0, if needed increase it to higher values
+  time_out_tools: 600  # default timeout for tool execution in seconds
+llm:
+  scientists:
+    provider: openai          # one of: openai, grok
+    model: gpt-4.1  # model name
+
+  experts:
+    provider: openai
+    model: gpt-4.1-mini
+
+  mathematician_expert:
+    provider: openai
+    model: o3-mini
+
+  vision_expert:            # make sure the model supports vision inputs!!!
+    provider: openai
+    model: gpt-4.1-mini
+
+paths:
+  output_dir: "user-files"
+  contact_network_path: "NONE"
+  data_path: "cases_data.xlsx"

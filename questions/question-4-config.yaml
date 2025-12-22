@@ -1,0 +1,34 @@
+# config.yaml
+query: "Competitive SIS model over two multiplex layer A and B same set of nodes. the two viruses are exclusive: A node cannot be infected by virus 1 and virus 2 simultaneously. Beta 1 and delta 1 for layer 1 and beta2 and delta 2 for layer 2 Assume the effective infection rates of each virus are larger than their no-spreading mean field threshold, i.e., 𝜏1>>1/𝜆1(𝐴) and 𝜏2>>1/𝜆1(𝐵).Question1-:  Will both viruses survive (coexistence), or will one virus completely remove the other (absolute dominance)?2-which characteristics of a multilayer network structure allow for coexistence?User is not available to provide more information."
+name: "quesiton4"
+workflow:
+  copilot: False # whether to use copilot mode or not
+  scientist_modules: # which modules to use in the scientist workflow, for reasoning models like openai's o3, planing might not be necessary
+    plan: True
+    reflect: True 
+  reflection_max_iters: 1 # how many times the scientist can reflect (the higher is not necessarily better, start from lower values and increase if needed)
+  no_retries: 20 # no  of scientist retries till generate the structured output
+  no_paper_revise: 0 # no of times the scientist can revise the paper, best to test it with 0, if needed increase it to higher values
+  time_out_tools: 360  # default timeout for tool execution in seconds
+  
+llm:
+  scientists:
+    provider: openai          # one of: openai, grok
+    model: gpt-4.1   # model name
+
+  experts:
+    provider: openai
+    model: gpt-4.1-mini
+
+  mathematician_expert:
+    provider: openai
+    model: o3-mini
+
+  vision_expert:            # make sure the model supports vision inputs!!!
+    provider: openai
+    model: gpt-4.1-mini
+
+paths:
+  output_dir: user-files
+  contact_network_path: "none"
+  data_path: "none" 
