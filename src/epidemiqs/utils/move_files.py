@@ -35,7 +35,7 @@ def move_to_destination(
     destination: str,
     move: bool = True,
     force_move: bool = False,
-    ignore_names: List[str] = [ "token.csv", "tokens_by_phase.csv"]
+    ignore_names: List[str] = [ "token.csv", "tokens_by_phase.csv",'.gitignore']
 ) -> List[str]:
     """
     Move or copy files from source_dir to destination with rules:
