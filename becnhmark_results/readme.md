@@ -2,7 +2,7 @@
 
 This folder contains the benchmark results for various agent configurations, discussed in Section **V.B.1** in the EpidemIQs' paper. To view the results, you need to configure and run the provided Python script.
 
-## 🚀 How to View Results
+##  How to View Results
 
 1.  Open the file `show_result.py`.
 2.  Uncomment the line corresponding to the model configuration you wish to analyze.
