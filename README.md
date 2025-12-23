@@ -40,7 +40,7 @@ A multi‑agent LLM framework that can execute an end‑to‑end designed scient
 -  **Auto‑reporting** to LaTeX/PDF with compile/repair pass.
 
 
-## Installation (with `uv`) and Quick Start
+## Installation and Quick Start
 ```bash
 # 1) Ensure Python > 3.10
 # 2) go to your desired directory and clone the repo
