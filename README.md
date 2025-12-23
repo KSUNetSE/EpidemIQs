@@ -173,7 +173,7 @@ epidemiqs/
 ├── images/                      
 ├── output/                      #  this is the folder wher agents store and retrieve data and artifacts, do not add files here. 
 ├── questions/                   #  predefined epidemic questions for easy testing
-├── benchmark results/           #  benchmark of Scientist architecture over DSBench.
+├── benchmark_results/           #  benchmark of different Scientist architectures over DSBench.
 ├── src/                         #  Core application source code.                            💻
 │   ├── epidemiqs/               #  package root
 │   │   ├── __pycache__/
