@@ -43,25 +43,21 @@ A multi‑agent LLM framework that can execute an end‑to‑end designed scient
 ## Installation (with `uv`) and Quick Start
 ```bash
 # 1) Ensure Python > 3.10
-# 2) Install uv if needed
-# Open the config.YAML and customized it as you wish. you can just put your query here, and leave others as defaults
-uv add "git+https://github.com/KSUNetSE/EpidemIQs.git"
-# 
-# 3) Create & sync env
-uv sync
+# 2) go to your desired directory and clone the repo
+git clone https://github.com/KSUNetSE/EpidemIQs.git
+# go to the repo directory
+cd EpidemIQs  
+# 3) create and activate venv
+python -m venv .venv 
+source .venv/bin/activate # for macos, for windows use: .venv\Scripts\activate  
 
-# 4) (Optional) Use the project venv
-source .venv/bin/activate   # or: uv run <cmd> without manual activation
+# 4) install dependencies
+pip install -e .
 
 #5) edit the config and pass it the epidemIQs in command line
 epidemiqs run now  --config config.yaml    
 ```
 
-### Alternative: `pip`
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -e .[all]
-```
 ##  API Configuration
 the only need you need to modify to run EpidemIQs are .env (for API keys) and config.yaml (for configuration the setup) as follows:
 ```toml 
