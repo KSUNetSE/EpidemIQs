@@ -1,6 +1,6 @@
 # DSBench Experiment Results
 
-This folder contains the benchmark results for various agent configurations, discussed in Section **V.B.1** in the EpidemIQs' paper. To view the results, you need to configure and run the provided Python script.
+This folder contains the benchmark results for various agent configurations over [DSBench](https://github.com/LiqiangJing/DSBench), discussed in Section **V.B.1** in the EpidemIQs' paper. To view the results, you need to configure and run the provided Python script.
 
 ##  How to View Results
 
