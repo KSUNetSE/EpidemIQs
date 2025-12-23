@@ -265,10 +265,4 @@ Use of this repository implies acceptance of these conditions.
 ```
 ---
 
-##  License
-MIT
----
-
-
-
 
