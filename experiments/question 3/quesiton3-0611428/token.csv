@@ -1,0 +1,9 @@
+timestamp,Agent-Name,LLM,request_tokens,response_tokens,total_tokens,time
+2025-08-07 00:06:43.976010,MathExpert,o3-mini,6829,1804,12759,0.0
+2025-08-07 00:07:09.367861,DiscoveryScientist,gpt-4.1,35901,1391,43414,0.0
+2025-08-07 00:07:29.059693,ModelerScientist,gpt-4.1,10761,144,34244,0.0
+2025-08-07 00:08:04.970704,NetworkScientist,gpt-4.1,29292,1877,60738,0.0
+2025-08-07 00:08:40.522942,ParameterScientist,gpt-4.1,22473,892,63599,0.0
+2025-08-07 00:11:29.243584,SimulationScientist,gpt-4.1,37758,2204,140679,0.0
+2025-08-07 00:12:58.441458,DataExpert,gpt-4.1-mini,11708,2237,13945,0.0
+2025-08-07 00:13:30.242663,DataScientist,gpt-4.1,17694,1873,39339,0.0

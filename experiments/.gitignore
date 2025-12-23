@@ -1,1 +1,3 @@
 *.csv
+!token.csv
+!token_by_phase.csv

@@ -1,0 +1,13 @@
+timestamp,Agent-Name,LLM,request_tokens,response_tokens,total_tokens,time
+2025-07-06 23:23:14.500524,OnlineRetrieverExpert,gpt-4.1-mini,3988,419,4407,0.0
+2025-07-06 23:23:17.282527,OnlineRetrieverExpert,gpt-4.1-mini,5179,506,5685,0.0
+2025-07-06 23:23:23.024494,LiteratureRetrieverExpert,gpt-4.1-mini,1954,1600,3554,0.0
+2025-07-06 23:24:19.612873,LiteratureRetrieverExpert,gpt-4.1-mini,5668,1862,7530,0.0
+2025-07-06 23:25:17.108500,MathExpert,o3-mini,2171,679,6584,0.0
+2025-07-06 23:25:39.127718,DiscoveryScientist,gpt-4.1,37226,1527,45065,0.0
+2025-07-06 23:26:09.882801,ModelerScientist,gpt-4.1,9680,414,14632,0.0
+2025-07-06 23:27:16.121381,NetworkScientist,gpt-4.1,13379,2693,21385,0.0
+2025-07-06 23:28:02.742771,ParameterScientist,gpt-4.1,37650,1492,45736,0.0
+2025-07-06 23:30:19.029642,SimulationScientist,gpt-4.1,30130,1829,58951,0.0
+2025-07-06 23:31:53.825626,DataExpert,gpt-4.1-mini,8707,2363,11070,0.0
+2025-07-06 23:32:22.320338,DataScientist,gpt-4.1,16933,2093,37971,0.0
