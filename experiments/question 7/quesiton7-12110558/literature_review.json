@@ -1,0 +1,212 @@
+{
+    "results": [
+        {
+            "query": "network contact patterns influenza boarding school closed residential outbreak",
+            "papers": [
+                {
+                    "title": "May home confinement during the COVID-19 outbreak worsen the global burden of myopia?",
+                    "abstract": "The novel coronavirus (2019-nCoV) that originated inWuhan (China) has quickly spread all over the world. As of April 12, 2020, there have been with more than 1,600,000 confirmed cases and 100,000 deaths globally [1]. To restrict contact among individuals, governments have imposed unprecedented public health measures such as travel bans, workplace distancing, and schools closure. The aim of these measures is to reduce the size of the outbreak as well as its peak in order to decrease the amount of stress on healthcare systems. In a recent correspondence on Lancet, Wang and colleagues pointed out that the measures ordered by the Chinese government to limit the spread of the novel coronavirus, and in particular schools closure, might have negative effects on children\u2019s physical andmental health [2]. In fact, the authors stated that when children are out of school, they are physically less active and have longer screen time, irregular sleep pattern, and less favorable diets resulting in weight gain and loss of cardiorespiratory fitness. In addition, the psychological sphere can also be affected by this forced change of lifestyle. We would like to add another piece to the puzzle of potential impacts of home confinement on children, which is the increased risk of myopia (namely, \u201cquarantine myopia\u201d). The prevalence of myopia has rapidly increased over the past few decades, particularly in countries from East and Southeast Asia. Insufficient time spent outdoors is recognized as an important risk factor for its development [3]. Furthermore, the duration and intensity of near work activities (e.g., reading and writing) are also associated with myopia [4]. The mechanisms of visual feedback regulating the eye growth are complex and not completely understood. Factors that may mediate the relationship between time spent outdoors and myopia include the brightness and chromatic spectrum of light, the energy at high spatial frequencies, the peripheral defocus, and the circadian rhythms [3]. According to UNESCO, more than 160 countries have closed schools in the attempt at containing the spread of COVID-19, and this measure involves over 87% of world\u2019s student population [5]. An important consequence of home confinement on children\u2019s health could be the development and/or the worsening of myopia. Since the exact duration of exposure is currently undetermined, it is difficult to estimate the effect from a refractive standpoint. A recent modeling study on influenza reported that in case of severe pandemics, the reduction of the cumulative disease incidence could be possible only with school dismissal lasting 16 weeks or longer [6]. A prolonged home confinement would very likely have a significant impact on the global incidence of myopia. This represents a serious public health concern for two main reasons. First, uncorrected myopia represents a major cause of visual disability in children, particularly in lowand middleincome countries. Second, high myopia in the current pediatric population is linked to a high risk of potentially sightthreatening complications in the next generations of elderly. A range of new interventions for reducing the progression of myopia in children have now reached high level of evidence [7]. A recent network analysis indicated that the most effective options are muscarinic antagonists such as atropine and pirenzepine, whereas certain specially designed contact lenses including orthokeratology and peripheral defocus modifying contact lenses have moderate effects [7]. Therefore, a post-pandemic ophthalmological surveillance program for children with myopia involving decision-making based on demographical and clinical characteristics, risk factors, and * Giuseppe Giannaccare giuseppe.giannaccare@gmail.com",
+                    "citation": "M. Pellegrini, F. Bernabei, V. Scorcia, et al. (2020). May home confinement during the COVID-19 outbreak worsen the global burden of myopia?. Graefe's Archive for Clinical and Experimental Ophthalmology. Citations: 64, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Another piece to the puzzle of potential impacts of home confinement on children, which is the increased risk of myopia, is added, \u201cquarantine myopia\u201d."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/623009c1fcc871ba4f32ed69466c9219ab163fa4"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "influenza A/H1N1 incubation infectious symptomatic period rates closed high-contact environments",
+            "papers": [
+                {
+                    "title": "Microbes and Infectious Diseases",
+                    "abstract": null,
+                    "citation": "Fatma Khalil, M. Ghonaim, Tawfeek Abed el-motaleb, et al. (2021). Microbes and Infectious Diseases. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Investigating knowledge and attitude towards SARS-CoV-2 infection among HCWs who would join work in the menoufia university workers COVID-19 isolation unit in the National Liver Institute, Menoufia University aimed at keeping HCWs safety with optimum patient care and less harm to the health facilities."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3ce0cd455d96edf52cd16af107728a19ae889f4c"
+                },
+                {
+                    "title": "Health and Economic Benefits of Early Vaccination and Nonpharmaceutical Interventions for a Human Influenza A (H7N9) Pandemic",
+                    "abstract": null,
+                    "citation": "N. Khazeni, D. Hutton, Cassandra Collins, et al. (2014). Health and Economic Benefits of Early Vaccination and Nonpharmaceutical Interventions for a Human Influenza A (H7N9) Pandemic. Annals of Internal Medicine. Citations: 11, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A dynamic transmission model of progression of a severe pandemic caused by a virus with characteristics similar to those of influenza A (H7N9) and A ( H5N1) in a susceptible population was modeled to assess the value of accelerating vaccine production with new technologies."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/92b688e6553bb1e825aad023deb3e35c04e76da1"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "modeling 1978 English boarding school influenza outbreak contact network structure",
+            "papers": [
+                {
+                    "title": "Profile likelihood-based analyses of infectious disease models",
+                    "abstract": null,
+                    "citation": "C. T\u00f6nsing, J. Timmer, C. Kreutz (2018). Profile likelihood-based analyses of infectious disease models. Statistical Methods in Medical Research. Citations: 27, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work summarizes and transfers state-of-the art approaches from other fields like Systems Biology to infectious disease models to describe the temporal evolution of epidemics using a simple SIR model and more complex model of a vector-borne disease with data from the Zika virus outbreak in Colombia in 2015\u20132016."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/430538a3d03f09c3d6b4247b20b7ed112fd7b8df"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "contact network structure boarding school influenza outbreak closed setting modeling",
+            "papers": [
+                {
+                    "title": "The Impact of Social Groups on Variation in Infectious Disease Transmission and Control",
+                    "abstract": null,
+                    "citation": "J. Munday (2021). The Impact of Social Groups on Variation in Infectious Disease Transmission and Control. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Evidence is found that inequalities in disease are most sensitive to differences in transmission if the pathogen has a low basic reproduction number, which means that inequalities are more sensitive to variation in vaccine uptake."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ac95743a19c565b552f661fed037d5a8193fe5cd"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "threshold cascade model on core-periphery networks financial contagion",
+            "papers": [
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2014). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 60, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that, when interest rate swaps are cleared, central clearing of credit default swaps through a well-capitalized CCP can reduce the probability and the magnitude of a systemic illiquidity spiral by reducing the length of the chains of critical receivables within the financial network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/39b37735d067465e3e0690e1b28a8e8f93499261"
+                },
+                {
+                    "title": "Assessing the impact of incomplete information on the resilience of financial networks",
+                    "abstract": null,
+                    "citation": "Matteo Cinelli, Giovanna Ferraro, Antonio Iovanella, et al. (2019). Assessing the impact of incomplete information on the resilience of financial networks. Annals of Operations Research. Citations: 17, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulations showed that the actual network was far from the worst scenario for the propagation of contagion, meaning that the role of unobserved links can substantially alter the resilience of the whole network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/838c9bc3f9ffdde5713a9b3c3ab38c4484a71963"
+                },
+                {
+                    "title": "Speed of Financial Contagion and Optimal Timing for Intervention\u2217",
+                    "abstract": null,
+                    "citation": "Diana G. Mikhail (2020). Speed of Financial Contagion and Optimal Timing for Intervention\u2217. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/1efb755735c11783925cd94be590b5956a44b16e"
+                },
+                {
+                    "title": "Contagion risks and security investment in directed networks",
+                    "abstract": "We develop a model for contagion risks and optimal security investment in a directed network of interconnected agents with heterogeneous degrees, loss functions, and security profiles. Our model generalizes several contagion models in the literature, particularly the independent cascade model and the linear threshold model. We state various limit theorems on the final size of infected agents in the case of random networks with given vertex degrees for finite and infinite-variance degree distributions. The results allow us to derive a resilience condition for the network in response to the infection of a large group of agents and quantify how contagion amplifies small shocks to the network. We show that when the degree distribution has infinite variance and highly correlated in- and out-degrees, even when agents have high thresholds, a sub-linear fraction of initially infected agents is enough to trigger the infection of a positive fraction of nodes. We also demonstrate how these results are sensitive to vertex and edge percolation (intervention). We then study the asymptotic Nash equilibrium and socially optimal security investment. In the asymptotic limit, agents\u2019 risk depends on all other agents\u2019 investments through an aggregate quantity that we call network vulnerability. The limit theorems enable us to capture the impact of one class of agents\u2019 decisions on the overall network vulnerability. Based on our results, the vulnerability is semi-analytic, allowing for a tractable Nash equilibrium. We provide sufficient conditions for investment in equilibrium to be monotone in network vulnerability. When investment is monotone, we demonstrate that the (asymptotic) Nash equilibrium is unique. In the specific example of two types of core-periphery agents, we illustrate the strong effect of cost heterogeneity on network vulnerability and the non-monotonous investment as a function of costs.",
+                    "citation": "H. Amini (2020). Contagion risks and security investment in directed networks. Mathematics and Financial Economics. Citations: 6, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model for contagion risks and optimal security investment in a directed network of interconnected agents with heterogeneous degrees, loss functions, and security profiles is developed and it is demonstrated that when the degree distribution has infinite variance and highly correlated in- and out-degrees, a sub-linear fraction of initially infected agents is enough to trigger the infection of a positive fraction of nodes."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b51bbd6b4d75925b50a43325e9c92da9a893026a"
+                },
+                {
+                    "title": "Least Susceptible Networks to Systemic Risk",
+                    "abstract": null,
+                    "citation": "Ryota Zamami, Hiroshi Sato, A. Namatame (2014). Least Susceptible Networks to Systemic Risk. Unknown Journal. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper designs the least susceptible network to systemic risk in the threshold-based cascade model and proposes the network design model in which the associated adjacency matrix has the largest maximum eigenvalue."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ddac623794834b145ea707cbc2f97150e15ed8db"
+                },
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2015). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 11, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/ba172a2c9861fd1424e641549a63f3fb73c9d7b6"
+                },
+                {
+                    "title": "Financial Network Stability and Structure: Econometric and Network Analysis",
+                    "abstract": null,
+                    "citation": "M. G\u0105tkowski (2015). Financial Network Stability and Structure: Econometric and Network Analysis. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6769f11e7a7049d38db2a7cda3a4c3234db2351e"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "threshold cascade model on core-periphery financial networks",
+            "papers": [
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2014). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 60, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that, when interest rate swaps are cleared, central clearing of credit default swaps through a well-capitalized CCP can reduce the probability and the magnitude of a systemic illiquidity spiral by reducing the length of the chains of critical receivables within the financial network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/39b37735d067465e3e0690e1b28a8e8f93499261"
+                },
+                {
+                    "title": "Assessing the impact of incomplete information on the resilience of financial networks",
+                    "abstract": null,
+                    "citation": "Matteo Cinelli, Giovanna Ferraro, Antonio Iovanella, et al. (2019). Assessing the impact of incomplete information on the resilience of financial networks. Annals of Operations Research. Citations: 17, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulations showed that the actual network was far from the worst scenario for the propagation of contagion, meaning that the role of unobserved links can substantially alter the resilience of the whole network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/838c9bc3f9ffdde5713a9b3c3ab38c4484a71963"
+                },
+                {
+                    "title": "Optimal Bailouts in Diversified Financial Networks",
+                    "abstract": "Widespread default involves substantial deadweight costs which could be countered by injecting capital into failing firms. Injections have positive spillovers that can trigger a repayment cascade. But which firms should a regulator bailout so as to minimize the total injection of capital while ensuring solvency of all firms? While the problem is, in general, NP-hard, for a wide range of networks that arise from a stochastic block model, we show that the optimal bailout can be implemented by a simple policy that targets firms based on their characteristics and position in the network. Specific examples of the setting include core-periphery networks.",
+                    "citation": "Krishna Dasaratha, Santosh Venkatesh, Rakesh V. Vohra (2024). Optimal Bailouts in Diversified Financial Networks. arXiv.org. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/442bce9145fd95a605311800feda243d9367bcb8"
+                },
+                {
+                    "title": "Contagion risks and security investment in directed networks",
+                    "abstract": "We develop a model for contagion risks and optimal security investment in a directed network of interconnected agents with heterogeneous degrees, loss functions, and security profiles. Our model generalizes several contagion models in the literature, particularly the independent cascade model and the linear threshold model. We state various limit theorems on the final size of infected agents in the case of random networks with given vertex degrees for finite and infinite-variance degree distributions. The results allow us to derive a resilience condition for the network in response to the infection of a large group of agents and quantify how contagion amplifies small shocks to the network. We show that when the degree distribution has infinite variance and highly correlated in- and out-degrees, even when agents have high thresholds, a sub-linear fraction of initially infected agents is enough to trigger the infection of a positive fraction of nodes. We also demonstrate how these results are sensitive to vertex and edge percolation (intervention). We then study the asymptotic Nash equilibrium and socially optimal security investment. In the asymptotic limit, agents\u2019 risk depends on all other agents\u2019 investments through an aggregate quantity that we call network vulnerability. The limit theorems enable us to capture the impact of one class of agents\u2019 decisions on the overall network vulnerability. Based on our results, the vulnerability is semi-analytic, allowing for a tractable Nash equilibrium. We provide sufficient conditions for investment in equilibrium to be monotone in network vulnerability. When investment is monotone, we demonstrate that the (asymptotic) Nash equilibrium is unique. In the specific example of two types of core-periphery agents, we illustrate the strong effect of cost heterogeneity on network vulnerability and the non-monotonous investment as a function of costs.",
+                    "citation": "H. Amini (2020). Contagion risks and security investment in directed networks. Mathematics and Financial Economics. Citations: 6, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model for contagion risks and optimal security investment in a directed network of interconnected agents with heterogeneous degrees, loss functions, and security profiles is developed and it is demonstrated that when the degree distribution has infinite variance and highly correlated in- and out-degrees, a sub-linear fraction of initially infected agents is enough to trigger the infection of a positive fraction of nodes."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b51bbd6b4d75925b50a43325e9c92da9a893026a"
+                },
+                {
+                    "title": "Speed of Financial Contagion and Optimal Timing for Intervention\u2217",
+                    "abstract": null,
+                    "citation": "Diana G. Mikhail (2020). Speed of Financial Contagion and Optimal Timing for Intervention\u2217. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/1efb755735c11783925cd94be590b5956a44b16e"
+                },
+                {
+                    "title": "Least Susceptible Networks to Systemic Risk",
+                    "abstract": null,
+                    "citation": "Ryota Zamami, Hiroshi Sato, A. Namatame (2014). Least Susceptible Networks to Systemic Risk. Unknown Journal. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper designs the least susceptible network to systemic risk in the threshold-based cascade model and proposes the network design model in which the associated adjacency matrix has the largest maximum eigenvalue."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ddac623794834b145ea707cbc2f97150e15ed8db"
+                },
+                {
+                    "title": "Core-halo instability in dynamical systems",
+                    "abstract": "This paper proves an instability theorem for dynamical systems. As one adds interactions between subystems in a complex system, structured or random, a threshold of connectivity is reached beyond which the overall dynamics inevitably goes unstable. The threshold occurs at the point at which flows and interactions between subsystems (`surface' effects) overwhelm internal stabilizing dynamics (`volume' effects). The theorem is used to identify instability thresholds in systems that possess a core-halo or core-periphery structure, including the gravo-thermal catastrophe -- i.e., star collapse and explosion -- and the interbank payment network. In the core-halo model, the same dynamical instability underlies both gravitational and financial collapse.",
+                    "citation": "S. Lloyd (2013). Core-halo instability in dynamical systems. Unknown Journal. Citations: 2, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/4b93355dc7fa45c5dd86ad44a445ac401f776873"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

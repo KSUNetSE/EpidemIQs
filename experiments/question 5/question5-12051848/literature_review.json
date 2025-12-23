@@ -1,0 +1,106 @@
+{
+    "results": [
+        {
+            "query": "targeted vaccination degree network epidemic threshold",
+            "papers": [
+                {
+                    "title": "Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.",
+                    "abstract": "We develop an analytical approach to the susceptible-infected-susceptible epidemic model that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks. We find that a delicate balance between the number of high degree nodes in the network and the topological distance between them dictates the existence or absence of such a threshold. In particular, small-world random networks with a degree distribution decaying slower than an exponential have a vanishing epidemic threshold in the thermodynamic limit.",
+                    "citation": "M. Bogu\u00f1\u00e1, C. Castellano, R. Pastor-Satorras (2013). Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.. Physical Review Letters. Citations: 222, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical approach to the susceptible-infected-susceptible epidemic model is developed that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45d940bd24ae48e34e724bd64dbfaf63545d5e5b"
+                },
+                {
+                    "title": "Effective degree network disease models",
+                    "abstract": null,
+                    "citation": "Jennifer Lindquist, Junling Ma, P. Driessche, et al. (2011). Effective degree network disease models. Journal of Mathematical Biology. Citations: 197, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The threshold parameter for the SIS model is shown to be larger than that derived from percolation theory for a model with the same disease and network parameters, and consequently a disease may be able to invade with lower transmission than predicted by percolated theory."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5abe7943d59ee6498e46479f66114f82a0f69d1f"
+                },
+                {
+                    "title": "Epidemic threshold of the susceptible-infected-susceptible model on complex networks.",
+                    "abstract": "We demonstrate that the susceptible-infected-susceptible (SIS) model on complex networks can have an inactive Griffiths phase characterized by a slow relaxation dynamics. It contrasts with the mean-field theoretical prediction that the SIS model on complex networks is active at any nonzero infection rate. The dynamic fluctuation of infected nodes, ignored in the mean field approach, is responsible for the inactive phase. It is proposed that the question whether the epidemic threshold of the SIS model on complex networks is zero or not can be resolved by the percolation threshold in a model where nodes are occupied in degree-descending order. Our arguments are supported by the numerical studies on scale-free network models.",
+                    "citation": "Hyun Keun Lee, Pyoung-seop Shim, J. Noh (2012). Epidemic threshold of the susceptible-infected-susceptible model on complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 56, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is demonstrated that the susceptible-infected-susceptible (SIS) model on complex networks can have an inactive Griffiths phase characterized by a slow relaxation dynamics, and proposed that the question whether the epidemic threshold of the SIS model oncomplex networks is zero or not can be resolved by the percolation threshold in a model where nodes are occupied in degree-descending order."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/df95ddc7f27bf470f629872dfbfbbfdaac3788a3"
+                },
+                {
+                    "title": "Global Stability of Epidemic Models With Imperfect Vaccination and Quarantine on Scale-Free Networks",
+                    "abstract": "Public health services are constantly searching for ways to reduce the spread of infectious diseases, such as public vaccination of asymptomatic individuals, quarantine and treatment of symptomatic individuals. In this paper, we introduce epidemic models including variable population size, degree-related imperfect vaccination and quarantine on scale-free networks. More specifically, the models are formulated both on the population with and without permanent natural immunity to infection, which corresponds respectively to the susceptible-vaccinated-infected-quarantined-recovered (SVIQR) model and the susceptible-vaccinated-infected-quarantined (SVIQS) model. We develop different mathematical methods to study the dynamics of two models, including the basic reproduction number, the global stability of disease-free and endemic equilibria. For the SVIQR model, we show that the system exhibits a forward bifurcation. Meanwhile, the disease-free and unique endemic equilibria are shown to be globally asymptotically stable by constructing suitable Lyapunov functions. For the SVIQS model, conditions ensuring the occurrence of multiple endemic equilibria are derived. Under certain conditions, this system cannot undergo a backward bifurcation. The global asymptotical stability of disease-free equilibrium, and the persistence of the disease are proved. The endemic equilibrium is shown to be globally attractive by using monotone iterative technique. Finally, stochastic network simulations yield quantitative agreement with the deterministic mean-field approach.",
+                    "citation": "Shanshan Chen, M. Small, Xinchu Fu (2018). Global Stability of Epidemic Models With Imperfect Vaccination and Quarantine on Scale-Free Networks. IEEE Transactions on Network Science and Engineering. Citations: 42, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper introduces epidemic models including variable population size, degree-related imperfect vaccination and quarantine on scale-free networks, and develops different mathematical methods to study the dynamics of two models, including the basic reproduction number, the global stability of disease-free and endemic equilibria."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3f0ddef5876ccf755c290507a8828833218d4836"
+                },
+                {
+                    "title": "Predicting the epidemic threshold of the susceptible-infected-recovered model",
+                    "abstract": "Researchers have developed several theoretical methods for predicting epidemic thresholds, including the mean-field like (MFL) method, the quenched mean-field (QMF) method and the dynamical message passing (DMP) method. When these methods are applied to predict epidemic threshold they often produce differing results and their relative levels of accuracy are still unknown. We systematically analyze these two issues\u2014relationships among differing results and levels of accuracy\u2014by studying the susceptible-infected-recovered (SIR) model on uncorrelated configuration networks and a group of 56 real-world networks. In uncorrelated configuration networks the MFL and DMP methods yield identical predictions that are larger and more accurate than the prediction generated by the QMF method. As for the 56 real-world networks, the epidemic threshold obtained by the DMP method is more likely to reach the accurate epidemic threshold because it incorporates full network topology information and some dynamical correlations. We find that in most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods.",
+                    "citation": "Wei Wang, Wen Wang, Quan-Hui Liu, et al. (2015). Predicting the epidemic threshold of the susceptible-infected-recovered model. Scientific Reports. Citations: 63, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "In most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5b845e2b13a07b0623530ecfa43272682599fb26"
+                },
+                {
+                    "title": "Nonbacktracking Eigenvalues under Node Removal: X-Centrality and Targeted Immunization",
+                    "abstract": ". The non-backtracking matrix and its eigenvalues have many applications in network science and 5 graph mining, such as node and edge centrality, community detection, length spectrum theory, 6 graph distance, and epidemic and percolation thresholds. In network epidemiology, the reciprocal 7 of the largest eigenvalue of the non-backtracking matrix is a good approximation for the epidemic 8 threshold of certain network dynamics. In this work, we develop techniques that identify which 9 nodes have the largest impact on this leading eigenvalue. We do so by studying the behavior of 10 the spectrum of the non-backtracking matrix after a node is removed from the graph. From this 11 analysis we derive two new centrality measures: X -degree and X-non-backtracking centrality . We 12 perform extensive experimentation with targeted immunization strategies derived from these two 13 centrality measures. Our spectral analysis and centrality measures can be broadly applied, and will 14 be of interest to both theorists and practitioners alike. the perturbation of quadratic eigenvalue problems, with applications to the NB- eigenvalues of the stochastic block",
+                    "citation": "Leonardo A. B. T\u00f4rres, Kevin S. Chan, Hanghang Tong, et al. (2021). Nonbacktracking Eigenvalues under Node Removal: X-Centrality and Targeted Immunization. SIAM Journal on Mathematics of Data Science. Citations: 31, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work develops techniques that identify which nodes in the spectrum of the non-backtracking matrix have the largest impact on this leading eigenvalue, and derives two new centrality measures: X -degree and X-non- backtracking centrality."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/d05f3c44a8cc38b1095fc3cf999e9e02f56c3e42"
+                },
+                {
+                    "title": "Epidemic spreading in multiplex networks influenced by opinion exchanges on vaccination",
+                    "abstract": "Through years, the use of vaccines has always been a controversial issue. People in a society may have different opinions about how beneficial the vaccines are and as a consequence some of those individuals decide to vaccinate or not themselves and their relatives. This attitude in face of vaccines has clear consequences in the spread of diseases and their transformation in epidemics. Motivated by this scenario, we study, in a simultaneous way, the changes of opinions about vaccination together with the evolution of a disease. In our model we consider a multiplex network consisting of two layers. One of the layers corresponds to a social network where people share their opinions and influence others opinions. The social model that rules the dynamic is the M-model, which takes into account two different processes that occurs in a society: persuasion and compromise. This two processes are related through a parameter r, r < 1 describes a moderate and committed society, for r > 1 the society tends to have extremist opinions, while r = 1 represents a neutral society. This social network may be of real or virtual contacts. On the other hand, the second layer corresponds to a network of physical contacts where the disease spreading is described by the SIR-Model. In this model the individuals may be in one of the following four states: Susceptible (S), Infected(I), Recovered (R) or Vaccinated (V). A Susceptible individual can: i) get vaccinated, if his opinion in the other layer is totally in favor of the vaccine, ii) get infected, with probability \u03b2 if he is in contact with an infected neighbor. Those I individuals recover after a certain period tr = 6. Vaccinated individuals have an extremist positive opinion that does not change. We consider that the vaccine has a certain effectiveness \u03c9 and as a consequence vaccinated nodes can be infected with probability \u03b2(1 \u2212 \u03c9) if they are in contact with an infected neighbor. In this case, if the infection process is successful, the new infected individual changes his opinion from extremist positive to totally against the vaccine. We find that depending on the trend in the opinion of the society, which depends on r, different behaviors in the spread of the epidemic occurs. An epidemic threshold was found, in which below \u03b2* and above \u03c9* the diseases never becomes an epidemic, and it varies with the opinion parameter r.",
+                    "citation": "L. G. Alvarez-Zuzek, C. E. La Rocca, J. Iglesias, et al. (2017). Epidemic spreading in multiplex networks influenced by opinion exchanges on vaccination. PLoS ONE. Citations: 38, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An epidemic threshold was found, in which below \u03b2* and above \u03c9* the diseases never becomes an epidemic, and it varies with the opinion parameter r, which takes into account two different processes that occurs in a society: persuasion and compromise."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/10321e8af322a7af9545fe49dcb308beeb03ae56"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "targeted vaccination high degree nodes epidemic threshold analytic and simulation",
+            "papers": [
+                {
+                    "title": "A message-passing approach to epidemic tracing and mitigation with apps",
+                    "abstract": "With the hit of new pandemic threats, scientific frameworks are needed to understand the unfolding of the epidemic. At the mitigation stage of the epidemics in which several countries are now, the use of mobile apps that are able to trace contacts is of utmost importance in order to control new infected cases and contain further propagation. Here we present a theoretical approach using both percolation and message--passing techniques, to the role of contact tracing, in mitigating an epidemic wave. We show how the increase of the app adoption level raises the value of the epidemic threshold, which is eventually maximized when high-degree nodes are preferentially targeted. Analytical results are compared with extensive Monte Carlo simulations showing good agreement for both homogeneous and heterogeneous networks. These results are important to quantify the level of adoption needed for contact-tracing apps to be effective in mitigating an epidemic.",
+                    "citation": "G. Bianconi, Hanlin Sun, G. Rapisardi, et al. (2020). A message-passing approach to epidemic tracing and mitigation with apps. Physical Review Research. Citations: 40, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown how the increase of the app adoption level raises the value of the epidemic threshold, which is eventually maximized when high-degree nodes are preferentially targeted."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/80f7641ac152341fa2b3707e1e7fdaa65a07f2b5"
+                },
+                {
+                    "title": "Emergent spatiotemporal heterogeneity in networked epidemics: Turing instability driven by topology and mobility.",
+                    "abstract": "While pattern formation in reaction-diffusion systems has been widely explored for epidemics in continuous media, its manifestation in networked populations remains poorly understood. We propose a theoretical framework integrating metapopulation networks with susceptible-infected-susceptible epidemic dynamics, revealing how topology and mobility jointly drive emergent spatiotemporal heterogeneity through Turing instability. Linear stability analysis identifies critical thresholds where eigenvector localization in scale-free networks amplifies heterogeneity by destabilizing low-degree nodes. Numerical simulations demonstrate that an infection rate (\u03b2) governs epidemic magnitude and pattern geometry, while a network degree distribution shapes a hierarchical phenomenon. Analytical solutions quantify how hub nodes suppress local instability, yet enhance global transmission. This work establishes Turing mechanisms as fundamental to networked epidemic patterns, bridging network science with reaction-diffusion theory. Our findings offer predictive tools for identifying high-risk zones in real-world mobility systems and informing targeted intervention strategies.",
+                    "citation": "Xinyu Wang, Yao Fan, Deyu Cui, et al. (2025). Emergent spatiotemporal heterogeneity in networked epidemics: Turing instability driven by topology and mobility.. Chaos. Citations: 1, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work establishes Turing mechanisms as fundamental to networked epidemic patterns, bridging network science with reaction-diffusion theory, and offers predictive tools for identifying high-risk zones in real-world mobility systems and informing targeted intervention strategies."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ee2b5b6b8a333dfb6f64ccc71d7fcfac31265126"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

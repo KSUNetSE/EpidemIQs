@@ -1,0 +1,60 @@
+{
+    "results": [
+        {
+            "query": "vaccination thresholds SIR epidemic heterogeneous networks configuration model random networks targeted vaccination analytic simulation",
+            "papers": [
+                {
+                    "title": "Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network",
+                    "abstract": "In order to investigate the impact of two immunization strategies\u2014vaccination targeting susceptible individuals to reduce their infection rate and clinical medical interventions targeting infected individuals to enhance their recovery rate\u2014on the spread of infectious diseases in complex networks, this study proposes a bilinear SIR infectious disease model that considers bidirectional immunization. By analyzing the conditions for the existence of endemic equilibrium points, we derive the basic reproduction numbers and outbreak thresholds for both homogeneous and heterogeneous networks. The epidemic model is then reconstructed and extensively analyzed using continuous-time Markov chain (CTMC) methods. This analysis includes the investigation of transition probabilities, transition rate matrices, steady-state distributions, and the transition probability matrix based on the embedded chain. In numerical simulations, a notable concordance exists between the outcomes of CTMC and mean-field (MF) simulations, thereby substantiating the efficacy of the CTMC model. Moreover, the CTMC-based model adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains. We further analyze the relationship between the system\u2019s steady-state infection density and the immunization rate through MCS. The results suggest that the infection density decreases with an increase in the immunization rate among susceptible individuals. The current research results will enhance our understanding of infectious disease transmission patterns in real-world scenarios, providing valuable theoretical insights for the development of epidemic prevention and control strategies.",
+                    "citation": "Shixiang Han, Guanghui Yan, Huayan Pei, et al. (2024). Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network. Entropy. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A bilinear SIR infectious disease model that considers bidirectional immunization is proposed that adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/bd2a45cf7bbd303248aacba7ab9a8640f464781f"
+                },
+                {
+                    "title": "Qualitative behavior of a SIRS epidemic model with vaccination on heterogeneous networks",
+                    "abstract": null,
+                    "citation": "A. Assadouq, H. Mahjour, A. Settati (2020). Qualitative behavior of a SIRS epidemic model with vaccination on heterogeneous networks. Unknown Journal. Citations: 5, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper studies the dynamics of a SIRS epidemic model with varying population size and vaccination in a complex network and investigates the stability of the model according to the threshold R0, which means, if R0 is less than one, then the disease will die out."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c8c7c27603edce6c60b8ed0b7c99339171327a8b"
+                },
+                {
+                    "title": "Efficiency of prompt quarantine measures on a susceptible-infected-removed model in networks",
+                    "abstract": "This study focuses on investigating the manner in which a prompt quarantine measure suppresses epidemics in networks. A simple and ideal quarantine measure is considered in which an individual is detected with a probability immediately after it becomes infected and the detected one and its neighbors are promptly isolated. The efficiency of this quarantine in suppressing a susceptible-infected-removed (SIR) model is tested in random graphs and uncorrelated scale-free networks. Monte Carlo simulations are used to show that the prompt quarantine measure outperforms random and acquaintance preventive vaccination schemes in terms of reducing the number of infected individuals. The epidemic threshold for the SIR model is analytically derived under the quarantine measure, and the theoretical findings indicate that prompt executions of quarantines are highly effective in containing epidemics. Even if infected individuals are detected with a very low probability, the SIR model under a prompt quarantine measure has finite epidemic thresholds in fat-tailed scale-free networks in which an infected individual can always cause an outbreak of a finite relative size without any measure. The numerical simulations also demonstrate that the present quarantine measure is effective in suppressing epidemics in real networks.",
+                    "citation": "T. Hasegawa, K. Nemoto (2017). Efficiency of prompt quarantine measures on a susceptible-infected-removed model in networks. Physical Review E. Citations: 8, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The theoretical findings indicate that prompt executions of quarantines are highly effective in containing epidemics, and Monte Carlo simulations demonstrate that the present quarantine measure is effective in suppressing epidemics in real networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/4c37620216e8c24afc2aa03e39c90b34e77fb98a"
+                },
+                {
+                    "title": "The epidemic threshold theorem with social and contact heterogeneity",
+                    "abstract": null,
+                    "citation": "D. H. Palacio, J. Ospina, Rub\u00e9n Dar\u00edo G\u00f3mez Arias (2008). The epidemic threshold theorem with social and contact heterogeneity. Data Mining, Intrusion Detection, Information Assurance, and Data Networks Security. Citations: 11, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The threshold theorem of an epidemic SIR model was compared to describe the dynamic of transmission of diseases and changes of the basic reproductive rate and the implications of these results are examined around the threats to the global public health security."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f7ef2f7dbde65358c8b8679abaf036269e71b77c"
+                },
+                {
+                    "title": "The epidemic threshold theorem with social and contact heterogeneity",
+                    "abstract": null,
+                    "citation": "Doracelly Hincapi\u00e9- Palacio, Juan Fernando Ospina Giraldo, Rub\u00e9n G\u00f3mez Arias (2008). The epidemic threshold theorem with social and contact heterogeneity. SPIE Defense + Commercial Sensing. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": null
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3e7c17663bc5726843f7868c648d37b3629c4843"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

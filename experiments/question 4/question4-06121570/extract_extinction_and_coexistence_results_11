@@ -1,0 +1,31 @@
+
+# Threshold for extinction
+threshold = 0.01 * N  # 10 individuals
+
+# Function to calculate time to extinction (first time prevalence < threshold after peak)
+def time_to_extinction(prevalence, times):
+    # Find indices where prevalence < threshold
+    below_thresh_indices = np.where(prevalence < threshold)[0]
+    if len(below_thresh_indices) == 0:
+        return np.nan  # no extinction observed
+    # Return the first time it falls below threshold
+    return times[below_thresh_indices[0]]
+
+# Calculate time to extinction for I1 and I2
+extinction_time_I1 = time_to_extinction(data['I1'].values, data['time'].values)
+extinction_time_I2 = time_to_extinction(data['I2'].values, data['time'].values)
+
+# Dominance/coexistence indicator 1 if final prevalence > 10, else 0
+indicator_I1 = 1 if final_prevalence_I1 > threshold else 0
+indicator_I2 = 1 if final_prevalence_I2 > threshold else 0
+
+# Periods of coexistence where both prevalence > threshold
+coexistence_times = data[(data['I1'] > threshold) & (data['I2'] > threshold)]['time']
+
+# Calculate duration of coexistence as total time spans
+if len(coexistence_times) > 0:
+    coexistence_duration = coexistence_times.max() - coexistence_times.min()
+else:
+    coexistence_duration = 0
+
+extinction_time_I1, extinction_time_I2, indicator_I1, indicator_I2, coexistence_duration

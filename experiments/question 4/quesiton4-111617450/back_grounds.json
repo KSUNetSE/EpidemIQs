@@ -1,0 +1,20 @@
+{
+    "results": [
+        {
+            "query": "competitive SIS epidemics multiplex networks degree eigenvector overlap coexistence exclusion",
+            "papers": [
+                {
+                    "title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. arXiv.org. Citations: 23, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b0ab6807b3f3b31cc95c053afa59eee4faa0f673"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

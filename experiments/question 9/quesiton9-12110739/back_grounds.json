@@ -1,0 +1,68 @@
+{
+    "results": [
+        {
+            "query": "interbank financial contagion threshold model network topology diversification concentration systemic risk financial networks",
+            "papers": [
+                {
+                    "title": "NLP-Enhanced Detection of Wrong-Way Risk Contagion Patterns in Interbank Networks: A Deep Learning Approach",
+                    "abstract": "This paper presents a novel framework for detecting wrong-way risk (WWR) contagion patterns in interbank networks using natural language processing (NLP) enhanced deep learning approaches. Traditional WWR detection methods rely primarily on historical correlation patterns and structured financial data, limiting their effectiveness during crisis periods when correlations deviate from historical norms. The proposed methodology integrates sentiment analysis from unstructured financial texts with dynamic network topology modeling and temporal pattern recognition through a hybrid Graph Neural Network-LSTM architecture. Experimental evaluation on data spanning 2010-2023 across 87 global systemically important financial institutions demonstrates significant performance improvements over traditional copula-based models. The framework achieves an AUC-ROC of 0.891 compared to 0.734 for conventional approaches, with average early warning lead times extended by 11.5 days. Multi-head attention mechanisms successfully identify critical contagion pathways during historical crisis events with 82% accuracy. The federated learning implementation enables collaborative model training while preserving institutional data confidentiality. Performance analysis across different market volatility scenarios validates the model's robustness during stress periods when accurate risk assessment becomes simultaneously more valuable and challenging. The framework provides regulators and financial institutions with an explainable AI solution for enhancing systemic stability through early intervention at critical contagion chokepoints.",
+                    "citation": "Yutong Huang (2025). NLP-Enhanced Detection of Wrong-Way Risk Contagion Patterns in Interbank Networks: A Deep Learning Approach. Proceedings of the 2025 International Conference on Management Science and Computer Engineering. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The proposed methodology integrates sentiment analysis from unstructured financial texts with dynamic network topology modeling and temporal pattern recognition through a hybrid Graph Neural Network-LSTM architecture to provide regulators and financial institutions with an explainable AI solution for enhancing systemic stability through early intervention at critical contagion chokepoints."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8a8ee738731156da6cccccd60ee36adfc45e621f"
+                },
+                {
+                    "title": "Systemic Risk Management via Maximum Independent Set in Extremal Dependence Networks",
+                    "abstract": "The failure of key financial institutions may accelerate risk contagion due to their interconnections within the system. In this paper, we propose a robust portfolio strategy to mitigate systemic risks during extreme events. We use the stock returns of key financial institutions as an indicator of their performance, apply extreme value theory to assess the extremal dependence among stocks of financial institutions, and construct a network model based on a threshold approach that captures extremal dependence. Our analysis reveals different dependence structures in the Chinese and U.S. financial systems. By applying the maximum independent set (MIS) from graph theory, we identify a subset of institutions with minimal extremal dependence, facilitating the construction of diversified portfolios resilient to risk contagion. We also compare the performance of our proposed portfolios with that of the market portfolios in the two economies.",
+                    "citation": "Qian Hui, Tiandong Wang (2025). Systemic Risk Management via Maximum Independent Set in Extremal Dependence Networks. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A robust portfolio strategy to mitigate systemic risks during extreme events is proposed, using the stock returns of key financial institutions as an indicator of their performance, applying extreme value theory to assess the extremal dependence among stocks of financial institutions, and constructing a network model based on a threshold approach that captures extremal dependence."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/0c6c507321a06b5b214a619862df835a7604930c"
+                },
+                {
+                    "title": "Risk Contagion Mechanism and Control Strategies in Supply Chain Finance Using SEIR Epidemic Model from the Perspective of Commercial Banks",
+                    "abstract": "Over the past decade, the rapid growth of supply chain finance (SCF) in developing countries has made it a key profit driver for commercial banks and financial firms. In parallel, financial risk control in SCF has attracted more and more attention from financial service providers and has gained research momentum in recent years. This study analyzes the contagion mechanism of SCF-related risks faced by commercial banks through examining SCF network topology. First, this study uses complex network theory to integrate an SEIR epidemic model (Susceptible\u2013Exposed\u2013Infectious\u2013Recovered) into financial risk management. The model simulates how financial risks spread in supply chain finance (SCF) under banks\u2019 strategic, tactical, or operational interventions. Then, some key points for financial risk control from the perspective of commercial banks are obtained by investigating the risk stability threshold of the financial network of SCF and its stability. Numerical simulations show that effective interventions\u2014such as strengthening loan guarantees to reduce the number of exposed firms\u2014significantly curb risk transmission by restricting its scope and shortening its duration. This research provides commercial banks with a quantitative framework to analyze risk propagation and actionable strategies to optimize SCF risk control, enhancing financial system stability and offering practical guidance for preventing systemic risks.",
+                    "citation": "Xiaojing Liu, Jie Gao, Mingfeng He (2025). Risk Contagion Mechanism and Control Strategies in Supply Chain Finance Using SEIR Epidemic Model from the Perspective of Commercial Banks. Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6a0f9611b155e59af5823a06c8fcc765cdecdb8f"
+                },
+                {
+                    "title": "RETRACTED ARTICLE: Unraveling Systemic Risk Transmission: An Empirical Exploration of Network Dynamics and Market Liquidity in the Financial Sector",
+                    "abstract": null,
+                    "citation": "Xin Liu (2024). RETRACTED ARTICLE: Unraveling Systemic Risk Transmission: An Empirical Exploration of Network Dynamics and Market Liquidity in the Financial Sector. Journal of the Knowledge Economy. Citations: 9, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/317a8d85d175d7c5857d9d9b1d7285c3b9cd7b0c"
+                },
+                {
+                    "title": "Contagion Risks and Systemic Stability in Financial Networks",
+                    "abstract": "An agent-based model is proposed, constructing an evolutionary banking system, where interbank loans and investment strategies are, respectively, determined by liquidity shortage and utility maximization. The causes of systemic risk are then explored based on the evolutionary banking system, which is calibrated by a sample from China. The regulatory interventions indicate the positive effects of increased investment assets, while the negative but inappreciable effects of increased interbank counterparties on contagion risks decrease. This observation hints at the possibility of promoting systemic stability by incentivizing more diversifications in investment assets instead of interbank counterparties. The results also demonstrate the advantages of prudential liquidity requirements, interbank liquidity facilities, and monetary policies from the central bank in promoting banking system stability.",
+                    "citation": "Jingqian Tian, Chao Wang, Xiaoxing Liu, et al. (2021). Contagion Risks and Systemic Stability in Financial Networks. Mathematical Problems in Engineering. Citations: 1, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/baddeee307051606684ab9f9725f47ccc87a93f9"
+                },
+                {
+                    "title": "Systemic liquidity contagion in the European interbank market",
+                    "abstract": "Systemic liquidity risk, defined by the International Monetary Fund as \u201cthe risk of simultaneous liquidity difficulties at multiple financial institutions,\u201d is a key topic in financial stability studies and macroprudential policy-making. In this context, the complex web of interconnections of the interbank market plays the crucial role of allowing funding liquidity shortages to propagate between financial institutions. Here, we introduce a simple yet effective model of the interbank market in which liquidity shortages propagate through an epidemic-like contagion mechanism on the network of interbank loans. The model is defined by using aggregate balance sheet information of European banks, and it exploits country and bank-specific risk features to account for the heterogeneity of financial institutions. Moreover, in order to obtain the European-wide topology of the interbank network, we define a block reconstruction method based on the exchange flows between the various countries. We show that the proposed contagion model is able to estimate systemic liquidity risk across different years and countries. Results suggest that our effective contagion approach can be successfully used as a viable alternative to more realistic but complicated models, which not only require more specific balance sheet variables with high time resolution but also need assumptions on how banks respond to liquidity shocks.",
+                    "citation": "Valentina Macchiati, Giuseppe Brandi, T. Di Matteo, et al. (2019). Systemic liquidity contagion in the European interbank market. Journal of Economic Interaction and Coordination. Citations: 22, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/91c2b240f61cf00a7a1a142cc379805ca85363c1"
+                },
+                {
+                    "title": "A Dynamic Default Contagion Model: From Eisenberg-Noe to the Mean Field",
+                    "abstract": "In this work we introduce a model of default contagion that combines the approaches of Eisenberg-Noe interbank networks and dynamic mean field interactions. The proposed contagion mechanism provides an endogenous rule for early defaults in a network of financial institutions. The main result is to demonstrate a mean field interaction that can be found as the limit of the finite bank system generated from a finite Eisenberg-Noe style network. In this way, we connect two previously disparate frameworks for systemic risk, and in turn we provide a bridge for exploiting recent advances in mean field analysis when modelling systemic risk. The mean field limit is shown to be well-posed and is identified as a certain conditional McKean-Vlasov type problem that respects the original network topology under suitable assumptions.",
+                    "citation": "Zachary Feinstein, Andreas S\u00f8jmark (2019). A Dynamic Default Contagion Model: From Eisenberg-Noe to the Mean Field. Unknown Journal. Citations: 11, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model of default contagion that combines the approaches of Eisenberg-Noe interbank networks and dynamic mean field interactions is introduced and the mean field limit is shown to be well-posed and is identified as a certain conditional McKean-Vlasov type problem that respects the original network topology under suitable assumptions."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/208d3d275b8e7e6f847844be28c67639e653371b"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

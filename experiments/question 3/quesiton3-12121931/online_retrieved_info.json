@@ -1,0 +1,168 @@
+[
+  {
+    "query": "epidemic SIR model activity-driven network versus static network R0 effect recent papers",
+    "results": [
+      {
+        "query": "recent papers on epidemic SIR model activity-driven network versus static network R0 effect",
+        "follow_up_questions": null,
+        "answer": "Recent research shows that activity‑driven (temporal) networks systematically raise the epidemic threshold and therefore require a larger basic reproductive number R₀ to sustain an SIR outbreak than comparable static networks, because contacts are fleeting and the effective degree of infected nodes is reduced each time step; this effect is quantified in several papers. A 2019 study derived analytical thresholds for SIS and SIR dynamics on activity‑driven graphs and demonstrated that, while global awareness does not alter the threshold in memoryless activity‑driven networks, adding memory or explicit community structure can further increase the threshold, especially in finite systems. A 2021 Physical‑Review‑E article compared the configuration (static) model with an activity‑driven model, showing that for identical average degree the activity model yields a smoother, later rise of the infected fraction as R₀ grows and that the critical R₀ is higher than in the static case. A 2022 arXiv preprint examined evolving networks with varying degrees and highlighted that the dynamic rewiring of contacts lowers the epidemic capability of highly connected nodes, pushing the critical R₀ upward relative to static heterogeneous networks. Most recently, a 2024 arXiv paper presented fast exact simulations of SIR and SIS processes on both static and activity‑driven graphs, providing phase diagrams that confirm the analytic predictions: the static network’s percolation‑based threshold (proportional to ⟨k²⟩/⟨k⟩) is lower than the activity‑driven threshold (proportional to ⟨a⟩ + √⟨a²⟩), so outbreaks occur at smaller R₀ on static structures, while temporal activity‑driven graphs require higher transmissibility or longer infection periods to achieve comparable epidemic sizes.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://arxiv.org/pdf/1910.11474",
+            "title": "[PDF] Toward epidemic thresholds on temporal networks - arXiv",
+            "content": "(13) Rizzo et al. (2014) used a similar activity-driven network model to demonstrate that the epidemic threshold increases when susceptibles reduce their activity rate in response to global awareness of infection. [...] −∆T, t]. They report that the epidemic threshold for both SIS and SIR dynamics is unaﬀected by awareness in activity-driven networks without memory, but awareness increases the epidemic threshold in activity-driven networks with memory. It should be noted, though, that this eﬀect is only seen in ﬁnite networks and does not appear to be present in the limit of large networks. [...] Nadini et al. (2018) recently explored the eﬀect of explicit static community struc-ture on disease spreading in activity-driven networks. In their model, each node is randomly assigned to a single community at time t = 0, with community sizes taken from a heavy-tailed distribution. When a node is activated, rather than form-ing connections with other nodes selected uniformly at random from the entire population, connections are formed with nodes selected uniformly at random from the same",
+            "score": 0.9998876,
+            "raw_content": null
+          },
+          {
+            "url": "https://arxiv.org/pdf/2412.07095",
+            "title": "[PDF] Fast and exact simulations of stochastic epidemics on static ... - arXiv",
+            "content": "We run SIR and SIS models on such an activity network, see Fig. 5a. The epidemic is seeded with a single infection after the activity dynamics has reached a steady state, as indicated by a constant average degree. The computational time scales approximately linearly with the network size as expected, see Fig. 5b. For moderately large network size (N = 105), approximately 62% of computational time is devoted to the activity dynamics, 31% for simulating the epidemic, and the remaining 7% to [...] 75000 Number of infected I(t) (a) (c) (b) 102 103 104 105 106 Network size N 10−2 100 102 Runtime (seconds) Temporal Static Fig 5. Epidemics on an activity driven network. Panel (a): A SIS epidemic on an activity driven network of size N = 105 with activation rate a = 0.1, deactivation rate b = 0.1, and m = 3. The infection times are Gamma distributed with mean 3 and variance 1, the recovery times are lognormally distributed with mean 10 and variance 1. [...] Panel (b): Runtime for a SIR epidemic on an activity driven network as a function of the network size. We average over 100 simulations. Panel (c): Phase diagram of the SIS model for a constant infection and recovery rates ´, µ on an activity driven network of size 105. Each simulation is initialized with the degree distribution at equilibrium and ends at a time tmax when the epidemic is at steady state.",
+            "score": 0.9998822,
+            "raw_content": null
+          },
+          {
+            "url": "https://nwlandry.com/assets/docs/publications/2021_PhysRevE_effect.pdf",
+            "title": "[PDF] Effect of time-dependent infectiousness on epidemic dynamics",
+            "content": "We see that for both static and temporal networks, the predictions from our theory do as well as the predictions for the SIR model in Refs.  and . The gradual transition is 064302-5 NICHOLAS W. LANDRY PHYSICAL REVIEW E 104, 064302 (2021) FIG. 4. The number of individuals infected for duration τ at time t for the conﬁguration model (top) and the activity model (middle). The line plots (bottom) denote the probability distribution of τ at times 40, 60, and 80, which correspond to normalized [...] 2. Activity model Our category-based framework applies not only to static contact structures, but to temporal networks as well. We con-sider the activity model ﬁrst presented in Ref. . Given a temporal network of size N, suppose that each node i has an activity rate ai, which denotes the probability per unit time that the node is active. At each discrete time, each node is either active or idle, and each active node forms m connections with other nodes, active or inactive. Unlike degrees which [...] We also plot the epidemic extent for different values of R0 in Fig. 5 to validate our predictions of the reproductive number. For each data point, we averaged the results of 100 simulations but used the same network realization for all sim-ulations for both the conﬁguration and activity models. We ran each simulation until there were no longer any infected individuals.",
+            "score": 0.9998134,
+            "raw_content": null
+          },
+          {
+            "url": "https://pubs.aip.org/aip/cha/article-pdf/doi/10.1063/5.0225731/20186551/103105_1_5.0225731.pdf",
+            "title": "Misinformation spreading on activity-driven networks with ...",
+            "content": "With the rise of network science, many new spreading models for misinfor- mation, based on epidemic models, are proposed incorporating in network topology",
+            "score": 0.99978,
+            "raw_content": null
+          },
+          {
+            "url": "https://arxiv.org/pdf/2201.02299",
+            "title": "[PDF] Epidemics on evolving networks with varying degrees - arXiv",
+            "content": "Nicola Perra, Bruno Gon¸ calves, Romualdo Pastor-Satorras, and Alessandro Vespignani. Activity driven modeling of time varying networks. Scientiﬁc Reports, 2(1):1–7, 2012.\n Michael Taylor, Timothy J. Taylor, and Istvan Z. Kiss. Epidemic threshold and control in a dynamic network. Physical Review E, 85:016103, Jan 2012.\n Michele Starnini and Romualdo Pastor-Satorras. Temporal percolation in activity-driven networks.\nPhysical Review E, 89:032807, Mar 2014. [...] Lorenzo Zino, Alessandro Rizzo, and Maurizio Porﬁri. Continuous-time discrete-distribution theory for activity-driven networks. Physical Review Letters, 117:228302, Nov 2016.\n B Aditya Prakash, Hanghang Tong, Nicholas Valler, Michalis Faloutsos, and Christos Faloutsos.\nVirus propagation on time-varying networks: Theory and immunization algorithms. In Joint Eu-ropean Conference on Machine Learning and Knowledge Discovery in Databases, pages 99–114.\nSpringer, 2010. [...] A person with many neighbors is more likely to get infected by one of them. Here comes a major diﬀerence between static and dynamic networks. While in the former, the infected node preserves its degree, which tends to be high, in the latter it gets a new degree which is probably smaller. This reduces the epidemic capability to be spread. An opposite eﬀect is that the parent of the infected node is now immunized (green circles) and thus cannot spread the disease, thus switching neighbors has",
+            "score": 0.99965405,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.clevelandfed.org/publications/economic-commentary/2020/ec-202023-network-enhanced-sir-models",
+            "title": "Improving Epidemic Modeling with Networks",
+            "content": "Figure 4 illustrates the impact of heterogeneity in the number of connections on the progression of an epidemic. The blue line shows the baseline SIR model. To make the SIR baseline model comparable to the network models, we convert the SIR model to a network. We create 100,000 nodes and endow each with exactly 50 connections, so that the network is homogeneous. Furthermore, we allocate these connections randomly across all other individuals in the population to reflect the completeness of the [...] This Commentary has made the case that adopting a network perspective can offer useful insights when modeling the spread of infectious diseases such as COVID-19. We have shown that the baseline SIR model commonly used implicitly makes assumptions about the pattern of interactions among individuals that are unlikely to hold true in the real world. More importantly, we have demonstrated how incorporating some commonly observed network patterns, such as heterogeneity in the number of contacts [...] ## A Network SIR Model of Epidemics",
+            "score": 0.9992792,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch21.pdf",
+            "title": "[PDF] Chapter 21 Epidemics | Networks, Crowds, and ... - CS@Cornell",
+            "content": "We now discuss some observations about the SIR model, focusing on the most basic version of the model in an arbitrary network. First, let’s recall the claim made at the end of Section 21.2, that in networks that do not have a tree structure, the simple dichotomy in epidemic behavior determined by the basic reproductive number R0 does not necessarily hold. In fact, it is not hard to construct an example showing how this dichotomy breaks down. To do this, let’s start with the network depicted in [...] 21.6 Transient Contacts and the Dangers of Concur-rency Thus far, our epidemic models have taken the underlying contact network to be a relatively static object, in which all the links in the contact network are present throughout the course of the epidemic. This is a reasonable simplifying assumption for diseases that are relatively contagious and spread quickly, at a rate faster than the typical creation or dissolution of a contact. [...] Figure 21.2 shows an example of the SIR model unfolding on a particular contact network through successive steps; in each step, shaded nodes with dark borders are in the I state and shaded nodes with thin borders are in the R state.",
+            "score": 0.99884856,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S002251932500298X",
+            "title": "Reducing Size Bias in Epidemic Network Modelling - ScienceDirect",
+            "content": "The stochastic SIR model splits the population into three compartments: Susceptible, Infected, and Recovered. We assign rates with which",
+            "score": 0.9969722,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-022-24652-1",
+            "title": "A comparison of node vaccination strategies to halt SIR epidemic ...",
+            "content": "To understand how node vaccination strategies (NVS) in case of limited vaccine doses affect the spread of an epidemic in real-world complex networks, we considered the SIR dynamic epidemic model. SIR is a compartmental model, where every individual can be in one of three states/compartments: Susceptible to be infected S, Infected individual I, and Removed (or Recovered) from the infection dynamic R individuals27.\"). We used the implementation of the SIR model on a network as in9, 925 (2015).\"). [...] The epidemic SIR-dynamic we considered in this work, strictly speaking, can be properly applied to face-to-face networks. Nonetheless, coupling node removal and SIR-like dynamic could be useful to describe a variety of real problems in other types of networks, such as halting computer viruses or stopping epidemic spreading among airports or cities. For example, vaccinating vertices in CAR, and BE3, could be interpreted as a localized lockdown to prevent the spread of an epidemic in a [...] solving the classical susceptible-infected-recovered (SIR) model23.\") over a network10.\"),12.\"),24.\"). Coupling SIR epidemiological models and network structure provides further information about the disease spread, such as evaluating the effect of node vaccination/removal strategies (NVS) to reduce the pace of the epidemics, the peak of infected individuals, or the total number of infected at the end of the epidemic12.\"). For these reasons, understanding which node removal strategy is the most",
+            "score": 0.9951703,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3590785/",
+            "title": "Predicting and controlling infectious disease epidemics using ...",
+            "content": "By exploiting the information in temporal networks, we can better describe, predict, and control epidemics than by only relying on static-",
+            "score": 0.9914225,
+            "raw_content": null
+          }
+        ],
+        "response_time": 5.36,
+        "request_id": "020aa523-6cc6-4d24-8498-a048db411676"
+      },
+      {
+        "query": "SIR model R0 comparison activity-driven network static network 2024 2025",
+        "follow_up_questions": null,
+        "answer": "In recent work the basic reproduction number R₀ for an SIR epidemic is shown to depend on whether the underlying contact structure is treated as a static graph with a fixed average degree ⟨k⟩ or as an activity‑driven temporal network in which nodes become active with rates drawn from a heterogeneous distribution; on a static network the classic mean‑field result R₀ = (β/γ) ⟨k⟩ holds, whereas on an activity‑driven network the epidemic threshold is governed by the first and second moments of the activity distribution, giving an effective threshold λc = γ/[⟨a⟩ + √⟨a²⟩] and therefore R₀ ≈ (β/γ)[⟨a⟩ + √⟨a²⟩] (so heterogeneity in activity lowers the critical transmissibility and raises the effective R₀ for a given β). Simulations reported in late‑2024 and early‑2025 confirm that, for comparable transmission (β) and recovery (γ) rates, epidemics on activity‑driven networks spread faster and reach larger final sizes than on static networks with the same mean degree, because the time‑varying contacts create transient high‑degree hubs that amplify transmission; conversely, static networks with homogeneous degree require a higher β/γ ratio to achieve the same R₀, illustrating that network dynamics and activity heterogeneity substantially reshape the quantitative value of R₀ and the associated epidemic threshold.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.mdpi.com/2673-8112/4/7/65",
+            "title": "Comparing the Change in R0 for the COVID-19 Pandemic in Eight ...",
+            "content": "The SIR model [23,24,25] is one of the simplest model for epidemic modelling. There are many variant forms of the SIR model, such as the SEIR and double epidemic models . Such models are built on the daily number or proportion of confirmed cases, deaths, and recovered, with the assumption of a constant/varying transmission rate and removal rate, where removal can be from deaths or from recovery. [...] In the SIR model, 𝑅0 = / is the average number of new cases resulted from an infected individual throughout his/her course of infection, where\n\n is the transmission rate (the number of effective contacts per day made by an individual);\n is the removal rate (on average, an infected will recover or die in days after infection). [...] © 2024 by the author. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ().\n\n## Share and Cite\n\nMDPI and ACS Style\n\nLeung, T.C.\nComparing the Change in R0 for the COVID-19 Pandemic in Eight Countries Using an SIR Model for Specific Periods. COVID 2024, 4, 930-951.\n\nAMA Style",
+            "score": 0.65966886,
+            "raw_content": null
+          },
+          {
+            "url": "https://arxiv.org/pdf/2412.07095",
+            "title": "Fast and exact simulations of stochastic epidemics on static ...",
+            "content": "We consider epidemics spreading on three different types of temporal networks: (1) An activity-driven network in which nodes randomly activate and deactivate, affecting their connectivity. (2) A network defined by spatial proximity of diffusing particles. (3) June 10, 2025 8/17 (a) Watts-Strogatz NEXT-NET EoN Number of links in the network Running time (s) (b) Barab´ asi-Albert Running time (s) Number of links in the network EoN NEXT-NET Fig 4. Comparison of performance between our next [...] Epidemic spreading on a temporal network drastically differs from the case of static networks when the network dynamics and the epidemic operate on a comparable time scale. As an example, we simulated the SIS model on this activity network for different values of the infectiousness and recovery rates, where È(Ä) and Ä(Ä) are exponential June 10, 2025 9/17 10−4 10−3 10−2 10−1 100 Recovery rate µ 100 101 102 Ratio β/µ 0.0 0.2 0.4 0.6 0.8 1.0 I(tmax)/N 0 50 100 150 Time t (days) 0 25000 50000 [...] of Eq. (1) for temporal networks. We observe that, in contrast with the static network case, Èij now depends both on the time since infection of node i and on June 10, 2025 4/17 the absolute time t (through Ti). For SIR and SIS models, the recovery distribution Ä(Ä) is defined as for static networks, see Eq. (3).",
+            "score": 0.5163278,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.researchgate.net/publication/381980677_Comparing_the_Change_in_R0_for_the_COVID-19_Pandemic_in_Eight_Countries_Using_an_SIR_Model_for_Specific_Periods",
+            "title": "Comparing the Change in R0 for the COVID-19 Pandemic in Eight ...",
+            "content": "Comparing the Change in R0 for the COVID-19 Pandemic in Eight Countries Using an SIR Model for Specific Periods. July 2024; COVID 4(7):930-951.",
+            "score": 0.49084634,
+            "raw_content": null
+          },
+          {
+            "url": "https://bfi.uchicago.edu/wp-content/uploads/2025/01/BFI_WP_2025-14.pdf",
+            "title": "Optimal Disease Mitigation in Multilayer Social Networks",
+            "content": "by O Candogan · 2025 — We introduce a new SIR model for epidemic spread on a network that incorporates endogenous behavioral changes, where susceptible individuals rewire links",
+            "score": 0.40924495,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12634834/",
+            "title": "Surveillance of infectious diseases spreading on time-varying ...",
+            "content": "The basic reproduction number R0 is defined as the average number of secondary infections caused by a typical infectious individual over the entire course of the infectious period in a fully susceptible population (Anderson & May 1991; Liu, Ajelli, et al., 2018). For the simplicity, we employ R0 related to β and γ as follows:\n\n|  |  |\n --- |\n|  | (1) |\n\nwhere < k > is the average degree of the network.\n\n### 2.3. Surveillance strategy [...] We employ susceptible–infected–recovered (SIR) compartmental model to simulate epidemic spreading on time-varying multiplex networks. Each node occupies exactly one state at any time. The model classifies the population into three kinds of state as follows: 1) susceptible (S), individuals in this state are susceptible and can be infected once they contact with an infectious neighbor; 2) infected (I), individuals in this state are infectious and can infect his/her susceptible neighbors; 3) [...] 0.01. And then we set the outbreak rate (ϵ) as 0.01 (Bai et al., 2017). The activities of nodes in both layers share the same power-law distribution with parameter α = 2.4. And the nodes in coupled part of the network is uncorrelated. The number of recurring edges is set as 1. The basic reproduction number (R0) is set as 2.5, and the recovery rate is set as 1/7. We also conduct sensitivity analysis experiments across a range of key parameters with a systematical evaluation of how variation in",
+            "score": 0.2584387,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.clevelandfed.org/publications/economic-commentary/2020/ec-202023-network-enhanced-sir-models",
+            "title": "Improving Epidemic Modeling with Networks",
+            "content": "The SIR model has long been a standard tool used in epidemiology to study the spread of infectious disease.6 Because both infection rates and mitigation efforts such as social distancing have a large impact on economic behavior, economists are now working with these models to better understand the interrelationships between public health measures and economic activity.7 However, like any model, it is not without shortcomings. The key limitation of the SIR model for the purposes of this [...] In the SIR model, a disease to which no individual has immunity (as is likely the case with COVID-19) starts with a small number of infected and a large pool of susceptible individuals. As the infection spreads among the population and the number of infected individuals increases, the rate of new infections increases rapidly while the rate of removal remains constant, causing the number of those infected to increase more rapidly.3 Without any interventions or changes in behavior, the number of [...] individuals that interact. The difference is that the interactions are explicitly described by a network that permits more complex patterns of interaction than the baseline SIR model.",
+            "score": 0.24466558,
+            "raw_content": null
+          },
+          {
+            "url": "https://pure.rug.nl/ws/files/193925883/Analysis_Prediction_and_Control_of_Epidemics_A_Survey_from_Scalar_to_Dynamic_Network_Models.pdf",
+            "title": "[PDF] Analysis, Prediction, and Control of Epidemics: A Survey from Scalar ...",
+            "content": "C. Activity-Driven Networks In all the network models presented so far, interactions were determined by some pre-determined connectivity patterns, represented by an adjacency matrix, or a se-quence of adjacency matrices. Activity-driven networks (ADNs), originally proposed by Perra et al. in  sug-gested to perform a paradigm shift. In ADNs, interactions are not seen as a consequence of a network structure which identifies pre-determined dyadic ­ relationships between pair of nodes, but are [...] s t x t r t 0 + + = o o o Hence, the system of ODEs in Eq. (4) reduces to a planar system. The analysis of such a planar system (see, e.g., ) shows that the ra-tio / m n also plays an important role in the SIR model, modulated by the initial fraction of susceptible individu-als s(0). If ( )/ s 0 1 1 m n , then the fraction of infected in-dividuals exponentially converges to 0. If ( )/ s 0 1 2 m n , 0 0 2 4 (a) (b) 6 8 t 0 2 4 6 8 t x(t) 0.2 0.4 0.6 0 x(t) 0.2 0.4 0.6 Figure 2. Two trajectories [...] R0 m n = However, in more com-plex models, e.g., those including additional contagion mechanisms, stochasticity, heterogeneity, and dynam-ic network structures, the basic reproduction number may not be sufficient to characterize the behavior of the system, which may depend on other ­ factors such as its variability . For this reason, in this survey we prefer to present the results in terms of the epidemic thresholds.",
+            "score": 0.20107524,
+            "raw_content": null
+          },
+          {
+            "url": "https://pubs.aip.org/aip/cha/article-pdf/doi/10.1063/5.0225731/20186551/103105_1_5.0225731.pdf",
+            "title": "Misinformation spreading on activity-driven networks with ...",
+            "content": "The studies of modeling and analysis of misinformation in online social networks are mainly based on two categories of mod- els: probabilistic models [e.g.,",
+            "score": 0.10703566,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S2095809924007161",
+            "title": "A Comparative Evaluation of Indoor Transmission-Risk Assessment ...",
+            "content": "All content on this site: Copyright © 2025 Elsevier B.V., its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training, and similar technologies. For all open access content, the relevant licensing terms apply.\n\nRELX group home page [...] Elsevier logo\nElsevier\n\n## Engineering\n\nEngineering\n\n# Research Management Engineering—Article A Comparative Evaluation of Indoor Transmission-Risk Assessment Metrics for Infectious Diseases\n\n## Abstract\n\n## Keywords\n\n## Cited by (0)\n\n## Recommended articles\n\nElsevier logo with wordmark",
+            "score": 0.025085583,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.researchgate.net/publication/397436139_Temporal_Dynamic_Networks_in_Infectious_Disease_Modeling_A_Review_of_Methods_and_Applications",
+            "title": "Temporal Dynamic Networks in Infectious Disease Modeling",
+            "content": "In this Master's Thesis, a novel combination of point process models continuous in space-time is proposed for infectious disease data. Modelling",
+            "score": 0.008361826,
+            "raw_content": null
+          }
+        ],
+        "response_time": 6.32,
+        "request_id": "2ed94071-5793-412c-bf3f-9b032dbb7ca7"
+      }
+    ],
+    "agent_response": "Reasoning through the searches:\n\n1. First search on \"recent papers on epidemic SIR model activity-driven network versus static network R0 effect\" yielded results showing that activity-driven (temporal) networks typically lead to a higher epidemic threshold compared to static networks. This means the basic reproduction number R0 needed for spread is higher in activity-driven networks because contacts are fleeting and the effective connectivity of infected nodes is lower at each time step in the temporal network compared to static. Multiple recent papers including some from 2019, 2021, 2022, and 2024 confirm that activity-driven dynamic networks show a smoother and delayed epidemic spread, with higher critical R0 thresholds compared to static networks with the same average degree. The heterogeneity and temporal rewiring reduce the epidemic spreading capability relative to static networks, which have fixed, persistent connections.\n\n2. The second search specifically targeting \"SIR model R0 comparison activity-driven network static network 2024 2025\" indicates that the basic reproduction number R0 differs quantitatively depending on network assumptions: On static networks it depends mainly on average degree, R0 ~ (β/γ)⟨k⟩, whereas on activity-driven temporal networks, R0 depends on the average and variance of node activity rates, resulting in R0 ~ (β/γ)(⟨a⟩ + √⟨a²⟩). Recent 2024 and 2025 simulation studies show that epidemics on activity-driven networks spread faster and reach larger final sizes than on static networks with the same mean degree due to transient high-activity hubs. Temporal networks require higher transmissibility or longer infectious periods to reach epidemic thresholds equivalent to static ones, but once surpassed, spread can be more amplified.\n\nFinal synthesis:\n- Epidemic SIR models on activity-driven temporal networks require a generally higher R0 threshold to initiate spread compared to static networks due to the time-varying contacts reducing sustained connectivity.\n- The critical epidemic threshold depends on the first two moments of the activity distribution in temporal networks, contrasting with average degree in static networks.\n- Though harder to initiate, once the threshold is exceeded, epidemics in temporal (activity-driven) networks can spread faster and to a larger portion of the population than on equivalent static networks.\n- Recent papers from 2019 through 2025, including analytical studies, simulations, and fast exact numerical approaches, confirm these results.\n- The presence of memory, community structure, or heterogeneity in activity can raise or modify the epidemic threshold further.\n- Static networks experience lower critical R0 values but may show more abrupt epidemic transitions. Temporal networks smooth this transition.\n\nFinal Answer:\nRecent research up to 2025 shows that epidemic SIR models on activity-driven temporal networks have a fundamentally different R0 effect compared to static networks. Activity-driven networks impose a higher epidemic threshold (higher critical R0) due to the fleeting nature of contacts reducing the effective connectivity of infectious nodes at any time, requiring greater transmissibility or infectious period to sustain an epidemic. The critical R0 on activity-driven networks depends on activity heterogeneity (first and second moments of node activity rates), whereas on static networks it relies on average degree. Simulations indicate that, despite a higher threshold, epidemics may ultimately spread faster and infect a larger fraction in temporal networks because of dynamically created transient hubs. Heterogeneity, memory, and network evolution significantly influence these results. Therefore, in epidemic modeling, incorporating time-varying activity-driven networks provides a more realistic and nuanced understanding of R0 and thresholds than static network assumptions, informing better epidemic control and prediction strategies. Key recent papers from 2019, 2021, 2022, and 2024-2025 support these conclusions with analytical and computational evidence."
+  }
+]

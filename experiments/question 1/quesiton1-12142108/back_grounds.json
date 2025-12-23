@@ -1,0 +1,30 @@
+{
+    "results": [
+        {
+            "query": "SEIR epidemic network heterogeneity scale-free Erd\u0151s-R\u00e9nyi comparative analysis epidemic threshold final epidemic size stochastic simulations",
+            "papers": [
+                {
+                    "title": "Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds",
+                    "abstract": "In the real world, individuals may become infected with an epidemic after multiple exposures to the corresponding virus. This occurs because each individual possesses certain physical defenses and immune capabilities at the time of exposure to the virus. Repeated exposure to the virus can lead to a decline in immune competence, consequently resulting in epidemic infection. The susceptibility of individuals to an epidemic is heterogeneous. We model this characteristic as the individual heterogeneous infection threshold. Then, we propose an individual logarithmic-like infection threshold function on a single-layer complex network to reflect the heterogeneity of individual susceptibility on infecting the virus and the associated epidemic. Next, we introduce a partition theory based on the edge and logarithmic-like infection threshold function to qualitatively analyze the mechanisms of virus infection and epidemic spreading. Finally, simulation results on Erd\u0151\u2013R\u00e9nyi (ER) and scale-free (SF) networks indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak. With an increase in the epidemic infection outbreak threshold, the increasing pattern of the final epidemic infection scale transitions from a second-order continuous phase transition to a first-order discontinuous phase transition. Additionally, degree distribution heterogeneity also significantly impacts the outbreak and spread of diseases. These findings provide valuable guidance for the formulation of immunization strategies.",
+                    "citation": "Feng Li (2024). Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds. Frontiers of Physics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulation results indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/839bfdeb7d9781f8d50d1305f1c6f2e59faf5dc2"
+                },
+                {
+                    "title": "Spread of information and infection on finite random networks.",
+                    "abstract": null,
+                    "citation": "V. Isham, J. Kaczmarska, M. Nekovee (2011). Spread of information and infection on finite random networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 33, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper examines via direct simulations the adequacy of the approximate model to describe stochastic epidemics and rumors on several random network topologies: homogeneous networks, Erd\u00f6s-R\u00e9nyi (ER) random graphs, Barabasi-Albert scale-free networks, and random geometric graphs, and finds that the approximate models are reasonably accurate in predicting the probability of spread."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/91e9c8be8ec98d9c5ecf5460f3a806f8f9499530"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

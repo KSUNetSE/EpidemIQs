@@ -1,0 +1,156 @@
+{
+    "results": [
+        {
+            "query": "targeted immunization fixed degree epidemic network analytical",
+            "papers": [
+                {
+                    "title": "Immunization of complex networks.",
+                    "abstract": "Complex networks such as the sexual partnership web or the Internet often show a high degree of redundancy and heterogeneity in their connectivity properties. This peculiar connectivity provides an ideal environment for the spreading of infective agents. Here we show that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks. Namely, networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals. The absence of any critical immunization threshold is due to the unbounded connectivity fluctuations of scale-free networks. Successful immunization strategies can be developed only by taking into account the inhomogeneous connectivity properties of scale-free networks. In particular, targeted immunization schemes, based on the nodes' connectivity hierarchy, sharply lower the network's vulnerability to epidemic attacks.",
+                    "citation": "R. Pastor-Satorras, Alessandro Vespignani (2001). Immunization of complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 1152, Influential: 58.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks, and networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45103412abce218fb6346ab82879dcbcde8de1dd"
+                },
+                {
+                    "title": "Influence maximization in complex networks through optimal percolation",
+                    "abstract": "The whole frame of interconnections in complex networks hinges on a specific set of structural nodes, much smaller than the total size, which, if activated, would cause the spread of information to the whole network, or, if immunized, would prevent the diffusion of a large scale epidemic. Localizing this optimal, that is, minimal, set of structural nodes, called influencers, is one of the most important problems in network science. Despite the vast use of heuristic strategies to identify influential spreaders, the problem remains unsolved. Here we map the problem onto optimal percolation in random networks to identify the minimal set of influencers, which arises by minimizing the energy of a many-body system, where the form of the interactions is fixed by the non-backtracking matrix of the network. Big data analyses reveal that the set of optimal influencers is much smaller than the one predicted by previous heuristic centralities. Remarkably, a large number of previously neglected weakly connected nodes emerges among the optimal influencers. These are topologically tagged as low-degree nodes surrounded by hierarchical coronas of hubs, and are uncovered only through the optimal collective interplay of all the influencers in the network. The present theoretical framework may hold a larger degree of universality, being applicable to other hard optimization problems exhibiting a continuous transition from a known phase.",
+                    "citation": "F. Morone, H. Makse (2015). Influence maximization in complex networks through optimal percolation. Nature. Citations: 1085, Influential: 53.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work maps the problem onto optimal percolation in random networks to identify the minimal set of influencers, which arises by minimizing the energy of a many-body system, where the form of the interactions is fixed by the non-backtracking matrix of the network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/9855e98fbfcc0aa81e554636bfd1fc74108f317b"
+                },
+                {
+                    "title": "Efficient immunization strategies for computer networks and populations.",
+                    "abstract": "We present an effective immunization strategy for computer networks and populations with broad and, in particular, scale-free degree distributions. The proposed strategy, acquaintance immunization, calls for the immunization of random acquaintances of random nodes (individuals). The strategy requires no knowledge of the node degrees or any other global knowledge, as do targeted immunization strategies. We study analytically the critical threshold for complete immunization. We also study the strategy with respect to the susceptible-infected-removed epidemiological model. We show that the immunization threshold is dramatically reduced with the suggested strategy, for all studied cases.",
+                    "citation": "R. Cohen, S. Havlin, D. ben-Avraham (2002). Efficient immunization strategies for computer networks and populations.. Physical Review Letters. Citations: 1041, Influential: 49.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the immunization threshold is dramatically reduced with the suggested strategy, for all studied cases, and analytically the critical threshold for complete immunization is studied."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dc9c8da03a1f411a4050fbf5e1a71836989a0e7c"
+                },
+                {
+                    "title": "Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.",
+                    "abstract": null,
+                    "citation": "Xinchu Fu, M. Small, D. Walker, et al. (2008). Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 228, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that both targeted and ring immunization strategies compare favorably to a proportional scheme in terms of effectiveness, and conditions for the epidemic threshold to be positive are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/178f16b2b8d78f2de4175a7ddabfbde4acded773"
+                },
+                {
+                    "title": "Behaviors of susceptible-infected epidemics on scale-free networks with identical infectivity.",
+                    "abstract": "In this paper, we propose a susceptible-infected model with identical infectivity, in which, at every time step, each node can only contact a constant number of neighbors. We implemented this model on scale-free networks, and found that the infected population grows in an exponential form with the time scale proportional to the spreading rate. Furthermore, by numerical simulation, we demonstrated that the targeted immunization of the present model is much less efficient than that of the standard susceptible-infected model. Finally, we investigate a fast spreading strategy when only local information is available. Different from the extensively studied path-finding strategy, the strategy preferring small-degree nodes is more efficient than that preferring large-degree nodes. Our results indicate the existence of an essential relationship between network traffic and network epidemic on scale-free networks.",
+                    "citation": "Tao Zhou, Jianguo Liu, Wen-Jie Bai, et al. (2006). Behaviors of susceptible-infected epidemics on scale-free networks with identical infectivity.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 268, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A susceptible-infected model with identical infectivity, in which, at every time step, each node can only contact a constant number of neighbors is proposed, which indicates the existence of an essential relationship between network traffic and network epidemic on scale-free networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5b0213cf6fa4f95a74d221935f33e8fa8302187a"
+                },
+                {
+                    "title": "Modeling the dynamical interaction between epidemics on overlay networks",
+                    "abstract": "Epidemics seldom occur as isolated phenomena. Typically, two or more viral agents spread within the same host population and may interact dynamically with each other. We present a general model where two viral agents interact via an immunity mechanism as they propagate simultaneously on two networks connecting the same set of nodes. By exploiting a correspondence between the propagation dynamics and a dynamical process performing progressive network generation, we develop an analytical approach that accurately captures the dynamical interaction between epidemics on overlay networks. The formalism allows for overlay networks with arbitrary joint degree distribution and overlap. To illustrate the versatility of our approach, we consider a hypothetical delayed intervention scenario in which an immunizing agent is disseminated in a host population to hinder the propagation of an undesirable agent (e.g., the spread of preventive information in the context of an emerging infectious disease).",
+                    "citation": "V. Marceau, Pierre-Andr\u00e9 No\u00ebl, Laurent H\u00e9bert-Dufresne, et al. (2011). Modeling the dynamical interaction between epidemics on overlay networks. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 139, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work develops an analytical approach that accurately captures the dynamical interaction between epidemics on overlay networks by exploiting a correspondence between the propagation dynamics and a dynamical process performing progressive network generation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3e25e8fb816d0d47c9decfacbb314a9354b5565a"
+                },
+                {
+                    "title": "Robustness and assortativity for diffusion-like processes in scale-free networks",
+                    "abstract": "By analysing the diffusive dynamics of epidemics and of distress in complex networks, we study the effect of the assortativity on the robustness of the networks. We first determine by spectral analysis the thresholds above which epidemics/failures can spread; we then calculate the slowest diffusional times. Our results shows that disassortative networks exhibit a higher epidemiological threshold and are therefore easier to immunize, while in assortative networks there is a longer time for intervention before epidemic/failure spreads. Moreover, we study by computer simulations the sandpile cascade model, a diffusive model of distress propagation (financial contagion). We show that, while assortative networks are more prone to the propagation of epidemic/failures, degree-targeted immunization policies increases their resilience to systemic risk.",
+                    "citation": "G. D'Agostino, Antonio Scala, V. Zlati\u0107, et al. (2011). Robustness and assortativity for diffusion-like processes in scale-free networks. arXiv.org. Citations: 88, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work studies the diffusive dynamics of epidemics and of distress in complex networks and shows that disassortative networks exhibit a higher epidemiological threshold and are therefore easier to immunize, while in assortsative networks there is a longer time for intervention before epidemic/failure spreads."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/adb48684be73382c46854c938ffe6e5444a5214a"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic threshold vaccination percolation uncorrelated network",
+            "papers": [
+                {
+                    "title": "Epidemic threshold for the susceptible-infectious-susceptible model on random networks.",
+                    "abstract": null,
+                    "citation": "Roni Parshani, S. Carmi, S. Havlin (2010). Epidemic threshold for the susceptible-infectious-susceptible model on random networks.. Physical Review Letters. Citations: 166, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical expression for the critical infection rate r{c} of the susceptible-infectious-susceptible (SIS) disease spreading model on random networks is derived using percolation theory."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7961e3b46260ffb5ad6d2af7d3b0e9fa31ac03a2"
+                },
+                {
+                    "title": "Hub nodes inhibit the outbreak of epidemic under voluntary vaccination",
+                    "abstract": "It is commonly believed that epidemic spreading on scale-free networks is difficult to control and that the disease can spread even with a low infection rate, lacking an epidemic threshold. In this paper, we study epidemic spreading on complex networks under the framework of game theory, in which a voluntary vaccination strategy is incorporated. In particular, individuals face the \u2018dilemma\u2019 of vaccination: they have to decide whether or not to vaccinate according to the trade-off between the risk and the side effects or cost of vaccination. Remarkably and quite excitingly, we find that disease outbreak can be more effectively inhibited on scale-free networks than on random networks. This is because the hub nodes of scale-free networks are more inclined to take self-vaccination after balancing the pros and cons. This result is encouraging as it indicates that real-world networks, which are often claimed to be scale free, can be favorably and easily controlled under voluntary vaccination. Our work provides a way of understanding how to prevent the outbreak of diseases under voluntary vaccination, and is expected to provide valuable information on effective disease control and appropriate decision-making.",
+                    "citation": "Haifeng Zhang, Jie Zhang, Changsong Zhou, et al. (2010). Hub nodes inhibit the outbreak of epidemic under voluntary vaccination. Unknown Journal. Citations: 133, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that disease outbreak can be more effectively inhibited on scale-free networks than on random networks, indicating that real-world networks, which are often claimed to be scale free, can be favorably and easily controlled under voluntary vaccination."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/027c33c24c08e5f6497bb76111c5e904b1770d7c"
+                },
+                {
+                    "title": "Epidemic threshold of the susceptible-infected-susceptible model on complex networks.",
+                    "abstract": "We demonstrate that the susceptible-infected-susceptible (SIS) model on complex networks can have an inactive Griffiths phase characterized by a slow relaxation dynamics. It contrasts with the mean-field theoretical prediction that the SIS model on complex networks is active at any nonzero infection rate. The dynamic fluctuation of infected nodes, ignored in the mean field approach, is responsible for the inactive phase. It is proposed that the question whether the epidemic threshold of the SIS model on complex networks is zero or not can be resolved by the percolation threshold in a model where nodes are occupied in degree-descending order. Our arguments are supported by the numerical studies on scale-free network models.",
+                    "citation": "Hyun Keun Lee, Pyoung-seop Shim, J. Noh (2012). Epidemic threshold of the susceptible-infected-susceptible model on complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 56, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is demonstrated that the susceptible-infected-susceptible (SIS) model on complex networks can have an inactive Griffiths phase characterized by a slow relaxation dynamics, and proposed that the question whether the epidemic threshold of the SIS model oncomplex networks is zero or not can be resolved by the percolation threshold in a model where nodes are occupied in degree-descending order."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/df95ddc7f27bf470f629872dfbfbbfdaac3788a3"
+                },
+                {
+                    "title": "How clustering affects the bond percolation threshold in complex networks.",
+                    "abstract": "The question of how clustering (nonzero density of triangles) in networks affects their bond percolation threshold has important applications in a variety of disciplines. Recent advances in modeling highly clustered networks are employed here to analytically study the bond percolation threshold. In comparison to the threshold in an unclustered network with the same degree distribution and correlation structure, the presence of triangles in these model networks is shown to lead to a larger bond percolation threshold (i.e. clustering increases the epidemic threshold or decreases resilience of the network to random edge deletion).",
+                    "citation": "J. Gleeson, S. Melnik, Adam Hackett (2009). How clustering affects the bond percolation threshold in complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 86, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Modelling highly clustered networks shows the presence of triangles in these model networks is shown to lead to a larger bond percolation threshold, compared to the threshold in an unclustered network with the same degree distribution and correlation structure."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ff5abdc39e4596feba09a62550f09c35b183fa76"
+                },
+                {
+                    "title": "Temporal percolation in activity-driven networks.",
+                    "abstract": "We study the temporal percolation properties of temporal networks by taking as a representative example the recently proposed activity-driven-network model [N. Perra et al., Sci. Rep. 2, 469 (2012)]. Building upon an analytical framework based on a mapping to hidden variables networks, we provide expressions for the percolation time Tp marking the onset of a giant connected component in the integrated network. In particular, we consider both the generating function formalism, valid for degree-uncorrelated networks, and the general case of networks with degree correlations. We discuss the different limits of the two approaches, indicating the parameter regions where the correlated threshold collapses onto the uncorrelated case. Our analytical predictions are confirmed by numerical simulations of the model. The temporal percolation concept can be fruitfully applied to study epidemic spreading on temporal networks. We show in particular how the susceptible-infected-removed model on an activity-driven network can be mapped to the percolation problem up to a time given by the spreading rate of the epidemic process. This mapping allows us to obtain additional information on this process, not available for previous approaches.",
+                    "citation": "Michele Starnini, R. Pastor-Satorras (2013). Temporal percolation in activity-driven networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 49, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown in particular how the susceptible-infected-removed model on an activity-driven network can be mapped to the percolation problem up to a time given by the spreading rate of the epidemic process."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/86c35e56746c1477c8c0653bea106da7cd299385"
+                },
+                {
+                    "title": "Predicting the epidemic threshold of the susceptible-infected-recovered model",
+                    "abstract": "Researchers have developed several theoretical methods for predicting epidemic thresholds, including the mean-field like (MFL) method, the quenched mean-field (QMF) method and the dynamical message passing (DMP) method. When these methods are applied to predict epidemic threshold they often produce differing results and their relative levels of accuracy are still unknown. We systematically analyze these two issues\u2014relationships among differing results and levels of accuracy\u2014by studying the susceptible-infected-recovered (SIR) model on uncorrelated configuration networks and a group of 56 real-world networks. In uncorrelated configuration networks the MFL and DMP methods yield identical predictions that are larger and more accurate than the prediction generated by the QMF method. As for the 56 real-world networks, the epidemic threshold obtained by the DMP method is more likely to reach the accurate epidemic threshold because it incorporates full network topology information and some dynamical correlations. We find that in most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods.",
+                    "citation": "Wei Wang, Wen Wang, Quan-Hui Liu, et al. (2015). Predicting the epidemic threshold of the susceptible-infected-recovered model. Scientific Reports. Citations: 62, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "In most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5b845e2b13a07b0623530ecfa43272682599fb26"
+                },
+                {
+                    "title": "Dynamic vaccination in partially overlapped multiplex network",
+                    "abstract": "In this work we propose and investigate a strategy of vaccination which we call \u201cdynamic vaccination.\u201d In our model, susceptible people become aware that one or more of their contacts are infected and thereby get vaccinated with probability \u03c9, before having physical contact with any infected patient. Then the nonvaccinated individuals will be infected with probability \u03b2. We apply the strategy to the susceptible-infected-recovered epidemic model in a multiplex network composed by two networks, where a fraction q of the nodes acts in both networks. We map this model of dynamic vaccination into bond percolation model and use the generating functions framework to predict theoretically the behavior of the relevant magnitudes of the system at the steady state. We find a perfect agreement between the solutions of the theoretical equations and the results of stochastic simulations. In addition, we find an interesting phase diagram in the plane \u03b2-\u03c9, which is composed of an epidemic and a nonepidemic phase, separated by a critical threshold line \u03b2c, which depends on q. As q decreases, \u03b2c increases, i.e., as the overlap decreases, the system is more disconnected, and therefore more virulent diseases are needed to spread epidemics. Surprisingly, we find that, for all values of q, a region in the diagram where the vaccination is so efficient that, regardless of the virulence of the disease, it never becomes an epidemic. We compare our strategy with random immunization and find that, using the same amount of vaccines for both scenarios, we obtain that the spread of disease is much lower in the case of dynamic vaccination when compared to random immunization. Furthermore, we also compare our strategy with targeted immunization and we find that, depending on \u03c9, dynamic vaccination will perform significantly better and in some cases will stop the disease before it becomes an epidemic.",
+                    "citation": "L. G. Alvarez-Zuzek, M. A. D. Muro, S. Havlin, et al. (2018). Dynamic vaccination in partially overlapped multiplex network. Physical Review E. Citations: 39, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": null
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b50d68958b69114a955fd019bc88eb01aac8c815"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

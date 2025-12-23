@@ -1,0 +1,20 @@
+{
+    "results": [
+        {
+            "query": "SEIR compartmental models influenza outbreak attack rate quarantine infectious stages mechanistic modeling boarding school network",
+            "papers": [
+                {
+                    "title": "The 1978 English boarding school influenza outbreak: where the classic SEIR model fails",
+                    "abstract": "Previous work has failed to fit classic SEIR epidemic models satisfactorily to the prevalence data of the famous English boarding school 1978 influenza A/H1N1 outbreak during the children\u2019s pandemic. It is still an open question whether a biologically plausible model can fit the prevalence time series and the attack rate correctly. To construct the final model, we first used an intentionally very flexible and overfitted discrete-time epidemiologic model to learn the epidemiological features from the data. The final model was a susceptible (S) \u2013 exposed (E) \u2013 infectious (I) \u2013 confined-to-bed (B) \u2013 convalescent (C) \u2013 recovered (R) model with time delay (constant residence time) in E and I compartments and multi-stage (Erlang-distributed residence time) in B and C compartments. We simultaneously fitted the reported B and C prevalence curves as well as the attack rate (proportion of children infected during the outbreak). The non-exponential residence times were crucial for good fits. The estimates of the generation time and the basic reproductive number (R0) were biologically reasonable. A simplified discrete-time model was built and fitted using the Bayesian procedure. Our work not only provided an answer to the open question, but also demonstrated an approach to constructive model generation.",
+                    "citation": "Konstantin K Avilov, Qiong Li, Lixin Lin, et al. (2024). The 1978 English boarding school influenza outbreak: where the classic SEIR model fails. Journal of the Royal Society Interface. Citations: 2, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work built and fitted a simplified discrete-time epidemiologic model that fitted the reported B and C prevalence curves as well as the attack rate, and demonstrated an approach to constructive model generation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/db4a0a2077b02b592029868af6d530e89369c9eb"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

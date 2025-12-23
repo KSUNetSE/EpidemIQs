@@ -1,0 +1,343 @@
+{
+    "results": [
+        {
+            "query": "epidemic vaccination strategies random targeted configuration-model networks basic reproduction number",
+            "papers": [
+                {
+                    "paper_title": "Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case",
+                    "abstract": "In this publication, we present a model that simulates the spread of monkeypox virus. The model takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy. Although vaccines do not offer total protection against the disease, they can reduce the transmission of monkeypox, which could help reduce the spread of the virus in a population, as our results show. So to develop efficient strategies for epidemic control and prevention, we studied global sensitivity analysis to determine the parameters most influential on disease spread. The existence and overall stability of the disease\u2010free equilibrium are also discussed. The basic reproduction number R0 of the model is calculated. The results show that if R0 < 1, the disease\u2010free equilibrium of the model is globally asymptotically stable. In addition, the model\u2019s key parameters are calculated using a least\u2010mean\u2010squares curve fit to the real data.",
+                    "citation": "Abdoulaye Sow, C. Diallo, H. Cherifi (2025). Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case. Complexity. DOI: 10.1155/cplx/3746855",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model that simulates the spread of monkeypox virus takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy."
+                    }
+                },
+                {
+                    "paper_title": "A Differential Epidemic Model for Information, Misinformation, and Disinformation in Online Social Networks: COVID-19 Vaccination",
+                    "abstract": "These days the online social network has become a huge source of data. People are actively sharing information on these platforms. The data on online social networks can be misinformation, information, and disinformation. Because online social network has become an important part of our life, so the information on online social networks makes a great impact on us. Here a differential epidemic model for information, misinformation, and disinformation on online social networks is proposed. The expression for basic reproduction number has been developed. Again, the stability condition for the system at both infection-free and endemic equilibriums points has been discussed. The Numerical simulation has been performed to validate our theoretical results. Again, with the help of data available on twitter related to COVID-19 vaccination is used to perform the experiment. Finally, discuss about the control strategy to minimize the misinformation and disinformation related to vaccination.",
+                    "citation": "N. Narayan, R. Jha, A. Singh (2022). A Differential Epidemic Model for Information, Misinformation, and Disinformation in Online Social Networks: COVID-19 Vaccination. Int. J. Semantic Web Inf. Syst., 18, 1-20. DOI: 10.4018/ijswis.300827",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The expression for basic reproduction number has been developed and the stability condition for the system at both infection-free and endemic equilibriums points has been discussed and the control strategy to minimize the misinformation and disinformation related to vaccination is discussed."
+                    }
+                },
+                {
+                    "paper_title": "Edge removal in random contact networks and the basic reproduction number",
+                    "abstract": null,
+                    "citation": "D. Koch, R. Illner, Junling Ma (2013). Edge removal in random contact networks and the basic reproduction number. Journal of Mathematical Biology, 67, 217-238. DOI: 10.1007/s00285-012-0545-6",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A dynamical model for the evolution of the degree distribution under random edge removal is developed, and it is proved that truly random removal always reduces the appropriately defined basic reproduction number."
+                    }
+                },
+                {
+                    "paper_title": "Role of Vaccination Strategies to Host-Pathogen Dynamics in Social Interactions",
+                    "abstract": "This study presents extended Immunity Agent-Based Model (IABM) simulations to evaluate vaccination strategies in controlling the spread of infectious diseases. The application of IABM in the analysis of vaccination configurations is innovative, as a vaccinated individual can be infected depending on how their immune system acts against the invading pathogen, without a pre-established infection rate. Analysis at the microscopic level demonstrates the impact of vaccination on individual immune responses and infection outcomes, providing a more realistic representation of how the humoral response caused by vaccination affects the individual\u2019s immune defense. At the macroscopic level, the effects of different population-wide vaccination strategies are explored, including random vaccination, targeted vaccination of specific demographic groups, and spatially focused vaccination. The results indicate that increased vaccination rates are correlated with decreased infection and mortality rates, highlighting the importance of achieving herd immunity. Furthermore, strategies focused on vulnerable populations or densely populated regions prove to be more effective in reducing disease transmission compared to randomly distributed vaccination. The results presented in this work show that vaccination strategies focused on highly crowded regions are more efficient in controlling epidemics and outbreaks. Results suggest that applying vaccination only in the densest region resulted in the suppression of infection in that region, with less intense viral spread in areas with lower population densities. Strategies focused on specific regions, in addition to being more efficient in reducing the number of infected and dead people, reduce costs related to transportation, storage, and distribution of doses compared to the random vaccination strategy. Considering that, despite scientific efforts to consolidate the use of mass vaccination, the accessibility, affordability, and acceptability of vaccines are problems that persist, investing in the study of strategies that mitigate such issues is crucial in the development and application of government policies that make immunization systems more efficient and robust.",
+                    "citation": "M. N. Gonzaga, Marcelo M. de Oliveira, A. Atman (2024). Role of Vaccination Strategies to Host-Pathogen Dynamics in Social Interactions. Entropy, 26. DOI: 10.3390/e26090739",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results suggest that applying vaccination only in the densest region resulted in the suppression of infection in that region, with less intense viral spread in areas with lower population densities, suggesting the importance of achieving herd immunity."
+                    }
+                },
+                {
+                    "paper_title": "Assessing the impacts of vaccination and viral evolution in contact networks",
+                    "abstract": "A key lesson learned with COVID-19 is that public health measures were very different from country to country. In this study, we provide an analysis of epidemic dynamics using three well-known stochastic network models\u2014small-world networks (Watts\u2013Strogatz), random networks (Erd\u00f6s\u2013R\u00e9nyi), and scale-free networks (Barab\u00e1si\u2013Albert)\u2014to assess the impact of different viral strains, lockdown strategies, and vaccination campaigns. We highlight the significant role of highly connected nodes in the spread of infections, particularly within Barab\u00e1si\u2013Albert networks. These networks experienced earlier and higher peaks in infection rates, but ultimately had the lowest total number of infections, indicating their rapid transmission dynamics. We also found that intermittent lockdown strategies, particularly those with 7-day intervals, effectively reduce the total number of infections, serving as viable alternatives to prolonged continuous lockdowns. When simulating vaccination campaigns, we observed a bimodal distribution leading to two distinct outcomes: pandemic contraction and pandemic expansion. For WS and ER networks, rapid mass vaccination campaigns significantly reduced infection rates compared to slower campaigns; however, for BA networks, differences between vaccination strategies were minimal. To account for the evolution of a virus into a more transmissible strain, we modeled vaccination scenarios that varied vaccine efficacy against the wild-type virus and noted a decline in this efficacy over time against a second variant. Our results showed that vaccination coverage above 40% significantly flattened infection peaks for the wild-type virus, while at least 80% coverage was required to similarly reduce peaks for variant 2. Furthermore, the effect of vaccine efficacy on reducing the peak of variant 2 infection was minimal. Although vaccination strategies targeting hub nodes in scale-free networks did not substantially reduce the total number of infections, they were effective in increasing the probability of preventing pandemic outbreaks. These findings underscore the need to consider the network structure for effective pandemic control.",
+                    "citation": "Rodolfo Blanco-Rodr\u00edguez, J. Tetteh, Esteban Hern\u00e1ndez-Vargas (2024). Assessing the impacts of vaccination and viral evolution in contact networks. Scientific Reports, 14. DOI: 10.1038/s41598-024-66070-5",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study provides an analysis of epidemic dynamics using three well-known stochastic network models to assess the impact of different viral strains, lockdown strategies, and vaccination campaigns and highlights the significant role of highly connected nodes in the spread of infections, particularly within Barab\u00e1si\u2013Albert networks."
+                    }
+                },
+                {
+                    "paper_title": "Edge removal in random contact networks and the basic reproduction number",
+                    "abstract": null,
+                    "citation": "D. Koch, R. Illner, Junling Ma (2012). Edge removal in random contact networks and the basic reproduction number. Journal of Mathematical Biology, 67, 217 - 238. DOI: 10.1007/s00285-012-0545-6",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "SIR Dynamics with Vaccination in a Large Configuration Model",
+                    "abstract": "We consider an SIR model with vaccination strategy on a sparse configuration model random graph. We show the convergence of the system when the number of nodes grows and characterize the scaling limits. Then, we prove the existence of optimal controls for the limiting equations formulated in the framework of game theory, both in the centralized and decentralized setting. We show how the characteristics of the graph (degree distribution) influence the vaccination efficiency for optimal strategies, and we compute the limiting final size of the epidemic depending on the degree distribution of the graph and the parameters of infection, recovery and vaccination. We also present several simulations for two types of vaccination, showing how the optimal controls allow to decrease the number of infections and underlining the crucial role of the network characteristics in the propagation of the disease and the vaccination program.",
+                    "citation": "Emanuel Javier Ferreyra, M. Jonckheere, J. P. Pinasco (2019). SIR Dynamics with Vaccination in a Large Configuration Model. Applied Mathematics and Optimization, 84, 1769 - 1818. DOI: 10.1007/s00245-021-09810-7",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work considers an SIR model with vaccination strategy on a sparse configuration model random graph and proves the existence of optimal controls for the limiting equations formulated in the framework of game theory."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic vaccination strategies network degree heterogeneity random targeted vaccination SIR model",
+            "papers": [
+                {
+                    "paper_title": "Effective node vaccination and containing strategies to halt SIR epidemic spreading in real-world face-to-face contact networks",
+                    "abstract": "We model the COVID-19 spreading by running SIR Monte-Carlo simulations in four real face-to-face contact networks. We evaluate the effectiveness of the \u2018facemask use\u2019 and \u2018vaccination policies\u2019 to curb epidemic spreading. We model the facemask use policy by assuming a lower individual infection probability $\\beta$. We found that while this strategy can delay the disease spreading, it does not significantly reduce the total number of infected individuals (TI), as 80% of the total population still is infected at the end of the epidemic. We model vaccination by setting individual's infection probability $\\beta=0$, which is equivalent to remove nodes/individuals from the network. The vaccination was found to be very effective. Even with a partial vaccination of 30% of the population nodes selected considering their centrality measure ranking, such as degree, betweenness, or PageRank, it was possible to reduce the TI of 14%. Finally, yet importantly, random partial vaccination is not effective at all, meaning that most of the unvaccinated population will be infected.",
+                    "citation": "N. Nguyen, Thanh-Trung Nguyen, Tuan-Anh Nguyen... (2022). Effective node vaccination and containing strategies to halt SIR epidemic spreading in real-world face-to-face contact networks. 2022 RIVF International Conference on Computing and Communication Technologies (RIVF), 1-6. DOI: 10.1109/RIVF55975.2022.10013812",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work model the COVID-19 spreading by running SIR Monte-Carlo simulations in four real face-to-face contact networks and finds that the vaccination was found to be very effective and random partial vaccination is not effective, meaning that most of the unvaccinated population will be infected."
+                    }
+                },
+                {
+                    "paper_title": "Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network",
+                    "abstract": "In order to investigate the impact of two immunization strategies\u2014vaccination targeting susceptible individuals to reduce their infection rate and clinical medical interventions targeting infected individuals to enhance their recovery rate\u2014on the spread of infectious diseases in complex networks, this study proposes a bilinear SIR infectious disease model that considers bidirectional immunization. By analyzing the conditions for the existence of endemic equilibrium points, we derive the basic reproduction numbers and outbreak thresholds for both homogeneous and heterogeneous networks. The epidemic model is then reconstructed and extensively analyzed using continuous-time Markov chain (CTMC) methods. This analysis includes the investigation of transition probabilities, transition rate matrices, steady-state distributions, and the transition probability matrix based on the embedded chain. In numerical simulations, a notable concordance exists between the outcomes of CTMC and mean-field (MF) simulations, thereby substantiating the efficacy of the CTMC model. Moreover, the CTMC-based model adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains. We further analyze the relationship between the system\u2019s steady-state infection density and the immunization rate through MCS. The results suggest that the infection density decreases with an increase in the immunization rate among susceptible individuals. The current research results will enhance our understanding of infectious disease transmission patterns in real-world scenarios, providing valuable theoretical insights for the development of epidemic prevention and control strategies.",
+                    "citation": "Shixiang Han, Guanghui Yan, Huayan Pei... (2024). Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network. Entropy, 26. DOI: 10.3390/e26030227",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A bilinear SIR infectious disease model that considers bidirectional immunization is proposed that adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains."
+                    }
+                },
+                {
+                    "paper_title": "Vaccination strategies in the disease\u2013behavior evolution model",
+                    "abstract": "Previous studies on the co-evolving between vaccination strategies and epidemics mainly assumed that the vaccination strategies were made in the period between two spreading seasons. However, individual cognition during the spreading seasons might also alter the vaccination strategy and inversely influence the epidemic spreading. We propose a coupled disease\u2013behavior model to describe the dynamic evolution of vaccination behavior during the spread of infectious diseases. The model integrates a susceptible\u2013infected\u2013vaccinated (SIV) model with the diffusion of vaccination behavior. We focus on the trade-off between perceptions of infection risk and the vaccination behaviors of neighbors, characterizing individual vaccination opinions. We introduce an opinion-critical value to map vaccination opinions into vaccination behavior. The vaccination coverage of the disease\u2013behavior model is studied in network models and real-world networks. In addition, when societal costs are measured based on the degree of initial vaccinees, the cost of randomly selecting initial vaccinees is lower than selecting individuals with high or low degrees as vaccinees. Evaluating an individual\u2019s ability to transmit vaccination behavior based on the neighbor\u2019s number is inappropriate. We find that the impact of effective spreading rates on group vaccination is not one-sided and that reducing fear and highlighting the dangers of infectious diseases are crucial to increasing vaccination coverage.",
+                    "citation": "Lu Zhou, Jinying Dai, Bo Qu... (2024). Vaccination strategies in the disease\u2013behavior evolution model. Frontiers in Physics. DOI: 10.3389/fphy.2024.1387267",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that the impact of effective spreading rates on group vaccination is not one-sided and that reducing fear and highlighting the dangers of infectious diseases are crucial to increasing vaccination coverage."
+                    }
+                },
+                {
+                    "paper_title": "Impact of Network Heterogeneity on Epidemic Mitigation Strategies",
+                    "abstract": "We formulate an optimal control problem to find best vaccination and treatment policies to minimize the impact of an epidemic on the population. Epidemic spread on heterogeneous human contact networks is modeled using the degree based compartmental model for susceptible-infected-recovered epidemic. Our formulation allows us to study the impact of varying network heterogeneity on the mitigation strategies. Network heterogeneity is varied by using different degree distributions for the network, such as, power law, power law with exponential cut-off, and Poisson. Network heterogeneity is a proxy for social distancing measures applied on the population\u2014as restrictions tightens, high degree hubs disappear, thus, the nature of degree distribution changes from power law to Poisson. We find that high degree nodes assume less importance in mitigating epidemics as the network heterogeneity decreases. Also, epidemics are easier to control with decrease in network heterogeneity.",
+                    "citation": "Jagtap Kalyani Devendra, Kundan Kandhway (2022). Impact of Network Heterogeneity on Epidemic Mitigation Strategies. 2022 IEEE 11th International Conference on Communication Systems and Network Technologies (CSNT), 428-433. DOI: 10.1109/CSNT54456.2022.9787646",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An optimal control problem to find best vaccination and treatment policies to minimize the impact of an epidemic on the population finds that high degree nodes assume less importance in mitigating epidemics as the network heterogeneity decreases."
+                    }
+                },
+                {
+                    "paper_title": "Evaluation of vaccination strategies for SIR epidemics on random networks incorporating household structure",
+                    "abstract": "This paper is concerned with the analysis of vaccination strategies in a stochastic susceptible \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} infected \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} removed model for the spread of an epidemic amongst a population of individuals with a random network of social contacts that is also partitioned into households. Under various vaccine action models, we consider both household-based vaccination schemes, in which the way in which individuals are chosen for vaccination depends on the size of the households in which they reside, and acquaintance vaccination, which targets individuals of high degree in the social network. For both types of vaccination scheme, assuming a large population with few initial infectives, we derive a threshold parameter which determines whether or not a large outbreak can occur and also the probability of a large outbreak and the fraction of the population infected by a large outbreak. The performance of these schemes is studied numerically, focusing on the influence of the household size distribution and the degree distribution of the social network. We find that acquaintance vaccination can significantly outperform the best household-based scheme if the degree distribution of the social network is heavy-tailed. For household-based schemes, when the vaccine coverage is insufficient to prevent a major outbreak and the vaccine is imperfect, we find situations in which both the probability and size of a major outbreak under the scheme which minimises the threshold parameter are larger than in the scheme which maximises the threshold parameter.",
+                    "citation": "F. Ball, David Sirl (2016). Evaluation of vaccination strategies for SIR epidemics on random networks incorporating household structure. Journal of Mathematical Biology, 76, 483 - 530. DOI: 10.1007/s00285-017-1139-0",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that acquaintance vaccination can significantly outperform the best household-based scheme if the degree distribution of the social network is heavy-tailed and also the probability of a large outbreak and the fraction of the population infected by aLarge outbreak."
+                    }
+                },
+                {
+                    "paper_title": "Impact of Vaccination Strategies For Epidemic Node-level SVIR Probabilistic Model : Pandemic simulation on social networks under various vaccination strategies",
+                    "abstract": "Vaccination strategies could be considered as either a site percolation problem, or one state of a node, which is more suitable for studying the imperfect vaccination. This paper conducts vaccination simulation on classic strategies including random immunization, degree based immunization, and acquaintance based immunization. In addition, two innovative vaccination simulations, which are the first neighbor and the second neighbor strategies, are also applied. All the simulations are run by the node level probabilistic SVIR model under random, scale-free, and small world network. We aim at finding out the best strategies under limited vaccination resource and different conditions of disease spreading parameters.",
+                    "citation": "C. Kuo, Wai Kin Victor Chan, Mengxuan Chen (2020). Impact of Vaccination Strategies For Epidemic Node-level SVIR Probabilistic Model : Pandemic simulation on social networks under various vaccination strategies. 2020 International Conference on Public Health and Data Science (ICPHDS), 290-296. DOI: 10.1109/ICPHDS51617.2020.00063",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper conducts vaccination simulation on classic strategies including random immunization, degree based Immunization, and acquaintance based immunization under random, scale-free, and small world network to find out the best strategies under limited vaccination resource and different conditions of disease spreading parameters."
+                    }
+                },
+                {
+                    "paper_title": "Modelling the impact of social distancing and targeted vaccination on the spread of COVID-19 through a real city-scale contact network",
+                    "abstract": "Abstract We use mobile device data to construct empirical interpersonal physical contact networks in the city of Portland, Oregon, both before and after social distancing measures were enacted during the COVID-19 pandemic. These networks reveal how social distancing measures and the public\u2019s reaction to the incipient pandemic affected the connectivity patterns within the city. We find that as the pandemic developed there was a substantial decrease in the number of individuals with many contacts. We further study the impact of these different network topologies on the spread of COVID-19 by simulating an SEIR epidemic model over these networks and find that the reduced connectivity greatly suppressed the epidemic. We then investigate how the epidemic responds when part of the population is vaccinated, and we compare two vaccination distribution strategies, both with and without social distancing. Our main result is that the heavy-tailed degree distribution of the contact networks causes a targeted vaccination strategy that prioritizes high-contact individuals to reduce the number of cases far more effectively than a strategy that vaccinates individuals at random. Combining both targeted vaccination and social distancing leads to the greatest reduction in cases, and we also find that the marginal benefit of a targeted strategy as compared to a random strategy exceeds the marginal benefit of social distancing for reducing the number of cases. These results have important implications for ongoing vaccine distribution efforts worldwide.",
+                    "citation": "Gavin Hartnett, E. Parker, Tim Gulden... (2021). Modelling the impact of social distancing and targeted vaccination on the spread of COVID-19 through a real city-scale contact network. Journal of Complex Networks, 9. DOI: 10.1093/comnet/cnab042",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The main result is that the heavy-tailed degree distribution of the contact networks causes a targeted vaccination strategy that prioritizes high-contact individuals to reduce the number of cases far more effectively than a strategy that vaccinates individuals at random."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic control in heterogeneous networks vaccination strategies",
+            "papers": [
+                {
+                    "paper_title": "Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case",
+                    "abstract": "In this publication, we present a model that simulates the spread of monkeypox virus. The model takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy. Although vaccines do not offer total protection against the disease, they can reduce the transmission of monkeypox, which could help reduce the spread of the virus in a population, as our results show. So to develop efficient strategies for epidemic control and prevention, we studied global sensitivity analysis to determine the parameters most influential on disease spread. The existence and overall stability of the disease\u2010free equilibrium are also discussed. The basic reproduction number R0 of the model is calculated. The results show that if R0 < 1, the disease\u2010free equilibrium of the model is globally asymptotically stable. In addition, the model\u2019s key parameters are calculated using a least\u2010mean\u2010squares curve fit to the real data.",
+                    "citation": "Abdoulaye Sow, C. Diallo, H. Cherifi (2025). Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case. Complexity. DOI: 10.1155/cplx/3746855",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model that simulates the spread of monkeypox virus takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy."
+                    }
+                },
+                {
+                    "paper_title": "Optimized Weights for Heterogeneous Epidemic Spreading Networks: A Constrained Cooperative Coevolution Strategy",
+                    "abstract": "The wide spreading of COVID-19 all over the world raises numerous focus on the epidemic containment problem. Different from the traditional epidemic control strategies that focus on quarantine and vaccination, we seek to control the epidemic from a network science perspective, i.e., by adjusting the weights of the epidemic spreading networks. Moreover, considering the limitations on the available resources, the dynamic constrained optimization problem of weights\u2019 adaptation for heterogeneous epidemic spreading networks is investigated. Due to the powerful ability of searching for global optimum, evolutionary algorithms (EAs) are used as optimizers. One major difficulty is that the dimension of the problem is increasing exponentially with the network size and most existing EAs cannot achieve satisfiable performance on large-scale optimization problems. To address this issue, a novel constrained cooperative coevolution ( $C^{3}$ ) strategy, which can separate the original large-scale problem into different subcomponents, is used to achieve the tradeoff between the constraint and objective function.",
+                    "citation": "Yun Feng, Yaonan Wang, Bing-chuan Wang... (2024). Optimized Weights for Heterogeneous Epidemic Spreading Networks: A Constrained Cooperative Coevolution Strategy. IEEE Transactions on Computational Social Systems, 11, 3911-3919. DOI: 10.1109/TCSS.2023.3323400",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel constrained cooperative coevolution strategy, which can separate the original large-scale problem into different subcomponents, is used to achieve the tradeoff between the constraint and objective function."
+                    }
+                },
+                {
+                    "paper_title": "Group centrality in optimal and suboptimal vaccination for epidemic models in contact networks",
+                    "abstract": "The pursuit of strategies that minimize the number of individuals needing vaccination to control an outbreak is a well-established area of study in mathematical epidemiology. However, when vaccines are in short supply, public policy tends to prioritize immunizing vulnerable individuals over epidemic control. As a result, optimal vaccination strategies may not always be effective in supporting real-world public policies. In this work, we focus on a disease that results in long-term immunity and spreads through a heterogeneous population, represented by a contact network. We study four well-known group centrality measures and show that the GED-Walk offers a reliable means of estimating the impact of vaccinating specific groups of indi\\-vi\\-duals, even in suboptimal cases. Additionally, we depart from the search for target individuals to be vaccinated and provide proxies for identifying optimal groups for vaccination. While the GED-Walk is the most useful centrality measure for suboptimal cases, the betweenness (a related, but different centrality measure) stands out when looking for optimal groups. This indicates that optimal vaccination is not concerned with breaking the largest number of transmission routes, but interrupting geodesic ones.",
+                    "citation": "J. Cerdeira, F. A. Chalub, Matheus Hansen (2025). Group centrality in optimal and suboptimal vaccination for epidemic models in contact networks. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "While the GED-Walk is the most useful centrality measure for suboptimal cases, the betweenness stands out when looking for optimal groups, which indicates that optimal vaccination is not concerned with breaking the largest number of transmission routes, but interrupting geodesic ones."
+                    }
+                },
+                {
+                    "paper_title": "Impact of Network Heterogeneity on Epidemic Mitigation Strategies",
+                    "abstract": "We formulate an optimal control problem to find best vaccination and treatment policies to minimize the impact of an epidemic on the population. Epidemic spread on heterogeneous human contact networks is modeled using the degree based compartmental model for susceptible-infected-recovered epidemic. Our formulation allows us to study the impact of varying network heterogeneity on the mitigation strategies. Network heterogeneity is varied by using different degree distributions for the network, such as, power law, power law with exponential cut-off, and Poisson. Network heterogeneity is a proxy for social distancing measures applied on the population\u2014as restrictions tightens, high degree hubs disappear, thus, the nature of degree distribution changes from power law to Poisson. We find that high degree nodes assume less importance in mitigating epidemics as the network heterogeneity decreases. Also, epidemics are easier to control with decrease in network heterogeneity.",
+                    "citation": "Jagtap Kalyani Devendra, Kundan Kandhway (2022). Impact of Network Heterogeneity on Epidemic Mitigation Strategies. 2022 IEEE 11th International Conference on Communication Systems and Network Technologies (CSNT), 428-433. DOI: 10.1109/CSNT54456.2022.9787646",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An optimal control problem to find best vaccination and treatment policies to minimize the impact of an epidemic on the population finds that high degree nodes assume less importance in mitigating epidemics as the network heterogeneity decreases."
+                    }
+                },
+                {
+                    "paper_title": "Modeling and Control of Malware Propagation in Wireless IoT Networks",
+                    "abstract": "Wireless Internet of (ings (IoT) devices densely populate our daily life, but also attract many attackers to attack them. In this paper, we propose a new Heterogeneous Susceptible-Exposed-Infected-Recovered (HSEIR) epidemic model to characterize the effect of heterogeneity of infected wireless IoT devices on malware spreading. Based on the proposed model, we obtain the basic reproduction number, which represents the threshold value of diffusion and governs that the malware is diffusion or not. Also, we derive the malware propagation scale under different cases. (ese analyses provide theoretical guidance for the application of defense techniques. Numerical simulations validated the correctness and effectiveness of theoretical results. (en, by using Pontryagin\u2019s Minimum Principle, optimal control strategy is proposed to seek time-varying cost-effective solutions against malware outbreaks. More numerical results also showed that some control strategies, such as quarantine and vaccination, should be taken at the beginning of the malware outbreak immediately and become less necessary after a certain period. However, the repairing and fixing strategy, for example applying antivirus patches, would be keep on going constantly.",
+                    "citation": "Qing Yan, Lipeng Song, Chenlu Zhang... (2021). Modeling and Control of Malware Propagation in Wireless IoT Networks. Secur. Commun. Networks, 2021, 4133474:1-4133474:13. DOI: 10.1155/2021/4133474",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new Heterogeneous Susceptible-Exposed-Infected-Recovered (HSEIR) epidemic model is proposed to characterize the effect of heterogeneity of infected wireless IoT devices on malware spreading and obtains the basic reproduction number, which represents the threshold value of diffusion and governs that the malware is diffusion or not."
+                    }
+                },
+                {
+                    "paper_title": "Which nodes should be prioritised for intervention to effectively control epidemic outbreaks in networks",
+                    "abstract": null,
+                    "citation": "C. Hadjichrysanthou (2014). Which nodes should be prioritised for intervention to effectively control epidemic outbreaks in networks. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new approach to design effective targeted intervention strategies to mitigate and control the propagation of infections across complex heterogeneous networks, using a newly developed individual-level deterministic Susceptible-Infectious-Susceptible (SIS) epidemiological model."
+                    }
+                },
+                {
+                    "paper_title": "Local immunization program for susceptible-infected-recovered network epidemic model",
+                    "abstract": "The immunization strategies through contact tracing on the susceptible-infected-recovered framework in social networks are modelled to evaluate the cost-effectiveness of information-based vaccination programs with particular focus on the scenario where individuals belonging to a specific set can get vaccinated due to the vaccine shortages and other economic or humanity constraints. By using the block heterogeneous mean-field approach, a series of discrete-time dynamical models is formulated and the condition for epidemic outbreaks can be established which is shown to be not only dependent on the network structure but also closely related to the immunization control parameters. Results show that increasing the immunization strength can effectively raise the epidemic threshold, which is different from the predictions obtained through the susceptible-infected-susceptible network framework, where epidemic threshold is independent of the vaccination strength. Furthermore, a significant decrease of vaccine use to control the infectious disease is observed for the local vaccination strategy, which shows the promising applications of the local immunization programs to disease control while calls for accurate local information during the process of disease outbreak.",
+                    "citation": "Qingchu Wu, Y. Lou (2016). Local immunization program for susceptible-infected-recovered network epidemic model. Chaos, 26. DOI: 10.1063/1.4941670",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results show that increasing the immunization strength can effectively raise the epidemic threshold, which is different from the predictions obtained through the susceptible-infected-susceptible network framework, where epidemic threshold is independent of the vaccination strength."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "vaccination strategies targeted random heterogeneous networks epidemic control SIR model",
+            "papers": [
+                {
+                    "paper_title": "Greedy and speedy: optimal vaccination strategies in multi-region heterogeneous networks",
+                    "abstract": "Vaccinations mechanisms are common strategies for controlling the spread of viral spreading processes, such as epidemics and computer viruses. Their supply is often limited, and thus devising optimal strategies for their allocation and for their time of administration can be of high value to fight the epidemic spread. We account for arbitrary heterogeneous networks (populations) and consider the problem of multi-region systems. We prove a general property of the effective reproduction number: its reduction (under SIR models) is convex. Using this property, we analyze the effects of vaccination strategies on the acquirement of herd immunity and derive an efficient greedy algorithm that finds the optimal (HIT minimizing) allocation and administration timing of vaccines.",
+                    "citation": "Jhonatan Tavori, H. Levy (2022). Greedy and speedy: optimal vaccination strategies in multi-region heterogeneous networks. Proceedings of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics. DOI: 10.1145/3535508.3545107",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A general property of the effective reproduction number is proved: its reduction (under SIR models) is convex and this property is used to derive an efficient greedy algorithm that finds the optimal allocation and administration timing of vaccines."
+                    }
+                },
+                {
+                    "paper_title": "Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network",
+                    "abstract": "In order to investigate the impact of two immunization strategies\u2014vaccination targeting susceptible individuals to reduce their infection rate and clinical medical interventions targeting infected individuals to enhance their recovery rate\u2014on the spread of infectious diseases in complex networks, this study proposes a bilinear SIR infectious disease model that considers bidirectional immunization. By analyzing the conditions for the existence of endemic equilibrium points, we derive the basic reproduction numbers and outbreak thresholds for both homogeneous and heterogeneous networks. The epidemic model is then reconstructed and extensively analyzed using continuous-time Markov chain (CTMC) methods. This analysis includes the investigation of transition probabilities, transition rate matrices, steady-state distributions, and the transition probability matrix based on the embedded chain. In numerical simulations, a notable concordance exists between the outcomes of CTMC and mean-field (MF) simulations, thereby substantiating the efficacy of the CTMC model. Moreover, the CTMC-based model adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains. We further analyze the relationship between the system\u2019s steady-state infection density and the immunization rate through MCS. The results suggest that the infection density decreases with an increase in the immunization rate among susceptible individuals. The current research results will enhance our understanding of infectious disease transmission patterns in real-world scenarios, providing valuable theoretical insights for the development of epidemic prevention and control strategies.",
+                    "citation": "Shixiang Han, Guanghui Yan, Huayan Pei... (2024). Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network. Entropy, 26. DOI: 10.3390/e26030227",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A bilinear SIR infectious disease model that considers bidirectional immunization is proposed that adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains."
+                    }
+                },
+                {
+                    "paper_title": "Evaluation of vaccination strategies for SIR epidemics on random networks incorporating household structure",
+                    "abstract": "This paper is concerned with the analysis of vaccination strategies in a stochastic susceptible \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} infected \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} removed model for the spread of an epidemic amongst a population of individuals with a random network of social contacts that is also partitioned into households. Under various vaccine action models, we consider both household-based vaccination schemes, in which the way in which individuals are chosen for vaccination depends on the size of the households in which they reside, and acquaintance vaccination, which targets individuals of high degree in the social network. For both types of vaccination scheme, assuming a large population with few initial infectives, we derive a threshold parameter which determines whether or not a large outbreak can occur and also the probability of a large outbreak and the fraction of the population infected by a large outbreak. The performance of these schemes is studied numerically, focusing on the influence of the household size distribution and the degree distribution of the social network. We find that acquaintance vaccination can significantly outperform the best household-based scheme if the degree distribution of the social network is heavy-tailed. For household-based schemes, when the vaccine coverage is insufficient to prevent a major outbreak and the vaccine is imperfect, we find situations in which both the probability and size of a major outbreak under the scheme which minimises the threshold parameter are larger than in the scheme which maximises the threshold parameter.",
+                    "citation": "F. Ball, David Sirl (2016). Evaluation of vaccination strategies for SIR epidemics on random networks incorporating household structure. Journal of Mathematical Biology, 76, 483 - 530. DOI: 10.1007/s00285-017-1139-0",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that acquaintance vaccination can significantly outperform the best household-based scheme if the degree distribution of the social network is heavy-tailed and also the probability of a large outbreak and the fraction of the population infected by aLarge outbreak."
+                    }
+                },
+                {
+                    "paper_title": "Group centrality in optimal and suboptimal vaccination for epidemic models in contact networks",
+                    "abstract": "The pursuit of strategies that minimize the number of individuals needing vaccination to control an outbreak is a well-established area of study in mathematical epidemiology. However, when vaccines are in short supply, public policy tends to prioritize immunizing vulnerable individuals over epidemic control. As a result, optimal vaccination strategies may not always be effective in supporting real-world public policies. In this work, we focus on a disease that results in long-term immunity and spreads through a heterogeneous population, represented by a contact network. We study four well-known group centrality measures and show that the GED-Walk offers a reliable means of estimating the impact of vaccinating specific groups of indi\\-vi\\-duals, even in suboptimal cases. Additionally, we depart from the search for target individuals to be vaccinated and provide proxies for identifying optimal groups for vaccination. While the GED-Walk is the most useful centrality measure for suboptimal cases, the betweenness (a related, but different centrality measure) stands out when looking for optimal groups. This indicates that optimal vaccination is not concerned with breaking the largest number of transmission routes, but interrupting geodesic ones.",
+                    "citation": "J. Cerdeira, F. A. Chalub, Matheus Hansen (2025). Group centrality in optimal and suboptimal vaccination for epidemic models in contact networks. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "While the GED-Walk is the most useful centrality measure for suboptimal cases, the betweenness stands out when looking for optimal groups, which indicates that optimal vaccination is not concerned with breaking the largest number of transmission routes, but interrupting geodesic ones."
+                    }
+                },
+                {
+                    "paper_title": "SIR Models on Complex Networks and Impact of Vaccination",
+                    "abstract": "We study network models in epidemiology and different vaccination strategies to combat epidemics. The main goal is to compare the effectiveness of vaccination scenarios on complex networks with different topological structures: random, scale-free, and small-world networks. The results obtained during the study can be used to plan and evaluate disease control programs or to defend computer networks against a virus attack.",
+                    "citation": "Khrystyna Buhrii, Yuriy Golovaty (2023). SIR Models on Complex Networks and Impact of Vaccination. 2023 IEEE 13th International Conference on Electronics and Information Technologies (ELIT), 37-42. DOI: 10.1109/ELIT61488.2023.10310758",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The main goal is to compare the effectiveness of vaccination scenarios on complex networks with different topological structures: random, scale-free, and small-world networks."
+                    }
+                },
+                {
+                    "paper_title": "Control of COVID-19 Pandemic: Vaccination Strategies Simulation under Probabilistic Node-Level Model",
+                    "abstract": "This paper aims at constructing a probabilistic node-level time-dependent contagious disease spreading model for coronavirus disease (COVID-19) pandemic which is called SEINRVseinr by introducing exposed and asymptomatic infectious state, imperfect vaccination, reinfected possibility and weighted undirected graph for social network into the traditional probabilistic node-level Susceptible-Infectious-Recovered (SIR) network model. This paper simulates the effectiveness of five vaccination strategies (including random base, degree-target base, random acquaintance, first-neighbor and second neighbor strategies) in random network, small world network and scale-free network. Compared with the benchmark model, the results show that random acquaintance strategy is efficient strategy and neighbors\u2019 strategies perform better in certain interval.",
+                    "citation": "Mengxuan Chen, C. Kuo, Wai Kin Victor Chan (2021). Control of COVID-19 Pandemic: Vaccination Strategies Simulation under Probabilistic Node-Level Model. 2021 6th International Conference on Intelligent Computing and Signal Processing (ICSP), 119-125. DOI: 10.1109/ICSP51882.2021.9408970",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results show that random acquaintance strategy is efficient strategy and neighbors\u2019 strategies perform better in certain interval in the probabilistic node-level Susceptible-Infectious-Recovered (SIR) network model."
+                    }
+                },
+                {
+                    "paper_title": "Assessing the impacts of vaccination and viral evolution in contact networks",
+                    "abstract": "A key lesson learned with COVID-19 is that public health measures were very different from country to country. In this study, we provide an analysis of epidemic dynamics using three well-known stochastic network models\u2014small-world networks (Watts\u2013Strogatz), random networks (Erd\u00f6s\u2013R\u00e9nyi), and scale-free networks (Barab\u00e1si\u2013Albert)\u2014to assess the impact of different viral strains, lockdown strategies, and vaccination campaigns. We highlight the significant role of highly connected nodes in the spread of infections, particularly within Barab\u00e1si\u2013Albert networks. These networks experienced earlier and higher peaks in infection rates, but ultimately had the lowest total number of infections, indicating their rapid transmission dynamics. We also found that intermittent lockdown strategies, particularly those with 7-day intervals, effectively reduce the total number of infections, serving as viable alternatives to prolonged continuous lockdowns. When simulating vaccination campaigns, we observed a bimodal distribution leading to two distinct outcomes: pandemic contraction and pandemic expansion. For WS and ER networks, rapid mass vaccination campaigns significantly reduced infection rates compared to slower campaigns; however, for BA networks, differences between vaccination strategies were minimal. To account for the evolution of a virus into a more transmissible strain, we modeled vaccination scenarios that varied vaccine efficacy against the wild-type virus and noted a decline in this efficacy over time against a second variant. Our results showed that vaccination coverage above 40% significantly flattened infection peaks for the wild-type virus, while at least 80% coverage was required to similarly reduce peaks for variant 2. Furthermore, the effect of vaccine efficacy on reducing the peak of variant 2 infection was minimal. Although vaccination strategies targeting hub nodes in scale-free networks did not substantially reduce the total number of infections, they were effective in increasing the probability of preventing pandemic outbreaks. These findings underscore the need to consider the network structure for effective pandemic control.",
+                    "citation": "Rodolfo Blanco-Rodr\u00edguez, J. Tetteh, Esteban Hern\u00e1ndez-Vargas (2024). Assessing the impacts of vaccination and viral evolution in contact networks. Scientific Reports, 14. DOI: 10.1038/s41598-024-66070-5",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study provides an analysis of epidemic dynamics using three well-known stochastic network models to assess the impact of different viral strains, lockdown strategies, and vaccination campaigns and highlights the significant role of highly connected nodes in the spread of infections, particularly within Barab\u00e1si\u2013Albert networks."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "vaccination thresholds heterogeneous networks epidemic control",
+            "papers": [
+                {
+                    "paper_title": "Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case",
+                    "abstract": "In this publication, we present a model that simulates the spread of monkeypox virus. The model takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy. Although vaccines do not offer total protection against the disease, they can reduce the transmission of monkeypox, which could help reduce the spread of the virus in a population, as our results show. So to develop efficient strategies for epidemic control and prevention, we studied global sensitivity analysis to determine the parameters most influential on disease spread. The existence and overall stability of the disease\u2010free equilibrium are also discussed. The basic reproduction number R0 of the model is calculated. The results show that if R0 < 1, the disease\u2010free equilibrium of the model is globally asymptotically stable. In addition, the model\u2019s key parameters are calculated using a least\u2010mean\u2010squares curve fit to the real data.",
+                    "citation": "Abdoulaye Sow, C. Diallo, H. Cherifi (2025). Analysis of Vaccination Strategies and Epidemic Therapy in Heterogeneous Networks: The Monkey Pox Case. Complexity. DOI: 10.1155/cplx/3746855",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model that simulates the spread of monkeypox virus takes into account the effect of interactions between human and rodent populations, as well as certain realistic factors such as the complex network with a heterogeneous mean field and certain disease control measures such as vaccination and disease therapy."
+                    }
+                },
+                {
+                    "paper_title": "Stability Analysis and Optimal Control of Epidemic-like Transmission Model with Nonlinear Inhibition Mechanism and Time Delay in Both Homogeneous and Heterogeneous Networks",
+                    "abstract": null,
+                    "citation": "Tian Ran Yuan, Gui Guan, Shuling Shen... (2023). Stability Analysis and Optimal Control of Epidemic-like Transmission Model with Nonlinear Inhibition Mechanism and Time Delay in Both Homogeneous and Heterogeneous Networks. Journal of Mathematical Analysis and Applications. DOI: 10.1016/j.jmaa.2023.127273",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Periodic transmission and vaccination effects in epidemic dynamics: a study using the SIVIS model",
+                    "abstract": null,
+                    "citation": "Protyusha Dutta, G. Samanta, J. J. Nieto (2024). Periodic transmission and vaccination effects in epidemic dynamics: a study using the SIVIS model. Nonlinear Dynamics, 1-29. DOI: 10.1007/s11071-023-09157-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The study frames the system as an optimal control problem, considering time-dependent control strategies for strength of social behavior of public and pharmaceutical treatments for strength of social behavior of public and pharmaceutical treatments."
+                    }
+                },
+                {
+                    "paper_title": "Analysis of epidemic vaccination strategies on heterogeneous networks: Based on SEIRV model and evolutionary game",
+                    "abstract": null,
+                    "citation": "Xueyu Meng, Zhiqiang Cai, Shubin Si... (2021). Analysis of epidemic vaccination strategies on heterogeneous networks: Based on SEIRV model and evolutionary game. Applied Mathematics and Computation, 403, 126172 - 126172. DOI: 10.1016/j.amc.2021.126172",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An epidemic SEIRV (susceptible-exposed-infected-removed -vaccinated) model and an evolutionary game model are established to analyze the difference between mandatory vaccination method and voluntary vaccination method on heterogeneous networks to make infectious disease disappear."
+                    }
+                },
+                {
+                    "paper_title": "Qualitative behavior of a SIRS epidemic model with vaccination on heterogeneous networks",
+                    "abstract": null,
+                    "citation": "A. Assadouq, H. Mahjour, A. Settati (2020). Qualitative behavior of a SIRS epidemic model with vaccination on heterogeneous networks. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper studies the dynamics of a SIRS epidemic model with varying population size and vaccination in a complex network and investigates the stability of the model according to the threshold R0, which means, if R0 is less than one, then the disease will die out."
+                    }
+                },
+                {
+                    "paper_title": "Enhancing Vaccination Strategy Effectiveness in Epidemic Networks: Exploring a New Centrality Measure and Community Detection Methods",
+                    "abstract": "The prevention and control of infectious diseases heavily rely on vaccination as a crucial strategy. This study introduces an innovative vaccination approach that includes dynamic community detection in an epidemic network, as well as various centrality measures that are compared to a newly proposed centrality measure. Because these measures can identify Super-Spreaders within communities, we prioritize them for vaccination. Our ultimate goal is to create a network of highly immunized people capable of efficiently controlling disease spread. The effectiveness of our method is extensively evaluated utilizing a variety of evaluation metrics. Furthermore, our technique is remarkably scalable and adaptable, making it a promising solution for dealing with future epidemics with varying situations.",
+                    "citation": "Laasri Nadia, D. Lotfi, Ahmed Drissi El Maliani (2023). Enhancing Vaccination Strategy Effectiveness in Epidemic Networks: Exploring a New Centrality Measure and Community Detection Methods. 2023 10th International Conference on Wireless Networks and Mobile Communications (WINCOM), 1-6. DOI: 10.1109/WINCOM59760.2023.10323015",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An innovative vaccination approach is introduced that includes dynamic community detection in an epidemic network, as well as various centrality measures that are compared to a newly proposed centrality measure to create a network of highly immunized people capable of efficiently controlling disease spread."
+                    }
+                },
+                {
+                    "paper_title": "Analysis and Control of Multi-Time-Scale Modular Directed Heterogeneous Networks",
+                    "abstract": "In this article, we study the collective behavior of heterogeneous nonlinear systems, interconnected over generic directed graphs and in the scenario that, due to the nature of their interconnections, the agents self-organize in modules. These are subnetworks composed of agents that are densely connected with a strong coupling, while the modules themselves are sparsely interconnected. As we show, beyond certain coupling thresholds, the systems within each module synchronize rapidly with a weighted-average dynamical system that evolves more slowly than the individual systems. Then, the average dynamical systems corresponding to each and all the modules synchronize among themselves. Furthermore, we establish global asymptotic stability for the overall network under the conditions that the average dynamics admit the origin as a globally asymptotically stable equilibrium and each system be semipassive. Finally, we explore stabilization techniques that consist in controlling the average dynamics to make the origin globally asymptotically stable.",
+                    "citation": "Anes Lazri, E. Panteley, A. Lor\u00eda (2025). Analysis and Control of Multi-Time-Scale Modular Directed Heterogeneous Networks. IEEE Transactions on Control of Network Systems, 12, 661-672. DOI: 10.1109/TCNS.2024.3395836",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This article study the collective behavior of heterogeneous nonlinear systems, interconnected over generic directed graphs and in the scenario that, due to the nature of their interconnections, the agents self-organize in modules, establishing global asymptotic stability for the overall network."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

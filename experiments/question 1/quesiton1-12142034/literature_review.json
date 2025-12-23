@@ -1,0 +1,185 @@
+{
+    "results": [
+        {
+            "query": "SEIR model epidemics on degree-heterogeneous vs homogeneous-mixing networks key findings, R0, final size, peak dynamics",
+            "papers": [
+                {
+                    "title": "Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature",
+                    "abstract": "Infectious-disease dynamics depend on heterogeneous contact structure, which classical homogeneous-mixing models such as SIR/SEIR cannot capture. We develop a curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission. We compute FRC on undirected and directed Erd\u0151s\u2013R\u00e9nyi, Watts\u2013Strogatz, Barab\u00e1si\u2013Albert, and Power\u2013Law Cluster networks, and relate curvature to degree, clustering, and betweenness to identify structurally influential nodes and bridge edges. Using curvature-adjusted transmission, we simulate epidemics across topologies and infection rates, then validate predictively with a controlled \u201chidden-truth\u201d benchmark: posterior-calibrated FRC models are compared with advanced centrality-weighted baselines (EdgeBetweenness, Degree, Eigenvector) under identical fit/holdout splits. On heterogeneous graphs (Barab\u00e1si\u2013Albert/Power\u2013Law Cluster), FRC improves holdout Root Mean Squared Error (RMSE), peak-time accuracy, and final-size proximity. A compact sensitivity analysis over baseline transmission and clustering, with Partial Rank Correlation Coefficient (PRCC), shows these gains are robust across parameter regimes. Intervention ablations (cases averted vs. budget) further show that vaccinating high-curvature nodes and protecting extreme negative-curvature bridges can outperform EdgeBetweenness targeting at practical budgets. Directed networks exhibit sharper peaks and faster resolution, with strongly negative out-curvature marking putative exporters. In general, FRC provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control.",
+                    "citation": "Oladimeji Samuel Sowole, N. Bragazzi, Geminpeter A. Lyakurwa (2025). Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature. Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2627f3ba9c1217f944072957731005cb09c6a8fe"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SEIR model parameters and network structures in epidemic modeling",
+            "papers": [
+                {
+                    "title": "Spread and dynamics of the COVID-19 epidemic in Italy: Effects of emergency containment measures",
+                    "abstract": "Significance The ongoing pandemic of COVID-19 challenges globalized societies. Scientific and technological cross-fertilization yields broad availability of georeferenced epidemiological data and of modeling tools that aid decisions on emergency management. To this end, spatially explicit models of the COVID-19 epidemic that include e.g. regional individual mobilities, the progression of social distancing, and local capacity of medical infrastructure provide significant information. Data-tailored spatial resolutions that model the disease spread geography can include details of interventions at the proper geographical scale. Based on them, it is possible to quantify the effect of local containment measures (like diachronic spatial maps of averted hospitalizations) and the assessment of the spatial and temporal planning of the needs of emergency measures and medical infrastructure as a major contingency planning aid. The spread of coronavirus disease 2019 (COVID-19) in Italy prompted drastic measures for transmission containment. We examine the effects of these interventions, based on modeling of the unfolding epidemic. We test modeling options of the spatially explicit type, suggested by the wave of infections spreading from the initial foci to the rest of Italy. We estimate parameters of a metacommunity Susceptible\u2013Exposed\u2013Infected\u2013Recovered (SEIR)-like transmission model that includes a network of 107 provinces connected by mobility at high resolution, and the critical contribution of presymptomatic and asymptomatic transmission. We estimate a generalized reproduction number (R0 = 3.60 [3.49 to 3.84]), the spectral radius of a suitable next-generation matrix that measures the potential spread in the absence of containment interventions. The model includes the implementation of progressive restrictions after the first case confirmed in Italy (February 21, 2020) and runs until March 25, 2020. We account for uncertainty in epidemiological reporting, and time dependence of human mobility matrices and awareness-dependent exposure probabilities. We draw scenarios of different containment measures and their impact. Results suggest that the sequence of restrictions posed to mobility and human-to-human interactions have reduced transmission by 45% (42 to 49%). Averted hospitalizations are measured by running scenarios obtained by selectively relaxing the imposed restrictions and total about 200,000 individuals (as of March 25, 2020). Although a number of assumptions need to be reexamined, like age structure in social mixing patterns and in the distribution of mobility, hospitalization, and fatality, we conclude that verifiable evidence exists to support the planning of emergency measures.",
+                    "citation": "M. Gatto, E. Bertuzzo, L. Mari, et al. (2020). Spread and dynamics of the COVID-19 epidemic in Italy: Effects of emergency containment measures. Proceedings of the National Academy of Sciences of the United States of America. Citations: 1002, Influential: 62.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Although a number of assumptions need to be reexamined, like age structure in social mixing patterns and in the distribution of mobility, hospitalization, and fatality, it is concluded that verifiable evidence exists to support the planning of emergency measures."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6d3eedff46ea4f3a0e164e71a9fd2bd3e0fcbd4d"
+                },
+                {
+                    "title": "Modelling Strong Control Measures for Epidemic Propagation With Networks\u2014A COVID-19 Case Study",
+                    "abstract": "We show that precise knowledge of epidemic transmission parameters is not required to build an informative model of the spread of disease. We propose a detailed model of the topology of the contact network under various external control regimes and demonstrate that this is sufficient to capture the salient dynamical characteristics and to inform decisions. Contact between individuals in the community is characterised by a contact graph, the structure of that contact graph is selected to mimic community control measures. Our model of city-level transmission of an infectious agent (SEIR model) characterises spread via a (a) scale-free contact network (no control); (b) a random graph (elimination of mass gatherings); and (c) small world lattice (partial to full lockdown\u2014\u201csocial\u201d distancing). This model exhibits good qualitative agreement between simulation and data from the 2020 pandemic spread of a novel coronavirus. Estimates of the relevant rate parameters of the SEIR model are obtained and we demonstrate the robustness of our model predictions under uncertainty of those estimates. The social context and utility of this work is identified, contributing to a highly effective pandemic response in Western Australia.",
+                    "citation": "M. Small, David Cavanagh (2020). Modelling Strong Control Measures for Epidemic Propagation With Networks\u2014A COVID-19 Case Study. IEEE Access. Citations: 44, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that precise knowledge of epidemic transmission parameters is not required to build an informative model of the spread of disease and the robustness of the model predictions under uncertainty of those estimates is demonstrated."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/589d06c335c91bbf8bf6f456a416dd251d655691"
+                },
+                {
+                    "title": "Spreading Dynamics of an SEIR Model with Delay on Scale-Free Networks",
+                    "abstract": "In this paper, to be more precise in modeling the real epidemic spread, an SEIR model with delay describing the fixed latent period is studied on scale-free networks. The basic reproduction number, which serves as a critical threshold of epidemic spread, is calculated. The formula for the basic reproduction number shows that adding delay decreases the basic reproduction number. By constructing appropriate Lyapunov functions, the global stability of disease-free and endemic equilibria is investigated. Finally, numerical simulations are performed to illustrate the effect of network structures and model parameters on the basic reproduction numbers and disease spreading processes.",
+                    "citation": "Huiyan Kang, Mengfeng Sun, Yajuan Yu, et al. (2020). Spreading Dynamics of an SEIR Model with Delay on Scale-Free Networks. IEEE Transactions on Network Science and Engineering. Citations: 35, Influential: 1.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/a3ebd98c8414ea9f652fc659068a2d6e7e53402e"
+                },
+                {
+                    "title": "Development of a forecasting model for brucellosis spreading in the Italian cattle trade network aimed to prioritise the field interventions",
+                    "abstract": "Brucellosis caused by Brucella abortus is an important zoonosis that constitutes a serious hazard to public health. Prevention of human brucellosis depends on the control of the disease in animals. Livestock movement data represent a valuable source of information to understand the pattern of contacts between holdings, which may determine the inter-herds and intra-herd spread of the disease. The manuscript addresses the use of computational epidemic models rooted in the knowledge of cattle trade network to assess the probabilities of brucellosis spread and to design control strategies. Three different spread network-based models were proposed: the DFC (Disease Flow Centrality) model based only on temporal cattle network structure and unrelated to the epidemiological disease parameters; a deterministic SIR (Susceptible-Infectious-Recovered) model; a stochastic SEIR (Susceptible-Exposed-Infectious-Recovered) model in which epidemiological and demographic within-farm aspects were also modelled. Containment strategies based on farms centrality in the cattle network were tested and discussed. All three models started from the identification of the entire sub-network originated from an infected farm, up to the fifth order of contacts. Their performances were based on data collected in Sicily in the framework of the national eradication plan of brucellosis in 2009. Results show that the proposed methods improves the efficacy and efficiency of the tracing activities in comparison to the procedure currently adopted by the veterinary services in the brucellosis control, in Italy. An overall assessment shows that the SIR model is the most suitable for the practical needs of the veterinary services, being the one with the highest sensitivity and the shortest computation time.",
+                    "citation": "L. Savini, L. Candeloro, A. Conte, et al. (2017). Development of a forecasting model for brucellosis spreading in the Italian cattle trade network aimed to prioritise the field interventions. PLoS ONE. Citations: 20, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results show that the proposed methods improves the efficacy and efficiency of the tracing activities in comparison to the procedure currently adopted by the veterinary services in the brucellosis control, in Italy."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3a86e0ad6f747bc887fa7debe3e52efc315ab7a7"
+                },
+                {
+                    "title": "A Network\u2010based Analysis of the 1861 Hagelloch Measles Data",
+                    "abstract": null,
+                    "citation": "Chris Groendyke, D. Welch, D. Hunter (2012). A Network\u2010based Analysis of the 1861 Hagelloch Measles Data. Biometrics. Citations: 69, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This article demonstrates a statistical method for fitting the parameters of a sophisticated network and epidemic model to disease data and shows that the ERGM network model better fits the data than a Bernoulli network model previously used."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/98332bf77344682649efad03930466049c78e9c6"
+                },
+                {
+                    "title": "Modifying the network-based stochastic SEIR model to account for quarantine: an application to COVID-19",
+                    "abstract": "Abstract Objectives: Diseases such as SARS-CoV-2 have novel features that require modifications to the standard network-based stochastic SEIR model. In particular, we introduce modifications to this model to account for the potential changes in behavior patterns of individuals upon becoming symptomatic, as well as the tendency of a substantial proportion of those infected to remain asymptomatic. Methods: Using a generic network model where every potential contact exists with the same common probability, we conduct a simulation study in which we vary four key model parameters (transmission rate, probability of remaining asymptomatic, and the mean lengths of time spent in the exposed and infectious disease states) and examine the resulting impacts on various metrics of epidemic severity, including the effective reproduction number. We then consider the effects of a more complex network model. Results: We find that the mean length of time spent in the infectious state and the transmission rate are the most important model parameters, while the mean length of time spent in the exposed state and the probability of remaining asymptomatic are less important. We also find that the network structure has a significant impact on the dynamics of the disease spread. Conclusions: In this article, we present a modification to the network-based stochastic SEIR epidemic model which allows for modifications to the underlying contact network to account for the effects of quarantine. We also discuss the changes needed to the model to incorporate situations where some proportion of the individuals who are infected remain asymptomatic throughout the course of the disease.",
+                    "citation": "Chris Groendyke, Adam Combs (2020). Modifying the network-based stochastic SEIR model to account for quarantine: an application to COVID-19. Epidemiologic Methods. Citations: 14, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A modification to the network-based stochastic SEIR epidemic model is presented which allows for modifications to the underlying contact network to account for the effects of quarantine."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/9e7798fb906a6065e4ad02883ad329bb60fd918c"
+                },
+                {
+                    "title": "Neural-SEIR: A flexible data-driven framework for precise prediction of epidemic disease.",
+                    "abstract": "Accurately modeling and predicting epidemic diseases is crucial to prevent disease transmission and reduce mortality. Due to various unpredictable factors, including population migration, vaccination, control efforts, and seasonal fluctuations, traditional epidemic models that rely on prior knowledge of virus transmission mechanisms may not be sufficient to forecast complex epidemics like coronavirus disease 2019(COVID-19). The application of traditional epidemiological models such as susceptible-exposed-infectious-recovered (SEIR) may face difficulties in accurately predicting such complex epidemics. Data-driven prediction approaches lack the ability to generalize and exhibit low accuracy on small datasets due to their reliance on large amounts of data without incorporating prior knowledge. To overcome this limitation, we introduce a flexible ensemble data-driven framework (Neural-SEIR) that \"neuralizes\" the SEIR model by approximating the core parameters through neural networks while preserving the propagation structure of SEIR. Neural-SEIR employs long short-term memory (LSTM) neural network to capture complex correlation features, exponential smoothing (ES) to model seasonal information, and prior knowledge from SEIR. By incorporating SEIR parameters into the neural network structure, Neural-SEIR leverages prior knowledge while updating parameters with real-world data. Our experimental results demonstrate that Neural-SEIR outperforms traditional machine learning and epidemiological models, achieving high prediction accuracy and efficiency in forecasting epidemic diseases.",
+                    "citation": "Haoyu Wang, Xihe Qiu, Jinghan Yang, et al. (2023). Neural-SEIR: A flexible data-driven framework for precise prediction of epidemic disease.. Mathematical biosciences and engineering : MBE. Citations: 12, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work introduces a flexible ensemble data-driven framework (Neural-SEIR) that \"neuralizes\" the SEIR model by approximating the core parameters through neural networks while preserving the propagation structure of SEIR."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7b1749f7d2ad442c6755e497d41a12b67f393997"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "population size and initial seeding strategies used in SEIR network epidemic simulations",
+            "papers": [
+                {
+                    "title": "An Edge-Based Model of SEIR Epidemics on Static Random Networks",
+                    "abstract": null,
+                    "citation": "Cherrylyn P Alota, C. P. Pilar-Arceo, A. de los Reyes V (2020). An Edge-Based Model of SEIR Epidemics on Static Random Networks. Bulletin of Mathematical Biology. Citations: 5, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The results in this paper can be used as an alternative way of explaining the spread of disease and it provides implications on the control strategies applied to mitigate the disease transmission."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/13623e6977e9b6a0641b3059dc19251b94b51653"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SEIR epidemic simulations comparing scale-free and random networks",
+            "papers": [
+                {
+                    "title": "Modelling Strong Control Measures for Epidemic Propagation With Networks\u2014A COVID-19 Case Study",
+                    "abstract": "We show that precise knowledge of epidemic transmission parameters is not required to build an informative model of the spread of disease. We propose a detailed model of the topology of the contact network under various external control regimes and demonstrate that this is sufficient to capture the salient dynamical characteristics and to inform decisions. Contact between individuals in the community is characterised by a contact graph, the structure of that contact graph is selected to mimic community control measures. Our model of city-level transmission of an infectious agent (SEIR model) characterises spread via a (a) scale-free contact network (no control); (b) a random graph (elimination of mass gatherings); and (c) small world lattice (partial to full lockdown\u2014\u201csocial\u201d distancing). This model exhibits good qualitative agreement between simulation and data from the 2020 pandemic spread of a novel coronavirus. Estimates of the relevant rate parameters of the SEIR model are obtained and we demonstrate the robustness of our model predictions under uncertainty of those estimates. The social context and utility of this work is identified, contributing to a highly effective pandemic response in Western Australia.",
+                    "citation": "M. Small, David Cavanagh (2020). Modelling Strong Control Measures for Epidemic Propagation With Networks\u2014A COVID-19 Case Study. IEEE Access. Citations: 44, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that precise knowledge of epidemic transmission parameters is not required to build an informative model of the spread of disease and the robustness of the model predictions under uncertainty of those estimates is demonstrated."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/589d06c335c91bbf8bf6f456a416dd251d655691"
+                },
+                {
+                    "title": "Comparison between Individual-based and Aggregate Models in the context of Tuberculosis Transmission",
+                    "abstract": null,
+                    "citation": "Yuan Tian, N. Osgood (2011). Comparison between Individual-based and Aggregate Models in the context of Tuberculosis Transmission. Unknown Journal. Citations: 5, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The difference between aggregate models and individual-based models in the context of Tuberculosis (TB) transmission is compared, considering smoking as a risk factor and the merits and impact of capturing individual heterogeneity are examined."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/e88cb81fbf14347797c312bbfa03642e641928d8"
+                },
+                {
+                    "title": "Microscopic Numerical Simulations of Epidemic Models on Networks",
+                    "abstract": "Mathematical models of the spread of epidemic diseases are studied, paying special attention to networks. We treat the Susceptible-Infected-Recovered (SIR) model and the Susceptible-Exposed-Infectious-Recovered (SEIR) model described by differential equations. We perform microscopic numerical simulations for corresponding epidemic models on networks. Comparing a random network and a scale-free network for the spread of the infection, we emphasize the role of hubs in a scale-free network. We also present a simple derivation of the exact solution of the SIR model.",
+                    "citation": "Y. Okabe, A. Shudo (2021). Microscopic Numerical Simulations of Epidemic Models on Networks. Mathematics. Citations: 19, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple derivation of the exact solution of the SIR model is presented, emphasizing the role of hubs in a scale-free network and comparing a random network and a Scale-Free network for the spread of the infection."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/21d5b80852fa83b83b9307f3f70cfa2846be3fe9"
+                },
+                {
+                    "title": "A new formulation of compartmental epidemic modelling for arbitrary distributions of incubation and removal times.",
+                    "abstract": "The paradigm for compartment models in epidemiology assumes exponentially distributed incubation and removal times, which is not realistic in actual populations. Commonly used variations with multiple exponentially distributed variables are more flexible, yet do not allow for arbitrary distributions. We present a new formulation, focussing on the SEIR concept that allows to include general distributions of incubation and removal times. We compare the solution to two types of agent-based model simulations, a spatially homogeneous one where infection occurs by proximity, and a model on a scale-free network with varying clustering properties, where the infection between any two agents occurs via their link if it exists. We find good agreement in both cases. Furthermore a family of asymptotic solutions of the equations is found in terms of a logistic curve, which after a non-universal time shift, fits extremely well all the microdynamical simulations. The formulation allows for a simple numerical approach; software in Julia and Python is provided.",
+                    "citation": "P. Hern\u00e1ndez, C. Pe\u00f1a, A. Ramos, et al. (2021). A new formulation of compartmental epidemic modelling for arbitrary distributions of incubation and removal times.. PLoS ONE. Citations: 5, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new formulation, focussing on the SEIR concept, allows to include general distributions of incubation and removal times, and a family of asymptotic solutions of the equations is found in terms of a logistic curve, which after a non-universal time shift, fits extremely well all the microdynamical simulations."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b5378cf3a2fbf0b1e0f83141037ac8cfdc136cdc"
+                },
+                {
+                    "title": "Epidemic Processes on Complex Networks: Modelling, Simulation and Algorithms",
+                    "abstract": null,
+                    "citation": "R. V. D. Bovenkamp (2015). Epidemic Processes on Complex Networks: Modelling, Simulation and Algorithms. Unknown Journal. Citations: 10, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This thesis focuses on two types of dynamic processes on graphs: the Susceptible-Infected-Susceptilbe (SIS) virus spreading model, and gossip style epidemic algorithms."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dbda82b12f4e3e0fa93d0c9599d14a03b9ebadf0"
+                },
+                {
+                    "title": "A Network Epidemic Model with Preventive Rewiring: Comparative Analysis of the Initial Phase",
+                    "abstract": "This paper is concerned with stochastic SIR and SEIR epidemic models on random networks in which individuals may rewire away from infected neighbors at some rate \u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} (and reconnect to non-infectious individuals with probability \u03b1\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha $$\\end{document} or else simply drop the edge if \u03b1=0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha =0$$\\end{document}), so-called preventive rewiring. The models are denoted SIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} and SEIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document}, and we focus attention on the early stages of an outbreak, where we derive the expressions for the basic reproduction number R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document} and the expected degree of the infectious nodes E(DI)\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$E(D_I)$$\\end{document} using two different approximation approaches. The first approach approximates the early spread of an epidemic by a branching process, whereas the second one uses pair approximation. The expressions are compared with the corresponding empirical means obtained from stochastic simulations of SIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} and SEIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} epidemics on Poisson and scale-free networks. Without rewiring of exposed nodes, the two approaches predict the same epidemic threshold and the same E(DI)\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$E(D_I)$$\\end{document} for both types of epidemics, the latter being very close to the mean degree obtained from simulated epidemics over Poisson networks. Above the epidemic threshold, pairwise models overestimate the value of R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document} computed from simulations, which turns out to be very close to the one predicted by the branching process approximation. When exposed individuals also rewire with \u03b1>0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha > 0$$\\end{document} (perhaps unaware of being infected), the two approaches give different epidemic thresholds, with the branching process approximation being more in agreement with simulations.",
+                    "citation": "T. Britton, David Juher, Joan Salda\u00f1a (2015). A Network Epidemic Model with Preventive Rewiring: Comparative Analysis of the Initial Phase. Bulletin of Mathematical Biology. Citations: 21, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper is concerned with stochastic SIR and SEIR epidemic models on random networks in which individuals may rewire away from infected neighbors at some rate and reconnect to non-infectious individuals with probability $$\\alpha $$\u03b1 or else simply drop the edge if$$\\alpha =0$$\u03b1=0), so-called preventive rewiring."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/76e4d7cbe848b414d9d236c911bf5bc4b9776ac4"
+                },
+                {
+                    "title": "Investor immunization to Ponzi scheme diffusion in social networks and financial risk analysis",
+                    "abstract": "Most illegal Ponzi schemes are ultimately out of control and lead to systemic financial risk. Risk education and precaution are similar to mass random immunization of epidemic spreading. In this study, the effect of random immunization strategy is evaluated based on the potential-investor\u2013divestor (PID) spreading model in both homo- and inhomogeneous social networks. Fund flux function and system balance function are formulated. The zero point of system balance is used as the collapse point. The peak value of balance, the total number of investors involved and the total amount of principal involved are defined to compare the immunization effects in various scenarios. Mathematical derivation and numerical simulation show that the random immunization takes effect by postponing the peak position of the system balance as well as suppressing the peak values of the system balance. This kind of positive effect helps reduce the scheme\u2019s scale of total number of investors involved and total amount of principal involved. The random immunization is more powerful towards the schemes with small spreading rate than those with medium and high spreading rates. Hence, it is suitable for the concentrated regulation on a large amount of small scale and slow spreading schemes in bulk.",
+                    "citation": "Anding Zhu, Wanying Chen, Jinming Zhang, et al. (2019). Investor immunization to Ponzi scheme diffusion in social networks and financial risk analysis. International Journal of Modern Physics B. Citations: 12, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The random immunization is more powerful towards the schemes with small spreading rate than those with medium and high spreading rates, which makes it suitable for the concentrated regulation on a large amount of small scale and slow spreading schemes in bulk."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6b43e188c890c9f7e2c5cd41332bf6d30496aadb"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

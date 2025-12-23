@@ -1,0 +1,172 @@
+{
+    "results": [
+        {
+            "query": "critical vaccination fraction epidemic threshold uncorrelated random networks configuration model SIR random and targeted immunization simulation",
+            "papers": [
+                {
+                    "title": "Dynamic vaccination in partially overlapped multiplex network",
+                    "abstract": "In this work we propose and investigate a strategy of vaccination which we call \u201cdynamic vaccination.\u201d In our model, susceptible people become aware that one or more of their contacts are infected and thereby get vaccinated with probability \u03c9, before having physical contact with any infected patient. Then the nonvaccinated individuals will be infected with probability \u03b2. We apply the strategy to the susceptible-infected-recovered epidemic model in a multiplex network composed by two networks, where a fraction q of the nodes acts in both networks. We map this model of dynamic vaccination into bond percolation model and use the generating functions framework to predict theoretically the behavior of the relevant magnitudes of the system at the steady state. We find a perfect agreement between the solutions of the theoretical equations and the results of stochastic simulations. In addition, we find an interesting phase diagram in the plane \u03b2-\u03c9, which is composed of an epidemic and a nonepidemic phase, separated by a critical threshold line \u03b2c, which depends on q. As q decreases, \u03b2c increases, i.e., as the overlap decreases, the system is more disconnected, and therefore more virulent diseases are needed to spread epidemics. Surprisingly, we find that, for all values of q, a region in the diagram where the vaccination is so efficient that, regardless of the virulence of the disease, it never becomes an epidemic. We compare our strategy with random immunization and find that, using the same amount of vaccines for both scenarios, we obtain that the spread of disease is much lower in the case of dynamic vaccination when compared to random immunization. Furthermore, we also compare our strategy with targeted immunization and we find that, depending on \u03c9, dynamic vaccination will perform significantly better and in some cases will stop the disease before it becomes an epidemic.",
+                    "citation": "L. G. Alvarez-Zuzek, M. A. D. Muro, S. Havlin, et al. (2018). Dynamic vaccination in partially overlapped multiplex network. Physical Review E. Citations: 39, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": null
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b50d68958b69114a955fd019bc88eb01aac8c815"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic threshold random vaccination configuration model network",
+            "papers": [
+                {
+                    "title": "Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.",
+                    "abstract": "We develop an analytical approach to the susceptible-infected-susceptible epidemic model that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks. We find that a delicate balance between the number of high degree nodes in the network and the topological distance between them dictates the existence or absence of such a threshold. In particular, small-world random networks with a degree distribution decaying slower than an exponential have a vanishing epidemic threshold in the thermodynamic limit.",
+                    "citation": "M. Bogu\u00f1\u00e1, C. Castellano, R. Pastor-Satorras (2013). Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.. Physical Review Letters. Citations: 220, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical approach to the susceptible-infected-susceptible epidemic model is developed that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45d940bd24ae48e34e724bd64dbfaf63545d5e5b"
+                },
+                {
+                    "title": "Epidemic threshold for the susceptible-infectious-susceptible model on random networks.",
+                    "abstract": null,
+                    "citation": "Roni Parshani, S. Carmi, S. Havlin (2010). Epidemic threshold for the susceptible-infectious-susceptible model on random networks.. Physical Review Letters. Citations: 166, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical expression for the critical infection rate r{c} of the susceptible-infectious-susceptible (SIS) disease spreading model on random networks is derived using percolation theory."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7961e3b46260ffb5ad6d2af7d3b0e9fa31ac03a2"
+                },
+                {
+                    "title": "Threshold behaviour and final outcome of an epidemic on a random network with household structure",
+                    "abstract": "In this paper we consider a stochastic SIR (susceptible\u2192infective\u2192removed) epidemic model in which individuals may make infectious contacts in two ways, both within \u2018households\u2019 (which for ease of exposition are assumed to have equal size) and along the edges of a random graph describing additional social contacts. Heuristically motivated branching process approximations are described, which lead to a threshold parameter for the model and methods for calculating the probability of a major outbreak, given few initial infectives, and the expected proportion of the population who are ultimately infected by such a major outbreak. These approximate results are shown to be exact as the number of households tends to infinity by proving associated limit theorems. Moreover, simulation studies indicate that these asymptotic results provide good approximations for modestly sized finite populations. The extension to unequal-sized households is discussed briefly.",
+                    "citation": "F. Ball, David Sirl, Pieter Trapman (2008). Threshold behaviour and final outcome of an epidemic on a random network with household structure. Advances in Applied Probability. Citations: 90, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A stochastic SIR (susceptible\u2192infective\u2192removed) epidemic model in which individuals may make infectious contacts in two ways, both within \u2018households\u2019 and along the edges of a random graph describing additional social contacts is considered."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/85b90c7436dc3ea19e5984e2eb4a8cf973d70f04"
+                },
+                {
+                    "title": "Exact Markovian SIR and SIS epidemics on networks and an upper bound for the epidemic threshold",
+                    "abstract": "Exploiting the power of the expectation operator and indicator (or Bernoulli) random variables, we present the exact governing equations for both the SIR and SIS epidemic models on \\emph{networks}. Although SIR and SIS are basic epidemic models, deductions from their exact stochastic equations \\textbf{without} making approximations (such as the common mean-field approximation) are scarce. An exact analytic solution of the governing equations is highly unlikely to be found (for any network) due to the appearing pair (and higher order) correlations. Nevertheless, the maximum average fraction $y_{I}$ of infected nodes in both SIS and SIR can be written as a quadratic form of the graph's Laplacian. Only for regular graphs, the expression for the maximum of $y_{I}$ can be simplied to exhibit the explicit dependence on the spectral radius. From our new Laplacian expression, we deduce a general \\textbf{upper} bound for the epidemic SIS threshold in any graph.",
+                    "citation": "P. Mieghem (2014). Exact Markovian SIR and SIS epidemics on networks and an upper bound for the epidemic threshold. Unknown Journal. Citations: 51, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "From a new Laplacian expression, a general \\textbf{upper} bound for the epidemic SIS threshold in any graph is deduced."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/603f2def2768f24bc254c274a7ae182511f9b3b9"
+                },
+                {
+                    "title": "An Sir Epidemic Model on a Population with Random Network and Household Structure, and Several Types of Individuals",
+                    "abstract": null,
+                    "citation": "F. Ball, David Sirl (2012). An Sir Epidemic Model on a Population with Random Network and Household Structure, and Several Types of Individuals. Advances in Applied Probability. Citations: 27, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A strong approximation theorem is given which leads to a threshold theorem for the epidemic model and a method for calculating the probability of a major outbreak given few initial infectives is calculated."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5530900f3f8859d2d2b734e81d6435f419e390af"
+                },
+                {
+                    "title": "Predicting the epidemic threshold of the susceptible-infected-recovered model",
+                    "abstract": "Researchers have developed several theoretical methods for predicting epidemic thresholds, including the mean-field like (MFL) method, the quenched mean-field (QMF) method and the dynamical message passing (DMP) method. When these methods are applied to predict epidemic threshold they often produce differing results and their relative levels of accuracy are still unknown. We systematically analyze these two issues\u2014relationships among differing results and levels of accuracy\u2014by studying the susceptible-infected-recovered (SIR) model on uncorrelated configuration networks and a group of 56 real-world networks. In uncorrelated configuration networks the MFL and DMP methods yield identical predictions that are larger and more accurate than the prediction generated by the QMF method. As for the 56 real-world networks, the epidemic threshold obtained by the DMP method is more likely to reach the accurate epidemic threshold because it incorporates full network topology information and some dynamical correlations. We find that in most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods.",
+                    "citation": "Wei Wang, Wen Wang, Quan-Hui Liu, et al. (2015). Predicting the epidemic threshold of the susceptible-infected-recovered model. Scientific Reports. Citations: 62, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "In most of the networks with positive degree-degree correlations, an eigenvector localized on the high k-core nodes, or a high level of clustering, the epidemic threshold predicted by the MFL method, which uses the degree distribution as the only input information, performs better than the other two methods."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5b845e2b13a07b0623530ecfa43272682599fb26"
+                },
+                {
+                    "title": "The large graph limit of a stochastic epidemic model on a dynamic multilayer network",
+                    "abstract": "ABSTRACT We consider a Markovian SIR-type (Susceptible \u2192 Infected \u2192 Recovered) stochastic epidemic process with multiple modes of transmission on a contact network. The network is given by a random graph following a multilayer configuration model where edges in different layers correspond to potentially infectious contacts of different types. We assume that the graph structure evolves in response to the epidemic via activation or deactivation of edges of infectious nodes. We derive a large graph limit theorem that gives a system of ordinary differential equations (ODEs) describing the evolution of quantities of interest, such as the proportions of infected and susceptible vertices, as the number of nodes tends to infinity. Analysis of the limiting system elucidates how the coupling of edge activation and deactivation to infection status affects disease dynamics, as illustrated by a two-layer network example with edge types corresponding to community and healthcare contacts. Our theorem extends some earlier results describing the deterministic limit of stochastic SIR processes on static, single-layer configuration model graphs. We also describe precisely the conditions for equivalence between our limiting ODEs and the systems obtained via pair approximation, which are widely used in the epidemiological and ecological literature to approximate disease dynamics on networks. The flexible modeling framework and asymptotic results have potential application to many disease settings including Ebola dynamics in West Africa, which was the original motivation for this study.",
+                    "citation": "Karly A Jacobsen, Mark G Burch, J. Tien, et al. (2016). The large graph limit of a stochastic epidemic model on a dynamic multilayer network. Journal of Biological Dynamics. Citations: 29, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A large graph limit theorem is derived that gives a system of ordinary differential equations (ODEs) describing the evolution of quantities of interest, such as the proportions of infected and susceptible vertices, as the number of nodes tends to infinity."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c043c1c1a212d7bbca378778de91610e7c6c4ce9"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "targeted vaccination degree based immunization epidemic network",
+            "papers": [
+                {
+                    "title": "Immunization of complex networks.",
+                    "abstract": "Complex networks such as the sexual partnership web or the Internet often show a high degree of redundancy and heterogeneity in their connectivity properties. This peculiar connectivity provides an ideal environment for the spreading of infective agents. Here we show that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks. Namely, networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals. The absence of any critical immunization threshold is due to the unbounded connectivity fluctuations of scale-free networks. Successful immunization strategies can be developed only by taking into account the inhomogeneous connectivity properties of scale-free networks. In particular, targeted immunization schemes, based on the nodes' connectivity hierarchy, sharply lower the network's vulnerability to epidemic attacks.",
+                    "citation": "R. Pastor-Satorras, Alessandro Vespignani (2001). Immunization of complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 1148, Influential: 58.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks, and networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45103412abce218fb6346ab82879dcbcde8de1dd"
+                },
+                {
+                    "title": "Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.",
+                    "abstract": null,
+                    "citation": "Xinchu Fu, M. Small, D. Walker, et al. (2008). Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 227, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that both targeted and ring immunization strategies compare favorably to a proportional scheme in terms of effectiveness, and conditions for the epidemic threshold to be positive are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/178f16b2b8d78f2de4175a7ddabfbde4acded773"
+                },
+                {
+                    "title": "Vaccination of sows with a dendritic cell-targeted porcine epidemic diarrhea virus S1 protein-based candidate vaccine reduced viral shedding but exacerbated gross pathological lesions in suckling neonatal piglets.",
+                    "abstract": null,
+                    "citation": "S. Subramaniam, Danielle M. Yugo, C. L. Heffron, et al. (2018). Vaccination of sows with a dendritic cell-targeted porcine epidemic diarrhea virus S1 protein-based candidate vaccine reduced viral shedding but exacerbated gross pathological lesions in suckling neonatal piglets.. Journal of General Virology. Citations: 27, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "In the vaccinated sow, DC-targeted PEDV vaccine enhanced T helper 1-like cluster of differentiation (CD)4 T cell responses and induced IgG but not IgA-specific immune responses and the suckling piglets in the DC- targeted vaccine group showed increased gross pathological lesions in the small intestine."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3ef8a81c701d1df296fd06fbcfaa910b20e113d2"
+                },
+                {
+                    "title": "Nonbacktracking Eigenvalues under Node Removal: X-Centrality and Targeted Immunization",
+                    "abstract": ". The non-backtracking matrix and its eigenvalues have many applications in network science and 5 graph mining, such as node and edge centrality, community detection, length spectrum theory, 6 graph distance, and epidemic and percolation thresholds. In network epidemiology, the reciprocal 7 of the largest eigenvalue of the non-backtracking matrix is a good approximation for the epidemic 8 threshold of certain network dynamics. In this work, we develop techniques that identify which 9 nodes have the largest impact on this leading eigenvalue. We do so by studying the behavior of 10 the spectrum of the non-backtracking matrix after a node is removed from the graph. From this 11 analysis we derive two new centrality measures: X -degree and X-non-backtracking centrality . We 12 perform extensive experimentation with targeted immunization strategies derived from these two 13 centrality measures. Our spectral analysis and centrality measures can be broadly applied, and will 14 be of interest to both theorists and practitioners alike. the perturbation of quadratic eigenvalue problems, with applications to the NB- eigenvalues of the stochastic block",
+                    "citation": "Leonardo A. B. T\u00f4rres, Kevin S. Chan, Hanghang Tong, et al. (2021). Nonbacktracking Eigenvalues under Node Removal: X-Centrality and Targeted Immunization. SIAM Journal on Mathematics of Data Science. Citations: 31, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work develops techniques that identify which nodes in the spectrum of the non-backtracking matrix have the largest impact on this leading eigenvalue, and derives two new centrality measures: X -degree and X-non- backtracking centrality."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/d05f3c44a8cc38b1095fc3cf999e9e02f56c3e42"
+                },
+                {
+                    "title": "Using network properties to evaluate targeted immunization algorithms",
+                    "abstract": null,
+                    "citation": "Bita Shams, M. Khansari (2014). Using network properties to evaluate targeted immunization algorithms. Unknown Journal. Citations: 24, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An evaluation framework for immunization algorithms regarding available amount of vaccination resources, goal of immunization program, and time complexity is proposed and shows that in general, immunization based on PageRank centrality outperforms other targeting strategies in various types of networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b3c6a9e715efab5825dd38d9a63716ac9b4c47d5"
+                },
+                {
+                    "title": "Immunization strategy for epidemic spreading on multilayer networks",
+                    "abstract": "In many real-world complex systems, individuals have many kinds of interactions among them, suggesting that it is necessary to consider a layered-structure framework to model systems such as social interactions. This structure can be captured by multilayer networks and can have major effects on the spreading of process that occurs over them, such as epidemics. In this letter we study a targeted immunization strategy for epidemic spreading over a multilayer network. We apply the strategy in one of the layers and study its effect in all layers of the network disregarding degree-degree correlation among layers. We found that the targeted strategy is not as efficient as in isolated networks, due to the fact that in order to stop the spreading of the disease it is necessary to immunize more than 80% of the individuals. However, the size of the epidemic is drastically reduced in the layer where the immunization strategy is applied compared to the case with no mitigation strategy. Thus, the immunization strategy has a major effect on the layer were it is applied, but does not efficiently protect the individuals of other layers.",
+                    "citation": "C. Buono, L. Braunstein (2014). Immunization strategy for epidemic spreading on multilayer networks. arXiv.org. Citations: 49, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A targeted immunization strategy for epidemic spreading over a multilayer network is studied and it is found that the targeted strategy is not as efficient as in isolated networks, due to the fact that in order to stop the spreading of the disease it is necessary to immunize more than 80% of the individuals."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2d5d4c5c9cb181d724b10da31d71e6c3e0a1b726"
+                },
+                {
+                    "title": "Effects of multicomponent primary care-based intervention on immunization rates and missed opportunities to vaccinate adults",
+                    "abstract": "Background Adult immunization rates are below Healthy People 2020 targets. Our objective was to evaluate the effectiveness of a multicomponent intervention to improve adult immunization rates. Methods This prospective interventional before-and-after non-randomized study was conducted through the American Academy of Family Physicians National Research Network with 43 primary care physicians from a large multi-specialty healthcare organization (multicomponent intervention group n \u2009=\u200923; comparator group n \u2009=\u200920) in the United States. The multicomponent intervention included provider reminders, quarterly provider-level performance reports, provider education, patient visual aid materials, and standing orders on adult pneumococcal, influenza, and zoster immunizations. We assessed individual and comparative provider-level vaccination rates and missed opportunities detailing concordance with targets established by Healthy People 2020 for pneumococcal, influenza, and zoster immunizations. Results Vaccination rates increased after 12\u2009months in intervention and comparator groups respectively for: a). influenza from 44.4\u2009\u00b1\u200916.7 to 51.3%\u2009\u00b1\u200912.9% (by 6.9 percentage points, p \u2009=\u20090.001) and from 35.1\u2009\u00b1\u200919.1 to 41.3%\u2009\u00b1\u200914.2%, (by 6.2 percentage points, p \u2009=\u20090.01); b). pneumococcal vaccinations in older adults from 62.8\u2009\u00b1\u200917.6 to 81.4%\u2009\u00b1\u200916.6% (by 18.6 percentage points, for p \u2009<\u20090.0001) and from 55.9\u2009\u00b1\u200920.0 to 72.7%\u2009\u00b1\u200918.4% (by 16.7 percentage points, p \u2009<\u20090.0001); and c). zoster from 37.1\u2009\u00b1\u200913.4 to 41.9%\u2009\u00b1\u200913.1% (by 4.8 percentage points, p \u2009<\u20090.0001) and from 35.0\u2009\u00b1\u200918.7 to 42.3%\u2009\u00b1\u200920.9% (7.3 percentage points, p \u2009=\u20090.001). Pneumococcal vaccinations in adults at risk did not change from baseline in intervention group (35.7\u2009\u00b1\u200919.6 to 34.5%\u2009\u00b1\u200919.0%, p \u2009=\u20090.3) and improved slightly in comparator group (24.3\u2009\u00b1\u200920.1 to 28.2%\u2009\u00b1\u200920.0%, p \u2009=\u20090.003). Missed opportunities reduced after 12\u2009months, most noticeably, for: a). for influenza from 57.7 to 48.6% (by 9.1 percentage points, p \u2009<\u20090.0001) and from 69.7 to 59.6% (by 10.1 percentage points, p \u2009<\u20090.0001); b). pneumococcal vaccinations in older adults from 18.1 to 11.5% (by 6.6 percentage points p \u2009<\u20090.0001) and from 24.6 to 20.4% (by 4.3 percentage points, p \u2009<\u20090.0001) in intervention and comparator groups respectively. Conclusions Multicomponent interventions show promise in improving vaccination rates and reducing missed opportunities in older adults for pneumococcal and zoster vaccines and vaccination against influenza. Provider reminders remain the most effective strategy when delivered either as a component of these interventions or alone.",
+                    "citation": "N. Loskutova, C. Smail, Elisabeth Callen, et al. (2020). Effects of multicomponent primary care-based intervention on immunization rates and missed opportunities to vaccinate adults. BMC Family Practice. Citations: 11, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Multicomponent interventions show promise in improving vaccination rates and reducing missed opportunities in older adults for pneumococcal and zoster vaccines and vaccination against influenza."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6a8c938b5bab0d4444b6d540f28f201e253cc4e6"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+
+import pandas as pd
+
+# Load the data and examine the first few rows and columns
+file_path = 'output/results-31.csv'
+data = pd.read_csv(file_path)
+
+# Inspecting columns and first few rows to understand the data
+columns = data.columns.tolist()
+head = data.head()

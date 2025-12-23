@@ -1,0 +1,140 @@
+
+import networkx as nx
+import numpy as np
+from scipy import sparse
+import matplotlib.pyplot as plt
+import os
+import random
+
+def cosine_similarity(v1, v2):
+    v1 = np.array(v1)
+    v2 = np.array(v2)
+    return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
+
+# Parameters
+N = 1000  # nodes
+kA = 8    # mean degree layer A
+kB = 6    # mean degree layer B
+layerA_type = 'BA'  # 'ER' or 'BA'
+layerB_type = 'ER'
+overlap_frac = 0.1   # 10% overlap of edges between layers
+random_seed = 42
+np.random.seed(random_seed)
+random.seed(random_seed)
+
+# Step 1: Generate Layer A
+if layerA_type == 'ER':
+    pA = kA / (N - 1)
+    G_A = nx.erdos_renyi_graph(N, pA, seed=random_seed)
+else:
+    mA = max(1, kA // 2)
+    G_A = nx.barabasi_albert_graph(N, mA, seed=random_seed)
+
+# Step 2: Generate Layer B with overlap
+edges_A = set(G_A.edges())
+possible_edges = set()
+for i in range(N):
+    for j in range(i+1, N):
+        possible_edges.add((i, j))
+
+total_B_edges = int(N * kB / 2)
+num_overlap = int(overlap_frac * min(total_B_edges, len(edges_A)))
+
+# Overlap: sample num_overlap edges from edges_A
+edges_overlap = set(random.sample(list(edges_A), num_overlap))
+
+# Fill the rest with random (non-overlapping) edges
+remaining_B_edges = total_B_edges - num_overlap
+remaining_possible = list(possible_edges.difference(edges_A))
+extra_B_edges = set(random.sample(remaining_possible, remaining_B_edges))
+
+edges_B = edges_overlap.union(extra_B_edges)
+G_B = nx.Graph()
+G_B.add_nodes_from(range(N))
+G_B.add_edges_from(edges_B)
+
+# Step 3: Calculate interlayer degree correlation and eigenvector alignment (rho)
+def get_leading_eigenvector(G):
+    A = nx.to_numpy_array(G)
+    vals, vecs = np.linalg.eigh(A)
+    idx = np.argmax(vals)
+    return vecs[:, idx]
+
+vecA = get_leading_eigenvector(G_A)
+vecB = get_leading_eigenvector(G_B)
+rho = cosine_similarity(vecA, vecB)
+
+# Step 4: Degree moments
+degrees_A = np.array([d for n, d in G_A.degree()])
+degrees_B = np.array([d for n, d in G_B.degree()])
+mean_kA = degrees_A.mean()
+second_moment_kA = (degrees_A ** 2).mean()
+mean_kB = degrees_B.mean()
+second_moment_kB = (degrees_B ** 2).mean()
+
+# Spectral radius
+lambda1_A = max(np.linalg.eigvals(nx.to_numpy_array(G_A)).real)
+lambda1_B = max(np.linalg.eigvals(nx.to_numpy_array(G_B)).real)
+
+# Step 5: Save
+output_dir = os.path.join(os.getcwd(), "output")
+os.makedirs(output_dir, exist_ok=True)
+gA_path = os.path.join(output_dir, "network-layerA-ba.npz")
+gB_path = os.path.join(output_dir, "network-layerB-er.npz")
+sparse.save_npz(gA_path, nx.to_scipy_sparse_array(G_A))
+sparse.save_npz(gB_path, nx.to_scipy_sparse_array(G_B))
+
+# Step 6: Plots
+plt.figure()
+plt.hist(degrees_A, bins=30, alpha=0.7, label='Layer A (BA)',color="steelblue")
+plt.hist(degrees_B, bins=30, alpha=0.7, label='Layer B (ER)',color="orange")
+plt.xlabel('Degree')
+plt.ylabel('Count')
+plt.title('Degree Distribution for Layer A and B')
+plt.legend()
+deg_plot_path = os.path.join(output_dir, "degree-distribution-ab.png")
+plt.savefig(deg_plot_path)
+plt.close()
+
+# Degree correlation plot
+degree_joint_plot_path = os.path.join(output_dir, "degree-correlation-ab.png")
+plt.figure()
+plt.scatter(degrees_A, degrees_B, alpha=0.3, color="purple")
+plt.xlabel('Degree in Layer A')
+plt.ylabel('Degree in Layer B')
+plt.title('Interlayer Degree Correlation (nodes)')
+plt.savefig(degree_joint_plot_path)
+plt.close()
+
+# Spectral density
+spectral_plot_path = os.path.join(output_dir, "spectral-density-ab.png")
+A_np = nx.to_numpy_array(G_A)
+B_np = nx.to_numpy_array(G_B)
+valsA = np.linalg.eigvals(A_np)
+valsB = np.linalg.eigvals(B_np)
+plt.figure()
+plt.hist(valsA.real, bins=50, alpha=0.7, label="Layer A (BA)")
+plt.hist(valsB.real, bins=50, alpha=0.7, label="Layer B (ER)")
+plt.xlabel('Eigenvalue')
+plt.ylabel('Count')
+plt.title('Spectral Density of Adjacency Matrices for Layer A and B')
+plt.legend()
+plt.savefig(spectral_plot_path)
+plt.close()
+
+layer_statistics = {
+    'mean_kA': mean_kA,
+    'second_moment_kA': second_moment_kA,
+    'mean_kB': mean_kB,
+    'second_moment_kB': second_moment_kB,
+    'lambda1_A': lambda1_A,
+    'lambda1_B': lambda1_B,
+    'overlap_fraction': len(edges_overlap)/float(total_B_edges),
+    'rho': rho
+}
+
+layer_statistics, [gA_path, gB_path], {
+    "degree-distribution-ab.png": "Degree distributions for Layer A (BA) and Layer B (ER) in the multiplex network.",
+    "degree-correlation-ab.png": "Scatter plot of node degrees in Layer A versus Layer B to visualize interlayer degree correlation.",
+    "spectral-density-ab.png": "Spectral density (distribution of eigenvalues) of adjacency matrices for Layer A (BA) and Layer B (ER), highlighting leading eigenvalues."
+}

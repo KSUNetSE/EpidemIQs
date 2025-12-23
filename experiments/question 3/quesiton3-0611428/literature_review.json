@@ -1,0 +1,349 @@
+{
+    "results": [
+        {
+            "query": "SIR epidemic threshold and dynamics on activity-driven temporal networks",
+            "papers": [
+                {
+                    "paper_title": "Active and inactive quarantine in epidemic spreading on adaptive activity-driven networks",
+                    "abstract": "We consider an epidemic process on adaptive activity-driven temporal networks, with adaptive behavior modeled as a change in activity and attractiveness due to infection. By using a mean-field approach, we derive an analytical estimate of the epidemic threshold for susceptible-infected-susceptible (SIS) and susceptible-infected-recovered (SIR) epidemic models for a general adaptive strategy, which strongly depends on the correlations between activity and attractiveness in the susceptible and infected states. We focus on strong social distancing, implementing two types of quarantine inspired by recent real case studies: an active quarantine, in which the population compensates the loss of links rewiring the ineffective connections towards nonquarantining nodes, and an inactive quarantine, in which the links with quarantined nodes are not rewired. Both strategies feature the same epidemic threshold but they strongly differ in the dynamics of the active phase. We show that the active quarantine is extremely less effective in reducing the impact of the epidemic in the active phase compared to the inactive one and that in the SIR model a late adoption of measures requires inactive quarantine to reach containment.",
+                    "citation": "Marco Mancastroppa, R. Burioni, V. Colizza... (2020). Active and inactive quarantine in epidemic spreading on adaptive activity-driven networks. Physical review. E, 102 2-1, \n          020301\n        . DOI: 10.1103/PHYSREVE.102.020301",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the active quarantine is extremely less effective in reducing the impact of the epidemic in the active phase compared to the inactive one and that in the SIR model a late adoption of measures requires inactive quarantine to reach containment."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic spreading and aging in temporal networks with memory",
+                    "abstract": "Time-varying network topologies can deeply influence dynamical processes mediated by them. Memory effects in the pattern of interactions among individuals are also known to affect how diffusive and spreading phenomena take place. In this paper we analyze the combined effect of these two ingredients on epidemic dynamics on networks. We study the susceptible-infected-susceptible (SIS) and the susceptible-infected-recovered (SIR) models on the recently introduced activity-driven networks with memory. By means of an activity-based mean-field approach, we derive, in the long-time limit, analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects. Our results show that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading. The theoretical approach perfectly agrees with numerical simulations in the long-time asymptotic regime. Strong aging effects are present in the preasymptotic regime and the epidemic threshold is deeply affected by the starting time of the epidemics. We discuss in detail the origin of the model-dependent preasymptotic corrections, whose understanding could potentially allow for epidemic control on correlated temporal networks.",
+                    "citation": "Michele Tizzani, Simone Lenti, Enrico Ubaldi... (2018). Epidemic spreading and aging in temporal networks with memory. Physical Review. E, 98. DOI: 10.1103/PhysRevE.98.062315",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper derives analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects and shows that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading."
+                    }
+                },
+                {
+                    "paper_title": "Contrasting effects of strong ties on SIR and SIS processes in temporal networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We find that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes. On the contrary, in SIS processes memory reduces the epidemic threshold and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state. The heterogeneity in tie strengths, and the frequent repetition of strong ties it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by studying both processes on two real temporal networks.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2015). Contrasting effects of strong ties on SIR and SIS processes in temporal networks. The European Physical Journal B, 88, 1-8. DOI: 10.1140/EPJB/E2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state."
+                    }
+                },
+                {
+                    "paper_title": "Contrasting effects of strong ties on SIR and SIS processes in temporal networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We find that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes. On the contrary, in SIS processes memory reduces the epidemic threshold and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state. The heterogeneity in tie strengths, and the frequent repetition of strong ties it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by studying both processes on two real temporal networks.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2015). Contrasting effects of strong ties on SIR and SIS processes in temporal networks. The European Physical Journal B, 88. DOI: 10.1140/epjb/e2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state."
+                    }
+                },
+                {
+                    "paper_title": "Impact of temporal connectivity patterns on epidemic process",
+                    "abstract": "To provide a comprehensive view for dynamics of and on many real- world temporal networks, we investigate the interplay of temporal connectivity patterns and spreading phenomena, in terms of the susceptible-infected-removed (SIR) model on the modified activity-driven temporal network (ADTN) with memory. In particular, we focus on how the epidemic threshold of the SIR model is affected by the heterogeneity of nodal activities and the memory strength in temporal and static regimes, respectively. While strong ties (memory) between nodes inhibit the spread of epidemic to be localized, the heterogeneity of nodal activities enhances it to be globalized initially. Since the epidemic threshold of the SIR model is very sensitive to the degree distribution of nodes in static networks, we test the SIR model on the modified ADTNs with the possible set of the activity exponents and the memory exponents that generates the same degree distributions in temporal networks. We also discuss the role of spatiotemporal scaling properties of the largest cluster and the maximum degree in the epidemic threshold. It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network. This implies that there is the trade-off between the spreading time of epidemic and its outbreak size. Finally, we suggest the phase diagram of the SIR model on ADTNs and the optimal condition for the spread of epidemic under the circumstances.",
+                    "citation": "Hyewon Kim, Meesoon Ha, Hawoong Jeong (2019). Impact of temporal connectivity patterns on epidemic process. The European Physical Journal B, 92. DOI: 10.1140/epjb/e2019-100159-1",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network, which implies that there is the trade-off between the spreading time of epidemic and its outbreak size."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic Spreading in Non-Markovian Time-Varying Networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We show that while memory inhibits the spreading process in SIR models, where the epidemic threshold is moved to larger values, it plays the opposite effect in the case of the SIS, where the threshold is lowered. The heterogeneity in tie strengths, and the frequent repetition of connections that it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by evaluating the threshold of both processes in a real temporal network. Our findings confirm the important role played by non-Markovian network dynamics on dynamical processes.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2014). Epidemic Spreading in Non-Markovian Time-Varying Networks. ArXiv, abs/1404.1006. DOI: 10.1140/epjb/e2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that while memory inhibits the spreading process in SIR models, it plays the opposite effect in the case of the SIS, where the threshold is lowered, and this picture is validated by evaluating the threshold of both processes in a real temporal network."
+                    }
+                },
+                {
+                    "paper_title": "Joint effect of individual\u2019s memory and attractiveness in temporal network on spreading dynamics",
+                    "abstract": "Most real networks have been found to evolve dynamically. In addition, heterogeneity of interaction strengths and individual\u2019s memory have been proved to be important to affect network evolution in the area of complex networks. Based on a recent extension of the activity-driven modeling framework, i.e. activity-driven model with attractiveness, where individuals are characterized by their activities and attractiveness, we propose a new temporal network model by considering individuals\u2019 memory. Similar to the previous network model, we also investigate heterogeneous distributions and different correlations between the two variables (activity and attractiveness). By numerical simulations, we illustrate the impact of memory on epidemic spreading processes unfolding on the proposed model. We find that, when individuals\u2019 attractiveness is fixed, memory does not cause dramatic change on the epidemic threshold in the SIR process, but it inhibits the epidemic spreading by reducing the infected ratio. While for the SIS process, in the case of uncorrelated and positive correlations between the two variables, memory facilitates the epidemic outbreaks by shrinking the epidemic threshold. When the two variables are negatively correlated, memory does not take obvious impact on the epidemic threshold. Besides, for the two processes unfolding on the network with and without memory, the propagation threshold decreases with the enhancement of the positive correlation, however, it almost does not get much influence from the negative correlation strength. It indicates that for the individuals with same activity, more attractive individuals will promote the disease spread. The findings deepen our understanding of the role of individuals\u2019 memory and their attractiveness in the epidemic spreading process.",
+                    "citation": "Mei Yang, B. Wang, Yuexing Han (2019). Joint effect of individual\u2019s memory and attractiveness in temporal network on spreading dynamics. International Journal of Modern Physics C. DOI: 10.1142/S0129183119500116",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that for the individuals with same activity, more attractive individuals will promote the disease spread, and for the two processes unfolding on the network with and without memory, the propagation threshold decreases with the enhancement of the positive correlation, however, it almost does not get much influence from the negative correlation strength."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Epidemic spreading SIR model comparison activity-driven and time-aggregated networks",
+            "papers": [
+                {
+                    "paper_title": "Contagion processes on the static and activity driven coupling networks",
+                    "abstract": "The evolution of network structure and the spreading of epidemic are common coexistent dynamical processes. In most cases, network structure is treated as either static or time-varying, supposing the whole network is observed in the same time window. In this paper, we consider the epidemics spreading on a network which has both static and time-varying structures. Meanwhile, the time-varying part and the epidemic spreading are supposed to be of the same time scale. We introduce a static and activity-driven coupling (SADC) network model to characterize the coupling between the static (\"strong\") structure and the dynamic (\"weak\") structure. Epidemic thresholds of the SIS and SIR models are studied using the SADC model both analytically and numerically under various coupling strategies, where the strong structure is of homogeneous or heterogeneous degree distribution. Theoretical thresholds obtained from the SADC model can both recover and generalize the classical results in static and time-varying networks. It is demonstrated that a weak structure might make the epidemic threshold low in homogeneous networks but high in heterogeneous cases. Furthermore, we show that the weak structure has a substantive effect on the outbreak of the epidemics. This result might be useful in designing some efficient control strategies for epidemics spreading in networks.",
+                    "citation": "Yanjun Lei, Xin Jiang, Quantong Guo... (2015). Contagion processes on the static and activity driven coupling networks. Physical review. E, 93 3, \n          032308\n        . DOI: 10.1103/PhysRevE.93.032308",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is demonstrated that a weak structure might make the epidemic threshold low in homogeneous networks but high in heterogeneous cases, and it is shown that the weak structure has a substantive effect on the outbreak of the epidemics."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic spreading and aging in temporal networks with memory",
+                    "abstract": "Time-varying network topologies can deeply influence dynamical processes mediated by them. Memory effects in the pattern of interactions among individuals are also known to affect how diffusive and spreading phenomena take place. In this paper we analyze the combined effect of these two ingredients on epidemic dynamics on networks. We study the susceptible-infected-susceptible (SIS) and the susceptible-infected-recovered (SIR) models on the recently introduced activity-driven networks with memory. By means of an activity-based mean-field approach, we derive, in the long-time limit, analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects. Our results show that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading. The theoretical approach perfectly agrees with numerical simulations in the long-time asymptotic regime. Strong aging effects are present in the preasymptotic regime and the epidemic threshold is deeply affected by the starting time of the epidemics. We discuss in detail the origin of the model-dependent preasymptotic corrections, whose understanding could potentially allow for epidemic control on correlated temporal networks.",
+                    "citation": "Michele Tizzani, Simone Lenti, Enrico Ubaldi... (2018). Epidemic spreading and aging in temporal networks with memory. Physical Review. E, 98. DOI: 10.1103/PhysRevE.98.062315",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper derives analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects and shows that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic Spreading in Temporal and Adaptive Networks with Static Backbone",
+                    "abstract": "Activity-driven networks (ADNs) are a powerful paradigm to study epidemic spreading in temporal networks, where the dynamics of the disease and the evolution of the links share a common time-scale. One of the key assumptions of ADNs is the lack of preferential connections among individuals. This assumption hinders the application of ADNs to several realistic scenarios where some contacts persist in time, rather than intermittently activate. Here, we examine an improved modeling framework that superimposes an ADN to a static backbone network, toward the integration of persistent contacts with time-varying connections. To demonstrate the interplay between the ADN and the static backbone, we investigate the effect of behavioral changes on the disease dynamics. In this framework, each individual may adapt his/her activity as a function of the health status, thereby adjusting the relative weight of time-varying versus static links. To illustrate the approach, we consider two classes of backbone networks, Erd\u0151s-R\u00e9nyi and random regular, and two disease models, SIS and SIR. A general mean-field theory is established for predicting the epidemic threshold, and numerical simulations are conducted to shed light on the role of network parameters on the epidemic spreading and estimate the epidemic size.",
+                    "citation": "Matthieu Nadini, A. Rizzo, M. Porfiri (2020). Epidemic Spreading in Temporal and Adaptive Networks with Static Backbone. IEEE Transactions on Network Science and Engineering, 7, 549-561. DOI: 10.1109/TNSE.2018.2885483",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An improved modeling framework is examined that superimposes an ADN to a static backbone network, toward the integration of persistent contacts with time-varying connections and the effect of behavioral changes on the disease dynamics is investigated."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic Spreading in Non-Markovian Time-Varying Networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We show that while memory inhibits the spreading process in SIR models, where the epidemic threshold is moved to larger values, it plays the opposite effect in the case of the SIS, where the threshold is lowered. The heterogeneity in tie strengths, and the frequent repetition of connections that it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by evaluating the threshold of both processes in a real temporal network. Our findings confirm the important role played by non-Markovian network dynamics on dynamical processes.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2014). Epidemic Spreading in Non-Markovian Time-Varying Networks. ArXiv, abs/1404.1006. DOI: 10.1140/epjb/e2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that while memory inhibits the spreading process in SIR models, it plays the opposite effect in the case of the SIS, where the threshold is lowered, and this picture is validated by evaluating the threshold of both processes in a real temporal network."
+                    }
+                },
+                {
+                    "paper_title": "SIR Epidemic Model derived from Spatial Correlation for Worm Propagation in Event-driven Wireless Sensor Network",
+                    "abstract": "An event or a physical activity triggers many nodes for sensing the environment in wireless sensor networks for event monitoring applications. These triggered nodes then transmit the sensed data to the control center. To study the virus propagation behavior in event-driven WSNs, sensor coverage which is a quality of service parameter, can be considered in epidemic model design to get more insight. Existing epidemic models have global characteristics when it is considered a realistic behavior of WSNs. In this paper, a comparative analysis is carried out for spatial correlation feature found in sensor nodes based on sensing range. It is extended version of our recent work. We present analysis using Susceptible-Infectious-Recovered (SIR) epidemic model with and without spatial correlation feature. Firstly, we show that the correlated nodes are occurred due to sensing ability for event monitoring applications. These nodes are responsible for transmitting correlated information when an event occurs in the field. A detailed comparative analysis with recent existing SIR epidemic models is presented with results and discussions. A comparison based on basic reproduction number is also discussed. Our Results show the impact of spatial correlation in the behavior of virus spread with time. Comparative study shows the effective use of our model is in designing prevention mechanisms for infection control. It can also be used to study the virus spreading behavior for event-driven scenarios in WSNs .",
+                    "citation": "S. K. Chaudhary, R. Shakya, Atul Kumar (2020). SIR Epidemic Model derived from Spatial Correlation for Worm Propagation in Event-driven Wireless Sensor Network. International Journal of Innovative Technology and Exploring Engineering. DOI: 10.35940/ijitee.c7974.019320",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Comparative study shows the effective use of Susceptible-Infectious-Recovered (SIR) epidemic model is in designing prevention mechanisms for infection control and the impact of spatial correlation in the behavior of virus spread with time."
+                    }
+                },
+                {
+                    "paper_title": "Time scales and dynamical processes in activity driven networks",
+                    "abstract": null,
+                    "citation": "N. Perra, B. Gon\u00e7alves, R. Pastor-Satorras... (2012). Time scales and dynamical processes in activity driven networks. Bulletin of the American Physical Society. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is demonstrated that processes such as epidemic and information spreading in highly dynamical networks can be better characterized in terms of agent social activity than by connectivity based approaches X Prefer Oral Session Prefer Poster Session Nicola Perra n.perra@neu.edu Northeastern University"
+                    }
+                },
+                {
+                    "paper_title": "Contrasting effects of strong ties on SIR and SIS processes in temporal networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We find that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes. On the contrary, in SIS processes memory reduces the epidemic threshold and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state. The heterogeneity in tie strengths, and the frequent repetition of strong ties it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by studying both processes on two real temporal networks.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2015). Contrasting effects of strong ties on SIR and SIS processes in temporal networks. The European Physical Journal B, 88, 1-8. DOI: 10.1140/EPJB/E2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that memory inhibits the spreading process in SIR models by shifting the epidemic threshold to larger values and reducing the final fraction of recovered nodes and, for a wide range of disease parameters, increases the fraction of nodes affected by the disease in the endemic state."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic spreading in activity-driven temporal networks SIR model epidemic threshold analytical comparison with static aggregated network",
+            "papers": [
+                {
+                    "paper_title": "Contagion dynamics in time-varying metapopulation networks",
+                    "abstract": "The metapopulation framework is adopted in a wide array of disciplines to describe systems of well separated yet connected subpopulations. The subgroups or patches are often represented as nodes in a network whose links represent the migration routes among them. The connections have been so far mostly considered as static, but in general evolve in time. Here we address this case by investigating simple contagion processes on time-varying metapopulation networks. We focus on the SIR process and determine analytically the mobility threshold for the onset of an epidemic spreading in the framework of activity-driven network models. We find profound differences from the case of static networks. The threshold is entirely described by the dynamical parameters defining the average number of instantaneously migrating individuals and does not depend on the properties of the static network representation. Remarkably, the diffusion and contagion processes are slower in time-varying graphs than in their aggregated static counterparts, the mobility threshold being even two orders of magnitude larger in the first case. The presented results confirm the importance of considering the time-varying nature of complex networks.",
+                    "citation": "Suyu Liu, Andrea Baronchelli, N. Perra (2012). Contagion dynamics in time-varying metapopulation networks. ArXiv, abs/1210.2776. DOI: 10.1103/PhysRevE.87.032805",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work focuses on the SIR process and determines analytically the mobility threshold for the onset of an epidemic spreading in the framework of activity-driven network models, and finds profound differences from the case of static networks."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "activity-driven network SIR epidemic threshold final epidemic size analytical formulas",
+            "papers": [
+                {
+                    "paper_title": "Impact of environmental factors on the coevolution of information\u2013emotions\u2013epidemic dynamics in activity-driven multiplex networks",
+                    "abstract": "During public health emergencies, the diffusion of negative information can exacerbate the transmission of adverse emotions, such as fear and anxiety. These emotions can adversely affect immune function and, consequently, influence the spread of the epidemic. In this study, we established a coupled model incorporating environmental factors to explore the coevolution dynamic process of information\u2013emotions\u2013epidemic dynamics in activity-driven multiplex networks. In this model, environmental factors refer to the external conditions or pressures that affect the spread of information, emotions, and epidemics. These factors include media coverage, public opinion, and the prevalence of diseases in the neighborhood. These layers are dynamically cross-coupled, where the environmental factors in the information layer are influenced by the emotional layer; the higher the levels of anxious states among neighboring individuals, the greater the likelihood of information diffusion. Although environmental factors in the emotional layer are influenced by both the information and epidemic layers, they come from the factors of global information and the proportion of local infections among surrounding neighbors. Subsequently, we utilized the microscopic Markov chain approach to describe the dynamic processes, thereby obtaining the epidemic threshold. Finally, conclusions are drawn through numerical modeling and analysis. The conclusions suggest that when negative information increases, the probability of the transmission of anxious states across the population increases. The transmission of anxious states increases the final size of the disease and decreases its outbreak threshold. Reducing the impact of environmental factors at both the informational and emotional levels is beneficial for controlling the scale of the spread of the epidemic. Our findings can provide a reference for improving public health awareness and behavioral decision-making, mitigating the adverse impacts of anxious states, and ultimately controlling the spread of epidemics.",
+                    "citation": "L. Huo \u970d, Bingjie \u70b3\u6770 Liu \u5218, Xiaomin \u6653\u654f Zhao \u8d75 (2024). Impact of environmental factors on the coevolution of information\u2013emotions\u2013epidemic dynamics in activity-driven multiplex networks. Chinese Physics B, 33. DOI: 10.1088/1674-1056/ad7df5",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A coupled model incorporating environmental factors to explore the coevolution dynamic process of information\u2013emotions\u2013epidemic dynamics in activity-driven multiplex networks suggests that when negative information increases, the probability of the transmission of anxious states across the population increases."
+                    }
+                },
+                {
+                    "paper_title": "Active and inactive quarantine in epidemic spreading on adaptive activity-driven networks",
+                    "abstract": "We consider an epidemic process on adaptive activity-driven temporal networks, with adaptive behavior modeled as a change in activity and attractiveness due to infection. By using a mean-field approach, we derive an analytical estimate of the epidemic threshold for susceptible-infected-susceptible (SIS) and susceptible-infected-recovered (SIR) epidemic models for a general adaptive strategy, which strongly depends on the correlations between activity and attractiveness in the susceptible and infected states. We focus on strong social distancing, implementing two types of quarantine inspired by recent real case studies: an active quarantine, in which the population compensates the loss of links rewiring the ineffective connections towards nonquarantining nodes, and an inactive quarantine, in which the links with quarantined nodes are not rewired. Both strategies feature the same epidemic threshold but they strongly differ in the dynamics of the active phase. We show that the active quarantine is extremely less effective in reducing the impact of the epidemic in the active phase compared to the inactive one and that in the SIR model a late adoption of measures requires inactive quarantine to reach containment.",
+                    "citation": "Marco Mancastroppa, R. Burioni, V. Colizza... (2020). Active and inactive quarantine in epidemic spreading on adaptive activity-driven networks. Physical review. E, 102 2-1, \n          020301\n        . DOI: 10.1103/PHYSREVE.102.020301",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the active quarantine is extremely less effective in reducing the impact of the epidemic in the active phase compared to the inactive one and that in the SIR model a late adoption of measures requires inactive quarantine to reach containment."
+                    }
+                },
+                {
+                    "paper_title": "Effects of void nodes on epidemic spreads in networks",
+                    "abstract": "We present the pair approximation models for susceptible\u2013infected\u2013recovered (SIR) epidemic dynamics in a sparse network based on a regular network. Two processes are considered, namely, a Markovian process with a constant recovery rate and a non-Markovian process with a fixed recovery time. We derive the implicit analytical expression for the final epidemic size and explicitly show the epidemic threshold in both Markovian and non-Markovian processes. As the connection rate decreases from the original network connection, the epidemic threshold in which epidemic phase transits from disease-free to endemic increases, and the final epidemic size decreases. Additionally, for comparison with sparse and heterogeneous networks, the pair approximation models were applied to a heterogeneous network with a degree distribution. The obtained phase diagram reveals that, upon increasing the degree of the original random regular networks and decreasing the effective connections by introducing void nodes accordingly, the final epidemic size of the sparse network is close to that of the random network with average degree of 4. Thus, introducing the void nodes in the network leads to more heterogeneous network and reduces the final epidemic size.",
+                    "citation": "Kazuki Kuga, J. Tanimoto (2022). Effects of void nodes on epidemic spreads in networks. Scientific Reports, 12. DOI: 10.1038/s41598-022-07985-9",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The implicit analytical expression for the final epidemic size is derived and the epidemic threshold is explicitly shown in both Markovian and non-Markovian processes as the connection rate decreases from the original network connection."
+                    }
+                },
+                {
+                    "paper_title": "Contagion processes on the static and activity driven coupling networks",
+                    "abstract": "The evolution of network structure and the spreading of epidemic are common coexistent dynamical processes. In most cases, network structure is treated as either static or time-varying, supposing the whole network is observed in the same time window. In this paper, we consider the epidemics spreading on a network which has both static and time-varying structures. Meanwhile, the time-varying part and the epidemic spreading are supposed to be of the same time scale. We introduce a static and activity-driven coupling (SADC) network model to characterize the coupling between the static (\"strong\") structure and the dynamic (\"weak\") structure. Epidemic thresholds of the SIS and SIR models are studied using the SADC model both analytically and numerically under various coupling strategies, where the strong structure is of homogeneous or heterogeneous degree distribution. Theoretical thresholds obtained from the SADC model can both recover and generalize the classical results in static and time-varying networks. It is demonstrated that a weak structure might make the epidemic threshold low in homogeneous networks but high in heterogeneous cases. Furthermore, we show that the weak structure has a substantive effect on the outbreak of the epidemics. This result might be useful in designing some efficient control strategies for epidemics spreading in networks.",
+                    "citation": "Yanjun Lei, Xin Jiang, Quantong Guo... (2015). Contagion processes on the static and activity driven coupling networks. Physical review. E, 93 3, \n          032308\n        . DOI: 10.1103/PhysRevE.93.032308",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is demonstrated that a weak structure might make the epidemic threshold low in homogeneous networks but high in heterogeneous cases, and it is shown that the weak structure has a substantive effect on the outbreak of the epidemics."
+                    }
+                },
+                {
+                    "paper_title": "Effects of void nodes on epidemic spreads in networks",
+                    "abstract": "We present the pair approximation models for susceptible\u2013infected\u2013recovered (SIR) epidemic dynamics in a sparse network based on a regular network. Two processes are considered, namely, a Markovian process with a constant recovery rate and a non-Markovian process with a fixed recovery time. We derive the implicit analytical expression for the final epidemic size and explicitly show the epidemic threshold in both Markovian and non-Markovian processes. As the connection rate decreases from the original network connection, the epidemic threshold in which epidemic phase transits from disease-free to endemic increases, and the final epidemic size decreases. Additionally, for comparison with sparse and heterogeneous networks, the pair approximation models were applied to a heterogeneous network with a degree distribution. The obtained phase diagram reveals that, upon increasing the degree of the original random regular networks and decreasing the effective connections by introducing void nodes accordingly, the final epidemic size of the sparse network is close to that of the random network with average degree of 4. Thus, introducing the void nodes in the network leads to more heterogeneous network and reduces the final epidemic size.",
+                    "citation": "Kazuki Kuga, J. Tanimoto (2022). Effects of void nodes on epidemic spreads in networks. Scientific Reports, 12. DOI: 10.1038/s41598-022-07985-9",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The implicit analytical expression for the final epidemic size is derived and the epidemic threshold is explicitly shown in both Markovian and non-Markovian processes as the connection rate decreases from the original network connection."
+                    }
+                },
+                {
+                    "paper_title": "Spreading Processes With Layer-Dependent Population Heterogeneity Over Multilayer Networks",
+                    "abstract": "The study of spreading processes on complex networks has gained significant attention recently. For example, bond percolation models considering population heterogeneity have been used to provide insights into disease spread and misinformation control. However, most of these studies focus on single-layer contact networks. In our work, we examine how the spreading process is impacted by the existence of multiple contact network layers, considering layer-dependent population heterogeneity from a principled, mathematical perspective. Using SIR dynamics, we derive expressions for three key epidemiological measures: the probability of emergence, the epidemic threshold, and the expected epidemic size. Through extensive simulations, we demonstrate that our analytical results match the numerical results near-perfectly in the finite node regime. These findings reveal the interplay among the multi-layer network structures, transmission dynamics, and population heterogeneity in determining the final outcome of the spreading process. Furthermore, we investigate the impact of layer-dependent population heterogeneity and identify important factors for developing effective and economical layer-oriented spreading control strategies. Overall, our work provides insights into developing and analyzing mitigation and control strategies for disease spread and information diffusion across multi-layer complex networks.",
+                    "citation": "Yurun Tian, Osman Ya\u011fan (2024). Spreading Processes With Layer-Dependent Population Heterogeneity Over Multilayer Networks. IEEE Transactions on Network Science and Engineering, 11, 4106-4119. DOI: 10.1109/TNSE.2024.3396730",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Impact of individual behavioral changes on epidemic spreading in time-varying networks.",
+                    "abstract": "Changes in individual behavior often entangle with the dynamic interaction of individuals, which complicates the epidemic process and brings great challenges for the understanding and control of the epidemic. In this work, we consider three kinds of typical behavioral changes in epidemic process, that is, self-quarantine of infected individuals, self-protection of susceptible individuals, and social distancing between them. We connect the behavioral changes with individual's social attributes by the activity-driven network with attractiveness. A mean-field theory is established to derive an analytical estimate of epidemic threshold for susceptible-infected-susceptible models with individual behavioral changes, which depends on the correlations between activity, attractiveness, and the number of generative links in the susceptible and infected states. We find that individual behaviors play different roles in suppressing the epidemic. Although all the behavioral changes could delay the epidemic by increasing the epidemic threshold, self-quarantine and social distancing of infected individuals could effectively decrease the epidemic outbreak size. In addition, simultaneous changes in these behaviors and the timing of implement of them also play a key role in suppressing the epidemic. These results provide helpful significance for understanding the interaction of individual behaviors in the epidemic process.",
+                    "citation": "Bing Wang, Zeyang Xie, Yuexing Han (2021). Impact of individual behavioral changes on epidemic spreading in time-varying networks.. Physical review. E, 104 4-1, \n          044307\n        . DOI: 10.1103/PhysRevE.104.044307",
+                    "summary (tldr)": null
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SIR model simulation initial conditions guidelines activity-driven network comparison",
+            "papers": [
+                {
+                    "paper_title": "Data\u2010driven modeling of the solar wind from 1\u00a0Rs to 1\u00a0AU",
+                    "abstract": null,
+                    "citation": "Xueshang Feng, Xiaopeng Ma, C. Xiang (2015). Data\u2010driven modeling of the solar wind from 1\u00a0Rs to 1\u00a0AU. Journal of Geophysical Research: Space Physics, 120, 10,159 - 10,174. DOI: 10.1002/2015JA021911",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "UK Marine Climate Change: Taking our community forward",
+                    "abstract": null,
+                    "citation": "K. Diele, A. Schmidt (2022). UK Marine Climate Change: Taking our community forward. . DOI: Unknown",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "The Twenty-First Annual Nebraska Conference for Undergraduate Women in Mathematics",
+                    "abstract": null,
+                    "citation": "Julia Bohman (2019). The Twenty-First Annual Nebraska Conference for Undergraduate Women in Mathematics. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The present study was conducted to investigate the impact vaccinations and hygiene had on the 2009 H1N1 epidemic in the Denver metropolitan area and found that vaccinations contributed to less total infected individuals during the 2009-2010 season."
+                    }
+                },
+                {
+                    "paper_title": "Optimal distributed power control in cellular wireless systems",
+                    "abstract": null,
+                    "citation": "Lijun Qian, Z. Gajic (2003). Optimal distributed power control in cellular wireless systems. Dynamics of Continuous Discrete and Impulsive Systems-series B-applications & Algorithms, 10, 537-559. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The results indicate that the proposed optimal power control scheme is a very promissing solution to the distributed fast closed-loop power control problem in wireless systems, both theoretically and practically."
+                    }
+                },
+                {
+                    "paper_title": "The VIATRA 2 Transformation Framework Model Transformation by Graph Transformation",
+                    "abstract": null,
+                    "citation": "D\u00e1niel Varr\u00f3, A. Balogh, A. Pataricza (2006). The VIATRA 2 Transformation Framework Model Transformation by Graph Transformation. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The state-of-the-art of the Viatra2 tool is reported on, intended to serve as a powerful academic prototype publicly available for academic use, in achieving this very ambitious goal of MDA transformations."
+                    }
+                },
+                {
+                    "paper_title": "Gravity, geoid and space missions : GGSM 2004 IAG international symposium, Porto, Portugal, August 30 - September 3, 2004",
+                    "abstract": null,
+                    "citation": "C. Jekeli, L. Bastos, J. Fernandes (2005). Gravity, geoid and space missions : GGSM 2004 IAG international symposium, Porto, Portugal, August 30 - September 3, 2004. . DOI: Unknown",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Human-computer interaction - INTERACT 2007 : 11th IFIP TC 13 International Conference, Rio de Janeiro, Brazil, September 10-14, 2007 : proceedings",
+                    "abstract": null,
+                    "citation": "Cec\u00edlia Baranauskas (2007). Human-computer interaction - INTERACT 2007 : 11th IFIP TC 13 International Conference, Rio de Janeiro, Brazil, September 10-14, 2007 : proceedings. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Two (continued): Long and Short Papers.- Interfacing Video Capture, Editing and Publication in a Tangible Environment and Exploring the Integration of Physical and Digital Affordances for Active Learning."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "time-aggregated static network construction from activity-driven temporal network analytical process",
+            "papers": [
+                {
+                    "paper_title": "Dynamic topologies of activity-driven temporal networks with memory.",
+                    "abstract": "We propose dynamic scaling in temporal networks with heterogeneous activities and memory and provide a comprehensive picture for the dynamic topologies of such networks, in terms of the modified activity-driven network model [H. Kim et al., Eur. Phys. J. B 88, 315 (2015)EPJBFY1434-602810.1140/epjb/e2015-60662-7]. Particularly, we focus on the interplay of the time resolution and memory in dynamic topologies. Through the random-walk (RW) process, we investigate diffusion properties and topological changes as the time resolution increases. Our results with memory are compared to those of the memoryless case. Based on the temporal percolation concept, we derive scaling exponents in the dynamics of the largest cluster and the coverage of the RW process in time-varying networks. We find that the time resolution in the time-accumulated network determines the effective size of the network, while memory affects relevant scaling properties at the crossover from the dynamic regime to the static one. The origin of memory-dependent scaling behaviors is the dynamics of the largest cluster, which depends on temporal degree distributions. Finally, we conjecture of the extended finite-size scaling ansatz for dynamic topologies and the fundamental property of temporal networks, which are numerically confirmed.",
+                    "citation": "Hyewon Kim, Meesoon Ha, Hawoong Jeong (2017). Dynamic topologies of activity-driven temporal networks with memory.. Physical review. E, 97 6-1, \n          062148\n        . DOI: 10.1103/PhysRevE.97.062148",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that the time resolution in the time-accumulated network determines the effective size of the network, while memory affects relevant scaling properties at the crossover from the dynamic regime to the static one."
+                    }
+                },
+                {
+                    "paper_title": "Random walks in non-Poissoinan activity driven temporal networks",
+                    "abstract": "The interest in non-Markovian dynamics within the complex systems community has recently blossomed, due to a new wealth of time-resolved data pointing out the bursty dynamics of many natural and human interactions, manifested in an inter-event time between consecutive interactions showing a heavy-tailed distribution. In particular, empirical data has shown that the bursty dynamics of temporal networks can have deep consequences on the behavior of the dynamical processes running on top of them. Here, we study the case of random walks, as a paradigm of diffusive processes, unfolding on temporal networks generated by a non-Poissonian activity driven dynamics. We derive analytic expressions for the steady state occupation probability and first passage time distribution in the infinite network size and strong aging limits, showing that the random walk dynamics on non-Markovian networks are fundamentally different from what is observed in Markovian networks. We found a particularly surprising behavior in the limit of diverging average inter-event time, in which the random walker feels the network as homogeneous, even though the activation probability of nodes is heterogeneously distributed. Our results are supported by extensive numerical simulations. We anticipate that our findings may be of interest among the researchers studying non-Markovian dynamics on time-evolving complex topologies.",
+                    "citation": "Antoine Moinet, Michele Starnini, R. Pastor-Satorras (2019). Random walks in non-Poissoinan activity driven temporal networks. New Journal of Physics, 21. DOI: 10.1088/1367-2630/ab3f6e",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work derives analytic expressions for the steady state occupation probability and first passage time distribution in the infinite network size and strong aging limits, showing that the random walk dynamics on non-Markovian networks are fundamentally different from what is observed in Markovian Networks."
+                    }
+                },
+                {
+                    "paper_title": "Activity-driven network modeling and control of the spread of two concurrent epidemic strains",
+                    "abstract": "The emergency generated by the current COVID-19 pandemic has claimed millions of lives worldwide. There have been multiple waves across the globe that emerged as a result of new variants, due to arising from unavoidable mutations. The existing network toolbox to study epidemic spreading cannot be readily adapted to the study of multiple, coexisting strains. In this context, particularly lacking are models that could elucidate re-infection with the same strain or a different strain\u2014phenomena that we are seeing experiencing more and more with COVID-19. Here, we establish a novel mathematical model to study the simultaneous spreading of two strains over a class of temporal networks. We build on the classical susceptible\u2013exposed\u2013infectious\u2013removed model, by incorporating additional states that account for infections and\u00a0re-infections with multiple strains. The temporal network is based on the activity-driven network paradigm, which has emerged as a model of choice to study dynamic processes that unfold at a time scale comparable to the network evolution. We draw analytical insight from the dynamics of the stochastic network systems through a mean-field approach, which allows for characterizing the onset of different behavioral phenotypes (non-epidemic, epidemic, and endemic). To demonstrate the practical use of the model, we examine an intermittent stay-at-home containment strategy, in which a fraction of the population is randomly required to isolate for a\u00a0fixed period of time.",
+                    "citation": "D. Burbano, Lorenzo Zino, S. Butail... (2022). Activity-driven network modeling and control of the spread of two concurrent epidemic strains. Applied Network Science, 7. DOI: 10.1007/s41109-022-00507-6",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel mathematical model to study the simultaneous spreading of two strains over a class of temporal networks is established, based on the classical susceptible\u2013exposed\u2013infectious\u2013removed model, by incorporating additional states that account for infections and\u00a0re-infections with multiple strains."
+                    }
+                },
+                {
+                    "paper_title": "Consensus Over Activity-Driven Networks",
+                    "abstract": "The problem of self-coordination of a network of dynamical systems toward a common state is often referred to as the consensus problem. In view of its wide range of applications, the consensus problem has been extensively studied in the past few decades. However, most of the available results focus on static networks, challenging our mathematical understanding of coordination in temporal networks. In this article, we study discrete-time stochastic consensus over temporal networks, modeled as activity-driven networks. In this paradigm, each node has a specific tendency to create links in the network, measured through an activity potential. Differences in the activity potential of nodes favor the evolution of heterogeneous networks, in which some nodes are more involved in the process of information sharing than others. Through stochastic stability theory, we characterize the expected consensus state, which is found to be dominated by low-activity nodes. By further leveraging eigenvalue perturbation techniques, we derive a closed-form expression for the convergence rate in a mean-square sense, which points at a detrimental effect of moderate levels of heterogeneity for large networks. Simulations are conducted to support and illustrate our analytical findings.",
+                    "citation": "Lorenzo Zino, A. Rizzo, M. Porfiri (2020). Consensus Over Activity-Driven Networks. IEEE Transactions on Control of Network Systems, 7, 866-877. DOI: 10.1109/TCNS.2019.2949387",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This article characterize the expected consensus state, which is found to be dominated by low-activity nodes, and derives a closed-form expression for the convergence rate in a mean-square sense, which points at a detrimental effect of moderate levels of heterogeneity for large networks."
+                    }
+                },
+                {
+                    "paper_title": "Process Modularity Over Time: Modeling Process Execution as an Evolving Activity Network",
+                    "abstract": null,
+                    "citation": "Pedro Parraguez, S. Piccolo, M. Peri\u0161i\u0107... (2021). Process Modularity Over Time: Modeling Process Execution as an Evolving Activity Network. IEEE Transactions on Engineering Management, 68, 1867-1879. DOI: 10.1109/TEM.2019.2935932",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper presents a new approach to process modularity called \"Smart Module Architecture (SMA)\u201d, which automates the very labor-intensive and therefore time-heavy process decomposing process into modules."
+                    }
+                },
+                {
+                    "paper_title": "Facial Biosignals Time\u2013Series Dataset (FBioT): A Visual\u2013Temporal Facial Expression Recognition (VT-FER) Approach",
+                    "abstract": "Visual biosignals can be used to analyze human behavioral activities and serve as a primary resource for Facial Expression Recognition (FER). FER computational systems face significant challenges, arising from both spatial and temporal effects. Spatial challenges include deformations or occlusions of facial geometry, while temporal challenges involve discontinuities in motion observation due to high variability in poses and dynamic conditions such as rotation and translation. To enhance the analytical precision and validation reliability of FER systems, several datasets have been proposed. However, most of these datasets focus primarily on spatial characteristics, rely on static images, or consist of short videos captured in highly controlled environments. These constraints significantly reduce the applicability of such systems in real-world scenarios. This paper proposes the Facial Biosignals Time\u2013Series Dataset (FBioT), a novel dataset providing temporal descriptors and features extracted from common videos recorded in uncontrolled environments. To automate dataset construction, we propose Visual\u2013Temporal Facial Expression Recognition (VT-FER), a method that stabilizes temporal effects using normalized measurements based on the principles of the Facial Action Coding System (FACS) and generates signature patterns of expression movements for correlation with real-world temporal events. To demonstrate feasibility, we applied the method to create a pilot version of the FBioT dataset. This pilot resulted in approximately 10,000 s of public videos captured under real-world facial motion conditions, from which we extracted 22 direct and virtual metrics representing facial muscle deformations. During this process, we preliminarily labeled and qualified 3046 temporal events representing two emotion classes. As a proof of concept, these emotion classes were used as input for training neural networks, with results summarized in this paper and available in an open-source online repository.",
+                    "citation": "Jo\u00e3o Marcelo Silva Souza, Caroline da Silva Morais Alves, J. Cerqueira... (2024). Facial Biosignals Time\u2013Series Dataset (FBioT): A Visual\u2013Temporal Facial Expression Recognition (VT-FER) Approach. Electronics. DOI: 10.3390/electronics13244867",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The Facial Biosignals Time\u2013Series Dataset (FBioT), a novel dataset providing temporal descriptors and features extracted from common videos recorded in uncontrolled environments, and a method that stabilizes temporal effects using normalized measurements based on the principles of the Facial Action Coding System (FACS) and generates signature patterns of expression movements for correlation with real-world temporal events."
+                    }
+                },
+                {
+                    "paper_title": "Construction Worker Activity Recognition Using Deep Residual Convolutional Network Based on Fused IMU Sensor Data in Internet-of-Things Environment",
+                    "abstract": "With the advent of Industry 4.0, sensor-based human activity recognition has become increasingly vital for improving worker safety, enhancing operational efficiency, and optimizing workflows in Internet-of-Things (IoT) environments. This study introduces a novel deep learning-based framework for construction worker activity recognition, employing a deep residual convolutional neural network (ResNet) architecture integrated with multi-sensor fusion techniques. The proposed system processes data from multiple inertial measurement unit sensors strategically positioned on workers\u2019 bodies to identify and classify construction-related activities accurately. A comprehensive pre-processing pipeline is implemented, incorporating Butterworth filtering for noise suppression, data normalization, and an adaptive sliding window mechanism for temporal segmentation. Experimental validation is conducted using the publicly available VTT-ConIoT dataset, which includes recordings of 16 construction activities performed by 13 participants in a controlled laboratory setting. The results demonstrate that the ResNet-based sensor fusion approach outperforms traditional single-sensor models and other deep learning methods. The system achieves classification accuracies of 97.32% for binary discrimination between recommended and non-recommended activities, 97.14% for categorizing six core task types, and 98.68% for detailed classification across sixteen individual activities. Optimal performance is consistently obtained with a 4-second window size, balancing recognition accuracy with computational efficiency. Although the hand-mounted sensor proved to be the most effective as a standalone unit, multi-sensor configurations delivered significantly higher accuracy, particularly in complex classification tasks. The proposed approach demonstrates strong potential for real-world applications, offering robust performance across diverse working conditions while maintaining computational feasibility for IoT deployment. This work advances the field of innovative construction by presenting a practical solution for real-time worker activity monitoring, which can be seamlessly integrated into existing IoT infrastructures to promote workplace safety, streamline construction processes, and support data-driven management decisions.",
+                    "citation": "S. Mekruksavanich, A. Jitpattanakul (2025). Construction Worker Activity Recognition Using Deep Residual Convolutional Network Based on Fused IMU Sensor Data in Internet-of-Things Environment. IoT. DOI: 10.3390/iot6030036",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel deep learning-based framework for construction worker activity recognition, employing a deep residual convolutional neural network (ResNet) architecture integrated with multi-sensor fusion techniques, demonstrating strong potential for real-world applications."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

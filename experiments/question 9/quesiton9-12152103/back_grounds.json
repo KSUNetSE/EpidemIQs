@@ -1,0 +1,62 @@
+{
+    "results": [
+        {
+            "query": "liquidity crisis financial contagion core-periphery network epidemic model",
+            "papers": [
+                {
+                    "title": "Systemic risk in Chinese interbank lending networks: insights from short-term and long-term lending data",
+                    "abstract": null,
+                    "citation": "Shuyue Jin, Lei Song, Lei Shu, et al. (2024). Systemic risk in Chinese interbank lending networks: insights from short-term and long-term lending data. Empirical Economics. Citations: 6, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/e6411e8e385909808ac9669b72a589fbb2e099ea"
+                },
+                {
+                    "title": "Reciprocity in Interbank Markets",
+                    "abstract": "Weighted reciprocity between two agents can be defined as the minimum of sending and receiving value in their bilateral relationship. In financial networks, such reciprocity characterizes the importance of individual banks as both liquidity absorber and provider, a feature typically attributed to large, intermediating dealer banks. In this paper we develop an exponential random graph model that can account for reciprocal links of each node simultaneously on the topological as well as on the weighted level. We provide an exact expression for the normalizing constant and thus a closed-form solution for the graph probability distribution. Applying this statistical null model to Italian interbank data, we find that before the great financial crisis (i) banks displayed significantly more weighted reciprocity compared to what the lower-order network features (size and volume distributions) would predict (ii) with a disappearance of this deviation once the early periods of the crisis set in, (iii) a trend which can be attributed in particular to smaller banks (dis)engaging in bilateral high-value trading relationships. Moreover, we show that neglecting reciprocal links and weights can lead to spurious findings of triadic relationships. As the hierarchical structure in the network is found to be compatible with its transitive but not with its intransitive triadic sub-graphs, the interbank market seems to be well-characterized by a hierarchical core-periphery structure enhanced by non-hierarchical reciprocal trading relationships.",
+                    "citation": "Lutz Honvehlmann (2024). Reciprocity in Interbank Markets. Unknown Journal. Citations: 1, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/abc56f8adf5e425f382c85a8c322fd15e6c276be"
+                },
+                {
+                    "title": "Financial Contagion in Core\u2013Periphery Networks and Real Economy",
+                    "abstract": null,
+                    "citation": "Asako Chiba (2020). Financial Contagion in Core\u2013Periphery Networks and Real Economy. Computational Economics. Citations: 3, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/a4993e317c44ac155da69b4144464c990ba883ff"
+                },
+                {
+                    "title": "Speed of Financial Contagion and Optimal Timing for Intervention\u2217",
+                    "abstract": null,
+                    "citation": "Diana G. Mikhail (2020). Speed of Financial Contagion and Optimal Timing for Intervention\u2217. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/1efb755735c11783925cd94be590b5956a44b16e"
+                },
+                {
+                    "title": "Untying Interconnectedness: Topology, Stability and the Post-crisis Reforms",
+                    "abstract": "\u2018Interconnectedness\u2019 was considered to be a cause of the 2008 financial crisis, stimulating a number of studies into the topology of financial markets. Yet the analysis of instability within networks has tended to focus on a type of \u2018contagion\u2019 which imagines serial insolvencies, with non-performance of due obligations causing solvency issues for connected institutions. A more realistic assessment of the 2008 crisis was that it was due to a drying-up of available cash. A taxonomy of contagion is proposed, and the illiquidity model of contagion is then analyzed with reference to the observed core-periphery structure of financial market networks. Finally, the post-crisis reforms are judged against the view of \u2018interconnectedness\u2019 which emerges.<br>",
+                    "citation": "Dermot Turing (2020). Untying Interconnectedness: Topology, Stability and the Post-crisis Reforms. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/973559c583e0e669ea2a7de40237fda5612659f2"
+                },
+                {
+                    "title": "Financial Contagion in Core\u2013Periphery Networks and Real Economy",
+                    "abstract": null,
+                    "citation": "Asako Chiba (2019). Financial Contagion in Core\u2013Periphery Networks and Real Economy. Computational Economics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/53626f19696c135f07bda8382f2d9374ba84da79"
+                },
+                {
+                    "title": "Credit Risk Contagion and Systemic Risk on Networks",
+                    "abstract": "This paper proposes a model of the dynamics of credit contagion through non-performing loans on financial networks. Credit risk contagion is modeled in the context of the classical SIS (Susceptibles-Infected-Susceptibles) epidemic processes on networks but with a fundamental novelty. In fact, we assume the presence of two different classes of infected agents, and then we differentiate the dynamics of assets subject to idiosyncratic risk from those affected by systemic risk by adopting a SIIS (Susceptible-Infected1-Infected2-Susceptible) model. In the recent literature in this field, the effect of systemic credit risk on the performance of the financial network is a hot topic. We perform numerical simulations intended to explore the roles played by two different network structures on the long-term behavior of assets affected by systemic risk in order to analyze the effect of the topology of the underlying network structure on the spreading of systemic risk on the structure. Random graphs, i.e., the Erd\u00f6s\u2013R\u00e9nyi model, are considered \u201cbenchmark\u201d network structures while core-periphery structures are often indicated in the literature as idealized structures, although they are able to capture interesting, specific features of real-world financial networks. Moreover, as a matter of comparison, we also perform numerical experiments on small-world networks.",
+                    "citation": "M. Dolfin, D. Knopoff, M. Limosani, et al. (2019). Credit Risk Contagion and Systemic Risk on Networks. Mathematics. Citations: 16, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model of the dynamics of credit contagion through non-performing loans on financial networks, modeled in the context of the classical SIS (Susceptible-Infected-Susceptibles) epidemic processes on networks but with a fundamental novelty is proposed."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c57a9edf5ad7095571393b014cb8c659127b4c93"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

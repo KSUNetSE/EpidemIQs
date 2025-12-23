@@ -1,0 +1,74 @@
+{
+    "results": [
+        {
+            "query": "competitive SIS model multiplex networks coexistence dominance",
+            "papers": [
+                {
+                    "title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": null,
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 186, Influential: 17.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1bfe048d3fbbb52d044f5a1d9e9882231f77450c"
+                },
+                {
+                    "title": "An experimental extreme drought reduces the likelihood of species to coexist despite increasing intransitivity in competitive networks",
+                    "abstract": null,
+                    "citation": "Luis Mat\u00edas, \u00d3. Godoy, L. G\u00f3mez\u2010Aparicio, et al. (2018). An experimental extreme drought reduces the likelihood of species to coexist despite increasing intransitivity in competitive networks. Unknown Journal. Citations: 70, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Intransitive competition and species coexistence in the Amazon region is marked by high levels of inter-species competition and low levels of species co-existence."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/fd8c6b7bd358f5471da2197c28c9af7f9e28c5ad"
+                },
+                {
+                    "title": "Regional Trade and Production Blocs in a Global Industry: Towards a Comparative Framework for Research",
+                    "abstract": null,
+                    "citation": "Jennifer Bair (2006). Regional Trade and Production Blocs in a Global Industry: Towards a Comparative Framework for Research. Unknown Journal. Citations: 46, Influential: 4.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/616b3f43497b8b92485ace48f5a36f31de4b0270"
+                },
+                {
+                    "title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. arXiv.org. Citations: 23, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b0ab6807b3f3b31cc95c053afa59eee4faa0f673"
+                },
+                {
+                    "title": "A multiplex centrality metric for complex social networks: sex, social status, and family structure predict multiplex centrality in rhesus macaques",
+                    "abstract": "Members of a society interact using a variety of social behaviors, giving rise to a multi-faceted and complex social life. For the study of animal behavior, quantifying this complexity is critical for understanding the impact of social life on animals\u2019 health and fitness. Multilayer network approaches, where each interaction type represents a different layer of the social network, have the potential to better capture this complexity than single layer approaches. Calculating individuals\u2019 centrality within a multilayer social network can reveal keystone individuals and more fully characterize social roles. However, existing measures of multilayer centrality do not account for differences in the dynamics and functionality across interaction layers. Here we validate a new method for quantifying multiplex centrality called consensus ranking by applying this method to multiple social groups of a well-studied nonhuman primate, the rhesus macaque. Consensus ranking can suitably handle the complexities of animal social life, such as networks with different properties (sparse vs. dense) and biological meanings (competitive vs. affiliative interactions). We examined whether individuals\u2019 attributes or socio-demographic factors (sex, age, dominance rank and certainty, matriline size, rearing history) were associated with multiplex centrality. Social networks were constructed for five interaction layers (i.e., aggression, status signaling, conflict policing, grooming and huddling) for seven social groups. Consensus ranks were calculated across these five layers and analyzed with respect to individual attributes and socio-demographic factors. Generalized linear mixed models showed that consensus ranking detected known social patterns in rhesus macaques, showing that multiplex centrality was greater in high-ranking males with high certainty of rank and females from the largest families. In addition, consensus ranks also showed that females from very small families and mother-reared (compared to nursery-reared) individuals were more central, showing that consideration of multiple social domains revealed individuals whose social centrality and importance might otherwise have been missed.",
+                    "citation": "B. Beisner, N. Braun, M\u00e1rton P\u00f3sfai, et al. (2020). A multiplex centrality metric for complex social networks: sex, social status, and family structure predict multiplex centrality in rhesus macaques. PeerJ. Citations: 24, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new method for quantifying multiplex centrality called consensus ranking is validated by applying this method to multiple social groups of a well-studied nonhuman primate, the rhesus macaque, showing that consideration of multiple social domains revealed individuals whose social centrality and importance might otherwise have been missed."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/401d26c4cd74b6c737bb1802027ddc7d55719e2c"
+                },
+                {
+                    "title": "Competitive exclusion and coexistence phenomena of a two-strain SIS model on complex networks from global perspectives",
+                    "abstract": "Genetic heterogeneity plays an important role in exploring the interplays of microorganisms. Competitive exclusion principle is the main principle that governs causative agentries of diseases competition. Identifying coexistence mechanisms is a core issue for studying the interactions of multi-strains. In this paper, we are concerned with the dynamics of a two-strain SIS epidemic model with general incidence rate on complex networks. We derive the basic reproduction numbers and the invasion reproduction numbers associated with each strain, which determine the competitive, exclusion and coexistence of the two strains. We strictly prove that the competitive exclusion principle holds in a global sense and the endemic equilibrium coexists uniquely and globally. Numerical examples visibly illustrate the evolution of the two strains.",
+                    "citation": "Xiaoyan Wang, Junyuan Yang, Xiao-feng Luo (2022). Competitive exclusion and coexistence phenomena of a two-strain SIS model on complex networks from global perspectives. Journal of Applied Mathematics and Computation. Citations: 6, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/2e964b7ec20942b115af2e73ad26268f5f2bd2fe"
+                },
+                {
+                    "title": "Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches",
+                    "abstract": null,
+                    "citation": "Mengfeng Sun, Xinchu Fu (2023). Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches. Journal of Mathematical Biology. Citations: 8, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The numerical results suggest that the spread of a two-strain epidemic can be controlled by taking the measures of enhancing awareness transmission, reducing memory fading of aware individuals and ensuring high-level influx and rapid growth of awareness programs appropriately."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2de8b2f656d1ac7b6baa3e5272c2cf2b0d0e2dbd"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

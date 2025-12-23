@@ -1,0 +1,68 @@
+{
+    "results": [
+        {
+            "query": "threshold cascades in core-periphery financial networks systemic risk modeling",
+            "papers": [
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2014). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 60, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that, when interest rate swaps are cleared, central clearing of credit default swaps through a well-capitalized CCP can reduce the probability and the magnitude of a systemic illiquidity spiral by reducing the length of the chains of critical receivables within the financial network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/39b37735d067465e3e0690e1b28a8e8f93499261"
+                },
+                {
+                    "title": "Least Susceptible Networks to Systemic Risk",
+                    "abstract": null,
+                    "citation": "Ryota Zamami, Hiroshi Sato, A. Namatame (2014). Least Susceptible Networks to Systemic Risk. Unknown Journal. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper designs the least susceptible network to systemic risk in the threshold-based cascade model and proposes the network design model in which the associated adjacency matrix has the largest maximum eigenvalue."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ddac623794834b145ea707cbc2f97150e15ed8db"
+                },
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2015). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 11, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/ba172a2c9861fd1424e641549a63f3fb73c9d7b6"
+                },
+                {
+                    "title": "Collateral Unchained: Rehypothecation networks, complexity and systemic effects",
+                    "abstract": null,
+                    "citation": "D. Luu, M. Napoletano, P. Barucca, et al. (2017). Collateral Unchained: Rehypothecation networks, complexity and systemic effects. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/8064349751af383f886b7478d0cbbedd9163a75b"
+                },
+                {
+                    "title": "The influence of counterparty risk on financial stability in a stylized banking system",
+                    "abstract": null,
+                    "citation": "A. Birch (2016). The influence of counterparty risk on financial stability in a stylized banking system. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple counterparty risk model replicates the behaviour of more complex simulation-based stress test models of a heterogeneous banking system and is found that the interbank network is essential for the insolvency propagation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3a48a20b52380d00de78adce548ad16e6c7f1ffe"
+                },
+                {
+                    "title": "Speed of Financial Contagion and Optimal Timing for Intervention\u2217",
+                    "abstract": null,
+                    "citation": "Diana G. Mikhail (2020). Speed of Financial Contagion and Optimal Timing for Intervention\u2217. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/1efb755735c11783925cd94be590b5956a44b16e"
+                },
+                {
+                    "title": "Financial Network Stability and Structure: Econometric and Network Analysis",
+                    "abstract": null,
+                    "citation": "M. G\u0105tkowski (2015). Financial Network Stability and Structure: Econometric and Network Analysis. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6769f11e7a7049d38db2a7cda3a4c3234db2351e"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

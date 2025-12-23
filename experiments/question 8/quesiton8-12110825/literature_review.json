@@ -1,0 +1,20 @@
+{
+    "results": [
+        {
+            "query": "epidemic spreading small-world network vs random network SIR model infection speed prevalence clustering degree",
+            "papers": [
+                {
+                    "title": "Social network analytics, data science ethics & privacy-preserving analytics",
+                    "abstract": null,
+                    "citation": "D. Pedreschi (2017). Social network analytics, data science ethics & privacy-preserving analytics. SummerSchool '17. Citations: 2, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This crash course is an introduction to the analysis of complex networks, made possible by the availability of big data, with a special focus on the social network and its structure and function."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/fcdc0d073f566fe2897f2cff96c71da7837ac124"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "results": [
+        {
+            "query": "generating synthetic core-periphery networks for financial contagion studies",
+            "papers": [
+                {
+                    "title": "Bootstrapping Topological Properties and Systemic Risk of Complex Networks Using the Fitness Model",
+                    "abstract": "In this paper we present a novel method to reconstruct global topological properties of a complex network starting from limited information. We assume to know for all the nodes a non-topological quantity that we interpret as fitness. In contrast, we assume to know the degree, i.e. the number of connections, only for a subset of the nodes in the network. We then use a fitness model, calibrated on the subset of nodes for which degrees are known, in order to generate ensembles of networks. Here, we focus on topological properties that are relevant for processes of contagion and distress propagation in networks, i.e. network density and k-core structure, and we study how well these properties can be estimated as a function of the size of the subset of nodes utilized for the calibration. Finally, we also study how well the resilience to distress propagation in the network can be estimated using our method. We perform a first test on ensembles of synthetic networks generated with the Exponential Random Graph model, which allows to apply common tools from statistical mechanics. We then perform a second test on empirical networks taken from economic and financial contexts. In both cases, we find that a subset as small as 10 % of nodes can be enough to estimate the properties of the network along with its resilience with an error of 5 %.",
+                    "citation": "N. Musmeci, S. Battiston, G. Caldarelli, et al. (2012). Bootstrapping Topological Properties and Systemic Risk of Complex Networks Using the Fitness Model. Journal of statistical physics. Citations: 81, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel method to reconstruct global topological properties of a complex network starting from limited information and finds that a subset as small as 10 % of nodes can be enough to estimate the properties of the network along with its resilience with an error of 5 %."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/bbaa20b2ab69e255a2bca77daebe6bafa8121335"
+                },
+                {
+                    "title": "Robust-yet-fragile: A simulation model on exposure and concentration at interbank networks",
+                    "abstract": null,
+                    "citation": "Bulent Ozel, Mario Eboli, Andrea Toto, et al. (2018). Robust-yet-fragile: A simulation model on exposure and concentration at interbank networks. Unknown Journal. Citations: 1, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A layered simulation model is presented and the results suggest that a medium density of connections in regular networks is already sufficient to induce a \u2019robust-yet-fragile\u2019 response to insolvency shocks, while the same occurs in star networks only when the centralization is very high."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/83ee6d3f07336b4c343ee44a7c2f0f828eb1ce3f"
+                },
+                {
+                    "title": "Network formation and its Impact on Systemic Risk",
+                    "abstract": null,
+                    "citation": "Selman Erol (2016). Network formation and its Impact on Systemic Risk. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/084db1fc3886ff23a51b611f19c552354ab66d20"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "core-periphery network model financial contagion size core periphery connection probabilities",
+            "papers": [
+                {
+                    "title": "Core\u2013Periphery Structure in the Overnight Money Market: Evidence from the e-MID Trading Platform",
+                    "abstract": null,
+                    "citation": "Daniel Fricke, T. Lux (2015). Core\u2013Periphery Structure in the Overnight Money Market: Evidence from the e-MID Trading Platform. Unknown Journal. Citations: 337, Influential: 36.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/d977d822ba375794d9b78d06da7c2a7525f4bff8"
+                },
+                {
+                    "title": "Interbank Tiering and Money Center Banks",
+                    "abstract": "This paper provides evidence that interbank markets are tiered rather than flat, in the sense that most banks do not lend to each other directly but through money center banks acting as intermediaries. We capture the concept of tiering by developing a core-periphery model, and devise a procedure for tting the model to real-world networks. Using Bundesbank data on bilateral interbank exposures among 1800 banks, we find strong evidence of tiering in the German banking system. Econometrically, bank-specific features, such as balance sheet size, predict how banks position themselves in the interbank market. This link provides a promising avenue for understanding the formation of financial networks.",
+                    "citation": "Ben R. Craig, Goetz von Peter (2010). Interbank Tiering and Money Center Banks. Social Science Research Network. Citations: 293, Influential: 12.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/59c3b86840eecc1d672b531cf7a60a6f243ed7ff"
+                },
+                {
+                    "title": "Understanding Social Networks: Theories, Concepts, and Findings",
+                    "abstract": null,
+                    "citation": "C. Kadushin (2011). Understanding Social Networks: Theories, Concepts, and Findings. Unknown Journal. Citations: 309, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This book discusses the development of social networks in the modern era and discusses the role of advertising, marketing, and branding in the creation of networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5bc0211f7bd125c6b03e6c55db2fd110c092043f"
+                },
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2014). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 60, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that, when interest rate swaps are cleared, central clearing of credit default swaps through a well-capitalized CCP can reduce the probability and the magnitude of a systemic illiquidity spiral by reducing the length of the chains of critical receivables within the financial network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/39b37735d067465e3e0690e1b28a8e8f93499261"
+                },
+                {
+                    "title": "Insights into European interbank network contagion",
+                    "abstract": null,
+                    "citation": "D. Philippas, Yiannis Koutelidakis, A. Leontitsis (2015). Insights into European interbank network contagion. Unknown Journal. Citations: 21, Influential: 3.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/5914fdd6ac8edd2773a4ef9d0d15bda0fb98b1a1"
+                },
+                {
+                    "title": "Evaluation of green space accessibility of Shenyang using Gaussian based 2-step floating catchment area method",
+                    "abstract": null,
+                    "citation": "Y. Wei (2014). Evaluation of green space accessibility of Shenyang using Gaussian based 2-step floating catchment area method. Unknown Journal. Citations: 37, Influential: 3.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/36f5e4c9931e897e2e3dfe9f4a2ed3de42577ed2"
+                },
+                {
+                    "title": "Credit Risk Contagion and Systemic Risk on Networks",
+                    "abstract": "This paper proposes a model of the dynamics of credit contagion through non-performing loans on financial networks. Credit risk contagion is modeled in the context of the classical SIS (Susceptibles-Infected-Susceptibles) epidemic processes on networks but with a fundamental novelty. In fact, we assume the presence of two different classes of infected agents, and then we differentiate the dynamics of assets subject to idiosyncratic risk from those affected by systemic risk by adopting a SIIS (Susceptible-Infected1-Infected2-Susceptible) model. In the recent literature in this field, the effect of systemic credit risk on the performance of the financial network is a hot topic. We perform numerical simulations intended to explore the roles played by two different network structures on the long-term behavior of assets affected by systemic risk in order to analyze the effect of the topology of the underlying network structure on the spreading of systemic risk on the structure. Random graphs, i.e., the Erd\u00f6s\u2013R\u00e9nyi model, are considered \u201cbenchmark\u201d network structures while core-periphery structures are often indicated in the literature as idealized structures, although they are able to capture interesting, specific features of real-world financial networks. Moreover, as a matter of comparison, we also perform numerical experiments on small-world networks.",
+                    "citation": "M. Dolfin, D. Knopoff, M. Limosani, et al. (2019). Credit Risk Contagion and Systemic Risk on Networks. Mathematics. Citations: 16, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model of the dynamics of credit contagion through non-performing loans on financial networks, modeled in the context of the classical SIS (Susceptible-Infected-Susceptibles) epidemic processes on networks but with a fundamental novelty is proposed."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c57a9edf5ad7095571393b014cb8c659127b4c93"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

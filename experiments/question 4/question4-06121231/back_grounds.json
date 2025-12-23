@@ -1,0 +1,37 @@
+{
+    "results": [
+        {
+            "query": "competitive epidemic spreading multiplex networks SIS model eigenvector correlation coexistence exclusion",
+            "papers": [
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "Evolution and ecology of the digital world: A complex systems perspective",
+                    "abstract": null,
+                    "citation": "K. Kleineberg (2016). Evolution and ecology of the digital world: A complex systems perspective. , 1. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A quantitative two-parameter model which reproduces the entire topological evolution of a quasi-isolated OSN with unprecedented precision is presented, suggesting that the coupling between the real pre-existing underlying social structure, a viral spreading mechanism, and mass media influence govern the evolution of OSNs."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

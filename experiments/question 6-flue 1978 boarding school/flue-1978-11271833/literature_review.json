@@ -1,0 +1,46 @@
+{
+    "results": [
+        {
+            "query": "1978 English Boarding School Influenza epidemic compartmental model fitting",
+            "papers": [
+                {
+                    "title": "The 1978 English boarding school influenza outbreak: where the classic SEIR model fails",
+                    "abstract": "Previous work has failed to fit classic SEIR epidemic models satisfactorily to the prevalence data of the famous English boarding school 1978 influenza A/H1N1 outbreak during the children\u2019s pandemic. It is still an open question whether a biologically plausible model can fit the prevalence time series and the attack rate correctly. To construct the final model, we first used an intentionally very flexible and overfitted discrete-time epidemiologic model to learn the epidemiological features from the data. The final model was a susceptible (S) \u2013 exposed (E) \u2013 infectious (I) \u2013 confined-to-bed (B) \u2013 convalescent (C) \u2013 recovered (R) model with time delay (constant residence time) in E and I compartments and multi-stage (Erlang-distributed residence time) in B and C compartments. We simultaneously fitted the reported B and C prevalence curves as well as the attack rate (proportion of children infected during the outbreak). The non-exponential residence times were crucial for good fits. The estimates of the generation time and the basic reproductive number (R0) were biologically reasonable. A simplified discrete-time model was built and fitted using the Bayesian procedure. Our work not only provided an answer to the open question, but also demonstrated an approach to constructive model generation.",
+                    "citation": "Konstantin K Avilov, Qiong Li, Lixin Lin, et al. (2024). The 1978 English boarding school influenza outbreak: where the classic SEIR model fails. Journal of the Royal Society Interface. Citations: 2, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work built and fitted a simplified discrete-time epidemiologic model that fitted the reported B and C prevalence curves as well as the attack rate, and demonstrated an approach to constructive model generation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/db4a0a2077b02b592029868af6d530e89369c9eb"
+                },
+                {
+                    "title": "Profile likelihood-based analyses of infectious disease models",
+                    "abstract": null,
+                    "citation": "C. T\u00f6nsing, J. Timmer, C. Kreutz (2018). Profile likelihood-based analyses of infectious disease models. Statistical Methods in Medical Research. Citations: 27, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work summarizes and transfers state-of-the art approaches from other fields like Systems Biology to infectious disease models to describe the temporal evolution of epidemics using a simple SIR model and more complex model of a vector-borne disease with data from the Zika virus outbreak in Colombia in 2015\u20132016."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/430538a3d03f09c3d6b4247b20b7ed112fd7b8df"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "network structure and influenza transmission in boarding schools",
+            "papers": [
+                {
+                    "title": "Analysis of alternative Covid-19 mitigation measures in school classrooms: an agent-based model of SARS-CoV-2 transmission",
+                    "abstract": "The SARS-CoV-2 epidemic has had major impacts on children's education, with schools required to implement infection control measures that have led to long periods of absence and classroom closures. We develop an agent-based epidemiological model of SARS-CoV-2 transmission that is applied to model infection within school classrooms, with a contact model constructed using random networks informed by structured expert judgement. Mitigation strategies to control infection are modelled to allow analysis of their effectiveness in supressing infection outbreaks and in limiting pupil absence. The model is applied to re-examine Covid-19 in schools in the UK in autumn 2020, and to forecast infection levels in autumn 2021 when the more infectious Delta-variant is dominant and school transmission is likely to play a major role in a new wave of the epidemic. Our results indicate that testing-based surveillance of infections in the classroom population with isolation of positive cases is a more effective mitigation measure than bubble quarantine both for reducing transmission in schools and for avoiding pupil absence, even accounting for insensitivity of self-administered tests. Bubble quarantine results in large numbers of pupils absent from school, with only modest impact of classroom infection. However, maintaining a reduced contact rate within the classroom has a major beneficial impact for managing Covid-19 in school settings.",
+                    "citation": "M. Woodhouse, W. Aspinall, Stephen Rj Sparks, et al. (2021). Analysis of alternative Covid-19 mitigation measures in school classrooms: an agent-based model of SARS-CoV-2 transmission. medRxiv. Citations: 5, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results indicate that testing-based surveillance of infections in the classroom population with isolation of positive cases is a more effective mitigation measure than bubble quarantine both for reducing transmission in schools and for avoiding pupil absence, even accounting for insensitivity of self-administered tests."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b08132391c2a8292f886d75ddd0f8fe97e9b9b5c"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

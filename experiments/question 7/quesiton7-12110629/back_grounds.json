@@ -1,0 +1,78 @@
+{
+    "results": [
+        {
+            "query": "threshold cascade financial networks core-periphery topology systemic risk contagion propagation cascade initiation core connectivity",
+            "papers": [
+                {
+                    "title": "Least Susceptible Networks to Systemic Risk",
+                    "abstract": null,
+                    "citation": "Ryota Zamami, Hiroshi Sato, A. Namatame (2014). Least Susceptible Networks to Systemic Risk. Unknown Journal. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper designs the least susceptible network to systemic risk in the threshold-based cascade model and proposes the network design model in which the associated adjacency matrix has the largest maximum eigenvalue."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ddac623794834b145ea707cbc2f97150e15ed8db"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "systemic risk core-periphery financial network threshold cascade propagation initial shock",
+            "papers": [
+                {
+                    "title": "FINANCIAL CONTAGION IN A STOCHASTIC BLOCK MODEL",
+                    "abstract": "One of the most characteristic features of the global financial network is its inherently complex and intertwined structure. From the perspective of systemic risk it is important to understand the influence of this network structure on default contagion. Using sparse random graphs to model the financial network, asymptotic methods turned out to be powerful for the purpose of analytically describing the contagion process and making statements about resilience. So far, however, such methods have been limited to so-called rank-one models in which, informally speaking, the only parameter for the skeleton of the network is the degree sequence and the contagion process can be described by a one-dimensional fixed-point equation. Such networks fail to account for the possibility of a pronounced block structure such as core/periphery or a network composed of different connected blocks for different countries. We present a much more general model here, where we distinguish vertices (institutions) of different types and let edge probabilities and exposures depend on the types of both, the receiving and the sending vertex, plus additional parameters. Our main result allows one to compute explicitly the systemic damage caused by some initial local shock event, and we derive a complete characterization of resilient and nonresilient financial systems. This is the first instance that default contagion is rigorously studied in a model outside the class of rank-one models and several technical challenges arise. In contrast to previous work, in which networks could be classified as resilient or nonresilient independently of the distribution of the shock, information about the shock becomes important in our model and a more refined resilience condition arises. Among other applications of our theory we derive resilience conditions for the global network based on subnetwork conditions only.",
+                    "citation": "Nils Detering, T. Meyer\u2010Brandis, K. Panagiotou, et al. (2020). FINANCIAL CONTAGION IN A STOCHASTIC BLOCK MODEL. Unknown Journal. Citations: 7, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6662a3e92111316bbbafbdff632045f92502f16b"
+                },
+                {
+                    "title": "Financial contagion in inter-bank networks with overlapping portfolios",
+                    "abstract": null,
+                    "citation": "Peilong Shen, Zhinan Li (2019). Financial contagion in inter-bank networks with overlapping portfolios. Journal of Economic Interaction and Coordination. Citations: 14, Influential: 1.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/94d67e2cf66d7a867667c41d9ab85bbdfd0cc3fe"
+                },
+                {
+                    "title": "Collateral Unchained: Rehypothecation networks, complexity and systemic effects",
+                    "abstract": null,
+                    "citation": "D. Luu, M. Napoletano, P. Barucca, et al. (2017). Collateral Unchained: Rehypothecation networks, complexity and systemic effects. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/8064349751af383f886b7478d0cbbedd9163a75b"
+                },
+                {
+                    "title": "FUNDAC\u0327A\u0303O GETULIO VARGAS ESCOLA de PO\u0301S-GRADUAC\u0327A\u0303O em ECONOMIA",
+                    "abstract": null,
+                    "citation": "F. Corr\u00eaa (2017). FUNDAC\u0327A\u0303O GETULIO VARGAS ESCOLA de PO\u0301S-GRADUAC\u0327A\u0303O em ECONOMIA. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/656babd9500b7cdf295961249ef1cefb9b63f387"
+                },
+                {
+                    "title": "The influence of counterparty risk on financial stability in a stylized banking system",
+                    "abstract": null,
+                    "citation": "A. Birch (2016). The influence of counterparty risk on financial stability in a stylized banking system. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple counterparty risk model replicates the behaviour of more complex simulation-based stress test models of a heterogeneous banking system and is found that the interbank network is essential for the insolvency propagation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3a48a20b52380d00de78adce548ad16e6c7f1ffe"
+                },
+                {
+                    "title": "Financial Network Stability and Structure: Econometric and Network Analysis",
+                    "abstract": null,
+                    "citation": "M. G\u0105tkowski (2015). Financial Network Stability and Structure: Econometric and Network Analysis. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6769f11e7a7049d38db2a7cda3a4c3234db2351e"
+                },
+                {
+                    "title": "Credit default swaps and systemic risk",
+                    "abstract": null,
+                    "citation": "R. Cont, Andreea Minca (2015). Credit default swaps and systemic risk. Annals of Operations Research. Citations: 11, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/ba172a2c9861fd1424e641549a63f3fb73c9d7b6"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

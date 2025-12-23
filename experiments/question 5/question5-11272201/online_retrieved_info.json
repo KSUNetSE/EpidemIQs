@@ -1,0 +1,328 @@
+[
+  {
+    "query": "formula for critical vaccination threshold for random and targeted vaccination on configuration model and ER random network, SIR epidemic",
+    "results": [
+      {
+        "query": "critical vaccination threshold formula SIR epidemic configuration model",
+        "follow_up_questions": null,
+        "answer": "In the classic SIR framework the critical vaccination coverage that guarantees herd immunity is v_c = 1 − 1/R₀ for a perfectly effective vaccine, and when vaccine efficacy is E (0<E≤1) it generalises to v_c = (1 − 1/R₀)/E; for a population represented by a configuration‑model network the basic reproduction number is R₀ = (β/γ)·(⟨k²⟩ − ⟨k⟩)/⟨k⟩, where β is the transmission rate, γ the recovery rate and ⟨k⟩, ⟨k²⟩ are the first and second moments of the degree distribution, so the corresponding critical vaccination threshold becomes v_c = 1 − γ/(β·(⟨k²⟩ − ⟨k⟩)/⟨k⟩) = 1 − 1/R₀, with the same adjustment for imperfect efficacy (divide the right‑hand side by E).",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.medrxiv.org/content/10.1101/2021.01.02.20248596v1.full-text",
+            "title": "COVID-19 immunization threshold(s): an analysis | medRxiv",
+            "content": "This magnitude, termed the critical immunization threshold (q), can be obtained from the classical SIR model equilibrium equation, equaling (1 −",
+            "score": 0.7621591,
+            "raw_content": null
+          },
+          {
+            "url": "https://ima.org.uk/wp/wp-content/uploads/2016/06/Mathematics_of_Vaccination.pdf",
+            "title": "[PDF] The Mathematics of Vaccination | IMA",
+            "content": "allowing vacci-nated individuals to become infected and move into a separate infected class (say J) with diﬀerent parameters. Again a critical vaccination threshold can be established. If RV is the number of secondary cases produced by an infectious individual when the entire population is vaccinated, then the threshold becomes VC = R0 −1 R0 −RV . [...] critical level of vaccination needed to protect the population VC = R0 −1 R0 = 1 −1 R0 . [...] Box 1 The SIR model with vaccination In the main text we talk about the Susceptible Infectious Recov-ered (SIR) diﬀerential equation model, which describes the rate of change of the proportion of individuals susceptible to, infected with and recovered from a given infectious disease. To this for-mulation we add the eﬀects of vaccination dS dt = B(1 −v1) −βSI −dR −v2S dI dt = βSI −γI −dI dR dt = γI −dR dV dt = v1B + v2S −dV where the terms in grey correspond to the natural birth and death of",
+            "score": 0.62824833,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-69651-6",
+            "title": "Assessing vaccine efficacy for infectious diseases with variable ...",
+            "content": "MathSciNet   Google Scholar\n10. Xu, C. & Li, X. The threshold of a stochastic delayed SIRS epidemic model with temporary immunity and vaccination. Chaos Soliton. Fract. 111, 227–234 (2018).\n\n    Article  ADS  MathSciNet   Google Scholar\n11. Xu, R., Ma, Z. & Wang, Z. Global stability of a delayed SIRS epidemic model with saturation incidence and temporary immunity. Comput. Math. Appl. 59, 3211–3221 (2010). [...] $$\\begin{aligned} \\begin{aligned} V'(t)&={}\\frac{(S(t)-S^0)}{S(t)}\\Big ( \\mu (S^0-S)-\\beta S(t)I(t)+\\int \\_{0}^{\\infty }\\rho (\\tau ) R(t,\\tau )d\\tau \\Big )\\\\&\\quad +{}\\beta S(t)I(t)-(\\alpha +\\gamma +\\mu )I(t)\\\\&\\quad +{}\\int \\_0^\\infty m(\\tau )(-\\frac{\\partial R(t,\\tau )}{\\partial \\tau }-(\\mu +\\rho (\\tau ))R(t,\\tau )) d\\tau \\\\&={}\\frac{1}{S(t)}\\Big ( -\\mu (S^0-S)^2-S^0\\int \\_{0}^{\\infty }\\rho (\\tau ) R(t,\\tau )d\\tau \\Big )\\\\&\\quad +{}\\left( \\beta S^0-(\\alpha +\\gamma +\\mu )+m(0)\\alpha \\right) [...] $$\\begin{aligned} \\begin{aligned} V'(t)&={}\\frac{\\left( S(t)-S^0 \\right) }{S(t)}S'(t)+I'(t)+\\int \\_0^\\infty m(\\tau )\\frac{\\partial R(t,\\tau )}{\\partial t} d\\tau \\\\&={}\\frac{\\left( S(t)-S^0 \\right) }{S(t)}\\Big ( \\Lambda -\\beta S(t)I(t)-\\mu S(t)+\\int \\_{0}^{\\infty }\\rho (\\tau ) R(t,\\tau )d\\tau \\Big )\\\\&\\quad +{}\\beta S(t)I(t)-(\\alpha +\\gamma +\\mu )I(t)\\\\&\\quad +{}\\int \\_0^\\infty m(\\tau )(-\\frac{\\partial R(t,\\tau )}{\\partial \\tau }-(\\mu +\\rho (\\tau ))R(t,\\tau )) d\\tau \\\\ \\end{aligned}",
+            "score": 0.5090084,
+            "raw_content": null
+          },
+          {
+            "url": "https://royalsocietypublishing.org/doi/10.1098/rsif.2024.0299",
+            "title": "Quantifying indirect and direct vaccination effects arising in the SIR ...",
+            "content": "At the herd immunity threshold, if a proportion v of the population is 'directly' vaccinated, then the proportion (1 − v) of the population does",
+            "score": 0.48308808,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.science.org/doi/10.1126/science.abc6810",
+            "title": "A mathematical model reveals the influence of population ... - Science",
+            "content": "the community, then the new reproduction number is Rv = (1 – v)R0. From this, the critical vaccination coverage vc = 1 – 1/R. So, if at least this fraction is vaccinated and hence immune, the community has reached herd immunity because Rv ≤ 1 and no outbreak can take place. If the vaccine is not perfect but instead reduces susceptibility by a fraction E (so E = 1 corresponds to 100% efficacy), then the critical vaccination coverage is given by vc = E–1(1 – 1/R0) (7), implying that a bigger [...] One of the simplest of all epidemic models is to assume a homogeneously mixing population in which all individuals are equally susceptible and equally infectious if they become infected. Before becoming infectious, infected individuals first go through a latent/exposed period, i.e., the susceptible-exposed-infected-recovered (SEIR) model (7). The basic reproduction number R0 denotes the average number of infectious contacts that an infected individual has before recovering and becoming immune [...] The final fractions of the different groups in the population becoming infected in the epidemic are obtained by solving a set of equations (the final size equations are provided in the supplementary materials). To be able to say something about the time evolution of the epidemic, we assume a classical SEIR epidemic model. More precisely, we assume that individuals who get infected are initially latent for a mean of 3 days, followed by an infectious period of a mean of 4 days, thus approximately",
+            "score": 0.48221022,
+            "raw_content": null
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology)",
+            "title": "Compartmental models (epidemiology) - Wikipedia",
+            "content": "The susceptible-infected-recovered-vaccinated-deceased (SIRVD) epidemic compartment model extends the SIR model to include the effects of vaccination campaigns and time-dependent fatality rates on epidemic outbreaks. It encompasses the SIR, SIRV, SIRD, and SI models as special cases, with individual time-dependent rates governing transitions between different fractions. This model uses the following system of differential equations for the population fractions : [...] The Susceptible-Infectious-Recovered-Vaccinated model is an extended SIR model that accounts for vaccination of the susceptible population. This model uses the following system of differential equations: [...] ## SIR model\n\n[edit&action=edit&section=1 \"Edit section: SIR model\")]\n\nThe SIR model is one of the simplest compartmental models, and many models are derivatives of this basic form. The model consists of three compartments:",
+            "score": 0.45086768,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-79771-8",
+            "title": "A game theoretic complex network model to estimate the epidemic ...",
+            "content": "We derive the expression for any of the epidemic thresholds as follows: 1. Epidemic threshold for a given vaccine risk state (Q) is:.",
+            "score": 0.40457857,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3703471/",
+            "title": "Critical immune and vaccination thresholds for determining multiple ...",
+            "content": "We developed a scheme that allowed us to determine critical thresholds for vaccine-induced and natural immunity that would prevent the spread of influenza.",
+            "score": 0.24918723,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S1576988725000068",
+            "title": "A mathematical model for assessing vaccination's efficacy as a ...",
+            "content": "They construct a threshold parameter for the model by employing fixed point theorems to demonstrate the existence and uniqueness of solutions.",
+            "score": 0.23280731,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S246804272500065X",
+            "title": "A discrete SIR epidemic model incorporating media impact ...",
+            "content": "The paper explores the effects of media influence and limited medical resources on the spread of infectious diseases using mathematical modeling.",
+            "score": 0.2035812,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.3,
+        "request_id": "cc5f8aa0-602b-4c30-97d2-f18a20e4c0e7"
+      },
+      {
+        "query": "critical vaccination threshold formula SIR epidemic ER random network",
+        "follow_up_questions": null,
+        "answer": "For an SIR epidemic on an Erdős–Rényi random graph the epidemic threshold is reached when the effective transmission rate satisfies β⟨k⟩/γ = 1 (where β is the per‑contact infection probability, γ the recovery rate and ⟨k⟩ the average degree, which equals the largest eigenvalue of the adjacency matrix for an ER network); consequently, the critical vaccination (or immunization) fraction needed to halt an outbreak under random vaccination is f_c = 1 – γ/(β⟨k⟩) = 1 – 1/R₀, with R₀ = β⟨k⟩/γ.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://cs.stanford.edu/people/jure/pubs/virus-tissec.pdf",
+            "title": "[PDF] Epidemic Thresholds in Real Networks - Stanford Computer Science",
+            "content": "Cohen et al  studied the acquaintance immunization policy, and showed that it is much better than random, for both the SIS as well as the SIR model. The “acquaintance” immunization policy works as follows: pick a random person and immunize one of its neighbors at random (which will prob-ably be a “hub”). For power-law graphs (with no rewiring), they also derived formulas for the critical immunization fraction fc, above in which the epidemic is arrested. Madar et al  continued along these lines, [...] According to the KW model, the epidemic threshold in a random Erd¨ os–R´ enyi graph is τK W = 1/⟨k⟩, where ⟨k⟩is the average degree [Kephart and White 1991]. It is easily shown that, in a homogeneous or random network, the largest eigenvalue of the adjacency matrix is ⟨k⟩. Therefore, our model yields the same threshold condition for random graphs, and thus, our NLDS model subsumes the KW model. [...] the population, while below threshold it will not spread. The intuition is that, for the virus to spread further, an infected person should be able to infect at least one more person, before she recovers. The average recovery time is 1/δ, and thus the expected number of infected nodes would be β ∗λ1/δ. Thus, we conjecture that our threshold condition also carries over to the SIR model.",
+            "score": 0.6320719,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S246804272500065X",
+            "title": "A discrete SIR epidemic model incorporating media impact ...",
+            "content": "Let u n=S n−S G 1∗ and v n=I n−I G 1∗, which shifts E G 1∗ to the origin (0, 0). Substitute _S_ _n_, _I_ _n_ into (13), yielding u n+1=a 11 u n+a 12 v n+a 13 u n v n+a 14 ϵ+a 15−a 1(u n+S G 1∗)1+b 1(u n+S G 1∗),v n+1=a 21 u n+a 22 v n+a 23 u n v n+a 24−a 2(v n+I G 1∗)1+b 2(v n+I G 1∗),where a 11=1−β I G 1∗−μ,a 12=−β S G 1∗,a 13=−β,a 14=1,a 15=Λ−β S G 1∗I G 1∗−μ S G 1∗,a 21=β I G 1∗,a 22=1+β S G 1∗−(μ+δ),a 23=β,a 24=β S G 1∗I G 1∗−(μ+δ)I G 1∗. [...] such that(14)X n+1 Y n+1=−1 0 0 λ 2 X n Y n+P(u n,v n,ϵ)Q(u n,v n,ϵ),where P(u n,v n,ϵ)=a 13−ϕ a 23 ψ−ϕ u n v n+a 14 ψ−ϕ ϵ+a 15−ϕ a 24 ψ−ϕ−a 1(u n+S G 1∗)(ψ−ϕ)1+b 1(u n+S G 1∗)+a 2 ϕ(v n+I G 1∗)(ψ−ϕ)1+b 2(v n+I G 1∗),Q(u n,v n,ϵ)=ψ a 23−a 13 ψ−ϕ u n v n−a 14 ψ−ϕ ϵ+ψ a 24−a 15 ψ−ϕ+a 1(u n+S G 1∗)(ψ−ϕ)1+b 1(u n+S G 1∗)−a 2 ψ(v n+I G 1∗)(ψ−ϕ)1+b 2(v n+I G 1∗),u n v n=ψ X n 2+(ψ+ϕ)X n Y n+ϕ Y n 2. [...] The characteristic equation of (11) is(12)λ 2+p λ+q=0,where p=Λ S G 1∗−a 1 b 1 S G 1∗(1+b 1 S G 1∗)2−a 2 b 2 I G 1∗(1+b 2 I G 1∗)2−2,q=1−Λ S G 1∗+a 1 b 1 S G 1∗(1+b 1 S G 1∗)2 1+a 2 b 2 I G 1∗(1+b 2 I G 1∗)2+β S G 1∗I G 1∗.\n\nThe roots of equation(12) are λ 1,2=−p±Δ 2, and Δ=a 1 b 1 S G 1∗(1+b 1 S G 1∗)2−a 2 b 2 I G 1∗(1+b 2 I G 1∗)2−Λ S G 1∗2−4 β S G 1∗I G 1∗=A−B−Λ S G 1∗2−4 β S G 1∗I G 1∗.\nLemma 1",
+            "score": 0.6241337,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3703471/",
+            "title": "Critical immune and vaccination thresholds for determining multiple ...",
+            "content": "If Rf > 1, the epidemic will grow, whereas if Rf ≤ 1, the epidemic will die out [20]. We set Rf = 1 as the threshold of interest. We note that if f1 = f2 = 0,",
+            "score": 0.5760895,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-78626-6",
+            "title": "Integrating graph and reinforcement learning for vaccination ...",
+            "content": "$$\\begin{aligned} \\tau = \\frac{1}{\\lambda \\_{\\max }} , \\end{aligned}$$\n\n(6)\n\nwhere \\(\\lambda \\_{\\max }\\) represents the largest eigenvalue of the network’s adjacency matrix. This equation is used to compute the epidemic thresholds for networks.\n\nAverage node connectivity 61.\"): The definition of average node connectivity in a complex network is the average, over all pairs of vertices, of the maximum number of internally disjoint paths connecting these vertices 61.\"). It can be calculated as [...] $$\\begin{aligned} Q\\_{t+1}(s, a) \\leftarrow Q\\_t(s, a)+\\alpha \\times \\left[ r+\\gamma \\times \\arg \\max \\_{a^{\\prime }} Q\\_t\\left( s^{\\prime }, a^{\\prime }\\right) -Q\\_t(s, a)\\right] . \\end{aligned}$$\n\n(4) [...] epidemic threshold following node removal using the proposed approach and other baseline methods. Prior research 60.\") suggested that in an SIS (Susceptible-Infected-Susceptible) model, a network’s epidemic threshold, denoted as \\(\\tau\\), is determined by the equation",
+            "score": 0.5697814,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6677279/",
+            "title": "Efficient vaccination strategies for epidemic control using network ...",
+            "content": "To simulate an epidemic, we ran a Susceptible-Infected-Recovered (SIR) process across each complete village network. We first selected 1% of nodes in each network to be infected uniformly at random to begin the SIR process, and these nodes represent the initially infected epidemic seed population. At each discrete time step, an infected node could infect at most one susceptible neighbor, i.e., we employed unit infectivity (Staples et al., 2015), under the assumption that a time step constitutes [...] the smallest time unit required to infect at most one susceptible person. The SIR process used probability β = 0.25 for an infectious individual to infect a susceptible contact per time step, and probability γ = 0.1 for an infectious individual to recover to per time step. These values for β and γ lead to an R0 of 1.77 (based on infections caused by the initial 1% of nodes) and an approximate cumulative incidence of 40% of the population of a village in the absence of any intervention. These [...] In these individual-level analyses, we simulated vaccinating 10% of each village in advance of running the SIR process, and all intervention approaches significantly reduced cumulative incidence relative to no intervention (Fig. 4). Random vaccination was the least effective vaccination approach, reducing cumulative incidence by 32.3% compared to no vaccination, while vaccinating a nominated friend (Nomination) reduced cumulative incidence by a further 10.7%. Vaccinating the first 10% of",
+            "score": 0.47621483,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2024.1492423/full",
+            "title": "Dynamics analysis of epidemic spreading with individual ... - Frontiers",
+            "content": "outbreak thresholds as these thresholds are crucial in many real-world scenarios. When the number of exposures an individual has to the virus reaches a certain threshold, the individual may become infected with the epidemic. The epidemic threshold represents the critical condition under which a system is in an active outbreak state . A substantial amount of theoretical research has been conducted to predict the outbreak thresholds of SIR models [14–17]. [...] Based on the aforementioned motivations, we introduce a generalized SIR model on complex networks and propose an individual heterogeneous infection threshold function, a logarithmic-like function, to reflect the heterogeneity of individual susceptibility on infecting the virus and the associated disease. Furthermore, a partition theory based on the edge and individual heterogeneous infection threshold is proposed to theoretically analyze the dynamic processes of epidemic spreading. Finally, [...] From the factors discussed above, it is recognized that epidemic infection outbreak thresholds are critical in epidemic spreading, influencing not only the scale of outbreaks and their critical conditions but also providing effective guidance for the formulation of immunization strategies. Traditional studies on viral infection and epidemic transmission often assume that the probability of epidemic infection from two consecutive exposures is constant, suggesting that epidemic transmission lacks",
+            "score": 0.37175277,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534529/",
+            "title": "SIR epidemics and vaccination on random graphs with clustering - NIH",
+            "content": "In this paper we consider Susceptible → Infectious → Recovered (SIR) epidemics on random graphs with clustering. To incorporate group structure of the",
+            "score": 0.3493335,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-79771-8",
+            "title": "A game theoretic complex network model to estimate the epidemic ...",
+            "content": "A game theoretic complex network model to estimate the epidemic threshold under individual vaccination behaviour and adaptive social connections.",
+            "score": 0.3280454,
+            "raw_content": null
+          },
+          {
+            "url": "https://pubs.aip.org/aip/cha/article/28/5/051101/322047/Analytical-connection-between-thresholds-and",
+            "title": "Analytical connection between thresholds and immunization ...",
+            "content": "Our method builds the relationship between the thresholds and different immunization strategies in completely random networks. Besides, we",
+            "score": 0.3059155,
+            "raw_content": null
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology)",
+            "title": "Compartmental models (epidemiology) - Wikipedia",
+            "content": "## SIR model\n\n[edit&action=edit&section=1 \"Edit section: SIR model\")]\n\nThe SIR model is one of the simplest compartmental models, and many models are derivatives of this basic form. The model consists of three compartments: [...] The SIR model has been studied on networks of various kinds in order to model a more realistic form of connection than the homogeneous mixing condition which is usually required. A simple model for epidemics on networks in which an individual has a probability p of being infected by each of his infected neighbors in a given time step leads to results similar to giant component formation on Erdos Renyi random graphs. A stochastic compartment model with a transmission pathway via vectors has been [...] indicates the initial value of the state variable . Parameters (σ-naught) and  (R-naught) are the time-independent relative growth rate and basic reproduction number, respectively.  presents the maximum of the state variables (for the number of infected persons). The KdV-SIR equation shares the same form as the Korteweg–De Vries equation in the traveling wave coordinate. An analytical solution to the KdV-SIR equation is written as follows:\n\n,\n\nwhich represents a solitary wave solution.",
+            "score": 0.2725148,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.93,
+        "request_id": "e8b5d37b-e19d-44f3-9fd3-ad4b16f78a1a"
+      },
+      {
+        "query": "critical vaccination threshold targeted vaccination SIR epidemic configuration model",
+        "follow_up_questions": null,
+        "answer": "The critical vaccination threshold in a targeted‑vaccination SIR epidemic on a sparse configuration‑model network is the smallest fraction of individuals that must be immunised so that the effective reproductive number falls below one, halting sustained transmission; for a homogeneous SIR model the threshold is vc = 1 − 1/R0, where R0 = β/γ, while on a configuration‑model graph the basic reproduction number depends on the degree distribution as R0 = (β/γ)·(⟨k²⟩−⟨k⟩)/⟨k⟩, giving a critical coverage vc = 1 − ⟨k⟩/[(β/γ)(⟨k²⟩−⟨k⟩)]. When vaccination is targeted to the highest‑degree nodes, the moments ⟨k⟩ and ⟨k²⟩ of the remaining (unvaccinated) network are reduced, so the same formula applies with the altered degree moments, meaning that fewer individuals need to be vaccinated than under random immunisation to achieve the same epidemic control.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0022519318303333",
+            "title": "Vaccination threshold size and backward bifurcation of SIR model ...",
+            "content": "In this study, we assume that, if the number of susceptible population is below a critical size Sv, we do not carry out any control strategy. However, once the susceptible population reaches the critical size Sv, the integrated interventions including vaccination and isolation (or treatment) are carried out immediately. Thus, based on model (2), we propose the following state-dependent feedback control SIR model: Here, p ∈ [0, 1] and q ∈ [0, 1] denote the vaccination rate of susceptible humans [...] In this study, assuming that there is a critical size of the density of susceptible humans determining whether vaccinate them or not, we proposed a state-dependent impulsive model based on the classical SIR model. In more detail, if the density of the susceptible humans is below the threshold size Sv, we do not carry out any control strategies among them, once it reaches the threshold the strategies of vaccination for susceptible humans and isolation (or treatment) of infected humans are [...] classical epidemic model involving media coverage, linear functions describing injecting vaccine and treatment strategies is examined when the susceptible population exceeds the threshold value. In addition, we consider another SIR model accompanied with the vaccination and treatment strategies represented by saturation functions when the susceptible population is smaller than the threshold value. The dynamics of these two subsystems and the sliding domain are discussed in detail. Four types of",
+            "score": 0.666736,
+            "raw_content": null
+          },
+          {
+            "url": "https://ima.org.uk/wp/wp-content/uploads/2016/06/Mathematics_of_Vaccination.pdf",
+            "title": "[PDF] The Mathematics of Vaccination | IMA",
+            "content": "allowing vacci-nated individuals to become infected and move into a separate infected class (say J) with diﬀerent parameters. Again a critical vaccination threshold can be established. If RV is the number of secondary cases produced by an infectious individual when the entire population is vaccinated, then the threshold becomes VC = R0 −1 R0 −RV . [...] Box 1 The SIR model with vaccination In the main text we talk about the Susceptible Infectious Recov-ered (SIR) diﬀerential equation model, which describes the rate of change of the proportion of individuals susceptible to, infected with and recovered from a given infectious disease. To this for-mulation we add the eﬀects of vaccination dS dt = B(1 −v1) −βSI −dR −v2S dI dt = βSI −γI −dI dR dt = γI −dR dV dt = v1B + v2S −dV where the terms in grey correspond to the natural birth and death of [...] Mathematics TODAY FEBRUARY 2013 41 2 Below the critical vaccination coverage For many infectious diseases, it is often diﬃcult or impractical to reach the critical level of vaccination needed to eradicate infec-tion. In such situations, it is pertinent to ask, what is the beneﬁt of limited vaccination? Clearly, each individual that is vaccinated is given protection against disease, but moreover it oﬀers protec-tion to others in the population. Using the SIR-type models we observe that the",
+            "score": 0.5164741,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s44260-024-00020-0",
+            "title": "how misaligned vaccination timing amplifies infection peaks - Nature",
+            "content": "The equations that describe the model are:\n\n$$\\frac{{\\rm{d}}S}{{\\rm{d}}t}=-\\beta SI+\\delta R-\\alpha (t),$$\n\n(1)\n\n$$\\frac{{\\rm{d}}I}{{\\rm{d}}t}=\\beta SI-\\mu I,$$\n\n(2)\n\n$$\\frac{{\\rm{d}}R}{{\\rm{d}}t}=\\mu I-\\delta R+\\alpha (t).$$\n\n(3) [...] The critical vaccination rate required to achieve total immunity, denoted αti = δ, is defined as the vaccination rate at which the fraction of susceptible individuals also vanishes. If α exceeds this threshold, the system transitions into the third regime–the total immunity regime–characterized by the presence of only recovered individuals. Finally, during all of our numerical simulations we never allow the fraction of susceptibles to drop lower than 0.005 due to vaccination, in order to avoid [...] Let us consider a continuous-time mean-field SIRS model with vaccination, a compartmental model that divides the population into three groups: susceptible (S), infected (I) and recovered (R) individuals. In this model, susceptible individuals can become infected through contact with an infected person at a rate of β. Alternatively, they may gain immunity to the disease through vaccination, occurring at a rate of α(t), and consequently move into the recovered category. Infected individuals",
+            "score": 0.46847504,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8308122/",
+            "title": "SIR Dynamics with Vaccination in a Large Configuration Model - PMC",
+            "content": "We consider an SIR model with vaccination strategy on a sparse configuration model random graph. We show the convergence of the system when the number of nodes",
+            "score": 0.43755972,
+            "raw_content": null
+          },
+          {
+            "url": "https://link.springer.com/article/10.1007/s00245-021-09810-7",
+            "title": "SIR Dynamics with Vaccination in a Large Configuration Model",
+            "content": "We consider an SIR model with vaccination strategy on a sparse configuration model random graph. We show the convergence of the system when the number of nodes",
+            "score": 0.43741554,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2024.1387267/full",
+            "title": "Vaccination strategies in the disease–behavior evolution model",
+            "content": "{pSi(t+1)=pIi(t)⋅γ+pSi(t)⋅(qSi(t)−fVi(t)),pIi(t+1)=pIi(t)⋅(1−γ)+pSi(t)⋅(1−qSi(t)),pVi(t+1)=pSi(t)⋅fVi(t)+pVi(t).(2)⎧⎪\n⎪⎨⎪\n⎪⎩pSi(t+1)=pIi(t)⋅γ+pSi(t)⋅(qSi(t)−fVi(t)),pIi(t+1)=pIi(t)⋅(1−γ)+pSi(t)⋅(1−qSi(t)),pVi(t+1)=pSi(t)⋅fVi(t)+pVi(t).(2) [...] The vaccination opinion critical θ in the coupled model represents the psychological threshold for vaccine acceptance. A higher opinion critical indicates that individuals are less inclined to prefer vaccines. We here study the role of opinion critical on vaccination coverage under the conditions of the effective spreading rate β/γ = 0.4, the number of initially infected nodes NI(0) = 50, and the initial vaccinee ratio RV(0) = 0.2. Figure 3 illustrates the variation of opinion critical θ from [...] two core concepts, namely, the weighting effect (WE), which describes an individual’s subjective perception probability [31, 32], and the framing effect (FE), which indicates an individual’s subjective evaluation of payoffs [33, 34]. In relevant studies,  developed an imperfect vaccination evolutionary game model, accounting for subjective perception and individual social differences. The results revealed that the epidemic threshold is significantly influenced by social differences in the",
+            "score": 0.31827372,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11170194/",
+            "title": "Enhancing vaccination strategies for epidemic control through ... - NIH",
+            "content": "The SLIVR epidemic model is used, which divides the population into five compartments: susceptible ( S ) , infected ( I ) , vaccinated ( V ) , under lockdown (",
+            "score": 0.28343216,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3703471/",
+            "title": "Critical immune and vaccination thresholds for determining multiple ...",
+            "content": "We developed a scheme that allowed us to determine critical thresholds for vaccine-induced and natural immunity that would prevent the spread of influenza.",
+            "score": 0.26753956,
+            "raw_content": null
+          },
+          {
+            "url": "https://link.aps.org/doi/10.1103/51fg-4rhx",
+            "title": "Network-driven vaccination strategies for preventing rebound ...",
+            "content": "A critical question in epidemic control concerns the minimal requirements for a vaccination campaign to effectively halt a contagion process. However, control measures can inadvertently trigger resurgence dynamics, driven by a reservoir of susceptible individuals left unexposed in the controlled wave. This phenomenon, known as the “rebound effect,” is often preceded by a temporary drop in cases, usually termed as the “honeymoon period.” In this study, we examine the fundamental conditions for [...] epidemic control. [...] ### Physics Subject Headings (PhySH)\n\n Epidemic\n\n# Authorization Required\n\nWe need you to provide your credentials before accessing this content.\n\n## Log in via your institution\n\nIf your institution provides access using Shibboleth/OpenAthens log in.\n\nOpenAthens Log In\n\n## Log in via APS Member Subscription\n\nIf you have a personal subscription through your APS membership please log in.",
+            "score": 0.1763029,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S2468042723000702",
+            "title": "Evaluation of vaccine rollout strategies for emerging infectious ...",
+            "content": "model is an improvement upon previous ones as it incorporates essential behavioural factors and is adapted to account for the protective effects of vaccination against both disease infection and transmission. It takes into account human behaviors such as mask-wearing and social distancing by utilizing specific parameters related to self-protection, awareness levels, and the frequency of daily person-to-person interactions within each age group. Furthermore, a novel method for dynamic vaccine [...] prioritisation was introduced in this study. This approach is model-independent and relies on the dynamic R number. It is the first time such a method has been developed, offering a decision-making approach that is not tied to any specific model. This innovation provides a flexible and adaptable strategy for determining vaccine priorities based on real-time data and the current state of the outbreak. [...] Vaccine allocation strategies become crucial during vaccine shortages, especially in the face of potential outbreaks of new infectious diseases, as witnessed during the COVID-19 pandemic. To address this, a specialized compartmental model is created, which simulates an emerging infectious disease similar to COVID-19. This model divides the population into different age groups and is used to compare various vaccine prioritisation approaches, aiming to minimize the total number of fatalities. The",
+            "score": 0.12794678,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.48,
+        "request_id": "eec43b7c-6906-4f9f-a217-b44ad6b6ee7d"
+      },
+      {
+        "query": "critical vaccination threshold targeted vaccination ER random network",
+        "follow_up_questions": null,
+        "answer": "In an Erdős–Rényi (ER) random network the epidemic threshold depends on the mean degree ⟨k⟩, and the fraction of the population that must be immunized to prevent a large outbreak (the critical vaccination threshold) is lower when the vaccination is targeted to the highest‑degree nodes rather than applied at random. For random vaccination the classic result vc = 1 – 1/R0 reduces to vc ≈ 1 – 1/⟨k⟩ for an ER graph, so a network with ⟨k⟩ = 8 would require roughly 88 % coverage. Targeted vaccination, which removes nodes in descending order of degree, exploits the fact that the second moment of the degree distribution κ = ⟨k²⟩/⟨k⟩ is only modestly larger than ⟨k⟩ in ER graphs (κ ≈ 1 + ⟨k⟩). Percolation theory gives a critical fraction vc,targeted ≈ 1 – 1/(κ – 1) ≈ 1 – 1/⟨k⟩, but because the removal of the few highest‑degree nodes fragments the giant component much earlier, simulations show that vaccinating only the top 10–20 % of nodes can reduce the effective threshold to about 20–30 % of the population for typical ⟨k⟩ values (8–12). Thus, while random vaccination in an ER network may demand near‑complete coverage, targeted immunization of hubs can achieve herd immunity with a substantially lower critical vaccination fraction, often on the order of one‑quarter of the population.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2024.1387267/full",
+            "title": "Vaccination strategies in the disease–behavior evolution model",
+            "content": "−1 to 1 in different networks. Under the different network structures and initial vaccination strategies, vaccination coverage decreases as the opinion critical increases from negative to positive values. Figures 3A–C show that in the Erdos–Ranyi networks, the SFS and LFS are both affected by the link density. The link density is higher; the psychological threshold for full vaccination coverage is lower with the SFS. However, with the LFS, θ for full vaccination coverage increases with the link [...] Vaccination coverage is influenced by the strategies by the administrator, network topology, and link density of the network. For the LFS, the vaccination coverage is the largest in the ER random networks compared to that in the SF networks and real-world networks. If the network topology and network size are given, the vaccination coverage is larger when the link density of the network is larger. However, the result is the opposite for SFS and RFS. Moreover, Figure 2 shows that vaccination [...] Figure 2. Convergence of vaccination coverage of the coupled model in the different networks. The ratio of initial vaccinees in the networks is 0.2. The red, black, yellow, azure, and blue lines show vaccination coverage in scale-free networks, ER random networks, email network, Facebook network, and LastFM network, respectively. The initial vaccinees are selected with (A) LFS, (B) SFS, and (C) RFS.",
+            "score": 0.47884622,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-66070-5",
+            "title": "Assessing the impacts of vaccination and viral evolution in contact ...",
+            "content": "To generate WS and ER networks, we set up N nodes in a one-dimensional loop (arranged in a circle) and each node is connected to its K nearest neighbors on one side, with this we have an average node degree of 2K. Next, each edge is rewired to another random node with a probability p, if it is an ER network then \\(p = 1.0\\), and therefore all edges are rewired randomly. For a BA network, we start with K nodes and add new nodes connected to K existing nodes randomly weighted by their current [...] Testing the vaccination approach Finally, we investigated two different vaccination approaches, a randomized vaccination campaign and a vaccination prioritizing the nodes with the highest degrees, also called hubs. For this objective, we will use the BA scale-free network, as it has been suggested that a targeted immunization of hubs can mitigate the pandemic37.\"). To compare these two vaccination strategies we simulated the BA network with an average node degree varied to 8, 12, 16, 20, and [...] The three different networks used are heterogeneous where their edges (contacts between nodes) are generated randomly at the beginning of the simulations. Figure 1a shows the distribution of the node degree for the three different network models with the same average degree; the WS network and ER network have a normal distribution whereas the BA network is a power law distribution. In all our simulations the number of nodes N was fixed to \\(10^6\\), this number approximates the population of a",
+            "score": 0.42276734,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-024-78626-6",
+            "title": "Integrating graph and reinforcement learning for vaccination ...",
+            "content": "and small-world networks. The presence of communities within a network can significantly impact the spreading phenomenon, as nodes within the same community often exhibit more connections with one another compared to nodes in separate communities. In our experiments, communities are introduced into ER random networks and scale-free networks to assess the adaptability of the proposed method to networks with varying characteristics. [...] the peak of the infection scale, e.g., from 86.8% to 75.6%, compared to using the GDM method in the ER random network. Our experimental results reveal that halting the spread of a virus within a random network presents a more significant challenge than scale-free networks and small-world networks. The final infection scale in the small-world network is 93.4%, in the scale-free network it is 69.1%, and in the random network it is 94.6%. The results also demonstrate the model’s effectiveness [...] Synthetic networks used include random, scale-free, and small-world. Each has distinctive features. Community structures were also considered in random and scale-free networks, as community structures influence network spreading. Note that the small-world network did not have an accompanying community variant by definition. Random networks were generated via the Erdős-Rényi (ER) model 51.\"), scale-free networks through the Barabási-Albert (BA) model 52.\"), and small-world networks using the",
+            "score": 0.4041552,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nature.com/articles/s41598-022-06971-5",
+            "title": "Risk factor targeting for vaccine prioritization during the COVID-19 ...",
+            "content": "We evaluated five strategies for vaccine allocation that targeted vaccination by a single risk factor: (i) random allocation (lottery), (ii) special population targeting, (iii) age-based targeting, (iv) essential worker targeting, and (v) comorbidity targeting. Under random allocation, vaccinations were randomly distributed among individuals aged ≥ 20 years (younger individuals were not included as the Pfizer and Moderna vaccines were initially only authorized for use in individuals ≥ 16 years [...] UI 53,000–72,000; 10% of total), fewer even than random allocation (78,000, 95% UI 64,000–92,000; 13% of total). [...] 49,000–55,000; 25% of total) and 50,000 DALYs (95% UI 48,000–53,000; 24% of total) respectively, slightly fewer than random allocation (54,000 DALYS, 95% UI 51,000–56,000; 25% of total) due to a smaller proportion of older individuals being vaccinated under these strategies.",
+            "score": 0.37917203,
+            "raw_content": null
+          },
+          {
+            "url": "https://academic.oup.com/cid/article/78/4/976/7280117",
+            "title": "Determining Herd Immunity Thresholds for Hepatitis A Virus ...",
+            "content": "The herd immunity threshold (ψ) is given by ψ = 1 − 1/R0, assuming homogenous mixing. When the vaccine efficacy is less than 100%, the critical vaccination coverage level (Vc) is Vc = ψ/ω\\, where ω\\ represents the full series vaccine efficacy among PWID. We set ω\\ at 95% based on 2-dose vaccine efficacy estimates in this range . [...] Our study findings are consistent with those from prior work. A previous study of critical HAV vaccination coverage among PWUD and/or people experiencing homelessness in Louisville  estimated a critical vaccination threshold of 76% (95% CI, 72%–80%) assuming a 90% vaccination efficacy, which is similar to our findings. However, our study has the strength of including data among PWID from 16 states across diverse settings. Of note, while we found that vaccination coverage of at least 80% among [...] The meta-analysis estimated an average overall herd immunity threshold of 64% (95% CI, 61%–68%, I2 96%). The 90% prediction interval was 52%–76%, indicating that if there was another hepatitis A outbreak in 1 of these states or a “similar” state, there would be a 95% chance the herd immunity threshold would fall below 76%. This corresponds to a target critical vaccination threshold of 80% among PWID in these 16 states, assuming 95% vaccine efficacy.",
+            "score": 0.33522078,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S037596011500804X",
+            "title": "Immunization strategy based on the critical node in percolation ...",
+            "content": "threshold increases, is determined when the maximal second-largest connected component disappears. To test the effectiveness of the proposed method, we conduct the experiments on several artificial networks and real-world networks. The results show that the proposed method outperforms the degree centrality strategy, the betweenness centrality strategy and the adaptive degree centrality strategy with 18% to 50% fewer immunized nodes for same amount of immunization. [...] Skip to article\n\nMy account\n\nSign in\n\n View PDF\n\n## Physics Letters A\n\nVolume 379, Issues 43–44, 6 November 2015, Pages 2795-2801\n\n# Immunization strategy based on the critical node in percolation transition\n\nAuthor links open overlay panel, , ,\n\n rights and content\n\nComplimentary access\n\n## Highlights\n\n •\n\n  We propose a targeted immunization strategy based on percolation transition.\n •\n\n  A degree threshold is developed to find the critical node for immunization.\n • [...] The problem of finding a better immunization strategy for controlling the spreading of the epidemic with limited resources has attracted much attention since its great theoretical significance and wide application. In this letter, we propose a novel and successful targeted immunization strategy based on percolation transition. Our strategy repeatedly looks for the critical nodes for immunizing. The critical node, which leads to the emergence of the giant connected component as the degree",
+            "score": 0.19952664,
+            "raw_content": null
+          },
+          {
+            "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2780539",
+            "title": "Association of Simulated COVID-19 Vaccination and ...",
+            "content": "| C0 | 25 | 110 (4) | −35 (6) | 119 (7) | −36 (11) | 99 (11) | −33 (16) | 106 (1) | −32 (1) | 123 (3) | −34 (4) | 127 (4) | −43 (6) |\n| D0 | 50 | 75 | 86 (4) | −60 (6) | 95 (7) | −59 (11) | 81 (9) | −52 (15) | 83 (1) | −55 (1) | 83 (3) | −73 (4) | 99 (3) | −71 (5) |\n| E0 | 50 | 108 (4) | −37 (6) | 115 (7) | −39 (11) | 96 (10) | −37 (16) | 102 (1) | −36 (1) | 116 (3) | −41 (4) | 121 (4) | −49 (6) | [...] | C0 | 25 | 110 (4) | −35 (6) | 119 (7) | −36 (11) | 99 (11) | −33 (16) | 106 (1) | −32 (1) | 123 (3) | −34 (4) | 127 (4) | −43 (6) |\n| D0 | 50 | 75 | 86 (4) | −60 (6) | 95 (7) | −59 (11) | 81 (9) | −52 (15) | 83 (1) | −55 (1) | 83 (3) | −73 (4) | 99 (3) | −71 (5) |\n| E0 | 50 | 108 (4) | −37 (6) | 115 (7) | −39 (11) | 96 (10) | −37 (16) | 102 (1) | −36 (1) | 116 (3) | −41 (4) | 121 (4) | −49 (6) | [...] | D1 | 50 | 75 | 69 (3) | −76 (6) | 80 (6) | −75 (10) | 66 (9) | −66 (15) | 67 (1) | −71 (1) | 79 (2) | −77 (4) | 85 (3) | −86 (5) |\n| E1 | 50 | 75 (4) | −71 (6) | 85 (6) | −70 (10) | 70 (9) | −63 (15) | 72 (1) | −66 (1) | 88 (3) | −69 (4) | 88 (3) | −83 (5) |\n| F1 | 25 | 81 (4) | −65 (6) | 90 (6) | −64 (10) | 72 (9) | −60 (15) | 77 (1) | −62 (1) | 94 (3) | −63 (4) | 98 (3) | −73 (5) |",
+            "score": 0.14074938,
+            "raw_content": null
+          },
+          {
+            "url": "https://link.aps.org/doi/10.1103/51fg-4rhx",
+            "title": "Network-driven vaccination strategies for preventing rebound ...",
+            "content": "A critical question in epidemic control concerns the minimal requirements for a vaccination campaign to effectively halt a contagion process. However, control measures can inadvertently trigger resurgence dynamics, driven by a reservoir of susceptible individuals left unexposed in the controlled wave. This phenomenon, known as the “rebound effect,” is often preceded by a temporary drop in cases, usually termed as the “honeymoon period.” In this study, we examine the fundamental conditions for [...] epidemic control. [...] Vol. 111, Iss. 6 — June 2025\n\n Received 9 December 2024\n Accepted 11 June 2025\n\nReuse & Permissions\n\nArticle part of CHORUS\")\n\nAccepted manuscript will be available starting 30 June, 2026.\n\nDOI: \n\n©2025 American Physical Society",
+            "score": 0.13449174,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.nfid.org/resource/call-to-action-strategies-to-improve-adult-immunization-in-the-us/",
+            "title": "Call to Action: Strategies to Improve Adult Immunization in the US",
+            "content": "Improve and enhance IIS: Registries are important to accurately document vaccinations and identify coverage gaps.35 It is critical that these systems capture data on all adult vaccinations, including those given in pharmacies. Electronic patient and health management systems should be seamlessly integrated with IIS to exchange records for every patient at every visit, helping to ensure accurate patient vaccination history evaluation and recommendations. As there is currently no national",
+            "score": 0.07999034,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-3-immunization-strategies.html",
+            "title": "Chapter 3: Immunization Strategies for Healthcare Practices and ...",
+            "content": "services. However, creating a culture of immunization within a health care practice also plays a critical role in maintaining and increasing vaccination coverage, as well as ensuring vaccines are delivered safely, effectively, and on time. [...] Immunization quality improvement projects can be particularly effective because vaccination is a dynamic, critical, and measurable area of health care. It is rapidly evolving, making fast strides in some areas, but lagging in others, such as human papillomavirus (HPV) vaccination.\n\nCDC encourages health care providers to consider implementing immunization quality improvement projects that: [...] IQIP strategies include:\n\n Scheduling the next immunization visit before the patient leaves the provider site\n Leveraging immunization information system (IIS) functionality to improve immunization practice\n Giving a strong vaccine recommendation for patients\n Optional strategies as defined by the needs of state and local communities",
+            "score": 0.07930313,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.44,
+        "request_id": "dc657bfe-fc2b-4978-a59e-a205061c897d"
+      }
+    ],
+    "agent_response": "Reason: To answer the user query comprehensively, I need to provide the formulas for critical vaccination thresholds for both random and targeted vaccination strategies in the context of SIR epidemics on two network models: the configuration model and the Erdős–Rényi (ER) random network. This involves the basic reproduction number R0 and how it is computed differently for these network structures and vaccination strategies.\n\nAction: I have already conducted searches for:\n1. Critical vaccination threshold formula for random vaccination on configuration model with SIR.\n2. The same for ER random network.\n3. Critical vaccination threshold formula for targeted vaccination on configuration model.\n4. The same for ER random network.\n\nObservation: \n- For the configuration model, the basic reproduction number is:\n  R0 = (β/γ) * (⟨k²⟩ - ⟨k⟩) / ⟨k⟩,\n  where β is transmission rate, γ recovery rate, ⟨k⟩ average degree, ⟨k²⟩ second moment of degree distribution.\n- The critical vaccination threshold for random vaccination, with perfect vaccine efficacy, is:\n  v_c = 1 - 1/R0.\n- For imperfect vaccine efficacy E (0<E≤1), it generalizes to:\n  v_c = (1 - 1/R0) / E.\n  \n- For ER random networks, R0 is:\n  R0 = β⟨k⟩ / γ,\n  and similarly:\n  v_c = 1 - 1/R0.\n\n- Targeted vaccination on configuration models reduces the degree moments of the unvaccinated network, hence:\n  The formula remains:\n  v_c = 1 - ⟨k⟩ / [ (β/γ)(⟨k²⟩ - ⟨k⟩) ],\n  but the degree moments ⟨k⟩, ⟨k²⟩ are computed over the remaining network after vaccination of the highest-degree nodes. This reduces R0 more effectively than random vaccination, requiring a smaller fraction vaccinated.\n\n- On ER graphs, targeted vaccination focusing on high-degree nodes is more efficient than random. While random vaccination requires coverage near 1 - 1/⟨k⟩, targeted vaccination reduces this threshold significantly (e.g., vaccinating top 10-20% hubs can suffice for typical average degrees).\n\nFinal Thought: I will articulate the explicit formulas, explain the role of degree moments, contrast random vs targeted vaccination, and highlight the differences between configuration model and ER random network in SIR epidemic context.\n\nFinal Answer: \n\nFor an SIR epidemic spreading on networks, the critical vaccination threshold (the minimum fraction of the population to vaccinate to prevent an outbreak) depends on the network structure and vaccination strategy. Below are the key formulas and explanations for random and targeted vaccination on configuration model and Erdős–Rényi (ER) random networks:\n\n1. **Configuration Model Network**\n\n   This model can represent heterogeneous contact patterns with a given degree distribution characterized by its moments — the average degree ⟨k⟩ and the second moment ⟨k²⟩.\n\n   - **Basic reproduction number (R0):**\n     \\[\n     R_0 = \\frac{\\beta}{\\gamma} \\cdot \\frac{\\langle k^2 \\rangle - \\langle k \\rangle}{\\langle k \\rangle}\n     \\]\n     where:\n     - β = transmission rate per contact,\n     - γ = recovery rate,\n     - ⟨k⟩ = average degree,\n     - ⟨k²⟩ = second moment of the degree distribution.\n   \n   - **Critical Vaccination Threshold for Random Vaccination (perfect vaccine, E=1):**\n     \\[\n     v_c = 1 - \\frac{1}{R_0} = 1 - \\frac{\\langle k \\rangle}{(\\beta/\\gamma)(\\langle k^2 \\rangle - \\langle k \\rangle)}\n     \\]\n\n   - **With imperfect vaccine efficacy E (0 < E ≤ 1):**  \n     \\[\n     v_c = \\frac{1 - 1/R_0}{E}\n     \\]\n\n   - **Targeted Vaccination:**\n     When vaccination targets high-degree nodes first, the degree moments ⟨k⟩ and ⟨k²⟩ in the remaining (unvaccinated) network are reduced more sharply than by random vaccination. The same formula applies but with reduced moments:\n     \\[\n     v_c = 1 - \\frac{\\langle k \\rangle_{\\text{residual}}}{(\\beta/\\gamma)(\\langle k^2 \\rangle_{\\text{residual}} - \\langle k \\rangle_{\\text{residual}})}\n     \\]\n     This means fewer individuals need vaccination compared to random immunization for effective epidemic control.\n\n2. **Erdős–Rényi (ER) Random Network**\n\n   This network has a Poisson-like degree distribution with average degree ⟨k⟩ and a small variance.\n\n   - **Basic reproduction number (R0):**\n     \\[\n     R_0 = \\frac{\\beta \\langle k \\rangle}{\\gamma}\n     \\]\n\n   - **Critical Vaccination Threshold for Random Vaccination:**\n     \\[\n     v_c = 1 - \\frac{1}{R_0} = 1 - \\frac{\\gamma}{\\beta \\langle k \\rangle}\n     \\]\n     Since ER graphs are homogeneous, the vaccine coverage required is roughly \\(1 - 1 / \\langle k \\rangle\\) when parameters are normalized.\n\n   - **Targeted Vaccination:**\n     Targeting hubs (highest degree nodes) substantially reduces the effective reproduction number by fragmenting the network. Though no simple closed form universally applies, percolation theory approximates:\n     \\[\n     v_{c,\\text{targeted}} \\approx 1 - \\frac{1}{\\kappa - 1}\n     \\]\n     where \\(\\kappa = \\langle k^2 \\rangle / \\langle k \\rangle\\) (the ratio of second to first moment of degree). For ER networks, \\(\\kappa \\approx 1 + \\langle k \\rangle\\), implying a smaller \\(v_c\\) for targeted vaccination than random. Simulation studies often find that vaccinating the top 10-20% high-degree nodes suffices to prevent large outbreaks, compared to the much higher coverage needed under random vaccination.\n\n---\n\n**Summary:**\n- The classical critical vaccination threshold in SIR models is \\(v_c = 1 - 1/R_0\\).\n- On **configuration model networks**, \\(R_0\\) depends on the ratio of the second moment to the first moment of the degree distribution.\n- On **ER networks**, \\(R_0\\) depends only on the average degree.\n- **Targeted vaccination** reduces the effective degree moments of the network, thereby reducing \\(R_0\\) and lowering the critical vaccination threshold compared to random vaccination.\n- Imperfect vaccine efficacy modifies thresholds by division with efficacy \\(E\\).\n\nThese formulas and insights allow for designing immunization strategies that account for network structure and optimize vaccine allocation to achieve herd immunity efficiently."
+  }
+]

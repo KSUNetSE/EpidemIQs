@@ -1,0 +1,77 @@
+{
+    "results": [
+        {
+            "query": "epidemic extinction SIR models susceptible depletion infective decline network heterogeneity stochastic",
+            "papers": [
+                {
+                    "title": "Poisson network SIR epidemic model",
+                    "abstract": null,
+                    "citation": "Josephine Wairimu, Andrew Gothard, Grzegorz A. Rempala (2025). Poisson network SIR epidemic model. Afrika Matematika. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Using the extended SIR model, epidemic data from the 2018\u20132020 Ebola outbreak is analyzed, employing a survival approach combined with the Hamiltonian Monte Carlo method, suggesting that network-based models more accurately capture epidemic heterogeneity than traditional compartmental models."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2f7ab7a20afa794c47986e5f87b8700da2083e46"
+                },
+                {
+                    "title": "Weighted-ensemble network simulations of the susceptible-infected-susceptible model of epidemics.",
+                    "abstract": "The presence of erratic or unstable paths in standard kinetic Monte Carlo simulations significantly undermines the accurate simulation and sampling of transition pathways. While typically reliable methods, such as the Gillespie algorithm, are employed to simulate such paths, they encounter challenges in efficiently identifying rare events due to their sequential nature and reliance on exact Monte Carlo sampling. In contrast, the weighted-ensemble method effectively samples rare events and accelerates the exploration of complex reaction pathways by distributing computational resources among multiple replicas, where each replica is assigned a weight reflecting its importance, and evolves independently from the others. Here, we implement the highly efficient and robust weighted-ensemble method to model susceptible-infected-susceptible dynamics on large heterogeneous population networks, and explore the interplay between stochasticity and contact heterogeneity, which ultimately gives rise to disease clearance. Studying a wide variety of networks characterized by fat-tailed asymmetric degree distributions, we are able to compute the mean time to extinction and quasistationary distribution around it in previously inaccessible parameter regimes.",
+                    "citation": "Elad Korngut, Ohad Vilk, Michael Assaf (2025). Weighted-ensemble network simulations of the susceptible-infected-susceptible model of epidemics.. Physical Review E. Citations: 1, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work implements the highly efficient and robust weighted-ensemble method to model susceptible-infected-susceptible dynamics on large heterogeneous population networks, and explores the interplay between stochasticity and contact heterogeneity, which ultimately gives rise to disease clearance."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/027191d941e85da98e9709a8b0b1de23412e96f2"
+                },
+                {
+                    "title": "Efficient weighted-ensemble network simulations of the SIS model of epidemics",
+                    "abstract": "The presence of erratic or unstable paths in standard kinetic Monte Carlo simulations significantly undermines the accurate simulation and sampling of transition pathways. While typically reliable methods, such as the Gillespie algorithm, are employed to simulate such paths, they encounter challenges in efficiently identifying rare events due to their sequential nature and reliance on exact Monte Carlo sampling. In contrast, the weighted ensemble method effectively samples rare events and accelerates the exploration of complex reaction pathways by distributing computational resources among multiple replicas, where each replica is assigned a weight reflecting its importance, and evolves independently from the others. Here, we implement the highly efficient and robust weighted ensemble method to model susceptible-infected-susceptible (SIS) dynamics on large heterogeneous population networks, and explore the interplay between stochasticity and contact heterogeneity which ultimately gives rise to disease clearance. Studying a wide variety of networks characterized by fat-tailed asymmetric degree distributions, we are able to compute the mean time to extinction and quasi-stationary distribution around it in previously-inaccessible parameter regimes.",
+                    "citation": "Elad Korngut, Ohad Vilk, Michael Assaf (2024). Efficient weighted-ensemble network simulations of the SIS model of epidemics. Unknown Journal. Citations: 1, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work implements the highly efficient and robust weighted ensemble method to model susceptible-infected-susceptible (SIS) dynamics on large heterogeneous population networks, and explores the interplay between stochasticity and contact heterogeneity which ultimately gives rise to disease clearance."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1252c8f935345845b02b8c6a3e051adc251c7793"
+                },
+                {
+                    "title": "Comparison of theoretical approaches for epidemic processes with waning immunity in complex networks.",
+                    "abstract": "The role of waning immunity in basic epidemic models on networks has been undervalued while being noticeably fundamental for real epidemic outbreaks. One central question is which mean-field approach is more accurate in describing the epidemic dynamics. We tackled this problem considering the susceptible-infected-recovered-susceptible (SIRS) epidemic model on networks. Two pairwise mean-field theories, one based on recurrent dynamical message-passing (rDMP) theory and the other on the pair quenched mean-field (PQMF) theory, are compared with extensive stochastic simulations on large networks of different levels of heterogeneity. For waning immunity times longer than or comparable with the recovering time, rDMP outperforms PQMF theory on power-law networks with degree distribution P(k)\u223ck^{-\u03b3}. In particular, for \u03b3>3, the epidemic threshold observed in simulations is finite, in qualitative agreement with rDMP, while PQMF leads to an asymptotically null threshold. The critical epidemic prevalence for \u03b3>3 is localized in a finite set of vertices in the case of the PQMF theory. In contrast, the localization happens in a subextensive fraction of the network in rDMP theory. Simulations, however, indicate that localization patterns of the actual epidemic lay between the two mean-field theories, and improved theoretical approaches are necessary to understanding the SIRS dynamics.",
+                    "citation": "J. C. Silva, Diogo H. Silva, F. Rodrigues, et al. (2022). Comparison of theoretical approaches for epidemic processes with waning immunity in complex networks.. Physical Review E. Citations: 8, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulations indicate that localization patterns of the actual epidemic lay between the two mean-field theories, and improved theoretical approaches are necessary to understanding the SIRS dynamics."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2484925981ea2b6f2522cb6470acdffeccd1cf7b"
+                },
+                {
+                    "title": "Estimation of the probability of epidemic fade-out from multiple outbreak data",
+                    "abstract": "Deterministic epidemic models, such as the SIRS model or an SIR model with demography, that allow for replenishment of susceptibles typically display damped oscillatory behaviour. If the population is initially fully susceptible, once an epidemic takes off a distinct trough will exist between the first and second waves of infection where the number of infectious individuals falls to a low level. Epidemic dynamics are, however, influenced by stochastic effects, particularly when the number of infectives is low. At the beginning of an epidemic, stochastic die-out is possible and well characterised through use of a branching process approximation to the full non-linear stochastic dynamics. Conditional on an epidemic taking off, stochastic extinction is highly unlikely during the first epidemic wave, but the probability of extinction increases again as the wave declines. Extinction during this period, prior to a potential second wave of infection, is defined as \u2018epidemic fade-out\u2019. We consider a set of observed epidemics, each distinct and having evolved independently, in which some display fade-out and some do not. While fade-out is necessarily a stochastic phenomenon, in general the probability of fade-out will depend on the model parameters associated with each epidemic. Accordingly, we ask whether time-series data for the epidemics contain sufficient information to identify the key driver(s) of different outcomes\u2014fade-out or otherwise\u2014across the sub-populations supporting each epidemic. We apply a Bayesian hierarchical modelling framework to synthetic data from an SIRS model of epidemic dynamics and demonstrate that we can 1) identify when the sub-population specific model parameters supporting each epidemic have significant variability and 2) estimate the probability of epidemic fade-out for each sub-population. We demonstrate that a hierarchical analysis can provide more accurate and precise estimates of the probability of fade-out than is possible if considering each epidemic in isolation. Our methods may be applied more generally, to both epidemiological and other biological data to identify where differences in outcome\u2014fade-out or recurrent infection/waves are purely due to chance or driven by underlying changes in the parameters driving the dynamics.",
+                    "citation": "P. Alahakoon, J. McCaw, P. Taylor (2021). Estimation of the probability of epidemic fade-out from multiple outbreak data. bioRxiv. Citations: 12, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A Bayesian hierarchical modelling framework is applied to synthetic data from an SIRS model of epidemic dynamics and it is demonstrated that a hierarchical analysis can provide more accurate and precise estimates of the probability of fade-out than is possible if considering each epidemic in isolation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/61d8e692a91bf355f5fcf20f2001297e4479f0d9"
+                },
+                {
+                    "title": "A stochastic heterogeneous node-based generalized SIR model in switching network for COVID-19",
+                    "abstract": null,
+                    "citation": "Yongguang Yu, Xia Meng (2020). A stochastic heterogeneous node-based generalized SIR model in switching network for COVID-19. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A generalized susceptible-infected-recovered (SIR) epidemic model in switching network is proposed to investigate CO VID-19, which is an effective approach to the understanding of the impact of the structure of the propagation network on the epidemics of COVID-19."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/29520106faadf16645f08ce6cc49e9b64ffc03e5"
+                },
+                {
+                    "title": "Population dynamics and epidemic processes on a trade network",
+                    "abstract": null,
+                    "citation": "P. Montagnon (2019). Population dynamics and epidemic processes on a trade network. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/e777f320a589ff783e5816065321c72f13b50923"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

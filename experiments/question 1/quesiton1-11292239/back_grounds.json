@@ -1,0 +1,80 @@
+{
+    "results": [
+        {
+            "query": "SEIR epidemic network heterogeneity stochastic simulation scale-free Erd\u0151s-R\u00e9nyi comparison",
+            "papers": [
+                {
+                    "title": "Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds",
+                    "abstract": "In the real world, individuals may become infected with an epidemic after multiple exposures to the corresponding virus. This occurs because each individual possesses certain physical defenses and immune capabilities at the time of exposure to the virus. Repeated exposure to the virus can lead to a decline in immune competence, consequently resulting in epidemic infection. The susceptibility of individuals to an epidemic is heterogeneous. We model this characteristic as the individual heterogeneous infection threshold. Then, we propose an individual logarithmic-like infection threshold function on a single-layer complex network to reflect the heterogeneity of individual susceptibility on infecting the virus and the associated epidemic. Next, we introduce a partition theory based on the edge and logarithmic-like infection threshold function to qualitatively analyze the mechanisms of virus infection and epidemic spreading. Finally, simulation results on Erd\u0151\u2013R\u00e9nyi (ER) and scale-free (SF) networks indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak. With an increase in the epidemic infection outbreak threshold, the increasing pattern of the final epidemic infection scale transitions from a second-order continuous phase transition to a first-order discontinuous phase transition. Additionally, degree distribution heterogeneity also significantly impacts the outbreak and spread of diseases. These findings provide valuable guidance for the formulation of immunization strategies.",
+                    "citation": "Feng Li (2024). Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds. Frontiers of Physics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulation results indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/839bfdeb7d9781f8d50d1305f1c6f2e59faf5dc2"
+                },
+                {
+                    "title": "Analytical solution of epidemic threshold for coupled information-epidemic dynamics on multiplex networks with alterable heterogeneity.",
+                    "abstract": "The phase transition of epidemic spreading model on networks is one of the most important concerns of physicists to theoretical epidemiology. In this paper, we present an analytical expression of epidemic threshold for interplay between epidemic spreading and human behavior on multiplex networks. The threshold formula proposed in this paper reveals the relation between the threshold on single-layer networks and that on multiplex networks, which means that the theoretical conclusions of single-layer networks can be used to improve the threshold accuracy of multiplex networks. To verify how well our formula works in different networks, we build a network model with constant total number of edges but gradually changing the heterogeneity of the network, from scale-free network to Erd\u0151s-R\u00e9nyi random network. By use of theoretical analysis and computer simulations, we find that the heterogeneity of information layer behaves as a \"double-edged sword\" on the epidemic threshold: The strong heterogeneity can effectively improve the epidemic threshold (which means the disease outbreak requires a higher infection probability) when the awareness probability \u03b1 is low, while the opposite effect takes place for high \u03b1. Meanwhile, the weak heterogeneity of the information layer is effective in suppressing the epidemic prevalence when the awareness probability is neither too high nor too low.",
+                    "citation": "Xin Chang, Chao-Ran Cai, Ji-Qiang Zhang, et al. (2021). Analytical solution of epidemic threshold for coupled information-epidemic dynamics on multiplex networks with alterable heterogeneity.. Physical Review E. Citations: 6, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The threshold formula proposed in this paper reveals the relation between the threshold on single-layer networks and that on multiplex networks, which means that the theoretical conclusions of single- layer networks can be used to improve the threshold accuracy of multiplex Networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8c582d3cfbc602695fdca346ffa4a728905cb749"
+                },
+                {
+                    "title": "Suppressing epidemic spreading by optimizing the allocation of resources between prevention and treatment.",
+                    "abstract": "The rational allocation of resources is crucial to suppress the outbreak of epidemics. Here, we propose an epidemic spreading model in which resources are used simultaneously to prevent and treat disease. Based on the model, we study the impacts of different resource allocation strategies on epidemic spreading. First, we analytically obtain the epidemic threshold of disease using the recurrent dynamical message passing method. Then, we simulate the spreading of epidemics on the Erd\u0151s-R\u00e9nyi (ER) network and the scale-free network and investigate the infection density of disease as a function of the disease infection rate. We find hysteresis loops in the phase transition of the infection density on both types of networks. Intriguingly, when different resource allocation schemes are adopted, the phase transition on the ER network is always a first-order phase transition, while the phase transition on the scale-free network transforms from a hybrid phase transition to a first-order phase transition. Particularly, through extensive numerical simulations, we find that there is an optimal resource allocation scheme, which can best suppress epidemic spreading. In addition, we find that the degree heterogeneity of the network promotes the spreading of disease. Finally, by comparing theoretical and numerical results on a real-world network, we find that our method can accurately predict the spreading of disease on the real-world network.",
+                    "citation": "Jiayang Li, Chun Yang, Xiaotian Ma, et al. (2019). Suppressing epidemic spreading by optimizing the allocation of resources between prevention and treatment.. Chaos. Citations: 5, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Through extensive numerical simulations, this work finds that there is an optimal resource allocation scheme, which can best suppress epidemic spreading and finds that the degree heterogeneity of the network promotes the spreading of disease."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/49e11cea7d6b3ea6678899d5d5a11e6d78eecd28"
+                },
+                {
+                    "title": "DEMOGRAPHICS INDUCE EXTINCTION OF DISEASE IN AN SIS MODEL BASED ON CONDITIONAL MARKOV CHAIN",
+                    "abstract": null,
+                    "citation": "Xiao-feng Luo, Lili Chang, Zhen Jin (2017). DEMOGRAPHICS INDUCE EXTINCTION OF DISEASE IN AN SIS MODEL BASED ON CONDITIONAL MARKOV CHAIN. Unknown Journal. Citations: 10, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A deterministic pairwise susceptible\u2013infected\u2013susceptible (SIS) epidemic model with demographics on complex networks with arbitrary degree distributions is studied based on a continuous time conditional Markov chain, finding that demographics will induce the extinction of the disease by reducing the basic reproduction number or lowering the epidemic prevalence after the disease prevails."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/0909998b50412bb5a4e7e4ec06ad94378201172b"
+                },
+                {
+                    "title": "Networked SIS Epidemics With Awareness",
+                    "abstract": "We study a susceptible-infected-susceptible epidemic process over a static contact network where the nodes have partial information about the epidemic state. They react by limiting their interactions with their neighbors when they believe the epidemic is currently prevalent. A node\u2019s awareness is weighted by the fraction of infected neighbors in their social network, and a global broadcast of the fraction of infected nodes in the entire network. The dynamics of the benchmark (no awareness) and awareness models are described by discrete-time Markov chains, from which mean-field approximations (MFAs) are derived. The states of the MFA are interpreted as the nodes\u2019 probabilities of being infected. We show a sufficient condition for the existence of a \u201cmetastable,\u201d or endemic, state of the awareness model coincides with that of the benchmark model. Furthermore, we use a coupling technique to give a full stochastic comparison analysis between the two chains, which serves as a probabilistic analog to the MFA analysis. In particular, we show that adding awareness reduces the expectation of any epidemic metric on the space of sample paths, e.g., eradication time or total infections. We characterize the reduction in expectations in terms of the coupling distribution. In simulations, we evaluate the effect social distancing has on contact networks from different random graph families (geometric, Erd\u0151s-R\u00e9nyi, and scale-free random networks).",
+                    "citation": "Keith Paarporn, Ceyhun Eksin, J. Weitz, et al. (2016). Networked SIS Epidemics With Awareness. IEEE Transactions on Computational Social Systems. Citations: 56, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that adding awareness reduces the expectation of any epidemic metric on the space of sample paths, e.g., eradication time or total infections, in terms of the coupling distribution."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8ac7bf7602cf353970a3658f943f7eb47bf2f57d"
+                },
+                {
+                    "title": "Non-consensus opinion model on multiplex networks",
+                    "abstract": null,
+                    "citation": "S. Yan (2014). Non-consensus opinion model on multiplex networks. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Two models on multiplex networks that consist of a same set of nodes and two layers are proposed: the multi-scale N CO model and the probabilistic NCO model, which find that in both of the two models, as the degree correlation increases, the minority opinion holders tend to form stable clusters with a larger initial minority fraction."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/fddd67cc7b9609385cffc18f96d1f68383faa6c9"
+                },
+                {
+                    "title": "Spectral analysis and slow spreading dynamics on complex networks.",
+                    "abstract": "The susceptible-infected-susceptible (SIS) model is one of the simplest memoryless systems for describing information or epidemic spreading phenomena with competing creation and spontaneous annihilation reactions. The effect of quenched disorder on the dynamical behavior has recently been compared to quenched mean-field (QMF) approximations in scale-free networks. QMF can take into account topological heterogeneity and clustering effects of the activity in the steady state by spectral decomposition analysis of the adjacency matrix. Therefore, it can provide predictions on possible rare-region effects, thus on the occurrence of slow dynamics. I compare QMF results of SIS with simulations on various large dimensional graphs. In particular, I show that for Erd\u0151s-R\u00e9nyi graphs this method predicts correctly the occurrence of rare-region effects. It also provides a good estimate for the epidemic threshold in case of percolating graphs. Griffiths Phases emerge if the graph is fragmented or if we apply a strong, exponentially suppressing weighting scheme on the edges. The latter model describes the connection time distributions in the face-to-face experiments. In case of a generalized Barab\u00e1si-Albert type of network with aging connections, strong rare-region effects and numerical evidence for Griffiths Phase dynamics are shown. The dynamical simulation results agree well with the predictions of the spectral analysis applied for the weighted adjacency matrices.",
+                    "citation": "G. \u00d3dor (2013). Spectral analysis and slow spreading dynamics on complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 23, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "QMF results of SIS are compared with simulations on various large dimensional graphs and it is shown that for Erd\u0151s-R\u00e9nyi graphs this method predicts correctly the occurrence of rare-region effects, and also provides a good estimate for the epidemic threshold in case of percolating graphs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/29f1db8da03415f9f79548c42513e23c0d658b3c"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

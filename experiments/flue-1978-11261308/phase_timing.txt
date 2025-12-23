@@ -1,0 +1,15 @@
+Agent Execution Timing Report
+===========================
+
+Discovery: 370.88 seconds
+
+Total workflow time: 1174.42 seconds
+Modeling: 155.73 seconds
+
+Total workflow time: 1174.42 seconds
+analyzer_agent: 219.45 seconds
+
+Total workflow time: 1174.42 seconds
+report_generation: 428.36 seconds
+
+Total workflow time: 1174.42 seconds

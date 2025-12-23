@@ -1,0 +1,57 @@
+
+import numpy as np
+
+N = 1000
+threshold = 0.01 * N  # 10
+
+# Calculate final prevalence as average of last 20 time steps
+final_prev_I1 = data['I1'][-20:].mean()
+final_prev_I2 = data['I2'][-20:].mean()
+
+# Find peak prevalence and corresponding time
+peak_val_I1 = data['I1'].max()
+peak_time_I1 = data.loc[data['I1'].idxmax(), 'time']
+peak_val_I2 = data['I2'].max()
+peak_time_I2 = data.loc[data['I2'].idxmax(), 'time']
+
+# Time to extinction (first time < threshold)
+# If never drops below threshold, time to extinction is None
+extinct_time_I1 = data.loc[data['I1'] < threshold, 'time']
+extinct_time_I2 = data.loc[data['I2'] < threshold, 'time']
+
+time_to_extinct_I1 = extinct_time_I1.iloc[0] if not extinct_time_I1.empty else None
+time_to_extinct_I2 = extinct_time_I2.iloc[0] if not extinct_time_I2.empty else None
+
+# Dominance indicator (1 if prevalence > threshold at end, 0 otherwise)
+dominance_I1 = 1 if data['I1'].iloc[-1] > threshold else 0
+dominance_I2 = 1 if data['I2'].iloc[-1] > threshold else 0
+
+# Coexistence periods (both I1 and I2 > threshold)
+coexist_periods = (data['I1'] > threshold) & (data['I2'] > threshold)
+
+# Calculate total coexistence duration by summing time intervals where both are > threshold
+# Assuming time steps are irregular, calculate differences in time
+coexist_times = data.loc[coexist_periods, 'time']
+coexist_duration = 0.0
+if not coexist_times.empty:
+    coexist_duration = coexist_times.iloc[-1] - coexist_times.iloc[0]
+
+metrics = {
+    'I1': {
+        'final_prevalence': final_prev_I1,
+        'peak_prevalence': peak_val_I1,
+        'peak_time': peak_time_I1,
+        'time_to_extinction': time_to_extinct_I1,
+        'dominance_indicator': dominance_I1
+    },
+    'I2': {
+        'final_prevalence': final_prev_I2,
+        'peak_prevalence': peak_val_I2,
+        'peak_time': peak_time_I2,
+        'time_to_extinction': time_to_extinct_I2,
+        'dominance_indicator': dominance_I2
+    },
+    'coexistence_duration': coexist_duration
+}
+
+metrics

@@ -1,0 +1,7 @@
+Activity mean: 0.0163, Activity 2nd moment: 0.000406
+Temporal network: mean degree/timestep: 0.033, 2nd moment: 0.00122
+Static network: mean degree: 31.922, 2nd moment: 1159.93200, GCC size: 1000
+Edge weight mean: 1.018, median: 1.0, max: 3, min: 1
+Assortativity (degree): -0.03664
+Average shortest path (GCC): 2.299
+Global clustering coefficient: 0.03800

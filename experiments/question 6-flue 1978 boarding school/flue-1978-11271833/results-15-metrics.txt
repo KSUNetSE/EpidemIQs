@@ -1,0 +1,1 @@
+SBM seed 3 in 3 houses: AR=0.927, R0=0.12, MSE_B=21703.722

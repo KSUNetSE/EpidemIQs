@@ -1,0 +1,80 @@
+{
+    "results": [
+        {
+            "query": "vaccination thresholds epidemic networks random targeted configuration model simulation SIR",
+            "papers": [
+                {
+                    "title": "Behavior-Aware COVID-19 Forecasting Using Markov SIR Models on Dynamic Contact Networks: An Observational Modeling Study",
+                    "abstract": null,
+                    "citation": "M. Dadashkarimi (2025). Behavior-Aware COVID-19 Forecasting Using Markov SIR Models on Dynamic Contact Networks: An Observational Modeling Study. medRxiv. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel framework integrating time-varying contact networks, Markov chain-based Susceptible-Infectious-Recovered (SIR) dynamics, and adaptive behavioral responses enhances epidemic forecasting accuracy."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/25d94a2ccc5a4b1a0eabd3b84baa401529d06c3a"
+                },
+                {
+                    "title": "Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network",
+                    "abstract": "In order to investigate the impact of two immunization strategies\u2014vaccination targeting susceptible individuals to reduce their infection rate and clinical medical interventions targeting infected individuals to enhance their recovery rate\u2014on the spread of infectious diseases in complex networks, this study proposes a bilinear SIR infectious disease model that considers bidirectional immunization. By analyzing the conditions for the existence of endemic equilibrium points, we derive the basic reproduction numbers and outbreak thresholds for both homogeneous and heterogeneous networks. The epidemic model is then reconstructed and extensively analyzed using continuous-time Markov chain (CTMC) methods. This analysis includes the investigation of transition probabilities, transition rate matrices, steady-state distributions, and the transition probability matrix based on the embedded chain. In numerical simulations, a notable concordance exists between the outcomes of CTMC and mean-field (MF) simulations, thereby substantiating the efficacy of the CTMC model. Moreover, the CTMC-based model adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains. We further analyze the relationship between the system\u2019s steady-state infection density and the immunization rate through MCS. The results suggest that the infection density decreases with an increase in the immunization rate among susceptible individuals. The current research results will enhance our understanding of infectious disease transmission patterns in real-world scenarios, providing valuable theoretical insights for the development of epidemic prevention and control strategies.",
+                    "citation": "Shixiang Han, Guanghui Yan, Huayan Pei, et al. (2024). Dynamical Analysis of an Improved Bidirectional Immunization SIR Model in Complex Network. Entropy. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A bilinear SIR infectious disease model that considers bidirectional immunization is proposed that adeptly captures the inherent stochastic fluctuation in the disease transmission, which is consistent with the mathematical properties of Markov chains."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/bd2a45cf7bbd303248aacba7ab9a8640f464781f"
+                },
+                {
+                    "title": "SIR Dynamics with Vaccination in a Large Configuration Model",
+                    "abstract": "We consider an SIR model with vaccination strategy on a sparse configuration model random graph. We show the convergence of the system when the number of nodes grows and characterize the scaling limits. Then, we prove the existence of optimal controls for the limiting equations formulated in the framework of game theory, both in the centralized and decentralized setting. We show how the characteristics of the graph (degree distribution) influence the vaccination efficiency for optimal strategies, and we compute the limiting final size of the epidemic depending on the degree distribution of the graph and the parameters of infection, recovery and vaccination. We also present several simulations for two types of vaccination, showing how the optimal controls allow to decrease the number of infections and underlining the crucial role of the network characteristics in the propagation of the disease and the vaccination program.",
+                    "citation": "Emanuel Javier Ferreyra, M. Jonckheere, J. P. Pinasco (2019). SIR Dynamics with Vaccination in a Large Configuration Model. Applied Mathematics and Optimization. Citations: 6, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work considers an SIR model with vaccination strategy on a sparse configuration model random graph and proves the existence of optimal controls for the limiting equations formulated in the framework of game theory."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5c77923e37d0e5ca28ed67a78fd758c29bf3cf12"
+                },
+                {
+                    "title": "Intervention threshold for epidemic control in susceptible-infected-recovered metapopulation models",
+                    "abstract": "Metapopulation epidemic models describe epidemic dynamics in networks of spatially distant patches connected via pathways for migration of individuals. In the present study, we deal with a susceptible-infected-recovered (SIR) metapopulation model where the epidemic process in each patch is represented by an SIR model and the mobility of individuals is assumed to be a homogeneous diffusion. We consider two types of patches including high-risk and low-risk ones under the assumption that a local patch is changed from a high-risk one to a low-risk one by an intervention. We theoretically analyze the intervention threshold which indicates the critical fraction of low-risk patches for preventing a global epidemic outbreak. We show that an intervention targeted to high-degree patches is more effective for epidemic control than a random intervention. The theoretical results are validated by Monte Carlo simulations for synthetic and realistic scale-free patch networks. The theoretical results also reveal that the intervention threshold depends on the human mobility network and the mobility rate. Our approach is useful for exploring better local interventions aimed at containment of epidemics.",
+                    "citation": "Akari Matsuki, G. Tanaka (2019). Intervention threshold for epidemic control in susceptible-infected-recovered metapopulation models. Physical Review E. Citations: 12, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The theoretical results reveal that the intervention threshold depends on the human mobility network and the mobility rate, and it is shown that an intervention targeted to high-degree patches is more effective for epidemic control than a random intervention."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7963a0516742eff18d4205c5b11b7b80a3ba8113"
+                },
+                {
+                    "title": "Dynamic vaccination in partially overlapped multiplex network",
+                    "abstract": "In this work we propose and investigate a strategy of vaccination which we call \u201cdynamic vaccination.\u201d In our model, susceptible people become aware that one or more of their contacts are infected and thereby get vaccinated with probability \u03c9, before having physical contact with any infected patient. Then the nonvaccinated individuals will be infected with probability \u03b2. We apply the strategy to the susceptible-infected-recovered epidemic model in a multiplex network composed by two networks, where a fraction q of the nodes acts in both networks. We map this model of dynamic vaccination into bond percolation model and use the generating functions framework to predict theoretically the behavior of the relevant magnitudes of the system at the steady state. We find a perfect agreement between the solutions of the theoretical equations and the results of stochastic simulations. In addition, we find an interesting phase diagram in the plane \u03b2-\u03c9, which is composed of an epidemic and a nonepidemic phase, separated by a critical threshold line \u03b2c, which depends on q. As q decreases, \u03b2c increases, i.e., as the overlap decreases, the system is more disconnected, and therefore more virulent diseases are needed to spread epidemics. Surprisingly, we find that, for all values of q, a region in the diagram where the vaccination is so efficient that, regardless of the virulence of the disease, it never becomes an epidemic. We compare our strategy with random immunization and find that, using the same amount of vaccines for both scenarios, we obtain that the spread of disease is much lower in the case of dynamic vaccination when compared to random immunization. Furthermore, we also compare our strategy with targeted immunization and we find that, depending on \u03c9, dynamic vaccination will perform significantly better and in some cases will stop the disease before it becomes an epidemic.",
+                    "citation": "L. G. Alvarez-Zuzek, M. A. D. Muro, S. Havlin, et al. (2018). Dynamic vaccination in partially overlapped multiplex network. Physical Review E. Citations: 39, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": null
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b50d68958b69114a955fd019bc88eb01aac8c815"
+                },
+                {
+                    "title": "Stochastic epidemic models on random networks : casual contacts, clustering and vaccination",
+                    "abstract": null,
+                    "citation": "Ben Davis (2017). Stochastic epidemic models on random networks : casual contacts, clustering and vaccination. Unknown Journal. Citations: 1, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A stochastic SIR (Susceptible - Infective - Removed) model for the spread of an epidemic among a population of individuals, with a random network of social contacts, that is partitioned into households and in which individuals also make casual contacts is considered."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/4420910677ad29c65c44f18c137bb20fd467417c"
+                },
+                {
+                    "title": "Efficiency of prompt quarantine measures on a susceptible-infected-removed model in networks",
+                    "abstract": "This study focuses on investigating the manner in which a prompt quarantine measure suppresses epidemics in networks. A simple and ideal quarantine measure is considered in which an individual is detected with a probability immediately after it becomes infected and the detected one and its neighbors are promptly isolated. The efficiency of this quarantine in suppressing a susceptible-infected-removed (SIR) model is tested in random graphs and uncorrelated scale-free networks. Monte Carlo simulations are used to show that the prompt quarantine measure outperforms random and acquaintance preventive vaccination schemes in terms of reducing the number of infected individuals. The epidemic threshold for the SIR model is analytically derived under the quarantine measure, and the theoretical findings indicate that prompt executions of quarantines are highly effective in containing epidemics. Even if infected individuals are detected with a very low probability, the SIR model under a prompt quarantine measure has finite epidemic thresholds in fat-tailed scale-free networks in which an infected individual can always cause an outbreak of a finite relative size without any measure. The numerical simulations also demonstrate that the present quarantine measure is effective in suppressing epidemics in real networks.",
+                    "citation": "T. Hasegawa, K. Nemoto (2017). Efficiency of prompt quarantine measures on a susceptible-infected-removed model in networks. Physical Review E. Citations: 8, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The theoretical findings indicate that prompt executions of quarantines are highly effective in containing epidemics, and Monte Carlo simulations demonstrate that the present quarantine measure is effective in suppressing epidemics in real networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/4c37620216e8c24afc2aa03e39c90b34e77fb98a"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

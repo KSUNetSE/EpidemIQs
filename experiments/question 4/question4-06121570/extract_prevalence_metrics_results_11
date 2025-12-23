@@ -1,0 +1,18 @@
+
+import numpy as np
+
+# Define N
+N = 1000
+
+# Final prevalence: average of last 20 time steps
+final_prevalence_I1 = data['I1'].tail(20).mean()
+final_prevalence_I2 = data['I2'].tail(20).mean()
+
+# Peak prevalence and corresponding time
+peak_prevalence_I1 = data['I1'].max()
+time_peak_I1 = data.loc[data['I1'].idxmax(), 'time']
+
+peak_prevalence_I2 = data['I2'].max()
+time_peak_I2 = data.loc[data['I2'].idxmax(), 'time']
+
+final_prevalence_I1, final_prevalence_I2, peak_prevalence_I1, time_peak_I1, peak_prevalence_I2, time_peak_I2

@@ -1,0 +1,80 @@
+{
+    "results": [
+        {
+            "query": "oscillations in infectious disease models Small-World networks SIRS immunity loss",
+            "papers": [
+                {
+                    "title": "The epidemic threshold theorem with social and contact heterogeneity",
+                    "abstract": null,
+                    "citation": "D. H. Palacio, J. Ospina, Rub\u00e9n Dar\u00edo G\u00f3mez Arias (2008). The epidemic threshold theorem with social and contact heterogeneity. Data Mining, Intrusion Detection, Information Assurance, and Data Networks Security. Citations: 11, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The threshold theorem of an epidemic SIR model was compared to describe the dynamic of transmission of diseases and changes of the basic reproductive rate and the implications of these results are examined around the threats to the global public health security."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f7ef2f7dbde65358c8b8679abaf036269e71b77c"
+                },
+                {
+                    "title": "The Dynamics Behavior and Immune Control Strategies of SIRs Model with Immunization on Heterogeneous Network",
+                    "abstract": null,
+                    "citation": "Qianguo Chen (2016). The Dynamics Behavior and Immune Control Strategies of SIRs Model with Immunization on Heterogeneous Network. Unknown Journal. Citations: 1, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The result shows that artificial immunization can greatly reduce the number of infections even though the network has only a single property, and can obtain more pronounced effect, so as to effectively control the disease spreading on heterogeneous networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/465889af353f96a5b463ba10af5fe7a0269850bd"
+                },
+                {
+                    "title": "Epidemic Waves, Small Worlds and Targeted Vaccination",
+                    "abstract": "The success of an infectious disease to invade a population is strongly controlled by the population's specific connectivity structure. Here a network model is presented as an aid in understanding the role of social behavior and heterogeneous connectivity in determining the spatio-temporal patterns of disease dynamics. We explore the controversial origins of long-term recurrent oscillations believed to be characteristic to diseases that have a period of temporary immunity after infection. In particular, we focus on sexually transmitted diseases such as syphilis, where this controversy is currently under review. Although temporary immunity plays a key role, it is found that in realistic small-world networks, the social and sexual behavior of individuals also has great influence in generating long-term cycles. The model generates circular waves of infection with unusual spatial dynamics that depend on focal areas that act as pacemakers in the population. Eradication of the disease can be efficiently achieved by eliminating the pacemakers with a targeted vaccination scheme. A simple difference equation model is derived, that captures the infection dynamics of the network model and gives insights into their origins and their eradication through vaccination.",
+                    "citation": "Anna Litvak-Hinenzon, L. Stone (2007). Epidemic Waves, Small Worlds and Targeted Vaccination. Unknown Journal. Citations: 6, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A network model is presented as an aid in understanding the role of social behavior and heterogeneous connectivity in determining the spatio-temporal patterns of disease dynamics, and the controversial origins of long-term recurrent oscillations believed to be characteristic to diseases that have a period of temporary immunity after infection."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/34ee546af42ccf2887f35c9ee803e45f6d2a788a"
+                },
+                {
+                    "title": "Homogenous mixing and network approximations in discrete-time formulation of a SIRS model",
+                    "abstract": "A discrete-time deterministic epidemic model is proposed to better understand the contagious dynamics and the behaviour observed in the incidence of real infectious diseases. For this purpose, we analyse a SIRS model both in a random-mixing approach and in a small-world network formulation. The models include the basic parameters that characterize an epidemic: infection and recovery times, as well as mechanisms of contagion. Depending on the parameters, the random-mixing model has different types of behaviour of an epidemic: pathogen extinction; endemic infection; sustained oscillations and dynamic extinction. Spatial effects are included in our network-based approach, where each individual of a population is represented by a node of a small-world network. Our network-based approach includes rewiring connections to account for time-varying network structure, a consequence of the natural response to the emergence of an epidemic (e.g. avoiding contacts with infected individuals). Random and adaptive rewiring conditions are analysed and numerical simulation are made. A comparison of model predictions with the actual effects of COVID-19 infection on population that occurred in Italy and France is produced. Results of the time series of infected people show that our adaptive evolving networks represent effective strategies able to decrease the epidemic spreading.",
+                    "citation": "Ilaria Renna (2021). Homogenous mixing and network approximations in discrete-time formulation of a SIRS model. Journal of Biological Dynamics. Citations: 2, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results of the time series of infected people show that the adaptive evolving networks represent effective strategies able to decrease the epidemic spreading."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f33d56c63626bbbf8909ac35b4287eb9fc959429"
+                },
+                {
+                    "title": "Spatio-temporal waves and targeted vaccination in recurrent epidemic network models",
+                    "abstract": null,
+                    "citation": "Anna Litvak-Hinenzon, L. Stone (2009). Spatio-temporal waves and targeted vaccination in recurrent epidemic network models. Journal of the Royal Society Interface. Citations: 21, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The controversial origins of long-term recurrent oscillations believed to be characteristic of diseases that have a period of temporary immunity after infection are explored, focusing on sexually transmitted diseases such as syphilis, where this controversy is currently under review."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/91e4963e7a5330a79283cffbee844075e8914ba0"
+                },
+                {
+                    "title": "A Discrete SIR Model with Spatial Distribution on a Torus for COVID-19 Analysis using Local Neighborhood Properties",
+                    "abstract": "The ongoing COVID-19 pandemic threatens the health of humans, causes great economic losses and may disturb the stability of the societies Mathematical models can be used to understand aspects of the dynamics of epidemics and to increase the chances of control strategies We propose a SIR graph network model, in which each node represents an individual and the edges represent contacts between individuals For this purpose, we use the healthy S (susceptible) population without immune behavior, two I-compartments (infectious) and two R-compartments (recovered) as a SIR model The time steps can be interpreted as days and the spatial spread (limited in distance for a singe step) shell take place on a 200 by 200 torus, which should simulate 40 thousand individuals The disease propagation form S to the I-compartment should be possible on a k by k square (k=5 in order to be in small world network) with different time periods and strength of propagation probability in the two I compartments After the infection, an immunity of different lengths is to be modeled in the two R compartments The incoming constants should be chosen so that realistic scenarios can arise With a random distribution and a low case number of diseases at the beginning of the simulation, almost periodic patterns similar to diffusion processes can arise over the years Mean value operators and the Laplace operator on the torus and its eigenfunctions and eigenvalues are relevant reference points The torus with five compartments is well suited for visualization Realistic neighborhood relationships can be viewed with a inhomogeneous graph theoretic approach, but they are more difficult to visualize Superspreaders naturally arise in inhomogeneous graphs: there are different numbers of edges adjacent to the nodes and should therefore be examined in an inhomogeneous graph theoretical model The expected effect of corona control strategies can be evaluated by comparing the results with various constants used in simulations The decisive benefit of the models results from the long-term observation of the consequences of the assumptions made, which can differ significantly from the primarily expected effects, as is already known from classic predator-prey models Copyright \u00a9 2021 by SCITEPRESS \u2013 Science and Technology Publications, Lda All rights reserved",
+                    "citation": "R. Schuster, Klaus-Peter Thiele, T. Ostermann, et al. (2021). A Discrete SIR Model with Spatial Distribution on a Torus for COVID-19 Analysis using Local Neighborhood Properties. International Conference on Health Informatics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A SIR graph network model is proposed, in which each node represents an individual and the edges represent contacts between individuals, in order to understand aspects of the dynamics of epidemics and to increase the chances of control strategies."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/a656bcc7050c85e0c5dd6cf5f443c11a54ccbbf4"
+                },
+                {
+                    "title": "the immunological responses mediated by antibodies during and origin complex in multi-strain dengue",
+                    "abstract": null,
+                    "citation": "M. Aguiar (2022). the immunological responses mediated by antibodies during and origin complex in multi-strain dengue. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An evolutionary biology approach to shed light on this problem both from a theoretical viewpoint by a description of multicellular organisms in terms of multi-level structures and from a practical point of view oriented towards cancer therapeutics, as cancer is primarily a failure of multICEllularity in animals and humans."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dd4e1194df689575d71f45ce8e1dfc2e6f2978b6"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

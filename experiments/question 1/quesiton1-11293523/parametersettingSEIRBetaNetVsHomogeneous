@@ -1,0 +1,59 @@
+
+import math
+# Step 1: Collect network degree stats and baseline epidemiological params
+# Homogeneous-mixing (complete):
+k_hom = 999.0
+k2_hom = 998001.0
+# Scale-free:
+k_het = 7.29
+k2_het = 216.36
+
+# SEIR biological rates
+beta_ode = 0.25   # ODE value
+sigma = 0.2
+gamma = 0.1
+R0 = beta_ode/gamma # Should be 2.5
+N = 1000
+
+# Step 2: For network model:
+def mean_excess_degree(k, k2):
+    return (k2 - k)/k
+
+q_het = mean_excess_degree(k_het, k2_het)
+# Calculate network-appropriate beta:
+beta_net = R0 * gamma / q_het
+
+# Step 3: Initial conditions for both networks
+# Scenario specifies: 995 susceptible, 0 exposed, 5 infectious, 0 recovered (out of N=1000)
+S0, E0, I0, R0i = 995, 0, 5, 0
+# Convert to integer percentages
+S_perc = int(round(S0/(S0+E0+I0+R0i)*100))
+E_perc = int(round(E0/(S0+E0+I0+R0i)*100))
+I_perc = int(round(I0/(S0+E0+I0+R0i)*100))
+R_perc = int(round(R0i/(S0+E0+I0+R0i)*100))
+# If sum != 100 due to rounding, adjust the susceptible count
+adj = 100 - (S_perc+E_perc+I_perc+R_perc)
+S_perc += adj
+initial_cond = {'S': S_perc, 'E': E_perc, 'I': I_perc, 'R': R_perc}
+# Create variants for seeding hubs (network only) and random
+initial_condition_desc = ["random infectious seeds (all states as scenario)", "infectious seeds placed at network hubs, rest random"]
+initial_conds = [dict(initial_cond), dict(initial_cond)]
+
+# Step 4: Homogeneous-mixing rates (use ODE version)
+params_hom = {'beta': beta_ode, 'sigma': sigma, 'gamma': gamma}
+# Step 5: Scale-free (network) rates (beta adjusted)
+params_het = {'beta': beta_net, 'sigma': sigma, 'gamma': gamma}
+
+# Step 6: Package output
+parameters = {'homogeneous': params_hom, 'heterogeneous': params_het}
+initial_conditions = initial_conds
+initial_condition_type = initial_condition_desc
+
+# Reasoning for both parameterizations
+reasoning_info = (
+    f"For the homogeneous-mixing (complete) network, beta (infection rate) is set equal to the scenario ODE value (beta={beta_ode}), since all nodes share equal contact probability. "
+    f"For the heterogeneous (scale-free) network, the network infection rate beta is rescaled using the theoretical relation: beta = R0*gamma/q, where R0=2.5, gamma={gamma}, and the mean excess degree q is computed from the degree moments (mean={k_het:.2f}, second moment={k2_het:.2f}), yielding beta={beta_net:.4f}. "
+    f"Sigma and gamma match biological values (incubation and infectious periods). "
+    f"Initial condition is always S=995, E=0, I=5, R=0 (out of 1000), represented as integer percentages. We recommend two scenarios: seeding initial infectious nodes randomly (for baseline), and seeding on the highest degree nodes (hubs – for network sensitivity test). "
+    f"All model parameters reflect the scenario and mathematic conventions for SEIR over networks."
+)

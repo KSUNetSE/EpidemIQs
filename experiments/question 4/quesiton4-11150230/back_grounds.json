@@ -1,0 +1,93 @@
+{
+    "results": [
+        {
+            "query": "competitive SIS spreading multiplex networks invasion thresholds coexistence dominance",
+            "papers": [
+                {
+                    "title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": null,
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 186, Influential: 17.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1bfe048d3fbbb52d044f5a1d9e9882231f77450c"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive SIS multiplex networks degree correlation coexistence",
+            "papers": [
+                {
+                    "title": "Explosive synchronization in generalized multiplex network with competitive and cooperative interlayer interactions.",
+                    "abstract": "Explosive synchronization represents an abrupt first-order transition to coherence in coupled dynamical systems, with significant implications for real-world networks such as neural systems, power grids, and social networks. In this study, we investigate explosive synchronization in adaptive multiplex networks of an arbitrary number of layers with the coexistence of competitive and cooperative interlayer interactions, where the dynamics of a node in one layer is influenced by the coherence of its counterparts in other layers. In addition to these interlayer interactions, our model incorporates interlayer adaptive coupling that can be simultaneously cooperative and competitive. Using a generalized framework, we show that the fraction of competitive nodes fl within each layer critically impacts the synchronization dynamics. Higher fractions suppress synchronization, while lower fractions promote the degree of synchronization transition. As the number of layers increases, the hysteretic behavior associated with explosive synchronization becomes more pronounced, highlighting enhanced resilience in synchronization transitions. The analytical predictions derived from the mean-field approach align closely with the numerical simulations across networks with an arbitrary number of layers, validating the robustness of the proposed framework. This scalability across multiplex networks underscores the critical role of adaptive interdependencies in shaping synchronization patterns. These findings provide a comprehensive understanding of how multiplex architectures govern the dynamics of explosive synchronization and provide insight into controlling synchronization in complex systems.",
+                    "citation": "P. Pal, Nikita Frolov, Sarbendu Rakshit, et al. (2025). Explosive synchronization in generalized multiplex network with competitive and cooperative interlayer interactions.. Chaos. Citations: 2, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study investigates explosive synchronization in adaptive multiplex networks of an arbitrary number of layers with the coexistence of competitive and cooperative interlayer interactions, where the dynamics of a node in one layer is influenced by the coherence of its counterparts in other layers."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/75804e233a40517d85b5724ffe11b9f083ab30f9"
+                },
+                {
+                    "title": "Markovian Approach for Exploring Competitive Diseases with Heterogeneity-Evidence from COVID-19 and Influenza in China",
+                    "abstract": null,
+                    "citation": "Xingyu Gao, Yuchao Xu (2024). Markovian Approach for Exploring Competitive Diseases with Heterogeneity-Evidence from COVID-19 and Influenza in China. Bulletin of Mathematical Biology. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An SIS disease spreading model with individual heterogeneity and transmission route heterogeneity under the simultaneous action of two competitive infectious diseases is proposed and a negative correlation between the theoretical spreading threshold and the average degree of the network is found."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/08fa3c12c2123ef8ed43097af6f08456b31dfb87"
+                },
+                {
+                    "title": "Effects of the local information on the resource-epidemic dynamics on multiplex networks",
+                    "abstract": "The effects of the local-information-driven awareness on the resource-epidemic coupled dynamics is studied in this paper. The double-layer multiplex networks are adopted to depict the coupled dynamics of the resource allocation and epidemic spreading, and a coupled model based on the modified SIS model is proposed. Through extensive Monte Carlo simulations, we find that on a network without inter-layer degree correlation, there is a cross point of the basic infection rate, when the value of the basic infection rate is lower than the cross point, the breakout of the epidemic can be postponed with the decrease of the level of awareness, while when it is larger than the point, the spread size of the epidemic can be reduced with the increase of the level of awareness. In addition, we also find that the inter-layer degree correlation can reduce the final spread size of the epidemic.",
+                    "citation": "Jun Wang, Ruijie Wang, Di\u00e9 Wu (2022). Effects of the local information on the resource-epidemic dynamics on multiplex networks. IEEE Joint International Information Technology and Artificial Intelligence Conference. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Through extensive Monte Carlo simulations, it is found that on a network without inter-layer degree correlation, when the value of the basic infection rate is lower than the cross point, the breakout of the epidemic can be postponed with the decrease of the level of awareness, and the spread size can be reduced with the increase of thelevel of awareness."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8ef8a7d8486350bd8d3413ba4825ba02b5af6a6a"
+                },
+                {
+                    "title": "\u00bfLas diferencias ecomorfol\u00f3gicas predicen la coexistencia de murci\u00e9lagos cavern\u00edcolas en Cuba?",
+                    "abstract": "Do ecomorphological differences predict the co\u2013existence of cave bats in Cuba?\n\nIdentifying mechanisms that influence the coexistence of species is primordial to understanding patterns and processes in biodiversity. Here we aimed to assess the association between coexistence and morphology of cave bats in Cuba and differences in morphologic and dietary aspects. We assembled lists of species from 108 localities with at least three co\u2013inhabiting species. Fourteen species of bats in at least three localities were included. Based on the literature we also obtained the mean values of five morphological variables and the basic composition of diet. We calculated coexistence patterns using EcoSim v7.72 based on the average number of checkerboard units that appeared between each pair of species. We evaluated the predictive capacity of the morphological variables and diet over the degree of coexistence between species using a neural regression network. The best neural network was accepted (correlation of 0.87, training error < 0.006). The prediction error was 13.5 % (\u00b1 1.1) of the value of the coexistence index. Our findings indicate that the composition of cave bat assemblages in Cuba has not come about by chance. Rather, we found that the most functionally different species tended to coexist. This finding is consistent with the effect of competitive relationships driving the composition of species of cave bats in Cuba.",
+                    "citation": "Y. Ferrer-S\u00e1nchez, D. Den\u00eds \u00c1vila (2022). \u00bfLas diferencias ecomorfol\u00f3gicas predicen la coexistencia de murci\u00e9lagos cavern\u00edcolas en Cuba?. Animal Biodiversity and Conservation. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The findings indicate that the composition of cave bat assemblages in Cuba has not come about by chance, and it is found that the most functionally different species tended to coexist."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/71e7f10204789620dabe8fec2a0479eae4abbbd8"
+                },
+                {
+                    "title": "El Cl\u00faster de la Semilla: un abordaje desde el An\u00e1lisis de Redes de Pol\u00edticas P\u00fablicas 1",
+                    "abstract": null,
+                    "citation": "Alejandra Quadrana (2020). El Cl\u00faster de la Semilla: un abordaje desde el An\u00e1lisis de Redes de Pol\u00edticas P\u00fablicas 1. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/617b2fd5f87e0f48979a8f9184d0fb5f8cf92023"
+                },
+                {
+                    "title": "Evolution and ecology of the digital world: A complex systems perspective",
+                    "abstract": null,
+                    "citation": "K. Kleineberg (2016). Evolution and ecology of the digital world: A complex systems perspective. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A quantitative two-parameter model which reproduces the entire topological evolution of a quasi-isolated OSN with unprecedented precision is presented, suggesting that the coupling between the real pre-existing underlying social structure, a viral spreading mechanism, and mass media influence govern the evolution of OSNs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/aa116a487d942767742025f2a83aee1d28531f89"
+                },
+                {
+                    "title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": null,
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 186, Influential: 17.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1bfe048d3fbbb52d044f5a1d9e9882231f77450c"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

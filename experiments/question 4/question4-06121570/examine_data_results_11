@@ -1,0 +1,9 @@
+
+import pandas as pd
+
+# Load the data to have a first look at the columns and some rows
+file_path = 'output/results-11.csv'
+data = pd.read_csv(file_path)
+# Show the first few rows and columns
+sample = data.head()
+cols = data.columns.tolist()

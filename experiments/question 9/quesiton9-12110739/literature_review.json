@@ -1,0 +1,20 @@
+{
+    "results": [
+        {
+            "query": "interbank network topology diversified concentrated default cascade propagation financial contagion robustness fragility threshold modeling simulation",
+            "papers": [
+                {
+                    "title": "The influence of counterparty risk on financial stability in a stylized banking system",
+                    "abstract": null,
+                    "citation": "A. Birch (2016). The influence of counterparty risk on financial stability in a stylized banking system. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple counterparty risk model replicates the behaviour of more complex simulation-based stress test models of a heterogeneous banking system and is found that the interbank network is essential for the insolvency propagation."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3a48a20b52380d00de78adce548ad16e6c7f1ffe"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

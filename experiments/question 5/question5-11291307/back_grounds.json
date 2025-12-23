@@ -1,0 +1,67 @@
+{
+    "results": [
+        {
+            "query": "vaccination thresholds epidemic configuration-model network reproduction number targeted vaccination random vaccination SIR dynamics",
+            "papers": [
+                {
+                    "title": "the immunological responses mediated by antibodies during and origin complex in multi-strain dengue",
+                    "abstract": null,
+                    "citation": "M. Aguiar (2022). the immunological responses mediated by antibodies during and origin complex in multi-strain dengue. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An evolutionary biology approach to shed light on this problem both from a theoretical viewpoint by a description of multicellular organisms in terms of multi-level structures and from a practical point of view oriented towards cancer therapeutics, as cancer is primarily a failure of multICEllularity in animals and humans."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dd4e1194df689575d71f45ce8e1dfc2e6f2978b6"
+                },
+                {
+                    "title": "SIR Dynamics with Vaccination in a Large Configuration Model",
+                    "abstract": "We consider an SIR model with vaccination strategy on a sparse configuration model random graph. We show the convergence of the system when the number of nodes grows and characterize the scaling limits. Then, we prove the existence of optimal controls for the limiting equations formulated in the framework of game theory, both in the centralized and decentralized setting. We show how the characteristics of the graph (degree distribution) influence the vaccination efficiency for optimal strategies, and we compute the limiting final size of the epidemic depending on the degree distribution of the graph and the parameters of infection, recovery and vaccination. We also present several simulations for two types of vaccination, showing how the optimal controls allow to decrease the number of infections and underlining the crucial role of the network characteristics in the propagation of the disease and the vaccination program.",
+                    "citation": "Emanuel Javier Ferreyra, M. Jonckheere, J. P. Pinasco (2019). SIR Dynamics with Vaccination in a Large Configuration Model. Applied Mathematics and Optimization. Citations: 6, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work considers an SIR model with vaccination strategy on a sparse configuration model random graph and proves the existence of optimal controls for the limiting equations formulated in the framework of game theory."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5c77923e37d0e5ca28ed67a78fd758c29bf3cf12"
+                },
+                {
+                    "title": "SIR epidemics and vaccination on random graphs with clustering",
+                    "abstract": "In this paper we consider Susceptible \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} Infectious \u2192\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\rightarrow $$\\end{document} Recovered (SIR) epidemics on random graphs with clustering. To incorporate group structure of the underlying social network, we use a generalized version of the configuration model in which each node is a member of a specified number of triangles. SIR epidemics on this type of graph have earlier been investigated under the assumption of homogeneous infectivity and also under the assumption of Poisson transmission and recovery rates. We extend known results from literature by relaxing the assumption of homogeneous infectivity both in individual infectivity and between different kinds of neighbours. An important special case of the epidemic model analysed in this paper is epidemics in continuous time with arbitrary infectious period distribution. We use branching process approximations of the spread of the disease to provide expressions for the basic reproduction number R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document}, the probability of a major outbreak and the expected final size. In addition, the impact of random vaccination with a perfect vaccine on the final outcome of the epidemic is investigated. We find that, for this particular model, R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document} equals the perfect vaccine-associated reproduction number. Generalizations to groups larger than three are discussed briefly.",
+                    "citation": "C. Fransson, Pieter Trapman (2018). SIR epidemics and vaccination on random graphs with clustering. Journal of Mathematical Biology. Citations: 8, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The impact of random vaccination with a perfect vaccine on the final outcome of the epidemic is investigated and it is found that R0, the probability of a major outbreak and the expected final size equals the perfect vaccine-associated reproduction number."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/cf4cb66581f4e15a7079a9a0f5d8c794e8ca47b0"
+                },
+                {
+                    "title": "Age-Structured SIR Epidemic Model",
+                    "abstract": null,
+                    "citation": "H. Inaba (2017). Age-Structured SIR Epidemic Model. Unknown Journal. Citations: 4, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This chapter investigates the age-structured susceptible\u2013infected\u2013recovered (SIR) epidemic model, which is very useful when applied to real age-dependent data of common childhood infectious diseases, and establishes the endemic threshold principle based on the basic reproduction number \\(R_0\\), which is defined by the spectral radius of the next-generation operator."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7f3237575ea91806cfe8d1420d3b5a07810ee2ac"
+                },
+                {
+                    "title": "Title The role of vaccination coverage , individual behaviors , and the public health response in the control of measles epidemics : An agent-based simulation for California Permalink",
+                    "abstract": null,
+                    "citation": "Fengchen Liu, Wayne T. A. Enanoria, J. Zipprich, et al. (2015). Title The role of vaccination coverage , individual behaviors , and the public health response in the control of measles epidemics : An agent-based simulation for California Permalink. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An agent-based simulation model of measles transmission using the Framework for Reconstructing Epidemiological Dynamics and the Synthetic Population Database maintained by RTI International demonstrated the importance of vaccination coverage, clustering of immunity, and contact investigations in preventing uncontrolled measles outbreaks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6ccdd42c010213e9e2a9f44d79a50204e0852625"
+                },
+                {
+                    "title": "Recent publications",
+                    "abstract": null,
+                    "citation": "P. Pourbeik, E. P., Sorensen (1990). Recent publications. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/5211e45c85972c248a427be945fde4059c5a5b42"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

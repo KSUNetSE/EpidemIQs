@@ -1,0 +1,74 @@
+{
+    "results": [
+        {
+            "query": "critical vaccination thresholds epidemic spread uncorrelated random networks random vaccination targeted vaccination degree-based vaccination SIR model",
+            "papers": [
+                {
+                    "title": "An Analysis of Vaccination Strategies on Epidemic Spread in a Friendship Network",
+                    "abstract": "This research enhances targeted vaccination strategies for controlling epidemics in real social networks, addressing the limitations of homogeneous mixing models. We analyze a 217 -individual weighted social network from the Australian National University, using KONECT data, where edge weights reflect friendship intensity. We apply the SI and SIR epidemic models to evaluate the efficacy of targeting individuals according to degree, strength, betweenness, and weighted betweenness centrality. The weighted betweenness centrality is the most effective strategy for controlling epidemic spread, significantly reducing peak infection rates and network connectivity. However, degree-based vaccination also showed strong performance, offering a practical balance between effectiveness and computational efficiency, making it suitable for broader applications. While degree-based vaccination is effective in slowing down the spread of the disease, weighted betweenness centrality works much more effectively to disrupt key transmission pathways, significantly reducing the size of the largest connected component and aiding in the containment of the epidemic. These findings indicate that network topology and intensity of interaction are critical in designing efficient vaccination strategies and provide grounding for useful suggestions on how to allocate resources and containment efforts in the real world.",
+                    "citation": "Nandini Sreejit Nair, Jisha Mariyam John, Divya Sindhu Lekha (2025). An Analysis of Vaccination Strategies on Epidemic Spread in a Friendship Network. 2025 11th International Conference on Smart Computing and Communications (ICSCC). Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/0c4e9b767f052bae487c0507abd9d1e72ce41510"
+                },
+                {
+                    "title": "MODELING DISEASE SPREAD USING GRAPH THEORY: A STUDY OF EPIDEMICS.",
+                    "abstract": "In recent years, mathematical modeling of infectious diseases has become an indispensable tool for understanding and mitigating epidemic outbreaks. Among various mathematical frameworks, graph theory provides a powerful and flexible approach to represent complex social interactions, mobility networks, and transmission pathways within populations. This study investigates the application of graph-theoretic models to simulate and analyze the spread of influenza across different community structures. Nodes represent individuals or groups, while edges denote potential transmission contacts, enabling the representation of heterogeneous mixing patterns and spatial clustering effects. Using a simulated network of 500 individuals with varying connection probabilities, we explore the dynamics of infection spread based on the classical Susceptible\u2013Infected\u2013Recovered (SIR) framework. The results highlight the critical role of network topology\u2014particularly degree distribution, clustering coefficient, and average path length\u2014in determining the infection peak and final epidemic size. Furthermore, interventions such as vaccination or targeted isolation of high-degree nodes are shown to significantly reduce transmission speed and epidemic magnitude. The study offers a generalized graph-based methodology for epidemic modeling that can be extended to real-world datasets and other diseases, contributing to predictive epidemiology and public health preparedness.",
+                    "citation": "Dr. V .Raja Durai, Dr. K. Karuppiah, S. Hariharan, et al. (2025). MODELING DISEASE SPREAD USING GRAPH THEORY: A STUDY OF EPIDEMICS.. International Journal of Applied Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study investigates the application of graph-theoretic models to simulate and analyze the spread of influenza across different community structures, and offers a generalized graph-based methodology for epidemic modeling that can be extended to real-world datasets and other diseases."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/e1696d5101f870d9f5f7f34eb912fc01b26c94ac"
+                },
+                {
+                    "title": "Behavior-Aware COVID-19 Forecasting Using Markov SIR Models on Dynamic Contact Networks: An Observational Modeling Study",
+                    "abstract": null,
+                    "citation": "M. Dadashkarimi (2025). Behavior-Aware COVID-19 Forecasting Using Markov SIR Models on Dynamic Contact Networks: An Observational Modeling Study. medRxiv. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel framework integrating time-varying contact networks, Markov chain-based Susceptible-Infectious-Recovered (SIR) dynamics, and adaptive behavioral responses enhances epidemic forecasting accuracy."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/25d94a2ccc5a4b1a0eabd3b84baa401529d06c3a"
+                },
+                {
+                    "title": "Vaccination strategies in the disease\u2013behavior evolution model",
+                    "abstract": "Previous studies on the co-evolving between vaccination strategies and epidemics mainly assumed that the vaccination strategies were made in the period between two spreading seasons. However, individual cognition during the spreading seasons might also alter the vaccination strategy and inversely influence the epidemic spreading. We propose a coupled disease\u2013behavior model to describe the dynamic evolution of vaccination behavior during the spread of infectious diseases. The model integrates a susceptible\u2013infected\u2013vaccinated (SIV) model with the diffusion of vaccination behavior. We focus on the trade-off between perceptions of infection risk and the vaccination behaviors of neighbors, characterizing individual vaccination opinions. We introduce an opinion-critical value to map vaccination opinions into vaccination behavior. The vaccination coverage of the disease\u2013behavior model is studied in network models and real-world networks. In addition, when societal costs are measured based on the degree of initial vaccinees, the cost of randomly selecting initial vaccinees is lower than selecting individuals with high or low degrees as vaccinees. Evaluating an individual\u2019s ability to transmit vaccination behavior based on the neighbor\u2019s number is inappropriate. We find that the impact of effective spreading rates on group vaccination is not one-sided and that reducing fear and highlighting the dangers of infectious diseases are crucial to increasing vaccination coverage.",
+                    "citation": "Lu Zhou, Jinying Dai, Bo Qu, et al. (2024). Vaccination strategies in the disease\u2013behavior evolution model. Frontiers of Physics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that the impact of effective spreading rates on group vaccination is not one-sided and that reducing fear and highlighting the dangers of infectious diseases are crucial to increasing vaccination coverage."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/4fe7c2785b2965a47ac3a2369a254a9aeabacc4c"
+                },
+                {
+                    "title": "the immunological responses mediated by antibodies during and origin complex in multi-strain dengue",
+                    "abstract": null,
+                    "citation": "M. Aguiar (2022). the immunological responses mediated by antibodies during and origin complex in multi-strain dengue. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An evolutionary biology approach to shed light on this problem both from a theoretical viewpoint by a description of multicellular organisms in terms of multi-level structures and from a practical point of view oriented towards cancer therapeutics, as cancer is primarily a failure of multICEllularity in animals and humans."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dd4e1194df689575d71f45ce8e1dfc2e6f2978b6"
+                },
+                {
+                    "title": "Control of COVID-19 Pandemic: Vaccination Strategies Simulation under Probabilistic Node-Level Model",
+                    "abstract": "This paper aims at constructing a probabilistic node-level time-dependent contagious disease spreading model for coronavirus disease (COVID-19) pandemic which is called SEINRVseinr by introducing exposed and asymptomatic infectious state, imperfect vaccination, reinfected possibility and weighted undirected graph for social network into the traditional probabilistic node-level Susceptible-Infectious-Recovered (SIR) network model. This paper simulates the effectiveness of five vaccination strategies (including random base, degree-target base, random acquaintance, first-neighbor and second neighbor strategies) in random network, small world network and scale-free network. Compared with the benchmark model, the results show that random acquaintance strategy is efficient strategy and neighbors\u2019 strategies perform better in certain interval.",
+                    "citation": "Mengxuan Chen, C. Kuo, Wai Kin Victor Chan (2021). Control of COVID-19 Pandemic: Vaccination Strategies Simulation under Probabilistic Node-Level Model. International Conference on the Software Process. Citations: 1, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/c7f674961b3bdef197e2e5bfd4050a0459c60d40"
+                },
+                {
+                    "title": "Centrality-based epidemic control in complex social networks",
+                    "abstract": null,
+                    "citation": "M. Doostmohammadian, H. Rabiee, U. Khan (2020). Centrality-based epidemic control in complex social networks. Social Network Analysis and Mining. Citations: 36, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The results show that specific graph properties are involved in the epidemic control and it is shown that the clustering-coefficient and the degree distribution of the network are effective in the selection of these target groups for epidemic control."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/a9f1da7e532fe6f05b6d51d1dd6881b366156c91"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

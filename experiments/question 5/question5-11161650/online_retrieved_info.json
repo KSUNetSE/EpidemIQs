@@ -1,0 +1,98 @@
+[
+  {
+    "query": "simulation vaccination strategies configuration network mean degree mean excess degree r0",
+    "results": [
+      {
+        "query": "simulation vaccination strategies network mean degree mean excess degree R0",
+        "follow_up_questions": null,
+        "answer": "In network‐based epidemic simulations the basic reproduction number can be expressed as R₀ = T · ⟨k_ex⟩, where T is the per‑contact transmission probability and ⟨k_ex⟩ (the mean excess degree) equals (⟨k²⟩ − ⟨k⟩)/⟨k⟩; thus R₀ grows with both the average degree ⟨k⟩ and the degree heterogeneity of the graph. Vaccination strategies that preferentially immunize nodes with higher degree (as in optimal or “targeted” schemes on Barabási–Albert scale‑free networks) reduce the effective ⟨k⟩ and ⟨k_ex⟩ more efficiently than uniform random vaccination, lowering the effective R₀ and the final epidemic size at substantially lower coverage. In contrast, on relatively homogeneous or highly random networks the advantage of degree‑targeted vaccination becomes evident only when the network randomness is increased, and uniform vaccination must approach the classic threshold 1 −",
+        "images": [],
+        "results": [
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12140218/",
+            "title": "Modeling the SARS-CoV-2 epidemic and the efficacy of different ...",
+            "content": "For simulations with R0 = 2.5 differences between the vaccination strategies was seen only with greater randomness in the network structure ( P",
+            "score": 0.9997868,
+            "raw_content": null
+          },
+          {
+            "url": "https://par.nsf.gov/servlets/purl/10352196",
+            "title": "[PDF] Controlling Epidemics Through Optimal Allocation of Test Kits and ...",
+            "content": "Fig. 3(d) shows that the optimal vaccination strategy on a BA network signiﬁcantly reduces the fraction infected compared to the uniform vaccination strategy. Panels (e-h) show the corre-sponding quantities for the SBM network for which LðT ¼ 150Þ ¼ 0:0210 under the optimal vaccination strategy and LðT ¼ 150Þ ¼ 0:0360 under a constant, uniform vaccination strategy. In both networks, the optimal vaccination strategies obtained via Algorithm 1 tend to prioritize those nodes with higher degrees [...] The optimal vaccination strategies obtained through Algo-rithm 1 are also relatively insensitive to initial conditions in both networks, particularly at longer times. Although not shown, the optimal strategies associated with different ICs are mostly the same because nodes with larger degrees tend to always be vacci-nated ﬁrst to minimize the loss function (25). Susceptibles with higher degrees are more vulnerable and should be vaccinated ﬁrst to mitigate subsequent infection events. For [...] C. Monte-Carlo Simulation of Stochastic Network Model Our results are derived from a mass-action ODE model and it is unclear how they apply to stochastic network dynamics. To compare these different representations of the disease, we deﬁne the discrete stochastic versions of our network models and impose a stochastic version of the optimal strategies found using the PMP on our ODEs. In Appendix D we implemented the opti-mal testing and vaccination strategies on the BA and SBM net-work",
+            "score": 0.99893504,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12356273/",
+            "title": "A network-based model to assess vaccination strategies for the ...",
+            "content": "In this paper we build a network-based model to evaluate and compare vaccination plans in order to find the optimal strategies. The age-structured model is",
+            "score": 0.99828595,
+            "raw_content": null
+          },
+          {
+            "url": "https://research.aalto.fi/files/85532918/Herd_immunity_and_epidemic_size_in_networks_with_vaccination_homophily.pdf",
+            "title": "[PDF] Herd immunity and epidemic size in networks with vaccination ...",
+            "content": "We study how the herd immunity threshold and the expected epidemic size depend on homophily with respect to vaccine adoption.",
+            "score": 0.7371582,
+            "raw_content": null
+          },
+          {
+            "url": "https://link.aps.org/pdf/10.1103/PhysRevE.105.L052301",
+            "title": "Herd immunity and epidemic size in networks with vaccination ...",
+            "content": "We study how the herd immunity threshold and the expected epidemic size depend on homophily with respect to vaccine adoption.",
+            "score": 0.42823339,
+            "raw_content": null
+          }
+        ],
+        "response_time": 10.36,
+        "request_id": "a65cce3a-1fc9-4722-a414-c6d519338952"
+      },
+      {
+        "query": "configuration network mean degree mean excess degree basic reproduction number R0 vaccination strategies",
+        "follow_up_questions": null,
+        "answer": "In a configuration‑model contact network the basic reproduction number can be expressed directly in terms of the network’s mean degree ⟨k⟩ and mean excess degree κ = (⟨k²⟩ − ⟨k⟩)/⟨k⟩, so that for a disease with transmission rate β and recovery rate γ one has R₀ = (β/γ)·κ = (β/γ)·(⟨k²⟩ − ⟨k⟩)/⟨k⟩; the mean excess degree is the average number of additional contacts reached by following a random edge and therefore captures the connectivity that drives epidemic spread. Vaccination reduces the effective reproduction number by lowering the fraction of susceptible nodes, and the required coverage depends on the strategy: random (uniform) vaccination yields a critical coverage v_c = 1 − 1/R₀, whereas targeting the highest‑degree individuals (or using acquaintance vaccination that preferentially selects neighbors) reduces the threshold to v_c ≈ 1 − ⟨k⟩/⟨k²⟩, because it directly diminishes κ; when edge weights vary, weight‑based vaccination that prioritizes links with high transmission probability can further lower the needed coverage, outperforming both uniform and standard acquaintance schemes.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=9342&context=etd",
+            "title": "MODELING VACCINATION STRATEGIES AND INTERVENTION ...",
+            "content": "Therefore, estimating the basic reproduction number (R0) might not be a good idea since we are no longer in a fully susceptible population. A better metric that would capture the introduction of vaccination is the effective reproduction number (Re = R0(S/N)) [40, 41]. Thus, this work considers the effective reproduction number, which also takes into account the interventions enacted by the government in addition to the vaccine compartment. [...] Now, the spectral radius of a matrix A, denoted by R(A) is defined as the largest modulus of the eigenvalues of A. Thus, the basic reproduction number for this model is given by R0 = R(GW −1) = αS0 β + γ + ρ ≈Re. [...] However, we expect this value to decrease with time and Re ̸= R0, especially when vaccine is introduced in the later part of the study time.",
+            "score": 0.9992792,
+            "raw_content": null
+          },
+          {
+            "url": "https://arxiv.org/pdf/1101.4154",
+            "title": "[PDF] Epidemics and vaccination on weighted graphs - arXiv",
+            "content": "Example 4.1.1. Let the edge weights be uniformly distributed on [0, 1]. Then γ = 1/2 and, using (7), the reproduction mean RW β in (4) is easily calculated for a given degree distribution {pk}. Figure 2 shows the basic reproduction number RW β plotted against the vaccination coverage v(β) when the degree dis-tribution is Po(6). The plot also shows the reproduction number for standard acquaintance vaccination and for uniform vaccination. For a given vaccination coverage, we have RU > RA > RW, [...] 1: The basic reproduction numbers Rh2 0 (solid line), Rh1 0 (dashed line) and Rdeg 0 (dash-dotted line) with g(x) = x−τ plotted against τ. The degree distribution is a power law with exponent 3.5 and mean 4. [...] Example 4.2.1. Figure 6 shows the basic reproduction numbers when the degree distribution is Po(14) and the weight distribution is speciﬁed by P(W = 0.1) = 1 −P(W = 1) = 0.9 (most edges hence have a very small weight, but a small fraction has weight 1, implying almost sure transmission). The plot reveals that the weight based strategy clearly outperforms the other strate-gies in this case. The critical vaccination coverage is lowered from 0.58 with standard acquaintance vaccination to 0.48 with",
+            "score": 0.9992267,
+            "raw_content": null
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/Basic_reproduction_number",
+            "title": "Basic reproduction number - Wikipedia",
+            "content": "{\\displaystyle R_{0}} (pronounced R nought or R zero), of an infection is the expected number of cases directly generated by one case in a population where all individuals are susceptible to infection. The definition assumes that no other individuals are infected or immunized (naturally or through vaccination). Some definitions, such as that of the Australian Department of Health \"Department of Health (Australia)\"), add the absence of \"any deliberate intervention in disease transmission\". The [...] {\\displaystyle R_{0}}\n\n### Epidemic models on networks\n\nEpidemics can be modeled as diseases spreading over networks of contact and disease transmission between people. Nodes in these networks represent individuals and links (edges) between nodes represent the contact or disease transmission between them. If such a network is a locally tree-like network, then the basic reproduction can be written in terms of the average excess degree of the transmission network such that:\n\nR\n\n0\n=\n\nβ\n\nβ\n+\nγ\n\n⟨ [...] {\\displaystyle R_{0}}  cannot be modified through vaccination or other changes in population susceptibility, it can vary based on a number of biological, sociobehavioral, and environmental factors. It can also be modified by physical distancing and other public policy or social interventions, although some historical definitions exclude any deliberate intervention in reducing disease transmission, including nonpharmacological interventions. And indeed, whether nonpharmacological interventions",
+            "score": 0.9943581,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4368036/",
+            "title": "The Basic Reproduction Number as a Predictor for Epidemic ... - NIH",
+            "content": "cities. The derivation of R 0 has been extended to the case in which information about contact networks (describing who can spread the disease to whom) is available [11–15]. In this case, the derivation is usually restricted to the case of regular networks, where all individuals have the same degree (number of neighbors in the contact network) [14,15]. Sometimes people use definitions of R 0 that differs from the original [11–13,16] in a strict sense (but typically captures some similar [...] The basic reproduction number R 0—the number of individuals directly infected by an infectious person in an otherwise susceptible population—is arguably the most widely used estimator of how severe an epidemic outbreak can be. This severity can be more directly measured as the fraction of people infected once the outbreak is over, Ω. In traditional mathematical epidemiology and common formulations of static network epidemiology, there is a deterministic relationship between R 0 and Ω. However, [...] There have been a few attempts to examine R 0 for temporal networks. Ref. [16,20], for example, derives R 0 for a specific model of temporal networks. Ref.  measures R 0 in empirical temporal networks, but does not relate it to prevalence, final outbreak size or other direct measures of outbreak severity.",
+            "score": 0.99128854,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6677279/",
+            "title": "Efficient vaccination strategies for epidemic control using network ...",
+            "content": "Using even partial network information to prioritize vaccines at either the village or individual level, i.e. determine the optimal order of communities or",
+            "score": 0.98571813,
+            "raw_content": null
+          }
+        ],
+        "response_time": 8.93,
+        "request_id": "0bda3869-991c-44d7-8a1a-66a1a286ad23"
+      }
+    ],
+    "agent_response": "Reason: The user's query involves understanding how vaccination strategies can be simulated using network models characterized by mean degree and mean excess degree, particularly how these relate to the basic reproduction number R0. Key elements to address: definitions and roles of mean degree and mean excess degree in network epidemiology, the expression of R0 in network contexts, and how different vaccination strategies (random/uniform, targeting high-degree nodes, acquaintance vaccination) affect R0 and epidemic outcomes.\n\nAction: I searched for scholarly and authoritative resources explaining the mathematical and simulation frameworks linking network properties (mean degree, mean excess degree) to R0 and the design/evaluation of vaccination strategies within such network contexts.\n\nObservation:\n1. The basic reproduction number R0 in network-based epidemic models can be expressed as R0 = T * ⟨k_ex⟩, where T is the per-contact transmission probability and ⟨k_ex⟩ (mean excess degree) = (⟨k²⟩ - ⟨k⟩) / ⟨k⟩. This formula captures that R0 depends both on average connectivity (mean degree ⟨k⟩) and the heterogeneity of contacts (variance via mean excess degree).\n2. Vaccination strategies that target nodes with higher degrees (optimal or targeted vaccination) reduce both the mean degree and mean excess degree more efficiently than uniform random vaccination. This leads to a decrease in effective R0 and consequently a smaller epidemic size.\n3. In configuration model networks (random graphs with a given degree distribution), vaccination that targets high-degree individuals or performs acquaintance vaccination reduces the critical vaccination coverage needed to achieve herd immunity by disproportionately affecting key spreaders, lowering effective R0.\n4. Uniform vaccination coverage threshold follows the classic formula v_c = 1 - 1/R0, but targeting strategies can lower this threshold because they reduce the mean excess degree κ more directly.\n5. Weight-based vaccination strategies, which prioritize edges or contacts with higher transmission probabilities, can further improve vaccination efficiency beyond degree-based strategies.\n6. Simulations show that targeted vaccination strategies on networks like Barabási–Albert scale-free networks are optimal in prioritizing nodes with high degrees to mitigate spread effectively, compared to random vaccination.\n7. The degree heterogeneity captured by mean excess degree is fundamental in understanding how epidemics spread on networks and guides optimal vaccination design.\n\nFinal Thought: The interplay of network structure (mean degree and mean excess degree) directly influences the basic reproduction number R0, which determines epidemic potential. Vaccination strategies, when designed considering these network parameters—especially targeting high-degree nodes—can substantially lower R0 and epidemic size more effectively than random vaccination. Understanding this relationship allows for efficient simulation and policy design of vaccination campaigns in networked populations.\n\nFinal Answer:\nIn network-based epidemic modeling, the basic reproduction number (R0), which indicates the average number of secondary infections caused by one infected individual in a fully susceptible population, can be expressed using network properties such as the mean degree (⟨k⟩) and the mean excess degree (⟨k_ex⟩). Specifically, for a network where each node represents an individual and edges represent contacts, the formula is:\n\nR0 = T × ⟨k_ex⟩\n\nwhere T is the per-contact transmission probability, and the mean excess degree is calculated as:\n\n⟨k_ex⟩ = (⟨k²⟩ - ⟨k⟩) / ⟨k⟩\n\nThe mean excess degree captures the average number of additional contacts reached by following a randomly chosen contact and reflects the heterogeneity in contact patterns.\n\nVaccination strategies leverage this network framework to reduce the effective reproduction number by lowering the fraction of susceptible nodes and/or altering the network's connectivity structure:\n\n- Uniform random vaccination removes nodes randomly, which reduces susceptibility but does not efficiently target the most connected individuals.\n- Targeted vaccination strategies prioritize immunizing nodes with the highest degrees (most contacts), thereby lowering both the mean degree and mean excess degree more effectively. This sharply reduces R0 and the epidemic size, achieving herd immunity at lower coverage levels.\n- Acquaintance vaccination, which immunizes neighbors of randomly chosen nodes, also preferentially targets higher-degree nodes due to network sampling bias, approximating targeted strategies.\n- Weight-based vaccination prioritizes edges or contacts with higher transmission probability, further enhancing control.\n\nSimulation studies on networks like Barabási–Albert scale-free graphs and configuration model networks confirm that targeted vaccination outperforms random vaccination by focusing on high-degree nodes to efficiently disrupt transmission pathways.\n\nTherefore, simulating vaccination strategies on networks considers the configuration of the network (degree distribution), the mean and mean excess degree to compute R0, and uses insights from these metrics to design vaccination policies that minimize effective R0 and epidemic size efficiently. This approach mathematically grounds vaccination strategy optimization in the underlying contact network structure, leading to better epidemic control."
+  }
+]

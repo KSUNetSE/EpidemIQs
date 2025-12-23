@@ -1,0 +1,30 @@
+{
+    "results": [
+        {
+            "query": "SEIBR model stochastic block network influenza boarding school outbreak transmission dynamics",
+            "papers": [
+                {
+                    "title": "Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak",
+                    "abstract": null,
+                    "citation": "Denis Tverskoi, Grzegorz A. Rempala (2025). Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak. Scientific Reports. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study proposes a simpler stochastic SIR model that, while yielding a slightly worse retrospective fit, provides more stable and reliable forward predictions and underscores the importance of balancing model complexity with predictive reliability in epidemiological modeling, in order to support robust public health decision-making when data availability is limited."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8b09978be87c664df534667feb42e0a003f160f7"
+                },
+                {
+                    "title": "Modeling and responding to pandemic influenza : importance of population distributional attributes and non-pharmaceutical interventions",
+                    "abstract": null,
+                    "citation": "Karima R. Nigmatulina (2009). Modeling and responding to pandemic influenza : importance of population distributional attributes and non-pharmaceutical interventions. Unknown Journal. Citations: 8, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple distributional model is presented that captures the most significant population attributes that alter the dynamics of the outbreak and proposes several different novel approaches to incorporating reactive social distancing and hygiene improvement and its impact on the epidemic curve."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/a7bec9ae15615c6acf43e4446e101ec45929c96e"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

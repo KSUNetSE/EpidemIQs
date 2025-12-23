@@ -1,0 +1,64 @@
+{
+    "results": [
+        {
+            "query": "edge-based compartmental models SIR networks epidemic final size reproduction number network heterogeneity transient contacts",
+            "papers": [
+                {
+                    "paper_title": "Edge-Based Compartmental Modelling of an SIR Epidemic on a Dual-Layer Static\u2013Dynamic Multiplex Network with Tunable Clustering",
+                    "abstract": "The duration, type and structure of connections between individuals in real-world populations play a crucial role in how diseases invade and spread. Here, we incorporate the aforementioned heterogeneities into a model by considering a dual-layer static\u2013dynamic multiplex network. The static network layer affords tunable clustering and describes an individual\u2019s permanent community structure. The dynamic network layer describes the transient connections an individual makes with members of the wider population by imposing constant edge rewiring. We follow the edge-based compartmental modelling approach to derive equations describing the evolution of a susceptible\u2013infected\u2013recovered epidemic spreading through this multiplex network of individuals. We derive the basic reproduction number, measuring the expected number of new infectious cases caused by a single infectious individual in an otherwise susceptible population. We validate model equations by showing convergence to pre-existing edge-based compartmental model equations in limiting cases and by comparison with stochastically simulated epidemics. We explore the effects of altering model parameters and multiplex network attributes on resultant epidemic dynamics. We validate the basic reproduction number by plotting its value against associated final epidemic sizes measured from simulation and predicted by model equations for a number of set-ups. Further, we explore the effect of varying individual model parameters on the basic reproduction number. We conclude with a discussion of the significance and interpretation of the model and its relation to existing research literature. We highlight intrinsic limitations and potential extensions of the present model and outline future research considerations, both experimental and theoretical.",
+                    "citation": "R. Barnard, I. Kiss, L. Berthouze... (2018). Edge-Based Compartmental Modelling of an SIR Epidemic on a Dual-Layer Static\u2013Dynamic Multiplex Network with Tunable Clustering. Bulletin of Mathematical Biology, 80, 2698 - 2733. DOI: 10.1007/s11538-018-0484-5",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The duration, type and structure of connections between individuals in real-world populations play a crucial role in how diseases invade and spread and here, heterogeneities are incorporated into a model by considering a dual-layer static\u2013dynamic multiplex network."
+                    }
+                },
+                {
+                    "paper_title": "Multistrain edge\u2010based compartmental model on networks",
+                    "abstract": "Multistrain diseases, which are infected through individual contacts, pose severe public health threat nowadays. In this paper, we build competitive and mutative two\u2010strain edge\u2010based compartmental models using probability generation function (PGF) and pair approximation (PA). Both of them are ordinary differential equations. Their basic reproduction numbers and final size formulas are explicitly derived. We show that the formula gives a unique positive final epidemic size when the reproduction number is larger than unity. We further consider competitive and mutative multistrain diseases spreading models and compute their basic reproduction numbers. We perform numerical simulations that show some dynamical properties of the competitive and mutative two\u2010strain models.",
+                    "citation": "Jian-Ming Lv, Zhen Jin (2019). Multistrain edge\u2010based compartmental model on networks. Mathematical Methods in the Applied Sciences, 42, 1529 - 1552. DOI: 10.1002/mma.5451",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper builds competitive and mutative two\u2010strain edge\u2010based compartmental models using probability generation function (PGF) and pair approximation and shows that the formula gives a unique positive final epidemic size when the reproduction number is larger than unity."
+                    }
+                },
+                {
+                    "paper_title": "Edge-based epidemic dynamics with multiple routes of transmission on random networks",
+                    "abstract": null,
+                    "citation": "Yi Wang, Jinde Cao, Xiaodi Li... (2017). Edge-based epidemic dynamics with multiple routes of transmission on random networks. Nonlinear Dynamics, 91, 403-420. DOI: 10.1007/S11071-017-3877-3",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "A hierarchical intervention scheme based on epidemic severity in a community network",
+                    "abstract": null,
+                    "citation": "Runzi He, Xiao-feng Luo, Joshua Kiddy K. Asamoah... (2023). A hierarchical intervention scheme based on epidemic severity in a community network. Journal of Mathematical Biology, 87, 1-32. DOI: 10.1007/s00285-023-01964-y",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper quantitatively analyzed the impact of NIE on infectious disease transmission by establishing a four-dimensional SIR edge-based compartmental model with two communities and demonstrates the existence of positive equilibrium in a four-dimensional coupled system."
+                    }
+                },
+                {
+                    "paper_title": "Edge-based epidemic dynamics with multiple routes of transmission on random networks",
+                    "abstract": null,
+                    "citation": "Yi Wang, Jinde Cao, Xiaodi Li... (2017). Edge-based epidemic dynamics with multiple routes of transmission on random networks. Nonlinear Dynamics, 91, 403 - 420. DOI: 10.1007/s11071-017-3877-3",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Epidemic dynamics of influenza-like diseases spreading in complex networks",
+                    "abstract": null,
+                    "citation": "Yi Wang, Zhouchao Wei, Jinde Cao (2020). Epidemic dynamics of influenza-like diseases spreading in complex networks. Nonlinear Dynamics, 101, 1801 - 1820. DOI: 10.1007/s11071-020-05867-1",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Network epidemic models for influenza-like diseases that may have infectious force in incubative or asymptomatic stage are formulated and studied, and a gap between the parameter identification problem for influenza -like diseases or network inference and network epidemic models may be built through the results."
+                    }
+                },
+                {
+                    "paper_title": "The spread of infectious diseases from a physics perspective",
+                    "abstract": "This paper presents a theoretical investigation of the spread of infectious diseases (including Covid-19) in a population network. The central idea is that a population can actually be considered as a network of interlinked nodes. The nodes represent the members of the population, the edges between the nodes the social contacts linking 2 population members. Infections spread throughout the population along these network edges. The actual spread of infections is described within the framework of the SIR compartmental model. Special emphasis is laid on understanding and on the interpretation of phenomena in terms of concepts borrowed from condensed-matter and statistical physics. To obtain a mathematical framework that deals with the influence of the network structure and topology, the original SIR model by Kermack and McKendrick was augmented, leading to a system of differential equations that is in principle exact, but the solution of which appears to be intractable. Therefore, combined algebraic/numerical solutions are presented for simplified (approximative) cases that nevertheless capture the essentials of the effect of the network details on the spread of an infection. Solutions of this kind were successfully tested against the results of direct statistical simulations based on Monte-Carlo methods, indicating the appropriateness of the model. Expressions for the (basic) reproduction numbers in terms of the model parameters are presented, and justify some mild criticisms on the widely spread interpretation of reproduction numbers as being the number of secondary infections due to a single active infection. Throughout the entire paper, special attention is paid to the concept of herd-immunity, its nature and its definition. The model allows for obtaining an exact (algebraic) criterion for the most relevant form of herd-immunity to occur in unvaccinated populations. Analysis of the effects of vaccination leads to an even more general version of this criterion in terms of not only the model parameters but also the effectiveness of the vaccine(s) and the vaccination rate(s). This general criterion is also exact within the context of the SIR model. Furthermore it is shown that the onset of herd-immunity can be considered as a 2nd-order phase transition of the kind that is known from thermodynamics and statistical physics, thus offering a fundamentally new viewpoint on the phenomenon. The role of percolation is highlighted and extensively investigated. It is shown that the herd-immunity transition is actually related to a percolation transition, and marks therewith the transition from a regime where the cumulative infections grow into a large macroscopic cluster that spans a major part of the population, towards a regime were the cumulative infections only occur in smaller secondary clusters of limited size. It appears that percolation phenomena become particularly important in the case of (strict) lock-downs. It is also demonstrated how a system of differential equations can be obtained that accounts for the presence of such percolation phenomena. The analyses presented in this paper also provide insight in how various measures to prevent an epidemic spread of an infection work, how they can be optimised and what potentially deceptive issues have to be considered when such measures are either implemented or scaled down. Herd-immunity appears to be a particularly tricky concept in this respect. Phenomena such as a saturation of the cumulative infection number or a fade-out of the number of active infections may easily be mistaken for a stable case of herd-immunity setting in, whereas in reality such phenomena may be no more than an artefact of protective or contact-reducing measures taken, without any meaning for the vulnerability of a population at large under normal (social) conditions. On the other hand, the paper also highlights and explains the theoretical possibility of \"smothering\" an epidemic via very restrictive measures that prevent it from developing out of a limited number of initial seed-infections.",
+                    "citation": "J. J. Brabers (2022). The spread of infectious diseases from a physics perspective. Biology Methods & Protocols, 8. DOI: 10.1101/2022.06.01.22275842",
+                    "summary (tldr)": null
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

@@ -1,0 +1,374 @@
+[
+  {
+    "query": "representative initial seeding strategies for SEIR simulations on ER and scale-free networks",
+    "results": [
+      {
+        "query": "typical SEIR model parameter values in simulation studies",
+        "follow_up_questions": null,
+        "answer": "Typical SEIR simulation studies use an incubation (latent) rate σ of roughly 1 ⁄ 5 days ≈ 0.2 day⁻¹ (often quoted as 1⁄5.2 ≈ 0.19 day⁻¹), a recovery rate γ of about 1 ⁄ 2–3 days ≈ 0.33–0.5 day⁻¹ (a common value is 1⁄2.3 ≈ 0.435 day⁻¹), and a transmission rate β that is set to achieve a basic reproduction number R₀ in the range 2–3; for R₀≈2.2 this gives β≈R₀·γ≈2.2 × 0.435 ≈ 0.95 day⁻¹, while higher R₀ values (2.5–3) correspond to β≈1.1–1.3 day⁻¹. Initial conditions often start with a very small infected fraction (≈0.02 % of the population) and an exposed fraction a few times larger (e.g., three times the infected proportion).",
+        "images": [],
+        "results": [
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with ...",
+            "content": "In practical applications, such as customer journey modeling or social network analysis, you may have access to a dataset that contains timestamps or events describing how individuals or data points move between compartments. From this data, we can derive the parameters β (transmission rate), σ (incubation rate), and γ (recovery rate), which are essential for simulating the SEIR dynamics. [...] The SEIR model provides a mathematical framework to simulate the dynamics of a population moving through various stages.\n The parameters β\\, σ, and γ control the rate at which individuals move between compartments and provide insights into the system’s dynamics.\n Python simulations and animations help bring these theoretical models to life, allowing us to explore different scenarios visually. [...] This graph provides valuable insights into how the disease moves through the population. By adjusting parameters like β (transmission rate) or γ (recovery rate), you can simulate different scenarios, such as fast-spreading diseases or slower recoveries, and see how they affect the overall dynamics.\n\n## More Real-World Applications of the SEIR Model in Data Science",
+            "score": 0.784336,
+            "raw_content": null
+          },
+          {
+            "url": "https://web.pdx.edu/~gjay/teaching/mth271_2020/html/09_SEIR_model.html",
+            "title": "The SEIR model of infectious diseases",
+            "content": "$\\sigma = 1/5.2$ $\\text{days}^{-1}$,\n $\\gamma = 1/2.3$ $\\text{days}^{-1}$,\n $\\beta = R\\_0 \\gamma = 2.2 \\gamma.$\n\nFinally, let us additionally assume a scenario where 0.02% of the world's population is infected at the start of the simulation, and thrice that many are exposed. (The current number of active infections worldwide appear to be around 0.02% of the world's population.) Here are the outputs of the simulation under these values.\n\nIn : [...] Collecting the above-derived equations (and omitting the unknown/unmodeled \"$\\cdots$\"), we have the following basic SEIR model system:\n\n$$ \\begin{aligned} \\frac{dS}{dt} & = -\\frac{\\beta \\, I}{N} S, \\\\ \\frac{dE}{dt} & = \\frac{\\beta \\, I}{N} S - \\sigma E, \\\\ \\frac{dI}{dt} & = \\sigma E - \\gamma I \\\\ \\frac{dR}{dt} & = \\gamma I \\end{aligned} $$\n\nThe three critical parameters in the model are $\\beta, \\sigma,$ and $\\gamma$. [...] A recent submission to the Bulletin of WHO uses an $R\\_0$ of $2.2$, which was reported in an earlier paper, published in January 2020, in the New England Journal of Medicine. Other reported values now found in the internet seem to be higher. (Inexact parameter values are indeed one of the difficulties in dealing with real-word problems.) Nonetheless, let us continue with $R\\_0 = \\beta/\\gamma = 2.2$. Let us also use the values of $\\sigma$ and $\\gamma$ that others have used:",
+            "score": 0.6690754,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8876059/",
+            "title": "SEIR model with unreported infected population and dynamic ...",
+            "content": "Open in a new tab\n\n## 4. Simulation results\n\n### 4.1. Parameter estimation results\n\nBased on the parameter estimation Algorithm 3, we estimate the parameters and for SEIUR model in this section. Fig. 5 is the 3D error graph for different values of and .\n\nWe know that the optimal parameters can be derived from the lowest error point. For the SEIUR model, the optimal parameters are and [...] Optimal model parameters by period.\n\n| Period |  |  |\n --- \n| 1 | 0.44 | 0.36 |\n| 2 | 0.26 | 0.10 |\n| 3 | 0.10 | 0.04 |\n| 4 | 0.03 | 0.01 |\n| 5 | 0.08 | 0.03 |\n| 6 | 0.06 | 0.03 |\n| 7 | 0.11 | 0.06 |\n| 8 | 0.10 | 0.05 |\n\nOpen in a new tab\n\n### 4.2. Performance [...] For each period , we have an independent SEIUR model, and corresponding specific parameters and . The piecewise SEIUR model is shown below:\n\n|  |  |\n --- |\n|  | (10) |\n\n|  |  |\n --- |\n|  | (11) |\n\n|  |  |\n --- |\n|  | (12) |\n\n|  |  |\n --- |\n|  | (13) |\n\n|  |  |\n --- |\n|  | (14) |\n\n: Transmission rate during the period .\n\n: Removed rate during the period .\n\nOther notations have the same meaning as before and the transition diagram for period is shown in Fig. 4.",
+            "score": 0.6102915,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.medrxiv.org/content/10.1101/2025.06.27.25330398v1.full-text",
+            "title": "SEIR-Based Modelling of COVID-19 Spread in Malaysia - medRxiv",
+            "content": "good hygiene, regular hand washing, use of hand sanitizers, and disinfection practices, which modify the force of infection through parameter ᴋ, ranging from 0 (no self-protection) to 1 (complete self-protection). [...] observed in the model through parameters like movement control order (ƈ), self-protection (ᴋ), and case isolation 21. This approach is employed in this study to illustrate the impact of disease control interventions on disease trends. [...] By setting the weights for each infection, death, and control except for movement control to the same values as in Simulations 1 through 4, and keeping the maximum control levels the same, Figure 20 shows the optimal control profile with varying weights for movement control (cƈ). Four weight values were used, starting with 2,400,000,000, as the original value in Simulation 1 corresponding to the real cost of MCO 1.0 which is RM2.4 billion per day, followed by 1,000,000,000, 100,000,000, and",
+            "score": 0.5602773,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S2468042720301032",
+            "title": "Modeling and forecasting of COVID-19 using a hybrid ...",
+            "content": "data to study the properties associated with the COVID-19 pandemic to develop a dynamic hybrid model based on SEIRD and ascertainment rate with automatically selected parameters. The proposed model consists of two parts: the modified SEIRD dynamic model and ARIMA models. We fit SEIRD model parameters against historical values of infected, recovered and deceased population divided by ascertainment rate, which, in turn, is also a parameter of the model. Residuals of the first model for infected, [...] The outbreak of novel coronavirus (COVID-19) attracted worldwide attention. It has posed a significant challenge for the global economies, especially the healthcare sector. Even with a robust healthcare system, countries were not prepared for the ramifications of COVID-19. Several statistical, dynamic, and mathematical models of the COVID-19 outbreak including the SEIR model have been developed to analyze the infection its transmission dynamics. The objective of this research is to use public [...] ## Keywords\n\nCOVID 19\n\nCoronavirus\n\nSEIRD model\n\nARIMA\n\nHybrid model\n\n## Cited by (0)\n\n:   Peer review under responsibility of KeAi Communications Co., Ltd.\n\n© 2020 The Authors. Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd.",
+            "score": 0.26848432,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.71,
+        "request_id": "f5914526-5a51-4d96-9c5f-a4f12318397f"
+      },
+      {
+        "query": "typical network sizes used in SEIR model simulation studies",
+        "follow_up_questions": null,
+        "answer": "Typical SEIR simulation studies employ networks ranging from a few hundred to several thousand nodes as the base population, with 1 000 – 5 000 agents being the most common size for synthetic structures such as Barabási–Albert, small‑world, or random graphs; larger hierarchical or multilayer models often scale up to tens of thousands (e.g., 5 000‑node human‑population layers combined with 100 000‑plus dormitory or community sub‑populations), while illustrative code examples frequently use a modest 1 000‑node population to keep computation tractable.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.nature.com/articles/s41598-021-89515-7",
+            "title": "Modelling Singapore COVID-19 pandemic with a SEIR multiplex ...",
+            "content": "In the case of our temporal crowd network, we have set \\(f\\_c=1,000\\) and \\(N\\_c=50\\) for each simulated day. The parameters for the temporal social gathering network are: \\(f\\_g=400\\), \\(N\\_g = 50\\) and \\(k\\_g=8\\). [...] smaller than those of the household or workplace networks. Specifically, it is \\(p\\_c = 0.1p\\). In addition, we model social gatherings such as religious services, academic conferences, and large-scale dinner events in a similar fashion albeit with a different topology for their social interactions. On each simulated day, \\(f\\_g\\) groups with an average size of \\(N\\_g\\) agents are formed uniformly at random with the topology of scale-free temporal networks of average degree \\(k\\_g\\) as their [...] In a similar vein, we have assumed that 110, 000 foreign workers stay in the dormitories instead of the actual number of 323, 00030. Dormitories in Singapore are of different sizes, the largest sites house at least 1, 000 people30. For simplicity, we have assumed that each dormitory accommodates 1, 000 individuals in our model. As a result, our dormitory network shall consist of 110 communities. Each floor in a dormitory typically houses 120 to 180 workers23.\"),29.\"). After calibration (see the",
+            "score": 0.6097339,
+            "raw_content": null
+          },
+          {
+            "url": "https://appliednetsci.springeropen.com/articles/10.1007/s41109-024-00649-9",
+            "title": "SIR epidemics in interconnected networks: threshold curve and ...",
+            "content": "at least two other herds, mimicking the potential inter-herd transmission dynamics. For the human population layer, we employed a Barabasi–Albert (BA) network to represent a small village setting. The BA network, renowned for its scale-free properties, accurately captures the intricate social structures present in human communities, featuring 5000 nodes and 14991 undirected edges. In Fig. 15, an example of these two networks structure is presented. We extracted the parameters for the SEIR model [...] To summarize, the primary focus of our simulations was on exploring the spillover threshold. To achieve this, we selected random networks, scale-free networks, and several small-world networks with varying rewiring probabilities (ranging from 0.01 to 1). All of these networks contained the same number of nodes (1000), while the small-world networks had a slightly higher number of links. [...] In another scenario, our simulation-based study has been expanded to discuss one of the most notorious zoonotic diseases, Ebola, which is prevalent in West African countries. Unlike other infections where humans serve as dead-end hosts, Ebola can also spread through human networks. The Susceptible-Exposed-Infected-Recovered (SEIR) model is particularly apt for modeling Ebola due to its ability to incorporate the incubation period before the disease becomes transmissible. This model enhances the",
+            "score": 0.5066652,
+            "raw_content": null
+          },
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] The SEIR model provides a mathematical framework to simulate the dynamics of a population moving through various stages.\n The parameters β\\, σ, and γ control the rate at which individuals move between compartments and provide insights into the system’s dynamics.\n Python simulations and animations help bring these theoretical models to life, allowing us to explore different scenarios visually. [...] Real-world adaptations of the SEIR model can be used to analyze customer behavior, information spread in social networks, and even supply chain disruptions.",
+            "score": 0.3306662,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8876059/",
+            "title": "SEIR model with unreported infected population and dynamic ...",
+            "content": "Optimal model parameters by period.\n\n| Period |  |  |\n --- \n| 1 | 0.44 | 0.36 |\n| 2 | 0.26 | 0.10 |\n| 3 | 0.10 | 0.04 |\n| 4 | 0.03 | 0.01 |\n| 5 | 0.08 | 0.03 |\n| 6 | 0.06 | 0.03 |\n| 7 | 0.11 | 0.06 |\n| 8 | 0.10 | 0.05 |\n\nOpen in a new tab\n\n### 4.2. Performance [...] been removed from the infected, see also (#b12), (#b13) and references therein. Nowadays, the SEIR model (#b8) is widely used to analyze infectious diseases, see also (#b9), (#b20) and references therein. In this model, individuals experience a long incubation duration (the “exposed” category), such that the individual is infected but not yet symptomatic. For example, chicken pox and even vector-borne diseases such as dengue hemorrhagic fever have a long incubation duration where the individual [...] Fig. 15 shows the numerical simulation results of the piecewise SEIUR model and SEIUR model, where the result of piecewise SEIUR is obtained by combining the graphs of eight periods. It can be seen from the figure that the piecewise SEIUR model performs better than the SEIUR model. This also means that it is reasonable to divide a long periods of time into different sub-period according to policy dates, and then use the SEIUR model to simulate each period respectively.\n\n### 4.3. Error metrics",
+            "score": 0.2557598,
+            "raw_content": null
+          },
+          {
+            "url": "https://dialnet.unirioja.es/descarga/articulo/9872654.pdf",
+            "title": "[PDF] A computational model of epidemics using seirx model - Dialnet",
+            "content": "Simulation of 300 members with the SEIRX model was used with the observations of WHO of weekly cumulative occurrences, case fatality rate, mortality and Ensemble Adjustment Kalman Filter (EAKF). To make the observation to be smoothed the iterative simulation of EAKF algorithm were employed. By adjusting the EAKF , the variables and R(t) can be explicitly varied within the SEIRX model system. [...] The SEIR Model Assumptions In figure 2, The SEIR Model is employed to estimate the population’s exposure, susceptibility, infection, and recovery rates. The SEIR model’s presumptions are the same as those in the SIR model. [...] RESUMEN La epidemiología estudia la propagación y el impacto de las enfermedades infecciosas en poblaciones definidas, centrándose en factores como la tasa de transmisión, los agentes infecciosos, los periodos infecciosos y la susceptibilidad. La epidemiología computacional simula estos factores mediante modelos compartimentales básicos como Susceptible-Infectado-Recuperado (SIR), Susceptible-Expuesto-Infectado (SEI) y Susceptible-Expuesto-Infectado-Recuperado (SEIR). Sin embargo, estos modelos",
+            "score": 0.23866592,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.41,
+        "request_id": "7e7cbda9-36e1-429d-ab50-170f414d19df"
+      },
+      {
+        "query": "initial seeding strategies for SEIR simulations on ER networks",
+        "follow_up_questions": null,
+        "answer": "Initial seeding in SEIR simulations on Erdős‑Rényi (ER) networks is usually implemented by selecting a small set of nodes at time 0 and assigning them to the latent (E) compartment, while all other nodes start as susceptible (S); the number of seeds is often chosen as a fixed fraction of the population (e.g., 0.1 %–1 % of N) or as a small absolute count (e.g., 5–10 nodes for N≈10 000). Seeds can be chosen uniformly at random, which approximates an unbiased introduction of the disease, or they can be selected according to structural criteria such as high degree, betweenness, or eigenvector centrality to explore worst‑case outbreak scenarios; in practice, random seeding is the default for baseline studies, whereas centrality‑based seeding is used when evaluating targeted interventions or the impact of super‑spreader nodes.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] over which we want to predict using our modelt = np.linspace(0, 160, 160)# the SEIR model differential equationsdef deriv(t, y, N, beta, sigma, gamma): S, E, I, R = y dSdt = -beta  S  I / N dEdt = beta  S  I / N - sigma  E dIdt = sigma  E - gamma  I dRdt = gamma  I return dSdt, dEdt, dIdt, dRdt# here we set the initial conditions vectory0 = S0, E0, I0, R0# and use scipy to solve the system of differential equationssol = solve_ivp(deriv, [0, 160], y0, args=(N, beta, sigma, gamma), t_eval=t)# [...] The susceptible (S) population steadily decreases as individuals get exposed to the disease.\n The exposed (E) population rises initially as susceptible individuals become exposed but then declines as they progress into the infectious phase.\n The infected (I) population peaks after a certain period as exposed individuals become infectious, then gradually declines as they recover.",
+            "score": 0.459586,
+            "raw_content": null
+          },
+          {
+            "url": "https://pdfs.semanticscholar.org/6d1a/78800c85ae5afd5f73439167a113ef9e92b2.pdf",
+            "title": "[PDF] Microscopic Numerical Simulations of Epidemic Models on Networks",
+            "content": "4.3. Results of SEIR Model on the Erdös-Rényi Network As an example of network, we performed a simulation of the microscopic SEIR model on the ER network. In Figure 15, the temporal variations of the number of individuals for four types (S, E, I, R) are plotted. The average number of the connecting nodes per a node is ⟨k⟩= 8, and the probability p in the process 3 is 1/16. The parameters β, γ, σ are chosen to be equivalent to the case of the numerical solution of the macroscopic SEIR model [...] 4.2. Method of Microscopic Simulation of SEIR Model We can extend a microscopic simulation on a network to the case of the SEIR model.\nThe actual procedure is as follows: 1.\nGenerate a network.\n2.\nAt t = 0, an individual or individuals are infected as the latent state (E).\n3.\nA susceptible individual (S) will be infected in the latent state (E) with a probability p if a connecting individual (one of k) is symptomatically infected (I). In terms of the SEIR model, the parameter β is β = kp.\n4. [...] For the differential equations of the SEIR model, we cannot obtain the solution by employing the transformation applied to the SIR model . Thus, we show the numerical solution using the second-order Runge–Kutta method in Figure 14. The parameters were chosen as β = 0.5, 1/σ = 3.0 and 1/γ = 5.0. The number of individuals (nodes) is N = 10,000, and the initial conditions are x(0) = N1 = 9990, w(0) = N −N1 = 10, and y(0) = z(0) = 0.",
+            "score": 0.43367022,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.mdpi.com/2673-9909/3/4/45",
+            "title": "Probabilistic Procedures for SIR and SIS Epidemic Dynamics ... - MDPI",
+            "content": "In the initial instant of the procedures there must be a certain number of infected individuals, so that the disease spreads, or not. This subset of the initial infected individuals is referred as the seed set, where the number of nodes varies from one to n, and can be chosen randomly or according to some criteria, namely centrality measures, see .\n\nDefinition 3. [...] (\nn\n,\np\n)\n, with , , , and : (a) initial instant , where the infected node is a random seed; (b) for every instant the procedure verifies the step 3, i.e., the stopping condition. The epidemic spread process in the network does not start.\n\" href=\" G\n\n(\nn\n,\np\n)\n, with , and seed nodes randomly chosen; (b) Representation of susceptible-infected-susceptible individuals over 20 Erdös-Rényi networks , with , and seed nodes randomly chosen. In all simulations are considered and .\n\" href=\" G [...] At the initial instant we must consider two different cases: the node(s) initially infected (seeds) and the nodes connected to the seeds. The first three probabilities, given by Equation (16), consider the first case. Since these nodes are in the infected state, then the nodes remain infected, with probability , or recover, with probability . The other three probabilities, given by Equation (17), refer to the nodes in the neighbourhood of the seeds. In the initial instant these nodes are",
+            "score": 0.4137856,
+            "raw_content": null
+          },
+          {
+            "url": "https://faculty.sites.iastate.edu/hliu/files/inline-files/LT_cpaa.22%281%29_23.pdf",
+            "title": "Data-driven optimal control of a SEIR model for COVID-19",
+            "content": "The initial data for the forward problem is set as U0 = [N(0) −Ic(0), 0, Ic(0), 0, Dc(0)]⊤, where N(0) is the initial population of the area analyzed, Ic(0), Dc(0) are the conﬁrmed infections and deaths on the day of the ﬁrst conﬁrmed cases, respectively.\nThe initial condition of the backward problem is given in (2.6). In the present setup, the loss function g only depends on I and D, hence the initial condition is given by V n,m = [0, 0, ∂Ig(U(T)), 0, ∂Dg(U(T))]⊤. [...] The dynamical transfer of the population is governed by an ODE system ˙ S = A −βSI/N −dS, ˙ E = βSI/N −ϵE −dE, ˙ I = ϵE −µI −γI −dI, ˙ R = γI −dR, ˙ D = µI, subject to initial conditions S0, E0, I0, R0, D0. Here D(t) denotes deaths at time t, A denotes the recruitment rate of the population due to birth and immigration.\nIt is assumed that all newborns are susceptible and vertical transmission can be neglected.\nd is the natural death rate, µ is the rate for virus-related death. [...] Our strategy is to adopt a careful discretization at each step to control possible divergent behavior, instead of simply calling an existing ODE solver for Steps 1-2, and an optimization algorithm for Step 3.",
+            "score": 0.4048609,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6677279/",
+            "title": "Efficient vaccination strategies for epidemic control using network ...",
+            "content": "sample networks for each village, starting from the DMM of a randomly generated Erdős–Rényi (ER) network. The models were implemented using the CCMnet package in R (Goyal et al., 2014). To ensure MCMC convergence, we checked that the mean degree and DMM of model-generated networks were qualitatively similar to those for the empirical networks. We randomly selected 10 of the 75 empirical village networks for which the MCMC converged, and then drew 100 network samples for each from the posterior",
+            "score": 0.27693292,
+            "raw_content": null
+          }
+        ],
+        "response_time": 3.3,
+        "request_id": "ed0f783f-a2d3-4211-b5c0-786586e35fd1"
+      },
+      {
+        "query": "initial seeding strategies for SEIR simulations on scale-free networks",
+        "follow_up_questions": null,
+        "answer": "Initial seeding strategies for SEIR simulations on scale‑free networks typically fall into three main categories: (1) random seeding, where a small number of nodes are chosen uniformly at random regardless of their degree; (2) hub‑targeted seeding, in which the initial exposed or infectious individuals are placed on the highest‑degree nodes (the hubs) to exploit the network’s heterogeneous connectivity and assess worst‑case outbreak scenarios; and (3) community‑or‑centrality based seeding, which distributes seeds across distinct network modules or selects nodes with high betweenness or eigenvector centrality to capture the effect of structural bridges. Researchers often compare these approaches because the origin of the first infected nodes strongly influences the speed and extent of spread on scale‑free graphs, with hub seeding generally leading to faster and larger epidemics than random seeding, while community‑based seeding provides a middle ground that reflects more realistic introduction patterns.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://pdfs.semanticscholar.org/6d1a/78800c85ae5afd5f73439167a113ef9e92b2.pdf",
+            "title": "[PDF] Microscopic Numerical Simulations of Epidemic Models on Networks",
+            "content": "In the present paper, we study the mathematical models of epidemics, paying special attention to networks. We perform microscopic numerical simulations of the SIR and SEIR models on random and scale-free networks. We compare the results of the microscopic simulations with those of the macroscopic model described by differential equations using the same parameters, rate constants. We elucidate the role of hubs in a scale-free network and discuss the effective method of mitigation strategy. We [...] 3.5. Results of SIR Model on the Barabási-Albert Network We plot the simulational results of the microscopic SIR model on the BA network, a scale-free network, in Figure 9. We set the number of the nodes N and the average number of the connecting nodes ⟨k⟩as 10,000 and 8, respectively, which are the same as the case of the ER network. Because there is a hub structure in scale-free networks, the spread of infection may depend on the origin of the initially infected individuals. We consider two [...] The importance of the network structure in the analysis of epidemics was pointed out, and a number of studies have been done [22–28]. In connection with COVID-19, stochastic simulations of epidemic models on a scale-free network were studied aiming at showing effective mitigation strategies . The spread of COVID-19 under local quarantine measures (K-quarantine) in South Korea was modeled using the SEIR model on complex networks .",
+            "score": 0.52773094,
+            "raw_content": null
+          },
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] over which we want to predict using our modelt = np.linspace(0, 160, 160)# the SEIR model differential equationsdef deriv(t, y, N, beta, sigma, gamma): S, E, I, R = y dSdt = -beta  S  I / N dEdt = beta  S  I / N - sigma  E dIdt = sigma  E - gamma  I dRdt = gamma  I return dSdt, dEdt, dIdt, dRdt# here we set the initial conditions vectory0 = S0, E0, I0, R0# and use scipy to solve the system of differential equationssol = solve_ivp(deriv, [0, 160], y0, args=(N, beta, sigma, gamma), t_eval=t)# [...] 1. Count the number of susceptible individuals at each time point.\n2. Count the number of those individuals who became exposed within a specific period.\n3. Calculate the rate of transition from S → E.\n\nHere’s how you can estimate β:",
+            "score": 0.40797067,
+            "raw_content": null
+          },
+          {
+            "url": "https://global-sci.com/pdf/article/91805/spreading-analysis-of-an-seir-epidemic-model-with-distributed-delay-on-scale-free-network.pdf",
+            "title": "[PDF] Spreading Analysis of an SEIR Epidemic Model with Distributed ...",
+            "content": "A novel epidemic SEIR model with distributed delay on scale-free\nnetwork is proposed in this paper. The formula of the basic reproduction\nnumber $R\\_0$ for the model is given, and globally dynamic behaviours of the\nmodel are discussed. Numerical simulations are carried out to demonstrate\nthe main results. [...] A novel epidemic SEIR model with distributed delay on scale-free\nnetwork is proposed in this paper. The formula of the basic reproduction\nnumber $R\\_0$ for the model is given, and globally dynamic behaviours of the\nmodel are discussed. Numerical simulations are carried out to demonstrate\nthe main results.\n\n## Full Text\n\n## Additional Information\n\n###### Journal Article Details\n\nPublisher Name:   \nGlobal Science Press\n\nLanguage:   \nEnglish\n\nDOI: [...] GSP\n\n##### Journals\n\n##### Resources\n\n##### About Us\n\n##### Open Access\n\n##### Journals\n\n##### Resources\n\n##### About Us\n\n##### Open Access\n\n## Spreading Analysis of an SEIR Epidemic Model with Distributed Delay on Scale-Free Network\n\nSpreading Analysis of an SEIR Epidemic Model with Distributed Delay on Scale-Free Network\n\nYear:   \n2025\n\nAuthor:   \nHanwu Liu,\nZhuoyue Liu,\nFengqin Zhang\n\nJournal of Nonlinear Modeling and Analysis, Vol. 7 (2025),\nIss. 2\n:\npp. 429–438\n\n#### Abstract",
+            "score": 0.4041552,
+            "raw_content": null
+          },
+          {
+            "title": "OPTIMIZING Synonyms: 27 Similar and Opposite Words | Merriam-Webster …",
+            "url": "https://www.merriam-webster.com/thesaurus/OPTIMIZING",
+            "content": "pipelines, by designing new algorithms, proposing entirely new architectures or optimizing code.   —Yoshua Bengio, Time, 22 Oct. 2025     Running climate simulations, optimizing renewable energy networks, and streamlining the discovery of rare diseases, for instance.   —Big Think, 22 Oct. 2025     Dubai International Airport was able to add 35 flights per day by optimizing operations using artificial intelligence, The National reported.   —Kelsey Warner, semafor.com, 22 Oct. 2025 [...] Examples are automatically compiled from online sources to show current usage.   Read More  Opinions expressed in the examples do not represent those of Merriam-Webster or its editors. Send us feedback.",
+            "score": 0.027546074,
+            "raw_content": null
+          },
+          {
+            "title": "OPTIMIZING definition in American English | Collins English …",
+            "url": "https://www.collinsdictionary.com/us/dictionary/english/optimizing",
+            "content": "## optimize in British English\n\nor optimise (ˈɒptɪˌmaɪz   )\n\nverb\n\n1. (transitive)\n\nto take the full advantage of\n\n2. (transitive)\n\nto plan or carry out (an economic activity) with maximum efficiency\n\n3. (intransitive)\n\nto be optimistic\n\n4. (transitive)\n\nto write or modify (a computer program) to achieve maximum efficiency in storage capacity, time, cost, etc\n\n5. (transitive)\n\nto find the best compromise among several often conflicting requirements, as in engineering design",
+            "score": 0.02531588,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.73,
+        "request_id": "5c3eaea3-942f-497c-a0e6-423d7539663b"
+      }
+    ],
+    "agent_response": "Reason: To provide a comprehensive and accurate answer about representative initial seeding strategies for SEIR simulations on Erdős-Rényi (ER) and scale-free networks, I reviewed the search results that describe initial seeding methods, their rationale, and implications for spread dynamics on these network types.\n\nObservation: The results indicate for ER networks, initial seeds are typically selected randomly or based on centrality measures, with a small number or fraction of nodes initially exposed. For scale-free networks, three main approaches are common: random seeding, hub-targeted (high-degree nodes) seeding, and community or centrality-based seeding (such as nodes bridging communities). Each type of seeding influences the outbreak pattern and size differently, with hub seeding on scale-free networks often leading to faster, larger outbreaks.\n\nFinal Thought: I now have sufficient detailed information to summarize representative initial seeding strategies for SEIR simulations on ER and scale-free networks.\n\nFinal Answer:\n\nRepresentative initial seeding strategies for SEIR epidemic simulations differ somewhat between Erdős-Rényi (ER) random networks and scale-free networks due to their distinct structural properties:\n\n1. **Erdős-Rényi (ER) Networks**:  \n   - **Random Seeding**: A small number or fraction (e.g., 0.1%–1% of the total nodes) of nodes are randomly selected and assigned to the exposed (E) compartment at the start. This approach reflects an unbiased introduction of the disease and is commonly used as a baseline scenario.  \n   - **Centrality-based Seeding**: Alternatively, initial seeds can be assigned to nodes with high network centrality measures such as degree, betweenness, or eigenvector centrality. This approach simulates worst-case scenarios by starting the infection at structurally important nodes that may accelerate spread.\n\n2. **Scale-Free Networks**:  \n   Given the heterogeneous degree distribution characteristic of scale-free networks (presence of hubs), seeding strategies include:  \n   - **Random Seeding**: Selecting initial infected nodes uniformly at random from the network. This addresses unbiased infection introduction.  \n   - **Hub-Targeted Seeding**: Infecting the highest-degree nodes (hubs). Since hubs are highly connected, seeding them often leads to faster and larger outbreaks, useful for worst-case analysis or evaluating interventions targeting hubs.  \n   - **Community or Centrality-Based Seeding**: Placing initial seeds across different network modules or nodes with high betweenness or eigenvector centrality to simulate more realistic introduction patterns that consider network structure beyond degree alone.\n\nIn practice, researchers choose seeding strategies depending on the simulation purpose—random seeding for baseline dynamics, hub or centrality-based seeding for stress-testing or intervention studies. The initial choice of seeds strongly affects epidemic timing, peak size, and overall outbreak extent, especially on scale-free networks where hubs dominate connectivity patterns. For ER networks, which are more homogeneous, the effect of seed placement is less extreme but still relevant.\n\nThus, representative seeding strategies across ER and scale-free networks involve random, degree-based (hub), and centrality/community-informed selections to explore a range of plausible epidemic outbreak scenarios in SEIR simulations."
+  },
+  {
+    "query": "typical SEIR model parameter values and network sizes in simulation studies",
+    "results": [
+      {
+        "query": "typical SEIR model parameter values in simulation studies",
+        "follow_up_questions": null,
+        "answer": "Typical SEIR simulation studies use an incubation (latent) rate σ of roughly 1 ⁄ 5 days ≈ 0.2 day⁻¹ (often quoted as 1⁄5.2 ≈ 0.19 day⁻¹), a recovery rate γ of about 1 ⁄ 2–3 days ≈ 0.33–0.5 day⁻¹ (a common value is 1⁄2.3 ≈ 0.435 day⁻¹), and a transmission rate β that is set to achieve a basic reproduction number R₀ in the range 2–3; for R₀≈2.2 this gives β≈R₀·γ≈2.2 × 0.435 ≈ 0.95 day⁻¹, while higher R₀ values (2.5–3) correspond to β≈1.1–1.3 day⁻¹. Initial conditions often start with a very small infected fraction (≈0.02 % of the population) and an exposed fraction a few times larger (e.g., three times the infected proportion).",
+        "images": [],
+        "results": [
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with ...",
+            "content": "In practical applications, such as customer journey modeling or social network analysis, you may have access to a dataset that contains timestamps or events describing how individuals or data points move between compartments. From this data, we can derive the parameters β (transmission rate), σ (incubation rate), and γ (recovery rate), which are essential for simulating the SEIR dynamics. [...] The SEIR model provides a mathematical framework to simulate the dynamics of a population moving through various stages.\n The parameters β\\, σ, and γ control the rate at which individuals move between compartments and provide insights into the system’s dynamics.\n Python simulations and animations help bring these theoretical models to life, allowing us to explore different scenarios visually. [...] This graph provides valuable insights into how the disease moves through the population. By adjusting parameters like β (transmission rate) or γ (recovery rate), you can simulate different scenarios, such as fast-spreading diseases or slower recoveries, and see how they affect the overall dynamics.\n\n## More Real-World Applications of the SEIR Model in Data Science",
+            "score": 0.784336,
+            "raw_content": null
+          },
+          {
+            "url": "https://web.pdx.edu/~gjay/teaching/mth271_2020/html/09_SEIR_model.html",
+            "title": "The SEIR model of infectious diseases",
+            "content": "$\\sigma = 1/5.2$ $\\text{days}^{-1}$,\n $\\gamma = 1/2.3$ $\\text{days}^{-1}$,\n $\\beta = R\\_0 \\gamma = 2.2 \\gamma.$\n\nFinally, let us additionally assume a scenario where 0.02% of the world's population is infected at the start of the simulation, and thrice that many are exposed. (The current number of active infections worldwide appear to be around 0.02% of the world's population.) Here are the outputs of the simulation under these values.\n\nIn : [...] Collecting the above-derived equations (and omitting the unknown/unmodeled \"$\\cdots$\"), we have the following basic SEIR model system:\n\n$$ \\begin{aligned} \\frac{dS}{dt} & = -\\frac{\\beta \\, I}{N} S, \\\\ \\frac{dE}{dt} & = \\frac{\\beta \\, I}{N} S - \\sigma E, \\\\ \\frac{dI}{dt} & = \\sigma E - \\gamma I \\\\ \\frac{dR}{dt} & = \\gamma I \\end{aligned} $$\n\nThe three critical parameters in the model are $\\beta, \\sigma,$ and $\\gamma$. [...] A recent submission to the Bulletin of WHO uses an $R\\_0$ of $2.2$, which was reported in an earlier paper, published in January 2020, in the New England Journal of Medicine. Other reported values now found in the internet seem to be higher. (Inexact parameter values are indeed one of the difficulties in dealing with real-word problems.) Nonetheless, let us continue with $R\\_0 = \\beta/\\gamma = 2.2$. Let us also use the values of $\\sigma$ and $\\gamma$ that others have used:",
+            "score": 0.6690754,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8876059/",
+            "title": "SEIR model with unreported infected population and dynamic ...",
+            "content": "Open in a new tab\n\n## 4. Simulation results\n\n### 4.1. Parameter estimation results\n\nBased on the parameter estimation Algorithm 3, we estimate the parameters and for SEIUR model in this section. Fig. 5 is the 3D error graph for different values of and .\n\nWe know that the optimal parameters can be derived from the lowest error point. For the SEIUR model, the optimal parameters are and [...] Optimal model parameters by period.\n\n| Period |  |  |\n --- \n| 1 | 0.44 | 0.36 |\n| 2 | 0.26 | 0.10 |\n| 3 | 0.10 | 0.04 |\n| 4 | 0.03 | 0.01 |\n| 5 | 0.08 | 0.03 |\n| 6 | 0.06 | 0.03 |\n| 7 | 0.11 | 0.06 |\n| 8 | 0.10 | 0.05 |\n\nOpen in a new tab\n\n### 4.2. Performance [...] For each period , we have an independent SEIUR model, and corresponding specific parameters and . The piecewise SEIUR model is shown below:\n\n|  |  |\n --- |\n|  | (10) |\n\n|  |  |\n --- |\n|  | (11) |\n\n|  |  |\n --- |\n|  | (12) |\n\n|  |  |\n --- |\n|  | (13) |\n\n|  |  |\n --- |\n|  | (14) |\n\n: Transmission rate during the period .\n\n: Removed rate during the period .\n\nOther notations have the same meaning as before and the transition diagram for period is shown in Fig. 4.",
+            "score": 0.6102915,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.medrxiv.org/content/10.1101/2025.06.27.25330398v1.full-text",
+            "title": "SEIR-Based Modelling of COVID-19 Spread in Malaysia - medRxiv",
+            "content": "good hygiene, regular hand washing, use of hand sanitizers, and disinfection practices, which modify the force of infection through parameter ᴋ, ranging from 0 (no self-protection) to 1 (complete self-protection). [...] observed in the model through parameters like movement control order (ƈ), self-protection (ᴋ), and case isolation 21. This approach is employed in this study to illustrate the impact of disease control interventions on disease trends. [...] By setting the weights for each infection, death, and control except for movement control to the same values as in Simulations 1 through 4, and keeping the maximum control levels the same, Figure 20 shows the optimal control profile with varying weights for movement control (cƈ). Four weight values were used, starting with 2,400,000,000, as the original value in Simulation 1 corresponding to the real cost of MCO 1.0 which is RM2.4 billion per day, followed by 1,000,000,000, 100,000,000, and",
+            "score": 0.5602773,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S2468042720301032",
+            "title": "Modeling and forecasting of COVID-19 using a hybrid ...",
+            "content": "data to study the properties associated with the COVID-19 pandemic to develop a dynamic hybrid model based on SEIRD and ascertainment rate with automatically selected parameters. The proposed model consists of two parts: the modified SEIRD dynamic model and ARIMA models. We fit SEIRD model parameters against historical values of infected, recovered and deceased population divided by ascertainment rate, which, in turn, is also a parameter of the model. Residuals of the first model for infected, [...] The outbreak of novel coronavirus (COVID-19) attracted worldwide attention. It has posed a significant challenge for the global economies, especially the healthcare sector. Even with a robust healthcare system, countries were not prepared for the ramifications of COVID-19. Several statistical, dynamic, and mathematical models of the COVID-19 outbreak including the SEIR model have been developed to analyze the infection its transmission dynamics. The objective of this research is to use public [...] ## Keywords\n\nCOVID 19\n\nCoronavirus\n\nSEIRD model\n\nARIMA\n\nHybrid model\n\n## Cited by (0)\n\n:   Peer review under responsibility of KeAi Communications Co., Ltd.\n\n© 2020 The Authors. Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd.",
+            "score": 0.26848432,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.71,
+        "request_id": "f5914526-5a51-4d96-9c5f-a4f12318397f"
+      },
+      {
+        "query": "typical network sizes used in SEIR model simulation studies",
+        "follow_up_questions": null,
+        "answer": "Typical SEIR simulation studies employ networks ranging from a few hundred to several thousand nodes as the base population, with 1 000 – 5 000 agents being the most common size for synthetic structures such as Barabási–Albert, small‑world, or random graphs; larger hierarchical or multilayer models often scale up to tens of thousands (e.g., 5 000‑node human‑population layers combined with 100 000‑plus dormitory or community sub‑populations), while illustrative code examples frequently use a modest 1 000‑node population to keep computation tractable.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.nature.com/articles/s41598-021-89515-7",
+            "title": "Modelling Singapore COVID-19 pandemic with a SEIR multiplex ...",
+            "content": "In the case of our temporal crowd network, we have set \\(f\\_c=1,000\\) and \\(N\\_c=50\\) for each simulated day. The parameters for the temporal social gathering network are: \\(f\\_g=400\\), \\(N\\_g = 50\\) and \\(k\\_g=8\\). [...] smaller than those of the household or workplace networks. Specifically, it is \\(p\\_c = 0.1p\\). In addition, we model social gatherings such as religious services, academic conferences, and large-scale dinner events in a similar fashion albeit with a different topology for their social interactions. On each simulated day, \\(f\\_g\\) groups with an average size of \\(N\\_g\\) agents are formed uniformly at random with the topology of scale-free temporal networks of average degree \\(k\\_g\\) as their [...] In a similar vein, we have assumed that 110, 000 foreign workers stay in the dormitories instead of the actual number of 323, 00030. Dormitories in Singapore are of different sizes, the largest sites house at least 1, 000 people30. For simplicity, we have assumed that each dormitory accommodates 1, 000 individuals in our model. As a result, our dormitory network shall consist of 110 communities. Each floor in a dormitory typically houses 120 to 180 workers23.\"),29.\"). After calibration (see the",
+            "score": 0.6097339,
+            "raw_content": null
+          },
+          {
+            "url": "https://appliednetsci.springeropen.com/articles/10.1007/s41109-024-00649-9",
+            "title": "SIR epidemics in interconnected networks: threshold curve and ...",
+            "content": "at least two other herds, mimicking the potential inter-herd transmission dynamics. For the human population layer, we employed a Barabasi–Albert (BA) network to represent a small village setting. The BA network, renowned for its scale-free properties, accurately captures the intricate social structures present in human communities, featuring 5000 nodes and 14991 undirected edges. In Fig. 15, an example of these two networks structure is presented. We extracted the parameters for the SEIR model [...] To summarize, the primary focus of our simulations was on exploring the spillover threshold. To achieve this, we selected random networks, scale-free networks, and several small-world networks with varying rewiring probabilities (ranging from 0.01 to 1). All of these networks contained the same number of nodes (1000), while the small-world networks had a slightly higher number of links. [...] In another scenario, our simulation-based study has been expanded to discuss one of the most notorious zoonotic diseases, Ebola, which is prevalent in West African countries. Unlike other infections where humans serve as dead-end hosts, Ebola can also spread through human networks. The Susceptible-Exposed-Infected-Recovered (SEIR) model is particularly apt for modeling Ebola due to its ability to incorporate the incubation period before the disease becomes transmissible. This model enhances the",
+            "score": 0.5066652,
+            "raw_content": null
+          },
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] The SEIR model provides a mathematical framework to simulate the dynamics of a population moving through various stages.\n The parameters β\\, σ, and γ control the rate at which individuals move between compartments and provide insights into the system’s dynamics.\n Python simulations and animations help bring these theoretical models to life, allowing us to explore different scenarios visually. [...] Real-world adaptations of the SEIR model can be used to analyze customer behavior, information spread in social networks, and even supply chain disruptions.",
+            "score": 0.3306662,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8876059/",
+            "title": "SEIR model with unreported infected population and dynamic ...",
+            "content": "Optimal model parameters by period.\n\n| Period |  |  |\n --- \n| 1 | 0.44 | 0.36 |\n| 2 | 0.26 | 0.10 |\n| 3 | 0.10 | 0.04 |\n| 4 | 0.03 | 0.01 |\n| 5 | 0.08 | 0.03 |\n| 6 | 0.06 | 0.03 |\n| 7 | 0.11 | 0.06 |\n| 8 | 0.10 | 0.05 |\n\nOpen in a new tab\n\n### 4.2. Performance [...] been removed from the infected, see also (#b12), (#b13) and references therein. Nowadays, the SEIR model (#b8) is widely used to analyze infectious diseases, see also (#b9), (#b20) and references therein. In this model, individuals experience a long incubation duration (the “exposed” category), such that the individual is infected but not yet symptomatic. For example, chicken pox and even vector-borne diseases such as dengue hemorrhagic fever have a long incubation duration where the individual [...] Fig. 15 shows the numerical simulation results of the piecewise SEIUR model and SEIUR model, where the result of piecewise SEIUR is obtained by combining the graphs of eight periods. It can be seen from the figure that the piecewise SEIUR model performs better than the SEIUR model. This also means that it is reasonable to divide a long periods of time into different sub-period according to policy dates, and then use the SEIUR model to simulate each period respectively.\n\n### 4.3. Error metrics",
+            "score": 0.2557598,
+            "raw_content": null
+          },
+          {
+            "url": "https://dialnet.unirioja.es/descarga/articulo/9872654.pdf",
+            "title": "[PDF] A computational model of epidemics using seirx model - Dialnet",
+            "content": "Simulation of 300 members with the SEIRX model was used with the observations of WHO of weekly cumulative occurrences, case fatality rate, mortality and Ensemble Adjustment Kalman Filter (EAKF). To make the observation to be smoothed the iterative simulation of EAKF algorithm were employed. By adjusting the EAKF , the variables and R(t) can be explicitly varied within the SEIRX model system. [...] The SEIR Model Assumptions In figure 2, The SEIR Model is employed to estimate the population’s exposure, susceptibility, infection, and recovery rates. The SEIR model’s presumptions are the same as those in the SIR model. [...] RESUMEN La epidemiología estudia la propagación y el impacto de las enfermedades infecciosas en poblaciones definidas, centrándose en factores como la tasa de transmisión, los agentes infecciosos, los periodos infecciosos y la susceptibilidad. La epidemiología computacional simula estos factores mediante modelos compartimentales básicos como Susceptible-Infectado-Recuperado (SIR), Susceptible-Expuesto-Infectado (SEI) y Susceptible-Expuesto-Infectado-Recuperado (SEIR). Sin embargo, estos modelos",
+            "score": 0.23866592,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.41,
+        "request_id": "7e7cbda9-36e1-429d-ab50-170f414d19df"
+      },
+      {
+        "query": "initial seeding strategies for SEIR simulations on ER networks",
+        "follow_up_questions": null,
+        "answer": "Initial seeding in SEIR simulations on Erdős‑Rényi (ER) networks is usually implemented by selecting a small set of nodes at time 0 and assigning them to the latent (E) compartment, while all other nodes start as susceptible (S); the number of seeds is often chosen as a fixed fraction of the population (e.g., 0.1 %–1 % of N) or as a small absolute count (e.g., 5–10 nodes for N≈10 000). Seeds can be chosen uniformly at random, which approximates an unbiased introduction of the disease, or they can be selected according to structural criteria such as high degree, betweenness, or eigenvector centrality to explore worst‑case outbreak scenarios; in practice, random seeding is the default for baseline studies, whereas centrality‑based seeding is used when evaluating targeted interventions or the impact of super‑spreader nodes.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] over which we want to predict using our modelt = np.linspace(0, 160, 160)# the SEIR model differential equationsdef deriv(t, y, N, beta, sigma, gamma): S, E, I, R = y dSdt = -beta  S  I / N dEdt = beta  S  I / N - sigma  E dIdt = sigma  E - gamma  I dRdt = gamma  I return dSdt, dEdt, dIdt, dRdt# here we set the initial conditions vectory0 = S0, E0, I0, R0# and use scipy to solve the system of differential equationssol = solve_ivp(deriv, [0, 160], y0, args=(N, beta, sigma, gamma), t_eval=t)# [...] The susceptible (S) population steadily decreases as individuals get exposed to the disease.\n The exposed (E) population rises initially as susceptible individuals become exposed but then declines as they progress into the infectious phase.\n The infected (I) population peaks after a certain period as exposed individuals become infectious, then gradually declines as they recover.",
+            "score": 0.459586,
+            "raw_content": null
+          },
+          {
+            "url": "https://pdfs.semanticscholar.org/6d1a/78800c85ae5afd5f73439167a113ef9e92b2.pdf",
+            "title": "[PDF] Microscopic Numerical Simulations of Epidemic Models on Networks",
+            "content": "4.3. Results of SEIR Model on the Erdös-Rényi Network As an example of network, we performed a simulation of the microscopic SEIR model on the ER network. In Figure 15, the temporal variations of the number of individuals for four types (S, E, I, R) are plotted. The average number of the connecting nodes per a node is ⟨k⟩= 8, and the probability p in the process 3 is 1/16. The parameters β, γ, σ are chosen to be equivalent to the case of the numerical solution of the macroscopic SEIR model [...] 4.2. Method of Microscopic Simulation of SEIR Model We can extend a microscopic simulation on a network to the case of the SEIR model.\nThe actual procedure is as follows: 1.\nGenerate a network.\n2.\nAt t = 0, an individual or individuals are infected as the latent state (E).\n3.\nA susceptible individual (S) will be infected in the latent state (E) with a probability p if a connecting individual (one of k) is symptomatically infected (I). In terms of the SEIR model, the parameter β is β = kp.\n4. [...] For the differential equations of the SEIR model, we cannot obtain the solution by employing the transformation applied to the SIR model . Thus, we show the numerical solution using the second-order Runge–Kutta method in Figure 14. The parameters were chosen as β = 0.5, 1/σ = 3.0 and 1/γ = 5.0. The number of individuals (nodes) is N = 10,000, and the initial conditions are x(0) = N1 = 9990, w(0) = N −N1 = 10, and y(0) = z(0) = 0.",
+            "score": 0.43367022,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.mdpi.com/2673-9909/3/4/45",
+            "title": "Probabilistic Procedures for SIR and SIS Epidemic Dynamics ... - MDPI",
+            "content": "In the initial instant of the procedures there must be a certain number of infected individuals, so that the disease spreads, or not. This subset of the initial infected individuals is referred as the seed set, where the number of nodes varies from one to n, and can be chosen randomly or according to some criteria, namely centrality measures, see .\n\nDefinition 3. [...] (\nn\n,\np\n)\n, with , , , and : (a) initial instant , where the infected node is a random seed; (b) for every instant the procedure verifies the step 3, i.e., the stopping condition. The epidemic spread process in the network does not start.\n\" href=\" G\n\n(\nn\n,\np\n)\n, with , and seed nodes randomly chosen; (b) Representation of susceptible-infected-susceptible individuals over 20 Erdös-Rényi networks , with , and seed nodes randomly chosen. In all simulations are considered and .\n\" href=\" G [...] At the initial instant we must consider two different cases: the node(s) initially infected (seeds) and the nodes connected to the seeds. The first three probabilities, given by Equation (16), consider the first case. Since these nodes are in the infected state, then the nodes remain infected, with probability , or recover, with probability . The other three probabilities, given by Equation (17), refer to the nodes in the neighbourhood of the seeds. In the initial instant these nodes are",
+            "score": 0.4137856,
+            "raw_content": null
+          },
+          {
+            "url": "https://faculty.sites.iastate.edu/hliu/files/inline-files/LT_cpaa.22%281%29_23.pdf",
+            "title": "Data-driven optimal control of a SEIR model for COVID-19",
+            "content": "The initial data for the forward problem is set as U0 = [N(0) −Ic(0), 0, Ic(0), 0, Dc(0)]⊤, where N(0) is the initial population of the area analyzed, Ic(0), Dc(0) are the conﬁrmed infections and deaths on the day of the ﬁrst conﬁrmed cases, respectively.\nThe initial condition of the backward problem is given in (2.6). In the present setup, the loss function g only depends on I and D, hence the initial condition is given by V n,m = [0, 0, ∂Ig(U(T)), 0, ∂Dg(U(T))]⊤. [...] The dynamical transfer of the population is governed by an ODE system ˙ S = A −βSI/N −dS, ˙ E = βSI/N −ϵE −dE, ˙ I = ϵE −µI −γI −dI, ˙ R = γI −dR, ˙ D = µI, subject to initial conditions S0, E0, I0, R0, D0. Here D(t) denotes deaths at time t, A denotes the recruitment rate of the population due to birth and immigration.\nIt is assumed that all newborns are susceptible and vertical transmission can be neglected.\nd is the natural death rate, µ is the rate for virus-related death. [...] Our strategy is to adopt a careful discretization at each step to control possible divergent behavior, instead of simply calling an existing ODE solver for Steps 1-2, and an optimization algorithm for Step 3.",
+            "score": 0.4048609,
+            "raw_content": null
+          },
+          {
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6677279/",
+            "title": "Efficient vaccination strategies for epidemic control using network ...",
+            "content": "sample networks for each village, starting from the DMM of a randomly generated Erdős–Rényi (ER) network. The models were implemented using the CCMnet package in R (Goyal et al., 2014). To ensure MCMC convergence, we checked that the mean degree and DMM of model-generated networks were qualitatively similar to those for the empirical networks. We randomly selected 10 of the 75 empirical village networks for which the MCMC converged, and then drew 100 network samples for each from the posterior",
+            "score": 0.27693292,
+            "raw_content": null
+          }
+        ],
+        "response_time": 3.3,
+        "request_id": "ed0f783f-a2d3-4211-b5c0-786586e35fd1"
+      },
+      {
+        "query": "initial seeding strategies for SEIR simulations on scale-free networks",
+        "follow_up_questions": null,
+        "answer": "Initial seeding strategies for SEIR simulations on scale‑free networks typically fall into three main categories: (1) random seeding, where a small number of nodes are chosen uniformly at random regardless of their degree; (2) hub‑targeted seeding, in which the initial exposed or infectious individuals are placed on the highest‑degree nodes (the hubs) to exploit the network’s heterogeneous connectivity and assess worst‑case outbreak scenarios; and (3) community‑or‑centrality based seeding, which distributes seeds across distinct network modules or selects nodes with high betweenness or eigenvector centrality to capture the effect of structural bridges. Researchers often compare these approaches because the origin of the first infected nodes strongly influences the speed and extent of spread on scale‑free graphs, with hub seeding generally leading to faster and larger epidemics than random seeding, while community‑based seeding provides a middle ground that reflects more realistic introduction patterns.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://pdfs.semanticscholar.org/6d1a/78800c85ae5afd5f73439167a113ef9e92b2.pdf",
+            "title": "[PDF] Microscopic Numerical Simulations of Epidemic Models on Networks",
+            "content": "In the present paper, we study the mathematical models of epidemics, paying special attention to networks. We perform microscopic numerical simulations of the SIR and SEIR models on random and scale-free networks. We compare the results of the microscopic simulations with those of the macroscopic model described by differential equations using the same parameters, rate constants. We elucidate the role of hubs in a scale-free network and discuss the effective method of mitigation strategy. We [...] 3.5. Results of SIR Model on the Barabási-Albert Network We plot the simulational results of the microscopic SIR model on the BA network, a scale-free network, in Figure 9. We set the number of the nodes N and the average number of the connecting nodes ⟨k⟩as 10,000 and 8, respectively, which are the same as the case of the ER network. Because there is a hub structure in scale-free networks, the spread of infection may depend on the origin of the initially infected individuals. We consider two [...] The importance of the network structure in the analysis of epidemics was pointed out, and a number of studies have been done [22–28]. In connection with COVID-19, stochastic simulations of epidemic models on a scale-free network were studied aiming at showing effective mitigation strategies . The spread of COVID-19 under local quarantine measures (K-quarantine) in South Korea was modeled using the SEIR model on complex networks .",
+            "score": 0.52773094,
+            "raw_content": null
+          },
+          {
+            "url": "https://medium.com/pythoneers/mastering-the-seir-model-a-comprehensive-guide-with-python-code-and-real-world-applications-da7584a4fb23",
+            "title": "Mastering the SEIR Model: A Comprehensive Guide with Python ...",
+            "content": "import numpy as npimport matplotlib.pyplot as pltfrom scipy.integrate import solve_ivp# theotal population we are modeling - NN = 1000# the initial number of infected and recovered individuals in our dataI0, R0 = 1, 0# the initial number of exposed individuals in our dataE0 = 0# everyone else, S0, is susceptible to infection initiallyS0 = N - I0 - R0 - E0# the contact rate, beta, incubation rate, sigma, and mean recovery rate, gammabeta, sigma, gamma = 0.3, 1/5.2, 1/10# the time points (days) [...] over which we want to predict using our modelt = np.linspace(0, 160, 160)# the SEIR model differential equationsdef deriv(t, y, N, beta, sigma, gamma): S, E, I, R = y dSdt = -beta  S  I / N dEdt = beta  S  I / N - sigma  E dIdt = sigma  E - gamma  I dRdt = gamma  I return dSdt, dEdt, dIdt, dRdt# here we set the initial conditions vectory0 = S0, E0, I0, R0# and use scipy to solve the system of differential equationssol = solve_ivp(deriv, [0, 160], y0, args=(N, beta, sigma, gamma), t_eval=t)# [...] 1. Count the number of susceptible individuals at each time point.\n2. Count the number of those individuals who became exposed within a specific period.\n3. Calculate the rate of transition from S → E.\n\nHere’s how you can estimate β:",
+            "score": 0.40797067,
+            "raw_content": null
+          },
+          {
+            "url": "https://global-sci.com/pdf/article/91805/spreading-analysis-of-an-seir-epidemic-model-with-distributed-delay-on-scale-free-network.pdf",
+            "title": "[PDF] Spreading Analysis of an SEIR Epidemic Model with Distributed ...",
+            "content": "A novel epidemic SEIR model with distributed delay on scale-free\nnetwork is proposed in this paper. The formula of the basic reproduction\nnumber $R\\_0$ for the model is given, and globally dynamic behaviours of the\nmodel are discussed. Numerical simulations are carried out to demonstrate\nthe main results. [...] A novel epidemic SEIR model with distributed delay on scale-free\nnetwork is proposed in this paper. The formula of the basic reproduction\nnumber $R\\_0$ for the model is given, and globally dynamic behaviours of the\nmodel are discussed. Numerical simulations are carried out to demonstrate\nthe main results.\n\n## Full Text\n\n## Additional Information\n\n###### Journal Article Details\n\nPublisher Name:   \nGlobal Science Press\n\nLanguage:   \nEnglish\n\nDOI: [...] GSP\n\n##### Journals\n\n##### Resources\n\n##### About Us\n\n##### Open Access\n\n##### Journals\n\n##### Resources\n\n##### About Us\n\n##### Open Access\n\n## Spreading Analysis of an SEIR Epidemic Model with Distributed Delay on Scale-Free Network\n\nSpreading Analysis of an SEIR Epidemic Model with Distributed Delay on Scale-Free Network\n\nYear:   \n2025\n\nAuthor:   \nHanwu Liu,\nZhuoyue Liu,\nFengqin Zhang\n\nJournal of Nonlinear Modeling and Analysis, Vol. 7 (2025),\nIss. 2\n:\npp. 429–438\n\n#### Abstract",
+            "score": 0.4041552,
+            "raw_content": null
+          },
+          {
+            "title": "OPTIMIZING Synonyms: 27 Similar and Opposite Words | Merriam-Webster …",
+            "url": "https://www.merriam-webster.com/thesaurus/OPTIMIZING",
+            "content": "pipelines, by designing new algorithms, proposing entirely new architectures or optimizing code.   —Yoshua Bengio, Time, 22 Oct. 2025     Running climate simulations, optimizing renewable energy networks, and streamlining the discovery of rare diseases, for instance.   —Big Think, 22 Oct. 2025     Dubai International Airport was able to add 35 flights per day by optimizing operations using artificial intelligence, The National reported.   —Kelsey Warner, semafor.com, 22 Oct. 2025 [...] Examples are automatically compiled from online sources to show current usage.   Read More  Opinions expressed in the examples do not represent those of Merriam-Webster or its editors. Send us feedback.",
+            "score": 0.027546074,
+            "raw_content": null
+          },
+          {
+            "title": "OPTIMIZING definition in American English | Collins English …",
+            "url": "https://www.collinsdictionary.com/us/dictionary/english/optimizing",
+            "content": "## optimize in British English\n\nor optimise (ˈɒptɪˌmaɪz   )\n\nverb\n\n1. (transitive)\n\nto take the full advantage of\n\n2. (transitive)\n\nto plan or carry out (an economic activity) with maximum efficiency\n\n3. (intransitive)\n\nto be optimistic\n\n4. (transitive)\n\nto write or modify (a computer program) to achieve maximum efficiency in storage capacity, time, cost, etc\n\n5. (transitive)\n\nto find the best compromise among several often conflicting requirements, as in engineering design",
+            "score": 0.02531588,
+            "raw_content": null
+          }
+        ],
+        "response_time": 4.73,
+        "request_id": "5c3eaea3-942f-497c-a0e6-423d7539663b"
+      }
+    ],
+    "agent_response": "Reason: To answer the user question about typical SEIR model parameter values and network sizes in simulation studies, I need to extract detailed typical parameter values used such as incidence rate, recovery rate, transmission rate, and starting conditions. Alongside this, I need to find typical network population sizes (number of nodes or agents) used in simulations for realistic or synthetic networks. This information will provide a comprehensive view of typical simulation setups.\n\nAction: I have already performed two parallel searches: one for typical SEIR parameter values and one for network sizes used in SEIR simulation studies.\n\nObservation: \n- Typical SEIR parameter values include:\n  - Incubation (latent) rate (σ) around 1/5 days ≈ 0.2 day⁻¹,\n  - Recovery rate (γ) about 1/2.3 days ≈ 0.435 day⁻¹,\n  - Transmission rate (β) set to give an R0 (basic reproduction number) around 2-3, β typically ranging 0.95 to 1.3 day⁻¹,\n  - Initial infected fraction very low (~0.02%) with exposed fraction a few times larger (e.g., 3x infected).\n- Typical network sizes used in SEIR simulations vary from a few hundred to several thousand nodes. Common are 1,000 to 5,000 nodes for simple synthetic networks (e.g., Barabási-Albert, small-world, random graphs). Larger hierarchical or multilayer models can run tens of thousands of nodes, such as several thousand human-population nodes plus large subpopulation nodes in dormitories or communities.\n\nFinal Thought: The typical SEIR model parameters and starting conditions in simulation studies align with incubation around 5 days, recovery around 2-3 days, and transmission rates set according to R0 values between 2 and 3. Population network sizes for simulations are often in the range of 1,000 to 5,000 nodes, though more complex models incorporate tens of thousands of agents. This provides a realistic and computationally feasible modeling scope for studying infectious disease dynamics using SEIR frameworks.\n\nFinal Answer: \n\nIn typical SEIR simulation studies, parameter values often used are:\n\n- Incubation (latent) rate (σ): approximately 1/5 days (0.19–0.2 per day),\n- Recovery rate (γ): approximately 1/2.3 days (around 0.43–0.5 per day),\n- Transmission rate (β): set to achieve a basic reproduction number (R₀) typically between 2 and 3. For example, with R₀ = 2.2 and γ = 0.435, β ≈ 0.95 per day; higher R₀ values (2.5–3) correspond to β in the range 1.1 to 1.3 per day,\n- Initial conditions often start with a small fraction infected (~0.02% of the population) and an exposed fraction several times larger (e.g., three times the infected proportion).\n\nRegarding network sizes for SEIR model simulations:\n\n- Simulation studies commonly use network sizes of around 1,000 to 5,000 nodes (agents) for synthetic population structures such as Barabási-Albert scale-free graphs, small-world networks, or random graphs,\n- Larger, more complex or multilayer network models may scale up to tens of thousands of nodes, for example, combining a ~5,000-node human population layer with 100,000+ nodes representing community or dormitory subpopulations,\n- Simpler illustrative examples and teaching codes often use ~1,000 nodes to keep computational demand manageable.\n\nTogether, these parameter values and network sizes enable researchers to realistically simulate the spread of infectious diseases in a computationally feasible manner, balancing complexity and tractability in SEIR modeling studies."
+  }
+]

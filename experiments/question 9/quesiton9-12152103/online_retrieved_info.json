@@ -1,0 +1,98 @@
+[
+  {
+    "query": "Typical transmission (beta) and liquidation (gamma) rates in financial contagion (liquidity crisis) network simulations, especially for core-periphery banking networks",
+    "results": [
+      {
+        "query": "typical transmission rate beta in financial contagion liquidity crisis network simulations core-periphery banking networks",
+        "follow_up_questions": null,
+        "answer": "In most agent‑based and differential‑equation simulations of liquidity‑driven financial contagion on core‑periphery interbank networks, researchers calibrate the transmission‑rate parameter β to be on the order of a few‑tenths per time step—commonly setting β≈0.25–0.35 (with 0.30 often used as the benchmark value) to capture the rapid but not instantaneous spread of distress from a failing peripheral bank to core institutions and across the network.",
+        "images": [],
+        "results": [
+          {
+            "url": "https://finance.wharton.upenn.edu/~wangchj/papers/CorePeriphery_Wang.pdf",
+            "title": "Core-Periphery Trading Networks",
+            "content": "3 𝑑1 𝑑2 𝑑3 Figure 2: An example of a core-periphery network with 3 dealers and 20 buyside firms Many studies4 have argued that recent illiquidity in bond markets has been worsened by crisis-induced regulations (such as the Volcker Rule) and higher bank capital requirements, which have increased dealers’ cost of accessing their balance sheets. My results suggest that, aside from financial stability benefits (which I do not model), weighting capital requirements by asset liquidity can foster more [...] equilibrium payoff than peripheral buyside firms. [...] inventories and market liquidity include Ho and Stoll (1983), Grossman and Miller (1988), Comerton-Forde, Hendershott, Jones, Moulton, and Seasholes (2010), Weill (2007).",
+            "score": 0.99899954,
+            "raw_content": null
+          },
+          {
+            "url": "https://mfm.uchicago.edu/wp-content/uploads/2020/07/Elliott-Golub-Jackson-Financial-Networks-and-Contagion.pdf",
+            "title": "[PDF] Financial Networks and Contagion",
+            "content": "In the simulations, we examine several important specific network structures. One is a network with a clique of large “core” organizations surrounded by many smaller “peripheral” organizations, each of which is linked to a core organization. This emu-lates the network of interbank loans. There we see a further nonmonotonicity in integration: if core organizations have low levels of integration, then the failure of some peripheral organization is contained, with only one core organization [...] 3119 Elliott et al.: Financial Networks and Contagion VOL. 104 NO. 10 be nonmonotonic in connectivity.8 But we also gain key new results on when and how the “danger zone” of intermediate diversification can be blunted by changing the level of integration in the system. Finally, we study how the integration of a financial network interacts with a core-periphery structure and with segregation, and other correlation structures.",
+            "score": 0.99893504,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp2883~47e3ebe468.en.pdf",
+            "title": "[PDF] Financial contagion within the interbank network",
+            "content": "contagion mechanisms and their interplay. Our analysis incorporates the hoarding of existing interbank funding as a response to liquidity strains while also featuring pro-cyclical haircuts and time-varying risk aversion that operate across the banking network. We run simulations conditional on the operation of different transmission mechanisms and quantify the relative contributions of direct and indirect channels to the total impact of each shock scenario and to the robust-yet-fragile property [...] thus we consider perturbations from that initial position as the distress scenarios examined in our study. Furthermore, we would like to focus on the topological properties of the network and how these affect the contagion transmission process. Considering an additional layer of heterogeneity, i.e., with respect to differential initial liquidity conditions, would unnecessarily complicate the analysis. ECB Working Paper Series No 2883 17 The parameter 𝜙 represents the percentage of banks’ [...] additional bank which faces liquidity shortages, e.g. 𝛿= 0.02 means a 2% increase in haircuts after each additional bank in the network hoards liquidity. We call this mechanism as the pro-cyclical haircut effect that captures the way that worsening funding liquidity feeds into tighter market liquidity conditions. The pro-cyclical haircuts mechanism represents an indirect contagion mechanism as it is not caused by the direct contractual links between banks.22 Additionally, changes in the risk",
+            "score": 0.998884,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.anderson.ucla.edu/documents/areas/fac/finance/fari.pdf",
+            "title": "[PDF] Global Financial Crisis, Liquidity Shocks and Global Financial Stability",
+            "content": "on their crisis performance, we use all of these betas in our study. Following Acharya and Pedersen (2005) and Lee (2011), we define the liquidity net beta as the following: 𝛽𝑖 5 = 𝛽𝑖 2 −𝛽𝑖 3 −𝛽𝑖 4 , (2) Due to the possible wealth effect of exposure to liquidity shock on stocks, we expect that stocks with higher ex-ante liquidity exposure would exhibit greater drops during the crisis, i.e., β2 would negatively affect the realized stock returns, while β3 and β4 would positively affect the [...] (β5). By contrast, Indonesia and Singapore are among those countries with the highest average liquidity exposure, with liquidity net betas of 0.118 and 0.109, respectively. The global mean of the liquidity net beta is 0.042, ranging from 0.007 to 0.118. Table 1 also presents average cumulative stock returns (Cum.Ret) from January 2008 to March 2009, during the global crisis. Global stock markets had significantly dropped by March 2009, with average global returns of -47.4%. Remarkably, although",
+            "score": 0.99869555,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.sciencedirect.com/science/article/pii/S1062940825001512",
+            "title": "Cross-asset contagion and risk transmission in global financial ...",
+            "content": "This research examines cross-asset contagion and risk transmission by modeling global financial markets as a dynamic network, integrating equities, currencies, commodities, and cryptocurrencies. Using extreme value theory and tail-dependent copulas, we develop novel measures of contagion centrality and risk pathways, uncovering a persistent core-periphery structure where central assets exhibit shock-absorber properties during crises, while peripheral nodes amplify systemic fragility. Our [...] findings reveal that financial contagion intensifies under stress, with enduring post-crisis interconnectedness, challenging traditional diversification strategies. Crucially, network topology-not just asset class-determines vulnerability: central assets demonstrate resilience to tail risks, whereas peripheral nodes face heightened susceptibility. These insights have profound implications for systemic risk monitoring, suggesting regulators prioritize real-time tracking of core-periphery",
+            "score": 0.9980276,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.36,
+        "request_id": "c538b3b3-53ef-4539-979c-68b20084e6cb"
+      },
+      {
+        "query": "typical liquidation rate gamma in financial contagion liquidity crisis network simulations core-periphery banking networks",
+        "follow_up_questions": null,
+        "answer": "In most simulation studies of liquidity‑crisis contagion on core‑periphery interbank networks the liquidation (or recovery) rate γ is calibrated to a value of roughly one‑half, i.e., γ≈0.5 (often ranging between 0.4 and 0.6 to reflect severe but not total loss of illiquid assets during fire‑sale liquidation).",
+        "images": [],
+        "results": [
+          {
+            "url": "https://www.federalreserve.gov/econres/feds/files/2021017pap.pdf",
+            "title": "[PDF] Liquidity Networks, Interconnectedness, and Interbank Information ...",
+            "content": "criteria from Boyd and others (2010), which states that the PRE should exceed 0.5 for evidence in favor of the core-periphery model. Figure 6 shows the PRE obtained from estimating the model for the liquidity and trading networks. Several notable patterns emerge. First, the core-periphery model fits the trading network better than the liquidity network. The PRE is consistently about 10 percent higher for the trading network. Further, the liquidity network is never above 12 See Boyd and others [...] is optimal for the norm used in equation (1). 15 the 0.5 threshold, indicating that the core-periphery model does not fit the liquidity network well, as there appears to be no core of aggressive (or passive) liquidity providers. Interestingly, even for the trading network (for which a sizable literature shows a core-periphery structure), the model provides a good fit only in the weak recovery period—the PRE crosses the 0.5 threshold in late 2009. Figure 7 shows evidence that the core-periphery [...] the trading network and two for the liquidity 13 The core-periphery model is applied at the country level only when a sufficient number of within-country transactions (at least 10 transactions) form a meaningful subgraph. The four countries presented have the highest number of days with such subgraphs. 16 network. Thus, the structure in the e-MID trading networks before 2010 and the liquidity networks over the entire data span resembles the stylized representation in figure 9 of overlapping",
+            "score": 0.45406118,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1506.pdf",
+            "title": "[PDF] Assessing interbank contagion using simulated networks",
+            "content": "−p∞= l −F (l(J )) | {z } I round + F (l(J )) −p∞ | {z } II round , (3) where p∞is the limit of the iteration pn = F(pn−1) with p0 = l(J ). [...] For one realisation of the network structure obtained by the proposed algorithm, the size of the linkage between a given pair (i, j) of banks depends on order of drawn linkages. The ﬁrst drawn link would on average be allocated 50% of total liabilities of j, the second – 25% and so on. [...] 6 teristics that we impose upon the nodes (e.g. whether banks are internationally or mainly domestically-oriented) before randomly drawing our networks would in fact be expected to imply a priori some degree of core-periphery structure. Moreover, owing to the substantial size diﬀerences of the interbank assets and liabilities across banks in our sample (and hence the amount of assets/liabilities of individual banks to be distributed within the system) the pro-cedure would generally result in",
+            "score": 0.37154752,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.stat.berkeley.edu/~aldous/206-SNET/Papers/contagion_financial.pdf",
+            "title": "[PDF] Working Paper No. 383 Contagion in financial networks",
+            "content": "structures and network ef\u0002ciency.7 Although some real-world banking networks may exhibit core-periphery structures and tiering (see Boss et al (2004) and Craig and von Peter (2009) for evidence on the Austrian and German interbank markets respectively), the empirical evidence is limited and, given our theoretical focus, it does not seems sensible to restrict our analysis of contagion to particular network structures. In particular, our assumption that the network structure is entirely arbitrary [...] 9This assumption is likely to be realistic in the midst of a crisis: in the immediate aftermath of a default, the recovery rate and the timing of recovery will be highly uncertain and banks' funders are likely to assume the worst-case scenario. Nevertheless, in our numerical simulations, we show that our results are robust to relaxing this assumption. [...] Working Paper No. 383 March 2010 13 to this quantity as the average degree and denote it by z D X j;k jp jk D X j;k kp jk (6) From G.x; y/, we can de\u0002ne a single-argument generating function, G0 .y/, for the number of links leaving a randomly chosen vulnerable bank. This is given by G0 .y/ D G .1; y/ D X j;k j \u0001 p jk \u0001 yk (7) Note that G .1; 1/ D G0 .1/ D X j;k j \u0001 p jk (8) so that G0.1/ yields the fraction of banks that are vulnerable.",
+            "score": 0.3637152,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.mdpi.com/2673-9909/5/1/20",
+            "title": "Modeling and Mathematical Analysis of Liquidity Risk Contagion in ...",
+            "content": "banks. Using data from the largest European banks, we simulate the impact of central bank measures on liquidity risk. By employing optimal control techniques, we construct a model capable of simulating various scenarios to evaluate the effectiveness of policy interventions in mitigating financial contagion. Our approach provides a robust framework for analyzing the systemic risk propagation within the banking network, offering qualitative insights into the contagion mechanisms and their [...] the existence of the European Central Bank, which functions as a competent supervisory body, establishing vertical links among commercial banks. Its primary objective is to prevent the widespread transmission of financial contagion. This article presents a framework for modeling and analyzing liquidity risk contagion utilizing numerical simulations and differential equations enhanced with optimal control techniques. [...] In the first case, with the highest default probability, we find that for the three liquidity crisis scenarios, the contagion rate drops rapidly since the default rate is very high in the uncontrolled case, and with control, one observes that the default rates decrease and fall towards 0. Figure 2a shows that a crisis that begins in Spain is the most serious because in a short time, one-quarter of all of the banks go bankrupt; as shown in Figure 2b,c, for France and Germany on the other hand,",
+            "score": 0.32453555,
+            "raw_content": null
+          },
+          {
+            "url": "https://www.financialresearch.gov/working-papers/files/OFRwp-2015-21_Contagion-in-Financial-Networks.pdf",
+            "title": "[PDF] Contagion in Financial Networks*",
+            "content": "that is, by increasing its stable funding. It may be unable or unwilling to find another bank to borrow from because of the negative signal that the need to borrow would send to the market. If it sold its fixed assets, it would incur liquidation costs. Bank C’s best option is to withdraw funding from banks A and D, thus propagating the initial shock through the network. 50 Fixed assets 10 Liquid assets 200 Interbank assets 160 Stable funding 100 Interbank liabilities 100 Fixed assets 10 Liquid [...] liquidation of long-term assets. The model has the following elements within each region: • Time evolves over three dates, 0, 1, 2. • At time 0, consumers deposit their endowments in banks. At time 1, a fraction of consumers experience a liquidity shock and seek to withdraw their deposits. At time 2, the bank’s remaining assets are paid to remaining depositors. • Banks can invest in a liquid short asset and an illiquid long asset. The long asset earns a higher return if held to time 2 but a [...] contagion in financial networks. We start by assuming that the network of obligations is given; the object is to study how shocks to particular institutions or assets propagate through the network. The model has four key ingredients (see Figure 2): i) a set of n nodes {1,2,..., } N n = representing different financial entities such as banks, broker-dealers, insurance companies, and the like; ii) an n x n liabilities matrix ( ) ij P p = where 22 pij ≥0represents the payment due from node i to",
+            "score": 0.29264632,
+            "raw_content": null
+          }
+        ],
+        "response_time": 2.18,
+        "request_id": "ffdb3153-ee4a-46aa-a970-3c8da60406f4"
+      }
+    ],
+    "agent_response": "Reason: The user query asks for typical values of transmission (beta) and liquidation (gamma) rates used in financial contagion network simulations, especially focusing on core-periphery banking networks in liquidity crisis scenarios. To answer accurately, I need to find calibrated or commonly used beta and gamma parameter values from studies or papers related to financial contagion modeling, simulations or theoretical analyses involving such networks.\n\nObservation for first search (beta):\n- Transmission rate beta (β) in core-periphery liquidity contagion simulations is commonly set around 0.25 to 0.35 per time step.\n- A benchmark value often used is β ≈ 0.30, reflecting rapid but not instantaneous distress spread from peripheral to core banks.\n\nObservation for second search (gamma):\n- Liquidation rate gamma (γ), which represents the fraction recovered or speed of liquidation of illiquid assets in such contagion settings, is typically calibrated around 0.5.\n- This reflects a recovery/liquidation rate roughly between 0.4 and 0.6, acknowledging severe but not total asset loss in fire sales.\n\nFinal Thought: The typical parameter values used in financial contagion network simulations of core-periphery banking systems for liquidity crises are transmission rate beta (β) approximately 0.25 to 0.35 (commonly 0.30) and liquidation rate gamma (γ) about 0.4 to 0.6 (commonly 0.5). These values are used to model the spread of distress liquidity shocks and the partial recovery or loss due to asset fire sales during crisis conditions.\n\nFinal Answer:\nIn financial contagion simulations modeling liquidity crises on core-periphery interbank banking networks, the typical transmission rate (beta, β) is calibrated to be around 0.25 to 0.35 per time step, with 0.30 often used as a benchmark. This rate captures the relatively rapid transmission of distress from peripheral banks to core institutions within the network. The liquidation or recovery rate (gamma, γ) used in these simulations generally falls between 0.4 and 0.6, with 0.5 commonly applied to represent the severe but not total loss of illiquid assets during fire-sale liquidations. These parameters help realistically simulate the dynamics of liquidity contagion and asset liquidation in core-periphery banking structures during financial crises."
+  }
+]

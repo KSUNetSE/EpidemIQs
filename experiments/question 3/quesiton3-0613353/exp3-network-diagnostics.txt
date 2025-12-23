@@ -1,0 +1,7 @@
+N=10000, m=2, T=2000, activity_gamma=2.5, activity_min=0.01, activity_max=1.0
+Mean activity <a>=0.09631, activity 2nd moment <a^2>=0.02300
+Temporal: mean deg/t=0.38493, 2nd moment=0.148281
+Static weighted: mean degree=721.92780, 2nd moment=674975.22240, GCC size=10000
+Edge weight: mean=0.00053, median=0.0005, max=0.00, min=0.0005
+Assortativity=-0.10458, clustering=0.10385
+Avg shortest path (GCC): 1.928

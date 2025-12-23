@@ -1,0 +1,1 @@
+Fitting metrics for SBM/SEICBR: AR=0.952, R0=0.12, MSE_B=23263.361

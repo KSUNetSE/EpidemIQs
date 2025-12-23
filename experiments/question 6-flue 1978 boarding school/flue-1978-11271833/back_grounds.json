@@ -1,0 +1,46 @@
+{
+    "results": [
+        {
+            "query": "boarding school influenza A/H1N1 outbreak compartmental model network stochastic block model",
+            "papers": [
+                {
+                    "title": "Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak",
+                    "abstract": null,
+                    "citation": "Denis Tverskoi, Grzegorz A. Rempala (2025). Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak. Scientific Reports. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study proposes a simpler stochastic SIR model that, while yielding a slightly worse retrospective fit, provides more stable and reliable forward predictions and underscores the importance of balancing model complexity with predictive reliability in epidemiological modeling, in order to support robust public health decision-making when data availability is limited."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8b09978be87c664df534667feb42e0a003f160f7"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "influenza outbreak boarding school network model SEICBR limitations",
+            "papers": [
+                {
+                    "title": "Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak",
+                    "abstract": null,
+                    "citation": "Denis Tverskoi, Grzegorz A. Rempala (2025). Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak. Scientific Reports. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study proposes a simpler stochastic SIR model that, while yielding a slightly worse retrospective fit, provides more stable and reliable forward predictions and underscores the importance of balancing model complexity with predictive reliability in epidemiological modeling, in order to support robust public health decision-making when data availability is limited."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8b09978be87c664df534667feb42e0a003f160f7"
+                },
+                {
+                    "title": "Profile likelihood-based analyses of infectious disease models",
+                    "abstract": null,
+                    "citation": "C. T\u00f6nsing, J. Timmer, C. Kreutz (2018). Profile likelihood-based analyses of infectious disease models. Statistical Methods in Medical Research. Citations: 27, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work summarizes and transfers state-of-the art approaches from other fields like Systems Biology to infectious disease models to describe the temporal evolution of epidemics using a simple SIR model and more complex model of a vector-borne disease with data from the Zika virus outbreak in Colombia in 2015\u20132016."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/430538a3d03f09c3d6b4247b20b7ed112fd7b8df"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

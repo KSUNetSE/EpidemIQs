@@ -1,0 +1,77 @@
+{
+    "results": [
+        {
+            "query": "network-based SEIQR models epidemic modeling influenza boarding school outbreak transmission",
+            "papers": [
+                {
+                    "title": "Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak",
+                    "abstract": null,
+                    "citation": "Denis Tverskoi, Grzegorz A. Rempala (2025). Model fit vs. predictive reliability: a case study of the 1978 influenza outbreak. Scientific Reports. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study proposes a simpler stochastic SIR model that, while yielding a slightly worse retrospective fit, provides more stable and reliable forward predictions and underscores the importance of balancing model complexity with predictive reliability in epidemiological modeling, in order to support robust public health decision-making when data availability is limited."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8b09978be87c664df534667feb42e0a003f160f7"
+                },
+                {
+                    "title": "MODELING DISEASE SPREAD USING GRAPH THEORY: A STUDY OF EPIDEMICS.",
+                    "abstract": "In recent years, mathematical modeling of infectious diseases has become an indispensable tool for understanding and mitigating epidemic outbreaks. Among various mathematical frameworks, graph theory provides a powerful and flexible approach to represent complex social interactions, mobility networks, and transmission pathways within populations. This study investigates the application of graph-theoretic models to simulate and analyze the spread of influenza across different community structures. Nodes represent individuals or groups, while edges denote potential transmission contacts, enabling the representation of heterogeneous mixing patterns and spatial clustering effects. Using a simulated network of 500 individuals with varying connection probabilities, we explore the dynamics of infection spread based on the classical Susceptible\u2013Infected\u2013Recovered (SIR) framework. The results highlight the critical role of network topology\u2014particularly degree distribution, clustering coefficient, and average path length\u2014in determining the infection peak and final epidemic size. Furthermore, interventions such as vaccination or targeted isolation of high-degree nodes are shown to significantly reduce transmission speed and epidemic magnitude. The study offers a generalized graph-based methodology for epidemic modeling that can be extended to real-world datasets and other diseases, contributing to predictive epidemiology and public health preparedness.",
+                    "citation": "Dr. V .Raja Durai, Dr. K. Karuppiah, S. Hariharan, et al. (2025). MODELING DISEASE SPREAD USING GRAPH THEORY: A STUDY OF EPIDEMICS.. International Journal of Applied Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study investigates the application of graph-theoretic models to simulate and analyze the spread of influenza across different community structures, and offers a generalized graph-based methodology for epidemic modeling that can be extended to real-world datasets and other diseases."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/e1696d5101f870d9f5f7f34eb912fc01b26c94ac"
+                },
+                {
+                    "title": "Mobility-informed metapopulation models predict the spatio-temporal spread of respiratory epidemics across scales",
+                    "abstract": "Understanding the spatiotemporal dynamics of infectious disease spread is critical for anticipating epidemic trajectories and guiding public health responses. Accurate forecasts of where and when outbreaks are likely to emerge can support efficient resource allocation, particularly during the early stages of epidemics when surveillance data are limited. In this study, we used empirical human mobility data derived from county-level commuting and air traffic flows, and a theoretical mobility model (the radiation model) to study the relative order of epidemic onset across spatial scales. These mobility models were incorporated into a metapopulation framework to predict the spread of three major respiratory pathogens: COVID-19, seasonal influenza, and respiratory syncytial virus (RSV). We applied this framework to county-level transmission within South Carolina and state-level introductions across the United States. In both empirical and theoretical mobility scenarios, we found that effective distance, a network-based measure of mobility-informed proximity, reliably predicts the relative timing of epidemic onset. These results demonstrate that mobility-informed metapopulation models can capture consistent spatiotemporal patterns across disease systems and spatial scales, even in the absence of detailed epidemiological parameters. This highlights their potential as scalable, data-efficient tools for outbreak forecasting and early public health planning.",
+                    "citation": "Aakash Pandey, Lu Zhong, L. Rennert (2025). Mobility-informed metapopulation models predict the spatio-temporal spread of respiratory epidemics across scales. medRxiv. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that effective distance, a network-based measure of mobility-informed proximity, reliably predicts the relative timing of epidemic onset, and demonstrates that mobility-informed metapopulation models can capture consistent spatiotemporal patterns across disease systems and spatial scales."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/064a9ca143bc683dc2a2665523f6498a6370074e"
+                },
+                {
+                    "title": "Hybrid ARIMA-LSTM Model for Real-Time Influenza Monitoring and Early Prediction",
+                    "abstract": "Influenza is a highly contagious viral infection capable of widespread epidemic dispersion with catastrophic effects on community health. Rapid detection of influenza outbreaks is essential for limiting virus transmission and health system burden. This research proposes a hybrid artificial intelligence (AI) and machine learning (ML) based system aimed at the surveillance of influenza, combining both auto-regressive integrated moving average (ARIMA) for longitudinal periodic trends and long short-term memory (LSTM) networks for unpredictable short-term fluctuations. This problem is handled by one system that breaks down the process using time-series surveillance data and external environmental factors to predict the outcome. Including other environmental features (e.g., temperature, humidity, and Air Quality Index (AQI)) led to a substantial performance improvement for the prediction. The identification of early diseases can happen because Google Search Trends monitors behavioural indicators that warn about flu symptom appearances. The initial stage of data processing applies both feature selection and augmentation along with normalization before executing clean-up procedures. The combination model uses RMSE, F1 Score, Accuracy, Precision, and Recall for performance evaluation. Results show that an accuracy level of 96.3% was obtained using the proposed combination model, which is better than individual models. The results of the research prove the potential of AI-based systems to create a public health warning system as well as the analysis of influenza epidemic threats.",
+                    "citation": "A.Krishnaveni, K.Gowtham, Pg Student (2025). Hybrid ARIMA-LSTM Model for Real-Time Influenza Monitoring and Early Prediction. International Conference on Information Security and Cryptology. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/2b255b06371d87cbce121a7b9be18db6704a5b1d"
+                },
+                {
+                    "title": "Semi-Random Mixing Epidemic Model: Integrating Explicit Household and Non-household Interactions",
+                    "abstract": null,
+                    "citation": "M. L. Smah, A. Seale, K. S. Rock (2025). Semi-Random Mixing Epidemic Model: Integrating Explicit Household and Non-household Interactions. medRxiv. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An epidemic modelling framework that integrates explicitly both household and non-household interactions, and introduces a novel formulation linking contact duration and proximity to infection risk, enabling a more realistic representation of disease-specific transmission factors in an equation-based model."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1173607f99d2e6184f3d4e1854e4352476db59da"
+                },
+                {
+                    "title": "Epicast 2.0: A large-scale, demographically detailed, agent-based model for simulating respiratory pathogen spread in the United States",
+                    "abstract": "The recent history of respiratory pathogen epidemics, including those caused by influenza and SARS-CoV-2, has highlighted the urgent need for advanced modeling approaches that can accurately capture heterogeneous disease dynamics and outcomes at the national scale, thereby enhancing the effectiveness of resource allocation and decision-making. In this paper, we describe Epicast 2.0, an agent-based model that utilizes a highly detailed, synthetic population and high-performance computing techniques to simulate respiratory pathogen transmission across the entire United States. This model replicates the contact patterns of over 320 million agents as they engage in daily activities at school, work, and within their communities. Epicast 2.0 supports vaccination and an array of non-pharmaceutical interventions that can be promoted or relaxed via highly granular, user specified policies. We illustrate the model's capabilities using a wide range of outbreak scenarios, highlighting the model's varied dynamics as well as its extensive support for policy exploration. This model provides a robust platform for conducting what if scenario analysis and providing insights into potential strategies for mitigating the impacts of infectious diseases.",
+                    "citation": "Prescott C. Alexander, Thomas J. Harris, Joy Kitson, et al. (2025). Epicast 2.0: A large-scale, demographically detailed, agent-based model for simulating respiratory pathogen spread in the United States. Unknown Journal. Citations: 1, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An agent-based model that utilizes a highly detailed, synthetic population and high-performance computing techniques to simulate respiratory pathogen transmission across the entire United States, providing a robust platform for conducting what if scenario analysis and providing insights into potential strategies for mitigating the impacts of infectious diseases."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2fb892b8df7975705b9c0159c6ad2894d17e137f"
+                },
+                {
+                    "title": "A systematic scoping review and thematic analysis: How can livestock and poultry movement networks inform disease surveillance and control at the global scale?",
+                    "abstract": "The increasing threat of emerging infectious diseases affecting animal and human populations has prompted closer investigation into how movement-linked interactions contribute to geographic spread of pathogens. Animal movements are a key factor in the spread of diseases like Foot-and-Mouth-Disease and Avian Influenza. Network analysis of animal movement data has become a powerful tool for identifying transmission dynamics and informing disease control. However, a systematic evaluation of its applications across species is lacking. This study addresses this knowledge gap through a systematic evaluation of existing evidence. A modified scoping review was conducted following PRISMA-ScR guidelines and a Population, Index test, and Target condition research structure. Articles published between 1975 and 2024 were retrieved from six databases. Inclusion criteria focused on network analysis research explicitly mentioning livestock and poultry movements. Quantitative analyses in R and thematic analysis in NVIVO provided insights into key network applications. Our review of 203 studies across 52 countries highlighted a steady rise in network-based approaches since 2006, particularly after the 2001 Foot-and-Mouth-Disease outbreak. Cattle (40.3%) were the most studied species, followed by swine (33.2%) and poultry (13.0%). Five themes emerged: network structure, epidemic modeling, targeted control, outbreak analysis, and network inference. These applications demonstrated the flexibility of network analysis in veterinary epidemiology. However, challenges persist due to data accessibility, particularly in low- and middle-income countries. Limited standardized movement data hinder cross-country comparisons and epidemiological insights. Expanding data collection, incorporating weighted connections, and integrating economic and geographic factors could enhance network-techniques. In conclusion, network analysis is a powerful framework for identifying high-risk nodes and designing targeted interventions. Future efforts must improve data standardization, temporal movement dynamics, and incorporate multiple transmission pathways to fully capture the complexity of movement networks and their role in pathogen spread. Moreover, strengthening industry-academic collaborations is crucial for optimizing network-based strategies.",
+                    "citation": "S. C. Sequeira, Natalie Sebunia, Jessica R Page, et al. (2025). A systematic scoping review and thematic analysis: How can livestock and poultry movement networks inform disease surveillance and control at the global scale?. PLoS ONE. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A review of 203 studies across 52 countries highlighted a steady rise in network-based approaches since 2006, particularly after the 2001 Foot-and-Mouth-Disease outbreak, and five themes emerged: network structure, epidemic modeling, targeted control, outbreak analysis, and network inference."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/940eaea4e23e2873f8838ff7a54f16cdc7f340c9"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

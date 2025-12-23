@@ -1,0 +1,66 @@
+
+import networkx as nx
+import numpy as np
+import matplotlib.pyplot as plt
+
+def simulate_SIR_static(n=1000, beta=0.03, gamma=0.01, steps=100, m=10, seed=42):
+    np.random.seed(seed)
+    # Construct a static network from an activity-driven mechanism aggregated over long time.
+    # We approximate by creating a random graph where degree distribution approximates the expected aggregate contact frequencies.
+    # One common approximation is the Erdos-Renyi graph with average degree approximating m*alpha*T, here we use fixed average degree m for simplicity.
+    G = nx.erdos_renyi_graph(n, m/(n-1), seed=seed)
+
+    # SIR simulation on static network
+    status = {node: 'S' for node in G.nodes()}  
+    # start from one infected
+    initial_infected = np.random.choice(list(G.nodes()), 1)
+    for node in initial_infected:
+        status[node] = 'I'
+
+    S, I, R = [np.sum([1 for s in status.values() if s=='S'])], [np.sum([1 for s in status.values() if s=='I'])], [np.sum([1 for s in status.values() if s=='R'])]
+    
+    for _ in range(steps):
+        new_status = status.copy()
+        # transmission
+        for node in G.nodes():
+            if status[node]=='I':
+                # recovery probability
+                if np.random.rand() < gamma:
+                    new_status[node] = 'R'
+                else:
+                    # Infect neighbors
+                    for nei in G.neighbors(node):
+                        if status[nei]=='S' and np.random.rand() < beta:
+                            new_status[nei] = 'I'
+        status = new_status
+        S.append(np.sum([1 for s in status.values() if s=='S']))
+        I.append(np.sum([1 for s in status.values() if s=='I']))
+        R.append(np.sum([1 for s in status.values() if s=='R']))
+        if I[-1]==0:
+            break
+    
+    return S, I, R, G.number_of_edges()
+
+# Example simulation using parameters that could align with our conditions
+S, I, R, num_edges = simulate_SIR_static(beta=0.03, gamma=0.01)
+steps = range(len(S))
+plt.figure(figsize=(8,6))
+plt.plot(steps, S, label='S')
+plt.plot(steps, I, label='I')
+plt.plot(steps, R, label='R')
+plt.xlabel('Time steps')
+plt.ylabel('Number of nodes')
+plt.title('SIR on Aggregated Static Network')
+plt.legend()
+
+# Save plot to output folder
+import os
+
+output_path = os.path.join(os.getcwd(), 'output', 'SIRAggregatedNetwork.png')
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+plt.savefig(output_path)
+plt.close()
+
+# Return key variables for inspection
+result = {"S": S, "I": I, "R": R, "Edges": num_edges, "PlotPath": output_path}
+result

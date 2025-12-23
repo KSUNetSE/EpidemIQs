@@ -1,0 +1,8 @@
+Power-law activity: gamma=2.5, min=0.005, max=1
+Activity mean: 0.01414, Activity sq. mean: 0.001034
+Static network: mean deg: 13.891, deg2: 902.320, GCC size: 9987
+Temporal network: mean deg/timestep: 0.02827, deg2 moment (over t): 0.000805
+Num nodes: 10000, Num stat edges: 69457
+Assortativity (deg): -0.04507
+Avg shortest path (GCC): 3.216
+Global clustering: 0.01826

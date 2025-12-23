@@ -1,0 +1,53 @@
+
+N = 1000
+threshold = 0.01 * N
+
+# Last 20 time steps
+last_20 = df.tail(20)
+
+# Final prevalence (average of last 20)
+final_prevalence_I1 = last_20['I1'].mean()
+final_prevalence_I2 = last_20['I2'].mean()
+
+# Peak prevalence and time of peak
+peak_I1 = df['I1'].max()
+time_peak_I1 = df.loc[df['I1'].idxmax(), 'time']
+peak_I2 = df['I2'].max()
+time_peak_I2 = df.loc[df['I2'].idxmax(), 'time']
+
+# Time to extinction (prevalence drops below threshold)
+# Find first time when prevalence drops below threshold
+extinction_time_I1 = df.loc[df['I1'] < threshold, 'time'].min() if any(df['I1'] < threshold) else None
+extinction_time_I2 = df.loc[df['I2'] < threshold, 'time'].min() if any(df['I2'] < threshold) else None
+
+# Dominance/coexistence indicator
+indicator_I1 = 1 if final_prevalence_I1 > threshold else 0
+indicator_I2 = 1 if final_prevalence_I2 > threshold else 0
+
+# Periods where both viruses have prevalence above threshold
+both_above_threshold = (df['I1'] > threshold) & (df['I2'] > threshold)
+
+if both_above_threshold.any():
+    coexistence_times = df.loc[both_above_threshold, 'time']
+    coexistence_duration = coexistence_times.max() - coexistence_times.min()  # duration in time units
+else:
+    coexistence_duration = 0
+
+results = {
+    'I1': {
+        'final_prevalence': final_prevalence_I1,
+        'peak_prevalence': peak_I1,
+        'time_of_peak': time_peak_I1,
+        'time_to_extinction': extinction_time_I1,
+        'dominance_indicator': indicator_I1
+    },
+    'I2': {
+        'final_prevalence': final_prevalence_I2,
+        'peak_prevalence': peak_I2,
+        'time_of_peak': time_peak_I2,
+        'time_to_extinction': extinction_time_I2,
+        'dominance_indicator': indicator_I2
+    },
+    'coexistence_duration': coexistence_duration
+}
+results

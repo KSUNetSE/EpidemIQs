@@ -1,0 +1,132 @@
+{
+    "results": [
+        {
+            "query": "epidemic threshold and final outbreak size SEIR model homogeneous-mixing vs heterogeneous networks",
+            "papers": [
+                {
+                    "title": "Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature",
+                    "abstract": "Infectious-disease dynamics depend on heterogeneous contact structure, which classical homogeneous-mixing models such as SIR/SEIR cannot capture. We develop a curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission. We compute FRC on undirected and directed Erd\u0151s\u2013R\u00e9nyi, Watts\u2013Strogatz, Barab\u00e1si\u2013Albert, and Power\u2013Law Cluster networks, and relate curvature to degree, clustering, and betweenness to identify structurally influential nodes and bridge edges. Using curvature-adjusted transmission, we simulate epidemics across topologies and infection rates, then validate predictively with a controlled \u201chidden-truth\u201d benchmark: posterior-calibrated FRC models are compared with advanced centrality-weighted baselines (EdgeBetweenness, Degree, Eigenvector) under identical fit/holdout splits. On heterogeneous graphs (Barab\u00e1si\u2013Albert/Power\u2013Law Cluster), FRC improves holdout Root Mean Squared Error (RMSE), peak-time accuracy, and final-size proximity. A compact sensitivity analysis over baseline transmission and clustering, with Partial Rank Correlation Coefficient (PRCC), shows these gains are robust across parameter regimes. Intervention ablations (cases averted vs. budget) further show that vaccinating high-curvature nodes and protecting extreme negative-curvature bridges can outperform EdgeBetweenness targeting at practical budgets. Directed networks exhibit sharper peaks and faster resolution, with strongly negative out-curvature marking putative exporters. In general, FRC provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control.",
+                    "citation": "Oladimeji Samuel Sowole, N. Bragazzi, Geminpeter A. Lyakurwa (2025). Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature. Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2627f3ba9c1217f944072957731005cb09c6a8fe"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "network epidemiology epidemic threshold SEIR SIR homogeneous mixing scale-free networks",
+            "papers": [
+                {
+                    "title": "Building epidemiological models from R0: an implicit treatment of transmission in networks",
+                    "abstract": null,
+                    "citation": "J. Aparicio, M. Pascual (2007). Building epidemiological models from R0: an implicit treatment of transmission in networks. Proceedings of the Royal Society B: Biological Sciences. Citations: 79, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work proposes that the fundamental number known as the basic reproductive number of the disease, R0, be used instead as a central parameter to construct the mean-field model derived from individual level considerations."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/dec344fac1e8c42b9fddf71992a59d4fff13332e"
+                },
+                {
+                    "title": "The Geographic Spread of Infectious Diseases: Models and Applications",
+                    "abstract": null,
+                    "citation": "L. Sattenspiel (2009). The Geographic Spread of Infectious Diseases: Models and Applications. Unknown Journal. Citations: 72, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This book provides an introduction to mathematical Software Landing Page Institute for Disease Modeling Models and Applications and develops models with a wide range of applications and scales for infectious disease surveillance and modelling."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/50e64a2b0741c48206bf9eca9f9d026a29a13130"
+                },
+                {
+                    "title": "Bayesian Inference for Stochastic Epidemic Models using Markov chain Monte Carlo Methods",
+                    "abstract": null,
+                    "citation": "N. Demiris (2004). Bayesian Inference for Stochastic Epidemic Models using Markov chain Monte Carlo Methods. Unknown Journal. Citations: 16, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Algorithms that utilise multiple precision arithmetic to overcome the well-known numerical problems in the calculation of the final size distribution for the generalised stochastic epidemic and two suitably tailored Markov chain Monte Carlo algorithms are developed."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2f89d653fc0988899823b88f72ba77f37ac9cadd"
+                },
+                {
+                    "title": "A new formulation of compartmental epidemic modelling for arbitrary distributions of incubation and removal times.",
+                    "abstract": "The paradigm for compartment models in epidemiology assumes exponentially distributed incubation and removal times, which is not realistic in actual populations. Commonly used variations with multiple exponentially distributed variables are more flexible, yet do not allow for arbitrary distributions. We present a new formulation, focussing on the SEIR concept that allows to include general distributions of incubation and removal times. We compare the solution to two types of agent-based model simulations, a spatially homogeneous one where infection occurs by proximity, and a model on a scale-free network with varying clustering properties, where the infection between any two agents occurs via their link if it exists. We find good agreement in both cases. Furthermore a family of asymptotic solutions of the equations is found in terms of a logistic curve, which after a non-universal time shift, fits extremely well all the microdynamical simulations. The formulation allows for a simple numerical approach; software in Julia and Python is provided.",
+                    "citation": "P. Hern\u00e1ndez, C. Pe\u00f1a, A. Ramos, et al. (2021). A new formulation of compartmental epidemic modelling for arbitrary distributions of incubation and removal times.. PLoS ONE. Citations: 5, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new formulation, focussing on the SEIR concept, allows to include general distributions of incubation and removal times, and a family of asymptotic solutions of the equations is found in terms of a logistic curve, which after a non-universal time shift, fits extremely well all the microdynamical simulations."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b5378cf3a2fbf0b1e0f83141037ac8cfdc136cdc"
+                },
+                {
+                    "title": "A Network Epidemic Model with Preventive Rewiring: Comparative Analysis of the Initial Phase",
+                    "abstract": "This paper is concerned with stochastic SIR and SEIR epidemic models on random networks in which individuals may rewire away from infected neighbors at some rate \u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} (and reconnect to non-infectious individuals with probability \u03b1\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha $$\\end{document} or else simply drop the edge if \u03b1=0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha =0$$\\end{document}), so-called preventive rewiring. The models are denoted SIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} and SEIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document}, and we focus attention on the early stages of an outbreak, where we derive the expressions for the basic reproduction number R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document} and the expected degree of the infectious nodes E(DI)\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$E(D_I)$$\\end{document} using two different approximation approaches. The first approach approximates the early spread of an epidemic by a branching process, whereas the second one uses pair approximation. The expressions are compared with the corresponding empirical means obtained from stochastic simulations of SIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} and SEIR-\u03c9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\omega $$\\end{document} epidemics on Poisson and scale-free networks. Without rewiring of exposed nodes, the two approaches predict the same epidemic threshold and the same E(DI)\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$E(D_I)$$\\end{document} for both types of epidemics, the latter being very close to the mean degree obtained from simulated epidemics over Poisson networks. Above the epidemic threshold, pairwise models overestimate the value of R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$R_0$$\\end{document} computed from simulations, which turns out to be very close to the one predicted by the branching process approximation. When exposed individuals also rewire with \u03b1>0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha > 0$$\\end{document} (perhaps unaware of being infected), the two approaches give different epidemic thresholds, with the branching process approximation being more in agreement with simulations.",
+                    "citation": "T. Britton, David Juher, Joan Salda\u00f1a (2015). A Network Epidemic Model with Preventive Rewiring: Comparative Analysis of the Initial Phase. Bulletin of Mathematical Biology. Citations: 20, Influential: 1.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper is concerned with stochastic SIR and SEIR epidemic models on random networks in which individuals may rewire away from infected neighbors at some rate and reconnect to non-infectious individuals with probability $$\\alpha $$\u03b1 or else simply drop the edge if$$\\alpha =0$$\u03b1=0), so-called preventive rewiring."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/76e4d7cbe848b414d9d236c911bf5bc4b9776ac4"
+                },
+                {
+                    "title": "Epidemic modelling requires knowledge of the social network",
+                    "abstract": "\u2018Compartmental models\u2019 of epidemics are widely used to forecast the effects of communicable diseases such as COVID-19 and to guide policy. Although it has long been known that such processes take place on social networks, the assumption of \u2018random mixing\u2019 is usually made, which ignores network structure. However, \u2018super-spreading events\u2019 have been found to be power-law distributed, suggesting that the underlying networks may be scale free or at least highly heterogeneous. The random-mixing assumption would then produce an overestimation of the herd-immunity threshold for given R 0; and a (more significant) overestimation of R 0 itself. These two errors compound each other, and can lead to forecasts greatly overestimating the number of infections. Moreover, if networks are heterogeneous and change in time, multiple waves of infection can occur, which are not predicted by random mixing. A simple SIR model simulated on both Erd\u0151s\u2013R\u00e9nyi and scale-free networks shows that details of the network structure can be more important than the intrinsic transmissibility of a disease. It is therefore crucial to incorporate network information into standard models of epidemics.",
+                    "citation": "Samuel Johnson (2024). Epidemic modelling requires knowledge of the social network. Journal of Physics: Complexity. Citations: 8, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A simple SIR model simulated on both Erd\u0151s\u2013R\u00e9nyi and scale-free networks shows that details of the network structure can be more important than the intrinsic transmissibility of a disease, and is crucial to incorporate network information into standard models of epidemics."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/35c85ca0af17f345141a820639b33f83847970e5"
+                },
+                {
+                    "title": "Who Should be Controlled? The Role of Asymptomatic Individuals, Isolation and Switching in the Dominant Transmission Route in Classical and Network Epidemic Models",
+                    "abstract": null,
+                    "citation": "Adriana Acosta-Tovar, F. Lopes (2025). Who Should be Controlled? The Role of Asymptomatic Individuals, Isolation and Switching in the Dominant Transmission Route in Classical and Network Epidemic Models. Bulletin of Mathematical Biology. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The main theoretical results demonstrate that such a \u2018switching phenomenon\u2019 cannot occur in homogeneous mixing models or Poissonian networks when person-to-person transmission initially dominates, while numerical simulations show that it may occur in other networks such as scale-free and regular networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/55ec04d71299539bf8f0004b83548cbd45ad8320"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "simulation studies SEIR networks parameter setup network size degree transmission recovery latent period initial condition",
+            "papers": [
+                {
+                    "title": "An Edge-Based Model of SEIR Epidemics on Static Random Networks",
+                    "abstract": null,
+                    "citation": "Cherrylyn P Alota, C. P. Pilar-Arceo, A. de los Reyes V (2020). An Edge-Based Model of SEIR Epidemics on Static Random Networks. Bulletin of Mathematical Biology. Citations: 5, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The results in this paper can be used as an alternative way of explaining the spread of disease and it provides implications on the control strategies applied to mitigate the disease transmission."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/13623e6977e9b6a0641b3059dc19251b94b51653"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "typical SEIR network simulation parameter ranges and initial condition seeding methods literature review",
+            "papers": [
+                {
+                    "title": "High-Fidelity Multibody Model for a Powered-Two-Wheeler Driving Simulator",
+                    "abstract": null,
+                    "citation": "M. Grottoli, A. Toso, M. Gubitosa, et al. (2014). High-Fidelity Multibody Model for a Powered-Two-Wheeler Driving Simulator. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/e00c53427d270fc26ba1dbae443b826137ae96e7"
+                },
+                {
+                    "title": "First principles based microkinetic modeling of methyl butanoate pyrolysis",
+                    "abstract": null,
+                    "citation": "P. Paraskevas, Florence H. Vermeire, Marko R. Djokic, et al. (2017). First principles based microkinetic modeling of methyl butanoate pyrolysis. Unknown Journal. Citations: 1, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/0bbc055ec79034e523bbc41c0f6ebad6bab06592"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}
