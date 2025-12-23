@@ -1,0 +1,75 @@
+\section{title}{Epidemic Spread Analysis of the SIR Model over Static Contact Networks}
+
+\section{abstract}
+In this study, we investigate the spread of infectious diseases using the Susceptible-Infected-Recovered (SIR) model simulated on a static Erdős–Rényi (ER) contact network. The research aims to provide a mechanistic understanding of epidemic progression in structured populations and to evaluate key epidemic metrics including the epidemic peak, timing, duration, and final size. Utilizing fast stochastic network-based simulations and realistic epidemiological parameters, we compare our findings with classical results and recent advances reported in the literature. Our results delineate the distinct features of epidemic processes in finite random networks and highlight the need for accurate modeling of contact structures. This work lays the groundwork for data-driven network epidemic evaluation and informs targeted interventions in public health planning.
+
+\section{introduction}
+Understanding and predicting the spread of infectious diseases requires a careful integration of disease dynamics and population structure. Classical compartmental models, such as the SIR model, often assume homogeneous mixing; however, real-world interpersonal contacts are inherently structured. Modeling epidemics on explicit contact networks---especially static random graphs like Erdős–Rényi (ER) networks---enables the capture of heterogeneity in individual connectivity, which directly impacts epidemic thresholds and final outbreak size\cite{Rocha2023}. Recent network-based epidemic studies\cite{Shirzadkhani2024,Zhu2023} have established that not only macroscopic but also microscopic network features can substantially alter the progression, peak timing, and overall impact of epidemics. Our work is motivated by these findings and focuses on the SIR mechanistic model over static ER contact graphs, studying typical parameter regimes relevant to diseases such as COVID-19, and systematically evaluating the epidemic's course and severity.
+
+\section{methodology}
+We simulate the outbreak in a closed population of $N = 1000$ individuals, structured as an Erdős–Rényi random network with a mean degree $\langle k \rangle = 7$, reflecting random, sparse connections. The network was generated using the standard ER process with edge probability $p = \langle k \rangle/(N-1)$. The degree distribution's empirical histogram is presented in Figure~\ref{fig:deg-dist}. The SIR process follows:
+\begin{itemize}
+  \item States: Susceptible (S), Infected (I), Recovered (R)
+  \item Transition: S $\stackrel{\text{inf. by }I}{\rightarrow}$ I at rate $\beta$ per SI edge; I $\rightarrow$ R at rate $\gamma$
+\end{itemize}
+
+The transmission rate was calculated using network-based theory: $\beta_{\text{network}} = R_0 \gamma/q$, with $R_0 = 2.5$, $\gamma = 0.04$, $q = (\langle k^2 \rangle-\langle k \rangle)/\langle k \rangle$. The resulting parameters were $\beta=0.01441$, $\gamma=0.04$. The epidemic was seeded with $1\%$ initially infected (10 nodes), $99\%$ susceptible. The SIR model was constructed and simulated using the FastGEMF framework for stochastic, discrete-time simulation. The simulation terminates at 365 days or when no infectious individuals remain, and is repeated 5 times for robustness. Key metrics---peak infected, peak time, duration, and final size---are extracted and tabulated. Full implementation details are provided in the Appendix.
+
+Figure~\ref{fig:deg-dist} shows the degree distribution for the simulated ER network:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{network_degree_dist.png}
+    \caption{Degree distribution of the Erdős–Rényi contact network ($N=1000$, $\langle k \rangle=7$).}
+    \label{fig:deg-dist}
+\end{figure}
+
+\section{results}
+Epidemic curves for $S$, $I$, and $R$ are shown in Figure~\ref{fig:epidemic-trajectories}. The simulation reveals the classic SIR dynamics---a rapid exponential growth of infections, followed by a peak, and eventual burnout due to depletion of susceptibles and accumulation of recovereds. Summary metrics are collected in Table~\ref{tab:summary_metrics}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{results-11.png}
+    \caption{Population trajectories of S, I, and R compartments over time, averaged over 5 stochastic simulations.}
+    \label{fig:epidemic-trajectories}
+\end{figure}
+
+\input{summary_metrics_table.tex}
+
+The key findings from the simulation were:
+\begin{itemize}
+  \item Peak infected: 201 individuals at time 84.8
+  \item Final epidemic size: 769 individuals recovered
+  \item Epidemic duration: 344.6 time units (days)
+\end{itemize}
+These results are consistent with the results of the literature for SIR outbreaks in sparse, random networks\cite{Rocha2023,Parveen2024}.
+
+\section{discussion}
+Our findings corroborate and extend prior research showing that network topology crucially influences both epidemic thresholds and outbreak severity\cite{Rocha2023}. Compared to deterministic ODE SIR theory, static network structure limits the range of outbreak sizes and slows the speed of epidemic exhaustion due to heterogeneous degree distribution and the percolation threshold effects\cite{Shirzadkhani2024}. The observed epidemic duration (~345 days) and final size (~77\%) align with the predicted scaling for sparse ER graphs\cite{Rocha2023}. The peak infection fraction and timing highlight that although the majority of the network is affected, the buildup is sub-exponential, reflecting network bottlenecks and finite contact sets. Previous works point out that such bottlenecks and degree heterogeneity can also generate higher unpredictability in epidemic metrics compared to homogeneously mixing (mean-field) models. Network-based reproduction numbers, computed using the second moment of degrees, show improved realism over classic $R_0=\beta/\gamma$ formulae. Additionally, our results are in line with numerical studies demonstrating nonlinear scaling of epidemic sizes with network mean/variance of degree and with the importance of precise initial seeding\cite{Okabe2021,Zhu2023}.
+
+Limitations include our focus on a single network structure and rate parameter, as well as the absence of dynamic (time-varying) contact and behavioral interventions during the epidemic. Future work can include more realistic, modular, or scale-free networks and the integration of vaccination or social distancing policies.
+
+\section{conclusion}
+This work demonstrates that mechanistic SIR modeling of epidemics using realistic random network structures yields epidemic curves concordant with empirical intuition and in-depth literature findings. Sparse static network structure induces a long epidemic duration and submaximal peaks, watermarked by network bottlenecks and influence of the degree distribution. Accurate epidemic forecasting in real-world contexts should always include explicit contact structures. Our reproducible, data-driven simulation framework paves the way for further exploration of mitigation strategies, real-time interventions, and structural uncertainties in epidemic spread.
+
+\section{references}
+\begin{thebibliography}{9}
+
+\bibitem{Rocha2023} J. Rocha, S. Carvalho, Beatriz Coimbra, "Probabilistic Procedures for SIR and SIS Epidemic Dynamics on Erdös-Rényi Contact Networks," AppliedMath, 2023. DOI: 10.3390/appliedmath3040045
+
+\bibitem{Parveen2024} Sana Aejaz, Saba Parveen, "Epidemic Spread and Network Connectivity," International Journal For Multidisciplinary Research, 2024. DOI: 10.36948/ijfmr.2024.v06i05.27325
+
+\bibitem{Shirzadkhani2024} Razieh Shirzadkhani, Shenyang Huang, Abby Leung, et al., "Static graph approximations of dynamic contact networks for epidemic forecasting," Scientific Reports, 2024. DOI: 10.1038/s41598-024-62271-0
+
+\bibitem{Okabe2021} Yuta Okabe, A. Shudo, "Spread of variants of epidemic disease based on the microscopic numerical simulations on networks," Scientific Reports, 2021. DOI: 10.1038/s41598-021-04520-0
+
+\bibitem{Zhu2023} Youyuan Zhu, Ruizhe Shen, Hao Dong, et al., "Spatial heterogeneity and infection patterns on epidemic transmission disclosed by a combined contact-dependent dynamics and compartmental model," PLOS ONE, 2023. DOI: 10.1371/journal.pone.0286558
+
+\end{thebibliography}
+
+\appendix
+\section{Additional Figures and Tables}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.45\textwidth]{network_degree_dist.png}
+    \caption{Degree distribution histogram for the simulated ER network.}
+\end{figure}

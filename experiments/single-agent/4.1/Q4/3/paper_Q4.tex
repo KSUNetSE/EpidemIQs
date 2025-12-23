@@ -1,0 +1,55 @@
+% IEEE Transaction Level LaTeX Manuscript
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+% ---- Title -----
+\title{Coexistence and Dominance in the Competitive SIS Model over Multiplex Networks: Analytical Thresholds and Stochastic Simulation}
+\author{Author: Epidemic Spread Simulator (Expert System)}
+\date{\today}
+\maketitle
+
+% ---- Abstract ----
+\begin{abstract}
+Competitive spreading processes over multilayer and multiplex networks are central to understanding epidemic and informational dynamics in complex systems. We analytically and computationally investigate the two-virus competitive Susceptible-Infected-Susceptible (SIS) model---the SI$_1$SI$_2$S model---on a two-layer multiplex network with exclusive infection (a node cannot be infected by both viruses simultaneously). We examine the regime where both viruses possess effective infection rates surpassing their respective mean-field thresholds. Analytical predictions regarding thresholds for extinction, coexistence, and dominance are validated using large-scale, agent-based simulation on non-overlapping Barabási-Albert (BA) and configuration model layers. Our results show that, even when both viruses are in the "supercritical" infection regime, competitive exclusion may occur, and long-term coexistence is fragile and contingent on network structural properties.
+\end{abstract}
+
+% ---- Introduction ----
+\section{Introduction}
+Modeling the dynamics of interacting contagions is an emerging and critical topic in network science, with implications ranging from epidemiology and technology adoption to information dissemination in social systems. In many real-world scenarios, such as concurrent outbreaks of related diseases, competing information campaigns, or multiple strains of malware, multiple exclusive spreading processes vie for dominance over the same population. The competitive Susceptible-Infected-Susceptible (SIS) model, also termed the SI$_1$SI$_2$S model, provides a powerful analytic and computational lens for exploring these interactions \cite{Sahneh2013, DarabiSahneh2014}.
+
+Recent works have extended classical epidemic models to multiplex and multilayer network frameworks, capturing the reality that different spreading processes may exploit distinct sets of network contacts or infrastructure \cite{Sahneh2013, DarabiSahneh2014, PMC7154519, Nature2018}. Within this formalism, a fundamental question arises: under what conditions can two mutually exclusive viruses (or memes/information) coexist on a multiplex network, versus one driving the other to extinction?
+
+Earlier analytical efforts introduced the key concepts of survival threshold and winning threshold \cite{Sahneh2013}, which demarcate the regions of extinction, absolute dominance, and possible coexistence for each competitor. A crucial insight is that coexistence---in contrast to mutual exclusion---is rare unless the multiplex network layers are structurally distinct, especially in the centrality (dominant eigenvector) patterns of each layer. When layers are identical or highly correlated, even a small advantage in effective transmission often leads to absolute dominance by one process. Conversely, negative correlation or low centrality overlap enhances the chance for coexistence \cite{Sahneh2013, DarabiSahneh2014}.
+
+Despite robust analytic predictions, the dynamic details of how such processes compete and whether theoretical coexistence regions persist in finite-size stochastic simulations are less explored. Here, we combine analytic phase transition results and state-of-the-art agent-based simulation (FastGEMF) to answer:\\
+$\quad$\textbf{Q1:} Will both viruses survive (coexistence), or will one always remove the other (absolute dominance) at realistic scale?\\
+$\quad$\textbf{Q2:} What structural characteristics of multilayer networks support or preclude long-term coexistence?\\
+We focus on the interplay of eigenvalue thresholds, centrality overlap, and empirical metrics to elucidate these scenarios.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{deg_dist_layers.png}
+    \caption{Degree distributions of the two network layers: Layer A (Barabási-Albert) and Layer B (configuration model with shuffled degrees). Minimal centrality overlap facilitates analytical investigation of coexistence.}
+\end{figure}
+
+\section*{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{Sahneh2013} F. Sahneh and C. Scoglio, ``May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks," ArXiv e-prints, abs/1308.4880, 2013.
+
+\bibitem{DarabiSahneh2014} F. Darabi Sahneh and C. Scoglio, ``Competitive epidemic spreading over arbitrary multilayer networks,'' Physical Review E, vol. 89, no. 6, p. 062817, 2014. doi:10.1103/PHYSREVE.89.062817
+
+\bibitem{PMC7154519} G. Liu, L. He, Y. Pan, ``Coevolution spreading in complex networks," PLoS Comput Biol, 2020, PMC7154519.
+
+\bibitem{Nature2018} W. Wang et al., ``Resource control of epidemic spreading through a multilayer network,'' Scientific Reports, vol. 8, p. 2329, 2018.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,68 @@
+\section*{Title}
+Epidemic Spread Analysis of SIR Model over Static Erdős-Rényi Network
+
+\section*{Abstract}
+This study investigates the dynamics of epidemic spread utilizing the Susceptible-Infected-Removed (SIR) model over a static Erdős-Rényi (ER) random network, explicitly parameterized for COVID-19-like diseases. An ER network of 1000 nodes was constructed, and SIR dynamics were simulated with parameter regimes grounded in epidemiological literature ($R_0=3.0$, $\gamma=0.1$ per day, $\beta\approx0.03$ derived from network structure). The simulation demonstrated a single-peaked epidemic, with a peak infection count near 30\% of the population and most individuals transitioning to the removed state by the end. Key epidemic metrics include epidemic duration, peak infection size, peak timing, final epidemic size, and doubling time. Results underscore the profound impact of network topology and model parameters on outbreak progression and final epidemic size, with implications for intervention design in real-world infectious disease control.
+
+\section*{Introduction}
+Network-based epidemic models offer significantly enhanced realism over mean-field approaches by capturing population contact heterogeneity and stochasticity. The SIR (Susceptible-Infected-Removed) class remains foundational for diseases conferring permanent immunity post-infection, such as influenza or COVID-19. Among network types, the Erdős-Rényi (ER) model provides a mathematically tractable null model for homogeneous contact patterns, serving as a baseline for examining network effects on epidemic spread. This study addresses how static random network structure modifies key epidemic outcomes under controlled, literature-based parameter regimes. Our central research question is: How do classic SIR dynamics manifest on a static ER network when parameters are chosen to reflect COVID-19-like transmission?
+
+Recent large-scale infectious disease situations, notably the COVID-19 pandemic, have highlighted the importance of mechanistic models that accurately reflect contact heterogeneity. Traditional compartmental models often ignore key network features, possibly leading to biased projections or suboptimal policy guidance. Through simulating the SIR process on an ER network with empirically-informed rates, we seek to illustrate the expected outbreak curve, quantify transmission milestones, and support model-informed interventions for epidemic mitigation.
+
+\section*{Methodology}
+\textbf{Network Structure.} An Erdős-Rényi (ER) random network with $N=1000$ nodes was constructed, setting the linking probability $p=0.01$ to achieve an average degree $\langle k \rangle \approx 10$. The second moment degree $\langle k^2 \rangle$ was calculated as $110.16$. The network was implemented and stored using the NetworkX and SciPy sparse array packages. Degree distributions were visualized to affirm the homogeneity characteristic of the ER ensemble.
+
+\textbf{Disease Model: SIR.} The chosen mechanistic model is SIR, defined by compartments $S$ (susceptible), $I$ (infected), and $R$ (removed/recovered). Transitions include:\newline
+$\quad$- $S \to I$ at rate $\beta$, induced by an $I$-neighbor,\newline
+$\quad$- $I \to R$ at rate $\gamma$.
+
+\textbf{Parameter Inference.} The recovery rate $\gamma=0.1$ per day was selected based on a typical COVID-19 infectious period ($\sim$10 days). The effective transmission rate $\beta$ was computed to target a basic reproduction number $R_0=3.0$ using $\beta = R_0 \gamma / q$, where $q = (\langle k^2 \rangle - \langle k \rangle)/\langle k \rangle \approx 10.00$. This yielded $\beta\approx 0.03$.\newline
+
+\textbf{Initial and Boundary Conditions.} At $t=0$, 1\% of nodes were infected, the remainder susceptible. Simulations ran for 180 days or until infection faded (<1 individual).
+
+\textbf{Simulation Procedure.} FastGEMF was employed for stochastic network simulations, using five realizations to capture variability. Results were aggregated to produce epidemic curves and key summary metrics. Computational code and supporting outputs (including network degree distributions and evolution figures) are provided in the supplement.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{results-11.png}
+    \caption{Epidemic evolution for network-based SIR model. Infected population peaks at ~30\% followed by a slow decline.}
+\end{figure}
+
+\section*{Results}
+The SIR simulation produced a single-peaked infection trajectory characteristic of classic outbreaks. Infection surged quickly, peaking at day $36.8$ (298 infected, 29.8\% of population), before declining steadily as susceptibles were depleted. The final epidemic size (total removed) was 912, indicating over 90\% population-level infection.
+
+Key metrics extracted:\newline
+- Peak infection: $298$ individuals ($29.8\%$),\newline
+- Time to peak: $36.8$ days,\newline
+- Epidemic duration: $135.8$ days (until I $<$ 1),\newline
+- Final epidemic size: $912$ (removed),\newline
+- Doubling time at start: $9.98$ days.\newline
+The decline of infections was relatively slow post-peak, with over two-thirds of transitions to removed status complete by 60 days. Visual review of the epidemic curve confirms a classic SIR form: single peak, followed by monotonic decline in $I$, aligning with a rigid herd immunity threshold in static homogeneous networks.
+
+\section*{Discussion}
+Our findings demonstrate how epidemic parameters and network structure collaborate to determine outbreak pace and scale. The single-peaked, symmetric epidemic curve matches well with theoretical SIR predictions. Notably, final epidemic size is much larger than naive mean-field results, owing to persistent linkage among residual susceptibles and exposed clusters. The ER random network's moderate mean degree supports rapid, but not explosive, outbreak expansion, as confirmed by the doubling time and protracted decline.
+
+Limitations include restriction to a static network, constant parameters, and homogeneous mixing assumptions. In realistic populations, heterogeneity, intervention, or time-varying parameters would likely lower both the peak and final size, while introducing complexities such as multi-peak (resurgence) behavior. The high final removal fraction underscores the risk of very broad spread in well-mixed networks without mitigation.
+
+\section*{Conclusion}
+Through an empirically-anchored simulation, we confirm that SIR dynamics over an ER network produce a rapid, large-scale epidemic with parameter values representative of COVID-19. The approach demonstrates the critical need for targeted interventions, especially in populations where random network structure approximates organizational or societal contact patterns. This work provides a foundation for further studies with richer network topologies or the inclusion of NPIs, vaccination, or more realistic compartmental extensions.
+
+\section*{References}
+
+\begin{thebibliography}{}
+
+\bibitem{JAMA2020SIR} JAMA Network. "Modeling Epidemics With Compartmental Models." JAMA, 2020. Available: https://jamanetwork.com/journals/jama/fullarticle/2766672
+
+\bibitem{COVID19PMCCurve} PMC8993010. "Example of a COVID-19 SIR model." https://pmc.ncbi.nlm.nih.gov/articles/PMC8993010/
+
+\end{thebibliography}
+
+\section*{Appendices}
+\subsection*{A. Network Construction and Degree Distributions}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{ER_deg_dist.png}
+    \caption{Degree distribution for simulated ER network (mean degree~10).}
+\end{figure}
+\subsection*{B. Simulation Code}
+Code for network creation, parameter, and simulation appears in scripts: network-construction.py, parameter-setting.py, and simulation-11.py.

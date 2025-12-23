@@ -1,0 +1,86 @@
+\title{Impact of Temporal Network Structure on SIR Epidemic Spreading: Comparing Activity-Driven and Aggregated Static Approaches}
+
+% --- Abstract ---
+\begin{abstract}
+We investigate the influence of temporal network structure on the spread of infectious diseases, focusing on a susceptible-infectious-recovered (SIR) epidemic with $R_0 = 3$ on a network of 1000 individuals. The network is modeled in two ways: (i) as a sequence of activity-driven temporal graphs where each node activates with probability $\alpha = 0.1$ per time step and forms $m = 2$ transient connections, and (ii) as its corresponding time-aggregated static network, where edge weights represent the frequency of interactions over time. By calibrating SIR parameters to yield the same basic reproduction number, we show through simulation that the temporal structure results in markedly different epidemic outcomes than the static case: outbreaks are smaller, peak later, and last longer in the temporal network. These differences align with recent theoretical findings on the suppression of contagion dynamics by temporal ordering. Our results underscore the critical importance of modeling contact timing to accurately predict epidemic trajectories in dynamic populations.
+\end{abstract}
+
+\section{Introduction}
+Understanding how temporal structures in networks affect disease transmission is essential for effective epidemic modeling and intervention planning. Real-world contact patterns are inherently dynamic, with individuals forming and dissolving connections over time. Traditional epidemic models often rely on static or time-aggregated networks, failing to capture the causal ordering of contacts. However, an increasing body of research \cite{liu2012contagion} shows that ignoring temporal dynamics can lead to a substantial overestimation of outbreak size and mischaracterization of epidemic speed and peak.
+
+In this work, we address the specific scenario of an SIR epidemic propagated across a population of 1000 nodes modeled as both an activity-driven temporal network and its aggregated static equivalent. Activity-driven models reproduce realistic, fleeting contacts: at each discrete time step, nodes activate independently with probability $\alpha = 0.1$, and each activates forms $m = 2$ links to random peers. We contrast this with the network aggregated over many time steps, whose edges represent cumulative contact frequency. The central research question is: How does the temporal nature of interactions alter epidemic trajectory—size, peak, and duration—versus the static case, when disease parameters ($R_0$, infectious period) are held constant? Our contributions are (1) a side-by-side simulation using empirically derived parameters for both cases, and (2) a careful analysis of the resulting epidemic metrics, interpreted with respect to theory and the literature.
+
+\section{Methodology}
+
+\subsection{Network Structure}
+For the temporal scenario, we generate an activity-driven network \cite{liu2012contagion} with $N=1000$, $\alpha=0.1$, $m=2$, for $T=500$ time steps. At each $t$, active nodes are chosen independently and each forms two connections to randomly selected others. Over time, these connections yield an edge list for every step and together define the time-varying contact network. To create the corresponding aggregated network, all contacts are summed across $T$; edge weights thus reflect interaction frequency. The aggregated network has a mean degree $\langle k \rangle = 181.1$ and second moment $\langle k^2 \rangle = 33{,}003.1$. The construction code is archived for reproducibility.
+
+\subsection{Epidemic Model and Parameter Calibration}
+We employ the SIR model with compartmental transitions $S + I \xrightarrow{\beta} 2I$, $I \xrightarrow{\gamma} R$. For both models, we target $R_0 = 3$. The infectious period is set to $1/\gamma = 5$ time steps, yielding $\gamma = 0.2$. For the static (aggregated) network, the infection rate $\beta$ is determined using the excess degree formula: $\beta_{\text{static}} = R_0 \gamma / q$, where $q = (\langle k^2 \rangle - \langle k \rangle)/\langle k \rangle = 181.19$. Thus, $\beta_{\text{static}} \approx 0.00331$. For the temporal activity-driven process, theory indicates the threshold depends on $(m\alpha)$, so $\beta_{\text{temporal}} = R_0\gamma/(m\alpha) = 3$. Initial conditions set 1\% of nodes as infectious, assigned randomly.
+
+\subsection{Simulation Protocol}
+For the static case, we use the FastGEMF library to simulate the SIR process on the weighted static adjacency network. For the temporal process, we simulate the SIR process step-wise: at each time $t$, we use the respective edge list and update transmissions and recoveries probabilistically. Both simulations are repeated (nsim=4) and populations in $S$, $I$, $R$ are recorded for each time point. Metrics extracted include epidemic peak time and size, total cases, and epidemic duration. Full code and networks are available to facilitate reproducibility.
+
+\section{Results}
+
+Figure~\ref{fig:comparison_I} compares the time evolution of the number of infectious individuals $I$ in both network paradigms. Metrics derived from simulations are summarized in Table~\ref{tab:metrics_summary}. Visualizations in Figure~\ref{fig:comparison_SIR} show the full $S$, $I$, $R$ trajectories side by side.
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.7\textwidth]{comparison_I.png}
+  \caption{Comparison of infectious population $I(t)$ for SIR epidemic solution on static aggregated network and activity-driven temporal network.}
+  \label{fig:comparison_I}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Network Type} & \textbf{Peak Time} & \textbf{Peak $I$} & \textbf{Epidemic Duration} & \textbf{Final $R$} & \textbf{Total Cases} \\
+\hline
+Static (Aggregated) & 11 & 337 & 52 & 951 & 951 \\
+Temporal (Activity-Driven) & 35 & 126 & 80 & 759 & 761 \\
+\hline
+\end{tabular}
+\caption{Comparison of key outbreak metrics from SIR simulations on static aggregated and activity-driven temporal networks.}
+\label{tab:metrics_summary}
+\end{table}
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.95\textwidth]{comparison_SIR.png}
+  \caption{Population evolution in $S$, $I$, $R$ for both networks. Left: static aggregated, right: activity-driven temporal.}
+  \label{fig:comparison_SIR}
+\end{figure}
+
+\section{Discussion}
+
+Our side-by-side simulations confirm recent theoretical predictions: the temporal ordering of contacts in the activity-driven network yields a \\textit{slower, smaller, and more prolonged} epidemic compared to its aggregated static counterpart. Specifically, the outbreak on the temporal network peaks later (at $t=35$ vs $t=11$), with a much lower maximum number infectious (126 vs 337), and lasts longer (80 vs 52 steps). The final epidemic size---the number recovered---is also substantially reduced (759 vs 951).
+
+This effect arises because the temporal network enforces a causality constraint: infections can only transit through chains of contacts as they arise in time. In contrast, the static aggregation encodes all possible contacts as always available (regardless of their sequence), enabling unrealistically rapid transmission to many nodes---even those unreachable in real time. Our findings are fully consistent with the literature \cite{liu2012contagion}; see also \cite{sun2015contrasting}, where it is established analytically that thresholds for SIR propagation are higher in temporal networks, and the epidemic is suppressed relative to time-collapsed representations.
+
+Crucially, ignoring time-ordering results in substantial overestimations of outbreak severity. The degree distribution of the aggregated network (see Appendix) reveals a dense structure, but this is misleading for epidemic evaluation unless paired with timing information.
+
+These results underscore the necessity of using temporal contact data, not just time-averaged network structure, for realistic epidemic modeling---particularly for interventions, as static network models may substantially exaggerate risk or mislead resource allocation.
+
+\section{Conclusion}
+
+We demonstrate---empirically and in alignment with theory---that the temporal structure of contact networks can dramatically slow, shrink, and extend the course of an epidemic, compared to predictions from static aggregated networks. In the SIR model with $R_0 = 3$, outbreaks on the temporal network are smaller, peak later, and last longer. These features make clear that dynamic contact information must be included in epidemic forecasts and public health planning. Future work could extend this study to other compartmental models, or networks with different heterogeneities or behavioral adaptations.
+
+\section*{References}
+
+\begin{thebibliography}{10}
+
+\bibitem{liu2012contagion} Suyu Liu, Andrea Baronchelli, N. Perra, ``Contagion dynamics in time-varying metapopulation networks,'' arXiv, 2012. \url{https://www.semanticscholar.org/paper/98769290b14d1b6cb885d6677ce8fbc5224052b0}
+
+\bibitem{sun2015contrasting} K. Sun, Andrea Baronchelli, N. Perra, ``Contrasting effects of strong ties on SIR and SIS processes in temporal networks.'' European Physical Journal B, 2015. \url{https://www.semanticscholar.org/paper/df4d67cffbc57162ef739d189839724e609c8320}
+
+\end{thebibliography}
+
+\appendix
+\section*{Appendix: Supplementary Figures}
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.65\textwidth]{degree_dist_aggregate.png}
+  \caption{Degree distribution of the aggregated network.}
+\end{figure}

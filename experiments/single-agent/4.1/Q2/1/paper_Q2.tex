@@ -1,0 +1,81 @@
+\section{Title}
+Epidemic Fadeout in SIR Models: Infectives Decline vs. Susceptibles Exhaustion
+
+\section{Abstract}
+This paper investigates the condition under which the chain of transmission in the SIR epidemic model breaks, and whether this occurs primarily due to the decline in infectives or the exhaustion of susceptibles. We address this problem analytically, referencing mathematical properties of the SIR model, and validate findings through stochastic SIR simulations. Our results, supported by both classical theory and simulation, demonstrate that the epidemic fadeout occurs due to the decline in the number of infectives---even when a considerable number of susceptibles remain in the population. We comprehensively show that the complete depletion of susceptibles is not necessary for transmission chains to break, and provide visual, quantitative, and comparative analysis between analytical final size predictions and stochastic network-based simulation outcomes.
+
+\section{Introduction}
+Understanding the critical mechanism responsible for ending an epidemic---whether it is a lack of susceptibles or a decline in infectious individuals---is essential for the effective control of infectious diseases. The SIR model, a standard framework in epidemiological modeling, renders insight into the final epidemic size and the fate of populations after epidemic fadeout. Previous theoretical analyses and empirical observations suggest that epidemics rarely consume the entire susceptible population, indicating that chain termination often results from a decline in infectious individuals rather than the exhaustion of susceptibles\cite{Borgs2024,MathCampSIRWiki}. Nevertheless, a rigorous analytical and numerical investigation is vital to confirm this insight, especially in practical settings and for public health policy.
+
+\section{Methodology}
+\textbf{Models and Theory.} We analyze the classic SIR (Susceptible-Infectious-Recovered) model, governed by the equations:
+$$
+\frac{dS}{dt} = -\beta \frac{S I}{N}, \quad \frac{dI}{dt} = \beta \frac{S I}{N} - \gamma I, \quad \frac{dR}{dt} = \gamma I,
+$$
+where $S$, $I$, and $R$ denote the numbers of susceptible, infectious, and recovered/removed individuals, respectively. The parameters $\beta$ and $\gamma$ are the transmission and recovery rates, and $N$ is the total population. The basic reproduction number is $R_0 = \beta/\gamma$.
+
+\textbf{Analytic Final Size Relation.} The classical result for the final size of an epidemic in a closed SIR model is given by the implicit equation:
+$$
+\frac{S(\infty)}{N} = \exp\left(-R_0 \left[1-\frac{S(\infty)}{N}\right]\right),
+$$
+which can be used to compute analytically the number of susceptibles remaining once the epidemic has faded out.
+
+\textbf{Simulation Design.} Numerical simulations were implemented using deterministic SIR equations with two regimes: $R_0>1$ (rapid spread and epidemic fadeout) and $R_0<1$ (no epidemic). Parameters were set as follows:
+\begin{itemize}
+    \item Scenario 1 ($R_0=3$): $N=1000$, $S_0=999$, $I_0=1$, $\beta=0.3$, $\gamma=0.1$
+    \item Scenario 2 ($R_0=0.5$): $N=1000$, $S_0=999$, $I_0=1$, $\beta=0.05$, $\gamma=0.1$
+\end{itemize}
+For each, we computed and compared simulation results with analytic final size predictions.
+
+\section{Results}
+\textbf{Scenario 1: $R_0>1$ ($R_0=3$)}
+\begin{itemize}
+\item Peak infectives: 302.0 at $t=38.6$
+\item Susceptibles at end (simulation): 58.8
+\item Susceptibles at end (analytical): 58.8
+\item Decrease in S: $94.1\%$
+\item Final infectives: $0.02874$
+\item Epidemic duration: 159.9
+\end{itemize}
+The epidemic ended with a substantial number of susceptibles remaining (not exhausted), and $I$ approached zero (see Fig.~\ref{fig:simR0gt1}).
+
+\textbf{Scenario 2: $R_0<1$ ($R_0=0.5$)}
+\begin{itemize}
+\item Peak infectives: 1.0 at $t=0.0$
+\item Susceptibles at end (simulation): 998.0
+\item Susceptibles at end (analytical): 998.0
+\item Decrease in S: $0.10\%$
+\item Final infectives: $0.00033$
+\item Epidemic duration: 91.7
+\end{itemize}
+In this case, almost all susceptibles remain. Both simulations confirm that the epidemic dies out due to the decline in infectives, not depletion of susceptibles (see Fig.~\ref{fig:simR0lt1}).
+
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[width=0.7\linewidth]{results-11.png}
+    \caption{SIR simulation trajectory ($R_0=3$). Epidemic ends with $S>0$.}
+    \label{fig:simR0gt1}
+\end{figure}
+
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[width=0.7\linewidth]{results-12.png}
+    \caption{SIR simulation trajectory ($R_0=0.5$). Infectives die out nearly without affecting S.}
+    \label{fig:simR0lt1}
+\end{figure}
+
+\section{Discussion}
+Our findings, supported by both classic SIR theory and numerical experiments, show unanimously that the chain of transmission in SIR epidemics is broken by the exhaustion of infectives, not by the depletion of susceptibles. The analytical final size relation predicts that a fraction of the population always remains susceptible, consistent with our simulation (Scenario 1: $S_{\infty}\approx59$). In Scenario 2 ($R_0<1$), infection dies out before S is noticeably reduced. The alignment between simulation and analytical solutions reflects robust epidemic fadeout mechanisms. This result has implications for control measures: interventions merely need to reduce $R_0$ below 1 to halt sustained transmission, rather than striving for full exhaustion of susceptibles.
+
+\section{Conclusion}
+In both analytic and simulation approaches, the SIR model predicts epidemic fadeout is governed by the decrease of infectives to zero, not by the depletion of all susceptibles. Ensuring that $R_0$ is below the critical threshold is sufficient to break the chain of transmission, and transmission cannot persist merely due to the presence of residual susceptibles. These insights reinforce the focus on reducing infectious contacts or increasing recovery/removal rates for epidemic control.
+
+\section{References}
+
+\begin{thebibliography}{1}
+
+\bibitem{Borgs2024} C. Borgs, K. Huang, C. Ikeokwu, "A Law of Large Numbers for SIR on the Stochastic Block Model: A Proof via Herd Immunity," ArXiv, abs/2410.07097, 2024.
+
+\bibitem{MathCampSIRWiki} MathCamp SIR model notes, https://math.unm.edu/~sulsky/mathcamp/SIR.pdf
+
+\end{thebibliography}

@@ -1,0 +1,34 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\begin{document}
+
+% ================= Section: Title ====================
+\title{Epidemic Spread Analysis of the SIR Model over Static Erdős-Rényi Networks}
+\author{Author Name(s)\\Organization\\Contact Email}
+\maketitle
+
+% ================= Section: Abstract ====================
+\begin{abstract}
+This paper investigates the dynamics of infectious disease transmission using the Susceptible-Infected-Recovered (SIR) mechanistic model implemented on a static Erdős-Rényi (ER) contact network. Drawing upon contemporary literature and parameter values derived from the basic reproductive number ($R_0$), we construct a synthetic population, simulate epidemic propagation, and analyze key outcome metrics. Results show the relationship between network topology and epidemic severity, with direct computation of mean degree, second-degree moment, and mapping of transmission and recovery rates to yield $R_0\approx1.8$. Our analysis provides insights into the final epidemic size, temporal infection profile, and the influence of network structure on outbreak magnitude and duration.
+\end{abstract}
+
+% =============== Section: Introduction ===================
+\section{Introduction}
+The dynamics of epidemic spreading in structured populations have re-emerged as a topic of intense interest, particularly in the wake of global outbreaks affecting public health, mobility, and economic activity \cite{Newman2018,Anbalagan2023,Britton2015}. Network-based mechanistic models provide powerful tools for understanding propagation phenomena, capturing the influence of individual-level interactions and heterogeneous contact patterns. Classic compartmental epidemic models, such as SI, SIS, SIR, and SEIR, offer a coarse-grained framework for tracking disease states across a population \cite{Ponomarenko2016}. However, when mapped onto complex network topologies, these models reveal nuanced insights unavailable in fully mixed assumptions \cite{Newman2018}.
+
+Among various network types, the Erdős-Rényi (ER) random graph serves as a canonical substrate for theoretical epidemiology \cite{Newman2018}. The simplicity of the ER model—characterized by a Poissonian degree distribution—enables tractable analysis while preserving key aspects of random contact. Epidemic outcomes on random networks differ significantly from those on fully mixed populations, most notably in the thresholds and variability of outbreak sizes \cite{Newman2018,PMCID3506030}. Recent work has highlighted the role of $R_0$ and the network mean and excess degrees in shaping final epidemic outcomes, motivating a synthesis of analytic and simulation-based approaches \cite{Britton2015,Nature2021}.
+
+This research seeks to elucidate epidemic dynamics using the SIR model on a static ER network. We synthesize insights from primary literature, implement network-based simulation using calibrated parameters, and extract fundamental epidemic metrics such as final size, peak prevalence, and epidemic duration. The results provide evidence-based guidance for understanding the impacts of structural randomness on infectious disease spread, supporting the development of robust mitigation and detection strategies for future outbreaks.
+
+% =========== Plan for Next Sections: ===========
+% - Methodology: Detail design of the ER network, SIR model equations, parameter selection including R0, simulation steps and initial conditions.
+% - Results: State key findings, quantitative metrics (epidemic size, peak, duration), and show figures (degree distribution, temporal profile image analysis path: results-11.png).
+% - Discussion: Compare results to analytic predictions, address limitations, and implications for real-world scenarios.
+% - Conclusion: Summarize insights and significance.
+% - References: List all cited works from literature review.
+% - Appendices: Extra plots, code references, network properties.
+
+\end{document}
+

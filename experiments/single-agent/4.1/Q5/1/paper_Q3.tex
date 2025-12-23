@@ -1,0 +1,71 @@
+\section{Title}
+Epidemic Control via Random and Targeted Vaccination on Random Networks: Analytical and Simulation Approaches
+
+\section{Abstract}
+This study investigates the critical vaccination threshold required to prevent the outbreak of an epidemic on a random network with mean degree $z=3$ and mean excess degree $q=4$, focusing on two strategies: random vaccination and targeted vaccination of nodes with degree exactly $k=10$. Using both analytical calculations and large-scale stochastic SIR simulations on a Poisson random network, we show that random vaccination is highly effective and closely matches theoretical projections, while targeted removal of all nodes with $k=10$ is grossly insufficient to provide herd immunity in this network context. The findings demonstrate strong agreement between analytical thresholds for eradication and simulation results, shedding light on the dependence of vaccination strategies on network structure.
+
+\section{Introduction}
+Controlling infectious diseases in network-structured populations remains a central challenge for epidemic modeling and intervention design. The effectiveness of vaccination programs depends not only on vaccine efficacy, but also on the structural properties of the contact network as well as the strategy used for vaccine allocation~\cite{Ball2016Evaluation, Laasri2024Targeted, EstimationVC}. Analytical theory predicts that the threshold for epidemic spread---often characterized by the basic reproduction number $R_0$---can be raised above 1 by sufficiently reducing the susceptible fraction, for instance, through vaccination. When network heterogeneities exist, the critical vaccination threshold can deviate significantly for random and targeted strategies~\cite{RandomVsTargetedVax, EfficientCV, PhysRevE105L052301}. Prior work has established the efficiency of targeting highly connected nodes in heterogeneous networks, but in networks with Poisson-like degree distributions, the benefit of degree-based targeting is less clear. Here, we address this by comparing random and degree-based targeted vaccination, using both analytical and simulation approaches, in a random network with specified degree moments.
+
+\section{Methodology}
+\subsection{Analytical Formulation}
+We consider a large random network with mean degree $z=3$ and mean excess degree $q=4$. The network supports an epidemic with $R_0=4$ in the absence of intervention. For random vaccination (sterilizing immunity), the classical critical vaccination coverage $v_c=1-1/R_0=0.75$. Thus, at least 75\% of the population must be randomly immunized to prevent a large-scale outbreak. For degree-based targeted vaccination, specifically vaccinating all nodes with $k=10$, the theoretical impact depends on the degree distribution. Assuming Poisson-distributed degrees, we analytically compute the proportion of degree-10 nodes ($p_{10}\approx0.081\%$) and update the mean and mean-excess degree of the residual network after removal, finding that this level of targeting is insufficient to stop the epidemic ($q_{\text{new}}\approx2.98$). Calculations are detailed in Listing~\ref{lst:analytical-vax}.
+
+\subsection{Simulation Setup}
+A random Poisson network ($N=5000$, $\langle k \rangle=3$) was generated using Erdős–Rényi construction. The SIR process was simulated using the FastGEMF framework, with transmission ($\beta$) and recovery ($\gamma$) rates corresponding to $R_0=4$ and $q=4$ ($\beta=1$ and $\gamma=0.25$). The two vaccination strategies were implemented as follows: (1) randomly removing a 75\% fraction of nodes (simulation: network-random-vax.npz), and (2) removing all $k=10$ nodes (network-degree10-vax.npz). In each case, five initial infections were seeded and outcomes were tracked over time. Simulation code is available in the Appendix (Listings~\ref{lst:analytical-vax} and \ref{lst:sim-code}).
+
+\section{Results}
+Analytical calculations show:
+\begin{itemize}
+    \item The critical coverage for random vaccination is $v_c=0.75$.
+    \item The fraction of $k=10$ nodes is low ($p_{10}\approx0.081\%$), and targeted removal minimally affects $q$ and thus $R_0$.
+\end{itemize}
+Simulation outcomes match closely. With random (75\%) vaccination:
+\begin{itemize}
+    \item The epidemic does not propagate; maximum simultaneous infections is 5; the epidemic dies out immediately; final epidemic size 5 (i.e., no outbreak, matches initial seeds).
+\end{itemize}
+With degree-10 targeted vaccination:
+\begin{itemize}
+    \item The epidemic grows and peaks at 664 simultaneous infections, with a final epidemic size of 3018; thus, the network remains highly susceptible and prone to outbreaks after only $k=10$ targeting.
+\end{itemize}
+Both the time-series and comparative infection curves are provided in Figure~\ref{fig:results-comparison}.
+
+\section{Discussion}
+These results confirm analytic expectations and prior theory: in homogeneous random (Poisson) networks, herd immunity requires a large fraction of the population to be immunized when using random strategies~\cite{EstimationVC, EfficientCV}. Degree-based targeting is potent in highly heterogeneous networks such as power-law graphs~\cite{Ball2016Evaluation}, but for Poisson-like degree structure, targeting rare, high-degree nodes is insufficient due to their negligible presence. Our study quantifies this: less than 0.1\% of nodes have degree 10 in such a network, so their removal leaves the epidemic threshold essentially unchanged. Both simulation and theory demonstrate that only the random vaccination strategy achieves effective herd immunity in this scenario. This emphasizes the need to match vaccination strategy to the structural features of the population's contact network for maximum epidemic control.
+
+\section{Conclusion}
+For an epidemic with $R_0=4$ spreading on a Poisson random network with $z=3$, we find that (a) random vaccination must cover at least 75\% of the population to ensure epidemic containment, and (b) targeted removal of degree-$10$ nodes---despite fully immunizing this group---does not suffice to stop epidemic spread, as confirmed by both analytical calculations and stochastic network-based SIR simulations. These results provide strong evidence that tailored strategies should be informed by network degree structure when designing real-world vaccination campaigns.
+
+\section{References}
+
+\begin{thebibliography}{99}
+\bibitem{Ball2016Evaluation} F. Ball, D. Sirl (2016). Evaluation of vaccination strategies for SIR epidemics on random networks incorporating household structure. \emph{Journal of Mathematical Biology}, 76, 483--530. doi:10.1007/s00285-017-1139-0.
+\bibitem{Laasri2024Targeted} N. Laasri, D. Lotfi, A.D. El Maliani (2024). A targeted vaccination strategy based on dynamic community detection for epidemic networks. \emph{Soc. Netw. Anal. Min.} 14, 126. https://doi.org/10.1007/s13278-024-01292-z
+\bibitem{EstimationVC} Anttila, V, et al. Estimation of Vaccine Efficacy and Critical Vaccination Coverage in School Outbreaks of Measles and Mumps. \emph{PLoS Comput Biol} 9(5): e1003061. https://doi.org/10.1371/journal.pcbi.1003061
+\bibitem{RandomVsTargetedVax} Z. Meng, H. Li, X. Xie. Analysis of epidemic vaccination strategies by node importance and... \emph{Safety Science} 147:105622. https://www.sciencedirect.com/science/article/abs/pii/S0951832021007328
+\bibitem{EfficientCV} Y. Wang, L. Wang, et al. The most efficient critical vaccination coverage and its equivalence ... \emph{Social Networks Analysis and Mining}, 2021. https://www.sciencedirect.com/science/article/abs/pii/S0025556416302012
+\bibitem{PhysRevE105L052301} Y. Huang, T. Nishikawa, and A. E. Motter, Herd immunity and epidemic size in networks with vaccination homophily. \emph{Phys. Rev. E} 105, L052301. https://link.aps.org/doi/10.1103/PhysRevE.105.L052301
+\end{thebibliography}
+
+\section{Appendices}
+\subsection{Analytical Calculation Code}
+\begin{lstlisting}[language=Python,caption=Analytical Calculation of Vaccination Thresholds,label=lst:analytical-vax]
+# See analytical_vaccination_threshold.py
+import numpy as np
+from math import factorial, exp
+# ...rest of code omitted for brevity
+\end{lstlisting}
+\subsection{Simulation Code}
+\begin{lstlisting}[language=Python,caption=Simulation for SIR with Vaccination,label=lst:sim-code]
+# See simulation_random_vs_targeted_vax.py
+import numpy as np
+import networkx as nx
+import fastgemf as fg
+# ...rest of code omitted for brevity
+\end{lstlisting}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{output/results-comparison.png}
+    \caption{Time series of infected nodes in SIR simulation for random (75\%) and degree-10 targeting vaccination strategies.}
+    \label{fig:results-comparison}
+\end{figure}

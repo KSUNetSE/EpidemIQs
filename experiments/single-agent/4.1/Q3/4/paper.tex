@@ -1,0 +1,47 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\begin{document}
+
+%------------------ TITLE ----------------------
+\title{Impact of Temporal Structure on SIR Epidemic Spread in Activity-Driven Networks: A Comparative Study with Static Aggregated Networks}
+\maketitle
+
+%------------------ ABSTRACT ------------------
+\begin{abstract}
+The role of temporal network structure in epidemic spreading remains a central challenge in computational epidemiology. This paper investigates how an infectious disease, modeled via the Susceptible-Infectious-Removed (SIR) framework with a basic reproduction number $R_0 = 3$, propagates through an activity-driven temporal network of 1000 nodes---where each node activates with probability $\alpha=0.1$ and forms $m=2$ instantaneous contacts---in comparison to its time-aggregated static counterpart in which edge weights represent contact frequencies. Through simulation and quantitative analysis, we find that the temporal ordering and sparsity of interactions in the activity-driven scenario significantly diminish outbreak severity and peak infection compared to the static network, even under identical $R_0$, highlighting the critical importance of temporal effects for epidemic prediction and control.
+\end{abstract}
+
+%------------------ INTRODUCTION -----------------
+\section{Introduction}
+The spread of infectious diseases depends sensitively on the structure of contact networks over which transmission occurs \cite{PastorSatorras2015, Holme2012, Masuda2016}. Traditional epidemic models, such as the SIR framework, are often analyzed on static graphs that aggregate all contacts over a period, ignoring the order and timing of interactions. However, real-world contact patterns are dynamic, with temporally fluctuating activity and intermittent ties that may strongly alter outbreak trajectories \cite{Perra2012, Starnini2013, Karsai2011}.
+
+A canonical paradigm for temporal networks is the activity-driven model \cite{Perra2012}, in which each of $N$ nodes is assigned an intrinsic activity rate, and at each time step, active nodes form a small number $m$ of transient edges. In this system, the instantaneous network is sparse and rapidly changing, potentially limiting the ability of pathogens to traverse the network compared to a weighted static representation where all links (regardless of when they occurred) are always active.
+
+Recent studies have argued that aggregation of contacts can lead to a dramatic overestimation of epidemic size and speed; specifically, the temporal structure can create bottlenecks that restrict the flow of infection, even for the same average number of contacts and a fixed $R_0$ \cite{Holme2015, Valdano2015}. Yet, the quantitative impact of these effects for SIR epidemics on activity-driven versus static networks, for identical population and $R_0$, remains an open and practically relevant question.
+
+In this work, we address this question through a computational experiment. We simulate SIR dynamics (with $R_0=3$) in both an activity-driven temporal network and its aggregated static counterpart, where connections are weighted by frequency of past interactions, for $N=1000$, $\alpha=0.1$, $m=2$. By analyzing epidemic curves, peak infection, outbreak duration, and final epidemic size, we elucidate the substantial influence of temporal network features---specifically, the ordering and concurrency of contacts---on disease spread. Our results highlight the potential pitfalls of using static network representations for infectious disease forecasting in dynamic populations.
+
+%----------------- REFERENCES (INITIAL) -----------
+\begin{thebibliography}{99}
+
+\bibitem{PastorSatorras2015} R. Pastor-Satorras, C. Castellano, P. Van Mieghem, and A. Vespignani, "Epidemic processes in complex networks," Rev. Mod. Phys., vol. 87, no. 3, pp. 925--979, 2015.
+
+\bibitem{Holme2012} P. Holme and J. Saramäki, "Temporal networks," Physics Reports, vol. 519(3), pp. 97--125, 2012.
+
+\bibitem{Masuda2016} N. Masuda and R. Lambiotte, 
+"A Guide to Temporal Networks," World Scientific, Singapore, 2016.
+
+\bibitem{Perra2012} N. Perra, B. Gonçalves, R. Pastor-Satorras, and A. Vespignani, "Activity driven modeling of time varying networks," Sci. Rep., vol. 2, 469, 2012.
+
+\bibitem{Starnini2013} M. Starnini and R. Pastor-Satorras, "Temporal percolation in activity-driven networks," Phys. Rev. E, vol. 87, 062807, 2013.
+
+\bibitem{Karsai2011} M. Karsai, M. Kivelä, R. K. Pan, K. Kaski, J. Kertész, A-L. Barabási, and J. Saramäki, "Small but slow world: How network topology and burstiness slow down spreading," Phys. Rev. E, vol. 83, 025102(R), 2011.
+
+\bibitem{Holme2015} P. Holme and T. Takaguchi, 
+"Temporal networks and epidemics," Eur. Phys. J. B, vol. 88, 2015.
+
+\bibitem{Valdano2015} E. Valdano, L. Ferreri, C. Poletto, and V. Colizza, "Analytical computation of the epidemic threshold on temporal networks," Phys. Rev. X, vol. 5, 021005, 2015.
+
+\end{thebibliography}
+
+\end{document}

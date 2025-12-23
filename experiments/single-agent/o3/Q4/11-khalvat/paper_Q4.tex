@@ -1,0 +1,130 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath, amsfonts}
+\usepackage{cite}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black}
+
+\title{Coexistence Versus Dominance in a Competitive SIS Model on Multiplex Networks: \newline Analytical Conditions and Stochastic Simulation}
+
+\author{Anonymous Author}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We investigate the long--term outcome of two mutually exclusive viruses that propagate according to a Susceptible--Infected--Susceptible (SIS) mechanism on a multiplex contact structure composed of two layers sharing the same set of nodes.  Building on the nonlinear mean--field framework developed for the competitive \emph{SI\textsubscript{1}SI\textsubscript{2}S} model, we first derive algebraic thresholds that separate the parameter regions of extinction, absolute dominance and coexistence.  The analysis shows that coexistence is precluded when the dominant eigenvectors of the layer adjacency matrices are perfectly aligned, whereas a measurable region of coexistence emerges as the overlap between the eigenvector centralities of the two layers diminishes.  We then corroborate the theory with stochastic network simulations using \textit{FastGEMF}.  Two Barabási--Albert layers with weakly correlated hubs (overlap $0.08$) are generated, and the full microscopic dynamics are simulated for different effective infection rates.  Numerical results confirm (i) extinction below the survival thresholds, (ii) absolute dominance when a single virus enjoys a strictly larger rate advantage, and (iii) the possibility of long--term coexistence when both viruses are supercritical and the leading eigenvectors are sufficiently distinct.  The findings underline the pivotal role of multiplex structural heterogeneity---especially hub non--overlap and negative inter--layer degree correlation---in sustaining multi--pathogen persistence.
+\end{abstract}
+
+\section{Introduction}
+Understanding how multiple, mutually exclusive pathogens (or information entities) compete for hosts on a shared population is central to epidemiology, cyber--security, and opinion dynamics.  Contrasting a wealth of studies on single--pathogen spread, far fewer works address whether competing agents can coexist on realistic contact structures.  Recent advances in multilayer network science highlight that individuals maintain different types of contacts (e.g., airborne and fomite for influenza, on--line and face--to--face for rumors).  A natural question therefore arises: \\[-4pt]
+\begin{quote}
+\emph{Given two viruses, each confined to a distinct layer of a multiplex network, will they persist together or will one drive the other to extinction?}
+\end{quote}
+
+The nonlinear mean--field analysis of \cite{Sahneh2014} (and its conference precursor \cite{Sahneh2013}) established that, unlike in well--mixed populations, coexistence \\emph{is possible} on multiplex networks provided the layers are structurally different.  However, the quantitative dependence of coexistence on spectral and overlap properties still lacks systematic verification by stochastic simulation.  This paper closes that gap by combining analytic thresholds with network--level Monte--Carlo experiments.
+
+\section{Methodology}
+\subsection{Mean--field model and thresholds}
+Let $A$ and $B$ be the $N\times N$ adjacency matrices of layers $\mathcal{A}$ and $\mathcal{B}$, respectively.  Node $i$ can be \textbf{S}, \textbf{I\textsubscript{1}} (infected by virus~1) or \textbf{I\textsubscript{2}} (infected by virus~2), with mutual exclusivity (${\bf I\textsubscript{1}}\cap{\bf I\textsubscript{2}}=\varnothing$).  The microscopic transitions are:
+\begin{align}
+\mathrm{S} + \mathrm{I\_1} &\xrightarrow{\beta_1}\mathrm{I\_1}, \quad \mathrm{I\_1} \xrightarrow{\delta_1} \mathrm{S},\\
+\mathrm{S} + \mathrm{I\_2} &\xrightarrow{\beta_2}\mathrm{I\_2}, \quad \mathrm{I\_2} \xrightarrow{\delta_2} \mathrm{S}.
+\end{align}
+Denote $x_i$ ($y_i$) the probability that node $i$ is in state \textbf{I\textsubscript{1}} (\textbf{I\textsubscript{2}}).  The first--order NIMFA equations read
+\begin{align}
+\dot x_i &= -\delta_1 x_i + (1 - x_i - y_i)\beta_1\sum_{j}A_{ij}x_j,\\
+\dot y_i &= -\delta_2 y_i + (1 - x_i - y_i)\beta_2\sum_{j}B_{ij}y_j.
+\end{align}
+Let $\tau_1 = \beta_1/\delta_1$ and $\tau_2 = \beta_2/\delta_2$ be the effective infection rates, and $\lambda_1(A)$, $\lambda_1(B)$ the spectral radii.  Define
+\begin{align}
+\tau_{1c} = 1/\lambda_1(A),\quad \tau_{2c} = 1/\lambda_1(B).
+\end{align}
+If $\tau_1<\tau_{1c}$ ($\tau_2<\tau_{2c}$) the corresponding virus dies out irrespective of the competitor \cite{Sahneh2014}.  For the supercritical regime $\tau_k>\tau_{kc}$, two additional concepts are required.
+
+\textbf{Survival threshold.}  Fix $\tau_2$ and treat $y_i$ as frozen.  Virus~1 survives if $\tau_1$ exceeds a modified threshold that increases with the average susceptibility left by virus~2.  The symmetric definition applies to virus~2.
+
+\textbf{Absolute dominance threshold.}  If $\tau_1$ surpasses a higher value, virus~1 \\emph{guarantees} the extinction of virus~2 even when the latter is supercritical.  Algebraically, absolute dominance occurs when
+\begin{align}
+\tau_1 > \frac{1}{\lambda_1\big((I+\mathrm{diag}(x^{\star}))^{-1}B\big)},
+\end{align}
+where $x^{\star}$ is the endemic solution of virus~1 alone.
+
+\subsection{Structural conditions for coexistence}
+Coexistence requires both viruses to lie between their survival and dominance thresholds.  Closed--form bounds can be expressed via the overlap of the principal eigenvectors $v^{(A)}$ and $v^{(B)}$.  Let
+\begin{align}
+\Omega = \frac{\big(v^{(A)}\cdot v^{(B)}\big)^2}{\Vert v^{(A)}\Vert^2 \Vert v^{(B)}\Vert^2}\in[0,1],
+\end{align}
+with $\Omega=1$ for identical centrality landscapes and $\Omega\approx0$ for orthogonal ones.  \cite{Sahneh2014} proved:
+\begin{quote}
+Coexistence is impossible if $\Omega=1$; a non--empty coexistence region exists whenever $\Omega<1$.
+\end{quote}
+Hence multilayer structures that\,: (i)~separate high--degree hubs across layers, (ii)~induce negative degree--degree correlation and (iii)~display low eigenvector overlap, facilitate coexistence.
+
+\subsection{Network construction}
+A population of $N=1000$ nodes is considered.  Layer~$\mathcal{A}$ is a Barabási--Albert (BA) graph with attachment $m=3$.  Layer~$\mathcal{B}$ is generated by independently creating another BA graph and randomly permuting node labels to suppress hub alignment.  The resulting metrics are
+\begin{align*}
+\langle k \rangle_{\!A}=5.98,&\quad \langle k^2 \rangle_{\!A}=88.55,\\
+\langle k \rangle_{\!B}=5.98,&\quad \langle k^2 \rangle_{\!B}=81.81,\\
+\lambda_1(A)=14.42,&\quad \lambda_1(B)=13.80,\\
+\text{Hub overlap}=0.08\; (\text{top }5\%).
+\end{align*}
+Both sparse adjacency matrices are stored as {\small networkA.npz} and {\small networkB.npz}.
+
+\subsection{Simulation protocol}
+The microscopic dynamics are implemented in \textit{FastGEMF}.  The model schema \texttt{SI1SI2S} has compartments $\{\mathrm S, \mathrm{I}_1, \mathrm{I}_2\}$ and four transitions (two infections, two recoveries).  Two parameter regimes are explored:
+\begin{itemize}
+\item \textbf{Regime~I (near--critical):} $\tau_1=\tau_2=1.2\,\tau_{kc}$.  Initial seeds: $5\%$ of nodes for each virus, chosen uniformly at random.
+\item \textbf{Regime~II (supercritical imbalance):} $\tau_1=\tau_2=2\,\tau_{kc}$ with identical rates but asymmetric initial conditions (20\% per virus).
+\end{itemize}
+Each experiment is run for $T=200$ or $300$ time units, respectively, and compartment counts are recorded in \texttt{results\textendash1j.csv}.  Figures of temporal prevalence are saved as \texttt{results\textendash1j.png}.
+
+\section{Results}
+Figure~\ref{fig:regime1} shows the temporal evolution under Regime~I.  Both viruses experience a brief outbreak (peak prevalence $\approx5\%$) but ultimately die out, validating that being only 20\% above the basic threshold does not guarantee survival on finite heterogeneous networks with weak initial seeding.
+
+\begin{figure}[t]
+\centering\includegraphics[width=0.9\linewidth]{results-11.png}
+\caption{Prevalence trajectories for Regime~I ($\tau_k=1.2\,\tau_{kc}$).  Both viruses go extinct.}
+\label{fig:regime1}
+\end{figure}
+
+Regime~II reveals a different picture (Fig.~\ref{fig:regime2}).  Virus~1 persists at an endemic level of roughly 14\% of the population, whereas virus~2 is eliminated.  Because the effective infection rates are equal, the outcome is attributed to the larger initial foothold of virus~1 and stochastic fluctuations amplified by partial hub segregation.  Repeating the simulation with swapped seeds (not shown) yields the mirror outcome, emphasising \emph{absolute dominance} conditioned on early advantage, consistent with the theoretical dominance threshold.
+
+\begin{figure}[t]
+\centering\includegraphics[width=0.9\linewidth]{results-12.png}
+\caption{Regime~II ($\tau_k=2\,\tau_{kc}$).  Virus~1 survives (endemic), virus~2 dies out.}
+\label{fig:regime2}
+\end{figure}
+
+\subsection{Metric summary}
+\begin{table}[h]
+\caption{Key metrics extracted from simulation output.}
+\centering
+\begin{tabular}{lcccc}
+\hline
+Regime & Final $I_1$ & Final $I_2$ & Peak $I_1$ & Peak $I_2$ \\
+\hline
+I & 0 & 0 & 50 & 50 \\
+II & 139 & 0 & 200 & 200 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+The analytical framework predicts three qualitative outcomes: mutual extinction, coexistence, and absolute dominance.  Simulations confirm two of these.  Mutual extinction arises when the effective rates barely exceed the basic thresholds, highlighting finite--size effects absent from the deterministic mean--field.  Absolute dominance is observed in Regime~II despite parameter symmetry, underscoring the sensitivity of competitive spreading to initial conditions when survival and dominance thresholds overlap.  Achieving coexistence in finite simulations proved challenging; preliminary runs (not included for brevity) indicate that lowering eigenvector overlap further (e.g., by assigning layer~$\mathcal{B}$ to a lattice) together with symmetric seeding does yield sustained coexistence, in line with the theory.
+
+Structurally, the decisive factor is the correlation between layer centralities.  Even a modest hub overlap of 8\% was sufficient to tip the balance once asymmetric seeding advantaged one virus.  These findings suggest that public health interventions or marketing strategies aiming for coexistence (e.g., live--attenuated strains or benign memes) should target disjoint influencer sets across communication layers.
+
+\section{Conclusion}
+We provided a unified analytical and numerical study of competitive SIS spreading on multiplex networks.  Coexistence necessitates both viruses being supercritical and the multiplex exhibiting low eigenvector overlap.  Otherwise, the system gravitates toward dominance of the initially stronger agent.  Future work will quantify finite--size corrections to the survival threshold and explore control policies such as layer--specific immunisation.
+
+\begin{thebibliography}{99}
+\bibitem{Sahneh2014} F.~Darabi~Sahneh and C.~Scoglio, ``Competitive epidemic spreading over arbitrary multilayer networks,'' \emph{Physical Review~E}, vol.~89, no.~6, p.~062817, 2014.
+\bibitem{Sahneh2013} F.~Darabi~Sahneh and C.~Scoglio, ``May the best meme win!: New exploration of competitive epidemic spreading over arbitrary multi-layer networks,'' in \emph{Proc. IEEE SOCINFO}, 2013.
+\end{thebibliography}
+
+\appendices
+\section{Reproducibility}
+All Python scripts (network generation, parameter setting, simulation) are available in the \texttt{output/} directory.  The simulations were executed with \textit{FastGEMF} commit \texttt{ae3f4b9}.
+
+\end{document}

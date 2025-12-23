@@ -1,0 +1,3 @@
+N=1000, alpha=0.1, m=2, T=100
+Temporal network as T=100 undirected edge snapshots for activity-driven dynamics.
+Mean degree (time-averaged): 0.40, Second moment <k^2> (time-averaged): 0.72

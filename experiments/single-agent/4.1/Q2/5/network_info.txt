@@ -1,0 +1,2 @@
+Mean degree: 8.036
+Second moment: 72.48

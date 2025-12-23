@@ -1,0 +1,4 @@
+{
+    "query": "In an activity-driven temporal network with 1000 nodes, where each node activates with a rate of alpha=0.1 and forms transient connections upon activation, how does the temporal structure of the network influence the spread of an infectious disease modeled using the SIR model with a basic reproduction number R0 = 3, compared to its corresponding time-aggregated static network in which edge weights represent the frequency of interactions over time?",
+    "no": 3
+}

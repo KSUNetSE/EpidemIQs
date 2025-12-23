@@ -1,0 +1,490 @@
+{
+    "results": [
+        {
+            "query": "SEIR model degree heterogeneous network vs homogeneous mixing epidemic threshold",
+            "papers": [
+                {
+                    "title": "Modeling Epidemics on Multiplex Networks: Epidemic Threshold and Basic Reproduction Number",
+                    "abstract": "Accurate epidemic forecasting requires models that account for the layered and heterogeneous nature of real social interactions. The basic reproduction number $\\mathcal R_0$ calculated from models that assume homogeneous mixing or single-layer contact structures have limited applicability to complex social systems. Here, we propose an expression of $\\mathcal R_0$ in the context of multiplex networks, enabling the analysis of disease transmission across multiple social layers. We adapt the Degree-Based Mean-Field (DBMF) SIR model for single-layered complex networks to the multiplex setting, where each layer has its own degree distribution and infection rate. Using the Next Generation Matrix method, we derive an analytical expression for the basic reproduction number $\\mathcal R_0$. Numerical integration of the multiplex DBMF equations shows that $\\mathcal R_0 = 1$ marks the epidemic threshold and governs the functional dependence of key outbreak indicators. In addition to the exact result for the $\\mathcal R_0$, we provide an approximation denoted as $\\tau$, which is easier to compute and more straightforward to interpret in terms of the parameters of the system, and shares most of the expected properties of the basic reproduction number. Stochastic agent-based simulations confirm these results, demonstrating a direct correspondence between $\\tau$ and the average number of secondary infections in the early epidemic phase, in line with the interpretation of $\\mathcal R_0$. This research provides a robust generalization of $\\mathcal R_0$ for layered contact structures, offering a more realistic basis for epidemic forecasting and the design of intervention strategies.",
+                    "citation": "E. Rozan, M. I. Simoy, Sebastian Bouzat, et al. (2025). Modeling Epidemics on Multiplex Networks: Epidemic Threshold and Basic Reproduction Number. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This research provides a robust generalization of the basic reproduction number of $\\mathcal R_0$ for layered contact structures, offering a more realistic basis for epidemic forecasting and the design of intervention strategies."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8f0d4237baac356d7cf6ab0fc52bbfdd6ffbda75"
+                },
+                {
+                    "title": "Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature",
+                    "abstract": "Infectious-disease dynamics depend on heterogeneous contact structure, which classical homogeneous-mixing models such as SIR/SEIR cannot capture. We develop a curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission. We compute FRC on undirected and directed Erd\u0151s\u2013R\u00e9nyi, Watts\u2013Strogatz, Barab\u00e1si\u2013Albert, and Power\u2013Law Cluster networks, and relate curvature to degree, clustering, and betweenness to identify structurally influential nodes and bridge edges. Using curvature-adjusted transmission, we simulate epidemics across topologies and infection rates, then validate predictively with a controlled \u201chidden-truth\u201d benchmark: posterior-calibrated FRC models are compared with advanced centrality-weighted baselines (EdgeBetweenness, Degree, Eigenvector) under identical fit/holdout splits. On heterogeneous graphs (Barab\u00e1si\u2013Albert/Power\u2013Law Cluster), FRC improves holdout Root Mean Squared Error (RMSE), peak-time accuracy, and final-size proximity. A compact sensitivity analysis over baseline transmission and clustering, with Partial Rank Correlation Coefficient (PRCC), shows these gains are robust across parameter regimes. Intervention ablations (cases averted vs. budget) further show that vaccinating high-curvature nodes and protecting extreme negative-curvature bridges can outperform EdgeBetweenness targeting at practical budgets. Directed networks exhibit sharper peaks and faster resolution, with strongly negative out-curvature marking putative exporters. In general, FRC provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control.",
+                    "citation": "Oladimeji Samuel Sowole, N. Bragazzi, Geminpeter A. Lyakurwa (2025). Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature. Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2627f3ba9c1217f944072957731005cb09c6a8fe"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic threshold heterogeneous network degree SIR Pastor-Satorras 2001",
+            "papers": [
+                {
+                    "title": "Infection dynamics on scale-free networks.",
+                    "abstract": null,
+                    "citation": "R. May, A. Lloyd (2001). Infection dynamics on scale-free networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 760, Influential: 23.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Approximate expressions for the final size of an epidemic in an infinite closed population and for the dependence of infection probability on an individual's degree of connectivity within the population are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/442a6f951160309c21e73b59ef3330320dca0bff"
+                },
+                {
+                    "title": "Thresholds for epidemic spreading in networks",
+                    "abstract": "We study the threshold of epidemic models in quenched networks with degree distribution given by a power-law. For the susceptible-infected-susceptible model the activity threshold \u03bb(c) vanishes in the large size limit on any network whose maximum degree k(max) diverges with the system size, at odds with heterogeneous mean-field (HMF) theory. The vanishing of the threshold has nothing to do with the scale-free nature of the network but stems instead from the largest hub in the system being active for any spreading rate \u03bb>1/\u221ak(max) and playing the role of a self-sustained source that spreads the infection to the rest of the system. The susceptible-infected-removed model displays instead agreement with HMF theory and a finite threshold for scale-rich networks. We conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state.",
+                    "citation": "C. Castellano, R. Pastor-Satorras (2010). Thresholds for epidemic spreading in networks. Physical Review Letters. Citations: 594, Influential: 19.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f1c0ad767dc23e53daf5d3f8e2097ec81a7772d4"
+                },
+                {
+                    "title": "Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.",
+                    "abstract": "We develop an analytical approach to the susceptible-infected-susceptible epidemic model that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks. We find that a delicate balance between the number of high degree nodes in the network and the topological distance between them dictates the existence or absence of such a threshold. In particular, small-world random networks with a degree distribution decaying slower than an exponential have a vanishing epidemic threshold in the thermodynamic limit.",
+                    "citation": "M. Bogu\u00f1\u00e1, C. Castellano, R. Pastor-Satorras (2013). Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.. Physical Review Letters. Citations: 222, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical approach to the susceptible-infected-susceptible epidemic model is developed that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45d940bd24ae48e34e724bd64dbfaf63545d5e5b"
+                },
+                {
+                    "title": "Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.",
+                    "abstract": null,
+                    "citation": "Cong Li, R. van de Bovenkamp, P. van Mieghem (2012). Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 103, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work focuses on the epidemic threshold and the steady-state fraction of infected nodes in networks with different degree distributions and concludes that the N-intertwined approximation is superior to the HMF approximation in regular graphs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/244d96b81e19a334b52ea7334c8644cc565b008c"
+                },
+                {
+                    "title": "Collective versus hub activation of epidemic phases on networks",
+                    "abstract": "We consider a general criterion to discern the nature of the threshold in epidemic models on scale-free (SF) networks. Comparing the epidemic lifespan of the nodes with largest degrees with the infection time between them, we propose a general dual scenario, in which the epidemic transition is either ruled by a hub activation process, leading to a null threshold in the thermodynamic limit, or given by a collective activation process, corresponding to a standard phase transition with a finite threshold. We validate the proposed criterion applying it to different epidemic models, with waning immunity or heterogeneous infection rates in both synthetic and real SF networks. In particular, a waning immunity, irrespective of its strength, leads to collective activation with finite threshold in scale-free networks with large degree exponent, at odds with canonical theoretical approaches.",
+                    "citation": "Silvio C. Ferreira, R. S. Sander, R. Pastor-Satorras (2015). Collective versus hub activation of epidemic phases on networks. Physical Review E. Citations: 48, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A waning immunity, irrespective of its strength, leads to collective activation with finite threshold in scale-free networks with large degree exponent, at odds with canonical theoretical approaches."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45a7b55c1deee8d32464c2fa05f415dd05763044"
+                },
+                {
+                    "title": "The impact of vaccine success and awareness on epidemic dynamics",
+                    "abstract": "The role of vaccine success is introduced into an epidemic spreading model consisting of three states: susceptible, infectious, and vaccinated. Moreover, the effect of three types, namely, contact, local, and global, of infection awareness and immunization awareness is also taken into consideration. The model generalizes those considered in Pastor-Satorras and Vespignani [Phys. Rev. E 63, 066117 (2001)], Pastor-Satorras and Vespignani [Phys. Rev. E 65, 036104 (2002)], Moreno et al. [Eur. Phys. J. B 26, 521\u2013529 (2002)], Wu et al. [Chaos 22, 013101 (2012)], and Wu et al. [Chaos 24, 023108 (2014)]. Our main results contain the following. First, the epidemic threshold is explicitly obtained. In particular, we show that, for any initial conditions, the epidemic eventually dies out regardless of what other factors are whenever some type of immunization awareness is considered, and vaccination has a perfect success. Moreover, the threshold is independent of the global type of awareness. Second, we compare the effect of contact and local types of awareness on the epidemic thresholds between heterogeneous networks and homogeneous networks. Specifically, we find that the epidemic threshold for the homogeneous network can be lower than that of the heterogeneous network in an intermediate regime for intensity of contact infection awareness while it is higher otherwise. In summary, our results highlight the important and crucial roles of both vaccine success and contact infection awareness on epidemic dynamics.",
+                    "citation": "Jonq Juang, Yu-Hao Liang (2016). The impact of vaccine success and awareness on epidemic dynamics. Chaos. Citations: 12, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The role of vaccine success is introduced into an epidemic spreading model and it is shown that, for any initial conditions, the epidemic eventually dies out regardless of what other factors are whenever some type of immunization awareness is considered, and vaccination has a perfect success."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5db1035370dda242e4b8786b77169a52864e441b"
+                },
+                {
+                    "title": "Small world research",
+                    "abstract": null,
+                    "citation": "Sebastian Schnettler (2013). Small world research. Unknown Journal. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The 'New' Science of Networks, a Structured Overview of 50 Years of Small-World Research, and a Quantitative Method for Determining Canonical Network Equivalence are some of the topics covered."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/ee201c5292c70bb88c40d82848268ddda66d2476"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SEIR heterogeneous network degree-based mean field",
+            "papers": [
+                {
+                    "title": "Complete Classification of the Macroscopic Behavior of a Heterogeneous Network of Theta Neurons",
+                    "abstract": null,
+                    "citation": "Tanushree B. Luke, Ernest Barreto, P. So (2013). Complete Classification of the Macroscopic Behavior of a Heterogeneous Network of Theta Neurons. Neural Computation. Citations: 133, Influential: 11.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The dynamics of a large network of theta neurons, which are idealized type I neurons, are designed and analyzed and it is found that the network typically tends toward the two macroscopic equilibrium states when the neuron's intrinsic dynamics and the network interactions reinforce one another."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/cf79764a3b6a900554d2a97574a255bd47c3686c"
+                },
+                {
+                    "title": "Simple and Efficient Heterogeneous Graph Neural Network",
+                    "abstract": "Heterogeneous graph neural networks (HGNNs) have the powerful capability to embed rich structural and semantic information of a heterogeneous graph into node representations. Existing HGNNs inherit many mechanisms from graph neural networks (GNNs) designed for homogeneous graphs, especially the attention mechanism and the multi-layer structure. These mechanisms bring excessive complexity, but seldom work studies whether they are really effective on heterogeneous graphs. In this paper, we conduct an in-depth and detailed study of these mechanisms and propose the Simple and Efficient Heterogeneous Graph Neural Network (SeHGNN). To easily capture structural information, SeHGNN pre-computes the neighbor aggregation using a light-weight mean aggregator, which reduces complexity by removing overused neighbor attention and avoiding repeated neighbor aggregation in every training epoch. To better utilize semantic information, SeHGNN adopts the single-layer structure with long metapaths to extend the receptive field, as well as a transformer-based semantic fusion module to fuse features from different metapaths. As a result, SeHGNN exhibits the characteristics of a simple network structure, high prediction accuracy, and fast training speed. Extensive experiments on five real-world heterogeneous graphs demonstrate the superiority of SeHGNN over the state-of-the-arts on both accuracy and training speed.",
+                    "citation": "Xiaocheng Yang, Mingyu Yan, Shirui Pan, et al. (2022). Simple and Efficient Heterogeneous Graph Neural Network. AAAI Conference on Artificial Intelligence. Citations: 190, Influential: 10.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper proposes the Simple and Efficient Heterogeneous Graph Neural Network (SeHGNN), which reduces complexity by removing overused neighbor attention and avoiding repeated neighbor aggregation in every training epoch, and exhibits the characteristics of a simple network structure, high prediction accuracy, and fast training speed."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5aac1e6f4d711fd35d88970ca12b98c72ce4b68c"
+                },
+                {
+                    "title": "Citation recommendation employing heterogeneous bibliographic network embedding",
+                    "abstract": null,
+                    "citation": "Zafar Ali, G. Qi, Khan Muhammad, et al. (2021). Citation recommendation employing heterogeneous bibliographic network embedding. Neural computing & applications (Print). Citations: 25, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work proposes a heterogeneous network embedding model that jointly learns node representations by exploiting semantics corresponding to the author, time, context, field of study, citations, and topics and proves effectiveness on cold-start papers and network sparsity problems."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/15ade7bd00c33c19df98f71089f36f912ccdb6ba"
+                },
+                {
+                    "title": "Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.",
+                    "abstract": null,
+                    "citation": "Cong Li, R. van de Bovenkamp, P. van Mieghem (2012). Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 103, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work focuses on the epidemic threshold and the steady-state fraction of infected nodes in networks with different degree distributions and concludes that the N-intertwined approximation is superior to the HMF approximation in regular graphs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/244d96b81e19a334b52ea7334c8644cc565b008c"
+                },
+                {
+                    "title": "A Joint Cross-Layer and Colayer Interference Management Scheme in Hyperdense Heterogeneous Networks Using Mean-Field Game Theory",
+                    "abstract": null,
+                    "citation": "Ali Y. Al-Zahrani, F. Yu, Minyi Huang (2016). A Joint Cross-Layer and Colayer Interference Management Scheme in Hyperdense Heterogeneous Networks Using Mean-Field Game Theory. IEEE Transactions on Vehicular Technology. Citations: 51, Influential: 4.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/79d325e7672a814b1b82202e101dd1373b24eed3"
+                },
+                {
+                    "title": "Mean-field theory of social laser",
+                    "abstract": "In this work we suggest a novel paradigm of social laser (solaser), which can explain such Internet inspired social phenomena as echo chambers, reinforcement and growth of information cascades, enhancement of social actions under strong mass media operation. The solaser is based on a well-known in quantum physics laser model of coherent amplification of the optical field. Social networks are at the core of the solaser model; we define them by means of a network model possessing power\u2013law degree distribution. In the solaser the network environment plays the same role as the gain medium has in a physical laser device. We consider social atoms as decision making agents (humans or even chat bots), which possess two (mental) states and occupy the nodes of a network. The solaser establishes communication between the agents as absorption and spontaneous or stimulated emission of socially actual information within echo chambers, which mimic an optical resonator of a convenient (physical) laser. We have demonstrated that social lasing represents the second order nonequilibrium phase transition, which evokes the release of coherent socially stimulated information field represented with the order parameter. The solaser implies the formation of macroscopic social polarization and results in a huge social impact, which is realized by viral information cascades occurring in the presence of population imbalance (social bias). We have shown that decision making agents follow an adiabatically time dependent mass media pump, which acts in the network community reproducing various reliable scenarios for information cascade evolution. We have also shown that in contrast to physical lasers, due to node degree peculiarities, the coupling strength of decision making agents with the network may be enhanced \u27e8k\u27e9\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\sqrt{\\langle k\\rangle }$$\\end{document} times. It leads to a large increase of speed, at which a viral message spreads through a social media. In this case, the mass media pump supports additional reinforcement and acceleration of cascade growth. We have revealed that the solaser model in some approximations possesses clear links with familiar Ising and SIS (susceptible-infected-susceptible) models typically used for evaluating a social impact and information growth, respectively. However, the solaser paradigm can serve as a new platform for modelling temporal social events, which originate from \u201cmicroscopic\u201d (quantum-like) processes occurring in the society. Our findings open new perspectives for interdisciplinary studies of distributed intelligence agents behavior associated with information exchange and social impact.",
+                    "citation": "A. Alodjants, A. Bazhenov, A. Khrennikov, et al. (2022). Mean-field theory of social laser. Scientific Reports. Citations: 20, Influential: 3.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/c21fc5d0aa5009546362b70724d5d53a33d71144"
+                },
+                {
+                    "title": "Diagnosis and Mobile Application of Apple Leaf Disease Degree Based on a Small-Sample Dataset",
+                    "abstract": "The accurate segmentation of apple leaf disease spots is the key to identifying the classification of apple leaf diseases and disease severity. Therefore, a DeepLabV3+ semantic segmentation network model with an actors spatial pyramid pool module (ASPP) was proposed to achieve effective extraction of apple leaf lesion features and to improve the apple leaf disease recognition and disease severity diagnosis compared with the classical semantic segmentation network models PSPNet and GCNet. In addition, the effects of the learning rate, optimizer, and backbone network on the performance of the DeepLabV3+ network model with the best performance were analyzed. The experimental results show that the mean pixel accuracy (MPA) and mean intersection over union (MIoU) of the model reached 97.26% and 83.85%, respectively. After being deployed into the smartphone platform, the detection time of the detection system was 9s per image for the portable and intelligent diagnostics of apple leaf diseases. The transfer learning method provided the possibility of quickly acquiring a high-performance model under the condition of small datasets. The research results can provide a precise guide for the prevention and precise control of apple diseases in fields.",
+                    "citation": "Lili Li, Bin Wang, Yanwen Li, et al. (2023). Diagnosis and Mobile Application of Apple Leaf Disease Degree Based on a Small-Sample Dataset. Plants. Citations: 19, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A DeepLabV3+ semantic segmentation network model with an actors spatial pyramid pool module (ASPP) was proposed to achieve effective extraction of apple leaf lesion features and to improve the apple leaf disease recognition and disease severity diagnosis compared with the classical semantic segmentations network models PSPNet and GCNet."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/61554cb6fa47f70425bd461c0617540f23c98103"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "degree heterogeneity SEIR network epidemic dynamics effect compared homogeneous mixing",
+            "papers": [
+                {
+                    "title": "Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature",
+                    "abstract": "Infectious-disease dynamics depend on heterogeneous contact structure, which classical homogeneous-mixing models such as SIR/SEIR cannot capture. We develop a curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission. We compute FRC on undirected and directed Erd\u0151s\u2013R\u00e9nyi, Watts\u2013Strogatz, Barab\u00e1si\u2013Albert, and Power\u2013Law Cluster networks, and relate curvature to degree, clustering, and betweenness to identify structurally influential nodes and bridge edges. Using curvature-adjusted transmission, we simulate epidemics across topologies and infection rates, then validate predictively with a controlled \u201chidden-truth\u201d benchmark: posterior-calibrated FRC models are compared with advanced centrality-weighted baselines (EdgeBetweenness, Degree, Eigenvector) under identical fit/holdout splits. On heterogeneous graphs (Barab\u00e1si\u2013Albert/Power\u2013Law Cluster), FRC improves holdout Root Mean Squared Error (RMSE), peak-time accuracy, and final-size proximity. A compact sensitivity analysis over baseline transmission and clustering, with Partial Rank Correlation Coefficient (PRCC), shows these gains are robust across parameter regimes. Intervention ablations (cases averted vs. budget) further show that vaccinating high-curvature nodes and protecting extreme negative-curvature bridges can outperform EdgeBetweenness targeting at practical budgets. Directed networks exhibit sharper peaks and faster resolution, with strongly negative out-curvature marking putative exporters. In general, FRC provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control.",
+                    "citation": "Oladimeji Samuel Sowole, N. Bragazzi, Geminpeter A. Lyakurwa (2025). Analysing Disease Spread on Complex Networks Using Forman\u2013Ricci Curvature. Mathematics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A curvature-informed network SIR framework that embeds Forman\u2013Ricci curvature (FRC), a discrete topological descriptor of fragility and robustness, into per-edge transmission provides a principled geometric signal that enhances network epidemic models and yields concrete, topology-aware guidance for targeted vaccination and community-bridge control."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2627f3ba9c1217f944072957731005cb09c6a8fe"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "degree heterogeneity epidemic threshold scale-free networks SIR",
+            "papers": [
+                {
+                    "title": "Immunization of complex networks.",
+                    "abstract": "Complex networks such as the sexual partnership web or the Internet often show a high degree of redundancy and heterogeneity in their connectivity properties. This peculiar connectivity provides an ideal environment for the spreading of infective agents. Here we show that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks. Namely, networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals. The absence of any critical immunization threshold is due to the unbounded connectivity fluctuations of scale-free networks. Successful immunization strategies can be developed only by taking into account the inhomogeneous connectivity properties of scale-free networks. In particular, targeted immunization schemes, based on the nodes' connectivity hierarchy, sharply lower the network's vulnerability to epidemic attacks.",
+                    "citation": "R. Pastor-Satorras, Alessandro Vespignani (2001). Immunization of complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 1151, Influential: 58.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks, and networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45103412abce218fb6346ab82879dcbcde8de1dd"
+                },
+                {
+                    "title": "Infection dynamics on scale-free networks.",
+                    "abstract": null,
+                    "citation": "R. May, A. Lloyd (2001). Infection dynamics on scale-free networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 760, Influential: 23.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Approximate expressions for the final size of an epidemic in an infinite closed population and for the dependence of infection probability on an individual's degree of connectivity within the population are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/442a6f951160309c21e73b59ef3330320dca0bff"
+                },
+                {
+                    "title": "Thresholds for epidemic spreading in networks",
+                    "abstract": "We study the threshold of epidemic models in quenched networks with degree distribution given by a power-law. For the susceptible-infected-susceptible model the activity threshold \u03bb(c) vanishes in the large size limit on any network whose maximum degree k(max) diverges with the system size, at odds with heterogeneous mean-field (HMF) theory. The vanishing of the threshold has nothing to do with the scale-free nature of the network but stems instead from the largest hub in the system being active for any spreading rate \u03bb>1/\u221ak(max) and playing the role of a self-sustained source that spreads the infection to the rest of the system. The susceptible-infected-removed model displays instead agreement with HMF theory and a finite threshold for scale-rich networks. We conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state.",
+                    "citation": "C. Castellano, R. Pastor-Satorras (2010). Thresholds for epidemic spreading in networks. Physical Review Letters. Citations: 594, Influential: 19.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f1c0ad767dc23e53daf5d3f8e2097ec81a7772d4"
+                },
+                {
+                    "title": "Absence of epidemic threshold in scale-free networks with degree correlations.",
+                    "abstract": "Random scale-free networks have the peculiar property of being prone to the spreading of infections. Here we provide for the susceptible-infected-susceptible model an exact result showing that a scale-free degree distribution with diverging second moment is a sufficient condition to have null epidemic threshold in unstructured networks with either assortative or disassortative mixing. Degree correlations result therefore irrelevant for the epidemic spreading picture in these scale-free networks. The present result is related to the divergence of the average nearest neighbor's degree, enforced by the degree detailed balance condition.",
+                    "citation": "M. Bogu\u00f1\u00e1, R. Pastor-Satorras, Alessandro Vespignani (2002). Absence of epidemic threshold in scale-free networks with degree correlations.. Physical Review Letters. Citations: 508, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work provides for the susceptible-infected-susceptible model an exact result showing that a scale-free degree distribution with diverging second moment is a sufficient condition to have null epidemic threshold in unstructured networks with either assortative or disassortative mixing."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3855dba5d587325021124f1b8649daaf03c47d90"
+                },
+                {
+                    "title": "Infectious disease control using contact tracing in random and scale-free networks",
+                    "abstract": null,
+                    "citation": "I. Kiss, D. Green, R. Kao (2006). Infectious disease control using contact tracing in random and scale-free networks. Journal of the Royal Society Interface. Citations: 124, Influential: 8.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The efficacy of contact tracing and the hierarchy of traced nodes\u2014nodes with higher degree traced first\u2014is investigated and compared on random and scale-free networks with the same number of nodes N and average connection K."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7f5d2491cc78f228398e30dfe09f8fea3a0d4569"
+                },
+                {
+                    "title": "Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.",
+                    "abstract": null,
+                    "citation": "Xinchu Fu, M. Small, D. Walker, et al. (2008). Epidemic dynamics on scale-free networks with piecewise linear infectivity and immunization.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 228, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that both targeted and ring immunization strategies compare favorably to a proportional scheme in terms of effectiveness, and conditions for the epidemic threshold to be positive are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/178f16b2b8d78f2de4175a7ddabfbde4acded773"
+                },
+                {
+                    "title": "Epidemic threshold in structured scale-free networks.",
+                    "abstract": "We analyze the spreading of viruses in scale-free networks with high clustering and degree correlations, as found in the Internet graph. For the susceptible-infected-susceptible model of epidemics the prevalence undergoes a phase transition at a finite threshold of the transmission probability. Comparing with the absence of a finite threshold in networks with purely random wiring, our result suggests that high clustering (modularity) and degree correlations protect scale-free networks against the spreading of viruses. We introduce and verify a quantitative description of the epidemic threshold based on the connectivity of the neighborhoods of the hubs.",
+                    "citation": "V. Egu\u00edluz, K. Klemm (2002). Epidemic threshold in structured scale-free networks.. Physical Review Letters. Citations: 334, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A quantitative description of the epidemic threshold based on the connectivity of the neighborhoods of the hubs is introduced and verified, suggesting that high clustering (modularity) and degree correlations protect scale-free networks against the spreading of viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/745cda342e9eefeee7d131b04778c88e59fcdc31"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "degree heterogeneity impact on SEIR epidemic threshold network model",
+            "papers": [
+                {
+                    "title": "The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective",
+                    "abstract": "The contact structure of a population plays an important role in transmission of infection. Many \u2018structured models\u2019 capture aspects of the contact pattern through an underlying network or a mixing matrix. An important observation in unstructured models of a disease that confers immunity is that once a fraction 1-1/R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$1-1/{\\mathcal {R}}_0$$\\end{document} has been infected, the residual susceptible population can no longer sustain an epidemic. A recent observation of some structured models is that this threshold can be crossed with a smaller fraction of infected individuals, because the disease acts like a targeted vaccine, preferentially immunising higher-risk individuals who play a greater role in transmission. Therefore, a limited \u2018first wave\u2019 may leave behind a residual population that cannot support a second wave once interventions are lifted. In this paper, we set out to investigate this more systematically. While networks offer a flexible framework to model contact patterns explicitly, they suffer from several shortcomings: (i) high-fidelity network models require a large amount of data which can be difficult to harvest, and (ii) very few, if any, theoretical contact network models offer the flexibility to tune different contact network properties within the same framework. Therefore, we opt to systematically analyse a number of well-known mean-field models. These are computationally efficient and provide good flexibility in varying contact network properties such as heterogeneity in the number contacts, clustering and household structure or differentiating between local and global contacts. In particular, we consider the question of herd immunity under several scenarios. When modelling interventions as changes in transmission rates, we confirm that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity. However, if modelling the intervention as a change in the contact network, then this effect may become much more subtle. Indeed, modifying the structure disproportionately can shield highly connected nodes from becoming infected during the first wave and therefore make the second wave more substantial. We strengthen this finding by using an age-structured compartmental model parameterised with real data and comparing lockdown periods implemented either as a global scaling of the mixing matrix or age-specific structural changes. Overall, we find that results regarding (disease-induced) herd immunity levels are strongly dependent on the model, the duration of the lockdown and how the lockdown is implemented in the model.",
+                    "citation": "Francesco Di Lauro, L. Berthouze, Matthew Dorey, et al. (2021). The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective. Bulletin of Mathematical Biology. Citations: 10, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Investigating the question of herd immunity under several scenarios and modelling interventions as changes in transmission rates confirms that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c22247fabe72fbce890b24d53f37fd0148d7d4e4"
+                },
+                {
+                    "title": "Epidemic Thresholds in Networks: Impact of Heterogeneous Infection Rates and Recovery Rates",
+                    "abstract": null,
+                    "citation": "Zesheng Chen (2018). Epidemic Thresholds in Networks: Impact of Heterogeneous Infection Rates and Recovery Rates. 2018 IEEE International Conference on Communications (ICC). Citations: 5, Influential: 1.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/962125c5da1115a09d643b0646197d6f07de70a5"
+                },
+                {
+                    "title": "The impact of nodes of information dissemination on epidemic spreading in multiplex networks",
+                    "abstract": "This paper conducts research on the relationship between information transmission and disease transmission by establishing a UAU-SEIR model. In contrast to previous studies, we take into account the variations in individual awareness of prevention and control. By modeling the two-layer network and combining the microscopic Markov chain method, we mathematically deduce the epidemic threshold in our model. Additionally, we conduct a detailed study on the impact of nodes that do not change their own consciousness in the model. We find that in the consciousness layer, fixed nodes with high degrees play a crucial role in the spread of diseases. Fixed nodes that are disconnected from other nodes in the consciousness layer may lead to the appearance of outbreak points and steady-state points of diseases in advance. These findings are of significant importance for formulating effective prevention and control strategies and raising public health awareness.",
+                    "citation": "Li Qinya, Liu Jie, Yueying Zhu, et al. (2024). The impact of nodes of information dissemination on epidemic spreading in multiplex networks. Chinese Control and Decision Conference. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/dfe6e6cd986cb64a36f319eec17c8f42e899df16"
+                },
+                {
+                    "title": "Impact of heterogeneous vaccination on epidemic dynamics in metapopulation networks",
+                    "abstract": null,
+                    "citation": "Wenjun Jing, Yu Zhao, Juping Zhang, et al. (2024). Impact of heterogeneous vaccination on epidemic dynamics in metapopulation networks. Nonlinear dynamics. Citations: 3, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Numerical results suggest that reducing the population size of large patches and decreasing population mobility from low-degree patches to high-degree patches are effective strategies to suppress epidemic spreading on the whole metapopulation network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/bb5c28c2d95e6196ebb953eb4b2400fbb92727a3"
+                },
+                {
+                    "title": "The impact of network properties and mixing on control measures and disease-induced herd immunity in epidemic models: a mean-field model perspective",
+                    "abstract": "The contact structure of a population plays an important role in transmission of infection. Many ``structured models'' capture aspects of the contact structure through an underlying network or a mixing matrix. An important observation in such models, is that once a fraction $1-1/\\mathcal{R}_0$ has been infected, the residual susceptible population can no longer sustain an epidemic. A recent observation of some structured models is that this threshold can be crossed with a smaller fraction of infected individuals, because the disease acts like a targeted vaccine, preferentially immunizing higher-risk individuals who play a greater role in transmission. Therefore, a limited ``first wave'' may leave behind a residual population that cannot support a second wave once interventions are lifted. In this paper, we systematically analyse a number of mean-field models for networks and other structured populations to address issues relevant to the Covid-19 pandemic. In particular, we consider herd-immunity under several scenarios. We confirm that, in networks with high degree heterogeneity, the first wave confers herd-immunity with significantly fewer infections than equivalent models with lower degree heterogeneity. However, if modelling the intervention as a change in the contact network, then this effect might become more subtle. Indeed, modifying the structure can shield highly connected nodes from becoming infected during the first wave and make the second wave more substantial. We confirm this finding by using an age-structured compartmental model parameterised with real data and comparing lockdown periods implemented either as a global scaling of the mixing matrix or age-specific structural changes. We find that results regarding herd immunity levels are strongly dependent on the model, the duration of lockdown and how lockdown is implemented.",
+                    "citation": "F. D. Lauro, L. Berthouze, Matthew Dorey, et al. (2020). The impact of network properties and mixing on control measures and disease-induced herd immunity in epidemic models: a mean-field model perspective. Unknown Journal. Citations: 12, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is confirmed that, in networks with high degree heterogeneity, the first wave confers herd-immunity with significantly fewer infections than equivalent models with lower degree heterogeneity and results regarding herd immunity levels are strongly dependent on the model, the duration of lockdown and how lockdown is implemented."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1a2b2016dadce5de0ff90619f1904226531b6665"
+                },
+                {
+                    "title": "Impact of temporal connectivity patterns on epidemic process",
+                    "abstract": "To provide a comprehensive view for dynamics of and on many real- world temporal networks, we investigate the interplay of temporal connectivity patterns and spreading phenomena, in terms of the susceptible-infected-removed (SIR) model on the modified activity-driven temporal network (ADTN) with memory. In particular, we focus on how the epidemic threshold of the SIR model is affected by the heterogeneity of nodal activities and the memory strength in temporal and static regimes, respectively. While strong ties (memory) between nodes inhibit the spread of epidemic to be localized, the heterogeneity of nodal activities enhances it to be globalized initially. Since the epidemic threshold of the SIR model is very sensitive to the degree distribution of nodes in static networks, we test the SIR model on the modified ADTNs with the possible set of the activity exponents and the memory exponents that generates the same degree distributions in temporal networks. We also discuss the role of spatiotemporal scaling properties of the largest cluster and the maximum degree in the epidemic threshold. It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network. This implies that there is the trade-off between the spreading time of epidemic and its outbreak size. Finally, we suggest the phase diagram of the SIR model on ADTNs and the optimal condition for the spread of epidemic under the circumstances.",
+                    "citation": "Hyewon Kim, Meesoon Ha, Hawoong Jeong (2019). Impact of temporal connectivity patterns on epidemic process. European Physical Journal B : Condensed Matter Physics. Citations: 1, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network, which implies that there is the trade-off between the spreading time of epidemic and its outbreak size."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/5997d33b9a34ea5c904935b18dbbe0a48496dbf9"
+                },
+                {
+                    "title": "Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds",
+                    "abstract": "In the real world, individuals may become infected with an epidemic after multiple exposures to the corresponding virus. This occurs because each individual possesses certain physical defenses and immune capabilities at the time of exposure to the virus. Repeated exposure to the virus can lead to a decline in immune competence, consequently resulting in epidemic infection. The susceptibility of individuals to an epidemic is heterogeneous. We model this characteristic as the individual heterogeneous infection threshold. Then, we propose an individual logarithmic-like infection threshold function on a single-layer complex network to reflect the heterogeneity of individual susceptibility on infecting the virus and the associated epidemic. Next, we introduce a partition theory based on the edge and logarithmic-like infection threshold function to qualitatively analyze the mechanisms of virus infection and epidemic spreading. Finally, simulation results on Erd\u0151\u2013R\u00e9nyi (ER) and scale-free (SF) networks indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak. With an increase in the epidemic infection outbreak threshold, the increasing pattern of the final epidemic infection scale transitions from a second-order continuous phase transition to a first-order discontinuous phase transition. Additionally, degree distribution heterogeneity also significantly impacts the outbreak and spread of diseases. These findings provide valuable guidance for the formulation of immunization strategies.",
+                    "citation": "Feng Li (2024). Dynamics analysis of epidemic spreading with individual heterogeneous infection thresholds. Frontiers of Physics. Citations: 0, Influential: 0.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Simulation results indicate that increasing both the epidemic infection initial threshold and outbreak threshold, as well as decreasing the virus and epidemic infection probability, can all effectively suppress epidemic spreading and epidemic infection outbreak."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/839bfdeb7d9781f8d50d1305f1c6f2e59faf5dc2"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SEIR model heterogeneous contact network degree distribution epidemic threshold",
+            "papers": [
+                {
+                    "title": "SIR dynamics in random networks with heterogeneous connectivity",
+                    "abstract": "Random networks with specified degree distributions have been proposed as realistic models of population structure, yet the problem of dynamically modeling SIR-type epidemics in random networks remains complex. I resolve this dilemma by showing how the SIR dynamics can be modeled with a system of three nonlinear ODE\u2019s. The method makes use of the probability generating function (PGF) formalism for representing the degree distribution of a random network and makes use of network-centric quantities such as the number of edges in a well-defined category rather than node-centric quantities such as the number of infecteds or susceptibles. The PGF provides a simple means of translating between network and node-centric variables and determining the epidemic incidence at any time. The theory also provides a simple means of tracking the evolution of the degree distribution among susceptibles or infecteds. The equations are used to demonstrate the dramatic effects that the degree distribution plays on the final size of an epidemic as well as the speed with which it spreads through the population. Power law degree distributions are observed to generate an almost immediate expansion phase yet have a smaller final size compared to homogeneous degree distributions such as the Poisson. The equations are compared to stochastic simulations, which show good agreement with the theory. Finally, the dynamic equations provide an alternative way of determining the epidemic threshold where large-scale epidemics are expected to occur, and below which epidemic behavior is limited to finite-sized outbreaks.",
+                    "citation": "E. Volz (2007). SIR dynamics in random networks with heterogeneous connectivity. Journal of Mathematical Biology. Citations: 351, Influential: 42.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The dynamic equations provide an alternative way of determining the epidemic threshold where large-scale epidemics are expected to occur, and below which epidemic behavior is limited to finite-sized outbreaks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/12c43cb438f6770089664773378410b1a24f91a9"
+                },
+                {
+                    "title": "Thresholds for epidemic spreading in networks",
+                    "abstract": "We study the threshold of epidemic models in quenched networks with degree distribution given by a power-law. For the susceptible-infected-susceptible model the activity threshold \u03bb(c) vanishes in the large size limit on any network whose maximum degree k(max) diverges with the system size, at odds with heterogeneous mean-field (HMF) theory. The vanishing of the threshold has nothing to do with the scale-free nature of the network but stems instead from the largest hub in the system being active for any spreading rate \u03bb>1/\u221ak(max) and playing the role of a self-sustained source that spreads the infection to the rest of the system. The susceptible-infected-removed model displays instead agreement with HMF theory and a finite threshold for scale-rich networks. We conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state.",
+                    "citation": "C. Castellano, R. Pastor-Satorras (2010). Thresholds for epidemic spreading in networks. Physical Review Letters. Citations: 594, Influential: 19.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is conjecture that on quenched scale-rich networks the threshold of generic epidemic models is vanishing or finite depending on the presence or absence of a steady state."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f1c0ad767dc23e53daf5d3f8e2097ec81a7772d4"
+                },
+                {
+                    "title": "Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.",
+                    "abstract": "We develop an analytical approach to the susceptible-infected-susceptible epidemic model that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks. We find that a delicate balance between the number of high degree nodes in the network and the topological distance between them dictates the existence or absence of such a threshold. In particular, small-world random networks with a degree distribution decaying slower than an exponential have a vanishing epidemic threshold in the thermodynamic limit.",
+                    "citation": "M. Bogu\u00f1\u00e1, C. Castellano, R. Pastor-Satorras (2013). Nature of the epidemic threshold for the susceptible-infected-susceptible dynamics in networks.. Physical Review Letters. Citations: 222, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An analytical approach to the susceptible-infected-susceptible epidemic model is developed that allows us to unravel the true origin of the absence of an epidemic threshold in heterogeneous networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/45d940bd24ae48e34e724bd64dbfaf63545d5e5b"
+                },
+                {
+                    "title": "Spread of infectious disease through clustered populations",
+                    "abstract": "Networks of person-to-person contacts form the substrate along which infectious diseases spread. Most network-based studies of this spread focus on the impact of variations in degree (the number of contacts an individual has). However, other effects such as clustering, variations in infectiousness or susceptibility, or variations in closeness of contacts may play a significant role. We develop analytic techniques to predict how these effects alter the growth rate, probability and size of epidemics, and validate the predictions with a realistic social network. We find that (for a given degree distribution and average transmissibility) clustering is the dominant factor controlling the growth rate, heterogeneity in infectiousness is the dominant factor controlling the probability of an epidemic and heterogeneity in susceptibility is the dominant factor controlling the size of an epidemic. Edge weights (measuring closeness or duration of contacts) have impact only if correlations exist between different edges. Combined, these effects can play a minor role in reinforcing one another, with the impact of clustering the largest when the population is maximally heterogeneous or if the closer contacts are also strongly clustered. Our most significant contribution is a systematic way to address clustering in infectious disease models, and our results have a number of implications for the design of interventions.",
+                    "citation": "Joel C. Miller (2008). Spread of infectious disease through clustered populations. Journal of the Royal Society Interface. Citations: 195, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work develops analytic techniques to predict how clustering in infectious disease models alter the growth rate, probability and size of epidemics, and validate the predictions with a realistic social network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/52f686658ed821c4839d1e2cf95e7bd23746a10e"
+                },
+                {
+                    "title": "Heterogeneous bond percolation on multitype networks with an application to epidemic dynamics.",
+                    "abstract": "Considerable attention has been paid, in recent years, to the use of networks in modeling complex real-world systems. Among the many dynamical processes involving networks, propagation processes-in which the final state can be obtained by studying the underlying network percolation properties-have raised formidable interest. In this paper, we present a bond percolation model of multitype networks with an arbitrary joint degree distribution that allows heterogeneity in the edge occupation probability. As previously demonstrated, the multitype approach allows many nontrivial mixing patterns such as assortativity and clustering between nodes. We derive a number of useful statistical properties of multitype networks as well as a general phase transition criterion. We also demonstrate that a number of previous models based on probability generating functions are special cases of the proposed formalism. We further show that the multitype approach, by naturally allowing heterogeneity in the bond occupation probability, overcomes some of the correlation issues encountered by previous models. We illustrate this point in the context of contact network epidemiology.",
+                    "citation": "Antoine Allard, Pierre-Andr\u00e9 No\u00ebl, L. Dub\u00e9, et al. (2008). Heterogeneous bond percolation on multitype networks with an application to epidemic dynamics.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 100, Influential: 8.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the multitype approach, by naturally allowing heterogeneity in the bond occupation probability, overcomes some of the correlation issues encountered by previous models and also demonstrates that a number of previous models based on probability generating functions are special cases of the proposed formalism."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/bf59e9c3cbe5eb2c8db9309339a7789bb19cfd33"
+                },
+                {
+                    "title": "An assessment of preferential attachment as a mechanism for human sexual network formation",
+                    "abstract": null,
+                    "citation": "J. Jones, M. Handcock (2003). An assessment of preferential attachment as a mechanism for human sexual network formation. Proceedings of the Royal Society of London. Series B: Biological Sciences. Citations: 180, Influential: 7.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Public health interventions aimed at reducing the transmissibility of STD pathogens, such as implementing condom use or high\u2013activity anti\u2013retroviral therapy, have the potential to bring a population below the epidemic transition, even in populations exhibiting large degrees of behavioural heterogeneity."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/529f07bde73590de5a5710a882105f5be1362e02"
+                },
+                {
+                    "title": "Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.",
+                    "abstract": null,
+                    "citation": "Cong Li, R. van de Bovenkamp, P. van Mieghem (2012). Susceptible-infected-susceptible model: a comparison of N-intertwined and heterogeneous mean-field approximations.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 103, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work focuses on the epidemic threshold and the steady-state fraction of infected nodes in networks with different degree distributions and concludes that the N-intertwined approximation is superior to the HMF approximation in regular graphs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/244d96b81e19a334b52ea7334c8644cc565b008c"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "degree heterogeneity SEIR network model effect epidemic threshold",
+            "papers": [
+                {
+                    "title": "Infection dynamics on scale-free networks.",
+                    "abstract": null,
+                    "citation": "R. May, A. Lloyd (2001). Infection dynamics on scale-free networks.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 760, Influential: 23.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Approximate expressions for the final size of an epidemic in an infinite closed population and for the dependence of infection probability on an individual's degree of connectivity within the population are derived."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/442a6f951160309c21e73b59ef3330320dca0bff"
+                },
+                {
+                    "title": "The effect of heterogeneity on hypergraph contagion models",
+                    "abstract": "The dynamics of network social contagion processes such as opinion formation and epidemic spreading are often mediated by interactions between multiple nodes. Previous results have shown that these higher-order interactions can profoundly modify the dynamics of contagion processes, resulting in bistability, hysteresis, and explosive transitions. In this paper, we present and analyze a hyperdegree-based mean-field description of the dynamics of the susceptible\u2013infected\u2013susceptible model on hypergraphs, i.e., networks with higher-order interactions, and illustrate its applicability with the example of a hypergraph where contagion is mediated by both links (pairwise interactions) and triangles (three-way interactions). We consider various models for the organization of link and triangle structures and different mechanisms of higher-order contagion and healing. We find that explosive transitions can be suppressed by heterogeneity in the link degree distribution when links and triangles are chosen independently or when link and triangle connections are positively correlated when compared to the uncorrelated case. We verify these results with microscopic simulations of the contagion process and with analytic predictions derived from the mean-field model. Our results show that the structure of higher-order interactions can have important effects on contagion processes on hypergraphs.",
+                    "citation": "Nicholas W. Landry, J. Restrepo (2020). The effect of heterogeneity on hypergraph contagion models. Chaos. Citations: 163, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A hyperdegree-based mean-field description of the dynamics of the susceptible\u2013infected\u2013susceptible model on hypergraphs is presented and it is found that explosive transitions can be suppressed by heterogeneity in the link degree distribution when links and triangles are chosen independently or when link and triangle connections are positively correlated when compared to the uncorrelated case."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/92ed7e05b4827baea8366b4ef7718c5f9adac1a2"
+                },
+                {
+                    "title": "Epidemic thresholds in dynamic contact networks",
+                    "abstract": null,
+                    "citation": "E. Volz, L. Meyers (2009). Epidemic thresholds in dynamic contact networks. Journal of the Royal Society Interface. Citations: 196, Influential: 4.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that social mixing fundamentally changes the epidemiological landscape and, consequently, that static network approximations of dynamic networks can be inadequate."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/2fff938b26bbc6a981c7c0645126a4dc9e12fd78"
+                },
+                {
+                    "title": "SEIR Epidemic Dynamics in Random Networks",
+                    "abstract": "Predicting disease transmission on complex networks has attracted considerable recent attention in the epidemiology community. In this paper, we develop a low-dimensional system of nonlinear ordinary differential equations to model the susceptible-exposed-infectious-recovered (SEIR) epidemics on random network with arbitrary degree distributions. Both the final size of epidemics and the time-dependent behaviors are derived within our simple framework. The underlying network is represented by the configuration model, which appropriately accounts for the heterogeneity and finiteness of the degree observed in a variety of real contact networks. Moreover, a generalized model where the infectious state of individual can be skipped is treated in brief.",
+                    "citation": "Y. Shang (2013). SEIR Epidemic Dynamics in Random Networks. Unknown Journal. Citations: 14, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper develops a low-dimensional system of nonlinear ordinary differential equations to model the susceptible-exposed-infectious-recovered (SEIR) epidemics on random network with arbitrary degree distributions and develops a generalized model where the infectious state of individual can be skipped."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/b0f85fd6b9b9f2d3ff92d50c7b7eac1d6c0a473f"
+                },
+                {
+                    "title": "The epidemic threshold theorem with social and contact heterogeneity",
+                    "abstract": null,
+                    "citation": "D. H. Palacio, J. Ospina, Rub\u00e9n Dar\u00edo G\u00f3mez Arias (2008). The epidemic threshold theorem with social and contact heterogeneity. Data Mining, Intrusion Detection, Information Assurance, and Data Networks Security. Citations: 11, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The threshold theorem of an epidemic SIR model was compared to describe the dynamic of transmission of diseases and changes of the basic reproductive rate and the implications of these results are examined around the threats to the global public health security."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/f7ef2f7dbde65358c8b8679abaf036269e71b77c"
+                },
+                {
+                    "title": "The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective",
+                    "abstract": "The contact structure of a population plays an important role in transmission of infection. Many \u2018structured models\u2019 capture aspects of the contact pattern through an underlying network or a mixing matrix. An important observation in unstructured models of a disease that confers immunity is that once a fraction 1-1/R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$1-1/{\\mathcal {R}}_0$$\\end{document} has been infected, the residual susceptible population can no longer sustain an epidemic. A recent observation of some structured models is that this threshold can be crossed with a smaller fraction of infected individuals, because the disease acts like a targeted vaccine, preferentially immunising higher-risk individuals who play a greater role in transmission. Therefore, a limited \u2018first wave\u2019 may leave behind a residual population that cannot support a second wave once interventions are lifted. In this paper, we set out to investigate this more systematically. While networks offer a flexible framework to model contact patterns explicitly, they suffer from several shortcomings: (i) high-fidelity network models require a large amount of data which can be difficult to harvest, and (ii) very few, if any, theoretical contact network models offer the flexibility to tune different contact network properties within the same framework. Therefore, we opt to systematically analyse a number of well-known mean-field models. These are computationally efficient and provide good flexibility in varying contact network properties such as heterogeneity in the number contacts, clustering and household structure or differentiating between local and global contacts. In particular, we consider the question of herd immunity under several scenarios. When modelling interventions as changes in transmission rates, we confirm that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity. However, if modelling the intervention as a change in the contact network, then this effect may become much more subtle. Indeed, modifying the structure disproportionately can shield highly connected nodes from becoming infected during the first wave and therefore make the second wave more substantial. We strengthen this finding by using an age-structured compartmental model parameterised with real data and comparing lockdown periods implemented either as a global scaling of the mixing matrix or age-specific structural changes. Overall, we find that results regarding (disease-induced) herd immunity levels are strongly dependent on the model, the duration of the lockdown and how the lockdown is implemented in the model.",
+                    "citation": "Francesco Di Lauro, L. Berthouze, Matthew Dorey, et al. (2021). The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective. Bulletin of Mathematical Biology. Citations: 10, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Investigating the question of herd immunity under several scenarios and modelling interventions as changes in transmission rates confirms that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/c22247fabe72fbce890b24d53f37fd0148d7d4e4"
+                },
+                {
+                    "title": "Quarantine generated phase transition in epidemic spreading",
+                    "abstract": "We study the critical effect of quarantine on the propagation of epidemics on an adaptive network of social contacts. For this purpose, we analyze the susceptible-infected-recovered model in the presence of quarantine, where susceptible individuals protect themselves by disconnecting their links to infected neighbors with probability w and reconnecting them to other susceptible individuals chosen at random. Starting from a single infected individual, we show by an analytical approach and simulations that there is a phase transition at a critical rewiring (quarantine) threshold w(c) separating a phase (w<w(c)) where the disease reaches a large fraction of the population from a phase (w\u2265w(c)) where the disease does not spread out. We find that in our model the topology of the network strongly affects the size of the propagation and that w(c) increases with the mean degree and heterogeneity of the network. We also find that w(c) is reduced if we perform a preferential rewiring, in which the rewiring probability is proportional to the degree of infected nodes.",
+                    "citation": "C. Lagorio, Mark Dickison, F. V\u00e1zquez, et al. (2010). Quarantine generated phase transition in epidemic spreading. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 65, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "In this model, the susceptible-infected-recovered model in the presence of quarantine is analyzed, and it is shown that in this model the topology of the network strongly affects the size of the propagation and that w(c) increases with the mean degree and heterogeneity of thenetwork."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/0826f35f73a5effb3fb41313854d6e60743551b0"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+% Title Section
+\title{Epidemic Spread Analysis of SIR Model over Static Network}
+\author{Anonymous Author}
+
+\begin{document}
+\maketitle
+
+% Abstract
+\begin{abstract}
+In this study, we conduct a comprehensive analysis of epidemic spread using a standard SIR mechanistic model over a static Erdős–Rényi (ER) random graph to represent population contact structure. Rates and parameters are tuned to reflect realistic disease spread scenarios provided by current literature, and the reproduction number \(R_0\) is derived accordingly. The simulation exploits a stochastic framework for population dynamics, yielding temporal profiles for susceptible, infected, and recovered compartments. We extract key epidemiological metrics such as final epidemic size, peak infection rate, epidemic duration, and doubling time, providing quantitative and visual insights into epidemic dynamics. Our simulation and analysis pipeline demonstrates the crucial role of network structure and parameterization in epidemic forecasting and intervention planning.
+\end{abstract}
+
+% Introduction
+\section{Introduction}
+The modeling and understanding of epidemic spread within a population remain central challenges in epidemiology and network science. Mechanistic compartmental models, especially the Susceptible-Infected-Recovered (SIR) model, have been widely leveraged to capture essential dynamics of infectious diseases~\cite{ref1}. While traditional compartmental models presume homogeneous mixing, real-world populations exhibit heterogeneity dictated by contact networks, which can significantly affect disease progression and outbreak severity.
+
+Recent studies indicate that the inclusion of explicit static network structures, such as Erdős–Rényi and scale-free graphs, into epidemic models leads to richer and more accurate predictions of epidemic outcomes~\cite{ref2}. In network-based models, node degree and connectivity distribution are known to influence both the basic reproduction number \(R_0\) and the potential for large-scale outbreaks~\cite{ref2,ref3}. Estimating appropriate model parameters, including infection and recovery rates, is crucial for aligning simulations with observed data and for evaluating the efficiency of interventions.
+
+This paper presents a full pipeline: (1) we discover the appropriate mechanistic and network models based on current literature and data; (2) we construct a static ER random graph with parameters reflecting realistic average degree found in social networks; (3) we parameterize the SIR model using empirically-motivated infection and recovery rates, specifically tuning to a representative value of \(R_0\), and (4) we simulate its stochastic dynamics and analyze the resulting epidemic curves for key epidemiological metrics. Each step is justified with scientific reasoning and references to contemporary literature. Results are synthesized into a quantitative and visual report, revealing the interplay between disease parameters and network topology in epidemic outcomes.
+\section{Methodology}

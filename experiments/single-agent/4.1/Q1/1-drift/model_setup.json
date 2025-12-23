@@ -1,0 +1,1 @@
+{"model_name": "SIR", "compartments": ["S", "I", "R"], "transitions": {"S -(I)-> I": "beta", "I -> R": "gamma"}, "parameters": {"beta": 0.010624860954622764, "gamma": 0.1}, "initial_conditions": [{"S": 995, "I": 5, "R": 0}], "initial_condition_type": ["random"], "initial_condition_desc": ["5 randomly infected nodes, rest susceptible"]}

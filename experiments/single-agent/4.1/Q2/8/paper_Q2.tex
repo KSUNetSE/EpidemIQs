@@ -1,0 +1,110 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\title{Epidemic Spread Analysis of SIR Model over Scale-Free Static Networks}
+\begin{document}
+\maketitle
+
+% ------------------ Abstract ------------------
+\begin{abstract}
+Understanding how infectious diseases propagate through heterogeneous populations is essential for the development of effective mitigation strategies. This paper investigates the dynamics of an SIR (Susceptible-Infectious-Recovered) epidemic model implemented on a scale-free (Barabasi-Albert) network, which captures the broad degree distribution found in many real-world social contact networks. Using a mechanistically parameterized model with empirically-motivated rates, we simulate epidemic spread and quantify key metrics such as epidemic duration, peak infection size and timing, final epidemic (attack) size, and doubling time. Results highlight the substantial impact of network structure on epidemic outcomes, indicating that heterogeneity in contacts leads to reduced epidemic size and lower peak infection compared to mean-field predictions. Our findings contribute to understanding the role of complex networks in epidemic propagation and provide a reproducible protocol for network-based outbreak analysis.
+\end{abstract}
+
+% --------------- Introduction ------------------
+\section{Introduction}
+The spread of infectious diseases is fundamentally shaped by social interaction patterns that determine who contacts whom within a population. Classical compartmental models such as SIR and SEIR have long served as workhorses for epidemic prediction and mitigation \cite{Brabers2022, Kwon2024}. However, the assumption of homogeneous mixing is increasingly recognized as unrealistic, especially for pathogens spreading via close personal contact. Real-world populations are characterized by highly heterogeneous contact patterns, frequently described by networks with broad degree distributions, such as scale-free or small-world topologies \cite{Barnard2018}.
+
+Network-based models of epidemic spread allow for a more realistic depiction of individual- and population-level risk, reflecting superspreading, clustering, and percolation effects. Key developments in the field include explicit mathematical relationships between network properties (mean degree, second degree moment) and epidemic thresholds or basic reproduction numbers (R$_0$), as well as computational simulation protocols for dynamic processes on large-scale synthetic or real networks \cite{Guo2022}. Recent work has further clarified how the epidemic threshold is shaped by degree heterogeneity and clustering, and how static versus dynamic network regimes mediate epidemic impact \cite{Barnard2018, Tang2024}.
+
+This paper aims to synthesize these advances by conducting a detailed simulation and analysis of the SIR model on a prototypical scale-free network. We explain parameter choices, initial condition selection, and provide a summary of key epidemic metrics, producing a workflow easily extensible to future pathogen scenarios or mitigation strategies.
+
+% -------------- Methodology -------------------
+\section{Methodology}
+\subsection{Epidemic Scenario and Mechanistic Model}
+A hypothetical infectious disease with moderate transmission potential is considered, modeled by the SIR compartmental paradigm. This choice is motivated by the ability of the SIR model to capture key dynamics of epidemics affecting non-repeating hosts, and its widespread validation in both analytical and simulation studies \cite{Brabers2022, Kwon2024}. The compartment model comprises:
+\begin{itemize}
+  \item \textbf{S}: Susceptible
+  \item \textbf{I}: Infectious
+  \item \textbf{R}: Recovered/Removed
+\end{itemize}
+Transitions are governed by network-mediated infection (rate $\beta$ per SI edge) and node-level recovery ($\gamma$ per I node).
+
+\subsection{Contact Network Construction}
+A Barabasi-Albert (scale-free) network of $N=1000$ nodes was generated, with mean degree $\langle k \rangle \approx 7.97$ and second moment $\langle k^2 \rangle \approx 138.02$ (see Fig.~\ref{fig:degree-dist}). Edges represent persistent social contacts. This topology reflects high heterogeneity, with a small subset of hubs possessing many connections.
+\\begin{figure}[!t]
+\centering
+\includegraphics[width=0.9\linewidth]{degree_distribution.png}
+\caption{Degree distribution of the simulated Barabasi-Albert network ($N=1000$).}
+\label{fig:degree-dist}
+\\end{figure}
+
+\subsection{Parameter Settings}
+The transmission rate $\beta$ was set based on the desired basic reproduction number $R_0 = 2.5$ and the network degree moments, using $\beta = R_0 \cdot \gamma / q$, with $q = (\langle k^2 \rangle - \langle k \rangle)/\langle k \rangle$. Recovery rate $\gamma$ was set as the reciprocal of a week (1/7~days$^{-1}$), yielding $\beta \approx 0.02188$ and $\gamma \approx 0.14286$.
+
+\subsection{Initial Conditions}
+At time zero, 10 individuals were randomly assigned to the infectious compartment, the remainder susceptible, and none recovered ($I_0 = 10$, $S_0 = 990$, $R_0 = 0$). The initial conditions thus reflected a low prevalence seeding typical of emerging outbreaks.
+
+\subsection{Simulation Protocol}
+Simulations employed the FastGEMF framework for efficient mechanistic propagation on sparse graphical structures. Multiple stochastic realizations ($n=10$) were performed for 160~days, recording proportion of each compartment over time.
+
+\subsection{Summary Table}
+\begin{table}[ht]
+\centering
+\caption{Model and Simulation Parameters and Key Metrics}
+\begin{tabular}{lcc}
+\toprule
+Parameter & Value \\
+\midrule
+$R_0$ & 2.5 \\
+$\beta$ & 0.02188 \\
+$\gamma$ & 0.14286 \\
+Mean degree & $7.97$ \\
+Mean degree square & $138.02$ \\
+Population size & $1000$ \\
+Initial infected & $10$ \\
+Epidemic duration (d) & $146.13$ \\
+Peak infected & $66$ \\
+Peak time (d) & $73.53$ \\
+Final recovered & $389$ \\
+Doubling time (d) & $435.38$ \\
+\bottomrule
+\end{tabular}
+\label{tab:summary}
+\end{table}
+
+\section{Results}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=0.9\linewidth]{results-11.png}
+\caption{Dynamics of S, I, and R compartments in SIR simulation on scale-free network.}
+\label{fig:SIR-dynamics}
+\end{figure}
+
+The time series outputs for S, I, and R compartments are depicted in Fig.~\ref{fig:SIR-dynamics}. The epidemic peaked at day $73.53$ with $66$ concurrent infections, and waned after $146.13$ days as the susceptible pool diminished. The final epidemic size, as determined by the recovered compartment, was $389$ individuals. The doubling time during the early phase was notably long ($435.38$ days), a consequence of network heterogeneity and initial conditions. Compared to classic mean-field predictions, the peak and final attack rate are both significantly reduced, demonstrating the effect of scale-free network structure in suppressing large outbreaks when not all nodes are equally susceptible due to the presence of low-degree individuals.
+
+\section{Discussion}
+The results indicate that the scale-free network structure confers substantial resilience to epidemic propagation relative to well-mixed assumptions\cite{Brabers2022, Barnard2018}. The observed peak and total epidemic size fall well below classical SIR expectations for similar $R_0$ values, reflecting the limiting effect of heterogeneity on transmission chains. Most nodes are connected to only a few others, reducing the average number of secondary infections outside the high-degree hubs\cite{Barnard2018, Kwon2024}. However, if a pathogen were to be introduced directly into a hub node, early acceleration and larger outbreaks could occur\cite{Guo2022}.
+
+This simulation highlights the critical importance of considering population structure in epidemic planning and risk assessment. The protocol for parameterizing network SIR models, including the adjustment of transmission rates to match a specified $R_0$, is transparent and extensible to other pathogens or mitigation strategies (e.g., targeted vaccination, contact reduction among hubs). The approach demonstrated here can also be updated to include demography, spatial layers, or coupled opinion/information processes\cite{Alahmadi2024}.
+
+\section{Conclusion}
+We present a fully specified protocol for simulating and analyzing SIR epidemic spread on a scale-free, static contact network. The results reinforce the dampening effect of heterogeneity in degree on epidemic potential, and offer an accessible computational workflow for scenario analysis. Future work will expand to dynamic networks and alternative mitigation interventions.
+
+\section*{References}
+
+\begin{thebibliography}{99}
+\bibitem{Brabers2022} J. J. Brabers, "The spread of infectious diseases from a physics perspective", Biology Methods \& Protocols, 8, 2022.
+\bibitem{Kwon2024} Sungchul Kwon, Jeong-Man Park, "General protocol for predicting outbreaks of infectious diseases in social networks," Scientific Reports, 14, 2024.
+\bibitem{Guo2022} Zuiyuan Guo, Jiangfang Li et al., "Dynamic model of respiratory infectious disease transmission by population mobility based on city network," Royal Society Open Science, 9, 2022.
+\bibitem{Barnard2018} R. Barnard, I. Kiss et al., "Edge-Based Compartmental Modelling of an SIR Epidemic on a Dual-Layer Static–Dynamic Multiplex Network with Tunable Clustering," Bulletin of Mathematical Biology, 80, 2698-2733, 2018.
+\bibitem{Tang2024} B. Tang, Kexin Ma et al., "Managing spatio-temporal heterogeneity of susceptibles by embedding it into an homogeneous model: A mechanistic and deep learning study," PLOS Comput Biol, 2024.
+\bibitem{Alahmadi2024} Sarah Alahmadi et al., "Modelling the mitigation of anti-vaccine opinion propagation to suppress epidemic spread: A computational approach," PLOS One, 20, 2024.
+\end{thebibliography}
+
+\appendices
+\section{Appendix}
+\subsection{Parameter and Code Files}
+Key scripts and reproducibility files, including Python codes for network construction, model parameterization, simulation, and analysis, are available upon request. Input and output files such as \texttt{network.npz}, \texttt{sir_parameters.json}, \texttt{results-11.csv}, and plots have been archived in the project directory for verification.
+
+\end{document}

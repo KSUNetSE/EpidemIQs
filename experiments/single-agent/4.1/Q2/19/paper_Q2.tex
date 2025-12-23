@@ -1,0 +1,93 @@
+\documentclass[10pt, journal]{IEEEtran}
+\usepackage{amsmath, amssymb, graphicx, hyperref}
+\title{Breaking the Chain of Transmission: Analytical and Simulation Approaches in SIR and SI Models}
+\begin{document}
+\maketitle
+
+%================== Abstract =================
+\begin{abstract}
+We investigate the conditions under which the chain of transmission is broken during an epidemic, using both analytical reasoning and stochastic simulation over a static network. We compare the classical SIR (Susceptible-Infectious-Recovered) model—where recovered individuals acquire immunity—to the SI (Susceptible-Infectious) model—where recovery never occurs. Our results clarify that, in SIR-type epidemics, the chain is broken due to the depletion of infectives, not because the susceptible pool is exhausted. In contrast, in the SI model, infection persists until no susceptibles remain. We support these conclusions via rigorous network-based simulation and reference established analytical theory.
+\end{abstract}
+
+%================== Introduction =================
+\section{Introduction}
+The question of what precisely ends an epidemic—\emph{the decline in the infective population} or \emph{the exhaustion of susceptibles}—is not only of theoretical interest, but also critical for control measures and public health policy \cite{KeelingRohani2024, Mukherjee2024}. While intuition may suggest that an epidemic only ends when all susceptibles are infected, this is not the case for most immunizing diseases (e.g., measles, influenza, COVID-19), as empirically and mathematically shown using compartmental epidemic models \cite{KeelingRohani2024, WikipediaCompartmental, Mukherjee2024}.
+
+This paper provides both an analytical and a simulation-based investigation of how the chain of transmission comes to an end in two fundamental epidemic scenarios: (1) SIR model where recovery confers immunity, and (2) SI model with no recovery. We employ a static Erdős–Rényi network with realistic parameters for our simulations to verify theoretical insights and extract key metrics that illustrate the mechanisms at work.
+
+%================== Methodology =================
+\section{Methodology}
+Our study employs two canonical compartmental models: the SIR and SI models. The SIR model divides the population into Susceptible ($S$), Infectious ($I$), and Recovered ($R$) compartments, while the SI model omits recovery, so the entire population is either susceptible or infectious.
+
+\subsection{Network Structure}
+We simulate both models over an Erdős–Rényi (ER) network of $N=500$ nodes, constructed with edge probability $p=0.05$ to yield a mean degree $\langle k \rangle = 25.34$ and second moment $\langle k^2 \rangle = 664.5$. This structure approximates a moderately connected, well-mixed population and allows rigorous analytic rates for testing the main hypotheses. The degree distribution is shown in Figure~\ref{fig:degree-dist}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.44\textwidth]{output/network_degree_dist.png}
+    \caption{Degree distribution of the simulated Erdős–Rényi contact network ($N=500$, $p=0.05$).}
+    \label{fig:degree-dist}
+\end{figure}
+
+\subsection{Model Parameters and Initialization}
+For the SIR model, parameters were chosen such that the basic reproduction number was $R_0=2.3$ with a recovery rate $\gamma=0.2$, and the infection rate $\beta$ calculated from $R_0 = \beta \, q / \gamma$ where $q = (\langle k^2 \rangle - \langle k \rangle)/\langle k \rangle$. Initial conditions were set with 1\% infectious (5 individuals) and 99\% susceptible; for SI, the same proportions were used (no recovered state).
+
+Simulations were run with FastGEMF, using five stochastic realizations per setting and a stopping time of 100 units. Population trajectories for $S$, $I$ and $R$ were recorded at every timestep.
+
+%================== Results =================
+\section{Results}
+Analytical theory predicts that in the classical SIR model, the epidemic ends while a significant fraction of susceptibles remain, because transmission becomes improbable as the number of infectious individuals declines to zero \cite{KeelingRohani2024, WikipediaCompartmental}. In contrast, the SI model continues its spread until every susceptible is infected.
+
+Figures~\ref{fig:sirEpidemic} and~\ref{fig:siEpidemic} show the simulated time evolution of the population compartments for SIR and SI models, respectively. Quantitative metrics summarizing the outcomes are listed in Table~\ref{tab:metrics}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.44\textwidth]{output/results-1-1.png}
+    \caption{SIR simulation: Susceptibles ($S$), Infectives ($I$), and Recovereds ($R$) over time.}
+    \label{fig:sirEpidemic}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.44\textwidth]{output/results-1-2.png}
+    \caption{SI simulation: Susceptibles ($S$) and Infectives ($I$) over time.}
+    \label{fig:siEpidemic}
+\end{figure}
+
+\begin{table}[!ht]
+\caption{Summary of key metrics from SIR and SI simulations}
+\centering
+\begin{tabular}{lcc}
+\hline
+ & \textbf{SIR} & \textbf{SI} \\
+\hline
+Final attack rate         & 0.784 & 1.00 \\
+Susceptibles remaining    & 0.216 & 0.00 \\
+Peak infection fraction   & 0.144 & 1.00* \\
+Peak time                 & 21.8  & N/A \\
+Epidemic duration ($I<1$) & 55.5  & N/A \\
+\hline
+\end{tabular}
+\label{tab:metrics}
+\end{table}
+
+%================== Discussion =================
+\section{Discussion}
+Analytical and simulation results clearly differentiate the mechanisms that halt epidemic transmission under the two models. In the SIR scenario, infections grow rapidly, peaking at $t \approx 21.8$ (with $I = 72$), then decline quickly as more infectives recover. By $t \approx 55.5$, nearly all infectives have exited the infectious state, and the number of infectives drops to nearly zero, even though $21.6\%$ of the population remains susceptible. This shows that the chain of transmission is broken because there are \textit{too few infectives}, not because all susceptibles have been depleted.
+
+By contrast, SI model simulations show a monotonic increase in infectives and a complete depletion of susceptibles; only when $S=0$ is the epidemic halted. There is no mechanism for spontaneous decline in infectives or for halting the chain of transmission except via exhaustion of susceptibles. These results confirm classical analytical predictions \cite{Mukherjee2024, WikipediaCompartmental} and reinforce that strong immunity (the $R$ state in SIR) fundamentally alters the endpoint mechanism.
+
+These differences underline key epidemiological concepts relevant to herd immunity, final epidemic size, and the impact of interventions (vaccines, treatment) in controlling outbreaks. The analytical "final size" relation for SIR epidemics predicts that a nonzero fraction of susceptibles will remain, as rigorously described mathematically \cite{Mukherjee2024}.
+
+%================== Conclusion =================
+\section{Conclusion}
+The breaking of the chain of transmission in an epidemic fundamentally differs between immunizing and non-immunizing (SI) scenarios. For the SIR model, it is the decline in infectious individuals—before all susceptibles are infected—that stops further spread, while for the SI model, only the complete loss of susceptibles can halt the epidemic. This insight holds both in mean-field ODE models and in stochastic network-based simulations, and should inform both theoretical and practical considerations in epidemic control and intervention strategies.
+
+%================== References =================
+\begin{thebibliography}{9}
+\bibitem{KeelingRohani2024} M. J. Keeling and P. Rohani, Introduction to Simple Epidemic Models, Chapter 2. University of Chicago (2024), \url{http://math.uchicago.edu/~shmuel/Modeling/Keeling%20and%20Rohani/chap%202.pdf}
+\bibitem{WikipediaCompartmental} "Compartmental models (epidemiology)", Wikipedia, \url{https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology)}
+\bibitem{Mukherjee2024} A. Mukherjee, S. Kundu, S. K. Sasmal, "FINAL SIZE RELATIONS FOR SOME COMPARTMENTAL MODELS IN EPIDEMIOLOGY," Journal of Biological Systems, 2024. doi:10.1142/s0218339024500311
+\end{thebibliography}
+
+\end{document}

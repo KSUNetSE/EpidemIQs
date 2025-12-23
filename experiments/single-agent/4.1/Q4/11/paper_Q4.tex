@@ -1,0 +1,110 @@
+\documentclass[10pt, conference]{IEEEtran}
+\usepackage{amsmath, amssymb, graphicx, cite}
+\title{Analytical and Simulation Study of Competitive SIS Dynamics over Multiplex Networks}
+\author{ }
+\begin{document}
+\maketitle
+\begin{abstract}
+This paper presents an analytical and simulation-based analysis of two exclusive competitive viruses spreading according to the Susceptible-Infected-Susceptible (SIS) model over a multiplex network, where each virus propagates through a different layer. We address the fundamental question of coexistence versus dominance, and identify the multilayer network features that promote coexistence. Rigorous mean-field theory and network simulation evidence both reveal that long-term coexistence emerges when the multilayer structure sufficiently differentiates the transmission routes, minimizing overlap in node centralities between layers. When both effective infection rates exceed respective layer-based thresholds, coexistence is supported if networks are uncorrelated, in contrast to strong dominance in highly correlated or identical topologies.
+\end{abstract}
+\section{Introduction}
+The competitive spread of pathogens, memes, or information over complex networks is a topic of high significance in epidemiology, network science, and sociotechnical systems. Traditional research often considers single-virus Susceptible-Infected-Susceptible (SIS) dynamics, but real-world scenarios frequently involve multiple, exclusive viruses that propagate differently~\cite{DarabiSahneh2014, Sahneh2013, Doshi2021}. Understanding conditions for coexistence or absolute dominance, especially in multiplex or multilayer topologies, remains a central theoretical and practical challenge. The recent SI$_1$SI$_2$S formalism allows for competitive, exclusive infection processes, capturing realistic interplays such as mutual exclusion and heterogeneity in transmission routes. \\The current work seeks to address two principal questions: \\1) Under what conditions do competitive viruses coexist, and when does one absolutely dominate? \\2) Which features of multiplex network structure facilitate long-term coexistence?  We employ both analytical reasoning, leveraging mean-field and spectral results, and stochastic network-based simulation to validate findings, providing insight for epidemic preparedness and information control.
+\section{Methodology}
+We model the system by the SI$_1$SI$_2$S process~\cite{DarabiSahneh2014, Sahneh2013, Doshi2021}, where each node is either susceptible (S), infected by virus 1 (I$_1$), or infected by virus 2 (I$_2$). The two viruses are mutually exclusive: a node cannot be infected by both.
+
+\subsection{Network Construction and Properties}
+We construct a multiplex network of $N=500$ nodes. Each layer is an independent Erd\H{o}s--R\'enyi (ER) random network: layer A (virus 1) and layer B (virus 2), both with average degree $\langle k \rangle \approx 7.4$. Layers are decorrelated by random node permutation, ensuring negligible overlap in highest-degree (central) nodes, as recommended by empirical and theoretical work~\cite{DarabiSahneh2014}. The degree distributions are visualized in Fig.~\ref{fig:degree-dist}, which confirms differing centralities, and only 0 overlap in top-10 central nodes between layers.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.4\textwidth]{degree_dist_AB.png}
+\caption{Degree distributions for both network layers.}
+\label{fig:degree-dist}
+\end{figure}
+
+\subsection{Mechanistic Model and Parameterization}
+For each virus, spreading on its own layer, the model uses:
+\begin{itemize}
+  \item Infection (I$_1$ or I$_2$) of a susceptible neighbor at rate $\beta_1$ (layer A) or $\beta_2$ (layer B).
+  \item Recovery at rate $\delta_1$ (virus 1) or $\delta_2$ (virus 2). 
+\end{itemize}
+A key analytical quantity is the effective infection rate $\tau_i = \beta_i / \delta_i$, with survival threshold $\tau^c_i = 1/\lambda_1(G_i)$ for virus $i$~\cite{DarabiSahneh2014, Doshi2021}, where $\lambda_1(G_i)$ is the largest eigenvalue (spectral radius) of layer $i$. For our simulations, $\tau_1,\tau_2 \approx 1.44 > 1/\lambda_1$ for both layers, ensuring both viruses independently surpass their survival threshold. 
+
+The SI$_1$SI$_2$S model is implemented in \texttt{fastgemf}, with initial conditions set to 2\% infected by each virus (random), and the remainder susceptible. 
+
+\subsection{Simulation Details}
+We run $5$ stochastic simulations for $200$ time units. Results are aggregated and summarized below.
+
+\section{Results}
+Fig.~\ref{fig:sim-dyn} shows the evolution of susceptible and infected populations for both viruses. Both viruses persist with large shares: final steady-state fractions are $I_1 \approx 48.4\%$ and $I_2 \approx 43.6\%$. The susceptible population remains at $\approx 8\%$, indicating robust epidemic coexistence.
+\\
+Metrics extracted:
+\begin{itemize}
+\item \textbf{Coexistence:} Both $I_1$ and $I_2$ stably persist at high prevalence (see Table~\ref{tab:metrics}). 
+\item \textbf{Peak infected:} $I_1$ peaks at $\sim$54\% ($268/500$) and $I_2$ at $\sim$47.6\% ($238/500$).
+\item \textbf{Peak times:} $I_1$ at $t\approx 77$, $I_2$ at $t\approx 60$.
+\end{itemize}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.4\textwidth]{results-11.png}
+\caption{Time evolution of susceptible and infected by each virus (sample simulation).}
+\label{fig:sim-dyn}
+\end{figure}
+
+\begin{table}[!h]
+\centering
+\caption{Summary of key epidemic metrics from simulation.}
+\begin{tabular}{lr}
+\hline
+Metric & Value \\
+\hline
+Coexistence Observed & Yes\\
+Final $I_1$ fraction & 0.484 \\
+Final $I_2$ fraction & 0.436 \\
+Final Susceptible fraction & 0.080 \\
+$\max(I_1)$ & 268 \\
+$\max(I_2)$ & 238 \\
+Peak time $I_1$ & 76.9 \\
+Peak time $I_2$ & 60.4 \\
+\hline
+\end{tabular}
+\label{tab:metrics}
+\end{table}
+
+\section{Discussion}
+Both analytical theory and network-based simulations reveal that the possibility for coexistence of mutually exclusive SIS-like viruses arises when the following are satisfied:
+\begin{enumerate}
+\item The effective infection rates $\tau_i$ for each virus are above their respective network-layer thresholds $1/\lambda_1(G_i)$. 
+\item The multiplex layers have low overlap in their "central" (high-degree, high-eigenvector) nodes, as theoretical survival/absolute-dominance regions are sharply reduced when layers resemble each other~\cite{DarabiSahneh2014, Sahneh2013, Doshi2021}. In our simulation, the overlap among top-10 degree nodes between layers was zero. 
+\item Highly positively correlated layers (identical node degree/eigenvector profiles) promote absolute dominance by the more aggressive virus, while decorrelated or negatively correlated layers (requiring central transmission paths to be distinct) support coexistence.
+\end{enumerate}
+This matches theoretical results: coexistence is impossible for identical layers, but feasible for sufficiently distinct ones, and is enhanced in the absence of overlapping high-centrality nodes~\cite{DarabiSahneh2014, Sahneh2013}.
+
+\section{Conclusion}
+We have theoretically and computationally shown that coexistence arises in competitive SIS dynamics when infection parameters surpass respective spectral thresholds, and the contact layers are decorrelated. The principal determinant of coexistence is minimal overlap of central transmission paths. This insight suggests that multidimensional interventions (targeting intersection of central nodes across multiple social or infrastructural layers) may drastically impact the long-term outcome.
+
+\section*{References}
+
+\begin{thebibliography}{1}
+
+\bibitem{DarabiSahneh2014}
+Faryad Darabi Sahneh, C. Scoglio, "Competitive epidemic spreading over arbitrary multilayer networks.," Physical Review E, 2014. DOI:10.1103/PHYSREVE.89.062817
+
+\bibitem{Sahneh2013}
+F. Darabi Sahneh, C. Scoglio, "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks," arXiv preprint arXiv:1308.4880, 2013.
+
+\bibitem{Doshi2021}
+Vishwaraj Doshi, Shailaja Mallick, Do Young Eun, "Competing Epidemics on Graphs - Global Convergence and Coexistence," IEEE INFOCOM 2021. DOI:10.1109/INFOCOM42981.2021.9488828
+
+\end{thebibliography}
+
+\appendix
+\section*{Appendix: Code and Output Figures}
+\begin{itemize}
+    \item Code for network and simulation construction: \texttt{network\_construction\_multiplex.py}, \texttt{simulation\_11.py}
+    \item Degree distribution: Fig.~\ref{fig:degree-dist}
+    \item Simulation result: Fig.~\ref{fig:sim-dyn}
+\end{itemize}
+
+\end{document}

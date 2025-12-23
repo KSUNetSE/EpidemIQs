@@ -1,0 +1,185 @@
+\documentclass[10pt,journal]{IEEEtran}
+
+% Title
+\title{Epidemic Spread Analysis of SIR Model over Erd\"os--R\'enyi Networks}
+
+% Authors
+\author{Anonymous}
+\begin{document}
+\maketitle
+
+% ======================
+% ABSTRACT
+% ======================
+\begin{abstract}
+Network-based epidemic modeling has become a cornerstone for understanding the micro- and macro-scale dynamics of infectious diseases in heterogeneous populations. This paper presents a full data-driven pipeline, from constructing static Erd\"os--R\'enyi (ER) random graphs to implementing and simulating Susceptible-Infected-Recovered (SIR) models, parameterized by empirically grounded basic reproduction numbers, recovery rates, and initial conditions. The model is simulated over a network of 1,000 nodes, representative of a moderate-scale community. The epidemic trajectory is analyzed both quantitatively---using key metrics such as epidemic duration, peak infection, and final epidemic size---and visually via time-resolved compartment populations and network characteristics. The results highlight the profound impact of network structure (degree distribution and higher moments) on epidemic thresholds, size, and speed. Insights are compared with benchmark studies in the literature, illustrating the strengths and limitations of single-scale ER models for real-world epidemic response planning.
+\end{abstract}
+
+% ======================
+% INTRODUCTION
+% ======================
+\section{Introduction}
+The COVID-19 pandemic and prior outbreaks have underscored the limitations of traditional homogeneous mixing epidemiological models. Recent years have seen a surge of interest in network-based mechanistic models, which can more accurately represent patterns of human contact and heterogeneities in disease transmission \cite{Rocha2023,Duron2022,Kozhabek2024,Chen2022}. Erd\"os--R\'enyi (ER) random graphs, in particular, have played a central role as analytically tractable null models for static contact structures, enabling the study of how degree fluctuations and spectral properties affect epidemic thresholds and outcome distributions. Models such as the SIR (Susceptible-Infected-Recovered) and SIS (Susceptible-Infected-Susceptible) frameworks have provided essential mathematical frameworks for quantifying the effects of nontrivial network topologies on disease persistence, outbreak probability, and final epidemic size \cite{Rocha2023,Duron2022}.\par
+A central insight from network epidemiology is that the epidemic threshold---the minimum infectivity level needed for sustained spread---depends both on disease-specific parameters (e.g., infectious period $\gamma^{-1}$, transmission rate $\beta$) and structural features of the network, such as the mean and second moment of the degree distribution. Thus, ER graphs, with their Poissonian degree statistics, provide crucial comparative baselines for understanding the dynamics of more clustered or scale-free populations \cite{Rocha2023}. This paper adopts a data-driven approach: constructing an ER network based on realistic population size and mean degree; inferring and setting mechanistic SIR model parameters from recent studies; and simulating epidemic spread to observe population-level and network-level outcomes. The core questions addressed here are: How does static ER structure shape epidemic dynamics? What are the quantitative and qualitative features of SIR epidemics observed over such random networks? And---crucially---how do the results compare with recent findings in the literature?\par
+The remainder of this paper is structured as follows: Section II details the methodology of network construction, compartment modeling, and simulation setup; Section III presents the results, including epidemic curves, population statistics, and extracted epidemic metrics; Section IV discusses the implications and limitations; Section V concludes with key findings and future outlook.\par
+
+% ======================
+% METHODOLOGY
+% ======================
+\section{Methodology}
+The research methodology integrates realistic network construction, mechanistic SIR epidemic modeling, data-driven parameter setting, and stochastic simulation.\par
+\textbf{Network Structure:} An Erd\"os--R\'enyi (ER) random graph $G(N,p)$ was chosen because it is analytically tractable, widely used as a null model, and enables direct comparison with results from existing studies \cite{Rocha2023,Duron2022}. For this experiment, a network with $N=1000$ nodes and connection probability $p=0.01$ was constructed using NetworkX in Python, yielding a mean degree $\langle k \rangle \approx 9.97$ and a second moment $\langle k^2 \rangle \approx 108.79$. The adjacency matrix was saved as a sparse matrix to support efficient simulation. The degree distribution was visualized in Fig.~\ref{fig:degdist}.
+
+\begin{figure}[!ht] 
+  \centering
+  \includegraphics[width=\linewidth]{network_degree_distribution.png}
+  \caption{Degree distribution of the constructed Erd\"os--R\'enyi network ($N=1000$, $p=0.01$).}
+  \label{fig:degdist}
+\end{figure}
+
+\textbf{Mechanistic Model:} The compartment model is SIR, defined by states $S$ (susceptible), $I$ (infected), and $R$ (removed/recovered) \cite{Duron2022}. Disease transmission is via network links (contact-based infection), governed by per-edge infection rate $\beta$ and per-node recovery rate $\gamma$. The network-based infection rate is computed as $\beta = R_0 \cdot \gamma / q$, where $R_0=1.67$ (from influenza datasets\cite{Duron2022}) and $q = (\langle k^2 \rangle - \langle k \rangle) / \langle k \rangle$ is the mean excess degree. \par
+Parameters used:
+\begin{itemize}
+  \item $R_0 = 1.67$, $\gamma = 0.25$ ($4$ days infectious period), $\beta \approx 0.0421$ (network-calibrated)
+\end{itemize}
+\textbf{Initial Conditions:} 1\% of nodes (10 of 1000) assigned to $I$ (infected) at $t=0$, remainder susceptible; $R=0$ initially.\par
+\textbf{Simulation:} Simulations were performed using the FastGEMF package, which implements efficient continuous-time stochastic simulation of network-based SIR dynamics. The process was run for 120 time units (days), with 10 stochastic repetitions. Output included time traces for each compartment and extraction of standard epidemic metrics (epidemic duration, peak, etc.). Plots of the epidemic curves ($S$, $I$, $R$ populations) were obtained.\par
+All scripts and results are available in the ``output'' directory:
+\begin{itemize}
+  \item \texttt{network.npz} (network adjacency matrix)
+  \item \texttt{network\_degree\_distribution.png} (degree histogram)
+  \item \texttt{results-11.csv} (epidemic time-course)
+  \item \texttt{results-11.png} (epidemic curves)
+\end{itemize}
+
+% ======================
+% RESULTS
+% ======================
+\section{Results}
+\textbf{Network Structure:} The constructed ER network had a mean degree of $9.97$ and a degree variance of $108.8$. As shown in Fig.~\ref{fig:degdist}, the degree distribution closely follows a Poisson distribution, with few high- or low-degree nodes, enabling clear assessment of homogeneous mixing assumptions.\par
+\textbf{Epidemic Trajectory:} The SIR simulation revealed a typical network-based epidemic curve (Fig.~\ref{fig:epicurve}):
+\begin{itemize}
+  \item The susceptible population ($S$) declines sharply after initial delay, stabilizing near $340$ individuals, indicating nearly $66\%$ of the population is eventually affected (final size $662$).
+  \item The infected population ($I$) rises rapidly, peaking at nearly $93$ individuals around day $29.9$ before declining as recoveries accumulate.
+  \item The removed population ($R$) monotonically increases, approaching $662$ at epidemic end.
+\end{itemize}
+The epidemic duration (time until $I<1$) was about $65$ days. Initial exponential growth yields a doubling time for infectives of $8$ days. The overall pattern matches theoretical predictions for epidemics above threshold in ER networks (i.e., $R_0 > 1$, moderate mean degree).
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\linewidth]{results-11.png}
+  \caption{SIR simulation on ER network: Time evolution of compartment populations ($S$, $I$, $R$).}
+  \label{fig:epicurve}
+\end{figure}
+
+The extracted key metrics are summarized in Table~\ref{tab:metrics}.
+
+\begin{table}[h!]
+\centering
+\caption{Epidemic Metrics from Simulation}
+\label{tab:metrics}
+\begin{tabular}{lcc}
+\hline
+Metric & Value \\
+\hline
+Epidemic Duration (days)   & $64.6$ \\
+Peak Infection Size        & $93$    \\
+Peak Time (days)           & $29.9$  \\
+Final Epidemic Size        & $662$ \\
+Doubling Time (days)       & $8.0$   \\
+\hline
+\end{tabular}
+\end{table}
+
+% ======================
+% DISCUSSION
+% ======================
+\section{Discussion}
+The simulation results are in line with the mean-field and stochastic theoretical analyses of SIR epidemics on ER networks \cite{Rocha2023,Duron2022}. Epidemic threshold phenomena---whereby sustained outbreaks only occur if $\beta > \beta_c$---are dictated by the interplay of model parameters and the contact network's degree moments. In this regime ($R_0=1.67$, $\langle k \rangle \approx 10$), the outcomes (final size, epidemic duration, and peak magnitude) are consistent with the literature and confirm that even modest variation in degree (vs. regular or fully mixed graphs) can significantly affect stochastic variability and the probability of large outbreaks \cite{Rocha2023}.\par
+However, limitations include the use of a static (non-evolving) network, lack of individual-level or behavioral heterogeneity, and simple initial condition (random seeding). In real-world communities, features such as clustering, community structure, temporal contact variation, and multiple seeding events can lead to divergent epidemic behavior not captured by this model \cite{Kozhabek2024,Chen2022}. Nevertheless, the ER null model underscores the foundational role of network structure in shaping epidemic spread and provides a baseline for more complex analyses.\par
+The R code, network and output data, and reproducibility files, along with supporting scripts, enable extension to alternate structural scenarios (e.g., scale-free, small-world, clustered) or model variants (e.g., SEIR, coevolving network).
+
+% ======================
+% CONCLUSION
+% ======================
+\section{Conclusion}
+This study systematically demonstrates the construction, simulation, and analysis of SIR epidemics on static Erd\"os--R\'enyi networks. By integrating structural network analysis, mechanistic compartment modeling, and stochastic simulation, we quantify the major determinants of epidemic impact in a prototypical random network setting. The findings emphasize the critical influence of degree distribution, mean excess degree, and network observables in determining epidemic size and speed. While the ER model is somewhat idealized, it serves as a rigorous testbed, highlighting both mathematical tractability and key limitations. Future work should include adaptive, multiplex, or temporal networks, richer mixing patterns, and more detailed parameter inference from outbreak data.\par
+
+% ======================
+% REFERENCES
+% ======================
+\begin{thebibliography}{1}
+
+\bibitem{Rocha2023} J. Rocha, S. Carvalho, B. Coimbra, "Probabilistic Procedures for SIR and SIS Epidemic Dynamics on Erdős-Rényi Contact Networks," AppliedMath, vol.3, no.4, 2023. doi:10.3390/appliedmath3040045
+
+\bibitem{Duron2022} C. Durón, A. P. Farrell, "A Mean-Field Approximation of SIR Epidemics on an Erdős–Rényi Network Model," Bulletin of Mathematical Biology, vol.84, 2022. doi:10.1007/s11538-022-01026-2
+
+\bibitem{Kozhabek2024} A. Kozhabek, W. Chai, G. Zheng, "Modeling Traffic Congestion Spreading Using a Topology-Based SIR Epidemic Model," IEEE Access, vol.12, pp.35813-35826, 2024. doi:10.1109/ACCESS.2024.3370474
+
+\bibitem{Chen2022} W. Chen, Y. Hou, D. Yao, "SIR Epidemics on Evolving Erdős-Rényi Graphs," Latin American Journal of Probability and Mathematical Statistics, 2022. doi:10.30757/ALEA.v22-10
+
+\end{thebibliography}
+
+% ======================
+% APPENDICES
+% ======================
+\appendices
+\section{Supporting Figures and Code}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\linewidth]{results-11.png}
+  \caption{Epidemic curves ($S$, $I$, $R$) from the network SIR simulation.}
+  \label{fig:appendix_curve}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\linewidth]{network_degree_distribution.png}
+  \caption{Degree distribution of the generated Erd\"os--R\'enyi network.}
+  \label{fig:appendix_degree}
+\end{figure}
+
+\section{Code Excerpt: Network Construction}
+\begin{verbatim}
+import networkx as nx
+import numpy as np
+import scipy.sparse as sparse
+N = 1000
+p = 0.01
+G = nx.erdos_renyi_graph(N, p)
+sparse.save_npz('network.npz', nx.to_scipy_sparse_array(G))
+\end{verbatim}
+\section{Code Excerpt: Parameter Setting}
+\begin{verbatim}
+R0 = 1.67
+gamma = 0.25
+mean_k = 9.97
+second_moment_k = 108.786
+mean_excess_degree = (second_moment_k - mean_k) / mean_k
+beta = R0 * gamma / mean_excess_degree
+\end{verbatim}
+\section{Code Excerpt: Simulation}
+\begin{verbatim}
+import fastgemf as fg
+SIR_model_schema = (
+        fg.ModelSchema("SIR")
+        .define_compartment(['S', 'I', 'R'])
+        .add_network_layer('contact_network_layer')
+        .add_node_transition(
+            name='recovery',
+            from_state='I',
+            to_state='R',
+            rate='gamma')
+        .add_edge_interaction(
+            name='infection',
+            from_state='S',
+            to_state='I',
+            inducer='I',
+            network_layer='contact_network_layer',
+            rate='beta'))
+SIR_instance = (
+    fg.ModelConfiguration(SIR_model_schema)
+    .add_parameter(beta=beta, gamma=gamma)
+    .get_networks(contact_network_layer=G_csr))
+\end{verbatim}
+
+\end{document}

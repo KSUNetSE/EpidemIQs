@@ -1,0 +1,223 @@
+{
+    "results": [
+        {
+            "query": "SIR final size equation epidemic ends when infectives decline vs susceptible depletion",
+            "papers": [
+                {
+                    "paper_title": "Simulations and Predictions of COVID-19 Pandemic With the Use of SIR Model",
+                    "abstract": "Background. The COVID-19 pandemic is of great interest to researchers due to high mortality and a very negative impact to the world economy. A detailed scientific analysis of the phenomenon is yet to come, but the public is already interested in the problems of duration of the epidemic, the expected number of patients, where and when the pandemic started. Correct simulation of the pandemic dynamics needs complicated mathematical models and many efforts for unknown parameters identification. In this article, preliminary estimates for many countries and world will be presented, summarized and discussed. Objective. We will estimate the epidemic characteristics for USA, Germany, UK, the Republic of Korea and in the world with the use of SIR simulations and compare them with the results obtained before for Italy, Spain, France, the Republic of Moldova, Ukraine and Kyiv. The hidden periods, epidemic durations, final numbers of cases and quarantine measures will be discussed. Methods. In this study we use the known SIR (susceptible-infected-removed) model for the dynamics of the epidemic, the known exact solution of the linear differential equations and statistical approach developed before. Results. The optimal values of the SIR model parameters were identified with the use of statistical approach for epidemic dynamics in USA, Germany, UK, the Republic of Korea, and in the world. The actual number of cases and the number of patients spreading the infection versus time were calculated. The hidden periods, durations and final sizes of the epidemic were evaluated. In particular, the pandemic began in China no later than October, 2019. If current trends continue, the end of the pandemic should be expected no earlier than March 2021, the global number of cases will exceed 5 million. A simple method for assessing the risk of premature weakening of quarantines is proposed. Conclusions. The SIR model and statistical approach to the parameter identification are helpful to make some reliable estimations for the epidemic dynamics, e.g., the real time of the outbreak, final size and duration of the epidemic and the number of persons spreading the infection versus time. This information will be useful to regulate the quarantine activities and to predict the medical and economic consequences of the pandemic.",
+                    "citation": "I. Nesteruk (2020). Simulations and Predictions of COVID-19 Pandemic With the Use of SIR Model. Innovative Biosystems and Bioengineering. DOI: 10.20535/ibb.2020.4.2.204274",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The SIR model and statistical approach to the parameter identification are helpful to make some reliable estimations for the epidemic dynamics, e.g., the real time of the outbreak, final size and duration of the epidemic and the number of persons spreading the infection versus time."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic threshold network SIR mean-field condition epidemic ends when susceptible fraction below 1/R0",
+            "papers": [
+                {
+                    "paper_title": "The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective",
+                    "abstract": "The contact structure of a population plays an important role in transmission of infection. Many \u2018structured models\u2019 capture aspects of the contact pattern through an underlying network or a mixing matrix. An important observation in unstructured models of a disease that confers immunity is that once a fraction 1-1/R0\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$1-1/{\\mathcal {R}}_0$$\\end{document} has been infected, the residual susceptible population can no longer sustain an epidemic. A recent observation of some structured models is that this threshold can be crossed with a smaller fraction of infected individuals, because the disease acts like a targeted vaccine, preferentially immunising higher-risk individuals who play a greater role in transmission. Therefore, a limited \u2018first wave\u2019 may leave behind a residual population that cannot support a second wave once interventions are lifted. In this paper, we set out to investigate this more systematically. While networks offer a flexible framework to model contact patterns explicitly, they suffer from several shortcomings: (i) high-fidelity network models require a large amount of data which can be difficult to harvest, and (ii) very few, if any, theoretical contact network models offer the flexibility to tune different contact network properties within the same framework. Therefore, we opt to systematically analyse a number of well-known mean-field models. These are computationally efficient and provide good flexibility in varying contact network properties such as heterogeneity in the number contacts, clustering and household structure or differentiating between local and global contacts. In particular, we consider the question of herd immunity under several scenarios. When modelling interventions as changes in transmission rates, we confirm that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity. However, if modelling the intervention as a change in the contact network, then this effect may become much more subtle. Indeed, modifying the structure disproportionately can shield highly connected nodes from becoming infected during the first wave and therefore make the second wave more substantial. We strengthen this finding by using an age-structured compartmental model parameterised with real data and comparing lockdown periods implemented either as a global scaling of the mixing matrix or age-specific structural changes. Overall, we find that results regarding (disease-induced) herd immunity levels are strongly dependent on the model, the duration of the lockdown and how the lockdown is implemented in the model.",
+                    "citation": "Francesco Di Lauro, L. Berthouze, Matthew Dorey... (2021). The Impact of Contact Structure and Mixing on Control Measures and Disease-Induced Herd Immunity in Epidemic Models: A Mean-Field Model Perspective. Bulletin of Mathematical Biology, 83. DOI: 10.1007/s11538-021-00947-8",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Investigating the question of herd immunity under several scenarios and modelling interventions as changes in transmission rates confirms that in networks with significant degree heterogeneity, the first wave of the epidemic confers herd immunity with significantly fewer infections than equivalent models with less or no degree heterogeneity."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic final size susceptibles remaining decline infectives breaking chain of transmission",
+            "papers": [
+                {
+                    "paper_title": "Modeling the potential impact of indirect transmission on COVID-19 epidemic",
+                    "abstract": "The spread of SARS-CoV-2 through direct transmission (person-to-person) has been the focus of most studies on the dynamics of COVID-19. The efficacy of social distancing and mask usage at reducing the risk of direct transmission of COVID-19 has been studied by many researchers. Little or no attention is given to indirect transmission of the virus through shared items, commonly touch surfaces and door handles. The impact of the persistence of SARS-CoV-2 on hard surfaces and in the environment, on the dynamics of COVID-19 remain largely unknown. Also, the current increase in the number of cases despite the strict non-pharmaceutical interventions suggests a need to study the indirect transmission of COVID-19 while incorporating testing of infected individuals as a preventive measure. Assessing the impact of indirect transmission of the virus may improve our understanding of the overall dynamics of COVID-19. We developed a novel deterministic susceptible-exposedinfected- removed-virus-death compartmental model to study the impact of indirect transmission pathway on the spread of COVID-19, the sources of infection, and prevention/control. We fitted the model to the cumulative number of confirmed cases at episode date in Toronto, Canada using a Markov Chain Monte Carlo optimization algorithm. We studied the effect of indirect transmission on the epidemic peak, peak time, epidemic final size and the effective reproduction number, based on different initial conditions and at different stages. Our findings revealed an increase in cases with indirect transmission. Our work highlights the importance of implementing additional preventive and control measures involving cleaning of surfaces, fumigation, and disinfection to lower the spread of COVID-19, especially in public areas like the grocery stores, malls and so on. We conclude that indirect transmission of SARS-CoV- 2 has a significant effect on the dynamics of COVID-19, and there is need to consider this transmission route for effective mitigation, prevention and control of COVID-19 epidemic.",
+                    "citation": "J. David, S. Iyaniwura, P. Yuan... (2021). Modeling the potential impact of indirect transmission on COVID-19 epidemic. . DOI: 10.1101/2021.01.28.20181040",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is concluded that indirect transmission of SARS-CoV- 2 has a significant effect on the dynamics of COVID-19, and there is need to consider this transmission route for effective mitigation, prevention and control of CO VID-19 epidemic."
+                    }
+                },
+                {
+                    "paper_title": "Using Survival Analysis to Predict the Risk of Infection in a Citrus tristeza virus Epidemic",
+                    "abstract": null,
+                    "citation": "T. Gottwald, E. Taylor (2005). Using Survival Analysis to Predict the Risk of Infection in a Citrus tristeza virus Epidemic. , 16. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "For CTV epidemics with Aphis gossypii as the predominant CTV vector, CTV incidence progressed from low levels to high levels in 8 to 15 years, and Survival Analysis, Cox Model, hazard was used to examine the probability of survival through time of CTV-free trees when located at various distances of proximity to CTV"
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Kermack McKendrick 1927 epidemic model final size susceptibles",
+            "papers": [
+                {
+                    "paper_title": "A Kermack--McKendrick type epidemic model with double threshold phenomenon (and a possible application to Covid-19)",
+                    "abstract": "The suggestion by K.L. Cooke (1967) that infected individuals become infective if they are exposed often enough for a natural disease resistance to be overcome is built into a Kermack-McKendrick type epidemic model with infectivity age. Both the case that the resistance may be the same for all hosts and the case that it is distributed among the host population are considered. In addition to the familiar threshold behavior of the final size of the epidemic with respect to a basic reproductive number, an Allee effect is generated with respect to the final cumulative force of infection exerted by the initial infectives. This offers a deterministic explanation of why geographic areas that appear to be epidemiologically similar have epidemic outbreaks of quite different severity.",
+                    "citation": "Joan Ponce, H. Thieme (2024). A Kermack--McKendrick type epidemic model with double threshold phenomenon (and a possible application to Covid-19). . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A deterministic explanation of why geographic areas that appear to be epidemiologically similar have epidemic outbreaks of quite different severity is offered."
+                    }
+                },
+                {
+                    "paper_title": "A SOLUTION TO THE KERMACK AND MCKENDRICK INTEGRO-DIFFERENTIAL EQUATIONS WHICH ACCURATELY PROJECTS COVID-19 CASE DATA USING GOOGLE MOBILITY DATA AS AN INPUT",
+                    "abstract": "In this manuscript, we derive a closed form solution to the full Kermack and McKendrick integro-differential equations (Kermack and McKendrick 1927) which we call the KMES. We demonstrate the veracity of the KMES using the Google Residential Mobility Measure to accurately project case data from the Covid 19 pandemic and we derive many useful, but previously unknown, analytical expressions for characterizing and managing an epidemic. These include expressions for the viral load, the final size, the effective reproduction number, and the time to the peak in infections. The KMES can also be cast in the form of a step function system response to the input of new infections; and that response is the time series of total infections. Since the publication of Kermack and McKendricks seminal paper (1927), thousands of authors have utilized the Susceptible, Infected, and Recovered (SIR) approximations; expressions putatively derived from the integro-differential equations to model epidemic dynamics. Implicit in the use of the SIR approximation are the beliefs that there is no closed form solution to the integro-differential equations, and that the approximation is a special case which adequately reproduces the dynamics of the integro-differential equations mapped onto the physical world. However, the KMES demonstrates that the SIR approximations are not adequate representations of the integro-differential equations, and we therefore suggest that the KMES obsoletes the need for the SIR approximations by providing not only a new mathematical perspective, but a new understanding of epidemic dynamics.",
+                    "citation": "T. Duclos, T. Reichert (2023). A SOLUTION TO THE KERMACK AND MCKENDRICK INTEGRO-DIFFERENTIAL EQUATIONS WHICH ACCURATELY PROJECTS COVID-19 CASE DATA USING GOOGLE MOBILITY DATA AS AN INPUT. . DOI: 10.1101/2023.11.13.23298463",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The KMES demonstrates that the SIR approximations are not adequate representations of the integro-differential equations, and it is suggested that the KMES obsoletes the need for the Sirena approximation by providing not only a new mathematical perspective, but a new understanding of epidemic dynamics."
+                    }
+                },
+                {
+                    "paper_title": "On discrete time epidemic models in Kermack-McKendrick form",
+                    "abstract": "Surprisingly, the discrete-time version of the general 1927 Kermack-McKendrick epidemic model has, to our knowledge, not been formulated in the literature, and we rectify this omission here. The discrete time version is as general and flexible as its continuous-time counterpart, and contains numerous compartmental models as special cases. In contrast to the continuous time version, the discrete time version of the model is very easy to implement computationally, and thus promises to become a powerful tool for exploring control scenarios for specific infectious diseases. To demonstrate the potential, we investigate numerically how the incidence-peak size depends on model ingredients. We find that, with the same reproduction number and initial speed of epidemic spread, compartmental models systematically predict lower peak sizes than models that use a fixed duration for the latent and infectious periods.",
+                    "citation": "O. Diekmann, H. Othmer, R. Planqu\u00e9... (2021). On discrete time epidemic models in Kermack-McKendrick form. . DOI: 10.1101/2021.03.26.21254385",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The discrete time version of the general 1927 Kermack-McKendrick epidemic model is formulated and it is found that compartmental models systematically predict lower peak sizes than models that use a fixed duration for the latent and infectious periods."
+                    }
+                },
+                {
+                    "paper_title": "Relations of parameters for describing the epidemic of COVID\u201519 by the Kermack\u2015McKendrick model",
+                    "abstract": "In order to quantitatively characterize the epidemic of COVID\u201519, useful relations among parameters describing an epidemic in general are derived based on the Kermack-McKendrick model. The first relation is 1/\u03c4grow=1/\u03c4trans\u22121/\u03c4inf, where \u03c4grow is the time constant of the exponential growth of an epidemic, \u03c4trans is the time for a pathogen to be transmitted from one patient to uninfected person, and the infectious time \u03c4inf is the time during which the pathogen keeps its power of transmission. The second relation p(\u221e) \u22481\u2212exp(\u2212(R0\u22121)/0.60) is the relation between p(\u221e), the final size of the disaster defined by the ratio of the total infected people to the population of the society,and the basic reproduction number, R0, which is the number of persons infected by the transmission of the pathogen from one infected person during the infectious time. The third relation 1/\u03c4end=1/\u03c4inf\u2212(1\u2212p(\u221e))/\u03c4trans gives the decay time constant \u03c4end at the ending stage of the epidemic. Derived relations are applied to influenza in Japan in 2019 for characterizing the epidemic.",
+                    "citation": "T. Tomie (2020). Relations of parameters for describing the epidemic of COVID\u201519 by the Kermack\u2015McKendrick model. medRxiv. DOI: 10.1101/2020.02.26.20027797",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Useful relations among parameters describing an epidemic in general are derived based on the Kermack-McKendrick model and are applied to influenza in Japan in 2019 for characterizing the epidemic."
+                    }
+                },
+                {
+                    "paper_title": "FINAL SIZE RELATIONS FOR SOME COMPARTMENTAL MODELS IN EPIDEMIOLOGY",
+                    "abstract": "The summary measurement of an epidemic such as the final size is an important quantity that allows us to approximate the impact of the disease on the affected region. In recent years, final size measurements for vector-transmitted diseases have acquired importance because of the increased concern for mosquito-borne diseases like dengue, Zika, Chikungunya, etc. However, analytical expressions for this estimate in the stage-structured models applicable to vector-borne diseases are less, mostly focused on the classical Kermack\u2013McKendrick model. In this paper, we first calculate the final size expressions for an SIR model with carrier state and a SEIR\u2013SI host\u2013vector model. Then we extend this for the SEIR\u2013SI host\u2013vector model with treatment class in the host, as well as for the model with vertical transmission in the vector population. Finally, we verify our final size expression with some real scenarios.",
+                    "citation": "Abhik Mukherjee, Souvik Kundu, S. K. Sasmal (2024). FINAL SIZE RELATIONS FOR SOME COMPARTMENTAL MODELS IN EPIDEMIOLOGY. Journal of Biological Systems. DOI: 10.1142/s0218339024500311",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper calculates the final size expressions for an SIR model with carrier state and a SEIR\u2013SI host\u2013vector model and extends this for the SEIR\u2013SI host\u2013vector model with treatment class in the host, as well as for the model with vertical transmission in the vector population."
+                    }
+                },
+                {
+                    "paper_title": "Calculation of final size for vector-transmitted epidemic model.",
+                    "abstract": "Calculation of final size of an epidemic model offers a useful estimation for the impact of an epidemic. Despite its usefulness, the majority of practical applications focuses on the classical Kermack McKendrick model for final size calculation. Estimation of final size for different types of epidemics such as vector-transmitted infection is a forthcoming target. In this paper, we derive an explicit form of a final size equation for a vector-transmitted epidemic model. Numerical calculation of a final size equation revealed the existence of a threshold curve which separates a region into two distinct bistable sub-regions if infection induced death is present. In other words, an epidemic outcome can be qualitatively different depending on the initial state of an epidemic.",
+                    "citation": "Yuzo Tsubouchi, Y. Takeuchi, S. Nakaoka (2019). Calculation of final size for vector-transmitted epidemic model.. Mathematical biosciences and engineering : MBE, 16 4, \n          2219-2232\n        . DOI: 10.3934/MBE.2019109",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Numerical calculation of a final size equation revealed the existence of a threshold curve which separates a region into two distinct bistable sub-regions if infection induced death is present and an epidemic outcome can be qualitatively different depending on the initial state of an epidemic."
+                    }
+                },
+                {
+                    "paper_title": "A Solution to the Kermack and McKendrick Integro-Differential Equations",
+                    "abstract": null,
+                    "citation": "T. Duclos, T. A. Reichert (2022). A Solution to the Kermack and McKendrick Integro-Differential Equations. . DOI: 10.1101/2022.04.28.22274442",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The KMES demonstrates that the SIR models are not adequate representations of the integro-differential equations, and herd immunity is not guaranteed, and provides a new level of understanding of epidemic dynamics."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Kermack McKendrick threshold theorem susceptibles epidemic",
+            "papers": [
+                {
+                    "paper_title": "ON A PANDEMIC THRESHOLD THEOREM OF THE EARLY KERMACK-MCKENDRICK MODEL WITH INDIVIDUAL HETEROGENEITY (\u7b2c9\u56de\u751f\u7269\u6570\u5b66\u306e\u7406\u8ad6\u3068\u305d\u306e\u5fdc\u7528 : RIMS\u7814\u7a76\u96c6\u4f1a\u5831\u544a\u96c6)",
+                    "abstract": null,
+                    "citation": "\u7a32\u8449 \u5bff (2013). ON A PANDEMIC THRESHOLD THEOREM OF THE EARLY KERMACK-MCKENDRICK MODEL WITH INDIVIDUAL HETEROGENEITY (\u7b2c9\u56de\u751f\u7269\u6570\u5b66\u306e\u7406\u8ad6\u3068\u305d\u306e\u5fdc\u7528 : RIMS\u7814\u7a76\u96c6\u4f1a\u5831\u544a\u96c6). , 1853, 1-10. DOI: Unknown",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "A threshold theorem for the general epidemic in discrete time",
+                    "abstract": null,
+                    "citation": "F. Hoog, J. Gani, D. Gates (1979). A threshold theorem for the general epidemic in discrete time. Journal of Mathematical Biology, 8, 113-121. DOI: 10.1007/BF00279715",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A theorem, analogous to the continuous time Threshold Theorem of Kermack and McKendrick, is proved for a certain discrete time epidemic model that leads to some solutions in which the total population of susceptibles may become infected in a finite time."
+                    }
+                },
+                {
+                    "paper_title": "The epidemic in a closed population with all susceptibles equally vulnerable; some results for large susceptible populations and small initial infections",
+                    "abstract": null,
+                    "citation": "J. Metz (1978). The epidemic in a closed population with all susceptibles equally vulnerable; some results for large susceptible populations and small initial infections. Acta Biotheoretica, 27, 75-123. DOI: 10.1007/BF00048405",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Kendall's (1956) approach to the \u2018general\u2019 epidemic is generalized by dropping the assumptions of constant infectivity and random recovery or death of ill individuals."
+                    }
+                },
+                {
+                    "paper_title": "Mathematical Modeling of Infectious Diseases Dynamics",
+                    "abstract": "witnessed the rapid emergence and development of a substantial theory of epidemics. In 1927, Kermack and McKendrick [41] derived the celebrated threshold theorem, which is one of the key results in epidemiology. It predicts \u2013 depending on the transmission potential of the infection \u2013 the critical fraction of susceptibles in the population that must be exceeded if an epidemic is to occur. This was followed by the classic work of Bartlett [9], who examined models and data to expose the factors that determine disease persistence in large populations. Arguably, the first landmark book on mathematical modeling of epidemiological systems was published by Bailey [8] which led in part to the recognition of the importance of modeling in public health decision making [7]. Given the diversity of infectious diseases studied since the middle of the 1950s, an impressive variety of epidemiological models have been developed.A comprehensive review of them would be both beyond the scope of the present chapter and of limited interest. Instead, here we introduce the reader to the most important notions of epidemic modeling based on the presentation of the classic models. After presenting general notions of mathematical modeling (Section 22.2) and the nature of epidemiological data available to the modeler (Section 22.3), we detail the very basic SIR epidemiological model (Section 22.5).We explain",
+                    "citation": "Marc Choisy, J. Gu\u00e9gan, P. Rohani (2006). Mathematical Modeling of Infectious Diseases Dynamics. , 379-404. DOI: 10.1002/9780470114209.CH22",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The reader is introduced to the most important notions of epidemic modeling based on the presentation of the classic models as well as the very basic SIR epidemiological model."
+                    }
+                },
+                {
+                    "paper_title": "A Kermack--McKendrick type epidemic model with double threshold phenomenon (and a possible application to Covid-19)",
+                    "abstract": "The suggestion by K.L. Cooke (1967) that infected individuals become infective if they are exposed often enough for a natural disease resistance to be overcome is built into a Kermack-McKendrick type epidemic model with infectivity age. Both the case that the resistance may be the same for all hosts and the case that it is distributed among the host population are considered. In addition to the familiar threshold behavior of the final size of the epidemic with respect to a basic reproductive number, an Allee effect is generated with respect to the final cumulative force of infection exerted by the initial infectives. This offers a deterministic explanation of why geographic areas that appear to be epidemiologically similar have epidemic outbreaks of quite different severity.",
+                    "citation": "Joan Ponce, H. Thieme (2024). A Kermack--McKendrick type epidemic model with double threshold phenomenon (and a possible application to Covid-19). . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A deterministic explanation of why geographic areas that appear to be epidemiologically similar have epidemic outbreaks of quite different severity is offered."
+                    }
+                },
+                {
+                    "paper_title": "Discussion: The Kermack-McKendrick epidemic threshold theorem",
+                    "abstract": null,
+                    "citation": "R. Anderson (1991). Discussion: The Kermack-McKendrick epidemic threshold theorem. Bulletin of Mathematical Biology, 53, 1-32. DOI: 10.1016/S0092-8240(05)80039-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The main body of the paper examines recent developments of the basic Kermack-McKendrick model with an emphasis on deterministic models that describe various types of heterogeneity in the processes that determine transmission between infected and susceptible persons."
+                    }
+                },
+                {
+                    "paper_title": "El modelo Kermack-McKendrick en la propagaci\u00f3n de cepas COVID-19: Per\u00fa 2020-2021",
+                    "abstract": "Introduction: The SIR epidemic model is useful for measuring the rate of spread of COVID-19 strains (B.1.617.2/P.1/C.37/B.1.621), in terms of epidemiological threshold R0 over time.Objective: To evaluate a mathematical model of differential type, typical of the behavior of COVID-19 for the Peruvian collective.Methods: A differential mathematical model of the behavior of the pandemic was developed for the Peruvian collective, based on the experience in the control of Kermack\u2013McKendrick infections. The number of susceptible S, infected and spreading infection I and recovered R was estimated, using official datasets from the World Health Organization, based on the history between March 7 and September 12, 2020 and; projected for 52 weeks until September 11, 2021. Results: The lowest rate of infections will occur from April 3, 2021. Evidencing a prognosis of lower transmissibility for May 29, 2021 with an infected rate (\u03b2=0.08) and threshold (R0=0.000), the accuracy of the model was also quantified at 97.795%, with 2.205% of average percentage error, with the temporary average value being R0 <1, so each person who contracts the disease will infect less than one person before dying or recovering, so the outbreak will disappear. Conclusion: The curve of infections in Peru will depend directly on mitigation measures to curb the spread of infection and predict sustained transmission through vaccination against covid-19 type strains; with the observance of people of preventive measures. \n Introducci\u00f3n: El modelo epid\u00e9mico SIR es \u00fatil para medir la velocidad de propagaci\u00f3n de las cepas COVID-19 (B.1.617.2/P.1/C.37/B.1.621), en t\u00e9rminos de umbral epidemiol\u00f3gico R0 a lo largo del tiempo.Objetivo: Evaluar un modelo matem\u00e1tico de tipo diferencial, propio del comportamiento del COVID-19 para el colectivo peruano.M\u00e9todos: Se desarroll\u00f3 un modelo matem\u00e1tico diferencial del comportamiento de la pandemia para el colectivo peruano, partiendo de la experiencia en el control de infecciones Kermack\u2013McKendrick. Se estim\u00f3 el n\u00famero de susceptibles S, infectados y diseminando la infecci\u00f3n I y recuperados R, con el uso de conjuntos de datos oficiales de la Organizaci\u00f3n Mundial de la Salud, partiendo del hist\u00f3rico entre el 07 de marzo y el 12 de septiembre de 2020 y; proyectado durante 52 semanas hasta el 11 de septiembre de 2021. Resultados: La menor tasa de infectados ocurrir\u00e1 a partir del 3 de abril de 2021. Evidenciando un pron\u00f3stico de menor transmisibilidad para el 29 de mayo de 2021 con una tasa de infectados (\u03b2=0.08) y umbral (R0=0,000), adem\u00e1s se cuantific\u00f3 la exactitud del modelo en 97,795 %, con 2,205 % de error porcentual medio, siendo el valor promedio temporal R0 <1, as\u00ed que cada persona que contrae la enfermedad infectar\u00e1 a menos de una persona antes de morir o recuperarse, por lo que el brote desaparecer\u00e1. Conclusi\u00f3n: La curva de contagios en el Per\u00fa depender\u00e1 directamente de las medidas de mitigaci\u00f3n para frenar la propagaci\u00f3n de la infecci\u00f3n y predecir una transmisi\u00f3n sostenida a trav\u00e9s de la vacunaci\u00f3n contra las cepas tipo del COVID-19; con la observancia de las personas de las medidas preventivas. \n O modelo epid\u00e9mico SIR \u00e9 \u00fatil para medir a velocidade de propaga\u00e7\u00e3o das estirpes COVID-19 (B.1.617.2/P.1/C.37/B.1.621), em termos de limiar epidemiol\u00f3gico R0 ao longo do tempo. Foi desenvolvido um modelo matem\u00e1tico diferencial de comportamento pand\u00e9mico para a popula\u00e7\u00e3o peruana, baseado na experi\u00eancia de controlo da infec\u00e7\u00e3o de Kermack-McKendrick. O n\u00famero de S suscept\u00edveis, infectados e disseminando a infec\u00e7\u00e3o I e R recuperados foi estimado utilizando conjuntos de dados oficiais da Organiza\u00e7\u00e3o Mundial de Sa\u00fade, come\u00e7ando no hist\u00f3rico entre 7 de Mar\u00e7o e 12 de Setembro de 2020 e projectado para 52 semanas at\u00e9 11 de Setembro de 2021. Explicando que a taxa de infec\u00e7\u00e3o mais baixa ocorrer\u00e1 a partir de 3 de Abril de 2021. Evidenciando uma previs\u00e3o de menor transmissibilidade para 29 de Maio de 2021 com uma taxa de infec\u00e7\u00e3o (\u03b2=0,08) e limiar (R0=0,000), al\u00e9m disso a precis\u00e3o do modelo foi quantificada em 97,795 %, com 2,205 % de erro percentual m\u00e9dio, sendo o valor m\u00e9dio temporal R0 <1, pelo que cada pessoa que contraia a doen\u00e7a infectar\u00e1 menos de uma pessoa antes de morrer ou recuperar, pelo que o surto desaparecer\u00e1. Os resultados contemplaram o comportamento din\u00e2mico das estirpes at\u00e9 Novembro de 2021, antes da chegada do omicron (B.1.1.529).",
+                    "citation": "Josefrank Pernalete Lugo, Ysaelen Odor Rossel (2023). El modelo Kermack-McKendrick en la propagaci\u00f3n de cepas COVID-19: Per\u00fa 2020-2021. Enfermer\u00eda Global. DOI: 10.6018/eglobal.521971",
+                    "summary (tldr)": null
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic threshold susceptible depletion vs infective decline SIR model breaking transmission",
+            "papers": [
+                {
+                    "paper_title": "Dynamics of measles epidemics: Estimating scaling of transmission rates using a time series sir model",
+                    "abstract": "Before the development of mass-vaccination campaigns, measles exhibited persistent fluctuations (endemic dynamics) in large British cities, and recurrent outbreaks (episodic dynamics) in smaller communities. The critical community size separating the two regimes was ;300 000-500 000. We develop a model, the TSIR (Time-series Suscep- tible-Infected-Recovered) model, that can capture both endemic cycles and episodic out- breaks in measles. The model includes the stochasticity inherent in the disease transmission (giving rise to a negative binomial conditional distribution) and random immigration. It is thus a doubly stochastic model for disease dynamics. It further includes seasonality in the transmission rates. All parameters of the model are estimated on the basis of time series data on reported cases and reconstructed susceptible numbers from a set of cities in England and Wales in the prevaccination era (1944-1966). The 60 cities analyzed span a size range from London (3.3 3 10 6 inhabitants) to Teignmouth (10 500 inhabitants). The dynamics of all cities fit the model well. Transmission rates scale with community size, as expected from dynamics adhering closely to frequency dependent transmission (''true mass action''). These rates are further found to reveal strong seasonal variation, corresponding to high transmission during school terms and lower transmission during the school holidays. The basic reproductive ratio, R0, is found to be invariant across the observed range of host community size, and the mean proportion of susceptible individuals also appears to be constant. Through the epidemic cycle, the susceptible population is kept within a 3% interval. The disease is, thus, efficient in ''regulating'' the susceptible population\u2014even in small cities that undergo recurrent epidemics with frequent extinction of the disease agent. Recolonization is highly sensitive to the random immigration process. The initial phase of the epidemic is also stochastic (due to demographic stochasticity and random immigration). However, the epidemic is nearly ''deterministic'' through most of the growth and decline phase.",
+                    "citation": "O. Bj\u00f8rnstad, B. Finkenst\u00e4dt, B. Grenfell (2002). Dynamics of measles epidemics: Estimating scaling of transmission rates using a time series sir model. Ecological Monographs, 72, 169-184. DOI: 10.1890/0012-9615(2002)072[0169:DOMEES]2.0.CO;2",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A model, the TSIR (Time-series Suscep- tible-Infected-Recovered) model, that can capture both endemic cycles and episodic out- breaks in measles is developed, which is a doubly stochastic model for disease dynamics."
+                    }
+                },
+                {
+                    "paper_title": "Epidemiology: Gray Immunity Model Gives Qualitatively Different Predictions",
+                    "abstract": "Compartmental models like the SIR model that dynamically divide the host population in categories such as susceptible, infected and immune form the mainstream of epidemiological modelling. Effectively such models treat infection and immunity as binary variables. We show here that considering immunity as a continuous variable instead of binary and incorporating factors that bring about small changes in immunity lead to qualitatively different epidemiological predictions. The small immunity effects (SIE) constitute cross immunity by other infections, small increments in immunity by sub clinical exposures and slow decay in the absence of repeated exposure. The SIE model explains many epidemiological patterns observed during the Covid-19 pandemic that are not adequately explained by conventional models. In the SIE model repeated waves are possible without the need for new variants. Peak and decline of a wave much before reaching herd immunity threshold, low level apparently stable existence of the pathogen, new surges after variable and unpredictable gaps, new surge after vaccinating majority of population are the common features of the pandemic mimicked by simulations using the SIE model. The model further shows complex interactions of different interventions that can be contextually synergistic as well as antagonistic. As a result, interventions intended to arrest the transmission are not always effective and can turn counterproductive under some conditions. Interventions that are beneficial in the short run can be potentially hazardous in the long run. In the absence of empirical estimates of many parameters, the model may not be useful to make quantitative predictions at this stage but it certainly challenges traditional wisdom and currently held beliefs behind non-pharmaceutical interventions recommended to control the epidemic. We also suggest testable predictions to differentiate between the causal logic of the SIE model against the prevalent explanations for the same observed phenomena.",
+                    "citation": "M. Watve, Himanshu Bhisikar (2021). Epidemiology: Gray Immunity Model Gives Qualitatively Different Predictions. . DOI: 10.20944/preprints202109.0162.v2",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The SIE model explains many epidemiological patterns observed during the Covid-19 pandemic that are not adequately explained by conventional models and challenges traditional wisdom and currently held beliefs behind non-pharmaceutical interventions recommended to control the epidemic."
+                    }
+                },
+                {
+                    "paper_title": "Herd immunity thresholds for SARS-CoV-2 estimated from unfolding epidemics",
+                    "abstract": "As severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) spreads, the susceptible subpopulation declines causing the rate at which new infections occur to slow down. Variation in individual susceptibility or exposure to infection exacerbates this effect. Individuals that are more susceptible or more exposed tend to be infected and removed from the susceptible subpopulation earlier. This selective depletion of susceptibles intensifies the deceleration in incidence. Eventually, susceptible numbers become low enough to prevent epidemic growth or, in other words, the herd immunity threshold is reached. Here we fit epidemiological models with inbuilt distributions of susceptibility or exposure to SARS-CoV-2 outbreaks to estimate basic reproduction numbers (R_0) alongside coefficients of individual variation (CV) and the effects of containment strategies. Herd immunity thresholds are then calculated as 1-(1/R_0 )^(1/((1+CV^2 ) )) or 1-(1/R_0 )^(1/((1+2CV^2 ) )), depending on whether variation is on susceptibility or exposure. Our inferences result in herd immunity thresholds around 10-20%, considerably lower than the minimum coverage needed to interrupt transmission by random vaccination, which for R_0 higher than 2.5 is estimated above 60%. We emphasize that the classical formula, 1-1/R_0 , remains applicable to describe herd immunity thresholds for random vaccination, but not for immunity induced by infection which is naturally selective. These findings have profound consequences for the governance of the current pandemic given that some populations may be close to achieving herd immunity despite being under more or less strict social distancing measures.",
+                    "citation": "Ricardo Aguas, R. M. Corder, Jessica G. King... (2020). Herd immunity thresholds for SARS-CoV-2 estimated from unfolding epidemics. medRxiv. DOI: 10.1101/2020.07.23.20160762",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Herd immunity thresholds are found, considerably lower than the minimum coverage needed to interrupt transmission by random vaccination, and have profound consequences for the governance of the current pandemic given that some populations may be close to achieving herd immunity despite being under more or less strict social distancing measures."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

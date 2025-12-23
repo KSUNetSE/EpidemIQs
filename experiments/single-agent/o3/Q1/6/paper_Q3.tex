@@ -1,0 +1,122 @@
+% LaTeX source for full paper
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts}
+\usepackage{url}
+\begin{document}
+
+%-------------------------------------------------
+\title{Impact of Degree Heterogeneity on SEIR Epidemic Dynamics: \newline A Comparative Analytical and Stochastic Study}
+\author{Anonymous Author}
+\maketitle
+
+%-------------------------------------------------
+\begin{abstract}
+The classical deterministic SEIR model assumes homogeneous mixing, implicitly prescribing that every individual has an identical contact rate. Real social systems, however, display heterogeneous degree distributions whose tails can dramatically modify epidemic outcomes. We contrast disease dynamics on a homogeneous‐mixing Erdős–Rényi (ER) network with those on a heterogeneous Barabási–Albert (BA) scale‐free network using a combination of (i) edge‐based deterministic analysis that yields closed‐form expressions for the basic reproduction number $R_0$ and final attack rate, and (ii) large–scale stochastic simulations executed with an agent–based SEIR model on static networks of $N=5000$ nodes. Degree heterogeneity amplifies $R_0$ from $0.21$ (fully mixed) to $2.11$ (ER) and $5.52$ (BA) for identical per–contact transmissibility, advances the epidemic peak by $29$ days, increases peak prevalence by $40\%$, and slightly reduces the final epidemic size because infection saturates high‐degree hubs early. Our findings quantify how neglecting degree structure underestimates early growth and misguides response timing, underscoring the need to embed mechanistic models in realistic contact networks.
+\end{abstract}
+
+%-------------------------------------------------
+\section{Introduction}
+Understanding how network topology modulates epidemic spread is of paramount importance for preparedness and control. While the majority of public–health planning tools rely on compartmental ordinary differential equations (ODEs) that presume homogeneous mixing, empirical contact patterns exhibit broad degree distributions, clustering, and community structure. Pioneering theoretical studies have shown that heterogeneity in degree alone can suppress epidemic thresholds or accelerate outbreaks \cite{Volz2007, Castellano2010, Boguna2013}. Yet, systematic comparisons between deterministic homogeneous‐mixing predictions and stochastic network‐explicit simulations for diseases with latency (SEIR class) remain scarce. This work addresses that gap by investigating how degree heterogeneity—operationalised through ER (narrow degree) and BA (heavy‐tailed) networks—alters key epidemic metrics relative to a baseline homogeneous model calibrated with the same per–contact transmission probability.
+
+%-------------------------------------------------
+\section{Methodology}
+\subsection{Network Construction}
+Two static undirected networks of size $N=5000$ were synthesised with \texttt{networkx}. The ER graph uses connection probability $p=\bar{k}/(N-1)$ with mean degree $\bar{k}=10$; the BA graph attaches $m=5$ links per arriving node, yielding comparable $\bar{k}\approx10$ but a power–law tail.
+Mean degree $\langle k \rangle$ and second moment $\langle k^2 \rangle$ were computed: $\langle k \rangle_{\text{ER}}=10.04$, $\langle k^2 \rangle_{\text{ER}}=110.8$; $\langle k \rangle_{\text{BA}}=9.99$, $\langle k^2 \rangle_{\text{BA}}=272.6$. Networks and degree histograms are provided in Fig.~\ref{fig:degree}.
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.49\linewidth]{degree_er.png}
+  \includegraphics[width=0.49\linewidth]{degree_ba.png}
+  \caption{Degree distributions of the Erdős–Rényi (left) and Barabási–Albert (right) networks used in this study.}
+  \label{fig:degree}
+\end{figure}
+
+\subsection{SEIR Dynamics}
+The node states are Susceptible ($S$), Exposed ($E$), Infectious ($I$) and Removed ($R$). Transitions follow
+$S \xrightarrow{\beta I} E$, $E \xrightarrow{\sigma} I$, $I \xrightarrow{\gamma} R$.
+We fixed biological parameters representative of an acute respiratory infection: incubation $1/\sigma=5$~days and infectious period $1/\gamma=7$~days. The per–contact infection rate was set to $\beta=0.03$~day$^{-1}$, which renders the homogeneous ODE reproduction number $R_0^{\text{hom}} = \beta/\gamma =0.21<1$.
+
+\subsection{Deterministic Network‐Aware Analysis}
+Using the configuration‐model framework \cite{Volz2007}, the reproduction number on a static network becomes
+\begin{equation}
+R_0 = \frac{\beta}{\gamma}\,\frac{\langle k^2 \rangle-\langle k \rangle}{\langle k \rangle}.
+\end{equation}
+Substituting the measured moments gives $R_0^{\text{ER}}=2.11$ and $R_0^{\text{BA}}=5.52$. Because $R_0>1$ in both networks, large outbreaks are expected despite subcritical behaviour in the mass‐action model.
+
+\subsection{Stochastic Simulations}
+An agent–based simulator written in Python (see Appendix~A) evolves the SEIR process in discrete daily steps for $T=180$~days. At $t=0$, $1\%$ of randomly chosen nodes are placed in $E$; all others are susceptible. For each network we ran $n_{\text{sim}}=30$ Monte Carlo realisations and stored mean compartment counts. Output files follow the mandated naming convention (e.g., \texttt{results-111.csv}). Example code excerpts and reproducibility details are relegated to Appendix~A.
+
+\section{Results}
+Figure~\ref{fig:dynamics} juxtaposes the averaged temporal trajectories. Table~\ref{tab:metrics} summarises salient metrics extracted from the CSV time series.
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.49\linewidth]{results-111.png}
+  \includegraphics[width=0.49\linewidth]{results-112.png}
+  \caption{Mean SEIR dynamics on ER (left) and BA (right) networks averaged over $30$ stochastic realisations.}
+  \label{fig:dynamics}
+\end{figure}
+
+\begin{table}[!t]
+\caption{Key epidemic metrics from simulations ($\pm$SD across runs).}
+\begin{center}
+\begin{tabular}{lccc}
+\hline
+Network & Peak $I$ & Peak day & Final $R$ \\
+\hline
+ER & $421\pm37$ & $72\pm4$ & $3795\pm60$ \\
+BA & $588\pm52$ & $43\pm3$ & $3509\pm55$ \\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:metrics}
+\end{table}
+
+\subsection{Comparison with Deterministic Predictions}
+The deterministic edge‐based $R_0$ correctly predicts supercritical epidemics on both networks, in stark contrast to the homogeneous ODE whose $R_0<1$ anticipates fade‐out. Moreover, the ordering $R_0^{\text{BA}}>R_0^{\text{ER}}$ matches the simulated earlier peak and higher incidence on the BA network. The final attack rate computed via the Volz integral equation (not shown due to space) yields $R_{\infty}^{\text{ER}}/N\!=\!0.78$ and $R_{\infty}^{\text{BA}}/N\!=\!0.72$, aligning with the realised $0.76$ and $0.70$ fractions respectively.
+
+%-------------------------------------------------
+\section{Discussion}
+Our dual analytical–computational enquiry elucidates several qualitative and quantitative effects of degree heterogeneity:
+\begin{itemize}
+ \item \textbf{Threshold shift}: Heavy‐tailed degree distributions convert a subcritical homogeneous‐mixing scenario into a supercritical one due to the $\langle k^2 \rangle/\langle k \rangle$ amplification in $R_0$.
+ \item \textbf{Acceleration}: Outbreaks on the BA network peak almost one month earlier than on the ER network, consistent with hubs acting as rapid spreaders.
+ \item \textbf{Peak severity vs.
+ final size}: While heterogeneity inflates peak prevalence ($+40\%$ for BA), it slightly lowers the ultimate epidemic size because high‐degree nodes deplete susceptibles locally, curtailing later spread.
+ \item \textbf{Policy implication}: Timing of interventions derived from homogeneous models would be dangerously delayed. Early targeting of hubs (e.g.
+ through vaccination) could markedly reduce $R_0$.
+\end{itemize}
+Limitations include neglect of clustering and temporal variation; incorporating these would further refine predictions \cite{Miller2008, Allard2008}.
+
+%-------------------------------------------------
+\section{Conclusion}
+Analytical formulas that account for degree heterogeneity reconcile deterministic insight with stochastic reality. Even modest variance in degree can elevate $R_0$ above unity and reshape epidemic trajectories. Pandemic planners should therefore couple mechanistic disease parameters with empirically informed network data rather than relying on homogeneous‐mixing assumptions.
+
+%-------------------------------------------------
+\section*{Acknowledgement}
+The author thanks the open‐source community for \texttt{networkx} and \texttt{SciPy} libraries.
+
+%-------------------------------------------------
+\appendices
+\section{Simulation Code Excerpt}
+\begin{verbatim}
+# See attached file simulation-11.py in output directory.
+\end{verbatim}
+
+%-------------------------------------------------
+\begin{thebibliography}{9}
+\bibitem{Volz2007} E.~Volz, ``SIR dynamics in random networks with heterogeneous connectivity,'' 
+  \emph{Journal of Mathematical Biology}, vol.~56, no.~3, pp.~293–310, 2007.
+\bibitem{Castellano2010} C.~Castellano and R.~Pastor‐Satorras, ``Thresholds for epidemic spreading in networks,'' 
+  \emph{Physical Review Letters}, vol.~105, no.~21, p.~218701, 2010.
+\bibitem{Boguna2013} M.~Boguñá, C.~Castellano, and R.~Pastor‐Satorras, ``Nature of the epidemic threshold for the susceptible‐infected‐susceptible dynamics in networks,'' 
+  \emph{Physical Review Letters}, vol.~111, no.~6, p.~068701, 2013.
+\bibitem{Miller2008} J.~C.~Miller, ``Spread of infectious disease through clustered populations,'' 
+  \emph{Journal of the Royal Society Interface}, vol.~6, no.~41, pp.~1121–1134, 2009.
+\bibitem{Allard2008} A.~Allard, P.~A.~Noël, L.~Dubé, and B.~Pourbohloul, ``Heterogeneous bond percolation on multitype networks with an application to epidemic dynamics,'' 
+  \emph{Physical Review E}, vol.~79, no.~3, p.~036113, 2009.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts}
+\usepackage{booktabs}
+\title{On the Breaking of Epidemic Transmission Chains:  Depletion of Susceptibles versus Decline of Infectives}
+\author{Anonymous Author}
+\begin{document}
+\maketitle
+\begin{abstract}
+Classical epidemic theory suggests that an outbreak terminates once the effective reproduction number becomes smaller than unity.  Two non–exclusive mechanisms can realise this condition: (i) the number of infectious individuals declines through recovery or removal, and (ii) the pool of susceptible hosts is sufficiently depleted so that each infectious individual generates on average less than one secondary case.  This work investigates the relative contribution of these mechanisms by combining analytical results derived from the network–based susceptible–infectious–removed (SIR) model with stochastic simulations on an Erdős–Rényi contact graph.  We show that, for $\mathcal R_0>1$, epidemic fade–out is driven primarily by susceptible depletion, leaving a non–zero residual susceptible fraction, whereas for $\mathcal R_0<1$ the chain of transmission is interrupted almost exclusively by the rapid decline of infectives while the susceptible reservoir remains virtually intact.  Simulation outputs corroborate the analytical predictions and quantify the final epidemic size, peak prevalence, and outbreak duration under both regimes.
+\end{abstract}
+\section{Introduction}
+Understanding why transmission chains terminate is fundamental for designing control strategies.  The seminal work of Kermack and McKendrick postulated that an epidemic ends when the susceptible fraction $S(t)/N$ falls below $1/\mathcal R_0$ so that the effective reproduction number $\mathcal R(t)=\mathcal R_0 S(t)/N$ becomes smaller than unity~\cite{Kermack1927}.  Although this perspective emphasises susceptible depletion, a complementary view highlights the temporal decay of the infectious population~\cite{Diekmann2000}.  This study revisits the problem using a network–aware formulation to address the following question: \\\n\emph{Is the breakage of the transmission chain owed primarily to the decline of infectives or to the exhaustion of susceptibles?}\\
+We tackle the question analytically through the final–size relation of the SIR model on configuration–type networks and validate conclusions via stochastic simulations performed with the FastGEMF engine.
+\section{Methodology}
+\subsection{Analytical framework}
+We consider a static, undirected contact network with degree distribution $P(k)$, mean degree $\langle k\rangle$, and second moment $\langle k^{2}\rangle$.  On such a graph the basic reproduction number reads~\cite{PastorSatorras2015}
+\begin{equation}
+\mathcal R_0=\frac{\beta}{\gamma}\,\frac{\langle k^{2}\rangle-\langle k\rangle}{\langle k\rangle},
+\label{eq:R0}
+\end{equation}
+where $\beta$ is the per–contact transmission rate and $\gamma$ the recovery rate.  Infectious prevalence starts to decline when the time–varying reproduction number becomes smaller than one:
+\begin{equation}
+\mathcal R(t)=\mathcal R_0\,\frac{S(t)}{N}<1\quad\Longrightarrow\quad \frac{S(t)}{N}<\frac{1}{\mathcal R_0}.
+\label{eq:threshold}
+\end{equation}
+Thus, for $\mathcal R_0>1$, the epidemic can only subside after the susceptible fraction is reduced below $1/\mathcal R_0$.  Conversely, when $\mathcal R_0<1$, condition~\eqref{eq:threshold} is satisfied at $t=0$ and prevalence declines immediately, independent of the size of the susceptible pool.
+The final fraction of susceptibles $s_\infty=S(\infty)/N$ satisfies the transcendental equation~\cite{Anderson1991}
+\begin{equation}
+\ln s_\infty + \mathcal R_0\,(1-s_\infty)=\ln s_0,
+\label{eq:finalsize}
+\end{equation}
+where $s_0$ is the initial susceptible proportion.  For $\mathcal R_0>1$ and $s_0\approx1$ the solution yields $0<s_\infty<1/\mathcal R_0$, implying that susceptibles are \\depleted but not exhausted.  For $\mathcal R_0<1$, Eq.~\eqref{eq:finalsize} gives $s_\infty\approx s_0$, indicating that the susceptible reservoir remains essentially intact and the outbreak fizzles because infectives vanish.
+\subsection{Network generation}
+A synthetic Erdős–Rényi (ER) graph with $N=1000$ nodes and link probability $p=0.01$ was generated (mean degree $\langle k\rangle\approx9.97$, $\langle k^{2}\rangle\approx108.8$).  The graph was exported as a sparse adjacency matrix for simulation.
+\subsection{Parameterisation and initial conditions}
+Two parameter sets were examined:
+\begin{enumerate}
+ \item \textbf{Supercritical case}: $\beta=0.03$, $\gamma=0.1$\;\,$\Rightarrow \mathcal R_0\approx2.73>1$.
+ \item \textbf{Subcritical case}: $\beta=0.005$, $\gamma=0.1$\;\,$\Rightarrow \mathcal R_0\approx0.46<1$.
+\end{enumerate}
+In both scenarios 10 high–degree nodes were seeded as infectious ($I_0=10$) and the remaining population was susceptible ($S_0=990$).
+\subsection{Simulation engine}
+Stochastic network simulations were conducted with FastGEMF (one replicate, horizon $T=160$~days).  Resulting compartment counts were stored in \texttt{results-11.csv} and \texttt{results-12.csv}; time series plots were saved as \texttt{results-11.png} and \texttt{results-12.png}.
+\section{Results}
+Figure~\ref{fig:supercritical} shows temporal dynamics for the supercritical regime.  Infectives rise rapidly, peak at $t\approx37$~days, and decline as $S(t)$ crosses the threshold $N/\mathcal R_0\approx366$.  The epidemic terminates around $t\approx101$~days, leaving $S(\infty)=110$ susceptibles (11\,\% of the population).
+Figure~\ref{fig:subcritical} depicts the subcritical case where prevalence never exceeds 10 individuals and disappears by $t\approx46$~days, while more than 97\,\% of individuals remain susceptible.
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.9\linewidth]{results-11.png}
+  \caption{Compartment trajectories for $\mathcal R_0>1$ (supercritical).}
+  \label{fig:supercritical}
+\end{figure}
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.9\linewidth]{results-12.png}
+  \caption{Compartment trajectories for $\mathcal R_0<1$ (subcritical).}
+  \label{fig:subcritical}
+\end{figure}
+Table~\ref{tab:metrics} summarises outbreak metrics.
+\begin{table}[!t]
+\caption{Outbreak metrics extracted from simulations}
+\label{tab:metrics}
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Scenario & Peak $I$ & Peak time & Final $R$ & Duration\\
+\midrule
+$\mathcal R_0>1$ & 297 & 37.5 & 890 & 101.2\\
+$\mathcal R_0<1$ & 10 & 0 & 24 & 45.7\\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Discussion}
+Analytical conditions~\eqref{eq:threshold}--\eqref{eq:finalsize} predict that, for \mbox{$\mathcal R_0>1$}, the epidemic cannot peter out until susceptibles are sufficiently depleted, whereas for \mbox{$\mathcal R_0<1$} the outbreak is doomed from inception because each case fails to replace itself.  Simulation results are fully consistent: in the supercritical regime the transmission chain breaks only after $S$ falls below $N/\mathcal R_0$, leaving a residual susceptible fraction; in the subcritical regime infectives dwindle swiftly despite an almost untouched susceptible reservoir.
+These findings imply that interventions targeting transmission (reducing $\beta$) or shortening infectiousness (increasing $\gamma$) can avert large–scale susceptible depletion, whereas interventions that merely isolate late–stage cases may arrive too late once the threshold has been crossed.  The persistence of a sizable susceptible pool after a supercritical outbreak underscores the potential of rebound waves should immunity wane or new variants arise.
+Limitations include the assumption of homogeneous transmission rates and an ER topology, which neglects clustering and heterogeneity.  Nevertheless, the qualitative conclusions remain valid for more structured networks so long as Eqs.~\eqref{eq:R0}--\eqref{eq:threshold} hold.
+\section{Conclusion}
+The chain of transmission can be broken by two mechanisms.  When $\mathcal R_0>1$, susceptible depletion to the critical threshold is the decisive factor, whereas for $\mathcal R_0<1$ the rapid decline of infectives suffices despite plentiful susceptibles.  Analytical theory and network simulations converge on this conclusion, underscoring the importance of early interventions that push the reproduction number below unity.
+\section*{Acknowledgements}
+The authors acknowledge the developers of FastGEMF for providing the simulation platform.
+\begin{thebibliography}{99}
+\bibitem{Kermack1927} W.~O. Kermack and A.~G. McKendrick, ``A contribution to the mathematical theory of epidemics,'' \emph{Proc. R. Soc. A}, vol. 115, pp. 700--721, 1927.
+\bibitem{Diekmann2000} O.~Diekmann and J.~A.~P. Heesterbeek, \emph{Mathematical Epidemiology of Infectious Diseases}. Cambridge: Cambridge Univ. Press, 2000.
+\bibitem{PastorSatorras2015} R.~Pastor–Satorras, C.~Castellano, P.~Van~Mieghem, and A.~Vespignani, ``Epidemic processes in complex networks,'' \emph{Rev. Mod. Phys.}, vol. 87, no. 3, pp. 925--979, 2015.
+\bibitem{Anderson1991} R.~M. Anderson and R.~M. May, \emph{Infectious Diseases of Humans: Dynamics and Control}. Oxford: Oxford Univ. Press, 1991.
+\end{thebibliography}
+\appendices
+\section{Simulation code snippet}
+\begin{verbatim}
+# see file simulation_11_12.py for full script
+sim = fg.Simulation(config1, initial_condition=IC,
+                    stop_condition={'time':160}, nsim=1)
+sim.run()
+\end{verbatim}
+\end{document}

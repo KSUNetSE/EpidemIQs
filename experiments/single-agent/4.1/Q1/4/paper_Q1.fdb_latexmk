@@ -1,0 +1,15 @@
+# Fdb version 4
+["pdflatex"] 1750671799.14943 "paper_Q1.tex" "paper_Q1.pdf" "paper_Q1" 1750671799.4259 2
+  "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "paper_Q1.aux" 1750671799.14911 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "paper_Q1.tex" 1750671798.2289 6714 94653382f4e3b8527c87fa8e19f3d989 ""
+  (generated)
+  "paper_Q1.aux"
+  "paper_Q1.log"
+  "paper_Q1.pdf"
+  (rewritten before read)

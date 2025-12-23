@@ -1,0 +1,109 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts}
+\usepackage{hyperref}
+\title{Mechanistic and Simulation Based Examination of Epidemic Termination:\\Decline in Infectives versus Depletion of Susceptibles}
+
+\author{Anonymous Author}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The classical question ``When and why does an epidemic stop?'' has two canonical answers: (i) because the pool of infectious individuals shrinks below the level required to sustain transmission or (ii) because the reservoir of susceptible hosts is exhausted.  We revisit this question using an integrated analytical–simulation approach.  First, we review the deterministic threshold results for the susceptible–infectious–removed (SIR) model on well–mixed and networked populations, showing how the effective reproduction number $R_{\mathrm e}(t)=R_0\,S(t)/N$ determines epidemic termination.  Second, we construct a synthetic contact network of $N=500$ individuals (Erdos–Renyi, $\langle k\rangle\approx9.8$) and calibrate two transmission regimes that either (a) barely exceed the invasion threshold so that infections fade while plenty of susceptibles remain, or (b) greatly exceed the threshold so that susceptibles are largely depleted.  Stochastic agent–based simulations executed with FastGEMF confirm the contrasting stopping mechanisms.  When $\beta=0.018$ (regime~A) the peak prevalence is $3.2\%$ and the epidemic ceases after $\approx97$~days with $18.4\%$ of the population ever infected; the stopping condition is a paucity of infectives.  When $\beta=0.044$ (regime~B) the prevalence peaks at $29.6\%$, removing $87.2\%$ of susceptibles within $57$~days; the epidemic stops because there are too few susceptibles left.  These findings reconcile deterministic theory with stochastic finite–size effects and quantify how transmission intensity steers the dominant termination pathway.
+\end{abstract}
+
+\section{Introduction}
+Understanding the mechanisms that halt epidemic spread is critical for predicting outbreak trajectories and designing control measures.  Since the seminal work of Kermack and McKendrick\cite{kermack1927} it is known that an SIR epidemic in a homogeneous population ends when the fraction of susceptibles $S/N$ drops below $1/R_0$, rendering the effective reproduction number $R_{\mathrm e}<1$.  In practice, two qualitatively different pathways can lead to $R_{\mathrm e}<1$: (i) the number of infectious individuals $I$ dwindles due to recovery, or (ii) the susceptible reservoir is depleted through widespread infection or vaccination.  Distinguishing between these pathways has implications for post–epidemic vulnerability, required vaccination coverage, and the interpretation of fading outbreaks.
+
+While deterministic ordinary differential–equation (ODE) models capture the threshold condition succinctly, real populations are structured by contact networks whose heterogeneity modulates both $R_0$ and epidemic final size\cite{pastor2001,may1991}.  Moreover, stochasticity in finite networks can cause extinction even when $R_{\mathrm e}>1$ (so–called fade–out)\cite{andersson2000}.  Therefore, we investigate the question in both analytical terms and by agent–based simulation on an explicit network.  The contributions of this paper are:
+\begin{itemize}
+    \item Derivation of conditions for epidemic termination on networks linking $\beta$, $\gamma$, and degree moments.
+    \item Construction of two calibrated scenarios—\emph{fade–out} versus \emph{susceptible depletion}—on the same synthetic contact network.
+    \item Quantitative comparison of epidemic metrics (peak prevalence, duration, final size) illustrating the dominant stopping mechanism.
+\end{itemize}
+
+\section{Methodology}
+\subsection{Analytical Framework}
+We adopt the standard SIR compartmental model on a static, undirected contact network $G=(V,E)$ with $|V|=N$.  Transmission across an edge from an infectious to a susceptible node occurs at rate $\beta$; infectious nodes recover at rate $\gamma$.  For locally–tree–like networks the epidemic threshold is given by $T_c=1/\kappa$ where $\kappa=(\langle k^2\rangle-\langle k\rangle)/\langle k\rangle$ is the mean excess degree\cite{newman2002}.  Defining $R_0=\beta/\gamma\,\kappa$, the effective reproduction number at time $t$ is $R_{\mathrm e}(t)=R_0\,S(t)/N$.  Hence the epidemic stops when $R_{\mathrm e}(t)<1$, attainable by (i) reducing $I(t)$ such that few transmission events occur before recovery, or (ii) reducing $S(t)$ so that even with many infectives each transmits to less than one new host on average.
+
+\subsection{Network Construction}
+A simple Erdos–Renyi graph $G_{\mathrm ER}(N,p)$ with $N=500$ and connection probability $p=0.02$ was generated (Python/NetworkX).  The resulting mean degree and second moment were $\langle k\rangle=9.77$ and $\langle k^2\rangle=104.6$.  The network was stored in compressed–sparse–row (CSR) format for simulation.  The excess degree $\kappa\approx9.71$ yields the analytical mapping $\beta=R_0\,\gamma/\kappa$.
+
+\subsection{Calibrating Two Scenarios}
+We fixed $\gamma=1/7\;\mathrm{day^{-1}}$ (mean infectious period $7$~days).  Two transmission rates were selected:
+\begin{enumerate}
+    \item \textbf{Regime A (Low transmission)}: $R_0=1.2$ giving $\beta=0.018$.  Here $R_0$ marginally exceeds unity so stochastic fade–out is plausible before susceptibles are exhausted.
+    \item \textbf{Regime B (High transmission)}: $R_0=3.0$ giving $\beta=0.044$.  This regime should infect most susceptibles before recovery removes infectives.
+\end{enumerate}
+
+Initial conditions placed $1\%$ of nodes ($I_0=5$) in the infectious state uniformly at random; all others were susceptible.  No prior immunity or control measures were introduced.
+
+\subsection{Stochastic Simulation}
+We employed FastGEMF, an efficient implementation of the generalized epidemic modelling framework, to run $5$ stochastic realizations per regime for $365$~days or until extinction.  The algorithm is exact in continuous time and supports our CSR network.  Results (time series of $S$, $I$, $R$) were exported to CSV (\verb|results-11.csv|, \verb|results-12.csv|) and figures (PNG).
+
+Key epidemic metrics extracted were:
+\begin{itemize}
+    \item Peak prevalence $I_{\max}$ and its time $t_{\max}$.
+    \item Final epidemic size $R(\infty)$.
+    \item Epidemic duration (last time $I>1$).
+    \item Early doubling time (time for $I$ to double from 2\,\% to 4\,\%).
+\end{itemize}
+Python scripts performing construction, simulation, and analysis are provided in the appendix.
+
+\section{Results}
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{output/results-11.png}
+    \caption{Regime A ($\beta=0.018$): mean trajectories of $S$, $I$, and $R$ over five stochastic runs.  The epidemic fades with many susceptibles intact.}
+    \label{fig:regimeA}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.9\linewidth]{output/results-12.png}
+    \caption{Regime B ($\beta=0.044$): mean trajectories.  Rapid growth depletes susceptibles and terminates the epidemic via herd immunity.}
+    \label{fig:regimeB}
+\end{figure}
+
+Table~\ref{tab:metrics} summarizes quantitative outcomes.
+
+\begin{table}[h]
+\caption{Epidemic metrics for the two regimes.}
+\centering
+\begin{tabular}{lcccc}
+    \hline
+    Metric & Regime A & Regime B \\
+    \hline
+    $I_{\max}$ & $16$ ($3.2\%$) & $148$ ($29.6\%$) \\
+    $t_{\max}$ [days] & $44.1$ & $21.0$ \\
+    Final size $R(\infty)$ & $92$ ($18.4\%$) & $436$ ($87.2\%$) \\
+    Duration [days] & $96.7$ & $56.9$ \\
+    Doubling time [days] & – & $2.06$ \\
+    \hline
+\end{tabular}
+\label{tab:metrics}
+\end{table}
+
+\section{Discussion}
+The analytical threshold $R_{\mathrm e}(t)=1$ provides a unifying lens to interpret both stopping mechanisms.  In Regime~A the modest $R_0$ implies that after initial stochastic attrition of infectives, the force of infection falls below the recovery rate while $S/N$ is still high.  The network structure further enhances fade–out because many low–degree nodes act as transmission dead ends\cite{newman2002}.  Consequently, only $18.4\%$ of individuals experience infection, leaving the population vulnerable to future introductions.
+
+In contrast, Regime~B exhibits explosive growth; the infection curve saturates nearly $90\%$ of the population, driving $S/N<1/R_0\approx0.33$ by day~40.  Although $I$ also declines rapidly thereafter, the causative factor is the scarcity of susceptibles: each infectious individual encounters ever fewer targets, collapsing the effective reproduction number.  The smaller epidemic duration compared with Regime~A underscores how intense transmission accelerates both expansion and decline.
+
+From a control perspective, interventions that mimic Regime~A—such as early case isolation or transmission–reducing non–pharmaceutical interventions—can terminate outbreaks while preserving population susceptibility for vaccination.  However, such fade–outs are fragile; re–introduction could reignite transmission.  Conversely, allowing Regime~B–like spread achieves herd immunity at substantial cost in morbidity and mortality.
+
+\section{Conclusion}
+We have demonstrated, through analytical reasoning and network–based simulation, that an epidemic may terminate either because infectives vanish or because susceptibles are depleted.  Which mechanism dominates depends strongly on $R_0$ relative to the network threshold.  Future work will explore temporal networks, vaccination, and heterogeneous initial conditions to generalize these findings.
+
+\section*{Appendix}
+Python scripts and data files are available in the \verb|output| directory.  Key files include \verb|network_construction.py|, \verb|simulation-11.py|, and the CSV/PNG outputs referenced in the main text.
+
+\begin{thebibliography}{99}
+\bibitem{kermack1927} W. O. Kermack and A. G. McKendrick, ``A Contribution to the Mathematical Theory of Epidemics,'' \emph{Proceedings of the Royal Society A}, vol. 115, pp. 700–721, 1927.
+\bibitem{pastor2001} R. Pastor–Satorras and A. Vespignani, ``Epidemic Spreading in Scale–Free Networks,'' \emph{Physical Review Letters}, vol. 86, no. 14, pp. 3200–3203, 2001.
+\bibitem{may1991} R. M. May and R. M. Anderson, ``Infectious Diseases of Humans: Dynamics and Control,'' Oxford University Press, 1991.
+\bibitem{andersson2000} H. Andersson and T. Britton, ``Stochastic Epidemic Models and Their Statistical Analysis,'' Springer, 2000.
+\bibitem{newman2002} M. E. J. Newman, ``Spread of Epidemic Disease on Networks,'' \emph{Physical Review E}, vol. 66, no. 1, 016128, 2002.
+\end{thebibliography}
+
+\end{document}

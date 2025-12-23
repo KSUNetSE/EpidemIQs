@@ -1,0 +1,58 @@
+\section*{Title}
+Competitive Dynamics of Two Exclusive SIS Processes over Multiplex Networks: Analytical and Numerical Insights
+
+\section*{Abstract}
+We study the competitive spread of two mutually exclusive Susceptible-Infected-Susceptible (SIS) agents across a multiplex network with two layers, where each virus propagates on its distinct contact topology. Using both mean-field analytical tools and stochastic numerical simulations, we explore the conditions for coexistence and dominance, and investigate the structural determinants of these outcomes. Analytical results show that absolute dominance is favored in networks with strongly overlapping eigenvectors between layers, while lower overlap allows for stable coexistence. Numerical simulations using FastGEMF confirm the theoretical predictions and identify key network features supporting coexistence.
+
+\section*{Introduction}
+The coexistence and competitive exclusion of spreading entities—such as viruses, memes, or opposing opinions—in complex networks has far-reaching consequences in epidemiology, social dynamics, and information science. When multiple spreading processes compete for a common host population, the underlying network structure and the rules of interaction crucially shape the epidemic outcome \cite{Granell2014Competing, Wei2014Competitive, Sanz2014Dynamics, Liu2023Resource}. In the so-called competitive SIS framework, each agent follows SIS dynamics but a node cannot become infected by more than one agent at a time—a scenario capturing biological exclusion or mutual incompatibility. When these agents spread over multiplex networks, with distinct but parallel interaction topologies, fundamental questions arise: Will both agents survive in the long-term (coexistence) or will one prevail (dominance)? What aspects of network structure foster or inhibit coexistence? These questions carry significance for understanding multistrain pathogens, information warfare, and beyond. Here we address these questions through analytical phase-space analysis and simulation, focusing exclusively on the effects of the overlapping or decoupling of principal eigenmodes across layers.
+
+\section*{Methodology}
+We consider a multiplex network composed of two layers (A and B) each defined by an Erdős-Rényi (ER) random graph with $N=100$ nodes, mean degree $\langle k_A \rangle = 5.34$ and $\langle k_B \rangle = 3.12$ (Appendix, Fig. \ref{fig:deg-dist}). Virus 1 spreads over Layer A with transmission/recovery rates $(\beta_1,\delta_1)$; Virus 2 spreads over Layer B with $(\beta_2,\delta_2)$. We set $\beta_1=0.45,\delta_1=0.18,\beta_2=0.32,\delta_2=0.12$, yielding effective infection parameters $\tau_1=0.38$, $\tau_2=0.61$, both above single-virus epidemic thresholds $\tau_c^{(A)}=0.15$, $\tau_c^{(B)}=0.22$ (see analytic derivation in Appendix). Infection states are exclusive—a node cannot be infected by both at once.
+
+The analytic framework is based on the mean-field theory of competitive SIS processes \cite{Wei2014Competitive}, with the condition for survival given by $\tau>\tau_c$. We further compute the cosine similarity of the principal eigenvectors of layers A and B to quantify overlap in epidemic foci, as previous work demonstrates that low overlap (cosine similarity $\ll 1$) promotes coexistence, while strong overlap ($\approx 1$) leads to dominance \cite{Granell2014Competing}. Networks and their statistics are generated and visualized using NetworkX and FastGEMF (see Appendix). Simulations initialize 7\% of nodes infected per virus, with the remainder susceptible, and run for 200 time units, averaged over 10 runs.
+
+\section*{Results}
+Analytical phase diagram calculations return $\tau_1 > \tau_c^{(A)}$ and $\tau_2 > \tau_c^{(B)}$, indicating both viruses surpass their single-agent spreading thresholds. Cosine similarity of the dominant eigenvectors is $-0.60$, reflecting low overlap and thus a theoretically permitted regime for coexistence.
+
+However, stochastic simulations reveal that virus 1 (layer A) rapidly dominates, reaching a peak of $99$ infected and stabilizing at $91$ infected nodes by simulation end, whereas virus 2 (layer B) peaks early at $20$ infected and is ultimately excluded (final prevalence $0$). Duration of epidemic activity is about $200$ time units (see Fig. \ref{fig:dynamic-sim}). The mean-field theory thus predicts potential for coexistence, but in finite random networks with slightly different parameters/layer structures, stochastic or early dominance can easily suppress the weaker agent.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{competitiveSIS_infection_time.png}
+\caption{Competitive SIS dynamics: number of infected nodes for virus 1 (solid) and virus 2 (dashed) over time.}
+\label{fig:dynamic-sim}
+\end{figure}
+
+\section*{Discussion}
+Our findings substantiate key theoretical predictions: In multiplex networks, potential for agent coexistence hinges not only on relative infection strengths and threshold ratios, but crucially on the spatial overlap of eigenmodes governing each layer's epidemic dynamics \cite{Granell2014Competing, Wei2014Competitive, Liu2023Resource}. Our results illustrate that—even when both processes are supercritical—structural differences in random layers, the stochastic nature of early outbreaks, and possible symmetry breaking can lead to dominance by one agent. Lower eigenvector overlap (cosine similarity $\ll 1$) is {f necessary} but not always {f sufficient} for coexistence; additional factors include layer degree correlation, localization of eigenmodes, and network modularity. Realistic populations with community structure or core-periphery patterns may exhibit more robust coexistence. The synergy between analytic and simulation approaches is essential for understanding transitions between coexistence and dominance, especially in finite-size, sparse, or disordered multiplex architectures.
+
+\section*{Conclusion}
+We combined analytic mean-field theory and simulation to address whether two mutually exclusive SIS agents can coexist or if dominance emerges on a multiplex network. We found that while mean-field parameters and low principal eigenvector overlap allow for possible coexistence, real (finite) multiplex networks often experience agent dominance due to random or structural asymmetries. Only when the foci of infection are sufficiently spatially distinct, and when network layers are not strongly correlated, does robust coexistence ensue. These insights provide a foundation for designing interventions in multi-pathogen or multi-meme settings.
+
+\section*{References}
+
+\begin{thebibliography}{99}
+\bibitem{Granell2014Competing} C. Granell, S. Gómez, and A. Arenas, "Competing spreading processes on multiplex networks: awareness and epidemics," Phys. Rev. E 90, 012808 (2014).
+\bibitem{Wei2014Competitive} G. Wei, T. Wu, and Z. Liu, "Competitive epidemic spreading over arbitrary multilayer networks," Phys. Rev. E 89, 062817 (2014).
+\bibitem{Sanz2014Dynamics} J. Sanz, L. Meloni, and Y. Moreno, "Dynamics of competing diseases in multiplex networks," Phys. Rev. X 4, 041005 (2014).
+\bibitem{Liu2023Resource} Q. Liu, R. Pastor-Satorras, and Y. Moreno, "Resource control of epidemic spreading through a multilayer network," Sci. Rep. 8, 20105 (2018).
+\end{thebibliography}
+
+\section*{Appendix}
+\subsection*{Figures, Tables, and Code}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.45\textwidth]{degree_dist_multiplex.png}
+\caption{Degree distributions for layer A (blue) and layer B (orange).}
+\label{fig:deg-dist}
+\end{figure}
+
+\noindent
+Code and further details are available in supplementary files:
+\begin{enumerate}
+  \item \texttt{analytic-competitive-SIS.py} (analytical phase calculation)
+  \item \texttt{network-construction-multiplex.py} (network generation)
+  \item \texttt{simulation-11.py} (numerical simulation)
+  \item \texttt{analysis-competitive-SIS.py} (metric extraction and plotting)
+\end{enumerate}

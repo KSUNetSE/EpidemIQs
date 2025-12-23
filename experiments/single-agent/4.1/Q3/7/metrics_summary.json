@@ -1,0 +1,20 @@
+{
+  "static": {
+    "peak_time": 11,
+    "peak_infected": 337,
+    "epidemic_duration": 52,
+    "final_epidemic_size_R": 951,
+    "total_cases": 951,
+    "t_start": 0,
+    "t_end": 52
+  },
+  "temporal": {
+    "peak_time": 35,
+    "peak_infected": 126,
+    "epidemic_duration": 80,
+    "final_epidemic_size_R": 759,
+    "total_cases": 761,
+    "t_start": 0,
+    "t_end": 80
+  }
+}

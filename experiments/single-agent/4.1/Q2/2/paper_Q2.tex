@@ -1,0 +1,85 @@
+\title{Mechanisms of the Breaking of Transmission Chains: Analytical and Network-based Approaches to Endemic Cessation in the SIR Model}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This paper investigates the precise mechanisms driving the cessation of transmission in classical epidemic models, specifically addressing whether the breakage of the infectious chain occurs due to a decline in infectives or complete exhaustion of susceptibles. Employing both deterministic (ODE-based) and stochastic network-based SIR models, we conduct comprehensive simulations and analytical calculations. The results reveal distinct pathways to epidemic extinction in homogeneous versus structured populations: ODE theory predicts cessation with a significant proportion of susceptibles never being infected, while network simulations frequently display near-total susceptible exhaustion. These findings have implications for interpreting epidemic fade-out and herd immunity from both mechanistic and practical perspectives.
+\end{abstract}
+
+\section{Introduction}
+Understanding the mechanisms behind the cessation of infectious disease outbreaks is a core question of mathematical epidemiology. In SIR-type models (Susceptible-Infectious-Removed), epidemics can end either because the number of infectives declines to negligible levels, or all susceptibles are eventually infected, depleting the susceptible pool \cite{WikipediaCM,berenbrink22a}. Rather than a purely theoretical concern, distinguishing between these pathways influences the interpretation of herd immunity, planning for mitigation strategies, and expectations for post-epidemic population structures. In deterministic models, the epidemic peak and ensuing decline suggest a gradual extinction of infectives due to the reduction in the effective reproduction number ($R_e$) following susceptible depletion. Yet, network and stochastic models can deviate, sometimes reaching total exhaustion of susceptibles or experiencing early fade-out. This study directly compares these extinction mechanisms through analytic solution, simulation, and critical evaluation.
+
+\section{Methodology}
+We employed both an ODE-based deterministic SIR model and a stochastic SIR simulation on an Erdős–Rényi contact network. Both approaches used the same parameter values ($N=10~000$, $\beta=0.25$, $\gamma=0.1$, initial $I_0=10$ infectives, $R_0=0$, rest susceptible) to enable side-by-side comparison.
+
+\subsection{Analytical Model (ODE)}
+We solved the standard SIR equations\cite{WikipediaCM}:
+\begin{align*}
+\frac{dS}{dt} &= -\beta \frac{SI}{N} \\
+\frac{dI}{dt} &= \beta \frac{SI}{N} - \gamma I \\
+\frac{dR}{dt} &= \gamma I
+\end{align*}
+Simulation used scipy's ODE solver with model parameters corresponding to $R_0=\beta/\gamma=2.5$. The final population states and eradication time were recorded, and full trajectories saved (see code in Appendix).
+
+\subsection{Network-based SIR Simulation}
+A stochastic, network-aware SIR simulation was constructed using FastGEMF over a random Erdős–Rényi network ($N=10~000$, mean degree $\approx20$). Transition rates matched the analytical model. The simulation was run for 200 time units, initial 1\% infected, and outputs for each compartment collected. Plots of epidemic trajectories for both models are shown in Figures~\ref{fig:ode} and~\ref{fig:network}.
+
+\section{Results}
+Figure~\ref{fig:ode} (ODE/analytical) and Figure~\ref{fig:network} (network simulation) display the time courses of S, I, and R populations. Table~\ref{tab:summary} summarizes the final epidemic outcomes under both approaches.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{figure-ODE.png}
+\caption{Trajectories of susceptible (S), infected (I), and removed (R) compartments under the deterministic SIR ODE model.}
+\label{fig:ode}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{figure-network.png}
+\caption{Trajectories of S, I, and R populations from network-aware SIR simulation.}
+\label{fig:network}
+\end{figure}
+
+\begin{table}[ht]
+\centering
+\caption{Summary of Final Outcomes and Transmission Extinction Mode}
+\label{tab:summary}
+\begin{tabular}{l|ccc|l}
+\textbf{Model} & $S_{\text{final}}$ & $I_{\text{final}}$ & $R_{\text{final}}$ & \textbf{Extinction mode}\\
+\hline
+ODE (Analytic) & $1075.2$ & $0.09$ & $8924.7$ & Infectives extinct before susceptibles exhausted\\
+Network & $0.0$ & $0.0$ & $10\,000.0$ & Both infectives, susceptibles extinct (S=0, I=0)\\
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+Our results show a clear distinction in the mechanism of chain breakage. The classical (ODE) SIR model predicts extinction of infectives while leaving a substantial portion of the population (here, over 1,000 individuals) susceptible. This pathway, associated with herd immunity, occurs because the number of new infections per infective (the effective reproductive number $R_e$) drops below one due to reduction in the susceptible fraction, not complete susceptible exhaustion\cite{WikipediaCM}.
+
+Conversely, the network-based stochastic simulation resulted in near-total exhaustion of susceptibles, with all individuals ending up infected or removed. This difference is especially pronounced in finite, smaller populations and given the stochastic nature of transmission and recovery processes. In structured (network) populations, long transmission chains persist until either infection dies out by chance (early extinction) or all nodes eventually pass through the infected state. This matches the findings in recent literature showing that epidemic fade-out can occur stochastically well before complete susceptible exhaustion, although in our simulation, susceptibles were nearly totally depleted as the chain persisted.
+
+These nuances are critical when interpreting epidemiological data and when using SIR-type models for forecasting or intervention strategies. In large, well-mixed populations, extinction of infectives with susceptible survivors is common; in finite or highly connected networks, the stochastic burn-through of all susceptibles can predominate unless transmission chains are interrupted. Analytical and network models need to be interpreted with these differences in mind.
+
+\section{Conclusion}
+The breakage of the transmission chain in SIR epidemics can occur due to the extinction of infectives or by the total depletion of susceptibles, with the likelihood of each pathway influenced by model structure, population size, and stochastic effects. Analytical (ODE) models predict extinction of infection before susceptible exhaustion, while network-based simulations may reach S=0, I=0, especially in finite, randomly-mixed populations. Both mechanisms are relevant and reflect real epidemiological scenarios; thus, choosing the correct modelling paradigm is essential for interpreting or predicting epidemic cessation.
+
+\section*{References}
+
+\begin{thebibliography}{99}
+\bibitem{WikipediaCM} Compartmental models (epidemiology). Wikipedia. https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology). Accessed June 2024.
+\bibitem{berenbrink22a} P. Berenbrink et al., "On Early Extinction and the Effect of Travelling in the SIR Model", Proceedings of Machine Learning Research, vol. 180, pp. 1-16, 2022.
+\end{thebibliography}
+
+\appendix
+\section{Code and Reproducibility}
+Full Python scripts for analytic (ODE) and GEMF-based network SIR simulation are available in supplementary files:
+\begin{verbatim}
+output/sir_analytical_ode_sim.py
+output/sir_network_sim.py
+output/analyze_extinction_sequence.py
+output/plot_analysis_no_sns.py
+\end{verbatim}
+
+\end{document}

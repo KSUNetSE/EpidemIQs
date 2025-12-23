@@ -1,0 +1,32 @@
+% LaTeX file for scientific reporting of SIR epidemic over static ER network
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\title{Epidemic Spread Analysis of the SIR Model over Static Erdős–Rényi Networks}
+
+\begin{document}
+\maketitle
+
+%----------------------
+% Abstract
+%----------------------
+\begin{abstract}
+This paper investigates the propagation dynamics of infectious diseases in a static population via the Susceptible-Infected-Recovered (SIR) model implemented on a large Erdős–Rényi (ER) contact network. Epidemic simulations were performed using parameters representative of COVID-19, including a basic reproduction number $R_0=2.5$ and a mean infectious period of 7 days. The ER network, consisting of 1,000 nodes and an average degree of 10, was constructed to reflect homogeneous mixing assumptions. Simulation results highlight a rapid increase in infections, a distinct epidemic peak, and a significant final epidemic size, with peak prevalence reaching 13.3\% of the population. Key epidemiological metrics—including epidemic duration, final size (78.8\%), and doubling time—are quantified and discussed in the context of network-based transmission. Our study underscores the utility of network-based mechanistic models in understanding complex epidemic phenomena, offering a rigorous foundation for the analysis of mitigation and control strategies.
+\end{abstract}
+
+%----------------------
+% Introduction
+%----------------------
+\section{Introduction}
+Epidemics—ranging from seasonal influenza to global pandemics such as COVID-19—exhibit dynamics that are fundamentally shaped by the patterns of contacts within a population. Traditional compartmental models, such as the Susceptible-Infected-Recovered (SIR) model, historically assume mass-action mixing, yet real-world interactions are more accurately captured by complex network structures. Network-based epidemic models enable the explicit representation of contact heterogeneity and clustering, providing a powerful framework for both mechanistic understanding and quantitative prediction of epidemic outcomes \cite{kleinberg-epidemics, barnard-edge, miller-ebcm}.
+
+Among random network models, the Erdős–Rényi (ER) network is widely utilized as a null model due to its analytical tractability and ability to approximate homogeneous random mixing. When applying epidemic models to a static ER network, the degree distribution and connectivity play pivotal roles in driving the spread and persistence of infection. Parameterization is subtle: rates must reflect not only disease natural history, but also topological features such as degree variance and mean excess degree \cite{plosone-ebcm, pubmed-static, clevelandfed}.
+
+Recent literature has argued for best practices that combine mechanistic compartmental dynamics with accurate network parameterization, such as calibrating transmission rates to yield a targeted $R_0$ when accounting for the network’s mean excess degree. Simulation studies using large, static ER networks thus serve as vital benchmarks for evaluating model fidelity, quantifying uncertainties, and dissecting the influence of initialization and topology.
+
+This study's major objective is to quantitatively analyze the spread of an acute, directly transmitted infectious disease—using the SIR model with COVID-19-like infectiousness—along a static ER graph. We detail the construction of the network, modeling framework, parameter calibration, simulation setup, and rigorous analysis of epidemic metrics. Our aim is to provide a reproducible, data-driven pipeline for rigorous assessment of epidemic propagation in static network settings and inform future methodological advances in computational epidemiology.
+
+\section{Methodology}
+% (To be completed in the next steps)
+

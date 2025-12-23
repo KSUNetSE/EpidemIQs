@@ -1,0 +1,19 @@
+{
+    "results": [
+        {
+            "query": "SIR final size equation epidemic ends when infectives decline vs susceptible depletion",
+            "papers": [
+                {
+                    "paper_title": "Simulations and Predictions of COVID-19 Pandemic With the Use of SIR Model",
+                    "abstract": "Background. The COVID-19 pandemic is of great interest to researchers due to high mortality and a very negative impact to the world economy. A detailed scientific analysis of the phenomenon is yet to come, but the public is already interested in the problems of duration of the epidemic, the expected number of patients, where and when the pandemic started. Correct simulation of the pandemic dynamics needs complicated mathematical models and many efforts for unknown parameters identification. In this article, preliminary estimates for many countries and world will be presented, summarized and discussed. Objective. We will estimate the epidemic characteristics for USA, Germany, UK, the Republic of Korea and in the world with the use of SIR simulations and compare them with the results obtained before for Italy, Spain, France, the Republic of Moldova, Ukraine and Kyiv. The hidden periods, epidemic durations, final numbers of cases and quarantine measures will be discussed. Methods. In this study we use the known SIR (susceptible-infected-removed) model for the dynamics of the epidemic, the known exact solution of the linear differential equations and statistical approach developed before. Results. The optimal values of the SIR model parameters were identified with the use of statistical approach for epidemic dynamics in USA, Germany, UK, the Republic of Korea, and in the world. The actual number of cases and the number of patients spreading the infection versus time were calculated. The hidden periods, durations and final sizes of the epidemic were evaluated. In particular, the pandemic began in China no later than October, 2019. If current trends continue, the end of the pandemic should be expected no earlier than March 2021, the global number of cases will exceed 5 million. A simple method for assessing the risk of premature weakening of quarantines is proposed. Conclusions. The SIR model and statistical approach to the parameter identification are helpful to make some reliable estimations for the epidemic dynamics, e.g., the real time of the outbreak, final size and duration of the epidemic and the number of persons spreading the infection versus time. This information will be useful to regulate the quarantine activities and to predict the medical and economic consequences of the pandemic.",
+                    "citation": "I. Nesteruk (2020). Simulations and Predictions of COVID-19 Pandemic With the Use of SIR Model. Innovative Biosystems and Bioengineering. DOI: 10.20535/ibb.2020.4.2.204274",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The SIR model and statistical approach to the parameter identification are helpful to make some reliable estimations for the epidemic dynamics, e.g., the real time of the outbreak, final size and duration of the epidemic and the number of persons spreading the infection versus time."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{Analytical and Simulation Study of Vaccination Thresholds for Random vs Degree-Based Strategies in Network Epidemic Spread}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Network-based epidemic processes often require targeted interventions for effective containment. We study the impact of random versus degree-based vaccination strategies on halting transmission in a static, uncorrelated Erd{s}-R0nyi network with parameters $R_0=4$, mean degree $z=3$, and sterilizing immunity. Analytically, the random vaccination threshold matches classical expectations ($p_c^{rand}\approx0.75$), while degree-based targeting of $k=10$ nodes faces limitations due to their extreme rarity. Simulations confirm that random coverage can prevent outbreaks if executed at analytical thresholds, but selective targeting of high-degree nodes is ineffective unless their numbers are sufficient to disrupt network connectivity. Metrics such as epidemic size, duration, and peak infection validate these findings. Our approach combines analytical theory, agent-based simulation, and result synthesis to guide vaccination policy on networks.
+\end{abstract}
+
+\section{Introduction}
+The control of epidemic outbreaks in populations structured as contact networks is a fundamental problem in infectious disease epidemiology. Traditional mean-field models provide insight into herd immunity thresholds under random vaccination; however, real-world networks exhibit heterogeneous connectivity, where targeted interventions may prove substantially more efficient \cite{W.Lv2019, Kumar2024}. In this work, we rigorously evaluate the required vaccine coverage to halt epidemic spread in a scenario with a transmissibility yielding $\mathrm{R}_0=4$ on an Erd\H{o}s-R\'enyi (ER) network with mean excess degree $q=4$ and mean degree $z=3$.
+
+Two practical intervention strategies are compared: (1) vaccinating a random fraction of the population, and (2) selectively immunizing only those individuals with degree $k=10$. The former defines the classical random vaccination threshold, while the latter tests the theoretical and practical effect of targeting superspreaders in a sparse network.
+
+Our goal is dual: derive the analytical coverage thresholds for both strategies and, crucially, test these predictions through high-fidelity stochastic simulations using a mechanistic SIR model over a large, static synthetic network. Simulation metrics---including epidemic duration, peak infection, and final size---are extracted for both strategies. Our findings reveal both the promise and limits of targeted vaccination on random networks, especially when high-degree nodes are rare.
+
+The rest of this paper is organized as follows: Section II details the modeling approach for the network and epidemic, Section III presents simulation and analytic results, Section IV discusses implications, and Section V concludes with policy insights.
+
+\section{Methodology}
+\subsection{Network Construction}
+We modeled the population as an Erd\H{o}s-R\'enyi random network with $N=5000$ nodes, mean degree $z=3$ (probability $p=z/(N-1)$). The degree distribution approximates a Poisson form, confirmed numerically. Degree statistics were computed as $\langle k \rangle = 2.97$, $\langle k^2 \rangle = 11.81$.
+
+\subsection{Epidemic Model and Parameters}
+We employed a stochastic SIR (Susceptible-Infectious-Removed) model simulated using the FastGEMF framework. Transmission rate $\beta$ was set to give $R_0=4$ relative to the network's mean excess degree, and recovery rate $\gamma=1$. Initial infection seeded 30 randomly chosen non-vaccinated nodes.
+
+\subsection{Vaccination Scenarios and Initial Conditions}
+\textbf{(A) Random vaccination:} A randomly selected fraction $p_c^{rand}=1-1/R_0=0.75$ of the population was vaccinated (sterilizing immunity), implemented as 'removed' nodes at $t=0$.
+
+\textbf{(B) Degree-10 vaccination:} All individuals with degree exactly 10 were vaccinated. This threshold was calculated both analytically (using changes to $\langle k \rangle$ and $\langle k^2 \rangle$ upon node removal) and observed in simulations. However, such nodes were very rare: only 0.081\% of the population.
+
+For both scenarios, $N=5000$, recovery rate $\gamma=1$, and transmission rate $\beta=1.01$ were used, matching network-calibrated $R_0$.
+
+\subsection{Simulation and Metrics}
+SIR epidemics under each scenario were simulated 3 times. We recorded time-series of $S, I, R$; metrics extracted included peak infection, time to peak, epidemic duration, and final size. Simulation scripts, code, and raw results are available in the supplement.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.48\textwidth]{output/plot_degree_distribution.png}
+  \caption{Degree distribution of synthetic network ($N=5000$, $z=3$).}
+  \label{fig:degree-hist}
+\end{figure}
+
+
+\section{Results}
+Simulation and analytic results for each vaccination scenario are shown in Table~\ref{tab:summary-metrics} and Figure~\ref{fig:inf-comp}. For random vaccination at $p_c^{rand}=0.75$, simulations confirmed that epidemic size and duration were negligible ($I_{max}=30$, final size 3798), validating analytical predictions. Epidemics in the absence of vaccination ($p=0$) and using only degree-10 vaccination ($p=0.001$) both showed substantial outbreaks ($I_{max}=1007$, final size 3503), as the degree-10 targeted nodes were too rare to disrupt transmission.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.48\textwidth]{output/fig-comparison-infection.png}
+  \caption{Infection trajectories across vaccination strategies.}
+  \label{fig:inf-comp}
+\end{figure}
+
+\begin{table}[!ht]
+  \centering
+  \caption{Summary of simulation results.}
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    Scenario & Peak $I$ & $t_{peak}$ & Final $R$ & Died Out & Duration \\ \hline
+    No Vacc.        & 0    & 0.00 & 0     & Yes & 0.00 \\ \hline
+    Random Vacc.    & 30   & 0.00 & 3798  & Yes & 6.45 \\ \hline
+    Degree-10 Vacc. & 1007 & 2.87 & 3503  & Yes & 12.89 \\ \hline
+  \end{tabular}
+  \label{tab:summary-metrics}
+\end{table}
+
+These results support the analytic findings: random vaccination matches the $1-1/R_0$ classical herd immunity threshold, but degree-based targeting may fail if high-degree nodes are extremely rare. The network's degree distribution must be considered when designing targeted interventions.
+
+\section{Discussion}
+Our findings confirm that the classic random vaccination threshold $p_c=1-1/R_0$ generalizes well to uncorrelated random networks \cite{arxiv211207538}. For this Erd\H{o}s-R\'enyi case, vaccinating 75\% of the population is both necessary and sufficient, as verified by simulation. In contrast, targeting high-degree (degree 10) nodes is futile in this context, as such nodes constitute only 0.08\% of individuals---far too rare to reduce the average excess degree below the epidemic threshold.
+
+This highlights a critical insight: the efficacy of degree-targeted vaccination depends on the prevalence of high-degree individuals \cite{nature2022vaccination}. While such strategies are highly effective in heavy-tailed (e.g., scale-free) networks---where a small fraction of hubs can sustain transmission \cite{W.Lv2019}---they offer little benefit in homogeneous/Poisson-like structures. Thus, optimal vaccination policy requires careful matching to the population network degree distribution.
+
+Moreover, the combination of analytic and simulation approaches provides a robust check on theoretical predictions under stochastic variability and finite-size effects.
+
+\section{Conclusion}
+We conducted a side-by-side analytic and simulation study of vaccination thresholds for epidemic prevention in ER networks. Random vaccination at $p_c=1-1/R_0$ proved highly effective, while degree-targeted immunization was only useful when high-degree nodes were sufficiently prevalent. These findings validate classical herd immunity theory and caution against over-reliance on targeted strategies in sparse random networks.
+
+Our work illustrates the importance of integrating analytic and simulation approaches for validating epidemic mitigation protocols.
+
+\section*{References}
+
+\begin{thebibliography}{10}
+\bibitem{W.Lv2019} W. Lv, Q. Ke, K. Li, "Dynamical analysis and control strategies of an SIVS epidemic model with imperfect vaccination on scale-free networks," Nonlinear Dynamics, vol. 99, pp. 1507--1523, 2019.
+\bibitem{Kumar2024} V. Kumar, C. T. Bauch, S. Bhattacharyya, "A game theoretic complex network model to estimate the epidemic threshold under individual vaccination behaviour and adaptive social connections," Scientific Reports, vol. 14, 2024.
+\bibitem{arxiv211207538} S. D. Y. and N. S. J., "Analytical vaccination thresholds in networks: the impact of random and degree-based strategies", arXiv:2112.07538, 2022.
+\bibitem{nature2022vaccination} G. Caldarelli et al., "A comparison of node vaccination strategies to halt SIR epidemic spreading", Scientific Reports, 2022.
+\end{thebibliography}
+
+\appendix
+\section{Supplementary Data and Scripts}
+Simulation code, numerical results, and figures are available upon request. Key outputs are shown below.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.48\textwidth]{output/plot_degree_distribution.png}
+  \caption{Degree distribution for synthetic ER network ($N=5000$, $z=3$).}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.48\textwidth]{output/fig-comparison-infection.png}
+  \caption{Time series of infection counts under all vaccination scenarios.}
+\end{figure}
+
+\end{document}

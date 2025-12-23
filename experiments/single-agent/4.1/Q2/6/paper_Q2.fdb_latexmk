@@ -1,0 +1,15 @@
+# Fdb version 4
+["pdflatex"] 1750674143.68873 "paper_Q2.tex" "paper_Q2.pdf" "paper_Q2" 1750674144.0138 2
+  "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "paper_Q2.aux" 1750674143.68842 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "paper_Q2.tex" 1750674142.61179 8579 1779e52d2821ef9627ac0e3e049a2741 ""
+  "summary_metrics_table.tex" 1750674063.09943 571 973bf631bcbabd7955a789280d39d68e ""
+  (generated)
+  "paper_Q2.aux"
+  "paper_Q2.log"
+  "paper_Q2.pdf"
+  (rewritten before read)

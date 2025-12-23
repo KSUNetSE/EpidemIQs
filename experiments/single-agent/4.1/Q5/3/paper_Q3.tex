@@ -1,0 +1,89 @@
+\section*{Title}
+Epidemic Spread Analysis of SIR Model over Static Erdős–Rényi Network
+
+\section*{Abstract}
+We present a systematic investigation of epidemic spread using the Susceptible-Infectious-Recovered (SIR) model over static Erdős–Rényi (ER) networks. Motivated by the need to understand network-driven modulation of epidemic trajectories, we construct an ER network of 1,000 individuals with a mean degree $\langle k \rangle \approx 10$, and parameterize the SIR model to reflect a typical moderately infectious outbreak (transmission rate $\beta = 0.0504$, recovery rate $\gamma = 0.2$, yielding $R_0 \approx 2.5$ when accounting for network heterogeneity). Through direct stochastic simulation, we find that the final epidemic size reaches 784 out of 1000, with a peak infected population of 198 occurring near day 21.5, and an epidemic duration of nearly 59 days. The early exponential phase yields a doubling time of approximately 3.7 days. Results are discussed in the context of network structure, epidemic threshold, and practical implications for intervention and resilience in random networks.
+
+\section*{Introduction}
+Epidemics are governed not only by intrinsic pathogen features, but also by the patterns of interactions that define potential transmission. Network-based epidemiological modeling clarifies how topology---mean degree, degree heterogeneity, clustering and path lengths---modulate epidemic size, peak, and velocity \cite{FastSIRSim2021, EpidNetApproachFed2020}. In classic SIR differential equation models, all individuals are equally likely to interact, yet real populations are better described as networks. The Erdős–Rényi (ER) network, with homogeneous random connections, provides a baseline for understanding probabilistic epidemic spread and is widely studied in simulation literature \cite{FastSIRSim2021, EpidNetApproachFed2020}. Typical SIR model parameters---the per-contact transmission rate $\beta$ and recovery rate $\gamma$---must be adapted when simulated on a network rather than in a well-mixed population. Critically, the basic reproduction number $R_0$ incorporates not just $\beta$ and $\gamma$, but also the network's degree distribution via its mean and variance. This study simulates epidemic propagation on a static ER network, aiming to quantify major epidemic metrics and elucidate core network effects.
+
+\section*{Methodology}
+\textbf{Network Construction:} An Erdős–Rényi (ER) network was created with $N=1,000$ nodes. The link probability was set as $p = 0.01$ ($\langle k \rangle = 10$) to approximate the mean degree observed in social networks allowing for a realistic outbreak scenario.
+
+\textbf{Degree Statistics:} The generated network demonstrated a mean degree of 9.98 and a second moment $\langle k^2 \rangle$ of 108.92 (see Fig.\,\ref{fig:degree-dist}). The degree distribution is plotted to verify network structure (Fig.\,\ref{fig:degree-dist}).
+
+\textbf{SIR Model and Parameters:} We employ a standard SIR model with compartments for susceptible ($S$), infectious ($I$), and recovered ($R$) individuals. Parameter selection was as follows:
+\begin{itemize}
+    \item Transmission rate ($\beta$): 0.0504
+    \item Recovery rate ($\gamma$): 0.2 per day
+    \item Average infectious period: $1/\gamma = 5$ days
+    \item Initial condition: $S_0 = 990$, $I_0 = 10$, $R_0 = 0$
+    \item Initial infections randomly seeded across the network
+    \item $R_0$ (basic reproduction number) estimated via the network formalism: $R_0 = \beta/\gamma \times \frac{\langle k^2 - k \rangle}{\langle k \rangle} \approx 2.5$
+\end{itemize}
+
+\textbf{Simulation Protocol:} The process was implemented using the FastGEMF simulation engine with five independent stochastic realizations, each running for 60 days or until extinction of the infection. Results reflect mean trajectories.
+
+\textbf{Analysis Metrics:} Primary epidemic outcomes were: final epidemic size, peak number of infections (prevalence), time to epidemic peak, total epidemic duration, and early phase doubling time (based on the initial 10 time-points, see Section Results).
+
+\section*{Results}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\textwidth]{network-degree-dist.png}
+    \caption{Degree distribution of the constructed Erdős–Rényi network ($N=1000$, $\langle k \rangle \approx 10$).}
+    \label{fig:degree-dist}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.48\textwidth]{results-11-metrics.png}
+    \caption{Epidemic time course: population in each compartment (S, I, R) versus time. Almost 80\% of population is eventually infected, with a peak prevalence of 198 occurring on day 21.5. Onset of decline follows rapid early exponential rise (see text for doubling time).}
+    \label{fig:sir-trajectories}
+\end{figure}
+
+The static ER network supported rapid, broad epidemic propagation as expected for this parameter regime. Out of 1,000 nodes, the final epidemic size (total recovered) was 784, corresponding to 78.4\% attack rate. The peak number of infected individuals was 198, reached at day 21.5. Total epidemic duration---the interval over which $I > 1$---was 58.8 days, matching the predicted duration for such a moderately infectious agent with $R_0 \approx 2.5$.
+
+Early propagation was near-exponential, with a doubling time computed as 3.7 days.
+
+Key epidemic metrics are tabulated below:
+\begin{table}[h]
+\caption{Summary of epidemic metrics from network-based SIR simulation}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Metric & Value \\
+\hline
+Final epidemic size & 784 \\
+Peak number infected & 198 \\
+Peak time (days) & 21.5 \\
+Epidemic duration (days) & 58.8 \\
+Early doubling time (days) & 3.7 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Discussion}
+Our simulation underscores the central role of underlying network architecture in shaping epidemic outcomes. On an ER network with moderate mean degree, the infection rapidly invades the population, arresting only as susceptible individuals are depleted. During early epidemic growth, the near-exponential rise is governed by effective $R_0$ which is, in turn, modulated by both transmission dynamics and degree distribution. Compared to well-mixed models, network simulations display earlier peak times and often longer right tails in the decline as residual network structure supports late local outbreaks. In ER topologies, moderate variance in degree ensures the basic reproduction number closely reflects overall network connectivity; this contrasts with scale-free and clustered graphs where hubs or local motifs can prolong transmission. While the SIR structure here ignores demographic processes and assumes homogeneous transmission, similar methodology extends naturally to multi-layer, weighted, and time-varying networks \cite{FastSIRSim2021}. Stochastic extinction can occur, but with $R_0$ well above threshold and few initial infections, extinction before takeoff is rare.
+
+\section*{Conclusion}
+This study provides a concrete instantiation of SIR epidemic spread on a canonical random network. For the chosen parameters, the vast majority of the population is ultimately infected, and key epidemic observables are well-captured. Future work could extend to stratified, clustered, or scale-free topologies, or include node-level and temporal heterogeneity, to build more realistic epidemic scenarios and intervention strategies tailored to actual community structure.
+
+\section*{References}
+
+\begin{thebibliography}{99}
+    \bibitem{FastSIRSim2021} A. Holme, F. Liljeros, "Fast and principled simulations of the SIR model on temporal networks," \emph{PLOS One}, vol. 16, no. 2, e0246961, 2021.
+    \bibitem{EpidNetApproachFed2020} M. E. Kahn, B. K. Black, E. L. Kuehn, "Improving Epidemic Modeling with Networks," \emph{Economic Commentary Cleveland Fed}, 2020.
+\end{thebibliography}
+
+\section*{Appendix}
+\begin{itemize}
+    \item Simulation code and results files available in Supplementary: 
+    \begin{enumerate}
+        \item network-construction.py
+        \item parameter-setting.py
+        \item simulation-11.py
+        \item analysis-11.py
+        \item Figures: network-degree-dist.png, results-11-metrics.png
+        \item Output CSV: results-11.csv
+    \end{enumerate}
+\end{itemize}

@@ -1,0 +1,4 @@
+{
+    "query": "Competitive SIS model over two multiplex layer A and B same set of nodes. the two viruses are exclusive: A node cannot be infected by virus 1 and virus 2 simultaneously. Beta 1 and delta 1 for layer 1 and beta2 and delta 2 for layer 2 Assume the effective infection rates of each virus are larger than their no-spreading mean field threshold, i.e., 𝜏1>1/𝜆1(𝐴) and 𝜏2>1/𝜆1(𝐵).Question1-:  Will both viruses survive (coexistence), or will one virus completely remove the other (absolute dominance)?2-which characteristics of a multilayer network structure allow for coexistence?",
+    "no": 4
+}

@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\title{Analytical and Simulation Perspectives on Breaking the Chain of Transmission: Decline in Infectives vs. Lack of Susceptibles}
+\author{Epidemic Modeling Research Team}
+\date{2024}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In the study of infectious disease spreading in a population, a crucial concern is understanding under what conditions the chain of transmission is broken, halting the epidemic. This work addresses whether the termination of transmission results primarily from a decline in infectives (I) or from the complete lack of susceptibles (S), employing both analytical and simulation approaches using the SIR model. We show, through mathematical reasoning and population-level simulation, that the cessation of an epidemic typically occurs due to depletion of susceptibles below a threshold sufficient for transmission, but can also be achieved artificially or in finite populations by the total extinction of infectives. Our quantitative results provide clear metrics—epidemic duration, peak infection, final epidemic size, and more—under both scenarios, elucidating their distinctive dynamics.
+\end{abstract}
+
+\section{Introduction}
+Understanding how epidemics naturally subside is foundational for both theoretical epidemiology and public health interventions. Traditionally, two scenarios are considered for epidemic termination: (1) the chain of transmission breaks when the number of infective individuals falls to zero after peak incidence, and (2) it halts when the susceptible population becomes depleted, leaving no hosts available for infection. Addressing the fundamental question—whether the decline of infectives or the exhaustion of susceptibles is the primary cause of epidemic cessation—not only guides public health policy but also refines our comprehension of disease dynamics on both analytical and simulated levels. Here, we explore both mechanisms through the lens of the SIR model, supported by numerical simulation and analytical argument.
+
+\section{Methodology}
+\subsection{Analytical Modeling}
+We base our approach on the deterministic SIR (Susceptible-Infectious-Removed) model. The population is divided into three compartments: $S$ (susceptibles), $I$ (infectives), and $R$ (removed or recovered). The governing equations are:
+\begin{align}
+\frac{dS}{dt} &= -\beta \frac{S I}{N} \\
+\frac{dI}{dt} &= \beta \frac{S I}{N} - \gamma I \\
+\frac{dR}{dt} &= \gamma I
+\end{align}
+where $\beta$ is the transmission rate and $\gamma$ the recovery rate. Epidemic termination can occur if $I \rightarrow 0$ (all infectives recover or are removed) \,or if $S \rightarrow 0$ (no susceptibles left to infect).
+
+\subsection{Simulation}
+A numerical SIR simulation was conducted for a population of $N=10,000$ individuals. Parameters were set to $\beta=0.3$ and $\gamma=0.1$ (implying $R_0=3$). Two scenarios were examined:
+\begin{itemize}
+    \item Scenario 1: \textbf{Decline in Infectives}. Standard epidemic propagation with $S(0)=9,990$, $I(0)=10$, $R(0)=0$.
+    \item Scenario 2: \textbf{No Susceptibles}. This artificial edge case sets $S=0$ at $t=0$ (all others removed or infected). Infections die instantly as there are no hosts to transmit to.
+\end{itemize}
+Time evolution of $S$, $I$, and $R$ was tracked, and epidemic metrics including peak infection, duration, and final size were computed (see Table~\ref{metrics-table}). Simulation code and outputs are available in the Appendix.
+
+\section{Results}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{results-11.png}
+    \caption{Population dynamics under SIR model for (solid) standard propagation and (dashed) no-susceptibles scenario. In the standard case, infections rise, peak, then decline as susceptibles deplete. When $S=0$, infections rapidly vanish.}
+\end{figure}
+
+The solid lines illustrate an epidemic fueled by abundant susceptibles, leading to a pronounced rise in infectives, culminating in a peak (over 3,000 infectious individuals), followed by a progressive decline as recovery and immune acquisition reduce $S$ below the threshold needed to sustain transmission. In contrast, the scenario with $S=0$ shows prompt extinction of infection chains.
+
+Quantitative results are summarized below:
+\begin{table}[h]
+    \centering
+    \caption{Metrics comparing scenarios of epidemic extinction}
+    \label{metrics-table}
+    \begin{tabular}{lcc}
+    \toprule
+    Metric & Decline in infectives & No susceptibles (S=0) \\
+    \midrule
+    Peak I & 3066.52 & 10.00 \\
+    Peak time & 39.5 & 0.0 \\
+    Final epidemic size & 9435.76 & 9999.99 \\
+    Duration & 143.5 & 22.5 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Discussion}
+Our analysis and simulations reveal qualitatively different dynamics between these scenarios. In typical epidemics (SIR), transmission chain is naturally interrupted when the effective reproduction number ($R_t=R_0 \cdot S/N$) falls below one and the number of infectives cannot replenish itself. This generally occurs when enough of the population has moved to the removed state, depleting $S$ such that sustained transmission is impossible—hence, the chain of transmission typically breaks due to lack of susceptibles. However, in finite or artificial settings where $S=0$ from the outset, the extinction in infectives is instantaneous and purely a consequence of no available transmission pathways, providing a mathematical null case for comparison. In network models with community structure or stochasticity, extinction events can occasionally occur from a chance decline in infectives, but in large populations the depletion of susceptibles dominates epidemic endpoint behavior.
+
+\section{Conclusion}
+Breaking the chain of transmission is almost always attributed to susceptibles dropping below a threshold required for sustained transmission, causing $I$ to decline to zero. The only alternative is complete isolation or immunity rendering $S=0$, which is rare in natural populations. Analytical solutions and simulations reinforce that classical epidemic termination results from susceptible depletion, not merely the disappearance of infectives. This insight clarifies public health strategies—vaccination and immunity build-up which target reduction of susceptible pools are the strongest measures for halting epidemics.
+
+\section*{References}
+% No literature was found in the review; if any is available, insert here.
+
+\section*{Appendix}
+\subsection*{Simulation Code}
+\begin{verbatim}
+# See file: simulation-11.py (SIR simulation code, available in repository)
+\end{verbatim}
+\subsection*{Additional Results}
+\noindent\textbf{Metric table file:} results-13.csv\\
+\textbf{Main figure file:} results-11.png\\
+\end{document}

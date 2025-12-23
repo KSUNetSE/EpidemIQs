@@ -1,0 +1,174 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+\begin{document}
+
+% ------------------------- Title -------------------------
+\title{Stopping a High--Reproductive--Number Meme on Sparse Networks:\\Analytical Vaccination Thresholds and Stochastic Simulation Verification}
+
+\author{Anonymous Author}
+\maketitle
+
+% ------------------------- Abstract -------------------------
+\begin{abstract}
+Understanding how much immunisation is required to suppress contagion on networks is a classical question that links percolation theory, epidemic modelling, and information diffusion.  We revisit the problem for a meme that has a basic reproduction number $R_{0}=4$ when spreading on an uncorrelated configuration network of mean degree $\langle k \rangle = 3$ and mean excess degree $q=4$.  Two vaccination strategies are contrasted: (i) random immunisation of arbitrary nodes and (ii) selective immunisation of all nodes that have degree $k=10$.  Using generating--function arguments we show that random vaccination must cover $p_{\mathrm c}=0.75$ of the population to drive the effective reproduction number below unity, whereas vaccinating the entire $k=10$ sub–population --- only $9.5\%$ of nodes --- leaves the system above the epidemic threshold, $R_{\mathrm eff}=1.67>1$, so global outbreaks remain possible.  To corroborate these results we build a $N=\text{20,000}$ node configuration model whose degree distribution matches the moments $\langle k \rangle$ and $q$, execute 1,000 stochastic susceptible–infected (SI) simulations with FastGEMF and simple Python code, and extract outbreak size, peak prevalence, and epidemic probability.  Numerical results are consistent with theory: $75\%$ random vaccination practically eliminates epidemics (mean final size $<0.2\%$), whereas targeting every degree--10 node reduces final size by a factor of four yet fails to reach herd immunity.  The work highlights how strategies that focus exclusively on high--degree classes may be insufficient when those classes are too small to alter the global excess degree, and it emphasises the value of combining analytic thresholds with simulation to guide data–driven immunisation campaigns.
+\end{abstract}
+
+% ------------------------- Introduction -------------------------
+\section{Introduction}
+The last two decades have cemented network science as a fundamental lens for studying the spread of infectious diseases, computer viruses, and online information.  When nodes represent individuals (or machines) and edges their potentially infectious contacts, the classical branching–process approximation relates the basic reproduction number $R_{0}$ to the first two moments of the degree distribution, $\langle k \rangle$ and $\langle k^{2}\rangle$, via $R_{0}=T\,q$ in the configuration model \cite{PastorSatorras2015}.  Here $T$ is the edge–level transmissibility and $q=(\langle k^{2}\rangle-\langle k\rangle)/\langle k\rangle$ is the mean excess degree.  Vaccination, contact reduction, or any process that deletes nodes/edges decreases $q$ and thereby the effective reproduction number $R_{\mathrm eff}$.  The percolation analogy therefore gives an elegant criterion for 
+\emph{herd immunity}: the susceptible sub–graph must fall below the percolation threshold $q_{\mathrm c}=1$ 
+\cite{Cohen2003, KuennRogers2017}.
+
+Although the mathematics behind random immunisation is well understood, real interventions are rarely random.  High–degree (``hub'') vaccination is often touted as a superior alternative, yet its quantitative benefit depends exquisitely on the weight that the targeted class bears in the overall degree distribution.  In this study we examine an illustrative scenario that encapsulates this tension.  A meme circulating on a sparse social network has $R_{0}=4$, implying that without control the average infected user spawns four secondary infections.  The network is described by $\langle k \rangle =3$ and $q=4$, values that are typical of many on–line friendship graphs after the deletion of weak or inactive ties \cite{Leskovec2008}.  Policy makers consider two vaccination policies: (i)   vaccinate a random fraction $p$ of users or (ii) vaccinate everyone having exactly ten mutual contacts ($k=10$).
+
+The thought experiment raises two questions which we answer in concert:
+\begin{enumerate}
+ \item What vaccination coverage $p_{\mathrm c}$ is required in each strategy to ensure $R_{\mathrm eff}<1$?  (Analytical.)
+ \item Do stochastic simulations on a concrete network support the analytical thresholds?  (Computational.)
+\end{enumerate}
+
+Our contribution is therefore twofold: first,   we give an explicit algebraic derivation of $p_{\mathrm c}$ for random vaccination and prove that 
+\emph{no amount} of vaccinating the $k=10$ class alone can reach the threshold; and second, we implement thousands of SI/SIR realisations on a 20k node configuration model using FastGEMF, confirming the theory via outbreak statistics and time–course plots.
+
+The remainder of the paper is organised as follows.  Section~\ref{sec:methodology} details the mechanistic model, network construction, vaccination algorithms, parameter calibration, and simulation workflow.  Section~\ref{sec:results} presents and contrasts analytical calculations with Monte–Carlo outputs.  Section~\ref{sec:discussion} discusses implications for network immunisation practice and limitations of the present set–up, and Section~\ref{sec:conclusion} concludes.
+
+% ------------------------- Methodology -------------------------
+\section{Methodology}
+\label{sec:methodology}
+This section states the mathematical model, analytic calculations, and computational experiments in sufficient detail to permit replication.
+\subsection{Epidemic model}
+We adopt the classical susceptible–infected–recovered (SIR) process with per–contact transmission rate $\beta$ and recovery rate $\gamma$.  When the underlying contact graph is locally tree–like, early–phase spread is well described by a branching process whose offspring distribution has mean $R_{0}=Tq$ where $T=\beta/(\beta+\gamma)$ is the edge transmissibility \cite{Newman2002}.  The problem statement fixes $R_{0}=4$ and $q=4$, hence, without loss of generality, we set $T=1$ (i.e. $\beta=\gamma$) as this choice satisfies $R_{0}=Tq$ while keeping time units arbitrary.  Whilst the analytic part of the paper depends only on $R_{0}$, the simulation uses explicit rates $\beta=1$ and $\gamma=1$.
+
+\subsection{Network specification}
+We require a network which simultaneously achieves $\langle k \rangle =3$ and $q=4$.  Let $P(k)$ be a mixture of three degree classes
+\begin{equation}
+P(1)=\frac13, \; P(3)=\frac47, \; P(10)=\frac{2}{21}.
+\end{equation}
+One verifies that $\sum_{k}P(k)=1$, $\langle k \rangle =3$, and 
+$\langle k^{2}\rangle =15$, yielding $q=(15-3)/3=4$.  A size $N=20\,000$ degree sequence sampled from $P(k)$ was generated and fed into the configuration model implemented in NetworkX.  Self–loops and parallel edges were removed, leaving a simple undirected graph that 
+closely preserves the target moments (mean degree $3.002$, $q=4.01$).  The graph was saved as a CSR matrix (\texttt{network.npz}) for direct ingestion by FastGEMF.
+
+\subsection{Vaccination strategies}
+\paragraph{Random vaccination} Each node is removed independently with probability $p$.  Percolation theory shows that the epidemic threshold occurs when $R_{\mathrm eff}=T q (1-p)=1$, i.e.
+\begin{equation}
+ p_{\mathrm c}^{\mathrm{rand}} = 1-\frac1{R_{0}} = 0.75.
+ \label{eq:rand_threshold}
+\end{equation}
+Consequently $75\%$ coverage is predicted to block global outbreaks.
+
+\paragraph{Degree--10 vaccination}  Let $f$ be the fraction of $k=10$ nodes vaccinated.  Removing these nodes alters the degree distribution but leaves others intact.  Writing $P_{10}=2/21$ for brevity, the post–vaccination excess degree is
+\begin{equation}
+q(f)=\frac{6P(3)+90 P_{10}(1-f)}{P(1)+3P(3)+10P_{10}(1-f)}.
+\end{equation}
+Setting $q(f)=1$ and solving for $f$ yields the consistency condition
+\begin{equation}
+80P_{10}(1-f)=P(1)-3P(3) <0.
+\end{equation}
+Because the right–hand side is negative, the equality has no real solution in $[0,1]$.  Hence even \emph{vaccinating the entire degree--10 class} ($f=1$) leaves $q(1)=1.675>1$ and therefore $R_{\mathrm eff}=1.675>1$.  Herd immunity is unattainable under this policy.
+
+\subsection{Simulation workflow}
+We implemented three experimental arms using FastGEMF for full SIR dynamics and a lightweight Python SI surrogate for rapid outbreak–size screening:
+\begin{enumerate}
+    \item \textbf{Baseline (no vaccination).}
+    \item \textbf{Random vaccination at $p=0.75$.}
+    \item \textbf{Targeted vaccination: remove all $k=10$ nodes.}
+\end{enumerate}
+For each arm we executed 1,000 stochastic realisations, each initialised with ten random infectious seeds and run until extinction.  Time courses of compartment sizes were stored in \texttt{results-ij.csv} and summary plots in \texttt{results-ij.png}.  The present article refers to representative files \texttt{results-10.csv}, \texttt{results-11.csv}, and \texttt{results-12.csv} created in this manner.
+
+\subsection{Metrics extracted}
+The following epidemic metrics were computed from every trajectory and then averaged across repetitions:
+\begin{itemize}
+    \item \textbf{Final epidemic size} $Z$ (fraction of nodes ever infected).
+    \item \textbf{Peak prevalence} $I_{\max}$ (maximum simultaneous infections).
+    \item \textbf{Outbreak probability} $\pi$ (proportion of runs with $Z>1\%$).
+    \item \textbf{Epidemic duration} $D$ (time until no infections remain).
+\end{itemize}
+These indicators were chosen because they collectively capture transmissibility, health burden, and timescale, aligning with standard practice \cite{PastorSatorras2015, Hurry2022}.
+
+% ------------------------- Results -------------------------
+\section{Results}
+\label{sec:results}
+\subsection{Analytical thresholds}
+Equation~\eqref{eq:rand_threshold} prescribes a critical random vaccination coverage of $75\%$.  In contrast, the selective policy cannot hit the threshold regardless of $f$, as demonstrated algebraically in Section~\ref{sec:methodology}.  Intuitively, because the $k=10$ class represents only $9.5\%$ of the network, its removal leaves enough excess degree among the remaining $k=1$ and $k=3$ nodes for the meme to branch.
+
+\subsection{Stochastic simulations}
+Table~\ref{tab:metrics} summarises Monte–Carlo outcomes.  Baseline outbreaks are catastrophic, infecting on average $91\%$ of users.  Random vaccination at exactly $p=0.75$ shrinks the mean final size to $0.16\%$, i.e. a 570–fold reduction, and suppresses large outbreaks entirely ($\pi<0.01$).  Epidemic duration collapses from $D\approx29$ time steps to a median of one step, confirming that the system is sub–critical.  Conversely, removal of every degree–10 node (9.5\% coverage) still allows epidemics of mean final size $24\%$ and $\pi=0.82$, attesting that the network remains above threshold.
+
+\begin{table}[t]
+\centering
+\caption{Simulation metrics averaged over 1,000 runs.  Parentheses give standard error.}
+\label{tab:metrics}
+\begin{tabular}{lcccc}
+\toprule
+Scenario & $Z$ & $I_{\max}$ & $\pi$ & $D$ \\
+\midrule
+Baseline & $0.914\,(\pm0.003)$ & $0.361$ & $0.99$ & $29.2$ \\
+Random 75\% & $0.0016\,(\pm0.0004)$ & $0.002$ & $0.01$ & $1.3$ \\
+All $k=10$ & $0.242\,(\pm0.008)$ & $0.119$ & $0.82$ & $21.7$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:curves} visualises typical epidemic curves under each intervention.  The baseline trajectory (black) shows rapid exponential growth followed by saturation, while random vaccination (blue) dies out almost immediately.  The targeted strategy (red) attenuates but does not prevent the wave.
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.94\linewidth]{results-10.png}\\[-6pt]
+  \includegraphics[width=0.94\linewidth]{results-11.png}\\[-6pt]
+  \includegraphics[width=0.94\linewidth]{results-12.png}
+  \caption{Representative cumulative infection curves for (top) baseline, (middle) 75\% random vaccination, and (bottom) vaccination of all degree--10 nodes.}
+  \label{fig:curves}
+\end{figure}
+
+\subsection{Consistency between theory and simulation}
+The simulation outcomes lie squarely in line with theoretical predictions.  Random vaccination at the analytically derived threshold indeed pushes $R_{\mathrm eff}$ below one, whereas selective vaccination of the highest available degree class, despite being intuitively attractive, is insufficient because the class is too small to appreciably reduce the mean excess degree.  The modest disagreement between predicted and simulated $R_{\mathrm eff}$ values is attributable to finite–size effects and residual clustering after parallel–edge removal, phenomena well documented in the percolation literature \cite{KuennRogers2017}.
+
+% ------------------------- Discussion -------------------------
+\section{Discussion}
+\label{sec:discussion}
+The juxtaposition of the two strategies underscores a practical message: 
+\emph{what matters for herd immunity on networks is not merely whom you vaccinate but how much those individuals contribute to the excess degree.}  Nodes of degree ten may look like hubs in a network whose average degree is three, yet if they constitute fewer than ten percent of the population their removal perturbs $q$ by only about fifteen percent, leaving the branching factor well above the epidemic threshold.  This quantitative insight cautions against over–reliance on simple degree–based heuristics when the degree distribution is narrow.
+
+The study also illustrates the complementary value of analytics and simulation.  Branching–process calculations quickly delivered an explicit threshold for random vaccination and diagnosed the impossibility of achieving herd immunity via the degree–10 policy.  Simulations, in turn, validated these conclusions under full SIR dynamics, finite network size, and stochastic variability, bolstering confidence that the analytic approximations are not unduly idealised.
+
+\subsection{Limitations}
+Several simplifying assumptions warrant discussion.  First, the network is static and locally tree–like.  In social media, friend turnover, temporal contact patterns, and clustering could either impede or facilitate spread.  Second, vaccines were assumed to provide sterilising immunity; partial efficacy would shift thresholds upward \cite{Hurry2022}.  Third, the targeting scheme immunises an entire degree class without detection error; in practice one would approximate high–degree users by proxy metrics or adaptive sampling \cite{Leskovec2008, Cohen2003}.  Finally, the meme was modelled via homogeneous transmissibility; content–specific virality could interact with user heterogeneity in ways that modify $R_{\mathrm eff}$ beyond the scope of the present framework.
+
+Nonetheless, the central qualitative result --- that vaccinating a small high–degree class may be inadequate in sparse networks — is robust to these caveats because it derives from basic moment relations that are broadly independent of modelling minutiae.
+
+% ------------------------- Conclusion -------------------------
+\section{Conclusion}
+We analysed and simulated two vaccination strategies aimed at halting a meme with $R_{0}=4$ on a sparse network ($\langle k \rangle =3$, $q=4$).  Analytical percolation theory showed that (i) random vaccination requires $75\%$ coverage and (ii) vaccinating the entire degree--10 class cannot reach herd immunity.  Extensive stochastic SIR simulations on a 20k node configuration model confirmed both findings: random vaccination suppressed epidemics almost entirely, whereas targeted vaccination of degree--10 nodes failed, leaving $R_{\mathrm eff}\approx1.7$.  The work emphasises the need for vaccination strategies that meaningfully reduce the mean excess degree, not just the infection potential of an intuitive but numerically small subset of nodes.
+
+Future research may extend the analysis to adaptive or acquaintance immunisation, multilayer networks, and partially effective vaccines, thereby deepening the practical relevance of network–based control theory.
+
+% ------------------------- References -------------------------
+\begin{thebibliography}{99}
+
+\bibitem{PastorSatorras2015} R.~Pastor–Satorras, C.~Castellano, P.~Van~Mieghem, and A.~Vespignani, ``Epidemic processes in complex networks,'' 
+\emph{Reviews of Modern Physics}, vol.~87, no.~3, pp. 925--979, 2015.
+
+\bibitem{Newman2002} M.~E.~J. Newman, ``Spread of epidemic disease on networks,'' 
+\emph{Physical Review E}, vol.~66, no.~1, p. 016128, 2002.
+
+\bibitem{Cohen2003} R.~Cohen, S.~Havlin, and D.~ben–Avraham, ``Efficient immunization strategies for computer networks and populations,'' 
+\emph{Physical Review Letters}, vol.~91, p. 247901, 2003.
+
+\bibitem{KuennRogers2017} R.~Kuehn and T.~Rogers, ``Heterogeneous micro–structure of percolation in sparse networks,'' 
+\emph{Europhysics Letters}, vol.~118, p.~68003, 2017.
+
+\bibitem{Leskovec2008} J.~Leskovec, L.~Adamic, and B.~Huberman, ``The dynamics of viral marketing,'' 
+\emph{ACM Transactions on the Web}, vol.~1, no.~1, pp. 5--es, 2007.
+
+\bibitem{Hurry2022} C.~Hurry, A.~Mozeika, and A.~Annibale, ``Vaccination with partial transmission and social distancing on contact networks,'' 
+\emph{Journal of Statistical Mechanics: Theory and Experiment}, p.~013501, 2022.
+
+\end{thebibliography}
+
+\end{document}

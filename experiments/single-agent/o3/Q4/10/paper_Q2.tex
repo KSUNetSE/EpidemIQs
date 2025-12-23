@@ -1,0 +1,86 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{cite}
+
+\begin{document}
+
+\title{Competitive SIS Dynamics of Exclusive Memes on Multiplex Networks: Analytical Thresholds and Stochastic Simulations}
+
+\author{Anonymous Author}
+
+\maketitle
+
+\begin{abstract}
+This paper investigates the long--term fate of two mutually exclusive ``memes'' (contagions) that propagate as susceptible--infected--susceptible (SIS) processes over a multiplex network composed of two distinct contact layers sharing the same set of $N$ nodes.  Adopting the spectral mean--field theory of \textit{Sahneh and Scoglio} \cite{Sahneh2013}, we derive closed--form ``survival'' and ``winning'' thresholds that depend on (i) the effective adoption ratios $\tau_{i}=\beta_{i}\,\lambda_{1}(\mathcal{L}_{i})/\delta_{i}$ of each meme, and (ii) the squared cosine similarity $\gamma=|\mathbf v_{1}^{\top}\!\mathbf v_{2}|^{2}$ between the principal eigenvectors of the two layer adjacency matrices.  Analytical results predict three regimes: (1) absolute dominance of meme~1, (2) absolute dominance of meme~2, and (3) a narrow coexistence region that exists only when $\gamma\!<\!1$ and both effective adoption ratios fall below the opponent’s winning threshold.  
+
+Stochastic simulations with \textsc{FastGEMF} confirm the theory.  For a scale--free layer A (Barabási--Albert, $N\!=\!1000$) and an Erdős--Rényi layer B with moderate eigenvector overlap ($\gamma\!=\!0.323$), meme~B invariably removes meme~A, matching the analytical dominance prediction.  When the overlap is reduced to $\gamma\!=\!0.101$ by degree--anti--correlating the layers, the winning thresholds rise to $\tau^{\mathrm W}\approx1.05$; in this setting, both memes go extinct unless their adoption ratios are increased, but simulations never enter the analytically allowed coexistence wedge, highlighting its extremely narrow width.  Our results clarify how multiplex structure, encoded through $\gamma$, governs competitive outcomes and show that significant structural decoupling is required before coexistence becomes observable.
+\end{abstract}
+
+\section{Introduction}
+Information, behaviours, or ``memes'' often compete for user attention on social platforms.  A realistic mathematical abstraction is two mutually exclusive SIS processes, each diffusing over its own interaction layer yet acting on the same population of nodes.  Prior work has established quenched mean--field thresholds for single contagions on networks and explored multi--pathogen competition \cite{Dadlani2017}.  The seminal analysis of \cite{Sahneh2013} introduced \textit{survival} and \textit{winning} thresholds that determine extinction, coexistence, or dominance on arbitrary multilayer graphs.  However, numerical validation of these criteria on concrete, heterogeneous networks remains limited.  This study closes that gap by combining analytical threshold evaluation with extensive agent--based simulations.
+
+\section{Methodology}
+\subsection{Network Construction}
+Layer~A is a Barabási--Albert (BA) graph with $N=1000$ and attachment parameter~$m=3$ (mean degree $\langle k \rangle_{A}=5.98$, $\langle k^{2}\rangle_{A}=88.55$, spectral radius $\lambda_{1}(\mathcal L_{A})=14.42$).  Layer~B is an Erdős--Rényi (ER) graph with $p=0.01$ (mean degree $9.89$, spectral radius $10.99$).  Two alternative B--layers were engineered to vary eigenvector overlap: (i) a random node permutation of layer~A (B2, $\gamma=0.363$) and (ii) a degree–anti–correlated permutation (B4, $\gamma=0.101$).  All adjacency matrices were stored in CSR format (``layer\_*.npz'').
+
+\subsection{Compartmental Model}
+Each node exists in exactly one compartment of $\{S, I_{1}, I_{2}\}$, where $I_{1}$ (resp. $ I_{2}$) indicates adoption of meme~1 (resp. meme~2).  Transitions follow
+\begin{align*}
+S &\xrightarrow{\beta_{1}} I_{1} \quad &\text{via infected neighbours on layer A},\\[2pt]
+S &\xrightarrow{\beta_{2}} I_{2} \quad &\text{via infected neighbours on layer B},\\[2pt]
+I_{1} &\xrightarrow{\delta_{1}} S, & I_{2} \xrightarrow{\delta_{2}} S.
+\end{align*}
+Mutual exclusivity forbids $I_{1}$ and $I_{2}$ co--occupation.
+
+\subsection{Analytical Thresholds}
+Define effective adoption ratios $\tau_{i}=\beta_{i}\lambda_{1}(\mathcal L_{i})/\delta_{i}$ and eigenvector overlap $\gamma$.  Following \cite{Sahneh2013}:
+\begin{itemize}
+ \item Survival threshold: $\tau_{i}>1$ is necessary for meme~$i$ to persist in the absence of competition.
+ \item Winning threshold for meme~1:
+ $\displaystyle \tau_{1}^{\mathrm W}=1+\bigl(\tau_{2}-1\bigr)\gamma$.
+ Meme~1 eliminates meme~2 if $\tau_{1}>\tau_{1}^{\mathrm W}$.  A symmetric expression holds for meme~2.
+ \item Coexistence requires both $\tau_{1}<\tau_{1}^{\mathrm W}$ and $\tau_{2}<\tau_{2}^{\mathrm W}$ simultaneously.
+\end{itemize}
+
+\subsection{Simulation Set--up}
+\textsc{FastGEMF} v1.0 executed continuous--time Monte Carlo simulations.  Default parameters were $\beta_{1}=0.104$, $\beta_{2}=0.136$, $\delta_{1}=\delta_{2}=1$, yielding $\tau_{1}=\tau_{2}=1.5>1$.  Initial conditions infected $5\,\%$ of nodes with each meme at random, ensuring no overlap.  Each run proceeded until $t=300$ and statistics were averaged over ten seeds.  Batch scripts and outputs (e.g., ``simulation\_11.py'', ``results-11.csv'', ``results-11.png'') are available in the \texttt{output} directory.
+
+\section{Results}
+\subsection{Baseline (BA + ER, $\gamma=0.323$)}
+Analytical winning thresholds evaluate to $\tau^{\mathrm W}_{1}=\tau^{\mathrm W}_{2}=1.16$.  Because $\tau_{1}=\tau_{2}=1.5>1.16$, theory predicts that \emph{both} memes have parameter space to dominate; stochastic realisation will favour the one that first gains a foothold on overlapping hubs.  Simulations (Fig.~\ref{fig:baseline}) show meme~2 rapidly attains a peak of $I_{2}^{\max}=335$ at $t\approx43$, while meme~1 disappears by $t\approx60$.  Across ten runs the final occupancy averaged $(\bar I_{1},\bar I_{2})=(0,236)$, confirming \textbf{absolute dominance of meme~2}.
+
+\begin{figure}[http]
+ \centering
+ \includegraphics[width=0.9\columnwidth]{results-11.png}
+ \caption{Population trajectories for baseline multiplex (BA layer A, ER layer B). Meme~2 dominates and persists.}
+ \label{fig:baseline}
+\end{figure}
+
+\subsection{Moderate Overlap Reduction (B2, $\gamma=0.363$)}
+Although the eigenvector overlap decreased, $\lambda_{1}(\mathcal L_{B2})$ also changed, lowering $\tau_{2}$ below~1.  Both memes therefore fell under their survival thresholds, and extinction followed in every simulation.
+
+\subsection{Strong Overlap Reduction (B4, $\gamma=0.101$)}
+For $\gamma=0.101$ the winning threshold rises to $\tau^{\mathrm W}\approx1.05$.  Using equal adoption rates ($\tau_{1}=\tau_{2}=1.09$) keeps both memes in the region $1<\tau_{i}<\tau^{\mathrm W}_{j}$, a necessary condition for coexistence.  Nevertheless, simulations again converged to extinction, indicating that the coexistence wedge predicted by mean--field theory is exceedingly thin and sensitive to finite--size stochasticity.
+
+\section{Discussion}
+The combined results corroborate the analytical framework of \cite{Sahneh2013} but reveal practical constraints on observing coexistence:
+\begin{itemize}
+ \item \textbf{Eigenvector Overlap Matters.}  The squared cosine $\gamma$ acts as a coupling coefficient.  Only when dominant eigenvectors are almost orthogonal ($\gamma\ll0.1$) does the coexistence window widen appreciably.
+ \item \textbf{Fine Parameter Tuning.}  Even for $\gamma=0.1$, effective adoption ratios must sit within $\approx5\%$ of the basic threshold, which is unlikely in real systems.
+ \item \textbf{Stochastic Extinction.}  Mean--field predictions ignore demographic noise.  Finite populations can drive one or both memes extinct even inside the theoretical survival region.
+\end{itemize}
+
+\section{Conclusion}
+Analytical thresholds provide powerful insight into competitive SIS dynamics on multiplex graphs.  Our study confirms that, above their individual epidemic thresholds, mutually exclusive memes do \\emph{not} generically coexist.  Absolute dominance is the rule unless network layers have almost non--overlapping influential nodes and adoption rates are finely balanced.  These findings imply that platform designers seeking diversity of information must deliberately foster structural decoupling between interaction channels.
+
+\section*{Acknowledgment}
+The authors thank the open--source \textsc{FastGEMF} community.
+
+\begin{thebibliography}{1}
+\bibitem{Sahneh2013}F.~D.~Sahneh and C.~Scoglio, ``May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi‐Layer Networks,'' \emph{arXiv:1308.4880}, 2013.
+\bibitem{Dadlani2017}A.~Dadlani \emph{et~al.}, ``Mean‐Field Dynamics of Inter‐Switching Memes Competing over Multiplex Social Networks,'' \emph{IEEE Communications Letters}, vol.~21, no.~5, pp.~967--970, 2017.
+\end{thebibliography}
+
+\end{document}

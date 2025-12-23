@@ -1,0 +1,4 @@
+{
+    "query": "An epidemic has a reproductive number of R0 = 4, i.e. the mean excess degree of the effective network across which it is spreading is q = 4. Let's say the mean degree of this network is z = 3 and there are no degree correlations. You want to stop the epidemic by vaccinating people, using a vaccine that gives sterilizing immunity, so that a vaccinated person cannot transmit the disease. What proportion of the nodes do you need to vaccinate if you vaccinate random people? Also what proportion of nodes would you need to vaccinate if you are just vaccinating people who have a degree of exactly k = 10.address this question in both scenarios in analytcal and simulation approaches.   ",
+    "no": 5
+}

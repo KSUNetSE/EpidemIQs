@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1750675849.80828 "paper_Q3.tex" "paper_Q3.pdf" "paper_Q3" 1750675850.11934 2
+  "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
+  "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
+  "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "paper_Q3.aux" 1750675849.80792 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "paper_Q3.tex" 1750675848.77484 8168 b0a6830f45cc9bab96b1c4e9c726d465 ""
+  (generated)
+  "paper_Q3.aux"
+  "paper_Q3.log"
+  "paper_Q3.pdf"
+  (rewritten before read)

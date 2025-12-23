@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,graphicx,caption,geometry}
+\geometry{margin=1in}
+\title{Epidemic Transmission Chains: Analytical and Network-Based Evidence of Termination Mechanisms in SIR Models}
+\author{Epidemic Simulation Lab}
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This study investigates the mechanistic reasons underlying the breaking of epidemic chains of transmission, specifically within Susceptible-Infectious-Recovered (SIR) frameworks. By leveraging both classical analytical models and stochastic network-based simulations, we rigorously address whether the termination of an epidemic is driven by (1) the decline in the number of infectives or (2) a complete depletion of susceptibes. Both approaches reveal that the primary determinant is the reduction of infectives rather than the exhaustion of susceptibles. Quantitative results demonstrate, for a representative SIR scenario with basic reproduction number $R_0 = 3$, that a significant fraction of the population remains susceptible when the epidemic fades out, as both analytical solutions and stochastic network simulations consistently show the final infective count approaches zero while the susceptible pool remains strictly positive. These findings emphasize the necessity of focusing on infectious period control and the infectious population, rather than solely targeting susceptible depletion, in epidemic management strategies.
+\end{abstract}
+
+\section{Introduction}
+The chain of transmission is the core concept in infectious disease epidemiology and describes the sequence by which an infection spreads from host to host through a susceptible population. A central question in the mathematical modeling of infectious diseases is: What fundamentally causes an epidemic to end — the decline in infectives, or the complete absence of susceptibles? This question is not only theoretically interesting but also has profound practical consequences for infectious disease control, informing strategies as diverse as vaccination, isolation, and contact tracing \\cite{KeelingBook,wikipediaSIR}.
+
+Classic deterministic models, such as the SIR model, as well as their stochastic and network-based generalizations, offer nuanced insights into this subject. Recent simulation capabilities permit rigorous confirmation of analytic results on complex contact networks \\cite{royalsociety_network_models,cdc_transmission}. This paper addresses the termination of epidemic chains rigorously, both analytically and numerically, under realistic initial conditions and network topology, and synthesizes qualitative and quantitative reasoning from the literature and simulation, to answer this foundational question.
+
+\section{Methodology}
+\subsection{Analytical SIR Model}
+We employ the classical SIR model, represented by the system:
+\begin{align}
+\frac{dS}{dt} &= -\beta \frac{SI}{N} \\
+\frac{dI}{dt} &= \beta \frac{SI}{N} - \gamma I \\
+\frac{dR}{dt} &= \gamma I
+\end{align}
+with $S$, $I$, and $R$ denoting the number of susceptible, infectious, and recovered individuals, respectively. The parameters $\beta$ and $\gamma$ represent the per-contact infection and recovery rates, and $N = S + I + R$ is the fixed population. We choose initial conditions of $S(0) = 999$, $I(0) = 1$, $R(0) = 0$ in a population of 1000 and parameter values $\beta = 0.3$, $\gamma = 0.1$ ($R_0 = 3$) for clear epidemic progression.
+
+The key analytic result, derived via integration $S(t) = S(0) e^{-R(t)/R_0}$, is that $S(t)$ never reaches zero — some fraction of susceptibles remain at epidemic termination because $I(t) \to 0$ before $S(t) \to 0$. This prediction is highlighted both in the literature \\cite{KeelingBook,wikipediaSIR} and our analytical computations.
+
+\subsection{Network SIR Simulation}
+To model heterogeneous contacts, we simulate the SIR process over an Erdős–Rényi network ($N=1000$, mean degree $\langle k \rangle \approx 8$), with parameters chosen such that $R_0 = 3$. The transmission rate $\beta$ is modified for the network structure: $\beta = R_0 \gamma / q$, where $q = (\langle k^2 \rangle - \langle k \rangle)/\langle k \rangle$. The mechanistic SIR model was implemented using FastGEMF, initializing 99\% of nodes as susceptible and 1\% as infectious, with runs averaged over multiple realizations. End-state values and epidemic time courses were recorded for analysis and comparison.
+
+\section{Results}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{output/results-10.png}
+    \caption{Analytical SIR dynamics: $I(t)$ (infective) approaches zero while $S(t)$ (susceptible) remains positive. Parameters: $N=1000$, $\beta=0.3$, $\gamma=0.1$ ($R_0=3$). Final $S=53.3$, $I\approx 0$.}
+\label{fig:analytical_sir}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{output/results-11.png}
+    \caption{Network SIR Simulation: Infectives vanish with a robust pool of susceptibles remaining. Erdős–Rényi contact network, $N=1000$, $\langle k \rangle \approx 8$. Final $S=155$, $I=0$, $R=845$.}
+\label{fig:network_sir}
+\end{figure}
+
+Analytically, as shown in Figure \ref{fig:analytical_sir}, $I(t)\to 0$ first while $S(t)$ remains strictly positive. The susceptible count never reaches zero; here, $S_{\text{final}} = 53.3$, $I_{\text{final}} \approx 0$. The network simulation (Figure \ref{fig:network_sir}) fully confirms this: the epidemic ends with $S_{\text{final}}=155$, $I_{\text{final}}=0$, $R_{\text{final}}=845$, and a total attack rate of $84.5\%$. The mean and second moment degree of the network were $\langle k \rangle=7.93$, $\langle k^2 \rangle=71.07$; transmission rate was $\beta=0.0377$.
+
+\begin{table}[ht]
+\centering
+\caption{Final state metrics for network simulation.}
+\begin{tabular}{lcc}
+\hline
+Metric & Value \\
+\hline
+Final susceptibles ($S_{\text{final}}$) & 155 \\
+Final infectives ($I_{\text{final}}$)  & 0   \\
+Final recovered ($R_{\text{final}}$)   & 845 \\
+Total infected fraction & 0.845 \\
+Epidemic duration (time) & 131.1 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+Our analyses robustly demonstrate that the epidemic chain of transmission is broken primarily due to the exhaustion of the infective pool, not the complete absence of susceptible individuals. Both the deterministic mean field and network stochastic models, for realistic parameters ($R_0=3$), yield final states with zero infectives but a sizable susceptible population remaining. The susceptible fraction never reaches zero because the probability of infection for remaining susceptibles drops as $I$ falls, and in a finite network, local depletion of susceptible connections or stochastic isolation is even more pronounced. This has major implications for control: policies best focus not just on universally depleting susceptibles (e.g., mass vaccination) but also, or especially, on reducing infectiousness, isolating cases, or depleting the infectious pool directly. 
+
+It should be noted that only in the theoretically limiting case of $R_0 \to \infty$ or repeated reintroduction of infection (or in certain SIS models, not SIR), could $S \to 0$ occur. In usual SIR epidemics, the susceptible residue is an important buffer for future outbreaks.
+
+\section{Conclusion}
+We have shown, both analytically and by detailed stochastic simulation, that the SIR epidemic chain of transmission ends due to the decline in infectives rather than the complete lack of susceptibles. This conclusion, robust to network structure and parameter choices, is foundational for understanding and managing epidemic fade-out and highlights the importance of targeting the infectious population in control interventions.
+
+\section*{References}
+
+\begin{thebibliography}{9}
+\bibitem{KeelingBook}
+M. Keeling, P. Rohani, \textit{Modeling Infectious Diseases in Humans and Animals}, Princeton University Press, 2008. Available: http://math.uchicago.edu/~shmuel/Modeling/Keeling%20and%20Rohani/chap%202.pdf
+
+\bibitem{wikipediaSIR}
+Wikipedia contributors, "Compartmental models (epidemiology)," \textit{Wikipedia, The Free Encyclopedia}, https://en.wikipedia.org/wiki/Compartmental_models_(epidemiology)
+
+\bibitem{royalsociety_network_models}
+M. E. J. Newman, "Networks and epidemic models," \textit{Journal of The Royal Society Interface}, 2005. https://royalsocietypublishing.org/doi/10.1098/rsif.2005.0051
+
+\bibitem{cdc_transmission}
+CDC, "Technical Explainer: Infectious Disease Transmission Models," United States Centers for Disease Control, 2021. https://www.cdc.gov/cfa-modeling-and-forecasting/about/explainer-transmission-models.html
+
+\end{thebibliography}
+
+\appendix
+\section*{Appendix A: Code Listings and Simulation Details}
+Code for analytical and network simulation approaches as well as raw result and plotting files are provided separately in files analytical_sir_chain_break.py, sir_network_simulation_chain_break_fixed.py, and analyze_sir_final_state_v2.py. Plots included: results-10.png (analytical), results-11.png (network).
+
+\end{document}

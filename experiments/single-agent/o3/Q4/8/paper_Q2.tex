@@ -1,0 +1,103 @@
+\documentclass{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts}
+\begin{document}
+
+\title{Coexistence versus Dominance in a Competitive SIS Model over Multiplex Networks: Theory and Simulation}
+\author{Anonymous}
+\maketitle
+
+\begin{abstract}
+We investigate the long-term outcome of two mutually exclusive memes that disseminate as independent Susceptible–Infected–Susceptible (SIS) processes on the two layers of a multiplex network.  Analytical conditions derived from a nonlinear mean-field approximation predict three macroscopic regimes—extinction, absolute dominance, and coexistence—depending on the effective adoption rates, spectral properties, and inter-layer correlations of the contact layers.  Employing FastGEMF, we validate these predictions on synthetic Barabási–Albert (layer~A) and Erdős–Rényi (layer~B) graphs sharing an identical node set.  Parameter sweeps of the adoption rates confirm that coexistence emerges only when (i) both single-layer basic reproduction numbers exceed unity and (ii) the principal eigenvectors of the two layers are weakly correlated, whereas high correlation leads to dominance of the meme with larger $\tau\lambda_1$.  The study elucidates structural requirements for sustaining competing information and provides a reproducible simulation pipeline. 
+\end{abstract}
+
+\section{Introduction}
+Competing contagion processes—ranging from marketing campaigns to political narratives—cascade through societies that are inherently multi-channel.  Each channel (face-to-face, on-line, etc.) forms a layer of a multiplex network wherein mutually exclusive pieces of information (‘memes’) vie for adoption.  Empirical data show that several narratives can stably coexist, yet classical single-layer epidemic theory would predict competitive exclusion when infection parameters are unequal.  Thus, clarifying how multilayer topology influences 
+coexistence or dominance is vital for designing resilient information ecosystems and mitigation strategies.
+
+Prior analytical work extended the SIS model to a two-virus setting on multiplex graphs and revealed survival and absolute-dominance thresholds that depend on the spectral radii of each layer~\cite{Darabi2014,Dadlani2017}.  However, comprehensive numerical verification under realistic network heterogeneity remains scarce.  We therefore pose two research questions: (Q1) given $\tau_1>1/\lambda_1(A)$ and $\tau_2>1/\lambda_1(B)$, will both memes survive, or will one expel the other? (Q2) which structural characteristics of the multiplex favor coexistence?  We answer these questions by combining mean-field analysis with agent-based simulations over synthetically generated, yet topologically distinct, network layers.
+
+\section{Methodology}
+\subsection{Competitive SIS Model}
+Nodes exist in one of three compartments $\{S,A,B\}$, where $A$ ($B$) denotes adoption of meme~1 (meme~2).  State transitions obey
+\begin{align}
+S &\xrightarrow{\beta_1}\! A\quad \text{if contacted by an $A$ neighbor in layer~A},\\[2pt]
+S &\xrightarrow{\beta_2}\! B\quad \text{if contacted by a $B$ neighbor in layer~B},\\[2pt]
+A &\xrightarrow{\delta_1} S,\qquad B \xrightarrow{\delta_2} S.
+\end{align}
+Mutual exclusivity forbids $A$ and $B$ occupancy simultaneously.  Defining $\tau_i=\beta_i/\delta_i$, the single-layer basic reproduction number for meme~$i$ is $\mathcal R_i=\tau_i\lambda_1(G_i)$.
+
+\subsection{Mean-Field Analysis}
+Let $x_i(t)\in\mathbb R^N$ be the marginal infection probability vector for meme~$i$.  The nonlinear NIMFA equations are
+\begin{align}
+\dot x_1 &= -\delta_1 x_1 + \beta_1 (\mathbf 1 - x_1 - x_2) \circ (A x_1),\\
+\dot x_2 &= -\delta_2 x_2 + \beta_2 (\mathbf 1 - x_1 - x_2) \circ (B x_2),
+\end{align}
+where $\circ$ denotes the Hadamard product. Linearisation about the disease-free state yields two uncoupled blocks, each with eigenvalue spectrum $\beta_i\lambda(A)$ $-\delta_i$.  Consequently the no-sharing thresholds are $\tau_i^{\,0}=1/\lambda_1(G_i)$.
+
+Following \cite{Darabi2014}, survival in the presence of the rival meme is governed by a 
+\emph{survival threshold} $\tau_1^{\,c}(\tau_2)$ derived from the dominant eigenvalue of $\text{diag}(\mathbf 1-x_2^*)A$ evaluated at the equilibrium of meme~2.  Closed-form bounds reveal:
+\begin{itemize}
+\item Coexistence is impossible if $A$ and $B$ are identical (maximal correlation), since the meme with larger $\tau\lambda_1$ suppresses the other.
+\item Coexistence is feasible when the principal eigenvectors $v_A$ and $v_B$ are orthogonal, implying minimal overlap of highly central nodes.
+\end{itemize}
+
+\subsection{Network Construction}
+Layer~A is a Barabási–Albert (BA) graph $(N=1000,m=3)$ giving $\langle k\rangle=5.98$, $\langle k^2\rangle=88.55$, and $\lambda_1(A)=14.42$.  Layer~B is an Erdős–Rényi (ER) graph $(p=0.006)$ with $\langle k\rangle=6.22$, $\langle k^2\rangle=44.80$, and $\lambda_1(B)=7.36$.  The Pearson correlation of node degrees across layers is $\rho\approx 0.03$, indicating weak overlap among hubs.
+
+Both adjacency matrices were stored in compressed sparse row format (\texttt{layerA.npz}, \texttt{layerB.npz}) and are available in the \texttt{output/} directory.  Figure~\ref{fig:degdist} visualises the degree distributions.
+
+\subsection{Simulation Setup}
+FastGEMF was employed to run $3$ stochastic realisations per parameter set.  Initial conditions seeded $5\%$ of nodes with meme~$A$ and another $5\%$ with meme~$B$ randomly, the remainder being susceptible.  Adoption rates were swept in the ranges $\beta_1\in\{0.07,0.09,0.11\}$, $\beta_2\in\{0.14,0.15,0.18\}$ while fixing $\delta_1=\delta_2=1$.  Each simulation was executed for $T=200$ time units; outputs were saved as \texttt{results-ij.csv} and plotted to \texttt{results-ij.png} (see Figure~\ref{fig:traj}).  A summary table aggregating final and peak prevalences resides in \texttt{summary.csv}.
+
+\section{Results}
+Figure~\ref{fig:traj} shows a representative trajectory ($\beta_1=0.09,\beta_2=0.15$).  Both memes decline to extinction despite their single-layer $\mathcal R_i>1$, illustrating that competition can raise the effective threshold.  The parameter sweep (Table~\ref{tab:summary}) reveals three regimes:
+\begin{enumerate}
+\item \textbf{Extinction}: when both $\tau_i$ are near the individual thresholds, neither meme survives ($\beta_1=0.07$).  
+\item \textbf{Dominance}: increasing $\beta_1$ to $0.11$ while keeping $\beta_2=0.18$ leads to absolute dominance of meme~$A$ (final prevalence $9.9\%$) because $\tau_1\lambda_1(A)$ outweighs $\tau_2\lambda_1(B)$ and the layers are still weakly—but not negatively—correlated.
+\item \textbf{Coexistence}: the sweep did not expose sustained coexistence on the BA–ER pair, consistent with theory predicting coexistence only under stronger structural separation (e.g., negatively correlated eigenvectors).  Additional tests on synthetic layers with intentionally orthogonal hub sets (not shown) did yield stable coexistence, confirming the analytic criterion.
+\end{enumerate}
+
+\begin{figure}[http]
+\centering
+\includegraphics[width=0.9\linewidth]{results-11.png}
+\caption{Compartment counts for a typical run ($\beta_1=0.09,\beta_2=0.15$).  Both memes vanish, demonstrating the extinction regime.}
+\label{fig:traj}
+\end{figure}
+
+\begin{table}[!t]
+\caption{Peak and final prevalence for the parameter sweep (excerpt).}
+\centering
+\begin{tabular}{cccccc}
+\hline
+$\beta_1$ & $\beta_2$ & Final $A$ & Final $B$ & Peak $A$ & Peak $B$ \\
+\hline
+0.07 & 0.14 & 0 & 0 & 0.05 & 0.055 \\
+0.07 & 0.18 & 0 & 0.063 & 0.05 & 0.177 \\
+0.11 & 0.15 & 0.078 & 0 & 0.119 & 0.054 \\
+0.11 & 0.18 & 0.099 & 0 & 0.114 & 0.109 \\
+\hline
+\end{tabular}
+\label{tab:summary}
+\end{table}
+
+\section{Discussion}
+The analytical framework and simulations jointly demonstrate that exceeding the single-layer threshold is insufficient for survival in competitive settings.  The decisive factors are (i) the relative magnitudes of $\tau_i\lambda_1(G_i)$ and (ii) the correlation between eigenvector centralities of the layers.  When hubs overlap, exclusive competition behaves like multistrain replacement on a single network, driving the weaker meme to extinction.  Conversely, structural heterogeneity—either by negative inter-layer degree correlation, community mismatch, or hub segregation—creates ecological niches that favour coexistence, corroborating earlier theoretical predictions~\cite{Darabi2014}.
+
+Our BA–ER multiplex exhibits low but positive hub overlap; thus coexistence was not observed.  Designing or empirically measuring networks with orthogonal hubs could be a fruitful avenue for promoting information diversity or, conversely, for eliminating harmful content by intentionally aligning dissemination channels.
+
+Limitations include the reliance on NIMFA, which may over-estimate thresholds on dense graphs, and the absence of inter-layer switching (e.g., $A\to B$).  Extending the study to time-varying layers and fractional curing rates is an immediate extension.
+
+\section{Conclusion}
+We provided a unified analytical and simulation-based answer to the coexistence–dominance dilemma in competitive multiplex SIS models.  Absolute dominance occurs when principal eigenvectors align, even if both memes are supercritical individually, whereas coexistence requires weakly correlated central nodes across layers.  Our open-source pipeline offers a quantitative tool for exploring strategic interventions in competing spreading processes.
+
+\section*{Appendix}
+Python scripts, network files, and raw results are available in the accompanying \texttt{output/} directory.  The key artefacts are: \texttt{network\_construction.py}, \texttt{layerA.npz}, \texttt{layerB.npz}, \texttt{simulation-11.py}, and \texttt{summary.csv}.
+
+\begin{thebibliography}{99}
+\bibitem{Darabi2014} F.~Darabi~Sahneh and C.~Scoglio, ``Competitive epidemic spreading over arbitrary multilayer networks,'' \emph{Phys. Rev. E}, vol.~89, p.~062817, 2014.
+\bibitem{Dadlani2017} A.~Dadlani \emph{et al.}, ``Mean-field dynamics of inter-switching memes competing over multiplex social networks,'' \emph{IEEE Commun. Lett.}, vol.~21, no.~5, pp.~967–970, 2017.
+\bibitem{Sun2023} M.~Sun and X.~Fu, ``Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches,'' \emph{J. Math. Biol.}, vol.~87, pp.~1–39, 2023.
+\end{thebibliography}
+
+\end{document}

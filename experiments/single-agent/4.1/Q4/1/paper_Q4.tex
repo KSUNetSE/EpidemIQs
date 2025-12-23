@@ -1,0 +1,92 @@
+\section{Title}
+Epidemic Competition, Coexistence, and Dominance in a Competitive SIS Model over Two-Layer Multiplex Networks
+
+\section{Abstract}
+This work investigates the dynamics of two mutually exclusive, competitive SIS (Susceptible-Infected-Susceptible) viruses spreading over a population of 200 nodes interconnected via a two-layer multiplex network. Each layer represents a distinct contact network: a scale-free (Barabási–Albert) and a random (Erdős–Rényi) graph. Analytical results and numerical stochastic simulations are presented to address: (1) the feasibility of coexistence or absolute dominance between two competitive viruses, and (2) how the structural characteristics of multilayer networks influence these epidemic outcomes. Analytical theory suggests that coexistence is possible only under significant structural differences between layers—particularly if highly central nodes in one layer do not overlap with those in the other. Simulation using the FastGEMF platform confirms this: despite both effective infection rates exceeding their mean-field survival thresholds, one virus (Virus 2) ultimately dominates, completely removing the other. These findings underscore the crucial role of multiplex network organization—especially the correlation and overlap of central nodes—on epidemic competition and coexistence.
+
+\section{Introduction}
+Understanding epidemic spreads in populations connected via multiple, heterogeneous networks is a challenge of increasing relevance in a multi-pathogen and multi-contact world. Traditional analyses of epidemic dynamics often restrict themselves to single-layer networks, limiting insight into competition between pathogens transmitted using different routes. Motivated by real-world examples in which two exclusive viruses exploit different contact networks—such as biological or digital pathogens, or competing information memes—this paper addresses a central question: does structural diversity in multilayer networks favor the coexistence of both competitors, or does it promote the complete dominance of one?
+
+Past work has shown that in single-layer, exclusive SIS (or SIR) competition, absolute dominance is the likely outcome except under fine-tuned equality of parameters. Recent advances, particularly Sahneh and Scoglio (2014) and Doshi et al. (2021), show that network multiplexity introduces a richer phase diagram: coexistence is possible, but only if the central nodes (those critical for propagation) of each layer are largely non-overlapping. The present study aims to clarify these findings both analytically and via large-scale agent-based simulation, bridging network science insights and epidemic modeling.
+
+\section{Methodology}
+\subsection{Epidemic Scenario and Analytical Framework}
+Two mutually exclusive SIS viruses propagate over two distinct static network layers, with identical node sets but different topology—one scale-free (Barabási–Albert, mean degree 9.75) and one random (Erdős–Rényi, mean degree 14.57). Each virus can propagate only via its corresponding layer. No node can harbor both viruses simultaneously. The analytical framework relates survival thresholds to mean-field critical points ($\tau_1=\beta_1/\delta_1 > 1/\lambda_1(A)$ and $\tau_2=\beta_2/\delta_2 > 1/\lambda_1(B)$), where $\lambda_1(L)$ is the largest eigenvalue of the corresponding network's adjacency matrix. Recent theory shows coexistence is possible if—and only if—the two layers are structurally diverse, especially regarding the location of central nodes \cite{darabi2014competitive, doshi2021competing}.
+
+\subsection{Network Construction and Mechanistic Model}
+We created two layers: Layer A (BA, $N=200$, $m=5$) and Layer B (ER, $p=0.07$), saved as adjacency sparse matrices. Degree distributions confirm structural diversity (see Figure~\ref{fig-deg-scatter}). Initial conditions infect 10 random nodes with each virus, all others susceptible. Transmission ($\beta$) and recovery ($\delta$) rates were tuned so that both effective infection rates exceed survival thresholds ($\tau_i>\frac{1}{\lambda_1}$, $\lambda_1$ determined numerically).
+
+The state space comprises three compartments: S (susceptible), I1 (infected by virus 1), I2 (infected by virus 2), with transitions:
+\begin{itemize}
+    \item $S \to I1$ (induced by $I1$ neighbor over Layer A at rate $\beta_1$)
+    \item $I1 \to S$ (recovery at rate $\delta_1$)
+    \item $S \to I2$ (induced by $I2$ neighbor over Layer B at rate $\beta_2$)
+    \item $I2 \to S$ (recovery at rate $\delta_2$)
+    \item Mutual exclusivity constraint: no node can be both $I1$ and $I2$
+\end{itemize}
+
+\subsection{Simulation Setup}
+We used the FastGEMF platform to run $n=8$ stochastic simulations for 200 time units. Results (compartment trajectories and infection curves) were saved for analysis.
+
+\subsection{Metrics and Evaluation}
+Key metrics included epidemic duration, final and peak infection counts for both viruses, and qualitative outcome (dominance, coexistence). Coexistence was defined as both $I1$ and $I2$ persisting nonzero at steady state.
+
+\section{Results}
+The main analytical findings are as follows:
+\begin{itemize}
+    \item Each virus individually survives if its effective infection rate exceeds its no-spreading threshold ($\tau_i > 1/\lambda_1$ for its own layer).
+    \item Coexistence is possible in principle, but only if network layers are sufficiently different and central nodes are non-overlapping; otherwise, one virus will dominate the other, driving it extinct \cite{darabi2014competitive, doshi2021competing}.
+\end{itemize}
+
+\textbf{Network diagnostics:} The BA layer had $\langle k\rangle=9.75$ ($\langle k^2\rangle\approx150.8$), ER had $\langle k\rangle=14.57$ ($\langle k^2\rangle\approx225.4$); degree correlation between layers was low (Fig.~\ref{fig-deg-scatter}).
+
+\textbf{Simulation outcomes:} Despite both $\tau_1$ and $\tau_2$ being set above thresholds, Virus 2 (layer B, ER) achieved dominance:\newline
+\begin{itemize}
+    \item Final I1: 0 nodes
+    \item Final I2: 54 nodes
+    \item Peak I1: 38 nodes (early, $t\approx4$)
+    \item Peak I2: 94 nodes ($t\approx70.9$)
+    \item No persistent coexistence: Virus 1 was eventually excluded and Virus 2 persisted at nonzero endemic level (see Fig.~\ref{fig-infectious-vs-time})
+\end{itemize}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.7\linewidth]{output/results-infectious_vs_time.png}
+\caption{Stochastic evolution of infected populations for each virus.}
+\label{fig-infectious-vs-time}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\linewidth]{output/deg_scatter-01.png}
+\caption{Scatterplot of node degrees in Layer A vs. Layer B.}
+\label{fig-deg-scatter}
+\end{figure}
+
+\section{Discussion}
+This work provides both analytical and computational evidence that absolute dominance—rather than stable coexistence—is the most likely outcome of competition between two mutually exclusive SIS viruses on two-layer multiplex networks, unless the two network layers are highly structurally distinct with little or no overlap in their central (superspreader) nodes. The analytic phase diagram derived from \cite{darabi2014competitive, doshi2021competing} captures the outcome: even when both effective infection rates exceed the mean-field no-spreading thresholds, the absence of strong specialization in network centrality enables competition to resolve in one virus's favor, not unlike the competitive exclusion principle in ecology.
+
+Our simulated population did exhibit structural diversity, but likely not enough (in overlap, see degree correlation plots) to ensure mutual survival. Parameters (infection and recovery rates) were chosen to ensure both viruses could independently persist; yet, the stochastic simulation resulted in Virus 2's absolute dominance. This confirms the analytic expectation: coexistence is rare and structurally fine-tuned in multiplex epidemics with exclusive competition.
+
+\section{Conclusion}
+We demonstrate, both analytically and via stochastic simulation, that stable coexistence of two mutually exclusive SIS viruses spreading over multiplex networks is only possible in a finely tuned, structurally diverse regime with minimal overlap of central nodes. Otherwise, absolute dominance prevails—one virus eliminates the other. Structural features enabling coexistence include network layer diversity, especially non-overlapping highly connected nodes. Our results are in line with recent theoretical advances and suggest avenues for experimental and empirical validation in more realistic, dynamic multilayer settings.
+
+\section{References}
+\begin{thebibliography}{9}
+\bibitem{darabi2014competitive} Faryad Darabi Sahneh, C. Scoglio. Competitive epidemic spreading over arbitrary multilayer networks. Physical review E, Statistical, nonlinear, and soft matter physics, vol. 89, no. 6, 062817, 2014.
+\bibitem{doshi2021competing} Vishwaraj Doshi, Shailaja Mallick, Do Young Eun. Competing Epidemics on Graphs - Global Convergence and Coexistence. IEEE INFOCOM, pp. 1-10, 2021.
+\end{thebibliography}
+
+\appendix
+\section{Appendices}
+\subsection{Analytical Result Used}
+\begin{verbatim}
+Analytical competitive SIS model on multiplex networks:
+- Let $\tau_1 = \beta_1/\delta_1$, $\tau_2 = \beta_2/\delta_2$, $\lambda_1(A)$, $\lambda_1(B)$: largest eigenvalues of adjacency matrices.
+- Each virus persists if $\tau_i > 1/\lambda_1$(Layer_i) (classic SIS threshold).
+- If both $\tau_1 > 1/\lambda_1(A)$ and $\tau_2 > 1/\lambda_1(B)$, both can survive in principle.
+- However, if the layers are identical (same adjacency/eigenvector structure), typically only one virus dominates (excludes the other).
+- Coexistence is possible only if layers are sufficiently different in structure, especially if highly central nodes in layer A are distinct from those in layer B (such that dominance of one virus in its layer does not facilitate suppression in the other).
+\end{verbatim}
+
+% End of document

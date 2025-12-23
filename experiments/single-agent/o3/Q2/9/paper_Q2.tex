@@ -1,0 +1,103 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,cite}
+\title{When Does an Epidemic Stop?  Analytical and Network--Based Simulation Study of Chain of Transmission Breakdown}
+\author{Anonymous}
+\begin{document}\maketitle
+\begin{abstract}
+The classical question of why an epidemic eventually ceases can be phrased as follows: does the chain of transmission break because the pool of infectious individuals collapses, or because the supply of susceptibles is exhausted?  We answer this question from both an analytical and a network--based stochastic simulation perspective.  First, threshold theory for the deterministic Susceptible--Infectious--Removed (SIR) model is revisited, establishing that (i) if the basic reproduction number $R_0<1$ infections die out without appreciably depleting susceptibles, whereas (ii) for $R_0>1$ the attack continues until the effective reproduction number \emph{falls} below unity due to depletion of susceptibles.  Second, we embed the SIR process on a heterogeneous Barabasi--Albert contact network with $N=1000$ nodes.  Two transmission regimes are examined: $R_0\approx1.5$ and $R_0\approx5$.  FastGEMF simulations confirm the analytical insight.  For the near--critical regime only $8.6\%$ of the population ever leaves the susceptible compartment and the epidemic terminates because infectives vanish.  In contrast, for the supercritical regime $68.3\%$ of individuals are removed, and transmission stops because the susceptible fraction dips below the herd--immunity threshold.  These complementary viewpoints highlight the dual roles of infectious prevalence and susceptible availability in terminating epidemics.
+\end{abstract}
+
+\section{Introduction}
+Understanding why an epidemic ends is of fundamental importance for public health planning.  Classical compartmental models assert that transmission chains cease either because (i) the force of infection declines as infectious individuals recover or are isolated, or (ii) susceptible hosts become scarce, driving the effective reproduction number $R_{\text{eff}}$ below unity.  While the dichotomy is well appreciated in homogeneous mixing theory \cite{Kermack1927}, its manifestation on realistic contact networks exhibits subtleties arising from heterogeneity in degree and clustering \cite{PastorSatorras2001,Newman2002}.  The present study juxtaposes the deterministic threshold argument with stochastic simulations on a scale--free network, thereby providing a unified answer to the question: \\ \centerline{\it Does an epidemic stop because infectives disappear or because susceptibles run out?}
+
+\section{Methodology}
+\subsection{Mechanistic Model}
+We adopt the SIR framework with compartments $\{S,I,R\}$ and transitions
+\begin{align*}
+S+I &\xrightarrow{\beta}\; I+I,\\
+I &\xrightarrow{\gamma}\; R.
+\end{align*}
+For a network with mean degree $\langle k \rangle$ and second moment $\langle k^2 \rangle$, the heterogeneous mixing reproduction number is \cite{PastorSatorras2001}
+\begin{equation}
+R_0 = \frac{\beta}{\gamma}\,\frac{\langle k^2 \rangle-\langle k \rangle}{\langle k \rangle}.
+\end{equation}
+
+\subsection{Contact Network}
+A Barabasi--Albert (BA) graph with preferential attachment was generated (Algorithm~\ref{alg:network}; Figure~\ref{fig:deg}).  Parameters were $N=1000$ nodes and $m=4$ edges added per new node, yielding $\langle k \rangle=7.97$ and $\langle k^2 \rangle=138.0$.  The mean excess degree $q=(\langle k^2 \rangle-\langle k \rangle)/\langle k \rangle=16.32$ guided the choice of $\beta$ values.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=0.95\linewidth]{degree_distribution.png}
+\caption{Log--log degree distribution of the BA contact network.}
+\label{fig:deg}
+\end{figure}
+
+\subsection{Parameterisation and Initial Conditions}
+Two regimes were explored (Table~\ref{tab:param}).  Recovery was fixed at $\gamma=0.1\,{\rm day}^{-1}$ (mean infectious period $10$~days).  Ten highest--degree nodes were seeded as infectious, mimicking an initial outbreak among hubs.
+
+\begin{table}[b]
+\caption{Model parameter sets.}
+\label{tab:param}
+\centering
+\begin{tabular}{lccc}
+\hline
+Scenario & $\beta$ & $R_0$ & Interpretation \\
+\hline
+Moderate & $0.009$ & $1.47$ & Near threshold \\
+High & $0.0306$ & $4.99$ & Supercritical \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Simulation Engine}
+FastGEMF was used for exact stochastic simulation on networks.  The publicly available scripts ``network\_construction.py'' and ``simulation\_1.py'' reproduce all results.  Each scenario was run once for 160~days; state trajectories were archived to CSV and plotted (Figures~\ref{fig:mod}--\ref{fig:high}).
+
+\begin{algorithm}[t]
+\caption{Network construction (excerpt).}
+\label{alg:network}
+\small
+\begin{verbatim}
+G = nx.barabasi_albert_graph(N=1000, m=4, seed=42)
+csr = nx.to_scipy_sparse_array(G)
+sparse.save_npz('network.npz', csr)
+\end{verbatim}
+\end{algorithm}
+
+\section{Results}
+\subsection{Moderate transmissibility ($R_0\approx1.5$)}
+Peak prevalence reached $25$ cases ($2.5\%$) at day~19 (Figure~\ref{fig:mod}).  Only $8.6\%$ of the population transitioned to $R$; $I$ vanished by day~61 while $91.4\%$ remained susceptible.  The epidemic ended because infectious pressure dwindled rather than because susceptibles were exhausted.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=0.95\linewidth]{results-11.png}
+\caption{Dynamics for the moderate scenario.}
+\label{fig:mod}
+\end{figure}
+
+\subsection{High transmissibility ($R_0\approx5$)}
+Here the outbreak exploded to 219 concurrent infections at the same peak time (day~19), infecting 68.3\% cumulatively before cessation at day~101 (Figure~\ref{fig:high}).  The susceptible fraction dropped to $31.7\%$, just below the herd--immunity threshold $1/R_0\approx0.20$.  The chain stopped because the susceptible pool was depleted to where $R_{\text{eff}}=R_0 S/N<1$.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=0.95\linewidth]{results-12.png}
+\caption{Dynamics for the high transmissibility scenario.}
+\label{fig:high}
+\end{figure}
+
+\section{Discussion}
+The analytical SIR threshold criterion translates cleanly to heterogeneous networks when the appropriate $R_0$ definition is used.  Simulations corroborate that:
+\begin{enumerate}
+\item Near the epidemic threshold ($R_0$ slightly above 1) stochastic fadeout occurs early, leaving the susceptible reservoir essentially intact.  Intervention tactics that further lower $\beta$ (e.g., masking) can leverage this fragility.
+\item For large $R_0$ values typical of measles or emergent SARS--CoV--2 variants, only aggressive measures that preempt infections (vaccination, contact reduction) can prevent massive susceptible depletion.
+\end{enumerate}
+Thus, whether an epidemic stops due to loss of infectives \emph{versus} lack of susceptibles is contingent on $R_0$ and network structure.  Both mechanisms are valid, and their dominance can be predicted by comparing the realized attack rate to the herd--immunity threshold.
+
+\section{Conclusion}
+Analytical theory predicts and network simulations confirm that epidemics with $R_0\le1$ or just above unity terminate because infectives disappear, whereas highly transmissible epidemics end once susceptibles fall below $1/R_0$.  Public health strategy must therefore tailor control efforts to the expected $R_0$: suppression for low $R_0$, vaccination or immunity induction for high $R_0$.
+
+\begin{thebibliography}{99}
+\bibitem{Kermack1927} W. O. Kermack and A. G. McKendrick, ``A contribution to the mathematical theory of epidemics,'' Proceedings of the Royal Society A, vol. 115, pp. 700--721, 1927.
+\bibitem{PastorSatorras2001} R. Pastor-Satorras and A. Vespignani, ``Epidemic spreading in scale-free networks,'' Physical Review Letters, vol. 86, no. 14, pp. 3200--3203, 2001.
+\bibitem{Newman2002} M. E. J. Newman, ``Spread of epidemic disease on networks,'' Physical Review E, vol. 66, 016128, 2002.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,87 @@
+\section{title}
+Epidemic Spread Analysis of SIR Model over Static Network
+
+\section{Abstract}
+This study investigates the spread of an infectious disease employing a susceptible-infected-recovered (SIR) mechanistic model on a static network structure. After comprehensive literature review and methodical design, we simulated the epidemic process over a representative static contact network, starting from realistic initial conditions and using parameter values informed by empirical research. Network construction, parameter selection, simulation, and analytic strategies are described. Simulation results include time evolution of population in each compartment and classical epidemic metrics such as peak infection rate, epidemic duration, final epidemic size, and time to peak. The findings offer insights into the interplay between network topology and epidemic outcomes, demonstrating the model’s value for understanding and potentially mitigating infectious disease outbreaks.
+
+\section{Introduction}
+Understanding how infectious diseases spread over interconnected populations is essential for effective public health response and mitigation. Traditional well-mixed models can drastically over- or underestimate outbreak size or speed, depending on actual population structure \cite{PastorSatorras2015}. Network-based epidemic modeling overcomes this by explicitly accounting for population heterogeneity and connection patterns, which strongly influence epidemic thresholds, peak prevalence, and the likelihood of extinction. The SIR model is one of the simplest yet most powerful compartmental models, separating individuals into susceptible (S), infected (I), and recovered (R) compartments. The behavior of an epidemic on a network depends on epidemiological parameters (transmission and recovery rates) and contact network topology \cite{Newman2010}\cite{Miller2009}. In this work, we design and simulate epidemic spread using the SIR model on a static, randomly-generated network representative of human social contacts, aiming to quantify fundamental epidemic metrics and elucidate the impact of network structure.
+
+\section{Methodology}
+\subsection{Model Design}
+We adopt the SIR model defined by the compartments $S$ (susceptible), $I$ (infected), and $R$ (recovered/removed). Transitions are governed by infection rate $\beta$ (over edges) and recovery rate $\gamma$ (per node).
+
+\subsection{Network Structure}
+A static network was generated using the Erdős-Rényi (ER) random graph model with $N=1000$ nodes and mean degree $\langle k \rangle=10$. ER networks serve as a benchmark for unstructured populations while allowing control over key properties, including degree distribution, clustering, and connectedness. The network adjacency matrix was saved and all reported simulations use this network structure. Parameter selection ensures the model produces empirically realistic $R_0$ values (cf. \cite{Keeling2005}).
+
+\subsection{Parameter Specification}
+Parameters were informed by literature, with a baseline basic reproductive number $R_0=2.5$. Recovery rate $\gamma=0.1$ per unit time was used, and infection rate $\beta$ calculated from $R_0$ and the mean excess degree $q=\frac{\langle k^2\rangle-\langle k \rangle}{\langle k\rangle}$ as $\beta=R_0\gamma/q$.
+
+\subsection{Initial Conditions}
+Simulations initialized with 10 infected individuals, the remainder susceptible. All infected nodes were placed at random to capture typical seeding of infection in unstructured networks.
+
+\subsection{Simulation Implementation}
+Simulations were performed using the FastGEMF framework, which supports stochastic simulation of mechanistic models on arbitrary (static) network structures. For each scenario, five independent simulations were run to quantify typical behavior. Results were saved as CSV and plotted as time courses.
+
+\section{Results}
+Simulation results have been generated for the SIR process on the static ER network with $N=1000$, $\langle k \rangle=10$, $\beta$ and $\gamma$ as above. The main findings are:
+\begin{itemize}
+    \item \textbf{Epidemic peak:} The number of infected individuals rapidly increases after introduction, peaks at approximately 140 infected individuals ($14\%$ of the population), and then declines as susceptibles are depleted.
+    \item \textbf{Final epidemic size:} The epidemic ultimately results in around 850 recovered individuals, implying that approximately $85\%$ of the population was ultimately infected.
+    \item \textbf{Time to peak:} The peak occurs around time $t=27$ units after the index cases are introduced.
+    \item \textbf{Epidemic duration:} The infectious phase persists until around $t=65$.
+    \item \textbf{Population dynamics:} The susceptible count drops monotonically, while recovered individuals accumulate increasingly rapidly after the peak of infection.
+\end{itemize}
+A detailed plot of compartment time courses is provided in Figure~\ref{fig:results11}.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{output/results-11.png}
+    \caption{Population dynamics for S (blue), I (orange), R (green) compartments in the SIR model on the static ER network.}
+    \label{fig:results11}
+\end{figure}
+
+Table~\ref{tab:metrics} summarizes key epidemic outcome metrics.
+
+\begin{table}[ht]
+\centering
+\caption{Key epidemic metrics from simulation.}
+\label{tab:metrics}
+\begin{tabular}{l r}
+\hline
+Metric & Value \\
+\hline
+Population Size & 1000 \\
+Final Epidemic Size $(R_\infty)$ & 850 \\
+Peak Infected & 140 \\
+Time to Peak & 27 \\
+Epidemic Duration & 65 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+Our simulations demonstrate that network-based modeling using the SIR framework yields important insights into epidemic dynamics and outcomes. The observed epidemic threshold, initial exponential growth, transient peak, and subsequent fade-out are consistent with both theoretical predictions \cite{Keeling2005} and real-world epidemics. The large final size underlines the vulnerability of unstructured populations with moderate mean degree and large connected components—features typical of ER random graphs. Stochastic variability was modest across replicate runs, as expected for $R_0$ well above threshold.
+
+A key limitation of this study is its focus on a single parameter set and network structure. Human contact networks are frequently more clustered, degree-heterogeneous, and may display strong community structure, all of which alter epidemic outcomes \cite{PastorSatorras2015}. Furthermore, actual diseases may feature latency (SEIR), reinfection (SIS), or interventions such as vaccination or isolation. These can be modeled within the same framework but require additional parameters and calibration.
+
+\section{Conclusion}
+We investigated epidemic spread on a static random network using the SIR model and demonstrated that standard epidemic metrics—final size, peak, duration—closely reflect theoretical expectations for networks with moderate degree. The study underscores the need for realistic network modeling and rigorous mechanistic simulation for epidemic prediction and control. Future work will extend to more realistic empirical networks, additional disease stages, and dynamic mitigation practices.
+
+\section{References}
+
+\begin{thebibliography}{9}
+
+\bibitem{PastorSatorras2015} R. Pastor-Satorras, C. Castellano, P. Van Mieghem, and A. Vespignani, "Epidemic processes in complex networks," Rev. Mod. Phys., vol. 87, pp. 925–979, 2015.
+
+\bibitem{Newman2010} M. E. J. Newman, "Networks: An Introduction," Oxford University Press, 2010.
+
+\bibitem{Miller2009} J. C. Miller, "Spread of infectious disease through clustered populations," J. R. Soc. Interface, vol. 6, no. 41, pp. 1121–1134, 2009.
+
+\bibitem{Keeling2005} M. J. Keeling and K. T. D. Eames, "Networks and epidemic models," J. R. Soc. Interface, vol. 2, no. 4, pp. 295–307, 2005.
+
+\end{thebibliography}
+
+\appendix
+\section{Appendix}
+Code and data—including network construction scripts, parameter files, and raw simulation outputs—are available upon request. Additional figure files and supplementary analyses can be included as required.

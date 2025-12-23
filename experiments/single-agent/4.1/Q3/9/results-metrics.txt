@@ -1,0 +1,1 @@
+{'static': {'peak_infections': np.float64(10.0), 'peak_time': 0, 'final_epidemic_size': np.float64(10.0), 'epidemic_duration': 100}, 'temporal': {'peak_infections': np.float64(14.3), 'peak_time': 33, 'final_epidemic_size': np.float64(71.7), 'epidemic_duration': 61}}

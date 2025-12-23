@@ -1,0 +1,3 @@
+Mean degree: 8.036
+Second moment degree: 72.48
+Population size: 1000

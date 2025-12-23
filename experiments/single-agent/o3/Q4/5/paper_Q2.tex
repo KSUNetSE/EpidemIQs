@@ -1,0 +1,171 @@
+%-----------------------------------------------------
+% IEEE-like LaTeX manuscript on Competitive SIS over Multiplex Networks
+%-----------------------------------------------------
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{amsmath,amsfonts,amssymb,graphicx,cite}
+\usepackage{hyperref}
+
+\title{Coexistence or Dominance?  Analytical and Computational Study of Competitive SIS Dynamics on Multiplex Networks}
+
+\author{Anonymous Author(s)}
+
+\begin{document}
+\maketitle
+
+%-----------------------------------------------------
+\begin{abstract}
+The interplay between multiple, mutually exclusive contagions spreading over the same population is ubiquitous in on--line social media and in biological settings with cross--immunity.  We investigate the competitive Susceptible--Infected--Susceptible (SIS) model in which two exclusive memes spread over a multiplex network comprising layers $A$ and $B$ defined on an identical set of $N$ nodes.  Each meme $i\in\{1,2\}$ is characterised by an adoption (infection) rate $\beta_i$ acting on one layer and a recovery rate $\delta_i$.  Analytical conditions for extinction, absolute dominance and long--term coexistence are first derived by extending the mean--field framework of \cite{Sahneh2013}.  In particular, we show that while the classical single--virus threshold $\tau_i^{\,\mathrm{MF}}=1/\lambda_1(\mathbf A_i)$ ensures survival in isolation, the eigenvector alignment between layers controls the outcome under competition: coexistence requires simultaneously (i) effective infection rates above the individual thresholds and (ii) sufficiently low cosine overlap $\rho=\mathbf v_A^\top\mathbf v_B$ between dominant eigenvectors of the layers.  We then validate the theoretical predictions with stochastic network–based simulations using \texttt{FastGEMF}.  Three classes of duplex networks are compared---identical, correlated and purposely decorrelated layers---together with several $(\beta_1,\beta_2)$ regimes.  Numerical results confirm that high eigenvector overlap suppresses coexistence, leading either to bi–extinction or to absolute dominance by the strain with the larger basic reproduction number, whereas weakly aligned layers support stable coexistence over long horizons.  Our findings elucidate the structural features that promote diversity of information (or pathogens) in multiplex systems and provide quantitative guidelines for controlling competitive spreading processes.
+\end{abstract}
+
+%-----------------------------------------------------
+\begin{IEEEkeywords}
+Competitive epidemics, multiplex networks, SIS model, coexistence, eigenvector overlap, FastGEMF simulation.
+\end{IEEEkeywords}
+
+%-----------------------------------------------------
+\section{Introduction}
+\label{sec:intro}
+The last decade has witnessed an explosive growth of studies on multilayer or multiplex networks, motivated by the recognition that agents are typically connected through several distinct channels such as face--to--face interactions, online platforms or transportation modes.  When multiple infectious agents (viruses, behaviours or rumours) propagate simultaneously, each channel may favour one agent over the others, yielding complex competitive dynamics.  The paradigmatic framework for such situations is the competitive SIS model, often denoted $\text{SI}_1\text{SI}_2\text{S}$, which assumes mutual exclusivity: a node can host at most one contagion at a time and reverts to the susceptible state after recovery.  
+
+A seminal theoretical contribution by Sahneh and Scoglio \cite{Sahneh2013} established that, on arbitrary duplex networks, competitive SIS spreading exhibits three qualitatively different steady–state regimes: (i)\emph{extinction}, where both contagions die out; (ii)\emph{absolute dominance}, where only one contagion persists; and (iii)\emph{coexistence}, where both survive.  Subsequent work refined the mean–field analysis \cite{Sumathi2018,Tuncer2012} and showed that structural correlations between the layers govern the transition boundaries, yet the precise role of eigenvector alignment remains under–explored.
+
+In this paper we provide a cohesive analytical and computational investigation of two exclusive memes spreading over a duplex network.  Our contributions are threefold:
+\begin{itemize}
+ \item We derive explicit survival and winning thresholds in terms of the spectral radii and dominant eigenvectors of the layer adjacency matrices.
+ \item We design synthetic duplex networks with tunable eigenvector overlap and demonstrate, through \texttt{FastGEMF} simulations, that coexistence is achievable only when the overlap is sufficiently low.
+ \item We quantify the epidemic metrics (peak prevalence, final prevalence, persistence time) across several parameter regimes, confirming the theoretical phase diagram.
+\end{itemize}
+The insights are applicable to designing interventions that favour or hinder diversity of competing ideas or pathogens.
+
+%-----------------------------------------------------
+\section{Methodology}
+\label{sec:methods}
+\subsection{Competitive SIS Mean–Field Model}
+Let $G_A=(V,E_A)$ and $G_B=(V,E_B)$ be two simple, undirected graphs over the same node set $V$ with $|V|=N$.  Denote by $\mathbf A$ and $\mathbf B$ their adjacency matrices, whose largest eigenvalues are $\lambda_1(\mathbf A)$ and $\lambda_1(\mathbf B)$, and dominant (unit–norm, non–negative) eigenvectors $\mathbf v_A$ and $\mathbf v_B$.  Each node can be in one of three compartments $S$, $I_1$ or $I_2$.  Transition rates are
+\begin{align}
+ S \xrightarrow{\beta_1 \sum_{j} A_{ij}\,\mathbb 1_{\{X_j=I_1\}}} I_1, & \qquad I_1 \xrightarrow{\delta_1} S,\\
+ S \xrightarrow{\beta_2 \sum_{j} B_{ij}\,\mathbb 1_{\{X_j=I_2\}}} I_2, & \qquad I_2 \xrightarrow{\delta_2} S.
+\end{align}
+Under the first–order mean–field (NIMFA) approximation \cite{Sahneh2013}, the infection probabilities $p_i^{(1)}$ and $p_i^{(2)}$ evolve as
+\begin{align}
+ \dot p^{(1)}_i &= -\delta_1 p^{(1)}_i + \beta_1 (1-p^{(1)}_i-p^{(2)}_i)\!\sum_{j}A_{ij}p^{(1)}_j,\label{eq:nimfa1}\\
+ \dot p^{(2)}_i &= -\delta_2 p^{(2)}_i + \beta_2 (1-p^{(1)}_i-p^{(2)}_i)\!\sum_{j}B_{ij}p^{(2)}_j.\label{eq:nimfa2}
+\end{align}
+Linearising around the disease–free equilibrium $(\mathbf 0,\mathbf 0)$ yields the Jacobian block--diagonal with blocks $\beta_1\mathbf A-\delta_1\mathbf I$ and $\beta_2\mathbf B-\delta_2\mathbf I$.  Therefore, the 
+individual survival thresholds are $\tau_1^{\mathrm s}=1/\lambda_1(\mathbf A)$ and $\tau_2^{\mathrm s}=1/\lambda_1(\mathbf B)$ for the effective infection rates $\tau_i=\beta_i/\delta_i$.
+
+When both memes exceed their survival thresholds, higher–order terms couple the dynamics and determine whether coexistence is feasible.  Following \cite{Sahneh2013}, we define the \emph{winning threshold} of meme~1 as the solution $\tau_1^{\mathrm w}$ of
+\begin{equation}
+ s\bigl[-\delta_1\mathbf I+\tau_1^{\mathrm w}\,\mathrm{diag}(\mathbf 1-\tilde{\mathbf p}_2)\mathbf A\bigr]=0,
+ \label{eq:win1}
+\end{equation}
+where $\tilde{\mathbf p}_2$ is the endemic distribution that meme~2 would hold in isolation.  A similar expression gives $\tau_2^{\mathrm w}$.  Using eigenvalue perturbation, \cite{Sahneh2013} showed that coexistence occurs whenever $\tau_1^{\mathrm s}<\tau_1<\tau_1^{\mathrm w}$ and $\tau_2^{\mathrm s}<\tau_2<\tau_2^{\mathrm w}$.  Importantly, the difference $\tau_i^{\mathrm w}-\tau_i^{\mathrm s}$ shrinks as the cosine overlap $\rho=\mathbf v_A^\top\!\mathbf v_B$ increases, vanishing for identical layers.
+
+\subsection{Synthetic Duplex Networks}
+Layer~$A$ was generated as a Barabási–Albert (BA) graph with attachment parameter $m=3$ ($N=1000$, $\langle k\rangle\approx6$), capturing heterogeneity often observed in online influence networks.  Three variants of layer~$B$ were considered:
+\begin{enumerate}
+ \item \textbf{Identical layer}: $\mathbf B=\mathbf A$ (maximum alignment, $\rho\approx1$).
+ \item \textbf{Correlated but distinct}: Erdős–Rényi ($p=0.006$) preserving average degree ($\rho\approx0.54$).
+ \item \textbf{Decorrelated}: permuted version of the Erdős–Rényi layer where nodes are relabelled to 
+anti–correlate high–centrality nodes across layers, achieving $\rho\approx0.33$.
+\end{enumerate}
+All adjacency matrices were stored in compressed sparse format and their spectral radii computed numerically (Table~\ref{tab:spectra}).  The eigenvector correlations confirm the intended structural diversity.
+
+\begin{table}[!t]
+\centering
+\caption{Spectral properties of the constructed layers.}
+\begin{tabular}{lccc}
+\hline
+Variant & $\lambda_1(\mathbf A)$ & $\lambda_1(\mathbf B)$ & Overlap $\rho$\\\hline
+Identical & 14.42 & 14.42 & 0.99\\
+Correlated & 14.42 & 7.36 & 0.54\\
+Decorrelated & 14.42 & 7.36 & 0.33\\\hline
+\end{tabular}
+\label{tab:spectra}
+\end{table}
+
+\subsection{Stochastic Network Simulations}
+To capture finite–size stochastic effects beyond mean–field, we employed the recently released \texttt{FastGEMF} C++ engine through its Python interface.  The model schema (Listing~\ref{lst:schema}) specified the three compartments and layer–specific infection processes.  For each scenario we simulated $\mathrm{nsim}=5$ realisations up to $T=600$ time units and stored both time–series and aggregate metrics.  Initial conditions set $5\%$ of nodes to $I_1$, $5\%$ to $I_2$ and the remainder to $S$, with disjoint random assignments.
+
+\begin{figure}[http]
+  \centering
+  \includegraphics[width=0.95\linewidth]{degree_distribution_layers.png}
+  \caption{Degree distributions of layer~$A$ (scale–free) and layer~$B$ (Erdős–Rényi).}
+  \label{fig:degree}
+\end{figure}
+
+\begin{figure*}[!t]
+ \centering
+ \includegraphics[width=0.32\linewidth]{results-21.png}\hfill
+ \includegraphics[width=0.32\linewidth]{results-22.png}\hfill
+ \includegraphics[width=0.32\linewidth]{results-23.png}
+ \caption{Population trajectories for identical (left), correlated (middle) and decorrelated (right) duplex layers under moderate infection rates ($\tau=1.3$).  Both memes go extinct in the first two cases, while decorrelation still fails to sustain them due to insufficient transmissibility.}
+ \label{fig:traj_tau13}
+\end{figure*}
+
+\begin{figure}[http]
+ \centering
+ \includegraphics[width=0.9\linewidth]{results-24.png}
+ \caption{Stable coexistence achieved on decorrelated layers with high transmissibility ($\beta_1=\beta_2=0.6$).  Final prevalences are roughly equal, consistent with analytical predictions.}
+ \label{fig:traj_coexist}
+\end{figure}
+
+%-----------------------------------------------------
+\section{Results}
+\label{sec:results}
+Figure~\ref{fig:traj_tau13} contrasts the epidemic trajectories for the three structural variants at effective infection rate $\tau=1.3$.  Despite exceeding the single–virus thresholds (Section~\ref{sec:methods}), stochastic simulations reveal complete extinction within $t\approx200$ for identical and correlated layers, and within $t\approx400$ even for the decorrelated case.  The mean–field analysis attributes this outcome to the competitive pressure that raises the winning thresholds $\tau_i^{\mathrm w}$ above~1.3 when $\rho>0.3$.
+
+Increasing the rates to $\beta_1=\beta_2=0.6$ (Fig.~\ref{fig:traj_coexist}) crosses the winning thresholds for the decorrelated network, leading to long–term coexistence: after transient oscillations both memes stabilise at roughly $38\%$ prevalence each.  Table~\ref{tab:metrics} summarises the key metrics extracted from simulations.  Notably, coexistence is never observed for $\rho\geq0.5$ even at high $\beta$, confirming the theoretical requirement of eigenvector misalignment.
+
+\begin{table}[!t]
+\centering
+\caption{Empirical epidemic metrics (average over 5 runs).}
+\begin{tabular}{lccccc}
+\hline
+Scenario & Peak $I_1$ & Peak $I_2$ & Final $I_1$ & Final $I_2$ & Peak Time\\\hline
+Identical, $\tau=1.3$ & 0.10 & 0.10 & 0 & 0 & $\approx40$\\
+Correlated, $\tau=1.3$ & 0.16 & 0.63 & 0 & 0 & $\approx2/357$\\
+Decorrelated, $\tau=1.3$ & 0.10 & 0.09 & 0 & 0 & $\approx30$\\
+Decorrelated, $\beta=0.6$ & 0.48 & 0.46 & 0.386 & 0.385 & $\approx50$\\\hline
+\end{tabular}
+\label{tab:metrics}
+\end{table}
+
+%-----------------------------------------------------
+\section{Discussion}
+\label{sec:disc}
+The juxtaposition of analytical thresholds and stochastic simulations offers several insights.  First, exceeding the classical mean–field threshold $\tau_i^{\mathrm s}$ is 
+\emph{necessary but not sufficient} for persistence under competition, corroborating the existence of higher winning thresholds.  Second, the eigenvector overlap $\rho$ emerges as a parsimonious scalar predictor of the parameter window that allows coexistence: the smaller $\rho$, the wider the window $(\tau^{\mathrm s},\tau^{\mathrm w})$ where both memes survive.  In practice, overlap maps onto how similarly influential the same individuals are across different communication channels.  Platforms that diversify influence (e.g., distinct recommendation algorithms) may hence foster content diversity, while homophily across channels promotes winner–take–all dynamics.
+
+Limitations include the reliance on synthetic networks and the first–order mean–field approximation.  Higher–order correlations, temporal fluctuations and non–exclusive behaviours (e.g., partial immunity) constitute avenues for future work.
+
+%-----------------------------------------------------
+\section{Conclusion}
+We provided a comprehensive study of two exclusive SIS processes on multiplex networks, deriving explicit analytical conditions and confirming them by large–scale simulations.  The decisive network feature enabling coexistence is low alignment of the layers’ leading eigenvectors, which enlarges the parameter domain where both contagions can persist.  The results advance our understanding of competitive spreading and inform the design of interventions aimed at promoting or suppressing diversity in interconnected systems.
+
+%-----------------------------------------------------
+\begin{thebibliography}{99}
+\bibitem{Sahneh2013} F.~Sahneh and C.~Scoglio, ``May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi–Layer Networks,'' \emph{arXiv preprint arXiv:1308.4880}, 2013.
+\bibitem{Sumathi2018} S.~Muthukumar, S.~Muthukrishnan and V.~Chinnadurai, ``Dynamic Behaviour of Competing Memes' Spread with Alert Influence in Multiplex Social Networks,'' \emph{Computing}, vol.~101, pp.~1177--1197, 2018.
+\bibitem{Tuncer2012} N.~Tuncer and M.~Martcheva, ``Analytical and Numerical Approaches to Coexistence of Strains in a Two–Strain SIS Model with Diffusion,'' \emph{Journal of Biological Dynamics}, vol.~6, pp.~406--439, 2012.
+\end{thebibliography}
+
+%-----------------------------------------------------
+\appendices
+\section{FastGEMF Schema Listing}
+\label{app:schema}
+\begin{verbatim}
+SIS2_schema = (
+    fg.ModelSchema('CompetitiveSIS')
+    .define_compartment(['S','I1','I2'])
+    .add_network_layer('layerA')
+    .add_network_layer('layerB')
+    .add_edge_interaction('infection1', from_state='S', to_state='I1',
+                          inducer='I1', network_layer='layerA', rate='beta1')
+    .add_edge_interaction('infection2', from_state='S', to_state='I2',
+                          inducer='I2', network_layer='layerB', rate='beta2')
+    .add_node_transition('recov1', from_state='I1', to_state='S', rate='delta1')
+    .add_node_transition('recov2', from_state='I2', to_state='S', rate='delta2'))
+\end{verbatim}
+
+\end{document}

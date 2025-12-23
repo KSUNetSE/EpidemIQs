@@ -1,0 +1,337 @@
+{
+    "results": [
+        {
+            "query": "critical vaccination fraction random immunization R0 1-1/R0 network targeted immunization degree-based",
+            "papers": [
+                {
+                    "paper_title": "Effectiveness and Cost-Effectiveness of Expanded Antiviral Prophylaxis and Adjuvanted Vaccination Strategies for an Influenza A (H5N1) Pandemic",
+                    "abstract": null,
+                    "citation": "N. Khazeni, D. Hutton, A. Garber... (2009). Effectiveness and Cost-Effectiveness of Expanded Antiviral Prophylaxis and Adjuvanted Vaccination Strategies for an Influenza A (H5N1) Pandemic. Annals of Internal Medicine, 151, 840-853. DOI: 10.7326/0003-4819-151-12-200912150-00156",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This decision model for pandemic planning suggests that stockpiling sufficient adjuvanted vaccine for immunizing 40% of the population is more effective and cost-effective than immunizing a smaller proportion of the Population or providing them with antiviral drugs."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "network immunization threshold vaccination random degree targeted Pastor Satorras 2002",
+            "papers": [
+                {
+                    "paper_title": "Immunization of complex networks.",
+                    "abstract": "Complex networks such as the sexual partnership web or the Internet often show a high degree of redundancy and heterogeneity in their connectivity properties. This peculiar connectivity provides an ideal environment for the spreading of infective agents. Here we show that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks. Namely, networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals. The absence of any critical immunization threshold is due to the unbounded connectivity fluctuations of scale-free networks. Successful immunization strategies can be developed only by taking into account the inhomogeneous connectivity properties of scale-free networks. In particular, targeted immunization schemes, based on the nodes' connectivity hierarchy, sharply lower the network's vulnerability to epidemic attacks.",
+                    "citation": "R. Pastor-Satorras, Alessandro Vespignani (2001). Immunization of complex networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 65 3 Pt 2A, \n          036104\n        . DOI: 10.1103/PhysRevE.65.036104",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the random uniform immunization of individuals does not lead to the eradication of infections in all complex networks, and networks with scale-free properties do not acquire global immunity from major epidemic outbreaks even in the presence of unrealistically high densities of randomly immunized individuals."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive SIS model multiplex network coexistence two pathogens exclusive infection",
+            "papers": [
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive SIS model multiplex network coexistence two pathogens",
+            "papers": [
+                {
+                    "paper_title": "Competitive exclusion and coexistence phenomena of a two-strain SIS model on complex networks from global perspectives",
+                    "abstract": "Genetic heterogeneity plays an important role in exploring the interplays of microorganisms. Competitive exclusion principle is the main principle that governs causative agentries of diseases competition. Identifying coexistence mechanisms is a core issue for studying the interactions of multi-strains. In this paper, we are concerned with the dynamics of a two-strain SIS epidemic model with general incidence rate on complex networks. We derive the basic reproduction numbers and the invasion reproduction numbers associated with each strain, which determine the competitive, exclusion and coexistence of the two strains. We strictly prove that the competitive exclusion principle holds in a global sense and the endemic equilibrium coexists uniquely and globally. Numerical examples visibly illustrate the evolution of the two strains.",
+                    "citation": "Xiaoyan Wang, Junyuan Yang, Xiao-feng Luo (2022). Competitive exclusion and coexistence phenomena of a two-strain SIS model on complex networks from global perspectives. Journal of Applied Mathematics & Computing, 68, 4415 - 4433. DOI: 10.1007/s12190-022-01712-3",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Towards Understanding the Endemic Behavior of a Competitive Tri-Virus SIS Networked Model",
+                    "abstract": "This paper studies the endemic behavior of a multi-competitive networked susceptible-infected-susceptible (SIS) model. Specifically, the paper deals with three competing virus systems (i.e., tri-virus systems). First, we show that a tri-virus system, unlike a bi-virus system, is not a monotone dynamical system. Using the Parametric Transversality Theorem, we show that, generically, a tri-virus system has a finite number of equilibria and that the Jacobian matrices associated with each equilibrium are nonsingular. The endemic equilibria of this system can be classified as follows: a) single-virus endemic equilibria (also referred to as the boundary equilibria), where precisely one of the three viruses is alive; b) 2-coexistence equilibria, where exactly two of the three viruses are alive; and c) 3-coexistence equilibria, where all three viruses survive in the network. We provide a necessary and sufficient condition that guarantees local exponential convergence to a boundary equilibrium. Further, we secure conditions for the nonexistence of 3-coexistence equilibria (resp. for various forms of 2-coexistence equilibria). We also identify sufficient conditions for the existence of a 2-coexistence (resp. 3-coexistence) equilibrium. We identify conditions on the model parameters that give rise to a continuum of coexistence equilibria. More specifically, we establish i) a scenario that admits the existence and local exponential attractivity of a line of coexistence equilibria; and ii) scenarios that admit the existence of, and, in the case of one such scenario, global convergence to, a plane of 3-coexistence equilibria.",
+                    "citation": "S. Gracy, Mengbin Ye, B. Anderson... (2023). Towards Understanding the Endemic Behavior of a Competitive Tri-Virus SIS Networked Model. ArXiv, abs/2303.16457. DOI: 10.1137/23M1563074",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Competitive Networked Bivirus SIS Spread Over Hypergraphs",
+                    "abstract": "The paper deals with the spread of two competing viruses over a network of population nodes, accounting for pair-wise interactions and higher-order interactions (HOI) within and between the population nodes. We study the competitive networked bivirus susceptible-infected-susceptible (SIS) model on a hypergraph introduced in Cui et al. [1]. We show that the system has, in a generic sense, a finite number of equilibria, and the Jacobian associated with each equilibrium point is nonsingular; the key tool is the Parametric Transver-sality Theorem of differential topology. Since the system is also monotone, it turns out that the typical behavior of the system is convergence to some equilibrium point. Thereafter, we exhibit a tri-stable domain with three locally exponentially stable equilibria. For different parameter regimes, we establish conditions for the existence of a coexistence equilibrium (both viruses infect separate fractions of each population node).",
+                    "citation": "S. Gracy, Brian D. Anderson, Mengbin Ye... (2023). Competitive Networked Bivirus SIS Spread Over Hypergraphs. 2024 American Control Conference (ACC), 4409-4415. DOI: 10.23919/ACC60939.2024.10644646",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches",
+                    "abstract": null,
+                    "citation": "Mengfeng Sun, Xinchu Fu (2023). Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches. Journal of Mathematical Biology, 87, 1-39. DOI: 10.1007/s00285-023-01945-1",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The numerical results suggest that the spread of a two-strain epidemic can be controlled by taking the measures of enhancing awareness transmission, reducing memory fading of aware individuals and ensuring high-level influx and rapid growth of awareness programs appropriately."
+                    }
+                },
+                {
+                    "paper_title": "The Equilibrium Analysis for Competitive Spreading Over Networks With Mutations",
+                    "abstract": "Epidemic models have been used to analyze various spreading phenomena in the population, and usually consider that the spreading object does not change in the spreading process. Yet generally, the virus may evolve due to the influence of environments and medical interventions, or the information may be modified by individuals in networks. In this letter, we investigate the spread of two competing viruses in a network, where one of the viruses can mutate into the other one with a certain probability. Based on the multi-group susceptible-infected-susceptible (SIS) model, a mathematical model is proposed to describe the spread of viruses with mutations. We provide a necessary and sufficient condition for the uniqueness of the zero equilibrium, and the conditions for the existence, uniqueness, and local exponential stability of the coexisting equilibrium. Our results demonstrate that the mutation can affect the spreading ability of the virus and the coexistence of viruses. Moreover, we show the effect of mutation on the proportion of infected individuals by comparing it with the model without mutation.",
+                    "citation": "Xue Lin, Qiang Jiao (2024). The Equilibrium Analysis for Competitive Spreading Over Networks With Mutations. IEEE Control Systems Letters, 8, 1709-1714. DOI: 10.1109/LCSYS.2024.3415457",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Competitive Exclusion and Coexistence of Pathogens in a Homosexually-Transmitted Disease Model",
+                    "abstract": "A sexually-transmitted disease model for two strains of pathogen in a one-sex, heterogeneously-mixing population has been studied completely by Jiang and Chai in (J Math Biol 56:373\u2013390, 2008). In this paper, we give a analysis for a SIS STD with two competing strains, where populations are divided into three differential groups based on their susceptibility to two distinct pathogenic strains. We investigate the existence and stability of the boundary equilibria that characterizes competitive exclusion of the two competing strains; we also investigate the existence and stability of the positive coexistence equilibrium, which characterizes the possibility of coexistence of the two strains. We obtain sufficient and necessary conditions for the existence and global stability about these equilibria under some assumptions. We verify that there is a strong connection between the stability of the boundary equilibria and the existence of the coexistence equilibrium, that is, there exists a unique coexistence equilibrium if and only if the boundary equilibria both exist and have the same stability, the coexistence equilibrium is globally stable or unstable if and only if the two boundary equilibria are both unstable or both stable.",
+                    "citation": "Caichun Chai, Jifa Jiang (2011). Competitive Exclusion and Coexistence of Pathogens in a Homosexually-Transmitted Disease Model. PLoS ONE, 6. DOI: 10.1371/journal.pone.0016467",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A analysis for a SIS STD with two competing strains, where populations are divided into three differential groups based on their susceptibility to two distinct pathogenic strains, to verify that there is a strong connection between the stability of the boundary equilibria and the existence of the coexistence equilibrium."
+                    }
+                },
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive epidemic spreading over arbitrary multilayer networks",
+            "papers": [
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "Competitive Epidemic Spreading Over Networks",
+                    "abstract": "In this letter, we consider an epidemic model for two competitive viruses spreading over a metapopulation network, termed the \u2018bivirus model\u2019 for convenience. The dynamics are described by a networked continuous-time dynamical system, with each node representing a population and edges representing infection pathways for the viruses. We survey existing results on the bivirus model beginning with the nature of the equilibria, including whether they are isolated, and where they exist within the state space with the corresponding interpretation in the context of epidemics. We identify key convergence results, including the conclusion that for generic system parameters, global convergence occurs for almost all initial conditions. Conditions relating to the stability properties of various equilibria are also presented. In presenting these results, we also recall some of the key tools and theories used to secure them. We conclude by discussing the various open problems, ranging from control and network optimization, to further characterization of equilibria, and finally extensions such as modeling three or more viruses.",
+                    "citation": "Mengbin Ye, B.D.O. Anderson (2023). Competitive Epidemic Spreading Over Networks. IEEE Control Systems Letters, 7, 545-552. DOI: 10.1109/LCSYS.2022.3199165",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Epidemic spreading and bond percolation on multilayer networks",
+                    "abstract": "The susceptible-infected-recovered (SIR) model is studied in multilayer networks with arbitrary number of links across the layers. By following the mapping to bond percolation we give the analytical expression for the epidemic threshold and the fraction of the infected individuals in arbitrary number of layers. These results provide an exact prediction of the epidemic threshold for infinite locally tree-like multilayer networks, and an lower bound of the epidemic threshold for more general multilayer networks. The case of a multilayer network formed by two interconnected networks is specifically studied as a function of the degree distribution within and across the layers. We show that the epidemic threshold strongly depends on the degree correlations of the multilayer structure. Finally we relate our results to the results obtained in the annealed approximation for the Susceptible-Infected-Susceptible (SIS) model.",
+                    "citation": "G. Bianconi (2016). Epidemic spreading and bond percolation on multilayer networks. Journal of Statistical Mechanics: Theory and Experiment, 2017. DOI: 10.1088/1742-5468/aa5fd8",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The susceptible-infected-recovered (SIR) model is studied in multilayer networks with arbitrary number of links across the layers and it is shown that the epidemic threshold strongly depends on the degree correlations of the multilayers structure."
+                    }
+                },
+                {
+                    "paper_title": "The Equilibrium Analysis for Competitive Spreading Over Networks With Mutations",
+                    "abstract": "Epidemic models have been used to analyze various spreading phenomena in the population, and usually consider that the spreading object does not change in the spreading process. Yet generally, the virus may evolve due to the influence of environments and medical interventions, or the information may be modified by individuals in networks. In this letter, we investigate the spread of two competing viruses in a network, where one of the viruses can mutate into the other one with a certain probability. Based on the multi-group susceptible-infected-susceptible (SIS) model, a mathematical model is proposed to describe the spread of viruses with mutations. We provide a necessary and sufficient condition for the uniqueness of the zero equilibrium, and the conditions for the existence, uniqueness, and local exponential stability of the coexisting equilibrium. Our results demonstrate that the mutation can affect the spreading ability of the virus and the coexistence of viruses. Moreover, we show the effect of mutation on the proportion of infected individuals by comparing it with the model without mutation.",
+                    "citation": "Xue Lin, Qiang Jiao (2024). The Equilibrium Analysis for Competitive Spreading Over Networks With Mutations. IEEE Control Systems Letters, 8, 1709-1714. DOI: 10.1109/LCSYS.2024.3415457",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Spreading Processes With Layer-Dependent Population Heterogeneity Over Multilayer Networks",
+                    "abstract": "The study of spreading processes on complex networks has gained significant attention recently. For example, bond percolation models considering population heterogeneity have been used to provide insights into disease spread and misinformation control. However, most of these studies focus on single-layer contact networks. In our work, we examine how the spreading process is impacted by the existence of multiple contact network layers, considering layer-dependent population heterogeneity from a principled, mathematical perspective. Using SIR dynamics, we derive expressions for three key epidemiological measures: the probability of emergence, the epidemic threshold, and the expected epidemic size. Through extensive simulations, we demonstrate that our analytical results match the numerical results near-perfectly in the finite node regime. These findings reveal the interplay among the multi-layer network structures, transmission dynamics, and population heterogeneity in determining the final outcome of the spreading process. Furthermore, we investigate the impact of layer-dependent population heterogeneity and identify important factors for developing effective and economical layer-oriented spreading control strategies. Overall, our work provides insights into developing and analyzing mitigation and control strategies for disease spread and information diffusion across multi-layer complex networks.",
+                    "citation": "Yurun Tian, Osman Ya\u011fan (2024). Spreading Processes With Layer-Dependent Population Heterogeneity Over Multilayer Networks. IEEE Transactions on Network Science and Engineering, 11, 4106-4119. DOI: 10.1109/TNSE.2024.3396730",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Optimal Control of a Discrete Time Stochastic Model of an Epidemic Spreading in Arbitrary Networks",
+                    "abstract": "Preparedness for any future epidemic has become an urgent need. Epidemic modeling and simulation are at the core of the healthcare efforts that are underway to assert some level of control over the spreading and the treatment of a pathogen. In this milieu, this paper describes a stochastic dynamic model to simulate the spreading of infectious diseases. We present the equations that describe the system dynamics, their adjoint systems, and their optimal control characterization by means of the discrete-system extension of Pontryagin's Maximum Principle. This derivation is presented in two different cases: a vaccination policy and a combined vaccination-treatment approach. We show the behavior of such models via numerical simulations using the forward-backward sweep procedure. While somewhat speculative, this paper provides insights into how to evaluate different theoretical optimal healthcare policies during an epidemic, either at the individual or metapopulation resolution level.",
+                    "citation": "Fabrizio Angaroni, Chiara Damiani, Giulia Ramunni... (2021). Optimal Control of a Discrete Time Stochastic Model of an Epidemic Spreading in Arbitrary Networks. 2021 Annual Modeling and Simulation Conference (ANNSIM), 1-12. DOI: 10.23919/ANNSIM52504.2021.9552097",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Insight is provided into how to evaluate different theoretical optimal healthcare policies during an epidemic, either at the individual or metapopulation resolution level, using the forward-backward sweep procedure."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive epidemics exclusive SIS multiplex networks coexistence network eigenvalue threshold",
+            "papers": [
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive SIS model multiplex network coexistence dominance effective infection rate threshold",
+            "papers": [
+                {
+                    "paper_title": "Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches",
+                    "abstract": null,
+                    "citation": "Mengfeng Sun, Xinchu Fu (2023). Competitive dual-strain SIS epidemiological models with awareness programs in heterogeneous networks: two modeling approaches. Journal of Mathematical Biology, 87, 1-39. DOI: 10.1007/s00285-023-01945-1",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The numerical results suggest that the spread of a two-strain epidemic can be controlled by taking the measures of enhancing awareness transmission, reducing memory fading of aware individuals and ensuring high-level influx and rapid growth of awareness programs appropriately."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Mutually exclusive competitive SIS model multiplex networks coexistence degree correlation",
+            "papers": [
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive SIS model two viruses multiplex network coexistence dominance eigenvector overlap",
+            "papers": [
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "competitive epidemic two viruses exclusive SIS multilayer threshold coexistence eigenvalue condition",
+            "papers": [
+                {
+                    "paper_title": "Competitive epidemic spreading over arbitrary multilayer networks.",
+                    "abstract": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to an Susceptible-Infected by virus 1-Susceptible-Infected by virus 2-Susceptible (SI_{1}SI_{2}S) epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical expressions determining extinction, coexistence, and absolute dominance of the viruses after we introduce the concepts of survival threshold and absolute-dominance threshold. The main outcome of our analysis is the discovery and proof of a region for long-term coexistence of competitive viruses in nontrivial multilayer networks. We show coexistence is impossible if network layers are identical yet possible if network layers are distinct. Not only do we rigorously prove a region of coexistence, but we can quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of the layers' central nodes is the key determinant of coexistence. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive, while in a network with negatively correlated layers, survival is easier, but total removal of the other virus is more difficult.",
+                    "citation": "Faryad Darabi Sahneh, C. Scoglio (2014). Competitive epidemic spreading over arbitrary multilayer networks.. Physical review. E, Statistical, nonlinear, and soft matter physics, 89 6, \n          062817\n        . DOI: 10.1103/PHYSREVE.89.062817",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the Susceptible-Infected-Susceptible (SIS) epidemic model for single-virus propagation over an arbitrary graph to a model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                },
+                {
+                    "paper_title": "May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks",
+                    "abstract": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses. We find analytical results determining extinction, mutual exclusion, and coexistence of the viruses by introducing the concepts of survival threshold and winning threshold. Furthermore, we show the possibility of coexistence in SIS-type competitive spreading over multilayer networks. Not only do we rigorously prove a region of coexistence, we quantitate it via interrelation of central nodes across the network layers. Little to no overlapping of layers central nodes is the key determinant of coexistence. Specifically, we show coexistence is impossible if network layers are identical yet possible if the network layers have distinct dominant eigenvectors and node degree vectors. For example, we show both analytically and numerically that positive correlation of network layers makes it difficult for a virus to survive while in a network with negatively correlated layers survival is easier but total removal of the other virus is more difficult. We believe our methodology has great potentials for application to broader classes of multi-pathogen spreading over multi-layer and interconnected networks.",
+                    "citation": "F. Sahneh, C. Scoglio (2013). May the Best Meme Win!: New Exploration of Competitive Epidemic Spreading over Arbitrary Multi-Layer Networks. ArXiv, abs/1308.4880. DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study extends the SIS epidemic model for single virus propagation over an arbitrary graph to an SI1SI2S epidemic model of two exclusive, competitive viruses over a two-layer network with generic structure, where network layers represent the distinct transmission routes of the viruses."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "activity driven network epidemic threshold SIR",
+            "papers": [
+                {
+                    "paper_title": "Epidemic spreading and aging in temporal networks with memory",
+                    "abstract": "Time-varying network topologies can deeply influence dynamical processes mediated by them. Memory effects in the pattern of interactions among individuals are also known to affect how diffusive and spreading phenomena take place. In this paper we analyze the combined effect of these two ingredients on epidemic dynamics on networks. We study the susceptible-infected-susceptible (SIS) and the susceptible-infected-recovered (SIR) models on the recently introduced activity-driven networks with memory. By means of an activity-based mean-field approach, we derive, in the long-time limit, analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects. Our results show that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading. The theoretical approach perfectly agrees with numerical simulations in the long-time asymptotic regime. Strong aging effects are present in the preasymptotic regime and the epidemic threshold is deeply affected by the starting time of the epidemics. We discuss in detail the origin of the model-dependent preasymptotic corrections, whose understanding could potentially allow for epidemic control on correlated temporal networks.",
+                    "citation": "Michele Tizzani, Simone Lenti, Enrico Ubaldi... (2018). Epidemic spreading and aging in temporal networks with memory. Physical Review. E, 98. DOI: 10.1103/PhysRevE.98.062315",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper derives analytical predictions for the epidemic threshold as a function of the parameters describing the distribution of activities and the strength of the memory effects and shows that memory reduces the threshold, which is the same for SIS and SIR dynamics, therefore favoring epidemic spreading."
+                    }
+                },
+                {
+                    "paper_title": "Impact of temporal connectivity patterns on epidemic process",
+                    "abstract": "To provide a comprehensive view for dynamics of and on many real- world temporal networks, we investigate the interplay of temporal connectivity patterns and spreading phenomena, in terms of the susceptible-infected-removed (SIR) model on the modified activity-driven temporal network (ADTN) with memory. In particular, we focus on how the epidemic threshold of the SIR model is affected by the heterogeneity of nodal activities and the memory strength in temporal and static regimes, respectively. While strong ties (memory) between nodes inhibit the spread of epidemic to be localized, the heterogeneity of nodal activities enhances it to be globalized initially. Since the epidemic threshold of the SIR model is very sensitive to the degree distribution of nodes in static networks, we test the SIR model on the modified ADTNs with the possible set of the activity exponents and the memory exponents that generates the same degree distributions in temporal networks. We also discuss the role of spatiotemporal scaling properties of the largest cluster and the maximum degree in the epidemic threshold. It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network. This implies that there is the trade-off between the spreading time of epidemic and its outbreak size. Finally, we suggest the phase diagram of the SIR model on ADTNs and the optimal condition for the spread of epidemic under the circumstances.",
+                    "citation": "Hyewon Kim, Meesoon Ha, Hawoong Jeong (2019). Impact of temporal connectivity patterns on epidemic process. The European Physical Journal B, 92. DOI: 10.1140/epjb/e2019-100159-1",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is observed that the presence of highly active nodes enables to trigger the initial spread of epidemic in a short period of time, but it also limits its final spread to the entire network, which implies that there is the trade-off between the spreading time of epidemic and its outbreak size."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic Spreading in Non-Markovian Time-Varying Networks",
+                    "abstract": "Most real networks are characterized by connectivity patterns that evolve in time following complex, non-Markovian, dynamics. Here we investigate the impact of this ubiquitous feature by studying the Susceptible-Infected-Recovered (SIR) and Susceptible-Infected-Susceptible (SIS) epidemic models on activity driven networks with and without memory (i.e., Markovian and non-Markovian). We show that while memory inhibits the spreading process in SIR models, where the epidemic threshold is moved to larger values, it plays the opposite effect in the case of the SIS, where the threshold is lowered. The heterogeneity in tie strengths, and the frequent repetition of connections that it entails, allows in fact less virulent SIS-like diseases to survive in tightly connected local clusters that serve as reservoir for the virus. We validate this picture by evaluating the threshold of both processes in a real temporal network. Our findings confirm the important role played by non-Markovian network dynamics on dynamical processes.",
+                    "citation": "K. Sun, Andrea Baronchelli, N. Perra (2014). Epidemic Spreading in Non-Markovian Time-Varying Networks. ArXiv, abs/1404.1006. DOI: 10.1140/epjb/e2015-60568-4",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that while memory inhibits the spreading process in SIR models, it plays the opposite effect in the case of the SIS, where the threshold is lowered, and this picture is validated by evaluating the threshold of both processes in a real temporal network."
+                    }
+                },
+                {
+                    "paper_title": "Joint effect of individual\u2019s memory and attractiveness in temporal network on spreading dynamics",
+                    "abstract": "Most real networks have been found to evolve dynamically. In addition, heterogeneity of interaction strengths and individual\u2019s memory have been proved to be important to affect network evolution in the area of complex networks. Based on a recent extension of the activity-driven modeling framework, i.e. activity-driven model with attractiveness, where individuals are characterized by their activities and attractiveness, we propose a new temporal network model by considering individuals\u2019 memory. Similar to the previous network model, we also investigate heterogeneous distributions and different correlations between the two variables (activity and attractiveness). By numerical simulations, we illustrate the impact of memory on epidemic spreading processes unfolding on the proposed model. We find that, when individuals\u2019 attractiveness is fixed, memory does not cause dramatic change on the epidemic threshold in the SIR process, but it inhibits the epidemic spreading by reducing the infected ratio. While for the SIS process, in the case of uncorrelated and positive correlations between the two variables, memory facilitates the epidemic outbreaks by shrinking the epidemic threshold. When the two variables are negatively correlated, memory does not take obvious impact on the epidemic threshold. Besides, for the two processes unfolding on the network with and without memory, the propagation threshold decreases with the enhancement of the positive correlation, however, it almost does not get much influence from the negative correlation strength. It indicates that for the individuals with same activity, more attractive individuals will promote the disease spread. The findings deepen our understanding of the role of individuals\u2019 memory and their attractiveness in the epidemic spreading process.",
+                    "citation": "Mei Yang, B. Wang, Yuexing Han (2019). Joint effect of individual\u2019s memory and attractiveness in temporal network on spreading dynamics. International Journal of Modern Physics C. DOI: 10.1142/S0129183119500116",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is found that for the individuals with same activity, more attractive individuals will promote the disease spread, and for the two processes unfolding on the network with and without memory, the propagation threshold decreases with the enhancement of the positive correlation, however, it almost does not get much influence from the negative correlation strength."
+                    }
+                },
+                {
+                    "paper_title": "Contagion dynamics in time-varying metapopulation networks",
+                    "abstract": "The metapopulation framework is adopted in a wide array of disciplines to describe systems of well separated yet connected subpopulations. The subgroups or patches are often represented as nodes in a network whose links represent the migration routes among them. The connections have been so far mostly considered as static, but in general evolve in time. Here we address this case by investigating simple contagion processes on time-varying metapopulation networks. We focus on the SIR process and determine analytically the mobility threshold for the onset of an epidemic spreading in the framework of activity-driven network models. We find profound differences from the case of static networks. The threshold is entirely described by the dynamical parameters defining the average number of instantaneously migrating individuals and does not depend on the properties of the static network representation. Remarkably, the diffusion and contagion processes are slower in time-varying graphs than in their aggregated static counterparts, the mobility threshold being even two orders of magnitude larger in the first case. The presented results confirm the importance of considering the time-varying nature of complex networks.",
+                    "citation": "Suyu Liu, Andrea Baronchelli, N. Perra (2012). Contagion dynamics in time-varying metapopulation networks. ArXiv, abs/1210.2776. DOI: 10.1103/PhysRevE.87.032805",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work focuses on the SIR process and determines analytically the mobility threshold for the onset of an epidemic spreading in the framework of activity-driven network models, and finds profound differences from the case of static networks."
+                    }
+                },
+                {
+                    "paper_title": "Activity-driven network modeling and control of the spread of two concurrent epidemic strains",
+                    "abstract": "The emergency generated by the current COVID-19 pandemic has claimed millions of lives worldwide. There have been multiple waves across the globe that emerged as a result of new variants, due to arising from unavoidable mutations. The existing network toolbox to study epidemic spreading cannot be readily adapted to the study of multiple, coexisting strains. In this context, particularly lacking are models that could elucidate re-infection with the same strain or a different strain\u2014phenomena that we are seeing experiencing more and more with COVID-19. Here, we establish a novel mathematical model to study the simultaneous spreading of two strains over a class of temporal networks. We build on the classical susceptible\u2013exposed\u2013infectious\u2013removed model, by incorporating additional states that account for infections and\u00a0re-infections with multiple strains. The temporal network is based on the activity-driven network paradigm, which has emerged as a model of choice to study dynamic processes that unfold at a time scale comparable to the network evolution. We draw analytical insight from the dynamics of the stochastic network systems through a mean-field approach, which allows for characterizing the onset of different behavioral phenotypes (non-epidemic, epidemic, and endemic). To demonstrate the practical use of the model, we examine an intermittent stay-at-home containment strategy, in which a fraction of the population is randomly required to isolate for a\u00a0fixed period of time.",
+                    "citation": "D. Burbano, Lorenzo Zino, S. Butail... (2022). Activity-driven network modeling and control of the spread of two concurrent epidemic strains. Applied Network Science, 7. DOI: 10.1007/s41109-022-00507-6",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A novel mathematical model to study the simultaneous spreading of two strains over a class of temporal networks is established, based on the classical susceptible\u2013exposed\u2013infectious\u2013removed model, by incorporating additional states that account for infections and\u00a0re-infections with multiple strains."
+                    }
+                },
+                {
+                    "paper_title": "Impact of simplicial complexes on epidemic spreading in partially mapping activity-driven multiplex networks.",
+                    "abstract": "Over the past decade, the coupled spread of information and epidemic on multiplex networks has become an active and interesting topic. Recently, it has been shown that stationary and pairwise interactions have limitations in describing inter-individual interactions , and thus, the introduction of higher-order representation is significant. To this end, we present a new two-layer activity-driven network epidemic model, which considers the partial mapping relationship among nodes across two layers and simultaneously introduces simplicial complexes into one layer, to investigate the effect of 2-simplex and inter-layer mapping rate on epidemic transmission. In this model, the top network, called the virtual information layer, characterizes information dissemination in online social networks, where information can be diffused through simplicial complexes and/or pairwise interactions. The bottom network, named as the physical contact layer, denotes the spread of infectious diseases in real-world social networks. It is noteworthy that the correspondence among nodes between two networks is not one-to-one but partial mapping. Then, a theoretical analysis using the microscopic Markov chain (MMC) method is performed to obtain the outbreak threshold of epidemics, and extensive Monte Carlo (MC) simulations are also carried out to validate the theoretical predictions. It is obviously shown that MMC method can be used to estimate the epidemic threshold; meanwhile, the inclusion of simplicial complexes in the virtual layer or introductory partial mapping relationship between layers can inhibit the spread of epidemics. Current results are conducive to understanding the coupling behaviors between epidemics and disease-related information.",
+                    "citation": "Shuofan Zhang, Dawei Zhao, Cheng-yi Xia... (2023). Impact of simplicial complexes on epidemic spreading in partially mapping activity-driven multiplex networks.. Chaos, 33 6. DOI: 10.1063/5.0151881",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new two-layer activity-driven network epidemic model is presented, which considers the partial mapping relationship among nodes across two layers and simultaneously introduces simplicial complexes into one layer, to investigate the effect of 2-simplex and inter-layer mapping rate on epidemic transmission."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

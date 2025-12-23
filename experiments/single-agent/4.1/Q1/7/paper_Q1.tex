@@ -1,0 +1,28 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{Epidemic Spread Analysis of SIR Model over Static Scale-Free Networks}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% Abstract
+\begin{abstract}
+Simulation-based modeling of infectious disease spread on contact networks has witnessed notable development, particularly for large heterogeneous populations where network topology fundamentally affects epidemic outcomes. In this work, we investigate the Susceptible-Infectious-Recovered (SIR) model over a Barabási–Albert (scale-free) static network using mechanistic parameters validated by recent literature, to elucidate the trajectory and containment of potential outbreaks seeded by small initial infections. Our results, obtained with a stochastic simulation of 1000-node networks using parameterization corresponding to $R_0 \approx 2.6$, show that the network structure and the sparsity of initial infections can contain epidemic outbreaks before they reach large portions of the population. The analysis quantifies epidemic size, peak infection, and epidemic duration, providing empirical support for the strong impact of network topology and initial seed size on fading out or sustaining an epidemic over scale-free structures.
+\end{abstract}
+
+\section{Introduction}
+Epidemics are complex dynamical phenomena whose outcomes depend on both disease biological parameters and the structure of interactions in the host population. Classical models such as the Susceptible-Infectious-Recovered (SIR) framework have elucidated much of the macroscopic behavior of infectious outbreaks \cite{AntulovFantulin2014,Bhat2024}. However, the last two decades have shown convincingly that contact network heterogeneity---especially as typified by scale-free (Barabási–Albert) structures---results in epidemic patterns that can differ dramatically from well-mixed population models. Understanding how real-world contact topologies shape possible future trajectories of infectious agents, including high-impact human pathogens such as SARS-CoV-2, is a central challenge \cite{Bhat2024,Alves2020}.
+
+Traditional compartment models (SIR, SEIR, SI) describe disease transmission at the population level, often assuming homogenous mixing of hosts \cite{AntulovFantulin2014}. In contrast, network-based approaches allow researchers to incorporate the heterogeneity in contact structure, degree distribution, and clustering seen in empirical networks of human interaction \cite{Bhat2024}. Scale-free networks, characterized by a power-law degree distribution, capture both the presence of superspreaders and the resilience of the epidemic process to random node removal, suggesting different control and containment strategies compared to classical models. The Barabási–Albert (BA) model, in particular, is widely used to approximate such real-world contact structures \cite{Bhat2024,Alves2020}.
+
+Recent literature further integrates advanced estimation and hybrid simulation methods---including stochastic mechanistic modeling, machine learning, and graph neural networks---to explore high-dimensional parameter impacts and real-time forecasting abilities \cite{Backhausz2024,Duron2022}. Notably, the basic reproduction number $R_0$ is found to depend not only on infection and recovery rates but crucially on network topology, most saliently through mean degree and degree variance \cite{Bhat2024,AntulovFantulin2014}.
+
+Despite these advances, there remains a substantial gap in systematic, large-scale simulations that link the probabilistic fate of epidemic outbreaks to the exact combination of network architecture and very low numbers of initial seeds. Many existing studies focus on mean field or high-prevalence scenarios, overlooking the possibility of rapid fadeout, limited secondary transmission, and variability caused by network sparsity and stochasticity. Our goal in this paper is to simulate and analyze the SIR process over Barabási–Albert networks with mechanistically inspired parameters, closely resembling realistic scenarios with small introduction sizes. We focus on outcome metrics such as final epidemic size, peak infection, epidemic duration, and provide interpretive discussion in the context of the current literature.
+
+The remainder of this paper is organized as follows. Section II describes the methodology, including the model, network generation, parameterization, and simulation setup. Section III presents the results, including visual and quantitative analyses. Section IV discusses the implications and situates our findings within the broader research context, and Section V concludes. References and appendices include all literature and code artifacts used.
+

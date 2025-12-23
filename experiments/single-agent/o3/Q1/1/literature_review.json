@@ -1,0 +1,160 @@
+{
+    "results": [
+        {
+            "query": "effect of degree heterogeneity on SEIR model epidemic threshold scale-free network",
+            "papers": [
+                {
+                    "title": "Asymptotic behavior of an SIQR epidemic model driven by L\u00b4evy jumps on scale-free networks",
+                    "abstract": null,
+                    "citation": "Asymptotic, behavior of an, epidemic, et al. (None). Asymptotic behavior of an SIQR epidemic model driven by L\u00b4evy jumps on scale-free networks. Unknown Journal. Citations: 0, Influential: 0.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/73baa7d1b4b38011bdc86d012429d793038e8347"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "network heterogeneity reproduction number SEIR degree",
+            "papers": [
+                {
+                    "title": "An Econometric Model of Network Formation With Degree Heterogeneity",
+                    "abstract": null,
+                    "citation": "B. Graham (2017). An Econometric Model of Network Formation With Degree Heterogeneity. Unknown Journal. Citations: 216, Influential: 47.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/6281442005e9b3f998b98f1cbe7af6417e65c860"
+                },
+                {
+                    "title": "Quantifying network heterogeneity.",
+                    "abstract": null,
+                    "citation": "Ernesto Estrada (2010). Quantifying network heterogeneity.. Physical review. E, Statistical, nonlinear, and soft matter physics. Citations: 146, Influential: 21.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that this heterogeneity index can be expressed as a quadratic form of the Laplacian matrix of the network, which allows a spectral representation of network heterogeneity and gives bounds for this index, which is equal to zero for any regular network and equal to one only for star graphs."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/e8e1e4091b784a3ccb898b21809f00dc4d48ef3d"
+                },
+                {
+                    "title": "A Simulation of a COVID-19 Epidemic Based on a Deterministic SEIR Model",
+                    "abstract": "An epidemic disease caused by a new coronavirus has spread in Northern Italy with a strong contagion rate. We implement an SEIR model to compute the infected population and the number of casualties of this epidemic. The example may ideally regard the situation in the Italian Region of Lombardy, where the epidemic started on February 24, but by no means attempts to perform a rigorous case study in view of the lack of suitable data and the uncertainty of the different parameters, namely, the variation of the degree of home isolation and social distancing as a function of time, the initial number of exposed individuals and infected people, the incubation and infectious periods, and the fatality rate. First, we perform an analysis of the results of the model by varying the parameters and initial conditions (in order for the epidemic to start, there should be at least one exposed or one infectious human). Then, we consider the Lombardy case and calibrate the model with the number of dead individuals to date (May 5, 2020) and constrain the parameters on the basis of values reported in the literature. The peak occurs at day 37 (March 31) approximately, with a reproduction ratio R0 of 3 initially, 1.36 at day 22, and 0.8 after day 35, indicating different degrees of lockdown. The predicted death toll is approximately 15,600 casualties, with 2.7 million infected individuals at the end of the epidemic. The incubation period providing a better fit to the dead individuals is 4.25 days, and the infectious period is 4 days, with a fatality rate of 0.00144/day [values based on the reported (official) number of casualties]. The infection fatality rate (IFR) is 0.57%, and it is 2.37% if twice the reported number of casualties is assumed. However, these rates depend on the initial number of exposed individuals. If approximately nine times more individuals are exposed, there are three times more infected people at the end of the epidemic and IFR = 0.47%. If we relax these constraints and use a wider range of lower and upper bounds for the incubation and infectious periods, we observe that a higher incubation period (13 vs. 4.25 days) gives the same IFR (0.6 vs. 0.57%), but nine times more exposed individuals in the first case. Other choices of the set of parameters also provide a good fit to the data, but some of the results may not be realistic. Therefore, an accurate determination of the fatality rate and characteristics of the epidemic is subject to knowledge of the precise bounds of the parameters. Besides the specific example, the analysis proposed in this work shows how isolation measures, social distancing, and knowledge of the diffusion conditions help us to understand the dynamics of the epidemic. Hence, it is important to quantify the process to verify the effectiveness of the lockdown.",
+                    "citation": "J. Carcione, J. Santos, C. Bagaini, et al. (2020). A Simulation of a COVID-19 Epidemic Based on a Deterministic SEIR Model. Frontiers in Public Health. Citations: 303, Influential: 15.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An SEIR model is implemented to compute the infected population and the number of casualties of an epidemic disease caused by a new coronavirus in Northern Italy with a strong contagion rate and shows how isolation measures, social distancing, and knowledge of the diffusion conditions help to understand the dynamics of the epidemic."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/84eeb76696c4c28099b86708a8a4fd5c82381790"
+                },
+                {
+                    "title": "Optimal Estimation of the Number of Network Communities",
+                    "abstract": "Abstract In network analysis, how to estimate the number of communities K is a fundamental problem. We consider a broad setting where we allow severe degree heterogeneity and a wide range of sparsity levels, and propose Stepwise Goodness of Fit (StGoF) as a new approach. This is a stepwise algorithm, where for , we alternately use a community detection step and a goodness of fit (GoF) step. We adapt SCORE Jin for community detection, and propose a new GoF metric. We show that at step m, the GoF metric diverges to in probability for all m < K and converges to N(0, 1) if m = K. This gives rise to a consistent estimate for K. Also, we discover the right way to define the signal-to-noise ratio (SNR) for our problem and show that consistent estimates for K do not exist if , and StGoF is uniformly consistent for K if . Therefore, StGoF achieves the optimal phase transition. Similar stepwise methods are known to face analytical challenges. We overcome the challenges by using a different stepwise scheme in StGoF and by deriving sharp results that are not available before. The key to our analysis is to show that SCORE has the Nonsplitting Property (NSP). Primarily due to a nontractable rotation of eigenvectors dictated by the Davis\u2013Kahan theorem, the NSP is nontrivial to prove and requires new techniques we develop. Supplementary materials for this article are available online.",
+                    "citation": "Jiashun Jin, Z. Ke, Shengming Luo, et al. (2022). Optimal Estimation of the Number of Network Communities. Journal of the American Statistical Association. Citations: 39, Influential: 6.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The key to the analysis is to show that SCORE has the Nonsplitting Property (NSP), primarily due to a nontractable rotation of eigenvectors dictated by the Davis\u2013Kahan theorem, the NSP is nontrivial to prove and requires new techniques to prove."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6283ead822af1e2eccc1e5f19979bbd92b3e23be"
+                },
+                {
+                    "title": "Origins of power-law degree distribution in the heterogeneity of human activity in social networks",
+                    "abstract": "The probability distribution of number of ties of an individual in a social network follows a scale-free power-law. However, how this distribution arises has not been conclusively demonstrated in direct analyses of people's actions in social networks. Here, we perform a causal inference analysis and find an underlying cause for this phenomenon. Our analysis indicates that heavy-tailed degree distribution is causally determined by similarly skewed distribution of human activity. Specifically, the degree of an individual is entirely random - following a \u201cmaximum entropy attachment\u201d model - except for its mean value which depends deterministically on the volume of the users' activity. This relation cannot be explained by interactive models, like preferential attachment, since the observed actions are not likely to be caused by interactions with other people.",
+                    "citation": "Lev Muchnik, S. Pei, L. Parra, et al. (2013). Origins of power-law degree distribution in the heterogeneity of human activity in social networks. Scientific Reports. Citations: 239, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This analysis indicates that heavy-tailed degree distribution is causally determined by similarly skewed distribution of human activity, which cannot be explained by interactive models, like preferential attachment, since the observed actions are not likely to be caused by interactions with other people."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/7f4183f3c5529ddf6a018816537740846e1b33a2"
+                },
+                {
+                    "title": "Heterogeneous social interactions and the COVID-19 lockdown outcome in a multi-group SEIR model",
+                    "abstract": "We study variants of the SEIR model for interpreting some qualitative features of the statistics of the Covid-19 epidemic in France. Standard SEIR models distinguish essentially two regimes: either the disease is controlled and the number of infected people rapidly decreases, or the disease spreads and contaminates a significant fraction of the population until herd immunity is achieved. After lockdown, at first sight it seems that social distancing is not enough to control the outbreak. We discuss here a possible explanation, namely that the lockdown is creating social heterogeneity: even if a large majority of the population complies with the lockdown rules, a small fraction of the population still has to maintain a normal or high level of social interactions, such as health workers, providers of essential services, etc. This results in an apparent high level of epidemic propagation as measured through re-estimations of the basic reproduction ratio. However, these measures are limited to averages, while variance inside the population plays an essential role on the peak and the size of the epidemic outbreak and tends to lower these two indicators. We provide theoretical and numerical results to sustain such a view.",
+                    "citation": "J. Dolbeault, G. Turinici (2020). Heterogeneous social interactions and the COVID-19 lockdown outcome in a multi-group SEIR model. Mathematical Modelling of Natural Phenomena. Citations: 54, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is discussed here a possible explanation, namely that the lockdown is creating social heterogeneity: even if a large majority of the population complies with the lockdown rules, a small fraction of the Population still has to maintain a normal or high level of social interactions, such as health workers, providers of essential services, etc."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/6350be42cffe4555dfae4c02f0dac2cd148e1f59"
+                },
+                {
+                    "title": "Nodal Heterogeneity can Induce Ghost Triadic Effects in Relational Event Models",
+                    "abstract": "Temporal network data is often encoded as time-stamped interaction events between senders and receivers, such as co-authoring scientific articles or communication via email. A number of relational event frameworks have been proposed to address specific issues raised by complex temporal dependencies. These models attempt to quantify how individual behaviour, endogenous and exogenous factors, as well as interactions with other individuals modify the network dynamics over time. It is often of interest to determine whether changes in the network can be attributed to endogenous mechanisms reflecting natural relational tendencies, such as reciprocity or triadic effects. The propensity to form or receive ties can also, at least partially, be related to actor attributes. Nodal heterogeneity in the network is often modelled by including actor-specific or dyadic covariates. However, comprehensively capturing all personality traits is difficult in practice, if not impossible. A failure to account for heterogeneity may confound the substantive effect of key variables of interest. This work shows that failing to account for node level sender and receiver effects can induce ghost triadic effects. We propose a random-effect extension of the relational event model to deal with these problems. We show that it is often effective over more traditional approaches, such as in-degree and out-degree statistics. These results that the violation of the hierarchy principle due to insufficient information about nodal heterogeneity can be resolved by including random effects in the relational event model as a standard.",
+                    "citation": "Ruta Juozaitien.e, E. Wit (2022). Nodal Heterogeneity can Induce Ghost Triadic Effects in Relational Event Models. Psychometrika. Citations: 9, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work shows that failing to account for node level sender and receiver effects can induce ghost triadic effects and results that the violation of the hierarchy principle due to insufficient information about nodal heterogeneity can be resolved by including random effects in the relational event model as a standard."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/1cc478872fc4f554137b566d6f23b2a4678dfd4d"
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Epidemic threshold scale free network SEIR",
+            "papers": [
+                {
+                    "title": "Epidemic spreading in scale-free networks.",
+                    "abstract": "The Internet has a very complex connectivity recently modeled by the class of scale-free networks. This feature, which appears to be very efficient for a communications network, favors at the same time the spreading of computer viruses. We analyze real data from computer virus infections and find the average lifetime and persistence of viral strains on the Internet. We define a dynamical model for the spreading of infections on scale-free networks, finding the absence of an epidemic threshold and its associated critical behavior. This new epidemiological framework rationalizes data of computer viruses and could help in the understanding of other spreading phenomena on communication and social networks.",
+                    "citation": "R. Pastor-Satorras, Alessandro Vespignani (2000). Epidemic spreading in scale-free networks.. Physical Review Letters. Citations: 5318, Influential: 193.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A dynamical model for the spreading of infections on scale-free networks is defined, finding the absence of an epidemic threshold and its associated critical behavior and this new epidemiological framework rationalizes data of computer viruses and could help in the understanding of other spreading phenomena on communication and social networks."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/8886371eeec632b29b445975a18be21b46a8f8f8"
+                },
+                {
+                    "title": "Absence of epidemic threshold in scale-free networks with degree correlations.",
+                    "abstract": "Random scale-free networks have the peculiar property of being prone to the spreading of infections. Here we provide for the susceptible-infected-susceptible model an exact result showing that a scale-free degree distribution with diverging second moment is a sufficient condition to have null epidemic threshold in unstructured networks with either assortative or disassortative mixing. Degree correlations result therefore irrelevant for the epidemic spreading picture in these scale-free networks. The present result is related to the divergence of the average nearest neighbor's degree, enforced by the degree detailed balance condition.",
+                    "citation": "M. Bogu\u00f1\u00e1, R. Pastor-Satorras, Alessandro Vespignani (2002). Absence of epidemic threshold in scale-free networks with degree correlations.. Physical Review Letters. Citations: 508, Influential: 14.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work provides for the susceptible-infected-susceptible model an exact result showing that a scale-free degree distribution with diverging second moment is a sufficient condition to have null epidemic threshold in unstructured networks with either assortative or disassortative mixing."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3855dba5d587325021124f1b8649daaf03c47d90"
+                },
+                {
+                    "title": "ROSE: Robustness Strategy for Scale-Free Wireless Sensor Networks",
+                    "abstract": null,
+                    "citation": "Tie Qiu, Aoyang Zhao, Feng Xia, et al. (2017). ROSE: Robustness Strategy for Scale-Free Wireless Sensor Networks. IEEE/ACM Transactions on Networking. Citations: 162, Influential: 10.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/229bbe35d4d262b357035fd27a62984ea5134c3e"
+                },
+                {
+                    "title": "Epidemic threshold in structured scale-free networks.",
+                    "abstract": "We analyze the spreading of viruses in scale-free networks with high clustering and degree correlations, as found in the Internet graph. For the susceptible-infected-susceptible model of epidemics the prevalence undergoes a phase transition at a finite threshold of the transmission probability. Comparing with the absence of a finite threshold in networks with purely random wiring, our result suggests that high clustering (modularity) and degree correlations protect scale-free networks against the spreading of viruses. We introduce and verify a quantitative description of the epidemic threshold based on the connectivity of the neighborhoods of the hubs.",
+                    "citation": "V. Egu\u00edluz, K. Klemm (2002). Epidemic threshold in structured scale-free networks.. Physical Review Letters. Citations: 334, Influential: 5.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A quantitative description of the epidemic threshold based on the connectivity of the neighborhoods of the hubs is introduced and verified, suggesting that high clustering (modularity) and degree correlations protect scale-free networks against the spreading of viruses."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/745cda342e9eefeee7d131b04778c88e59fcdc31"
+                },
+                {
+                    "title": "Global Stability of Epidemic Models With Imperfect Vaccination and Quarantine on Scale-Free Networks",
+                    "abstract": "Public health services are constantly searching for ways to reduce the spread of infectious diseases, such as public vaccination of asymptomatic individuals, quarantine and treatment of symptomatic individuals. In this paper, we introduce epidemic models including variable population size, degree-related imperfect vaccination and quarantine on scale-free networks. More specifically, the models are formulated both on the population with and without permanent natural immunity to infection, which corresponds respectively to the susceptible-vaccinated-infected-quarantined-recovered (SVIQR) model and the susceptible-vaccinated-infected-quarantined (SVIQS) model. We develop different mathematical methods to study the dynamics of two models, including the basic reproduction number, the global stability of disease-free and endemic equilibria. For the SVIQR model, we show that the system exhibits a forward bifurcation. Meanwhile, the disease-free and unique endemic equilibria are shown to be globally asymptotically stable by constructing suitable Lyapunov functions. For the SVIQS model, conditions ensuring the occurrence of multiple endemic equilibria are derived. Under certain conditions, this system cannot undergo a backward bifurcation. The global asymptotical stability of disease-free equilibrium, and the persistence of the disease are proved. The endemic equilibrium is shown to be globally attractive by using monotone iterative technique. Finally, stochastic network simulations yield quantitative agreement with the deterministic mean-field approach.",
+                    "citation": "Shanshan Chen, M. Small, Xinchu Fu (2018). Global Stability of Epidemic Models With Imperfect Vaccination and Quarantine on Scale-Free Networks. IEEE Transactions on Network Science and Engineering. Citations: 42, Influential: 3.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper introduces epidemic models including variable population size, degree-related imperfect vaccination and quarantine on scale-free networks, and develops different mathematical methods to study the dynamics of two models, including the basic reproduction number, the global stability of disease-free and endemic equilibria."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/3f0ddef5876ccf755c290507a8828833218d4836"
+                },
+                {
+                    "title": "Dynamics for an SEIRS epidemic model with time delay on a scale-free network",
+                    "abstract": null,
+                    "citation": "Peng Yang, Yuanshi Wang (2019). Dynamics for an SEIRS epidemic model with time delay on a scale-free network. Physica A: Statistical Mechanics and its Applications. Citations: 27, Influential: 2.",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Results indicate that time delay plays a significant part in propagation process of epidemics on a scale-free network."
+                    },
+                    "url": "https://www.semanticscholar.org/paper/044e4efcfc1c20add9e268ea9034cb43c5bbc362"
+                },
+                {
+                    "title": "Spreading Dynamics of an SEIR Model with Delay on Scale-Free Networks",
+                    "abstract": "In this paper, to be more precise in modeling the real epidemic spread, an SEIR model with delay describing the fixed latent period is studied on scale-free networks. The basic reproduction number, which serves as a critical threshold of epidemic spread, is calculated. The formula for the basic reproduction number shows that adding delay decreases the basic reproduction number. By constructing appropriate Lyapunov functions, the global stability of disease-free and endemic equilibria is investigated. Finally, numerical simulations are performed to illustrate the effect of network structures and model parameters on the basic reproduction numbers and disease spreading processes.",
+                    "citation": "Huiyan Kang, Mengfeng Sun, Yajuan Yu, et al. (2020). Spreading Dynamics of an SEIR Model with Delay on Scale-Free Networks. IEEE Transactions on Network Science and Engineering. Citations: 35, Influential: 1.",
+                    "summary (tldr)": null,
+                    "url": "https://www.semanticscholar.org/paper/a3ebd98c8414ea9f652fc659068a2d6e7e53402e"
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

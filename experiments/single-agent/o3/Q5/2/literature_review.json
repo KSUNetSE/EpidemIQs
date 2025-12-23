@@ -1,0 +1,37 @@
+{
+    "results": [
+        {
+            "query": "vaccination threshold random immunization degree targeted networks mean excess degree",
+            "papers": [
+                {
+                    "paper_title": "Immunization strategies in directed networks.",
+                    "abstract": "Many complex systems can be modeled as directed networks, which can be regarded as a generalization of undirected networks. In this paper, epidemic dynamics and immunization strategies in directed networks are studied. First, a Susceptible-Infected-Susceptible (SIS) model on a directed network is established employing the mean-field method, and its dynamics and epidemic threshold of the network are studied. Then based on the continuous degree technique, namely, considering the degree of a node as a continuous variable, we propose a method to calculate the epidemic threshold of the immunized network. Besides, some immunization strategies, including optimal immunization, random immunization, combined targeted immunization, and combined acquaintance immunization, and three special networks are considered. Finally, through numerical analysis, all immunization strategies are simulated and compared on different types of networks. We find that the nodes with the largest product of in-degree and out-degree are the most worthy of being immunized.",
+                    "citation": "Jun Bo Jia, Wei Shi, Pan Yang... (2020). Immunization strategies in directed networks.. Mathematical biosciences and engineering : MBE, 17 4, \n          3925-3952\n        . DOI: 10.3934/mbe.2020218",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The continuous degree technique, namely, considering the degree of a node as a continuous variable, is proposed to calculate the epidemic threshold of the immunized network and it is found that the nodes with the largest product of in-degree and out-degree are the most worthy of being immunized."
+                    }
+                },
+                {
+                    "paper_title": "Analytical connection between thresholds and immunization strategies of SIS model in random networks.",
+                    "abstract": "Devising effective strategies for hindering the propagation of viruses and protecting the population against epidemics is critical for public security and health. Despite a number of studies based on the susceptible-infected-susceptible (SIS) model devoted to this topic, we still lack a general framework to compare different immunization strategies in completely random networks. Here, we address this problem by suggesting a novel method based on heterogeneous mean-field theory for the SIS model. Our method builds the relationship between the thresholds and different immunization strategies in completely random networks. Besides, we provide an analytical argument that the targeted large-degree strategy achieves the best performance in random networks with arbitrary degree distribution. Moreover, the experimental results demonstrate the effectiveness of the proposed method in both artificial and real-world networks.",
+                    "citation": "Mingyang Zhou, Wen-Man Xiong, Hao Liao... (2018). Analytical connection between thresholds and immunization strategies of SIS model in random networks.. Chaos, 28 5, \n          051101\n        . DOI: 10.1063/1.5030908",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The method builds the relationship between the thresholds and different immunization strategies in completely random networks and provides an analytical argument that the targeted large-degree strategy achieves the best performance in random networks with arbitrary degree distribution."
+                    }
+                },
+                {
+                    "paper_title": "Improving immunization strategies.",
+                    "abstract": "We introduce an immunization method where the percentage of required vaccinations for immunity are close to the optimal value of a targeted immunization scheme of highest degree nodes. Our strategy retains the advantage of being purely local, without the need for knowledge on the global network structure or identification of the highest degree nodes. The method consists of selecting a random node and asking for a neighbor that has more links than himself or more than a given threshold and immunizing him. We compare this method to other efficient strategies on three real social networks and on a scale-free network model and find it to be significantly more effective.",
+                    "citation": "L. Gallos, F. Liljeros, P. Argyrakis... (2007). Improving immunization strategies.. Physical review. E, Statistical, nonlinear, and soft matter physics, 75 4 Pt 2, \n          045104\n        . DOI: 10.1103/PhysRevE.75.045104",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work introduces an immunization method where the percentage of required vaccinations for immunity are close to the optimal value of a targeted immunization scheme of highest degree nodes, and finds it to be significantly more effective than other efficient strategies on three real social networks and on a scale-free network model."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

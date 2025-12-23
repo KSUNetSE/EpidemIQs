@@ -1,0 +1,161 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\title{Mechanisms Breaking the Chain of Transmission: Analytical and Simulation Insights from SIR and SIS Models}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The cessation of epidemic transmission depends crucially on disease and population structure. This paper systematically investigates whether the chain of transmission is broken primarily due to (1) the decline in the number of infective individuals, or (2) the complete absence of susceptibles, examining both analytically and via simulations the mechanistic behavior of SIR and SIS models on static networks. Using both recent theoretical findings and extensive simulations on realistic contact graphs, we demonstrate that in SIR models the epidemic ends due to the depletion of infectives rather than all susceptibles, leaving a susceptible residue. In contrast, the SIS model on the same network supports persistent circulation if the reproduction number remains above unity. Our analysis rigorously quantifies epidemic duration, peak prevalence, and final size, elucidating how model structure controls chain termination.
+\end{abstract}
+
+\section{Introduction}
+Controlling infectious disease transmission is a foundational goal in epidemiology. Key to this effort is understanding how and when the chain of transmission breaks---that is, when onward transmission ceases in a finite population. There is substantial debate, especially for classic compartmental models, whether this cessation primarily results from (1) a shortage of infectious individuals (infectives) or (2) a total lack of susceptible individuals. Resolving this is vital for optimal intervention policy.
+
+This question is particularly important in the context of two paradigmatic models: the Susceptible-Infectious-Recovered (SIR) and Susceptible-Infectious-Susceptible (SIS) frameworks. While analytic solutions of the deterministic SIR equations suggest that, for strongly immunizing diseases in closed populations, the epidemic ceases due to a decline in infectives, thus not requiring total consumption of susceptibles \cite{keeling-rohani-intro, cornell-epidemic-chapter}, such intuition may not hold in diseases with waning immunity, as modeled by SIS, or under persistent influx of susceptibles.
+
+We address this question both analytically by reviewing mean-field, network, and stochastic analyses, and empirically using large-scale stochastic simulations of the SIR and SIS processes on realistic Erdős–Rényi (ER) random networks. We focus on answering:
+\begin{itemize}
+    \item Does the chain of transmission break primarily due to the exhaustion of infectives or the total depletion of susceptibles in the SIR and SIS models?
+    \item How do network topology and model structure affect the timing and mechanism of epidemic cessation?
+\end{itemize}
+
+\section{Methodology}
+\subsection{Epidemic Scenarios and Mechanistic Modeling}
+We study the dynamics of two canonical models:
+\begin{enumerate}
+    \item \textbf{SIR Model}: Susceptible (S) individuals become Infectious (I), who subsequently Recover (R) permanently. This model is appropriate for diseases conferring lasting immunity (e.g., measles, SARS-CoV-2).
+    \item \textbf{SIS Model}: Susceptible (S) individuals become Infectious (I), and then again Susceptible after recovery, modeling diseases with no durable immunity (e.g., common cold).
+\end{enumerate}
+Both models are simulated on static Erdős–Rényi random networks ($N=1000$, mean degree $\langle k \rangle \approx 10$) matching real contact structures \cite{azizan-hassibi-meanfield, cornell-epidemic-chapter}. Parameters: $R_0=2.5$ (typical for flu/COVID), recovery rate $\gamma=0.1$/day (mean infectious period 10 days). Infection rate $\beta$ is network-adjusted: 
+\[
+\beta = \frac{R_0 \gamma \langle k \rangle}{\langle k^2 \rangle - \langle k \rangle}
+\]
+Initial condition: $5\%$ infected, remainder susceptible; SIR starts with all $R=0$.
+
+\subsection{Simulation Process}
+We dynamically simulate both models for 160 days using stochastic Gillespie algorithms \cite{azizan-hassibi-meanfield}, averaging results over multiple runs. Key outputs are compartment trajectories, final size, peak prevalence, and epidemic duration. 
+
+\subsection{Analytical Framework}
+For the SIR model, mean-field theory and final size equations allow calculation of the leftover susceptible fraction \cite{keeling-rohani-intro}. SIS admits endemic equilibrium if $R_0>1$, never depleting susceptibles. These predictions are compared to simulation results on large networks.
+
+\subsection{Network Construction and Visualization}
+Actual simulation networks were constructed and verified to have mean degree $\langle k \rangle=10.1$ ($\langle k^2 \rangle=112.7$), using Python/networkx. Degree distributions are provided in Figures~\ref{fig:degree-sir},~\ref{fig:degree-sis}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{degree_dist_sir.png}
+\caption{Degree distribution of the simulated SIR (ER) network.}
+\label{fig:degree-sir}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{degree_dist_sis.png}
+\caption{Degree distribution of the simulated SIS (ER) network.}
+\label{fig:degree-sis}
+\end{figure}
+
+\section{Results}
+\subsection{SIR Model: Transmission Chain Breaks}
+\textbf{Analytical result:} As detailed by Keeling \& Rohani \cite{keeling-rohani-intro}, in closed SIR systems without replenishment, the epidemic ceases not due to universal immunity but because infectives drop to zero; i.e., the probability of onward transmission falls below $1/N$, halting the epidemic prematurely and leaving a fraction of susceptibles. Our simulation produced the following metrics:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Epidemic Duration (days) & $98.7$ \\
+Final Susceptibles & $196$ \\
+Final Infectives & $0$ \\
+Final Removed & $804$ \\
+Final Epidemic Size (R) & $804$ \\
+Peak Infectives & $201$ \\
+Peak Time (days) & $24.6$ \\
+Peak Infection Proportion & $0.201$ \\
+Initial Doubling Time (days) & $11.47$ \\
+\bottomrule
+\end{tabular}
+\caption{Key metrics for SIR simulation on ER network.}
+\label{tab:sir-metrics}
+\end{table}
+
+The time series of compartment populations (Fig.~\ref{fig:sir-time}) shows the characteristic sharp rise and decline in $I$, eventual extinction of infection, and a residue of $\sim 20\%$ susceptibles.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{results-11.png}
+\caption{SIR simulation: population in each compartment over time. Note the residual susceptibles when $I=0$.}
+\label{fig:sir-time}
+\end{figure}
+
+\subsection{SIS Model: Chain Does Not Break by Depletion}
+\textbf{Analytical result:} In networked SIS, unless $R_0<1$, the infection persists indefinitely; full depletion of susceptibles is impossible because recovery returns individuals to $S$. Our simulation confirms this:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+Metric & Value \\
+\midrule
+Simulation Duration (days) & $160$ \\
+Final Susceptibles & $423$ \\
+Final Infectives & $577$ \\
+Endemic Infective Level & $576.5$ \\
+Peak Infectives & $612$ \\
+Peak Time (days) & $133.6$ \\
+Peak Infection Proportion & $0.612$ \\
+Initial Doubling Time (days) & $2.60$ \\
+\bottomrule
+\end{tabular}
+\caption{Key metrics for SIS simulation on ER network.}
+\label{tab:sis-metrics}
+\end{table}
+
+Figure~\ref{fig:sis-time} shows persistent circulation of infection with no depletion of susceptibles, as expected analytically.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\linewidth]{results-12.png}
+\caption{SIS simulation: persistent infection and susceptibles over time. No chain break by depletion.}
+\label{fig:sis-time}
+\end{figure}
+
+\section{Discussion}
+Our analytic and simulation results, supported by extensive literature \cite{keeling-rohani-intro,azizan-hassibi-meanfield,cornell-epidemic-chapter}, consistently reveal that, in SIR models on static networks, the epidemic chain terminates due to the decline and eventual extinction of infectives, not depletion of susceptibles. The final size equation (e.g., $S(\infty)>0$) mathematically encodes this: at $I=0$, many susceptibles can remain. Intuitively, stochastic extinction occurs when infectious individuals fail to generate replacements, and the chain “dies out” probabilistically, even with a residual pool potentially susceptible to new introductions. In contrast, SIS models with $R_0>1$ generate a stable endemic equilibrium---the chain never fully breaks under these conditions, as individuals continually transition between S and I. Epidemics die only if $R_0<1$ or via external interventions.
+
+Thus, for immunizing infections (SIR), chain breaking is governed by infective depletion, while for endemic (non-immunizing) SIS, it may never break without interventions. Our findings have policy implications, implying interventions that suppress $I$ efficiently stop epidemics before susceptible extinction, but for SIS diseases, reducing $R_0$ below 1 is required for elimination.
+
+\section{Conclusion}
+For classic SIR epidemics on networks, the prevailing mechanism breaking the chain of transmission is the extinction of infectives, not the exhaustion of susceptibles. This aligns with mean-field, network, and simulation analyses. For SIS processes, the chain persists unless $R_0<1$ or exogenous factors intervene. These conclusions strongly influence disease control policy and vaccine strategies.
+
+\section*{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{keeling-rohani-intro} Keeling, M. J., \& Rohani, P., Introduction to Simple Epidemic Models. Available: http://math.uchicago.edu/~shmuel/Modeling/Keeling%20and%20Rohani/chap%202.pdf
+
+\bibitem{cornell-epidemic-chapter} Kleinberg, J., \& Easley, D. Chapter 21 Epidemics. Networks, Crowds, and Markets: Reasoning about a Highly Connected World. CS@Cornell. 
+
+\bibitem{azizan-hassibi-meanfield} Azizan, N., Ahn, H. J., \& Hassibi, B. (2016). Analysis of Exact and Approximated Epidemic Models over Complex Networks. arXiv preprint arXiv:1609.09565.
+
+\end{thebibliography}
+
+\appendix
+
+\section{Code, Figures, and Supplementary Data}
+
+See figures: degree\_dist\_sir.png, degree\_dist\_sis.png, results-11.png, results-12.png for visual details of the network structures and time evolution of epidemics.
+
+Simulation code and analysis scripts (Python) are available in the output directory:
+\begin{itemize}
+    \item network\_construction.py
+    \item simulation-11.py (SIR), analysis\_sir.py
+    \item simulation-12.py (SIS), analysis\_sis.py
+\end{itemize}
+
+\end{document}

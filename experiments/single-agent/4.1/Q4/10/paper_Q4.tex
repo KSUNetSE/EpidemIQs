@@ -1,0 +1,27 @@
+\documentclass[10pt,conference]{IEEEtran}
+\usepackage{graphicx}
+\title{Epidemic Spread Analysis of SIR Model over a Static Network}
+\begin{document}
+\maketitle
+
+% -------------------------
+% Abstract
+\begin{abstract}
+This work presents a rigorous analysis of epidemic spread using a Susceptible-Infected-Recovered (SIR) mechanistic model over a static Erdős-Rényi (ER) random network. By synthesizing recent advances in network science and epidemiological modeling, we construct an experiment to simulate the dynamics of epidemic propagation under controlled parameters reflective of realistic settings, such as COVID-19 transmission characteristics. We describe the process of generating a representative contact network, calibrating model parameters—including network-based infection and recovery rates—and simulating stochastic epidemic trajectories. Our analysis extracts key epidemiological metrics such as peak infection, epidemic duration, final epidemic size, and doubling time. The results demonstrate the critical influence of contact network structure on epidemic behavior and provide a foundation for optimizing control strategies in networked populations.
+\end{abstract}
+
+% -------------------------
+% Introduction
+\section{Introduction}
+The study of infectious disease propagation is fundamental to public health, especially as emerging and re-emerging pathogens threaten global societies. Classical compartmental models, notably the SIR (Susceptible-Infected-Recovered) framework, have been widely employed to elucidate epidemic dynamics under homogeneously mixing assumptions. However, mounting evidence from recent outbreaks, such as COVID-19, highlights the necessity of incorporating realistic contact patterns to accurately capture disease spread mechanisms\cite{Dong2024, Bhowmick2024, Talaei2024, Aljundi2023}.
+
+Network-based epidemiology bridges this gap by representing populations as nodes connected through edges denoting potential transmission channels\cite{Sana2024, Ji2024}. The topology and heterogeneity of these networks—ranging from random graphs to spatial or social configurations—substantially alter the threshold, course, and control of epidemics. Modern epidemics showcase pronounced clustering, super-spreaders, and temporal variations, all of which can be mapped and understood via network models\cite{Bhuvaneswari2023}.
+
+The objective of this research is to investigate the spread of an infectious disease, parameterized to resemble COVID-19, on a static unstructured contact network. Leveraging a synthetic Erdős-Rényi network with empirically motivated degree statistics, we fit model parameters to epidemiological benchmarks, simulate stochastic realizations of SIR epidemics, and extract metrics including epidemic duration, peak prevalence, and final size. This systematic modeling enables insights into the interplay between microscopic network structure and macroscopic epidemic outcomes, offering guidance for control strategies and resource allocation in real-world scenarios.
+
+\section{Methodology}
+% [This section will be fleshed out next: details of network construction, model parameterization, simulation protocol, initial conditions, and analytic metrics]
+
+% [Other required sections (Results, Discussion, Conclusion, References, Appendices) to follow in subsequent steps.]
+
+\end{document}

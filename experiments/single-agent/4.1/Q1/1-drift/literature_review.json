@@ -1,0 +1,310 @@
+{
+    "results": [
+        {
+            "query": "SEIR dynamics, degree heterogeneity, basic reproduction number analytic threshold",
+            "papers": [
+                {
+                    "paper_title": "Global dynamics and bifurcation analysis of a fractional\u2010order SEIR epidemic model with saturation incidence rate",
+                    "abstract": "The present paper studies a fractional\u2010order SEIR epidemic model for the transmission dynamics of infectious diseases such as HIV and HBV that spreads in the host population. The total host population is considered bounded, and Holling type\u2010II saturation incidence rate is involved as the infection term. Using the proposed SEIR epidemic model, the threshold quantity, namely, basic reproduction number R0 , is obtained that determines the status of the disease, whether it dies out or persists in the whole population. The model's analysis shows that two equilibria exist, namely, disease\u2010free equilibrium (DFE) and endemic equilibrium (EE). The global stability of the equilibria is determined using a Lyapunov functional approach. The disease status can be verified based on obtained threshold quantity R0 . If R0<1 , then DFE is globally stable, leading to eradicating the population's disease. If R0>1 , a unique EE exists, and that is globally stable under certain conditions in the feasible region. The Caputo type fractional derivative is taken as the fractional operator. The bifurcation and sensitivity analyses are also performed for the proposed model that determines the relative importance of the parameters in disease transmission. The numerical solution of the model is obtained by the generalized Adams\u2013Bashforth\u2013Moulton method. Finally, numerical simulations are performed to illustrate and verify the analytical results. From the obtained results, it is concluded that the order of the fractional derivative plays a significant role in the dynamic process. Also, from the sensitivity analysis results, it is seen that the parameter \u03b4 ( infection rate) is positively correlated to R0 , while the parameter \u03bc (inhibition rate) is negatively correlated to R0 , which means these parameters are more sensitive than others in disease dynamics.",
+                    "citation": "Muhammad Bilal Ghori, Parvaiz Ahmad Naik, Jian Zu... (2021). Global dynamics and bifurcation analysis of a fractional\u2010order SEIR epidemic model with saturation incidence rate. Mathematical Methods in the Applied Sciences, 45, 3665 - 3688. DOI: 10.1002/mma.8010",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "From the obtained results, it is concluded that the order of the fractional derivative plays a significant role in the dynamic process, and it is seen that the parameter \u03b4 ( infection rate) is positively correlated to R0 , while the parameter \u03bc (inhibition rate), which means these parameters are more sensitive than others in disease dynamics."
+                    }
+                },
+                {
+                    "paper_title": "Dynamic Analysis of Extinction and Stationary Distribution of a Stochastic Dual-Strain SEIR Epidemic Model with Double Saturated Incidence Rates",
+                    "abstract": "This study aims to enhance and extend the mathematical model of a dynamic stochastic dual-strain SEIR epidemic with a double-saturated incidence rate. The model is represented by a nonlinear system of differential equations that describe the dynamics of susceptible, exposed, infected and recovered individuals, with the exposed and infected compartments further divided into sub-classes for the first and second strains. We develop an innovative stochastic epidemic model where drug-sensitive and drug-resistant infected groups interact through mutation. The primary objective is to determine the existence and uniqueness of a positive global solution using a well-deservedly constructed Lyapunov function, enabling a deeper analysis of the system\u2019s complexities. This analytical framework reveals the interactions between disease transmission, treatment dynamics, and stochastic influences. A significant contribution to this work is defining the stochastic basic reproduction number as a threshold for the progression of both strains. Under low noise conditions and , the model predicts the emergence of an ergodic stationary distribution, offering insights into longterm disease trends. Conversely, in high-noise scenarios, , the analysis explores the extinction and persistence of drug-sensitive and drug-resistant infections. Our analytical results are further confirmed by simulations of epidemics spreading across drug-sensitive and drug-sensitive populations. Based on our simulations and theoretical predictions, we find that they are closely aligned.",
+                    "citation": "S. Saravanan, C. Monica (2024). Dynamic Analysis of Extinction and Stationary Distribution of a Stochastic Dual-Strain SEIR Epidemic Model with Double Saturated Incidence Rates. Contemporary Mathematics. DOI: 10.37256/cm.5420245594",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An innovative stochastic epidemic model where drug-sensitive and drug-resistant infected groups interact through mutation is developed where the stochastic basic reproduction number is defined as a threshold for the progression of both strains."
+                    }
+                },
+                {
+                    "paper_title": "Impact of heterogeneity on the dynamics of an SEIR epidemic model.",
+                    "abstract": "An SEIR epidemic model with an arbitrarily distributed exposed stage is revisited to study the impact of heterogeneity on the spread of infectious diseases. The heterogeneity may come from age or behavior and disease stages, resulting in multi-group and multi-stage models, respectively. For each model, Lyapunov functionals are used to show that the basic reproduction number R0 gives a sharp threshold. If R0 \u2264 1, then the disease-free equilibrium is globally asymptotically stable and the disease dies out from all groups or stages. If R0 > 1, then the disease persists in all groups or stages, and the endemic equilibrium is globally asymptotically stable.",
+                    "citation": "Zhisheng Shuai, P. van den Driessche (2012). Impact of heterogeneity on the dynamics of an SEIR epidemic model.. Mathematical biosciences and engineering : MBE, 9 2, \n          393-411\n        . DOI: 10.3934/mbe.2012.9.393",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "An SEIR epidemic model with an arbitrarily distributed exposed stage is revisited to study the impact of heterogeneity on the spread of infectious diseases."
+                    }
+                },
+                {
+                    "paper_title": "Dynamics of a Stochastic Multigroup SEIR Epidemic Model",
+                    "abstract": "To be more precise about the real world activity, a stochastic multigroup SEIR epidemic model is formulated. we define the basic reproduction number and show that it is a sharp threshold for the dynamics of SDE model. If , the disease-free equilibrium is asymptotically stable; and if , the disease persists and there exists a globally asymptotically stable stationary distribution. Numerical simulation examples are carried out to substantiate the analytical results.",
+                    "citation": "Xiaojing Zhong, F. Deng (2014). Dynamics of a Stochastic Multigroup SEIR Epidemic Model. J. Appl. Math., 2014, 258915:1-258915:9. DOI: 10.1155/2014/258915",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The basic reproduction number is defined and it is shown that it is a sharp threshold for the dynamics of SDE model and is a globally asymptotically stable stationary distribution."
+                    }
+                },
+                {
+                    "paper_title": "Dynamics of a Symmetric Seasonal Influenza Model with Variable Recovery, Treatment, and Fear Effects",
+                    "abstract": "This study proposes and examines the dynamics of a susceptible\u2013exposed\u2013infectious\u2013recovered (SEIR) model for the spread of seasonal influenza. The population is categorized into four distinct groups: susceptible (S), exposed (E), infectious (I), and recovered (R) individuals. The symmetric model integrates a bilinear incidence rate alongside a nonlinear recovery rate that depends on the quality of healthcare services. Additionally, it accounts for the impact of fear related to the disease and includes a constant vaccination rate as well as a nonlinear treatment function. The model advances current epidemiological frameworks by simultaneously accounting for these interrelated mechanisms, which are typically studied in isolation. We derive the expression for the basic reproduction number and analyze the essential stability properties of the model. Key analytical results demonstrate that the system exhibits rich dynamic behavior, including backward bifurcation (where stable endemic equilibria persist even when the basic reproduction number is less than one) and Hopf bifurcation. These phenomena emerge from the interplay between fear-induced suppression of transmission, treatment saturation, and healthcare quality. Numerical simulations using Saudi Arabian demographic and epidemiological data quantify how increased fear perception shrinks the bistability region, facilitating eradication. Healthcare capacity improvements, on the other hand, reduce the critical reproduction number threshold while treatment accessibility suppresses infection loads. The model\u2019s practical significance lies in its ability to identify intervention points where small parameter changes yield disproportionate control benefits and evaluate trade-offs between pharmaceutical (vaccination/treatment) and non-pharmaceutical (fear-driven distancing) strategies. This work establishes a versatile framework for public health decision making and the integrated approach offers policymakers a tool to simulate combined intervention scenarios and anticipate nonlinear system responses that simpler models cannot capture.",
+                    "citation": "R.T. Alqahtani, Abdelhamid M Ajbar, Manal Alqhtani (2025). Dynamics of a Symmetric Seasonal Influenza Model with Variable Recovery, Treatment, and Fear Effects. Symmetry. DOI: 10.3390/sym17060803",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work establishes a versatile framework for public health decision making and the integrated approach offers policymakers a tool to simulate combined intervention scenarios and anticipate nonlinear system responses that simpler models cannot capture."
+                    }
+                },
+                {
+                    "paper_title": "Analysis of a two-strain malaria transmission model with spatial heterogeneity and vector-bias",
+                    "abstract": null,
+                    "citation": "Yangyang Shi, Hongyong Zhao (2021). Analysis of a two-strain malaria transmission model with spatial heterogeneity and vector-bias. Journal of Mathematical Biology, 82. DOI: 10.1007/s00285-021-01577-3",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A quantitative analysis shows that disease-free steady state is globally asymptotically stable, while competitive exclusion, where strain i persists and strain j dies out, is a possible outcome when Ri>1>Rj\\documentclass[12pt]{minimal} \\usepackage{amsmath}"
+                    }
+                },
+                {
+                    "paper_title": "An Edge-Based Model of SEIR Epidemics on Static Random Networks",
+                    "abstract": null,
+                    "citation": "Cherrylyn P Alota, C. P. Pilar-Arceo, A. de los Reyes V (2020). An Edge-Based Model of SEIR Epidemics on Static Random Networks. Bulletin of Mathematical Biology, 82. DOI: 10.1007/s11538-020-00769-0",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The results in this paper can be used as an alternative way of explaining the spread of disease and it provides implications on the control strategies applied to mitigate the disease transmission."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "network SIR SEIR epidemic initial condition population structure impact",
+            "papers": [
+                {
+                    "paper_title": "Exact description of limiting SIR and SEIR dynamics on locally tree-like graphs",
+                    "abstract": "We study the Susceptible-Infected-Recovered (SIR) and the Susceptible-Exposed-Infected-Recovered (SEIR) models of epidemics, with possibly time-varying rates, on a class of networks that are locally tree-like, which includes sparse Erd\\H{o}s-R\\`enyi random graphs, random regular graphs, and other configuration models. We identify tractable systems of ODEs that exactly describe the dynamics of the SIR and SEIR processes in a suitable asymptotic regime in which the population size goes to infinity. Moreover, in the case of constant recovery and infection rates, we characterize the outbreak size as the unique zero of an explicit functional. We use this to show that a (suitably defined) mean-field prediction always overestimates the outbreak size, and that the outbreak sizes for SIR and SEIR processes with the same initial condition and constant infection and recovery rates coincide. In contrast, we show that the outbreak sizes for SIR and SEIR processes with the same time-varying infection and recovery rates can in general be quite different. We also demonstrate via simulations the efficacy of our approximations for populations of moderate size.",
+                    "citation": "Juniper Cocomello, Kavita Ramanan (2023). Exact description of limiting SIR and SEIR dynamics on locally tree-like graphs. . DOI: Unknown",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Threshold and Stabil ity Resul ts for an Age-Structured SEIR Epidemic",
+                    "abstract": null,
+                    "citation": "GUANG-TIAN Zhu (2001). Threshold and Stabil ity Resul ts for an Age-Structured SEIR Epidemic. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The existence and uniqueness of a positive solution for this model is proved and threshold results for the existence of endemic states are established under certain conditions, and the local stability for the steady states is examined."
+                    }
+                },
+                {
+                    "paper_title": "EXACT ANALYTICAL EXPRESSIONS FOR THE FINAL EPIDEMIC SIZE OF AN SIR MODEL ON SMALL NETWORKS",
+                    "abstract": null,
+                    "citation": "Karen McCulloch, Mick G. Roberts, Carlo R. Laing (2016). EXACT ANALYTICAL EXPRESSIONS FOR THE FINAL EPIDEMIC SIZE OF AN SIR MODEL ON SMALL NETWORKS. The ANZIAM Journal, 57, 429 - 444. DOI: 10.1017/S1446181116000043",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that the structure of the network, degree of the initial infectious node, number of initial infectious nodes and the transmission rate all significantly impact the final epidemic size of an SIR model on small networks."
+                    }
+                },
+                {
+                    "paper_title": "Optimal Resource Allocation for Fast Epidemic Monitoring in Networked Populations",
+                    "abstract": "The COVID-19 pandemic highlighted the fragility of the world in addressing a global health threat. The available resources of the pre-pandemic national health systems were inadequate to cope with the huge number of infected subjects needing health care and with the rapidity of the infection spread characterizing the COVID-19 outbreak. Indeed, an adequate allocation of the resources could produce in principle a strong reduction of the infection spread and of the hospital burden, preventing the collapse of the health system. In this work, taking inspiration from the COVID-19 and the difficulties in facing the emergency, an optimal problem of resource allocation is formulated on the basis of an ODE multi-group model composed by a network of SEIR-like submodels. The multi-group structure allows to differentiate the epidemic response of different populations or of various subgroups in the same population. In fact, an epidemic does not affect all populations in the same way, and even within the same population there can be epidemiological differences, like the susceptibility to the virus, the level of infectivity of the infectious subjects and the recovery from the disease. The subgroups are selected within the total population based on some peculiar characteristics, like for instance age, work, social condition, geographical position, etc., and they are connected by a network of contacts that allows the virus circulation within and among the groups. The proposed optimal control problem aims at defining a suitable monitoring campaign that is able to optimally allocate the number of swab tests between the subgroups of the population in order to reduce the number of infected patients (especially the most fragile ones) so reducing the epidemic impact on the health system. The proposed monitoring strategy can be applied both during the most critical phases of the emergency and in endemic conditions, when an active surveillance could be crucial for preventing the contagion rise.",
+                    "citation": "P. D. Giamberardino, D. Iacoviello, F. Papa (2022). Optimal Resource Allocation for Fast Epidemic Monitoring in Networked Populations. . DOI: 10.5220/0011299300003271",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The proposed optimal control problem aims at defining a suitable monitoring campaign that is able to optimally allocate the number of swab tests between the subgroups of the population in order to reduceThe number of infected patients (especially the most fragile ones) so reducing the epidemic impact on the health system."
+                    }
+                },
+                {
+                    "paper_title": "Computational Cost Analysis of Large-Scale Agent-Based Epidemic Simulations",
+                    "abstract": null,
+                    "citation": "Tariq Kamal (2016). Computational Cost Analysis of Large-Scale Agent-Based Epidemic Simulations. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A cost estimation model and load balancing schemes to increase the runtime efficiency of agent-based epidemic simulations on high-performance clusters are designed and evaluated and the static and dynamic load analysis of such simulations are performed."
+                    }
+                },
+                {
+                    "paper_title": "An investigation of errors and of quasi stationary behavior for pairwise epidemic models",
+                    "abstract": null,
+                    "citation": "Adedapo Chris Loyinmi (2016). An investigation of errors and of quasi stationary behavior for pairwise epidemic models. . DOI: Unknown",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This study focusses on trying to understand and quantify the errors that emerge in SIR dynamics on networks comprising of a single cycle; triangle, square, pentagon and hexagon."
+                    }
+                },
+                {
+                    "paper_title": "A Spatial Biosurveillance Synthetic Data Generator in R",
+                    "abstract": "Objective To develop a spatially accurate biosurveillance synthetic data generator for the testing, evaluation, and comparison of new outbreak detection techniques. Introduction Development of new methods for the rapid detection of emerging disease outbreaks is a research priority in the field of biosurveillance. Because real-world data are often proprietary in nature, scientists must utilize synthetic data generation methods to evaluate new detection methodologies. Colizza et. al. have shown that epidemic spread is dependent on the airline transportation network [1], yet current data generators do not operate over network structures. Here we present a new spatial data generator that models the spread of contagion across a network of cities connected by airline routes. The generator is developed in the R programming language and produces data compatible with the popular `surveillance\u2019 software package. Methods Colizza et. al. demonstrate the power-law relationships between city population, air traffic, and degree distribution [1]. We generate a transportation network as a Chung-Lu random graph [2] that preserves these scale-free relationships (Figure 1). First, given a power-law exponent and a desired number of cities, a probability mass function (PMF) is generated that mirrors the expected degree distribution for the given power-law relationship. Values are then sampled from this PMF to generate an expected degree (number of connected cities) for each city in the network. Edges (airline connections) are added to the network probabilistically as described in [2]. Unconnected graph components are each joined to the largest component using linear preferential attachment. Finally, city sizes are calculated based on an observed three-quarter power- law scaling relationship with the sampled degree distribution. Each city is represented as a customizable stochastic compartmental SIR model. Transportation between cities is modeled similar to [2]. An infection is initialized in a single random city and infection counts are recorded in each city for a fixed period of time. A consistent fraction of the modeled infection cases are recorded as daily clinic visits. These counts are then added onto statically generated baseline data for each city to produce a full synthetic data set. Alternatively, data sets can be generated using real-world networks, such as the one maintained by the International Air Transport Association. Results Dynamics such as the number of cities, degree distribution power- law exponent, traffic flow, and disease kinetics can be customized. In the presented example (Figure 2) the outbreak spreads over a 20 city transportation network. Infection spreads rapidly once the more populated hub cities are infected. Cities that are multiple flights away from the initially infected city are infected late in the process. The generator is capable of creating data sets of arbitrary size, length, and connectivity to better mirror a diverse set of observed network types. Conclusions New computational methods for outbreak detection and surveillance must be compared to established approaches. Outbreak mitigation strategies require a realistic model of human transportation behavior to best evaluate impact. These actions require test data that accurately reflect the complexity of the real-world data they would be applied to. The outbreak data generated here represents the complexity of modern transportation networks and are made to be easily integrated with established software packages to allow for rapid testing and deployment. Randomly generated scale-free transportation network with a power-law degree exponent of \u03bb =1.8. City and link sizes are scaled to reflect their weight. An example of observed daily outbreak-related clinic visits across a randomly generated network of 20 cities. Each city is colored by the number of flights required to reach the city from the initial infection location. These generated counts are then added onto baseline data to create a synthetic data set for experimentation. Keywords Simulation; Network; Spatial; Synthetic; Data",
+                    "citation": "Drew Levin, Patrick D. Finley (2017). A Spatial Biosurveillance Synthetic Data Generator in R. Online Journal of Public Health Informatics, 9. DOI: 10.5210/ojphi.v9i1.7583",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A new spatial data generator that models the spread of contagion across a network of cities connected by airline routes and is capable of creating data sets of arbitrary size, length, and connectivity to better mirror a diverse set of observed network types."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "R0 calculation for network-based epidemic SIR",
+            "papers": [
+                {
+                    "paper_title": "Bifurcation analysis of a network-based SIR epidemic model with saturated treatment function.",
+                    "abstract": "In this paper, we present a study on a network-based susceptible-infected-recovered (SIR) epidemic model with a saturated treatment function. It is well known that treatment can have a specific effect on the spread of epidemics, and due to the limited resources of treatment, the number of patients during severe disease outbreaks who need to be treated may exceed the treatment capacity. Consequently, the number of patients who receive treatment will reach a saturation level. Thus, we incorporated a saturated treatment function into the model to characterize such a phenomenon. The dynamics of the present model is discussed in this paper. We first obtained a threshold value R0, which determines the stability of a disease-free equilibrium. Furthermore, we investigated the bifurcation behavior at R0=1. More specifically, we derived a condition that determines the direction of bifurcation at R0=1. If the direction is backward, then a stable disease-free equilibrium concurrently exists with a stable endemic equilibrium even though R0<1. Therefore, in this case, R0<1 is not sufficient to eradicate the disease from the population. However, if the direction is forward, we find that for a range of parameters, multiple equilibria could exist to the left and right of R0=1. In this case, the initial infectious invasion must be controlled to a lower level so that the disease dies out or approaches a lower endemic steady state.",
+                    "citation": "Chun-Hsien Li, A. Yousef (2019). Bifurcation analysis of a network-based SIR epidemic model with saturated treatment function.. Chaos, 29 3, \n          033129\n        . DOI: 10.1063/1.5079631",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper incorporated a saturated treatment function into the model to characterize such a phenomenon and obtained a threshold value R0, which determines the stability of a disease-free equilibrium, and investigated the bifurcation behavior at R0=1."
+                    }
+                },
+                {
+                    "paper_title": "Epidemic Spread and Network Connectivity",
+                    "abstract": "This paper presents selected historical mortality statistics and analyze their characteristics and trends. Statistics are collated particularly for the pandemics related with cholera, plague, Spanish flu and covid-19 between 1720 -2020. We introduce epidemic and epidemic spreading. Then the dissertation continues with brief introduction and discussion of Epidemic models such as SI, SIS and SIR Epidemic pass-through populations and persists over long time periods. Thus, efficient modeling of the understanding network plays a crucial role in understanding the spread and prevention of an epidemic. Further the mathematical modelling of infectious disease epidemics on network, starting from the simplest Erdos-Renyi random graphs, Percolation on graph and epidemics is studied. We also show empirical results of applying the models to calculate the spread of contagion and information connectivity on two complex networks suitable for the models. Based on the results, we calculate centrality metrics reflecting the outcome of the application, highlighting its important properties. We observed that the centrality values obtained by running the epidemic model and the connectivity model turn out to be mutually equivalent, as predicted by their similar fashions of calculation. Here we study about the network Modelling of Epidemics and its similarities with the probabilistic model.",
+                    "citation": "Sana Aejaz, Saba Parveen (2024). Epidemic Spread and Network Connectivity. International Journal For Multidisciplinary Research. DOI: 10.36948/ijfmr.2024.v06i05.27325",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is observed that the centrality values obtained by running the epidemic model and the connectivity model turn out to be mutually equivalent, as predicted by their similar fashions of calculation."
+                    }
+                },
+                {
+                    "paper_title": "An SIR epidemic on a weighted network",
+                    "abstract": "Abstract We introduce a weighted configuration model graph, where edge weights correspond to the probability of infection in an epidemic on the graph. On these graphs, we study the development of a Susceptible\u2013Infectious\u2013Recovered epidemic using both Reed\u2013Frost and Markovian settings. For the special case of having two different edge types, we determine the basic reproduction number R0, the probability of a major outbreak, and the relative final size of a major outbreak. Results are compared with those for a calibrated unweighted graph. The degree distributions are based on both theoretical constructs and empirical network data. In addition, bivariate standard normal copulas are used to model the dependence between the degrees of the two edge types, allowing for modeling the correlation between edge types over a wide range. Among the results are that the weighted graph produces much richer results than the unweighted graph. Also, while R0 always increases with increasing correlation between the two degrees, this is not necessarily true for the probability of a major outbreak nor for the relative final size of a major outbreak. When using copulas we see that these can produce results that are similar to those of the empirical degree distributions, indicating that in some cases a copula is a viable alternative to using the full empirical data.",
+                    "citation": "Kristoffer Spricer, T. Britton (2019). An SIR epidemic on a weighted network. Network Science, 7, 556 - 580. DOI: 10.1017/nws.2019.54",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A weighted configuration model graph is introduced, where edge weights correspond to the probability of infection in an epidemic on the graph, and copulas can produce results that are similar to those of the empirical degree distributions, indicating that in some cases a copula is a viable alternative to using the full empirical data."
+                    }
+                },
+                {
+                    "paper_title": "Edge-based epidemic dynamics with multiple routes of transmission on random networks",
+                    "abstract": null,
+                    "citation": "Yi Wang, Jinde Cao, Xiaodi Li... (2017). Edge-based epidemic dynamics with multiple routes of transmission on random networks. Nonlinear Dynamics, 91, 403-420. DOI: 10.1007/S11071-017-3877-3",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Edge-based epidemic dynamics with multiple routes of transmission on random networks",
+                    "abstract": null,
+                    "citation": "Yi Wang, Jinde Cao, Xiaodi Li... (2017). Edge-based epidemic dynamics with multiple routes of transmission on random networks. Nonlinear Dynamics, 91, 403 - 420. DOI: 10.1007/s11071-017-3877-3",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Epidemic threshold and control in a dynamic network.",
+                    "abstract": "In this paper we present a model describing susceptible-infected-susceptible-type epidemics spreading on a dynamic contact network with random link activation and deletion where link activation can be locally constrained. We use and adapt an improved effective degree compartmental modeling framework recently proposed by Lindquist et al. [J. Math Biol. 62, 143 (2010)] and Marceau et al. [Phys. Rev. E 82, 036116 (2010)]. The resulting set of ordinary differential equations (ODEs) is solved numerically, and results are compared to those obtained using individual-based stochastic network simulation. We show that the ODEs display excellent agreement with simulation for the evolution of both the disease and the network and are able to accurately capture the epidemic threshold for a wide range of parameters. We also present an analytical R0 calculation for the dynamic network model and show that, depending on the relative time scales of the network evolution and disease transmission, two limiting cases are recovered: (i) the static network case when network evolution is slow and (ii) homogeneous random mixing when the network evolution is rapid. We also use our threshold calculation to highlight the dangers of relying on local stability analysis when predicting epidemic outbreaks on evolving networks.",
+                    "citation": "Michael Taylor, T. Taylor, I. Kiss (2011). Epidemic threshold and control in a dynamic network.. Physical review. E, Statistical, nonlinear, and soft matter physics, 85 1 Pt 2, \n          016103\n        . DOI: 10.1103/PhysRevE.85.016103",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper uses and adapt an improved effective degree compartmental modeling framework recently proposed by Lindquist et al. to describe susceptible-infected-susceptible-type epidemics spreading on a dynamic contact network with random link activation and deletion where link activation can be locally constrained."
+                    }
+                },
+                {
+                    "paper_title": "Mathematical analysis for an age-structured SIRS epidemic model.",
+                    "abstract": "In this paper, we investigate an SIRS epidemic model with chronological age structure in a demographic steady state. Although the age-structured SIRS model is a simple extension of the well-known age-structured SIR epidemic model, we have to develop new technique to deal with problems due to the reversion of susceptibility for recovered individuals. First we give a standard proof for the well-posedness of the normalized age-structured SIRS model. Next we examine existence of endemic steady states by fixed point arguments and bifurcation method, where we introduce the next generation operator and the basic reproduction number R0 to formulate endemic threshold results. Thirdly we investigate stability of steady states by the bifurcation calculation and the comparison method, and we show existence of a compact attractor and discuss the global behavior based on the population persistence theory. Finally we give some numerical examples and discuss the effect of mass-vaccination on R0 and the critical coverage of immunization based on the reinfection threshold.",
+                    "citation": "Kento Okuwa, H. Inaba, T. Kuniya (2019). Mathematical analysis for an age-structured SIRS epidemic model.. Mathematical biosciences and engineering : MBE, 16 5, \n          6071-6102\n        . DOI: 10.3934/MBE.2019304",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This paper gives a standard proof for the well-posedness of the normalized age-structured SIRS model and investigates stability of steady states by the bifurcation calculation and the comparison method, and shows existence of a compact attractor and the global behavior based on the population persistence theory."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "impact of network topology on epidemic threshold and final epidemic size",
+            "papers": [
+                {
+                    "paper_title": "An Immunization Strategy Based on Propagation Mechanism",
+                    "abstract": "With the ubiquity of smart phones, wearable equipment, and wireless sensors, the topologies of networks composed by them change along with time. The immunization strategies in which network immune nodes are chosen by analyzing the static aggregation network topologies have been challenged. The studies about interaction propagations between two pathogens show that the interaction can change propagation threshold and the final epidemic size of each other, which provides a new thinking of immunization method. The eradication or inhibition of the virus can be achieved through the spread of its opposite party. Here, we put forward an immunization strategy whose implementation does not depend on the analysis of network topology. The immunization agents are randomly placed on a few of individuals of network and spread out from these individuals on network in a propagation method. The immunization agents prevent virus infecting their habitat nodes with certain immune success rate. The analysis and simulation of evolution equation of the model show that immune propagation has a significant impact on the spread threshold and steady-state density of virus on a finite size of BA networks. Simulations on some real-world networks also suggest that the immunization strategy is feasible and effective.",
+                    "citation": "Yixin Zhu, Fengli Zhang, Wenqiang Guo (2014). An Immunization Strategy Based on Propagation Mechanism. Discrete Dynamics in Nature and Society, 2014, 1-7. DOI: 10.1155/2014/971497",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The analysis and simulation of evolution equation of the model show that immune propagation has a significant impact on the spread threshold and steady-state density of virus on a finite size of BA networks and suggest that the immunization strategy is feasible and effective."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "SEIR model network structure heterogeneous homogeneous mixing analytical simulation",
+            "papers": [
+                {
+                    "paper_title": "Viscoelastic Properties of Bituminous Composites Using Multiscale Heterogeneous Numerical Simulation and Micromechanical Analytical Self-consistent Model",
+                    "abstract": null,
+                    "citation": "F. F. Tehrani, J. Absi, F. Allou... (2016). Viscoelastic Properties of Bituminous Composites Using Multiscale Heterogeneous Numerical Simulation and Micromechanical Analytical Self-consistent Model. , 133-138. DOI: 10.1007/978-94-024-0867-6_19",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Integrating stochasticity and network structure into an epidemic model",
+                    "abstract": "While the foundations of modern epidemiology are based upon deterministic models with homogeneous mixing, it is being increasingly realized that both spatial structure and stochasticity play major roles in shaping epidemic dynamics. The integration of these two confounding elements is generally ascertained through numerical simulation. Here, for the first time, we develop a more rigorous analytical understanding based on pairwise approximations to incorporate localized spatial structure and diffusion approximations to capture the impact of stochasticity. Our results allow us to quantify, analytically, the impact of network structure on the variability of an epidemic. Using the susceptible\u2013infectious\u2013susceptible framework for the infection dynamics, the pairwise stochastic model is compared with the stochastic homogeneous-mixing (mean-field) model\u2014although to enable a fair comparison the homogeneous-mixing parameters are scaled to give agreement with the pairwise dynamics. At equilibrium, we show that the pairwise model always displays greater variation about the mean, although the differences are generally small unless the prevalence of infection is low. By contrast, during the early epidemic growth phase when the level of infection is increasing exponentially, the pairwise model generally shows less variation.",
+                    "citation": "C. Dangerfield, Joshua V. Ross, M. Keeling (2008). Integrating stochasticity and network structure into an epidemic model. Journal of the Royal Society Interface, 6, 761 - 774. DOI: 10.1098/rsif.2008.0410",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "A more rigorous analytical understanding is developed based on pairwise approximations to incorporate localized spatial structure and diffusion approximation to capture the impact of stochasticity in the context of an epidemic."
+                    }
+                },
+                {
+                    "paper_title": "Data-driven contact structures: From homogeneous mixing to multilayer networks",
+                    "abstract": "The modeling of the spreading of communicable diseases has experienced significant advances in the last two decades or so. This has been possible due to the proliferation of data and the development of new methods to gather, mine and analyze it. A key role has also been played by the latest advances in new disciplines like network science. Nonetheless, current models still lack a faithful representation of all possible heterogeneities and features that can be extracted from data. Here, we bridge a current gap in the mathematical modeling of infectious diseases and develop a framework that allows to account simultaneously for both the connectivity of individuals and the age-structure of the population. We compare different scenarios, namely, i) the homogeneous mixing setting, ii) one in which only the social mixing is taken into account, iii) a setting that considers the connectivity of individuals alone, and finally, iv) a multilayer representation in which both the social mixing and the number of contacts are included in the model. We analytically show that the thresholds obtained for these four scenarios are different. In addition, we conduct extensive numerical simulations and conclude that heterogeneities in the contact network are important for a proper determination of the epidemic threshold, whereas the age-structure plays a bigger role beyond the onset of the outbreak. Altogether, when it comes to evaluate interventions such as vaccination, both sources of individual heterogeneity are important and should be concurrently considered. Our results also provide an indication of the errors incurred in situations in which one cannot access all needed information in terms of connectivity and age of the population.",
+                    "citation": "A. Aleta, G. F. Arruda, Y. Moreno (2020). Data-driven contact structures: From homogeneous mixing to multilayer networks. PLoS Computational Biology, 16. DOI: 10.1371/journal.pcbi.1008035",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is concluded that heterogeneities in the contact network are important for a proper determination of the epidemic threshold, whereas the age-structure plays a bigger role beyond the onset of the outbreak."
+                    }
+                },
+                {
+                    "paper_title": "Metapopulation epidemic models with heterogeneous mixing and travel behaviour",
+                    "abstract": "BackgroundDetermining the pandemic potential of an emerging infectious disease and how it depends on the various epidemic and population aspects is critical for the preparation of an adequate response aimed at its control. The complex interplay between population movements in space and non-homogeneous mixing patterns have so far hindered the fundamental understanding of the conditions for spatial invasion through a general theoretical framework. To address this issue, we present an analytical modelling approach taking into account such interplay under general conditions of mobility and interactions, in the simplifying assumption of two population classes.MethodsWe describe a spatially structured population with non-homogeneous mixing and travel behaviour through a multi-host stochastic epidemic metapopulation model. Different population partitions, mixing patterns and mobility structures are considered, along with a specific application for the study of the role of age partition in the early spread of the 2009 H1N1 pandemic influenza.ResultsWe provide a complete mathematical formulation of the model and derive a semi-analytical expression of the threshold condition for global invasion of an emerging infectious disease in the metapopulation system. A rich solution space is found that depends on the social partition of the population, the pattern of contacts across groups and their relative social activity, the travel attitude of each class, and the topological and traffic features of the mobility network. Reducing the activity of the less social group and reducing the cross-group mixing are predicted to be the most efficient strategies for controlling the pandemic potential in the case the less active group constitutes the majority of travellers. If instead traveling is dominated by the more social class, our model predicts the existence of an optimal across-groups mixing that maximises the pandemic potential of the disease, whereas the impact of variations in the activity of each group is less important.ConclusionsThe proposed modelling approach introduces a theoretical framework for the study of infectious diseases spread in a population with two layers of heterogeneity relevant for the local transmission and the spatial propagation of the disease. It can be used for pandemic preparedness studies to identify adequate interventions and quantitatively estimate the corresponding required effort, as well as in an emerging epidemic situation to assess the pandemic potential of the pathogen from population and early outbreak data.",
+                    "citation": "A. Apolloni, C. Poletto, J. Ramasco... (2014). Metapopulation epidemic models with heterogeneous mixing and travel behaviour. Theoretical Biology & Medical Modelling, 11, 3 - 3. DOI: 10.1186/1742-4682-11-3",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The proposed modelling approach introduces a theoretical framework for the study of infectious diseases spread in a population with two layers of heterogeneity relevant for the local transmission and the spatial propagation of the disease."
+                    }
+                },
+                {
+                    "paper_title": "Small-Signal Stability Boundary of Heterogeneous Multi-Converter Power Systems Dominated By the Phase-Locked Loops\u2019 Dynamics",
+                    "abstract": "While renewable resources are increasingly integrated into the electric power system, the small-signal instability risk may be induced by grid-following converters using phase-locked loops (PLLs) for grid synchronization, especially in low short-circuit strength systems. The stability analysis complexity is further increased in such a heterogeneous multi-converter system (HMCS), where multiple converters may have different PLLs\u2019 control parameters provided by various vendors. To understand how the different PLLs\u2019 dynamics collectively affect the small-signal stability of the HMCS, we transform the HMCS into an equivalent homogeneous multi-converter system for the small-signal stability analysis. Then, we analytically derives the small-signal stability boundary condition of the HMCS dominated by the PLLs\u2019 dynamics (HMCS-DPLL). The derived stability boundary allows us to obtain analytical results about how the small-signal stability of the HMCS-DPLL is collectively affected by network structure, converter operating conditions, and different PLLs\u2019 control parameters. Based on the stability boundary condition, a computationally efficient method is also proposed to identify the design rationality of PLL control parameters as well as the small-signal stability and stability margin of the HMCS-DPLL. The analytical results and proposed method are validated by modal analysis and electromagnetic transient simulation with the full-order models on a 9-converter heterogeneous system.",
+                    "citation": "Yuhan Zhou, H. Xin, Di Wu... (2022). Small-Signal Stability Boundary of Heterogeneous Multi-Converter Power Systems Dominated By the Phase-Locked Loops\u2019 Dynamics. IEEE Transactions on Energy Conversion, 37, 2874-2888. DOI: 10.1109/TEC.2022.3209628",
+                    "summary (tldr)": null
+                },
+                {
+                    "paper_title": "Metapopulation epidemic models with heterogeneous mixing and travel behaviour",
+                    "abstract": "Determining the pandemic potential of an emerging infectious disease and how it depends on the various epidemic and population aspects is critical for the preparation of an adequate response aimed at its control. The complex interplay between population movements in space and non-homogeneous mixing patterns have so far hindered the fundamental understanding of the conditions for spatial invasion through a general theoretical framework. To address this issue, we present an analytical modelling approach taking into account such interplay under general conditions of mobility and interactions, in the simplifying assumption of two population classes. We describe a spatially structured population with non-homogeneous mixing and travel behaviour through a multi-host stochastic epidemic metapopulation model. Different population partitions, mixing patterns and mobility structures are considered, along with a specific application for the study of the role of age partition in the early spread of the 2009 H1N1 pandemic influenza. We provide a complete mathematical formulation of the model and derive a semi-analytical expression of the threshold condition for global invasion of an emerging infectious disease in the metapopulation system. A rich solution space is found that depends on the social partition of the population, the pattern of contacts across groups and their relative social activity, the travel attitude of each class, and the topological and traffic features of the mobility network. Reducing the activity of the less social group and reducing the cross-group mixing are predicted to be the most efficient strategies for controlling the pandemic potential in the case the less active group constitutes the majority of travellers. If instead traveling is dominated by the more social class, our model predicts the existence of an optimal across-groups mixing that maximises the pandemic potential of the disease, whereas the impact of variations in the activity of each group is less important. The proposed modelling approach introduces a theoretical framework for the study of infectious diseases spread in a population with two layers of heterogeneity relevant for the local transmission and the spatial propagation of the disease. It can be used for pandemic preparedness studies to identify adequate interventions and quantitatively estimate the corresponding required effort, as well as in an emerging epidemic situation to assess the pandemic potential of the pathogen from population and early outbreak data.",
+                    "citation": "A. Apolloni, C. Poletto, J. Ramasco... (2014). Metapopulation epidemic models with heterogeneous mixing and travel behaviour. Theoretical Biology and Medical Modelling, 11. DOI: 10.1186/1742-4682-11-3",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "This work describes a spatially structured population with non-homogeneous mixing and travel behaviour through a multi-host stochastic epidemic metapopulation model and derives a semi-analytical expression of the threshold condition for global invasion of an emerging infectious disease in the metapore system."
+                    }
+                },
+                {
+                    "paper_title": "Collision Resolution Schemes with Nonoverlapped Contention Slots for Heterogeneous and Homogeneous WLANs",
+                    "abstract": "CSMA/CA-based DCF of 802.11 MAC layer employs a best-effort delivery model, in which stations compete for channel access with the same priority. In a heterogeneous network, providing different priorities to different applications for required quality of service is a challenging task, since heterogeneous conditions result in unfairness among stations and degradation in the throughput. This paper proposes a class of collision resolution schemes for 802.11 having contention window control with nonoverlapped contention slots. In the first scheme, window ranges of two consecutive stages are nonoverlapped, and it is called nonoverlapped contention slots (NOCS) scheme. In the other scheme, termed as NOCS-offset, an offset is introduced between window ranges of two stages. Selection of a random value by a station for its contention with discontinuous distribution results in reduced probability of collision. Analytical and simulation results show that the proposed scheme exhibits higher throughput and fairness with reduced delay and collision probability in homogeneous and heterogeneous networks. Performance of the proposed scheme is evaluated for mix traffic and high data rate environment with advanced back-off management techniques to meet the requirements of the present applications.",
+                    "citation": "R. Upadhyay, P. Vyavahare, S. Tokekar (2013). Collision Resolution Schemes with Nonoverlapped Contention Slots for Heterogeneous and Homogeneous WLANs. The Journal of Engineering, 2013, 1-9. DOI: 10.1155/2013/852959",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "Analytical and simulation results show that the proposed collision resolution schemes for 802.11 exhibits higher throughput and fairness with reduced delay and collision probability in homogeneous and heterogeneous networks."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "epidemic thresholds and R0 calculation for network SIR model",
+            "papers": [
+                {
+                    "paper_title": "Infection curves on small-world networks are linear only in the vicinity of the critical point",
+                    "abstract": "In ref. 1, an epidemiological model based on the smallworld (2) contact network and the SIR (susceptibleinfected-recovered) infection dynamics is analyzed and compared with the classical (well-mixed) SIR model. The authors claim that they observe a \u201ca hitherto unobserved transition from linear growth to S-shaped infection curves.\u201d This is rather surprising in the context of previous literature studying similar models (3\u20139). While scale-free networks (10) were reported to give rise to nonstandard features, including the absence of a nontrivial epidemic threshold and an algebraic spreading growth (6\u20138), no such abnormalities were observed on small-world networks (3\u20135, 7). Indeed, in the following, we show that the analysis presented in the paper (1) is flawed. The problem lies in the order parameter O= SD\u00f0C\u00f0t\u00de\u00de, the standard deviation of new daily cases (excluding days with no new cases), which is used to signal the postulated transition between an S-shaped growth (O> 0) and a linear growth (O\u2248 0). In reality, O can attain values close to zero for two distinct reasons: 1) C\u00f0t\u00de is constant (corresponding to a linear growth of the cumulative number of cases) as the authors claim, or 2) C\u00f0t\u00de exhibits low values, signaling that the epidemic is not able to effectively spread in the population and the number of cases drops exponentially, corresponding to the basic reproduction number R0 taking a value below one. Case 2, which is in line with the prediction of the classical SIR model, was never considered in ref. 1; both theoretical and numerical calculations established the existence of a critical point, but no evidence was reported for the existence of the postulated linear growth phase below the critical point. We hypothesized that case 2 is the mechanism yielding O\u2248 0 below the critical point. To test this, we independently simulated the model introduced in ref. 1. First, we verified that O signals a continuous transition between two distinct phases (Fig. 1A). Second, we calculated the basic reproduction number R0 (Fig. 1B), which confirmed that, below the critical point, an infection does not spread through the network, consistent with case 2. Third, we calculated the outbreak duration Tend, which exhibits a sharp maximum at the critical point and drops especially quickly below the critical point (Fig. 1C). Because Tend upperbounds the possible duration of a linear growth, this result indicates that prolonged linear growth is impossible even slightly below the critical point. Last, we compared the evolution of the cumulative number of infections obtained from the small-world model and the classical SIR model (Fig. 1D). Already slightly below the critical point, the growth curve of the network model is significantly sublinear, as expected from the classical picture. In conclusion, the presented results corroborate our supposition that the linear growth in the cumulative number of infections is restricted to the vicinity of the critical point. Furthermore, we checked that the results are very similar on Erd} os\u2013R\u00e9nyi networks (Fig. 2). Thus, the model introduced in ref. 1 does not predict that nor explain why \u201cmost COVID-19 infection curves are linear.\u201d",
+                    "citation": "\u0141. Ku\u015bmierz, Taro Toyoizumi (2021). Infection curves on small-world networks are linear only in the vicinity of the critical point. Proceedings of the National Academy of Sciences of the United States of America, 118. DOI: 10.1073/pnas.2024297118",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "The presented results corroborate the supposition that the linear growth in the cumulative number of infections is restricted to the vicinity of the critical point, and indicate that prolonged linear growth is impossible even slightly below thecritical point."
+                    }
+                }
+            ],
+            "summary": ""
+        },
+        {
+            "query": "Calculating SIR model epidemic threshold and R0 for arbitrary static networks",
+            "papers": [
+                {
+                    "paper_title": "Epidemic thresholds in dynamic contact networks",
+                    "abstract": null,
+                    "citation": "E. Volz, L. Meyers (2009). Epidemic thresholds in dynamic contact networks. Journal of The Royal Society Interface, 6, 233 - 241. DOI: 10.1098/rsif.2008.0218",
+                    "summary (tldr)": {
+                        "model": "tldr@v2.0.0",
+                        "text": "It is shown that social mixing fundamentally changes the epidemiological landscape and, consequently, that static network approximations of dynamic networks can be inadequate."
+                    }
+                }
+            ],
+            "summary": ""
+        }
+    ]
+}

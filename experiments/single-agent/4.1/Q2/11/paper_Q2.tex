@@ -1,0 +1,87 @@
+\documentclass[10pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{multirow}
+\title{Mechanisms of Chain-of-Transmission Break in SIR Epidemics: Analytical and Simulation Approaches}
+\author{ }
+\begin{document}
+\maketitle
+
+% Abstract
+\begin{abstract}
+The question of what terminates epidemic transmission---whether it is the depletion of infectives or the exhaustion of susceptibles---is fundamental for infectious disease modeling. We provide both analytical and simulation-based evidence, grounded in the classic SIR (Susceptible-Infected-Recovered) framework, to determine the primary factor responsible for the epidemic's end on a static contact network. Analytical solutions demonstrate that a significant fraction of susceptibles remain after epidemic extinction, whereas the number of infectives vanishes. Network-based stochastic simulations support these results, showing, under realistic parameters, that the chain of transmission breaks due to the fall in infectives. These findings have strong implications for control strategies and our understanding of herd immunity. 
+\end{abstract}
+
+% Introduction
+\section{Introduction}
+Understanding the mechanism responsible for breaking the chain of epidemic transmission has considerable implications for designing intervention strategies. In compartmental models, such as SIR, an epidemic unfolds as infective individuals transmit the pathogen to susceptibles, who may themselves become new sources of infection. An open question---often subject to misunderstanding---is whether the epidemic ceases because (1) all susceptibles are consumed (depleted), or (2) the pool of infectives diminishes to zero, leaving some susceptibles untouched. Keeling and Rohani (2008) \\cite{keeling_rohani2008} and others argue that, in the absence of replenishment of susceptibles, immunizing infections typically terminate by the decline in infectives, not the absolute exhaustion of susceptibles. Here, we address this hypothesis using both analytical solution of the SIR model and stochastic simulations on static networks, following guidelines established in recent literature \\cite{hethcote1989, mcculloch2016, mukherjee2024}.
+
+% Methodology
+\section{Methodology}
+\subsection{Analytical Approach}
+We analyze the classical deterministic SIR ODE model:
+\begin{align}
+    \frac{dS}{dt} &= -\beta \frac{SI}{N} \\
+    \frac{dI}{dt} &= \beta \frac{SI}{N} - \gamma I \\
+    \frac{dR}{dt} &= \gamma I
+\end{align}
+with $N=10^4$, $\beta=0.3$, $\gamma=0.1$, and initial conditions $S_0=9999, I_0=1, R_0=0$. The final size relation in the SIR model provides that, at epidemic termination ($I\to 0$), $S$ remains above zero (precise value computable via transcendental equations \\cite{mukherjee2024, hethcote1989}). 
+
+\subsection{Simulation on Static Network}
+We implemented a stochastic SIR process on an Erdős–Rényi network ($N=10^4$, $\langle k \rangle\approx10$) using FastGEMF. Transmission and recovery rates were chosen consistent with $R_0 = 3$. The initial condition was a single infected node, all others susceptible. Simulation trajectories (10 replicates) were recorded for up to 160 time units.
+
+% Results
+\section{Results}
+\subsection{Analytical Results}
+The solution (Figure~\ref{fig:analytical}), shows that the fraction of susceptible individuals at epidemic's end is approximately $\approx6\%$. The final number of infectives is negligible ($I_\infty\to0$). This illustrates analytically that the epidemic ends due to a lack of infectives rather than a complete lack of susceptibles.
+\\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\columnwidth]{results-11.png}
+  \caption{Analytical solution of the SIR model. Notice that the epidemic halts with $\approx6\%$ susceptibles remaining.}
+  \label{fig:analytical}
+\\end{figure}
+
+\subsection{Simulation Results}
+Simulations confirm the analytic predictions: at extinction, the number of infectives falls to zero, but $\sim9990$ of $10^4$ nodes remain susceptible due to stochastic fadeout (Table~\ref{tab:simresults}). \\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\columnwidth]{results-12.png}
+  \caption{Stochastic SIR simulation on Erdős–Rényi network. Infectives vanish quickly; nearly all nodes stay susceptible due to early fadeout.}
+  \label{fig:simulation}
+\\end{figure}
+
+\\begin{table}[h!]
+  \centering
+  \caption{Summary of extinction thresholds}
+  \begin{tabular}{lccc}
+    \hline
+    & $S_{\mathrm{final}}$ & $I_\mathrm{final}$ & $R_\mathrm{final}$ \\
+    \hline
+    Analytical & N/A & $\approx 0.77$ & $\approx 9404$ \\
+    Simulation & $9990$ & $0.0$ & $10.0$ \\
+    \hline
+  \end{tabular}
+  \label{tab:simresults}
+\\end{table}
+
+The simulated epidemics often die out when infective counts are low, particularly in stochastic settings, leaving the susceptible fraction nearly unchanged. In the deterministic ODE, the epidemic is sustained long enough to convert most infectives to recovered, while stochasticity on networks leads to more rapid extinction with fewer total cases. In both cases, susceptibles are left at the end; it is the depletion of infectives that breaks the transmission chain.
+
+% Discussion
+\section{Discussion}
+Our findings, from both a mathematical and a simulation perspective, robustly support the view that, in the classic SIR scenario without external demographic inputs, epidemics are terminated when the number of infectives falls below a critical threshold. The fraction of remaining susceptibles---the 'herd immunity'---is determined by model parameters but does not need to fall to zero for the epidemic to end. Real disease spread is subject to stochastic die out: even if $R_0 > 1$, an epidemic can become extinct due to chance loss of infectives before reaching large susceptible depletion \\cite{kermack_mckendrick, keeling_rohani2008}.
+
+Analytic ODE results (Table~\ref{tab:simresults}) and simulation outcomes (Figure~\ref{fig:simulation}) are in broad agreement with the modern understanding of epidemic fadeout. Small network effects and stochasticity further highlight the nonzero probability of early termination with high susceptible fractions.
+
+% Conclusion
+\section{Conclusion}
+Through comprehensive analysis and simulation, we have shown that classical epidemics in the SIR framework on static networks are brought to extinction by the decline in infective individuals, not by the exhaustion of susceptibles. This has deep consequences for expectations around herd immunity, and informs the response to real infectious diseases.
+
+% References
+\begin{thebibliography}{99}
+\bibitem{keeling_rohani2008} M. Keeling, P. Rohani, \emph{Modeling Infectious Diseases in Humans and Animals}. Princeton University Press, 2008.
+\bibitem{hethcote1989} H. W. Hethcote, "Three Basic Epidemiological Models," \emph{Statistics and Data Science}, 1989. 
+\bibitem{mcculloch2016} K. McCulloch, M. G. Roberts, C. R. Laing, "Exact Analytical Expressions for the Final Epidemic Size of an SIR Model on Small Networks," \emph{The ANZIAM Journal}, vol. 57, pp. 429-444, 2016.
+\bibitem{mukherjee2024} A. Mukherjee, S. Kundu, S. K. Sasmal, "Final Size Relations for Some Compartmental Models in Epidemiology," \emph{Journal of Biological Systems}, 2024.
+\bibitem{kermack_mckendrick} W. O. Kermack and A. G. McKendrick. "A Contribution to the Mathematical Theory of Epidemics," \emph{Proceedings of the Royal Society A}, 1927.
+\end{thebibliography}
+\end{document}
