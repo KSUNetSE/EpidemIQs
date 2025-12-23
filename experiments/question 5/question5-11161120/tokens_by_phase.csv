@@ -1,0 +1,6 @@
+timestamp,Agent-Name,LLM,request_tokens,response_tokens,total_tokens,time
+05:42.6,Discovery,gpt-4.1,18095,211,96819,298.1718037
+07:55.8,Modeling,gpt-4.1,38827,4222,56225,132.1150591
+13:30.3,Simulation,gpt-4.1,252484,9872,262356,329.540549
+15:36.3,Analysis,gpt-4.1-mini,28467,2250,50502,125.9469612
+,Total,,,,465902,

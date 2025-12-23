@@ -1,0 +1,2 @@
+timestamp,Agent-Name,LLM,input_tokens,output_tokens,total_tokens,time
+2025-11-27 14:23:06.251520,Analysis,gpt-4.1,64816,7398,72214,549.5397310256958
