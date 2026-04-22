@@ -230,12 +230,17 @@ Use of this repository implies acceptance of these conditions.
 
 ##  How to Cite
 ```
-@article{samaei2025epidemiqs,
-  title={EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis},
-  author={Samaei, Mohammad Hossein and Sahneh, Faryad Darabi and Cohnstaedt, Lee W and Scoglio, Caterina},
-  journal={arXiv preprint arXiv:2510.00024},
-  year={2025}
-}
+@ARTICLE{11406122,
+  author={Samaei, Mohammad Hosseini and Sahneh, Faryad Darabi and Cohnstaedt, Lee W. and Scoglio, Caterina M.},
+  journal={IEEE Transactions on Artificial Intelligence}, 
+  title={EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-16},
+  keywords={Artificial intelligence;Epidemics;Analytical models;Data models;Cognition;Mathematical models;Stochastic processes;Reflection;Planning;Multi-agent systems;Autonomous Agents;AI for Science;Epidemic Modeling;Multi-Agent Systems},
+  doi={10.1109/TAI.2026.3666830}}
+
 ```
 
 ---
